@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImplementationGuide xmlns="http://hl7.org/fhir"
+                   	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="hl7.eu.fhir.pscp"/>
 	<!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
     <valueString value="resources-spreadsheet.xml"/>
@@ -40,12 +41,12 @@
 	<fhirVersion value="4.0.1"/>
 	<dependsOn>
 		<!-- <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"/> -->
-		<uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/> 
+		<uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
 		<packageId value="hl7.fhir.uv.ips"/>
 		<version value="current"/>
 	</dependsOn>
-	<definition>	
-<!-- 		<resource>
+	<definition>
+		<!-- 		<resource>
 			<reference>
 				<reference value="Patient/pat-1"/>
 			</reference>
@@ -65,16 +66,21 @@
 				<title value="PanCareSurPass IG Home Page"/>
 				<generation value="markdown"/>
 			</page>
-<!-- 			<page>
-				<nameUrl value="background.html"/>
-				<title value="Background"/>
+			<page>
+				<nameUrl value="logicalModel.html"/>
+				<title value="Logical Models"/>
+				<generation value="markdown"/>
+			</page>
+			<page>
+				<nameUrl value="sequence.html"/>
+				<title value="Sequence diagrams"/>
 				<generation value="html"/>
 			</page>
 			<page>
-				<nameUrl value="spec.html"/>
-				<title value="Detailed Specification"/>
+				<nameUrl value="collaboration.html"/>
+				<title value="Collaboration diagrams"/>
 				<generation value="markdown"/>
-			</page> -->
+			</page>
 			<page>
 				<nameUrl value="downloads.html"/>
 				<title value="Useful Downloads"/>

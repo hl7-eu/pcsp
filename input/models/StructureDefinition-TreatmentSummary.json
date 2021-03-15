@@ -1,0 +1,172 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TreatmentSummary",
+  "publisher": "PanCareSurPass project",
+  "status": "draft",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/TreatmentSummary",
+  "name": "TreatmentSummary",
+  "title": "PCSP Treatment Summary data model",
+  "experimental": true,
+  "description": "PCSP Treatment Summary data model",
+  "version": "0.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "TreatmentSummary",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "TreatmentSummary",
+        "path": "TreatmentSummary",
+        "short": "TreatmentSummary",
+        "definition": "TreatmentSummary",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "TreatmentSummary.subject",
+        "path": "TreatmentSummary.subject",
+        "short": "Subject",
+        "definition": "Subject",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.diagnosis",
+        "path": "TreatmentSummary.diagnosis",
+        "short": "Diagnosis",
+        "definition": "Diagnosis",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.frontLineTreatment",
+        "path": "TreatmentSummary.frontLineTreatment",
+        "short": "Front line treatment",
+        "definition": "Front line treatment",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.chemotherapy",
+        "path": "TreatmentSummary.chemotherapy",
+        "short": "Chemotherapy",
+        "definition": "Chemotherapy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.sct",
+        "path": "TreatmentSummary.sct",
+        "short": "SCT",
+        "definition": "SCT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.radiotherapy",
+        "path": "TreatmentSummary.radiotherapy",
+        "short": "Radiotherapy",
+        "definition": "Radiotherapy",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.majorSurgery",
+        "path": "TreatmentSummary.majorSurgery",
+        "short": "Major Surgery",
+        "definition": "Major Surgery",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.progressionRelapseDuringFLT",
+        "path": "TreatmentSummary.progressionRelapseDuringFLT",
+        "short": "Progression-Relapse during FLT",
+        "definition": "Progression-Relapse during FLT",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.otherInfo",
+        "path": "TreatmentSummary.otherInfo",
+        "short": "Other info and relevant events",
+        "definition": "Other info and relevant events",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.medicalSuggestion",
+        "path": "TreatmentSummary.medicalSuggestion",
+        "short": "Medical suggestion",
+        "definition": "Medical suggestion",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "TreatmentSummary.progressionRelapseAfterEOT",
+        "path": "TreatmentSummary.progressionRelapseAfterEOT",
+        "short": "Progression-relapse after the End of Treatment",
+        "definition": "Progression-relapse after the End of Treatment",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      }
+    ]
+  }
+}

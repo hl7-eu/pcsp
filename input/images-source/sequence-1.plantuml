@@ -1,0 +1,5 @@
+@startuml
+"Local System A" -> "PCSP Platform" : Treatment Summary
+"PCSP Platform" -> "PCSP Platform" : draft SCP
+"PCSP Platform" -> "Local System B" : SurPass w (draft) SCP
+@enduml

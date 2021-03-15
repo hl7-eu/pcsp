@@ -3,12 +3,21 @@ set in_dir=.\word
 REM echo off
 
 pandoc %in_dir%\home.docx -t commonmark -f docx  -o %pub_dir%\index.md
-REM pandoc %in_dir%\metodologia.docx -t commonmark -f docx -o %pub_dir%\methodology.md
-REM pandoc %in_dir%\design.docx -t commonmark -f docx -o %pub_dir%\design.md
-REM pandoc %in_dir%\copyright.docx -t commonmark -f docx -o %pub_dir%\copyright.md
+pandoc %in_dir%\logicalModel.docx -t commonmark -f docx -o %pub_dir%\logicalModel.md
+pandoc %in_dir%\collaboration.docx -t commonmark -f docx -o %pub_dir%\collaboration.md
+
+REM pandoc %in_dir%\sequence.docx -t commonmark -f docx -o %pub_dir%\sequence.md
+REm pandoc %in_dir%\sequence.docx -t html -f docx -o %pub_dir%\sequence.html
+REM pandoc %in_dir%\copyright.docx -t commonmark -f docx -o %pub_dir%\logicalModel.md
+
+
 fart %pub_dir%\index.md media/image home-
-REM fart %pub_dir%\methodology.md media/image method-
-REM fart %pub_dir%\design.md media/image design-
+REM fart %pub_dir%\sequence.md media/image sequence-
+fart %pub_dir%\logicalModel.md media/image logicalModel-
+fart %pub_dir%\collaboration.md media/image collaboration-
+fart %pub_dir%\collaboration.md "\<" "<"
+fart %pub_dir%\collaboration.md "\>" ">"
+
 
 echo off
 
