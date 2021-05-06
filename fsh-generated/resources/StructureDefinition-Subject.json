@@ -32,8 +32,8 @@
         "max": "1",
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient"
+            "identity": "cda",
+            "map": "ClinicalDocument.recordTarget.patientRole"
           }
         ]
       },
@@ -51,8 +51,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.identifier"
+            "identity": "cda",
+            "map": ".id"
           }
         ]
       },
@@ -70,8 +70,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.name"
+            "identity": "cda",
+            "map": ".patient.name"
           }
         ]
       },
@@ -89,8 +89,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.name.given"
+            "identity": "cda",
+            "map": ".patient.name.family"
           }
         ]
       },
@@ -104,6 +104,12 @@
         "type": [
           {
             "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "cda",
+            "map": ".patient.name.family"
           }
         ]
       },
@@ -121,8 +127,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.name.family"
+            "identity": "cda",
+            "map": ".patient.name.given"
           }
         ]
       },
@@ -159,8 +165,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.gender"
+            "identity": "cda",
+            "map": ".patient.administrativeGenderCode"
           }
         ]
       },
@@ -178,8 +184,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.birthDate"
+            "identity": "cda",
+            "map": ".patient.birthTime"
           }
         ]
       },
@@ -197,8 +203,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.extension(http://hl7.org/fhir/StructureDefinition/patient-birthPlace')"
+            "identity": "cda",
+            "map": ".patient.birthplace"
           }
         ]
       },
@@ -216,8 +222,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.contact"
+            "identity": "cda",
+            "map": "ClinicalDocument.recordTarget.participant"
           }
         ]
       },
@@ -235,8 +241,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.contact.telecom"
+            "identity": "cda",
+            "map": "ClinicalDocument.recordTarget.participant.associatedEntity.telecom"
           }
         ]
       },
@@ -254,8 +260,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.contact.telecom"
+            "identity": "cda",
+            "map": "ClinicalDocument.recordTarget.participant.associatedEntity.telecom"
           }
         ]
       },
@@ -269,6 +275,12 @@
         "type": [
           {
             "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "cda",
+            "map": ".patient.guardian"
           }
         ]
       },
@@ -305,8 +317,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.contact.telecom"
+            "identity": "cda",
+            "map": ".patient.guardian.telecom"
           }
         ]
       },
@@ -324,8 +336,8 @@
         ],
         "mapping": [
           {
-            "identity": "fhir",
-            "map": "Patient.contact.telecom"
+            "identity": "cda",
+            "map": ".patient.guardian.telecom"
           }
         ]
       }

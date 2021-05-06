@@ -246,6 +246,76 @@ Usage: #definition
 
 
 
+* differential.element[0].mapping[0].identity = "cda"
+* differential.element[0].mapping[0].map = "ClinicalDocument.recordTarget.patientRole"
+
+* differential.element[1].mapping[0].identity = "cda"
+* differential.element[1].mapping[0].map = ".id"
+
+* differential.element[2].mapping[0].identity = "cda"
+* differential.element[2].mapping[0].map = ".patient.name"
+
+* differential.element[3].mapping[0].identity = "cda"
+* differential.element[3].mapping[0].map = ".patient.name.family"
+
+* differential.element[4].mapping[0].identity = "cda"
+* differential.element[4].mapping[0].map = ".patient.name.family"
+
+* differential.element[5].mapping[0].identity = "cda"
+* differential.element[5].mapping[0].map = ".patient.name.given"
+
+
+
+
+* differential.element[7].mapping[0].identity = "cda"
+* differential.element[7].mapping[0].map = ".patient.administrativeGenderCode"
+
+* differential.element[8].mapping[0].identity = "cda"
+* differential.element[8].mapping[0].map = ".patient.birthTime"
+
+* differential.element[9].mapping[0].identity = "cda"
+* differential.element[9].mapping[0].map = ".patient.birthplace"
+
+* differential.element[10].mapping[0].identity = "cda"
+* differential.element[10].mapping[0].map = "ClinicalDocument.recordTarget.participant"
+
+* differential.element[11].mapping[0].identity = "cda"
+* differential.element[11].mapping[0].map = "ClinicalDocument.recordTarget.participant.associatedEntity.telecom"
+
+* differential.element[12].mapping[0].identity = "cda"
+* differential.element[12].mapping[0].map = "ClinicalDocument.recordTarget.participant.associatedEntity.telecom"
+
+* differential.element[13].mapping[0].identity = "cda"
+* differential.element[13].mapping[0].map = ".patient.guardian"
+
+
+
+
+* differential.element[15].mapping[0].identity = "cda"
+* differential.element[15].mapping[0].map = ".patient.guardian.telecom"
+
+* differential.element[16].mapping[0].identity = "cda"
+* differential.element[16].mapping[0].map = ".patient.guardian.telecom"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
