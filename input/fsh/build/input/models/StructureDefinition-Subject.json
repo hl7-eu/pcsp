@@ -1,0 +1,237 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Subject",
+  "publisher": "PanCareSurPass project",
+  "status": "draft",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject",
+  "name": "Subject",
+  "title": "Subject of care",
+  "experimental": true,
+  "description": "Subject of care",
+  "version": "0.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "Subject",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Subject",
+        "path": "Subject",
+        "short": "Subject of care",
+        "definition": "Subject of care",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Subject.identifier",
+        "path": "Subject.identifier",
+        "short": "ID",
+        "definition": "ID",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "Subject.name",
+        "path": "Subject.name",
+        "short": "Subject Name",
+        "definition": "Subject Name",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Subject.name.lastname",
+        "path": "Subject.name.lastname",
+        "short": "Lastname  ",
+        "definition": "Lastname  ",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Subject.name.middleName",
+        "path": "Subject.name.middleName",
+        "short": "Middlename  ",
+        "definition": "Middlename  ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Subject.name.firstName",
+        "path": "Subject.name.firstName",
+        "short": "Firstname  ",
+        "definition": "Firstname  ",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Subject.lastnameAtDiagnosis",
+        "path": "Subject.lastnameAtDiagnosis",
+        "short": "Lastname at diagnosis (if different from the actual one)  ",
+        "definition": "Lastname at diagnosis (if different from the actual one)  ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Subject.gender",
+        "path": "Subject.gender",
+        "short": "Gender/Sex",
+        "definition": "Gender/Sex",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Subject.dateOfBirth",
+        "path": "Subject.dateOfBirth",
+        "short": "Date of birth  ",
+        "definition": "Date of birth  ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Subject.placeOfBirth",
+        "path": "Subject.placeOfBirth",
+        "short": "Place of birth  ",
+        "definition": "Place of birth  ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Address"
+          }
+        ]
+      },
+      {
+        "id": "Subject.contact",
+        "path": "Subject.contact",
+        "short": "Contact",
+        "definition": "Contact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Subject.contact.email",
+        "path": "Subject.contact.email",
+        "short": "E-mail  ",
+        "definition": "E-mail  ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Subject.contact.mobile",
+        "path": "Subject.contact.mobile",
+        "short": "Mobile phone  ",
+        "definition": "Mobile phone  ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Subject.guardian",
+        "path": "Subject.guardian",
+        "short": "Guardian",
+        "definition": "Guardian",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Subject.guardian.contact",
+        "path": "Subject.guardian.contact",
+        "short": "Contact",
+        "definition": "Contact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Subject.guardian.contact.email",
+        "path": "Subject.guardian.contact.email",
+        "short": "E-mail  ",
+        "definition": "E-mail  ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      },
+      {
+        "id": "Subject.guardian.contact.mobile",
+        "path": "Subject.guardian.contact.mobile",
+        "short": "Mobile phone  ",
+        "definition": "Mobile phone  ",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ]
+      }
+    ]
+  }
+}

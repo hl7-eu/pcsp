@@ -1,0 +1,334 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Subject",
+  "publisher": "PanCareSurPass project",
+  "status": "draft",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject",
+  "name": "",
+  "title": "Subject of care",
+  "experimental": true,
+  "description": "Subject of care",
+  "version": "0.0.1",
+  "mapping": [
+    {
+      "identity": "fhir",
+      "uri": "hl7.org/fhir/r4",
+      "name": "FHIR"
+    }
+  ],
+  "kind": "logical",
+  "abstract": true,
+  "type": "Subject",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Subject",
+        "path": "Subject",
+        "short": "Subject of care",
+        "definition": "Subject of care",
+        "min": 1,
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient"
+          }
+        ]
+      },
+      {
+        "id": "Subject.identifier",
+        "path": "Subject.identifier",
+        "short": "ID",
+        "definition": "ID",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Subject.name",
+        "path": "Subject.name",
+        "short": "Subject Name",
+        "definition": "Subject Name",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.name"
+          }
+        ]
+      },
+      {
+        "id": "Subject.name.lastname",
+        "path": "Subject.name.lastname",
+        "short": "Lastname �",
+        "definition": "Lastname �",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.name.given"
+          }
+        ]
+      },
+      {
+        "id": "Subject.name.middleName",
+        "path": "Subject.name.middleName",
+        "short": "Middlename �",
+        "definition": "Middlename �",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Subject.name.firstName",
+        "path": "Subject.name.firstName",
+        "short": "Firstname �",
+        "definition": "Firstname �",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.name.family"
+          }
+        ]
+      },
+      {
+        "id": "Subject.lastnameAtDiagnosis",
+        "path": "Subject.lastnameAtDiagnosis",
+        "short": "Lastname at diagnosis (if different from the actual one) �",
+        "definition": "Lastname at diagnosis (if different from the actual one) �",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.extension('http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName')"
+          }
+        ]
+      },
+      {
+        "id": "Subject.gender",
+        "path": "Subject.gender",
+        "short": "Gender/Sex",
+        "definition": "Gender/Sex",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.gender"
+          }
+        ]
+      },
+      {
+        "id": "Subject.dateOfBirth",
+        "path": "Subject.dateOfBirth",
+        "short": "Date of birth �",
+        "definition": "Date of birth �",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.birthDate"
+          }
+        ]
+      },
+      {
+        "id": "Subject.placeOfBirth",
+        "path": "Subject.placeOfBirth",
+        "short": "Place of birth �",
+        "definition": "Place of birth �",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Address"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.extension(http://hl7.org/fhir/StructureDefinition/patient-birthPlace')"
+          }
+        ]
+      },
+      {
+        "id": "Subject.contact",
+        "path": "Subject.contact",
+        "short": "Contact",
+        "definition": "Contact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.contact"
+          }
+        ]
+      },
+      {
+        "id": "Subject.contact.email",
+        "path": "Subject.contact.email",
+        "short": "E-mail �",
+        "definition": "E-mail �",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.contact.telecom"
+          }
+        ]
+      },
+      {
+        "id": "Subject.contact.mobile",
+        "path": "Subject.contact.mobile",
+        "short": "Mobile phone �",
+        "definition": "Mobile phone �",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.contact.telecom"
+          }
+        ]
+      },
+      {
+        "id": "Subject.guardian",
+        "path": "Subject.guardian",
+        "short": "Guardian",
+        "definition": "Guardian",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Subject.guardian.contact",
+        "path": "Subject.guardian.contact",
+        "short": "Contact",
+        "definition": "Contact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.contact"
+          }
+        ]
+      },
+      {
+        "id": "Subject.guardian.contact.email",
+        "path": "Subject.guardian.contact.email",
+        "short": "E-mail �",
+        "definition": "E-mail �",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.contact.telecom"
+          }
+        ]
+      },
+      {
+        "id": "Subject.guardian.contact.mobile",
+        "path": "Subject.guardian.contact.mobile",
+        "short": "Mobile phone �",
+        "definition": "Mobile phone �",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Patient.contact.telecom"
+          }
+        ]
+      }
+    ]
+  }
+}
