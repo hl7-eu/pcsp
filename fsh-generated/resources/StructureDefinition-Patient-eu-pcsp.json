@@ -6,7 +6,7 @@
   "name": "PatientPcsp",
   "title": "Patient (PanCareSurPass)",
   "status": "active",
-  "description": "Information about an individual receiving health care services",
+  "description": "This profile defines how to represent Patient in FHIR for the purpose of the PanCareSurPass project.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -47,6 +47,12 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "short": "Information about an individual receiving health care services",
+        "definition": "Information about an individual receiving health care services"
+      },
       {
         "id": "Patient.extension",
         "path": "Patient.extension",

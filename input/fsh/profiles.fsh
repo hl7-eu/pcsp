@@ -12,9 +12,9 @@ Parent:   $ipsPatient
 Id:       Patient-eu-pcsp
 Title:    "Patient (PanCareSurPass)"
 Description: "This profile defines how to represent Patient in FHIR for the purpose of the PanCareSurPass project."
-
 //-------------------------------------------------------------------------------------------
-* ^description = "Information about an individual receiving health care services"
+* . ^short = "Information about an individual receiving health care services"
+* . ^definition = "Information about an individual receiving health care services"
 * extension contains 
 $patient-birthPlace named patient-birthPlace 0..1
 and $patient-mothersMaidenName named patient-mothersMaidenName 0..1

@@ -47,14 +47,14 @@ Europe.**
 ##### Implementation and evaluation
 
 4.  **conduct a multi-country implementation study of SurPass v2.0** for
-    people-centred care with \>5-year CCS and to **assess
+    people-centred care with >5-year CCS and to **assess
     implementation** in terms of people-centred care (e.g. activation,
     empowerment, satisfaction, increase in knowledge), feasibility and
     cost effectiveness.
 
 5.  **conduct a parallel observational qualitative study using SurPass
-    v2.0** for delivering people-centred survivorship care to \<5-year
-    CCS and \>5-year CCS (but with limited treatment data available).
+    v2.0** for delivering people-centred survivorship care to <5-year
+    CCS and >5-year CCS (but with limited treatment data available).
 
 ##### European Future Implementation & Achieving Impact
 
