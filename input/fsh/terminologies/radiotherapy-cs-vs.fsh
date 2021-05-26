@@ -1,4 +1,3 @@
-
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsRadiotherapy
 Id: vs-radiotherapy-pcsp
@@ -6,549 +5,1090 @@ Title: "Radiotherapy sites"
 Description: "PancareSurPass radiotherapy sites Value Set"
 //-------------------------------------------------------------------------------------------
 
-* codes from system CsRadiotherapy
-
+* codes from system http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-radiotherapy-pcsp
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-CodeSystem: CsRadiotherapy
-Id: cs-radiotherapy-pcsp
-Title: "Radiotherapy sites"
-Description: "PancareSurPass radiotherapy sites Code System"
-//-------------------------------------------------------------------------------------------
 
-* #1  "Brain"
-* #1.1  "Brain: Whole brain"
-* #1.2  "Brain: Frontal lobe"
-* #1.2.R  "Brain: Frontal lobe (right)"
-* #1.2.L  "Brain: Frontal lobe (left)"
-* #1.2.B  "Brain: Frontal lobe (bilateral)"
-* #1.3  "Brain: Temporal lobe"
-* #1.3.R  "Brain: Temporal lobe (right)"
-* #1.3.L  "Brain: Temporal lobe (left)"
-* #1.3.B  "Brain: Temporal lobe (bilateral)"
-* #1.4  "Brain: Occipital lobe"
-* #1.4.R  "Brain: Occipital lobe (right)"
-* #1.4.L  "Brain: Occipital lobe (left)"
-* #1.4.B  "Brain: Occipital lobe (bilateral)"
-* #1.5  "Brain: Left Ventricle"
-* #1.6  "Brain: Right Ventricle"
-* #1.7  "Brain: Pituitary"
-* #1.8  "Brain: Hypothalamus"
-* #1.9  "Brain: III Ventricle"
-* #1.10  "Brain: IV Ventricle"
-* #1.11  "Brain: Cerebellum"
-* #1.11.R  "Brain: Cerebellum (right)"
-* #1.11.L  "Brain: Cerebellum (left)"
-* #1.11.B  "Brain: Cerebellum (bilateral)"
-* #1.12  "Brain: Mesencephalon/midbrain"
-* #1.13  "Brain: Pons"
-* #1.14  "Brain: Medulla"
-* #1.98  "Brain: Other specified"
-* #1.99  "Brain: Unspecified"
-* #2  "Head"
-* #2.1  "Head: Orbit/Eye"
-* #2.1.R  "Head: Orbit/Eye (right)"
-* #2.1.L  "Head: Orbit/Eye (left)"
-* #2.1.B  "Head: Orbit/Eye (bilateral)"
-* #2.2  "Head: Ear/Infratemporal area"
-* #2.2.R  "Head: Ear/Infratemporal area (right)"
-* #2.2.L  "Head: Ear/Infratemporal area (left)"
-* #2.2.B  "Head: Ear/Infratemporal area (bilateral)"
-* #2.3  "Head: Nasopharynx"
-* #2.3.R  "Head: Nasopharynx (right)"
-* #2.3.L  "Head: Nasopharynx (left)"
-* #2.3.B  "Head: Nasopharynx (bilateral)"
-* #2.4  "Head: Oropharynx"
-* #2.4.R  "Head: Oropharynx (right)"
-* #2.4.L  "Head: Oropharynx (left)"
-* #2.4.B  "Head: Oropharynx (bilateral)"
-* #2.5  "Head: Waldeyer's Ring = nasopharynx + oropharynx"
-* #2.5.R  "Head: Waldeyer's Ring = nasopharynx + oropharynx (right)"
-* #2.5.L  "Head: Waldeyer's Ring = nasopharynx + oropharynx (left)"
-* #2.5.B  "Head: Waldeyer's Ring = nasopharynx + oropharynx (bilateral)"
-* #2.6  "Head: Oral cavity"
-* #2.6.1  "Head: Oral cavity - Tongue"
-* #2.6.2  "Head: Oral cavity - Hard palate"
-* #2.7  "Head: Hypopharynx"
-* #2.98  "Head: Other specified"
-* #2.99  "Head: Unspecified"
-* #3  "Neck"
-* #3.1  "Neck: Whole neck"
-* #3.2  "Neck: Upper neck"
-* #3.2.R  "Neck: Upper neck (right)"
-* #3.2.L  "Neck: Upper neck (left)"
-* #3.2.B  "Neck: Upper neck (bilateral)"
-* #3.3  "Neck: Supraclavicular area"
-* #3.3.R  "Neck: Supraclavicular area (right)"
-* #3.3.L  "Neck: Supraclavicular area (left)"
-* #3.3.B  "Neck: Supraclavicular area (bilateral)"
-* #3.4  "Neck: Thyroid"
-* #3.5  "Neck: Larinx"
-* #3.6  "Neck: Cervical nodes"
-* #3.6.R  "Neck: Cervical nodes (right)"
-* #3.6.L  "Neck: Cervical nodes (left)"
-* #3.6.B  "Neck: Cervical nodes (bilateral)"
-* #3.7  "Neck: Supraclavicular nodes"
-* #3.7.R  "Neck: Supraclavicular nodes (right)"
-* #3.7.L  "Neck: Supraclavicular nodes (left)"
-* #3.7.B  "Neck: Supraclavicular nodes (bilateral)"
-* #3.98  "Neck: Other specified"
-* #3.99  "Neck: Unspecified"
-* #4  "Spine"
-* #4.1  "Spine: Whole spine"
-* #4.2  "Spine: Cervical spine"
-* #4.2.1  "Spine: Cervical spine - Cervical vertebra 1"
-* #4.2.2  "Spine: Cervical spine - Cervical vertebra 2"
-* #4.2.3  "Spine: Cervical spine - Cervical vertebra 3"
-* #4.2.4  "Spine: Cervical spine - Cervical vertebra 4"
-* #4.2.5  "Spine: Cervical spine - Cervical vertebra 5"
-* #4.2.6  "Spine: Cervical spine - Cervical vertebra 6"
-* #4.2.7  "Spine: Cervical spine - Cervical vertebra 7"
-* #4.3  "Spine: Thoracic / Dorsal spine"
-* #4.3.1  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 1"
-* #4.3.2  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 2"
-* #4.3.3  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 3"
-* #4.3.4  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 4"
-* #4.3.5  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 5"
-* #4.3.6  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 6"
-* #4.3.7  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 7"
-* #4.3.8  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 8"
-* #4.3.9  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 9"
-* #4.3.10  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 10"
-* #4.3.11  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 11"
-* #4.3.12  "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 12"
-* #4.4  "Spine: Lumbar spine"
-* #4.4.1  "Spine: Lumbar spine - Lumbar vertebra 1"
-* #4.4.2  "Spine: Lumbar spine - Lumbar vertebra 2"
-* #4.4.3  "Spine: Lumbar spine - Lumbar vertebra 3"
-* #4.4.4  "Spine: Lumbar spine - Lumbar vertebra 4"
-* #4.4.5  "Spine: Lumbar spine - Lumbar vertebra 5"
-* #4.5  "Spine: Sacral/cocygeal spine"
-* #4.5.1  "Spine: Sacral/cocygeal spine - Sacral vertebra 1"
-* #4.5.2  "Spine: Sacral/cocygeal spine - Sacral vertebra 2"
-* #4.5.3  "Spine: Sacral/cocygeal spine - Sacral vertebra 3"
-* #4.5.4  "Spine: Sacral/cocygeal spine - Sacral vertebra 4"
-* #4.5.5  "Spine: Sacral/cocygeal spine - Sacral vertebra 5"
-* #4.5.6  "Spine: Sacral/cocygeal spine - Cocyx"
-* #4.6  "Spine: Cervical / Thoracic spine"
-* #4.6.1  "Spine: Cervical / Thoracic spine - Cervical vertebra 1"
-* #4.6.2  "Spine: Cervical / Thoracic spine - Cervical vertebra 2"
-* #4.6.3  "Spine: Cervical / Thoracic spine - Cervical vertebra 3"
-* #4.6.4  "Spine: Cervical / Thoracic spine - Cervical vertebra 4"
-* #4.6.5  "Spine: Cervical / Thoracic spine - Cervical vertebra 5"
-* #4.6.6  "Spine: Cervical / Thoracic spine - Cervical vertebra 6"
-* #4.6.7  "Spine: Cervical / Thoracic spine - Cervical vertebra 7"
-* #4.6.8  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 1"
-* #4.6.9  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 2"
-* #4.6.10  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 3"
-* #4.6.11  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 4"
-* #4.6.12  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 5"
-* #4.6.13  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 6"
-* #4.6.14  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 7"
-* #4.6.15  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 8"
-* #4.6.16  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 9"
-* #4.6.17  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 10"
-* #4.6.18  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 11"
-* #4.6.19  "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 12"
-* #4.7  "Spine: Thoracic / Abdominal spine"
-* #4.7.1  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 1"
-* #4.7.2  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 2"
-* #4.7.3  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 3"
-* #4.7.4  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 4"
-* #4.7.5  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 5"
-* #4.7.6  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 6"
-* #4.7.7  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 7"
-* #4.7.8  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 8"
-* #4.7.9  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 9"
-* #4.7.10  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 10"
-* #4.7.11  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 11"
-* #4.7.12  "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 12"
-* #4.7.13  "Spine: Thoracic / Abdominal spine - Lumbar vertebra 1"
-* #4.7.14  "Spine: Thoracic / Abdominal spine - Lumbar vertebra 2"
-* #4.7.15  "Spine: Thoracic / Abdominal spine - Lumbar vertebra 3"
-* #4.7.16  "Spine: Thoracic / Abdominal spine - Lumbar vertebra 4"
-* #4.7.17  "Spine: Thoracic / Abdominal spine - Lumbar vertebra 5"
-* #4.8  "Spine: Abdominal / Pelvic spine"
-* #4.8.1  "Spine: Abdominal / Pelvic spine - Lumbar vertebra 1"
-* #4.8.2  "Spine: Abdominal / Pelvic spine - Lumbar vertebra 2"
-* #4.8.3  "Spine: Abdominal / Pelvic spine - Lumbar vertebra 3"
-* #4.8.4  "Spine: Abdominal / Pelvic spine - Lumbar vertebra 4"
-* #4.8.5  "Spine: Abdominal / Pelvic spine - Lumbar vertebra 5"
-* #4.8.6  "Spine: Abdominal / Pelvic spine - Sacral vertebra 1"
-* #4.8.7  "Spine: Abdominal / Pelvic spine - Sacral vertebra 2"
-* #4.8.8  "Spine: Abdominal / Pelvic spine - Sacral vertebra 3"
-* #4.8.9  "Spine: Abdominal / Pelvic spine - Sacral vertebra 4"
-* #4.8.10  "Spine: Abdominal / Pelvic spine - Sacral vertebra 5"
-* #4.8.11  "Spine: Abdominal / Pelvic spine - Cocyx"
-* #4.98  "Spine: Other specified"
-* #4.99  "Spine: Unspecified"
-* #6  "Cervico-Thoracic (area)"
-* #6.1  "Cervico-Thoracic (area): Paraspinal"
-* #6.1.R  "Cervico-Thoracic (area): Paraspinal (right)"
-* #6.1.L  "Cervico-Thoracic (area): Paraspinal (left)"
-* #6.1.B  "Cervico-Thoracic (area): Paraspinal (bilateral)"
-* #6.1.1  "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 1"
-* #6.1.2  "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 2"
-* #6.1.3  "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 3"
-* #6.1.4  "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 4"
-* #6.1.5  "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 5"
-* #6.1.6  "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 6"
-* #6.1.7  "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 7"
-* #6.1.8  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 1"
-* #6.1.9  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 2"
-* #6.1.10  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 3"
-* #6.1.11  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 4"
-* #6.1.12  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 5"
-* #6.1.13  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 6"
-* #6.1.14  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 7"
-* #6.1.15  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 8"
-* #6.1.16  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 9"
-* #6.1.17  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 10"
-* #6.1.18  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 11"
-* #6.1.19  "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 12"
-* #6.98  "Cervico-Thoracic (area): Other specified"
-* #6.99  "Cervico-Thoracic (area): Unspecified"
-* #7  "Chest (thorax)"
-* #7.1  "Chest (thorax): Whole chest (thorax)"
-* #7.2  "Chest (thorax): Ribs"
-* #7.2.R  "Chest (thorax): Ribs (right)"
-* #7.2.L  "Chest (thorax): Ribs (left)"
-* #7.2.B  "Chest (thorax): Ribs (bilateral)"
-* #7.2.1  "Chest (thorax): Ribs - Rib 1"
-* #7.2.2  "Chest (thorax): Ribs - Rib 2"
-* #7.2.3  "Chest (thorax): Ribs - Rib 3"
-* #7.2.4  "Chest (thorax): Ribs - Rib 4"
-* #7.2.5  "Chest (thorax): Ribs - Rib 5"
-* #7.2.6  "Chest (thorax): Ribs - Rib 6"
-* #7.2.7  "Chest (thorax): Ribs - Rib 7"
-* #7.2.8  "Chest (thorax): Ribs - Rib 8"
-* #7.2.9  "Chest (thorax): Ribs - Rib 9"
-* #7.2.10  "Chest (thorax): Ribs - Rib 10"
-* #7.2.11  "Chest (thorax): Ribs - Rib 11"
-* #7.2.12  "Chest (thorax): Ribs - Rib 12"
-* #7.3  "Chest (thorax): Clavicle"
-* #7.3.R  "Chest (thorax): Clavicle (right)"
-* #7.3.L  "Chest (thorax): Clavicle (left)"
-* #7.3.B  "Chest (thorax): Clavicle (bilateral)"
-* #7.3.1  "Chest (thorax): Clavicle - Whole clavicle"
-* #7.3.2  "Chest (thorax): Clavicle - Medial clavicle"
-* #7.3.2.R  "Chest (thorax): Clavicle - Medial clavicle (right)"
-* #7.3.2.L  "Chest (thorax): Clavicle - Medial clavicle (left)"
-* #7.3.2.B  "Chest (thorax): Clavicle - Medial clavicle (bilateral)"
-* #7.3.3  "Chest (thorax): Clavicle - Lateral clavicle"
-* #7.3.3.R  "Chest (thorax): Clavicle - Lateral clavicle (right)"
-* #7.3.3.L  "Chest (thorax): Clavicle - Lateral clavicle (left)"
-* #7.3.3.B  "Chest (thorax): Clavicle - Lateral clavicle (bilateral)"
-* #7.4  "Chest (thorax): Sternum"
-* #7.4.1  "Chest (thorax): Sternum - Whole sternum"
-* #7.4.2  "Chest (thorax): Sternum - Upper sternum"
-* #7.4.3  "Chest (thorax): Sternum - Lower sternum"
-* #7.4.98  "Chest (thorax): Sternum - Other specified"
-* #7.4.99  "Chest (thorax): Sternum - Unspecified"
-* #7.5  "Chest (thorax): Scapula"
-* #7.5.R  "Chest (thorax): Scapula (right)"
-* #7.5.L  "Chest (thorax): Scapula (left)"
-* #7.5.B  "Chest (thorax): Scapula (bilateral)"
-* #7.5.1  "Chest (thorax): Scapula - Whole scapula"
-* #7.5.2  "Chest (thorax): Scapula - Upper scapula"
-* #7.5.2.R  "Chest (thorax): Scapula - Upper scapula (right)"
-* #7.5.2.L  "Chest (thorax): Scapula - Upper scapula (left)"
-* #7.5.2.B  "Chest (thorax): Scapula - Upper scapula (bilateral)"
-* #7.5.3  "Chest (thorax): Scapula - Lower scapula"
-* #7.5.3.R  "Chest (thorax): Scapula - Lower scapula (right)"
-* #7.5.3.L  "Chest (thorax): Scapula - Lower scapula (left)"
-* #7.5.3.B  "Chest (thorax): Scapula - Lower scapula (bilateral)"
-* #7.5.98  "Chest (thorax): Scapula - Other specified"
-* #7.5.99  "Chest (thorax): Scapula - Unspecified"
-* #7.6  "Chest (thorax): Mediastinum"
-* #7.6.1  "Chest (thorax): Mediastinum - Whole mediastinum"
-* #7.6.2  "Chest (thorax): Mediastinum - Upper mediastinum"
-* #7.6.2.R  "Chest (thorax): Mediastinum - Upper mediastinum (right)"
-* #7.6.2.L  "Chest (thorax): Mediastinum - Upper mediastinum (left)"
-* #7.6.3  "Chest (thorax): Mediastinum - Lower mediastinum"
-* #7.6.3.R  "Chest (thorax): Mediastinum - Lower mediastinum (right)"
-* #7.6.3.L  "Chest (thorax): Mediastinum - Lower mediastinum (left)"
-* #7.6.98  "Chest (thorax): Mediastinum - Other specified"
-* #7.6.99  "Chest (thorax): Mediastinum - Unspecified"
-* #7.7  "Chest (thorax): Thymus"
-* #7.7.R  "Chest (thorax): Thymus (right)"
-* #7.7.L  "Chest (thorax): Thymus (left)"
-* #7.7.B  "Chest (thorax): Thymus (bilateral)"
-* #7.8  "Chest (thorax): Oesophagus"
-* #7.9  "Chest (thorax): Trachea"
-* #7.10  "Chest (thorax): Carina"
-* #7.11  "Chest (thorax): Lung"
-* #7.11.R  "Chest (thorax): Lung (right)"
-* #7.11.L  "Chest (thorax): Lung (left)"
-* #7.11.B  "Chest (thorax): Lung (bilateral)"
-* #7.11.1  "Chest (thorax): Lung - Whole lung"
-* #7.11.2  "Chest (thorax): Lung - Lung upper zone"
-* #7.11.2.R  "Chest (thorax): Lung - Lung upper zone (right)"
-* #7.11.2.L  "Chest (thorax): Lung - Lung upper zone (left)"
-* #7.11.2.B  "Chest (thorax): Lung - Lung upper zone (bilateral)"
-* #7.11.3  "Chest (thorax): Lung - Lung mid zone"
-* #7.11.3.R  "Chest (thorax): Lung - Lung mid zone (right)"
-* #7.11.3.L  "Chest (thorax): Lung - Lung mid zone (left)"
-* #7.11.3.B  "Chest (thorax): Lung - Lung mid zone (bilateral)"
-* #7.11.4  "Chest (thorax): Lung - Lung lower zone"
-* #7.11.4.R  "Chest (thorax): Lung - Lung lower zone (right)"
-* #7.11.4.L  "Chest (thorax): Lung - Lung lower zone (left)"
-* #7.11.4.B  "Chest (thorax): Lung - Lung lower zone (bilateral)"
-* #7.11.5  "Chest (thorax): Lung - Lung hilum"
-* #7.11.5.R  "Chest (thorax): Lung - Lung hilum (right)"
-* #7.11.5.L  "Chest (thorax): Lung - Lung hilum (left)"
-* #7.11.5.B  "Chest (thorax): Lung - Lung hilum (bilateral)"
-* #7.11.98  "Chest (thorax): Lung - Lung other specified"
-* #7.11.99  "Chest (thorax): Lung - Lung unspecified"
-* #7.12  "Chest (thorax): Heart"
-* #7.12.1  "Chest (thorax): Heart - Whole heart"
-* #7.12.2  "Chest (thorax): Heart - Left ventricle of heart"
-* #7.12.3  "Chest (thorax): Heart - Right ventricle of heart"
-* #7.12.4  "Chest (thorax): Heart - Left atrium of heart,"
-* #7.12.5  "Chest (thorax): Heart - Right atrium of heart"
-* #7.12.6  "Chest (thorax): Heart - Pericardium"
-* #7.13  "Chest (thorax): Breast"
-* #7.13.R  "Chest (thorax): Breast (right)"
-* #7.13.L  "Chest (thorax): Breast (left)"
-* #7.13.B  "Chest (thorax): Breast (bilateral)"
-* #7.13.1  "Chest (thorax): Breast - Whole Breast"
-* #7.13.2  "Chest (thorax): Breast - Nipple"
-* #7.13.2.R  "Chest (thorax): Breast - Nipple (right)"
-* #7.13.2.L  "Chest (thorax): Breast - Nipple (left)"
-* #7.13.2.B  "Chest (thorax): Breast - Nipple (bilateral)"
-* #7.13.3  "Chest (thorax): Breast - Areola"
-* #7.13.3.R  "Chest (thorax): Breast - Areola (right)"
-* #7.13.3.L  "Chest (thorax): Breast - Areola (left)"
-* #7.13.3.B  "Chest (thorax): Breast - Areola (bilateral)"
-* #7.13.4  "Chest (thorax): Breast - Breast bud (in male or prepubertal female)"
-* #7.13.4.R  "Chest (thorax): Breast - Breast bud (in male or prepubertal female) (right)"
-* #7.13.4.L  "Chest (thorax): Breast - Breast bud (in male or prepubertal female) (left)"
-* #7.13.4.B  "Chest (thorax): Breast - Breast bud (in male or prepubertal female) (bilateral)"
-* #7.13.5  "Chest (thorax): Breast - Upper outer quadrant"
-* #7.13.5.R  "Chest (thorax): Breast - Upper outer quadrant (right)"
-* #7.13.5.L  "Chest (thorax): Breast - Upper outer quadrant (left)"
-* #7.13.5.B  "Chest (thorax): Breast - Upper outer quadrant (bilateral)"
-* #7.13.6  "Chest (thorax): Breast - Upper inner quadrant"
-* #7.13.6.R  "Chest (thorax): Breast - Upper inner quadrant (right)"
-* #7.13.6.L  "Chest (thorax): Breast - Upper inner quadrant (left)"
-* #7.13.6.B  "Chest (thorax): Breast - Upper inner quadrant (bilateral)"
-* #7.13.7  "Chest (thorax): Breast - Lower outer quadrant"
-* #7.13.7.R  "Chest (thorax): Breast - Lower outer quadrant (right)"
-* #7.13.7.L  "Chest (thorax): Breast - Lower outer quadrant (left)"
-* #7.13.7.B  "Chest (thorax): Breast - Lower outer quadrant (bilateral)"
-* #7.13.8  "Chest (thorax): Breast - Lower inner quadrant"
-* #7.13.8.R  "Chest (thorax): Breast - Lower inner quadrant (right)"
-* #7.13.8.L  "Chest (thorax): Breast - Lower inner quadrant (left)"
-* #7.13.8.B  "Chest (thorax): Breast - Lower inner quadrant (bilateral)"
-* #7.14  "Chest (thorax): Aorta"
-* #7.14.1  "Chest (thorax): Aorta - Whole aorta above diaphragm"
-* #7.14.2  "Chest (thorax): Aorta - Ascending aorta"
-* #7.14.3  "Chest (thorax): Aorta - Arch of aorta"
-* #7.14.4  "Chest (thorax): Aorta - Descending aorta above diaphragm"
-* #7.15  "Chest (thorax): Axilla"
-* #7.15.R  "Chest (thorax): Axilla (right)"
-* #7.15.L  "Chest (thorax): Axilla (left)"
-* #7.15.B  "Chest (thorax): Axilla (bilateral)"
-* #7.16  "Chest (thorax): Paraspinal"
-* #7.16.R  "Chest (thorax): Paraspinal (right)"
-* #7.16.L  "Chest (thorax): Paraspinal (left)"
-* #7.16.B  "Chest (thorax): Paraspinal (bilateral)"
-* #7.16.1  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 1"
-* #7.16.2  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 2"
-* #7.16.3  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 3"
-* #7.16.4  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 4"
-* #7.16.5  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 5"
-* #7.16.6  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 6"
-* #7.16.7  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 7"
-* #7.16.8  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 8"
-* #7.16.9  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 9"
-* #7.16.10  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 10"
-* #7.16.11  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 11"
-* #7.16.12  "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 12"
-* #7.17  "Chest (thorax): Axillary nodes"
-* #7.17.R  "Chest (thorax): Axillary nodes (right)"
-* #7.17.L  "Chest (thorax): Axillary nodes (left)"
-* #7.17.B  "Chest (thorax): Axillary nodes (bilateral)"
-* #7.98  "Chest (thorax): Other specified"
-* #7.99  "Chest (thorax): Unspecified"
-* #8  "Thoraco-Abdominal (area)"
-* #8.1  "Thoraco-Abdominal (area): Paraspinal"
-* #8.1.R  "Thoraco-Abdominal (area): Paraspinal (right)"
-* #8.1.L  "Thoraco-Abdominal (area): Paraspinal (left)"
-* #8.1.B  "Thoraco-Abdominal (area): Paraspinal (bilateral)"
-* #8.1.1  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 1"
-* #8.1.2  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 2"
-* #8.1.3  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 3"
-* #8.1.4  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 4"
-* #8.1.5  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 5"
-* #8.1.6  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 6"
-* #8.1.7  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 7"
-* #8.1.8  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 8"
-* #8.1.9  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 9"
-* #8.1.10  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 10"
-* #8.1.11  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 11"
-* #8.1.12  "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 12"
-* #8.1.13  "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 1"
-* #8.1.14  "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 2"
-* #8.1.15  "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 3"
-* #8.1.16  "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 4"
-* #8.1.17  "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 5"
-* #8.98  "Thoraco-Abdominal (area): Other specified"
-* #8.99  "Thoraco-Abdominal (area): Unspecified"
-* #9  "Abdomen"
-* #9.1  "Abdomen: Whole (upper) abdomen (diaphragm to iliac crests)"
-* #9.2  "Abdomen: Upper quadrant"
-* #9.2.R  "Abdomen: Upper quadrant (right)"
-* #9.2.L  "Abdomen: Upper quadrant (left)"
-* #9.3  "Abdomen: Flank / hemiabdomen (top of diaphragm to iliac crest)"
-* #9.3.R  "Abdomen: Flank / hemiabdomen (top of diaphragm to iliac crest) (right)"
-* #9.3.L  "Abdomen: Flank / hemiabdomen (top of diaphragm to iliac crest) (left)"
-* #9.4  "Abdomen: Kidney"
-* #9.4.R  "Abdomen: Kidney (right)"
-* #9.4.L  "Abdomen: Kidney (left)"
-* #9.4.B  "Abdomen: Kidney (bilateral)"
-* #9.5  "Abdomen: Liver"
-* #9.5.1  "Abdomen: Liver - Whole liver"
-* #9.5.2  "Abdomen: Liver - Right lobe"
-* #9.5.3  "Abdomen: Liver - Left lobe"
-* #9.6  "Abdomen: Spleen"
-* #9.7  "Abdomen: Paraaortic area/nodes"
-* #9.7.R  "Abdomen: Paraaortic area/nodes (right)"
-* #9.7.L  "Abdomen: Paraaortic area/nodes (left)"
-* #9.7.B  "Abdomen: Paraaortic area/nodes (bilateral)"
-* #9.8  "Abdomen: Descending aorta below diaphragm"
-* #9.9  "Abdomen: Paraspinal"
-* #9.9.R  "Abdomen: Paraspinal (right)"
-* #9.9.L  "Abdomen: Paraspinal (left)"
-* #9.9.B  "Abdomen: Paraspinal (bilateral)"
-* #9.9.1  "Abdomen: Paraspinal - Lumbar vertebra 1"
-* #9.9.2  "Abdomen: Paraspinal - Lumbar vertebra 2"
-* #9.9.3  "Abdomen: Paraspinal - Lumbar vertebra 3"
-* #9.9.4  "Abdomen: Paraspinal - Lumbar vertebra 4"
-* #9.9.5  "Abdomen: Paraspinal - Lumbar vertebra 5"
-* #9.98  "Abdomen: Other specified"
-* #9.99  "Abdomen: Unspecified"
-* #10  "Abdomino-Pelvic (area)"
-* #10.1  "Abdomino-Pelvic (area): Whole abdomiopelvic field; (top of diaphragm to inferior pubis)"
-* #10.2  "Abdomino-Pelvic (area): Flank / hemiabdomen; (top of diaphragm to inferior pubis)"
-* #10.3  "Abdomino-Pelvic (area): Paraspinal"
-* #10.3.R  "Abdomino-Pelvic (area): Paraspinal (right)"
-* #10.3.L  "Abdomino-Pelvic (area): Paraspinal (left)"
-* #10.3.B  "Abdomino-Pelvic (area): Paraspinal (bilateral)"
-* #10.3.1  "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 1"
-* #10.3.2  "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 2"
-* #10.3.3  "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 3"
-* #10.3.4  "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 4"
-* #10.3.5  "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 5"
-* #10.3.6  "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 1"
-* #10.3.7  "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 2"
-* #10.3.8  "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 3"
-* #10.3.9  "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 4"
-* #10.3.10  "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 5"
-* #10.3.11  "Abdomino-Pelvic (area): Paraspinal - Cocyx"
-* #10.98  "Abdomino-Pelvic (area): Other specified"
-* #10.99  "Abdomino-Pelvic (area): Unspecified"
-* #11  "Pelvis"
-* #11.1  "Pelvis: Whole Pelvis"
-* #11.2  "Pelvis: Hemi Pelvis"
-* #11.2.R  "Pelvis: Hemi Pelvis (right)"
-* #11.2.L  "Pelvis: Hemi Pelvis (left)"
-* #11.3  "Pelvis: Ovaries"
-* #11.3.R  "Pelvis: Ovaries (right)"
-* #11.3.L  "Pelvis: Ovaries (left)"
-* #11.3.B  "Pelvis: Ovaries (bilateral)"
-* #11.4  "Pelvis: Uterus"
-* #11.5  "Pelvis: Vagina"
-* #11.6  "Pelvis: Prostate"
-* #11.7  "Pelvis: Bladder"
-* #11.8  "Pelvis: Iliac area/nodes"
-* #11.8.R  "Pelvis: Iliac area/nodes (right)"
-* #11.8.L  "Pelvis: Iliac area/nodes (left)"
-* #11.8.B  "Pelvis: Iliac area/nodes (bilateral)"
-* #11.9  "Pelvis: Inguinal area/nodes"
-* #11.9.R  "Pelvis: Inguinal area/nodes (right)"
-* #11.9.L  "Pelvis: Inguinal area/nodes (left)"
-* #11.9.B  "Pelvis: Inguinal area/nodes (bilateral)"
-* #11.10  "Pelvis: Femoral area/nodes"
-* #11.10.R  "Pelvis: Femoral area/nodes (right)"
-* #11.10.L  "Pelvis: Femoral area/nodes (left)"
-* #11.10.B  "Pelvis: Femoral area/nodes (bilateral)"
-* #11.11  "Pelvis: Testicle"
-* #11.11.R  "Pelvis: Testicle (right)"
-* #11.11.L  "Pelvis: Testicle (left)"
-* #11.11.B  "Pelvis: Testicle (bilateral)"
-* #11.98  "Pelvis: Other specified"
-* #11.99  "Pelvis: Unspecified"
-* #13  "Upper limb"
-* #13.1  "Upper limb: Whole upper limb"
-* #13.1.R  "Upper limb: Whole upper limb (right)"
-* #13.1.L  "Upper limb: Whole upper limb (left)"
-* #13.1.B  "Upper limb: Whole upper limb (bilateral)"
-* #13.2  "Upper limb: Shoulder"
-* #13.2.R  "Upper limb: Shoulder (right)"
-* #13.2.L  "Upper limb: Shoulder (left)"
-* #13.2.B  "Upper limb: Shoulder (bilateral)"
-* #13.3  "Upper limb: Arm above elbow"
-* #13.3.R  "Upper limb: Arm above elbow (right)"
-* #13.3.L  "Upper limb: Arm above elbow (left)"
-* #13.3.B  "Upper limb: Arm above elbow (bilateral)"
-* #13.4  "Upper limb: Elbow"
-* #13.4.R  "Upper limb: Elbow (right)"
-* #13.4.L  "Upper limb: Elbow (left)"
-* #13.4.B  "Upper limb: Elbow (bilateral)"
-* #13.5  "Upper limb: Forearm"
-* #13.5.R  "Upper limb: Forearm (right)"
-* #13.5.L  "Upper limb: Forearm (left)"
-* #13.5.B  "Upper limb: Forearm (bilateral)"
-* #13.6  "Upper limb: Wrist"
-* #13.6.R  "Upper limb: Wrist (right)"
-* #13.6.L  "Upper limb: Wrist (left)"
-* #13.6.B  "Upper limb: Wrist (bilateral)"
-* #13.7  "Upper limb: Hand"
-* #13.7.R  "Upper limb: Hand (right)"
-* #13.7.L  "Upper limb: Hand (left)"
-* #13.7.B  "Upper limb: Hand (bilateral)"
-* #13.98  "Upper limb: Other specified"
-* #13.99  "Upper limb: Unspecified"
-* #14  "Lower limb"
-* #14.1  "Lower limb: Whole lower limb"
-* #14.1.R  "Lower limb: Whole lower limb (right)"
-* #14.1.L  "Lower limb: Whole lower limb (left)"
-* #14.1.B  "Lower limb: Whole lower limb (bilateral)"
-* #14.2  "Lower limb: Groin"
-* #14.2.R  "Lower limb: Groin (right)"
-* #14.2.L  "Lower limb: Groin (left)"
-* #14.2.B  "Lower limb: Groin (bilateral)"
-* #14.3  "Lower limb: Leg above the knee"
-* #14.3.R  "Lower limb: Leg above the knee (right)"
-* #14.3.L  "Lower limb: Leg above the knee (left)"
-* #14.3.B  "Lower limb: Leg above the knee (bilateral)"
-* #14.4  "Lower limb: Knee"
-* #14.4.R  "Lower limb: Knee (right)"
-* #14.4.L  "Lower limb: Knee (left)"
-* #14.4.B  "Lower limb: Knee (bilateral)"
-* #14.5  "Lower limb: Leg below the knee"
-* #14.5.R  "Lower limb: Leg below the knee (right)"
-* #14.5.L  "Lower limb: Leg below the knee (left)"
-* #14.5.B  "Lower limb: Leg below the knee (bilateral)"
-* #14.6  "Lower limb: Ankle"
-* #14.6.R  "Lower limb: Ankle (right)"
-* #14.6.L  "Lower limb: Ankle (left)"
-* #14.6.B  "Lower limb: Ankle (bilateral)"
-* #14.7  "Lower limb: Foot"
-* #14.7.R  "Lower limb: Foot (right)"
-* #14.7.L  "Lower limb: Foot (left)"
-* #14.7.B  "Lower limb: Foot (bilateral)"
-* #14.98  "Lower limb: Other specified"
-* #14.99  "Lower limb: Unspecified"
-* #50  "Special sites"
-* #50.50  "Special sites: Total body irradiation (TBI) entire body, includes all radiation sites"
-* #50.51  "Special sites: Upper hemi-body includes all radiation sites above the top of the iliac crests/umbilicus"
-* #50.52  "Special sites: Lower hemi-body includes all radiation sites below the top of the iliac crests/umbilicus"
-* #50.53  "Special sites: Total lymphoid irradiation (TLI) includes mantle and inverted Y + splenic fields"
-* #50.54  "Special sites: Subtotal lymphoid irradiation (STLI) mantle + paraaortic+ splenic fields"
-* #50.55  "Special sites: Extended mantle includes mantle and paraaortic fields"
-* #50.56  "Special sites: Mantle includes bilateral cervical (neck), supraclavicular, mediastinal, hilar and axillary fields"
-* #50.57  "Special sites: Mini-mantle includes bilateral cervical (neck) supraclavicular and axillary fields (excludes mediastinal and lung)"
-* #50.58  "Special sites: Inverted Y includes bilateral paraaortic nodes+ iliac nodes +/- splenic fields"
-* #50.59  "Special sites: Whole Central Nervous System /Cranio-Spinal Irradiation, includes the whole brain and the whole spine"
+Instance: cs-radiotherapy-pcsp
+InstanceOf: CodeSystem
+Usage: #definition
+* url = "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-radiotherapy-pcsp"
+* version = "0.0.1"
+* name = "CsRadiotherapy"
+* title = "Radiotherapy sites"
+* status = #active
+* description = "PancareSurPass radiotherapy sites Code System"
+* content = #complete
+* count = 536
+* concept[0].code = #1
+* concept[=].display = "Brain"
+* concept[=].concept[0].code = #1.1
+* concept[=].concept[=].display = "Brain: Whole brain"
+* concept[=].concept[+].code = #1.2
+* concept[=].concept[=].display = "Brain: Frontal lobe"
+* concept[=].concept[=].concept[0].code = #1.2.R
+* concept[=].concept[=].concept[=].display = "Brain: Frontal lobe (right)"
+* concept[=].concept[=].concept[+].code = #1.2.L
+* concept[=].concept[=].concept[=].display = "Brain: Frontal lobe (left)"
+* concept[=].concept[=].concept[+].code = #1.2.B
+* concept[=].concept[=].concept[=].display = "Brain: Frontal lobe (bilateral)"
+* concept[=].concept[+].code = #1.3
+* concept[=].concept[=].display = "Brain: Temporal lobe"
+* concept[=].concept[=].concept[0].code = #1.3.R
+* concept[=].concept[=].concept[=].display = "Brain: Temporal lobe (right)"
+* concept[=].concept[=].concept[+].code = #1.3.L
+* concept[=].concept[=].concept[=].display = "Brain: Temporal lobe (left)"
+* concept[=].concept[=].concept[+].code = #1.3.B
+* concept[=].concept[=].concept[=].display = "Brain: Temporal lobe (bilateral)"
+* concept[=].concept[+].code = #1.4
+* concept[=].concept[=].display = "Brain: Occipital lobe"
+* concept[=].concept[=].concept[0].code = #1.4.R
+* concept[=].concept[=].concept[=].display = "Brain: Occipital lobe (right)"
+* concept[=].concept[=].concept[+].code = #1.4.L
+* concept[=].concept[=].concept[=].display = "Brain: Occipital lobe (left)"
+* concept[=].concept[=].concept[+].code = #1.4.B
+* concept[=].concept[=].concept[=].display = "Brain: Occipital lobe (bilateral)"
+* concept[=].concept[+].code = #1.5
+* concept[=].concept[=].display = "Brain: Left Ventricle"
+* concept[=].concept[+].code = #1.6
+* concept[=].concept[=].display = "Brain: Right Ventricle"
+* concept[=].concept[+].code = #1.7
+* concept[=].concept[=].display = "Brain: Pituitary"
+* concept[=].concept[+].code = #1.8
+* concept[=].concept[=].display = "Brain: Hypothalamus"
+* concept[=].concept[+].code = #1.9
+* concept[=].concept[=].display = "Brain: III Ventricle"
+* concept[=].concept[+].code = #1.10
+* concept[=].concept[=].display = "Brain: IV Ventricle"
+* concept[=].concept[+].code = #1.11
+* concept[=].concept[=].display = "Brain: Cerebellum"
+* concept[=].concept[=].concept[0].code = #1.11.R
+* concept[=].concept[=].concept[=].display = "Brain: Cerebellum (right)"
+* concept[=].concept[=].concept[+].code = #1.11.L
+* concept[=].concept[=].concept[=].display = "Brain: Cerebellum (left)"
+* concept[=].concept[=].concept[+].code = #1.11.B
+* concept[=].concept[=].concept[=].display = "Brain: Cerebellum (bilateral)"
+* concept[=].concept[+].code = #1.12
+* concept[=].concept[=].display = "Brain: Mesencephalon/midbrain"
+* concept[=].concept[+].code = #1.13
+* concept[=].concept[=].display = "Brain: Pons"
+* concept[=].concept[+].code = #1.14
+* concept[=].concept[=].display = "Brain: Medulla"
+* concept[=].concept[+].code = #1.98
+* concept[=].concept[=].display = "Brain: Other specified"
+* concept[=].concept[+].code = #1.99
+* concept[=].concept[=].display = "Brain: Unspecified"
+* concept[+].code = #2
+* concept[=].display = "Head"
+* concept[=].concept[0].code = #2.1
+* concept[=].concept[=].display = "Head: Orbit/Eye"
+* concept[=].concept[=].concept[0].code = #2.1.R
+* concept[=].concept[=].concept[=].display = "Head: Orbit/Eye (right)"
+* concept[=].concept[=].concept[+].code = #2.1.L
+* concept[=].concept[=].concept[=].display = "Head: Orbit/Eye (left)"
+* concept[=].concept[=].concept[+].code = #2.1.B
+* concept[=].concept[=].concept[=].display = "Head: Orbit/Eye (bilateral)"
+* concept[=].concept[+].code = #2.2
+* concept[=].concept[=].display = "Head: Ear/Infratemporal area"
+* concept[=].concept[=].concept[0].code = #2.2.R
+* concept[=].concept[=].concept[=].display = "Head: Ear/Infratemporal area (right)"
+* concept[=].concept[=].concept[+].code = #2.2.L
+* concept[=].concept[=].concept[=].display = "Head: Ear/Infratemporal area (left)"
+* concept[=].concept[=].concept[+].code = #2.2.B
+* concept[=].concept[=].concept[=].display = "Head: Ear/Infratemporal area (bilateral)"
+* concept[=].concept[+].code = #2.3
+* concept[=].concept[=].display = "Head: Nasopharynx"
+* concept[=].concept[=].concept[0].code = #2.3.R
+* concept[=].concept[=].concept[=].display = "Head: Nasopharynx (right)"
+* concept[=].concept[=].concept[+].code = #2.3.L
+* concept[=].concept[=].concept[=].display = "Head: Nasopharynx (left)"
+* concept[=].concept[=].concept[+].code = #2.3.B
+* concept[=].concept[=].concept[=].display = "Head: Nasopharynx (bilateral)"
+* concept[=].concept[+].code = #2.4
+* concept[=].concept[=].display = "Head: Oropharynx"
+* concept[=].concept[=].concept[0].code = #2.4.R
+* concept[=].concept[=].concept[=].display = "Head: Oropharynx (right)"
+* concept[=].concept[=].concept[+].code = #2.4.L
+* concept[=].concept[=].concept[=].display = "Head: Oropharynx (left)"
+* concept[=].concept[=].concept[+].code = #2.4.B
+* concept[=].concept[=].concept[=].display = "Head: Oropharynx (bilateral)"
+* concept[=].concept[+].code = #2.5
+* concept[=].concept[=].display = "Head: Waldeyer's Ring = nasopharynx + oropharynx"
+* concept[=].concept[=].concept[0].code = #2.5.R
+* concept[=].concept[=].concept[=].display = "Head: Waldeyer's Ring = nasopharynx + oropharynx (right)"
+* concept[=].concept[=].concept[+].code = #2.5.L
+* concept[=].concept[=].concept[=].display = "Head: Waldeyer's Ring = nasopharynx + oropharynx (left)"
+* concept[=].concept[=].concept[+].code = #2.5.B
+* concept[=].concept[=].concept[=].display = "Head: Waldeyer's Ring = nasopharynx + oropharynx (bilateral)"
+* concept[=].concept[+].code = #2.6
+* concept[=].concept[=].display = "Head: Oral cavity"
+* concept[=].concept[=].concept[0].code = #2.6.1
+* concept[=].concept[=].concept[=].display = "Head: Oral cavity - Tongue"
+* concept[=].concept[=].concept[+].code = #2.6.2
+* concept[=].concept[=].concept[=].display = "Head: Oral cavity - Hard palate"
+* concept[=].concept[+].code = #2.7
+* concept[=].concept[=].display = "Head: Hypopharynx"
+* concept[=].concept[+].code = #2.98
+* concept[=].concept[=].display = "Head: Other specified"
+* concept[=].concept[+].code = #2.99
+* concept[=].concept[=].display = "Head: Unspecified"
+* concept[+].code = #3
+* concept[=].display = "Neck"
+* concept[=].concept[0].code = #3.1
+* concept[=].concept[=].display = "Neck: Whole neck"
+* concept[=].concept[+].code = #3.2
+* concept[=].concept[=].display = "Neck: Upper neck"
+* concept[=].concept[=].concept[0].code = #3.2.R
+* concept[=].concept[=].concept[=].display = "Neck: Upper neck (right)"
+* concept[=].concept[=].concept[+].code = #3.2.L
+* concept[=].concept[=].concept[=].display = "Neck: Upper neck (left)"
+* concept[=].concept[=].concept[+].code = #3.2.B
+* concept[=].concept[=].concept[=].display = "Neck: Upper neck (bilateral)"
+* concept[=].concept[+].code = #3.3
+* concept[=].concept[=].display = "Neck: Supraclavicular area"
+* concept[=].concept[=].concept[0].code = #3.3.R
+* concept[=].concept[=].concept[=].display = "Neck: Supraclavicular area (right)"
+* concept[=].concept[=].concept[+].code = #3.3.L
+* concept[=].concept[=].concept[=].display = "Neck: Supraclavicular area (left)"
+* concept[=].concept[=].concept[+].code = #3.3.B
+* concept[=].concept[=].concept[=].display = "Neck: Supraclavicular area (bilateral)"
+* concept[=].concept[+].code = #3.4
+* concept[=].concept[=].display = "Neck: Thyroid"
+* concept[=].concept[+].code = #3.5
+* concept[=].concept[=].display = "Neck: Larinx"
+* concept[=].concept[+].code = #3.6
+* concept[=].concept[=].display = "Neck: Cervical nodes"
+* concept[=].concept[=].concept[0].code = #3.6.R
+* concept[=].concept[=].concept[=].display = "Neck: Cervical nodes (right)"
+* concept[=].concept[=].concept[+].code = #3.6.L
+* concept[=].concept[=].concept[=].display = "Neck: Cervical nodes (left)"
+* concept[=].concept[=].concept[+].code = #3.6.B
+* concept[=].concept[=].concept[=].display = "Neck: Cervical nodes (bilateral)"
+* concept[=].concept[+].code = #3.7
+* concept[=].concept[=].display = "Neck: Supraclavicular nodes"
+* concept[=].concept[=].concept[0].code = #3.7.R
+* concept[=].concept[=].concept[=].display = "Neck: Supraclavicular nodes (right)"
+* concept[=].concept[=].concept[+].code = #3.7.L
+* concept[=].concept[=].concept[=].display = "Neck: Supraclavicular nodes (left)"
+* concept[=].concept[=].concept[+].code = #3.7.B
+* concept[=].concept[=].concept[=].display = "Neck: Supraclavicular nodes (bilateral)"
+* concept[=].concept[+].code = #3.98
+* concept[=].concept[=].display = "Neck: Other specified"
+* concept[=].concept[+].code = #3.99
+* concept[=].concept[=].display = "Neck: Unspecified"
+* concept[+].code = #4
+* concept[=].display = "Spine"
+* concept[=].concept[0].code = #4.1
+* concept[=].concept[=].display = "Spine: Whole spine"
+* concept[=].concept[+].code = #4.2
+* concept[=].concept[=].display = "Spine: Cervical spine"
+* concept[=].concept[=].concept[0].code = #4.2.1
+* concept[=].concept[=].concept[=].display = "Spine: Cervical spine - Cervical vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.2.2
+* concept[=].concept[=].concept[=].display = "Spine: Cervical spine - Cervical vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.2.3
+* concept[=].concept[=].concept[=].display = "Spine: Cervical spine - Cervical vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.2.4
+* concept[=].concept[=].concept[=].display = "Spine: Cervical spine - Cervical vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.2.5
+* concept[=].concept[=].concept[=].display = "Spine: Cervical spine - Cervical vertebra 5"
+* concept[=].concept[=].concept[+].code = #4.2.6
+* concept[=].concept[=].concept[=].display = "Spine: Cervical spine - Cervical vertebra 6"
+* concept[=].concept[=].concept[+].code = #4.2.7
+* concept[=].concept[=].concept[=].display = "Spine: Cervical spine - Cervical vertebra 7"
+* concept[=].concept[+].code = #4.3
+* concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine"
+* concept[=].concept[=].concept[0].code = #4.3.1
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.3.2
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.3.3
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.3.4
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.3.5
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 5"
+* concept[=].concept[=].concept[+].code = #4.3.6
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 6"
+* concept[=].concept[=].concept[+].code = #4.3.7
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 7"
+* concept[=].concept[=].concept[+].code = #4.3.8
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 8"
+* concept[=].concept[=].concept[+].code = #4.3.9
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 9"
+* concept[=].concept[=].concept[+].code = #4.3.10
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 10"
+* concept[=].concept[=].concept[+].code = #4.3.11
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 11"
+* concept[=].concept[=].concept[+].code = #4.3.12
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Dorsal spine - Thoracic / dorsal vertebra 12"
+* concept[=].concept[+].code = #4.4
+* concept[=].concept[=].display = "Spine: Lumbar spine"
+* concept[=].concept[=].concept[0].code = #4.4.1
+* concept[=].concept[=].concept[=].display = "Spine: Lumbar spine - Lumbar vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.4.2
+* concept[=].concept[=].concept[=].display = "Spine: Lumbar spine - Lumbar vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.4.3
+* concept[=].concept[=].concept[=].display = "Spine: Lumbar spine - Lumbar vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.4.4
+* concept[=].concept[=].concept[=].display = "Spine: Lumbar spine - Lumbar vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.4.5
+* concept[=].concept[=].concept[=].display = "Spine: Lumbar spine - Lumbar vertebra 5"
+* concept[=].concept[+].code = #4.5
+* concept[=].concept[=].display = "Spine: Sacral/cocygeal spine"
+* concept[=].concept[=].concept[0].code = #4.5.1
+* concept[=].concept[=].concept[=].display = "Spine: Sacral/cocygeal spine - Sacral vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.5.2
+* concept[=].concept[=].concept[=].display = "Spine: Sacral/cocygeal spine - Sacral vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.5.3
+* concept[=].concept[=].concept[=].display = "Spine: Sacral/cocygeal spine - Sacral vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.5.4
+* concept[=].concept[=].concept[=].display = "Spine: Sacral/cocygeal spine - Sacral vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.5.5
+* concept[=].concept[=].concept[=].display = "Spine: Sacral/cocygeal spine - Sacral vertebra 5"
+* concept[=].concept[=].concept[+].code = #4.5.6
+* concept[=].concept[=].concept[=].display = "Spine: Sacral/cocygeal spine - Cocyx"
+* concept[=].concept[+].code = #4.6
+* concept[=].concept[=].display = "Spine: Cervical / Thoracic spine"
+* concept[=].concept[=].concept[0].code = #4.6.1
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Cervical vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.6.2
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Cervical vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.6.3
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Cervical vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.6.4
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Cervical vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.6.5
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Cervical vertebra 5"
+* concept[=].concept[=].concept[+].code = #4.6.6
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Cervical vertebra 6"
+* concept[=].concept[=].concept[+].code = #4.6.7
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Cervical vertebra 7"
+* concept[=].concept[=].concept[+].code = #4.6.8
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.6.9
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.6.10
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.6.11
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.6.12
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 5"
+* concept[=].concept[=].concept[+].code = #4.6.13
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 6"
+* concept[=].concept[=].concept[+].code = #4.6.14
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 7"
+* concept[=].concept[=].concept[+].code = #4.6.15
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 8"
+* concept[=].concept[=].concept[+].code = #4.6.16
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 9"
+* concept[=].concept[=].concept[+].code = #4.6.17
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 10"
+* concept[=].concept[=].concept[+].code = #4.6.18
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 11"
+* concept[=].concept[=].concept[+].code = #4.6.19
+* concept[=].concept[=].concept[=].display = "Spine: Cervical / Thoracic spine - Thoracic / dorsal vertebra 12"
+* concept[=].concept[+].code = #4.7
+* concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine"
+* concept[=].concept[=].concept[0].code = #4.7.1
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.7.2
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.7.3
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.7.4
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.7.5
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 5"
+* concept[=].concept[=].concept[+].code = #4.7.6
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 6"
+* concept[=].concept[=].concept[+].code = #4.7.7
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 7"
+* concept[=].concept[=].concept[+].code = #4.7.8
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 8"
+* concept[=].concept[=].concept[+].code = #4.7.9
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 9"
+* concept[=].concept[=].concept[+].code = #4.7.10
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 10"
+* concept[=].concept[=].concept[+].code = #4.7.11
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 11"
+* concept[=].concept[=].concept[+].code = #4.7.12
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Thoracic / dorsal vertebra 12"
+* concept[=].concept[=].concept[+].code = #4.7.13
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Lumbar vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.7.14
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Lumbar vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.7.15
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Lumbar vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.7.16
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Lumbar vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.7.17
+* concept[=].concept[=].concept[=].display = "Spine: Thoracic / Abdominal spine - Lumbar vertebra 5"
+* concept[=].concept[+].code = #4.8
+* concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine"
+* concept[=].concept[=].concept[0].code = #4.8.1
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Lumbar vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.8.2
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Lumbar vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.8.3
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Lumbar vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.8.4
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Lumbar vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.8.5
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Lumbar vertebra 5"
+* concept[=].concept[=].concept[+].code = #4.8.6
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Sacral vertebra 1"
+* concept[=].concept[=].concept[+].code = #4.8.7
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Sacral vertebra 2"
+* concept[=].concept[=].concept[+].code = #4.8.8
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Sacral vertebra 3"
+* concept[=].concept[=].concept[+].code = #4.8.9
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Sacral vertebra 4"
+* concept[=].concept[=].concept[+].code = #4.8.10
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Sacral vertebra 5"
+* concept[=].concept[=].concept[+].code = #4.8.11
+* concept[=].concept[=].concept[=].display = "Spine: Abdominal / Pelvic spine - Cocyx"
+* concept[=].concept[+].code = #4.98
+* concept[=].concept[=].display = "Spine: Other specified"
+* concept[=].concept[+].code = #4.99
+* concept[=].concept[=].display = "Spine: Unspecified"
+* concept[+].code = #6
+* concept[=].display = "Cervico-Thoracic (area)"
+* concept[=].concept[0].code = #6.1
+* concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal"
+* concept[=].concept[=].concept[0].code = #6.1.R
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal (right)"
+* concept[=].concept[=].concept[+].code = #6.1.L
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal (left)"
+* concept[=].concept[=].concept[+].code = #6.1.B
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal (bilateral)"
+* concept[=].concept[=].concept[+].code = #6.1.1
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 1"
+* concept[=].concept[=].concept[+].code = #6.1.2
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 2"
+* concept[=].concept[=].concept[+].code = #6.1.3
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 3"
+* concept[=].concept[=].concept[+].code = #6.1.4
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 4"
+* concept[=].concept[=].concept[+].code = #6.1.5
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 5"
+* concept[=].concept[=].concept[+].code = #6.1.6
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 6"
+* concept[=].concept[=].concept[+].code = #6.1.7
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Cervical vertebra 7"
+* concept[=].concept[=].concept[+].code = #6.1.8
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 1"
+* concept[=].concept[=].concept[+].code = #6.1.9
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 2"
+* concept[=].concept[=].concept[+].code = #6.1.10
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 3"
+* concept[=].concept[=].concept[+].code = #6.1.11
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 4"
+* concept[=].concept[=].concept[+].code = #6.1.12
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 5"
+* concept[=].concept[=].concept[+].code = #6.1.13
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 6"
+* concept[=].concept[=].concept[+].code = #6.1.14
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 7"
+* concept[=].concept[=].concept[+].code = #6.1.15
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 8"
+* concept[=].concept[=].concept[+].code = #6.1.16
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 9"
+* concept[=].concept[=].concept[+].code = #6.1.17
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 10"
+* concept[=].concept[=].concept[+].code = #6.1.18
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 11"
+* concept[=].concept[=].concept[+].code = #6.1.19
+* concept[=].concept[=].concept[=].display = "Cervico-Thoracic (area): Paraspinal - Thoracic / dorsal vertebra 12"
+* concept[=].concept[+].code = #6.98
+* concept[=].concept[=].display = "Cervico-Thoracic (area): Other specified"
+* concept[=].concept[+].code = #6.99
+* concept[=].concept[=].display = "Cervico-Thoracic (area): Unspecified"
+* concept[+].code = #7
+* concept[=].display = "Chest (thorax)"
+* concept[=].concept[0].code = #7.1
+* concept[=].concept[=].display = "Chest (thorax): Whole chest (thorax)"
+* concept[=].concept[+].code = #7.2
+* concept[=].concept[=].display = "Chest (thorax): Ribs"
+* concept[=].concept[=].concept[0].code = #7.2.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs (right)"
+* concept[=].concept[=].concept[+].code = #7.2.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs (left)"
+* concept[=].concept[=].concept[+].code = #7.2.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.2.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 1"
+* concept[=].concept[=].concept[+].code = #7.2.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 2"
+* concept[=].concept[=].concept[+].code = #7.2.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 3"
+* concept[=].concept[=].concept[+].code = #7.2.4
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 4"
+* concept[=].concept[=].concept[+].code = #7.2.5
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 5"
+* concept[=].concept[=].concept[+].code = #7.2.6
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 6"
+* concept[=].concept[=].concept[+].code = #7.2.7
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 7"
+* concept[=].concept[=].concept[+].code = #7.2.8
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 8"
+* concept[=].concept[=].concept[+].code = #7.2.9
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 9"
+* concept[=].concept[=].concept[+].code = #7.2.10
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 10"
+* concept[=].concept[=].concept[+].code = #7.2.11
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 11"
+* concept[=].concept[=].concept[+].code = #7.2.12
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Ribs - Rib 12"
+* concept[=].concept[+].code = #7.3
+* concept[=].concept[=].display = "Chest (thorax): Clavicle"
+* concept[=].concept[=].concept[0].code = #7.3.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle (right)"
+* concept[=].concept[=].concept[+].code = #7.3.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle (left)"
+* concept[=].concept[=].concept[+].code = #7.3.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.3.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Whole clavicle"
+* concept[=].concept[=].concept[+].code = #7.3.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Medial clavicle"
+* concept[=].concept[=].concept[+].code = #7.3.2.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Medial clavicle (right)"
+* concept[=].concept[=].concept[+].code = #7.3.2.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Medial clavicle (left)"
+* concept[=].concept[=].concept[+].code = #7.3.2.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Medial clavicle (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.3.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Lateral clavicle"
+* concept[=].concept[=].concept[+].code = #7.3.3.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Lateral clavicle (right)"
+* concept[=].concept[=].concept[+].code = #7.3.3.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Lateral clavicle (left)"
+* concept[=].concept[=].concept[+].code = #7.3.3.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Clavicle - Lateral clavicle (bilateral)"
+* concept[=].concept[+].code = #7.4
+* concept[=].concept[=].display = "Chest (thorax): Sternum"
+* concept[=].concept[=].concept[0].code = #7.4.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Sternum - Whole sternum"
+* concept[=].concept[=].concept[+].code = #7.4.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Sternum - Upper sternum"
+* concept[=].concept[=].concept[+].code = #7.4.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Sternum - Lower sternum"
+* concept[=].concept[=].concept[+].code = #7.4.98
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Sternum - Other specified"
+* concept[=].concept[=].concept[+].code = #7.4.99
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Sternum - Unspecified"
+* concept[=].concept[+].code = #7.5
+* concept[=].concept[=].display = "Chest (thorax): Scapula"
+* concept[=].concept[=].concept[0].code = #7.5.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula (right)"
+* concept[=].concept[=].concept[+].code = #7.5.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula (left)"
+* concept[=].concept[=].concept[+].code = #7.5.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.5.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Whole scapula"
+* concept[=].concept[=].concept[+].code = #7.5.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Upper scapula"
+* concept[=].concept[=].concept[+].code = #7.5.2.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Upper scapula (right)"
+* concept[=].concept[=].concept[+].code = #7.5.2.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Upper scapula (left)"
+* concept[=].concept[=].concept[+].code = #7.5.2.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Upper scapula (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.5.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Lower scapula"
+* concept[=].concept[=].concept[+].code = #7.5.3.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Lower scapula (right)"
+* concept[=].concept[=].concept[+].code = #7.5.3.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Lower scapula (left)"
+* concept[=].concept[=].concept[+].code = #7.5.3.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Lower scapula (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.5.98
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Other specified"
+* concept[=].concept[=].concept[+].code = #7.5.99
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Scapula - Unspecified"
+* concept[=].concept[+].code = #7.6
+* concept[=].concept[=].display = "Chest (thorax): Mediastinum"
+* concept[=].concept[=].concept[0].code = #7.6.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Whole mediastinum"
+* concept[=].concept[=].concept[+].code = #7.6.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Upper mediastinum"
+* concept[=].concept[=].concept[+].code = #7.6.2.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Upper mediastinum (right)"
+* concept[=].concept[=].concept[+].code = #7.6.2.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Upper mediastinum (left)"
+* concept[=].concept[=].concept[+].code = #7.6.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Lower mediastinum"
+* concept[=].concept[=].concept[+].code = #7.6.3.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Lower mediastinum (right)"
+* concept[=].concept[=].concept[+].code = #7.6.3.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Lower mediastinum (left)"
+* concept[=].concept[=].concept[+].code = #7.6.98
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Other specified"
+* concept[=].concept[=].concept[+].code = #7.6.99
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Mediastinum - Unspecified"
+* concept[=].concept[+].code = #7.7
+* concept[=].concept[=].display = "Chest (thorax): Thymus"
+* concept[=].concept[=].concept[0].code = #7.7.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Thymus (right)"
+* concept[=].concept[=].concept[+].code = #7.7.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Thymus (left)"
+* concept[=].concept[=].concept[+].code = #7.7.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Thymus (bilateral)"
+* concept[=].concept[+].code = #7.8
+* concept[=].concept[=].display = "Chest (thorax): Oesophagus"
+* concept[=].concept[+].code = #7.9
+* concept[=].concept[=].display = "Chest (thorax): Trachea"
+* concept[=].concept[+].code = #7.10
+* concept[=].concept[=].display = "Chest (thorax): Carina"
+* concept[=].concept[+].code = #7.11
+* concept[=].concept[=].display = "Chest (thorax): Lung"
+* concept[=].concept[=].concept[0].code = #7.11.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung (right)"
+* concept[=].concept[=].concept[+].code = #7.11.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung (left)"
+* concept[=].concept[=].concept[+].code = #7.11.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.11.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Whole lung"
+* concept[=].concept[=].concept[+].code = #7.11.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung upper zone"
+* concept[=].concept[=].concept[=].concept[0].code = #7.11.2.R
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung upper zone (right)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.11.2.L
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung upper zone (left)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.11.2.B
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung upper zone (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.11.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung mid zone"
+* concept[=].concept[=].concept[=].concept[0].code = #7.11.3.R
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung mid zone (right)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.11.3.L
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung mid zone (left)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.11.3.B
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung mid zone (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.11.4
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung lower zone"
+* concept[=].concept[=].concept[=].concept[0].code = #7.11.4.R
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung lower zone (right)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.11.4.L
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung lower zone (left)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.11.4.B
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung lower zone (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.11.5
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung hilum"
+* concept[=].concept[=].concept[=].concept[0].code = #7.11.5.R
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung hilum (right)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.11.5.L
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung hilum (left)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.11.5.B
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung hilum (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.11.98
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung other specified"
+* concept[=].concept[=].concept[+].code = #7.11.99
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Lung - Lung unspecified"
+* concept[=].concept[+].code = #7.12
+* concept[=].concept[=].display = "Chest (thorax): Heart"
+* concept[=].concept[=].concept[0].code = #7.12.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Heart - Whole heart"
+* concept[=].concept[=].concept[+].code = #7.12.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Heart - Left ventricle of heart"
+* concept[=].concept[=].concept[+].code = #7.12.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Heart - Right ventricle of heart"
+* concept[=].concept[=].concept[+].code = #7.12.4
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Heart - Left atrium of heart,"
+* concept[=].concept[=].concept[+].code = #7.12.5
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Heart - Right atrium of heart"
+* concept[=].concept[=].concept[+].code = #7.12.6
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Heart - Pericardium"
+* concept[=].concept[+].code = #7.13
+* concept[=].concept[=].display = "Chest (thorax): Breast"
+* concept[=].concept[=].concept[0].code = #7.13.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast (right)"
+* concept[=].concept[=].concept[+].code = #7.13.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast (left)"
+* concept[=].concept[=].concept[+].code = #7.13.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast (bilateral)"
+* concept[=].concept[+].code = #7.13.1
+* concept[=].concept[=].display = "Chest (thorax): Breast - Whole Breast"
+* concept[=].concept[+].code = #7.13.2
+* concept[=].concept[=].display = "Chest (thorax): Breast - Nipple"
+* concept[=].concept[=].concept[0].code = #7.13.2.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Nipple (right)"
+* concept[=].concept[=].concept[+].code = #7.13.2.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Nipple (left)"
+* concept[=].concept[=].concept[+].code = #7.13.2.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Nipple (bilateral)"
+* concept[=].concept[+].code = #7.13.3
+* concept[=].concept[=].display = "Chest (thorax): Breast - Areola"
+* concept[=].concept[=].concept[0].code = #7.13.3.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Areola (right)"
+* concept[=].concept[=].concept[+].code = #7.13.3.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Areola (left)"
+* concept[=].concept[=].concept[+].code = #7.13.3.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Areola (bilateral)"
+* concept[=].concept[+].code = #7.13.4
+* concept[=].concept[=].display = "Chest (thorax): Breast - Breast bud (in male or prepubertal female)"
+* concept[=].concept[=].concept[0].code = #7.13.4.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Breast bud (in male or prepubertal female) (right)"
+* concept[=].concept[=].concept[+].code = #7.13.4.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Breast bud (in male or prepubertal female) (left)"
+* concept[=].concept[=].concept[+].code = #7.13.4.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Breast bud (in male or prepubertal female) (bilateral)"
+* concept[=].concept[+].code = #7.13.5
+* concept[=].concept[=].display = "Chest (thorax): Breast - Upper outer quadrant"
+* concept[=].concept[=].concept[0].code = #7.13.5.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Upper outer quadrant (right)"
+* concept[=].concept[=].concept[+].code = #7.13.5.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Upper outer quadrant (left)"
+* concept[=].concept[=].concept[+].code = #7.13.5.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Upper outer quadrant (bilateral)"
+* concept[=].concept[+].code = #7.13.6
+* concept[=].concept[=].display = "Chest (thorax): Breast - Upper inner quadrant"
+* concept[=].concept[=].concept[0].code = #7.13.6.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Upper inner quadrant (right)"
+* concept[=].concept[=].concept[+].code = #7.13.6.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Upper inner quadrant (left)"
+* concept[=].concept[=].concept[+].code = #7.13.6.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Upper inner quadrant (bilateral)"
+* concept[=].concept[+].code = #7.13.7
+* concept[=].concept[=].display = "Chest (thorax): Breast - Lower outer quadrant"
+* concept[=].concept[=].concept[0].code = #7.13.7.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Lower outer quadrant (right)"
+* concept[=].concept[=].concept[+].code = #7.13.7.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Lower outer quadrant (left)"
+* concept[=].concept[=].concept[+].code = #7.13.7.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Lower outer quadrant (bilateral)"
+* concept[=].concept[+].code = #7.13.8
+* concept[=].concept[=].display = "Chest (thorax): Breast - Lower inner quadrant"
+* concept[=].concept[=].concept[0].code = #7.13.8.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Lower inner quadrant (right)"
+* concept[=].concept[=].concept[+].code = #7.13.8.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Lower inner quadrant (left)"
+* concept[=].concept[=].concept[+].code = #7.13.8.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Breast - Lower inner quadrant (bilateral)"
+* concept[=].concept[+].code = #7.14
+* concept[=].concept[=].display = "Chest (thorax): Aorta"
+* concept[=].concept[=].concept[0].code = #7.14.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Aorta - Whole aorta above diaphragm"
+* concept[=].concept[=].concept[+].code = #7.14.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Aorta - Ascending aorta"
+* concept[=].concept[=].concept[+].code = #7.14.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Aorta - Arch of aorta"
+* concept[=].concept[=].concept[+].code = #7.14.4
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Aorta - Descending aorta above diaphragm"
+* concept[=].concept[=].concept[+].code = #7.15
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Axilla"
+* concept[=].concept[=].concept[=].concept[0].code = #7.15.R
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Axilla (right)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.15.L
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Axilla (left)"
+* concept[=].concept[=].concept[=].concept[+].code = #7.15.B
+* concept[=].concept[=].concept[=].concept[=].display = "Chest (thorax): Axilla (bilateral)"
+* concept[=].concept[+].code = #7.16
+* concept[=].concept[=].display = "Chest (thorax): Paraspinal"
+* concept[=].concept[=].concept[0].code = #7.16.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal (right)"
+* concept[=].concept[=].concept[+].code = #7.16.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal (left)"
+* concept[=].concept[=].concept[+].code = #7.16.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal (bilateral)"
+* concept[=].concept[=].concept[+].code = #7.16.1
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 1"
+* concept[=].concept[=].concept[+].code = #7.16.2
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 2"
+* concept[=].concept[=].concept[+].code = #7.16.3
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 3"
+* concept[=].concept[=].concept[+].code = #7.16.4
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 4"
+* concept[=].concept[=].concept[+].code = #7.16.5
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 5"
+* concept[=].concept[=].concept[+].code = #7.16.6
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 6"
+* concept[=].concept[=].concept[+].code = #7.16.7
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 7"
+* concept[=].concept[=].concept[+].code = #7.16.8
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 8"
+* concept[=].concept[=].concept[+].code = #7.16.9
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 9"
+* concept[=].concept[=].concept[+].code = #7.16.10
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 10"
+* concept[=].concept[=].concept[+].code = #7.16.11
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 11"
+* concept[=].concept[=].concept[+].code = #7.16.12
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Paraspinal - Thoracic / dorsal vertebra 12"
+* concept[=].concept[+].code = #7.17
+* concept[=].concept[=].display = "Chest (thorax): Axillary nodes"
+* concept[=].concept[=].concept[0].code = #7.17.R
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Axillary nodes (right)"
+* concept[=].concept[=].concept[+].code = #7.17.L
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Axillary nodes (left)"
+* concept[=].concept[=].concept[+].code = #7.17.B
+* concept[=].concept[=].concept[=].display = "Chest (thorax): Axillary nodes (bilateral)"
+* concept[=].concept[+].code = #7.98
+* concept[=].concept[=].display = "Chest (thorax): Other specified"
+* concept[=].concept[+].code = #7.99
+* concept[=].concept[=].display = "Chest (thorax): Unspecified"
+* concept[+].code = #8
+* concept[=].display = "Thoraco-Abdominal (area)"
+* concept[=].concept[0].code = #8.1
+* concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal"
+* concept[=].concept[=].concept[0].code = #8.1.R
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal (right)"
+* concept[=].concept[=].concept[+].code = #8.1.L
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal (left)"
+* concept[=].concept[=].concept[+].code = #8.1.B
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal (bilateral)"
+* concept[=].concept[=].concept[+].code = #8.1.1
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 1"
+* concept[=].concept[=].concept[+].code = #8.1.2
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 2"
+* concept[=].concept[=].concept[+].code = #8.1.3
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 3"
+* concept[=].concept[=].concept[+].code = #8.1.4
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 4"
+* concept[=].concept[=].concept[+].code = #8.1.5
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 5"
+* concept[=].concept[=].concept[+].code = #8.1.6
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 6"
+* concept[=].concept[=].concept[+].code = #8.1.7
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 7"
+* concept[=].concept[=].concept[+].code = #8.1.8
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 8"
+* concept[=].concept[=].concept[+].code = #8.1.9
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 9"
+* concept[=].concept[=].concept[+].code = #8.1.10
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 10"
+* concept[=].concept[=].concept[+].code = #8.1.11
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 11"
+* concept[=].concept[=].concept[+].code = #8.1.12
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 12"
+* concept[=].concept[=].concept[+].code = #8.1.13
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 1"
+* concept[=].concept[=].concept[+].code = #8.1.14
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 2"
+* concept[=].concept[=].concept[+].code = #8.1.15
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 3"
+* concept[=].concept[=].concept[+].code = #8.1.16
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 4"
+* concept[=].concept[=].concept[+].code = #8.1.17
+* concept[=].concept[=].concept[=].display = "Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 5"
+* concept[=].concept[+].code = #8.98
+* concept[=].concept[=].display = "Thoraco-Abdominal (area): Other specified"
+* concept[=].concept[+].code = #8.99
+* concept[=].concept[=].display = "Thoraco-Abdominal (area): Unspecified"
+* concept[+].code = #9
+* concept[=].display = "Abdomen"
+* concept[=].concept[0].code = #9.1
+* concept[=].concept[=].display = "Abdomen: Whole (upper) abdomen (diaphragm to iliac crests)"
+* concept[=].concept[+].code = #9.2
+* concept[=].concept[=].display = "Abdomen: Upper quadrant"
+* concept[=].concept[=].concept[0].code = #9.2.R
+* concept[=].concept[=].concept[=].display = "Abdomen: Upper quadrant (right)"
+* concept[=].concept[=].concept[+].code = #9.2.L
+* concept[=].concept[=].concept[=].display = "Abdomen: Upper quadrant (left)"
+* concept[=].concept[+].code = #9.3
+* concept[=].concept[=].display = "Abdomen: Flank / hemiabdomen (top of diaphragm to iliac crest)"
+* concept[=].concept[=].concept[0].code = #9.3.R
+* concept[=].concept[=].concept[=].display = "Abdomen: Flank / hemiabdomen (top of diaphragm to iliac crest) (right)"
+* concept[=].concept[=].concept[+].code = #9.3.L
+* concept[=].concept[=].concept[=].display = "Abdomen: Flank / hemiabdomen (top of diaphragm to iliac crest) (left)"
+* concept[=].concept[+].code = #9.4
+* concept[=].concept[=].display = "Abdomen: Kidney"
+* concept[=].concept[=].concept[0].code = #9.4.R
+* concept[=].concept[=].concept[=].display = "Abdomen: Kidney (right)"
+* concept[=].concept[=].concept[+].code = #9.4.L
+* concept[=].concept[=].concept[=].display = "Abdomen: Kidney (left)"
+* concept[=].concept[=].concept[+].code = #9.4.B
+* concept[=].concept[=].concept[=].display = "Abdomen: Kidney (bilateral)"
+* concept[=].concept[+].code = #9.5
+* concept[=].concept[=].display = "Abdomen: Liver"
+* concept[=].concept[=].concept[0].code = #9.5.1
+* concept[=].concept[=].concept[=].display = "Abdomen: Liver - Whole liver"
+* concept[=].concept[=].concept[+].code = #9.5.2
+* concept[=].concept[=].concept[=].display = "Abdomen: Liver - Right lobe"
+* concept[=].concept[=].concept[+].code = #9.5.3
+* concept[=].concept[=].concept[=].display = "Abdomen: Liver - Left lobe"
+* concept[=].concept[+].code = #9.6
+* concept[=].concept[=].display = "Abdomen: Spleen"
+* concept[=].concept[+].code = #9.7
+* concept[=].concept[=].display = "Abdomen: Paraaortic area/nodes"
+* concept[=].concept[=].concept[0].code = #9.7.R
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraaortic area/nodes (right)"
+* concept[=].concept[=].concept[+].code = #9.7.L
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraaortic area/nodes (left)"
+* concept[=].concept[=].concept[+].code = #9.7.B
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraaortic area/nodes (bilateral)"
+* concept[=].concept[+].code = #9.8
+* concept[=].concept[=].display = "Abdomen: Descending aorta below diaphragm"
+* concept[=].concept[+].code = #9.9
+* concept[=].concept[=].display = "Abdomen: Paraspinal"
+* concept[=].concept[=].concept[0].code = #9.9.R
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraspinal (right)"
+* concept[=].concept[=].concept[+].code = #9.9.L
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraspinal (left)"
+* concept[=].concept[=].concept[+].code = #9.9.B
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraspinal (bilateral)"
+* concept[=].concept[=].concept[+].code = #9.9.1
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraspinal - Lumbar vertebra 1"
+* concept[=].concept[=].concept[+].code = #9.9.2
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraspinal - Lumbar vertebra 2"
+* concept[=].concept[=].concept[+].code = #9.9.3
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraspinal - Lumbar vertebra 3"
+* concept[=].concept[=].concept[+].code = #9.9.4
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraspinal - Lumbar vertebra 4"
+* concept[=].concept[=].concept[+].code = #9.9.5
+* concept[=].concept[=].concept[=].display = "Abdomen: Paraspinal - Lumbar vertebra 5"
+* concept[=].concept[+].code = #9.98
+* concept[=].concept[=].display = "Abdomen: Other specified"
+* concept[=].concept[+].code = #9.99
+* concept[=].concept[=].display = "Abdomen: Unspecified"
+* concept[+].code = #10
+* concept[=].display = "Abdomino-Pelvic (area)"
+* concept[=].concept[0].code = #10.1
+* concept[=].concept[=].display = "Abdomino-Pelvic (area): Whole abdomiopelvic field; (top of diaphragm to inferior pubis)"
+* concept[=].concept[+].code = #10.2
+* concept[=].concept[=].display = "Abdomino-Pelvic (area): Flank / hemiabdomen; (top of diaphragm to inferior pubis)"
+* concept[=].concept[+].code = #10.3
+* concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal"
+* concept[=].concept[=].concept[0].code = #10.3.R
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal (right)"
+* concept[=].concept[=].concept[+].code = #10.3.L
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal (left)"
+* concept[=].concept[=].concept[+].code = #10.3.B
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal (bilateral)"
+* concept[=].concept[=].concept[+].code = #10.3.1
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 1"
+* concept[=].concept[=].concept[+].code = #10.3.2
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 2"
+* concept[=].concept[=].concept[+].code = #10.3.3
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 3"
+* concept[=].concept[=].concept[+].code = #10.3.4
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 4"
+* concept[=].concept[=].concept[+].code = #10.3.5
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Lumbar vertebra 5"
+* concept[=].concept[=].concept[+].code = #10.3.6
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 1"
+* concept[=].concept[=].concept[+].code = #10.3.7
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 2"
+* concept[=].concept[=].concept[+].code = #10.3.8
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 3"
+* concept[=].concept[=].concept[+].code = #10.3.9
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 4"
+* concept[=].concept[=].concept[+].code = #10.3.10
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Sacral vertebra 5"
+* concept[=].concept[=].concept[+].code = #10.3.11
+* concept[=].concept[=].concept[=].display = "Abdomino-Pelvic (area): Paraspinal - Cocyx"
+* concept[=].concept[+].code = #10.98
+* concept[=].concept[=].display = "Abdomino-Pelvic (area): Other specified"
+* concept[=].concept[+].code = #10.99
+* concept[=].concept[=].display = "Abdomino-Pelvic (area): Unspecified"
+* concept[+].code = #11
+* concept[=].display = "Pelvis"
+* concept[=].concept[0].code = #11.1
+* concept[=].concept[=].display = "Pelvis: Whole Pelvis"
+* concept[=].concept[+].code = #11.2
+* concept[=].concept[=].display = "Pelvis: Hemi Pelvis"
+* concept[=].concept[=].concept[0].code = #11.2.R
+* concept[=].concept[=].concept[=].display = "Pelvis: Hemi Pelvis (right)"
+* concept[=].concept[=].concept[+].code = #11.2.L
+* concept[=].concept[=].concept[=].display = "Pelvis: Hemi Pelvis (left)"
+* concept[=].concept[+].code = #11.3
+* concept[=].concept[=].display = "Pelvis: Ovaries"
+* concept[=].concept[=].concept[0].code = #11.3.R
+* concept[=].concept[=].concept[=].display = "Pelvis: Ovaries (right)"
+* concept[=].concept[=].concept[+].code = #11.3.L
+* concept[=].concept[=].concept[=].display = "Pelvis: Ovaries (left)"
+* concept[=].concept[=].concept[+].code = #11.3.B
+* concept[=].concept[=].concept[=].display = "Pelvis: Ovaries (bilateral)"
+* concept[=].concept[+].code = #11.4
+* concept[=].concept[=].display = "Pelvis: Uterus"
+* concept[=].concept[+].code = #11.5
+* concept[=].concept[=].display = "Pelvis: Vagina"
+* concept[=].concept[+].code = #11.6
+* concept[=].concept[=].display = "Pelvis: Prostate"
+* concept[=].concept[+].code = #11.7
+* concept[=].concept[=].display = "Pelvis: Bladder"
+* concept[=].concept[+].code = #11.8
+* concept[=].concept[=].display = "Pelvis: Iliac area/nodes"
+* concept[=].concept[=].concept[0].code = #11.8.R
+* concept[=].concept[=].concept[=].display = "Pelvis: Iliac area/nodes (right)"
+* concept[=].concept[=].concept[+].code = #11.8.L
+* concept[=].concept[=].concept[=].display = "Pelvis: Iliac area/nodes (left)"
+* concept[=].concept[=].concept[+].code = #11.8.B
+* concept[=].concept[=].concept[=].display = "Pelvis: Iliac area/nodes (bilateral)"
+* concept[=].concept[+].code = #11.9
+* concept[=].concept[=].display = "Pelvis: Inguinal area/nodes"
+* concept[=].concept[=].concept[0].code = #11.9.R
+* concept[=].concept[=].concept[=].display = "Pelvis: Inguinal area/nodes (right)"
+* concept[=].concept[=].concept[+].code = #11.9.L
+* concept[=].concept[=].concept[=].display = "Pelvis: Inguinal area/nodes (left)"
+* concept[=].concept[=].concept[+].code = #11.9.B
+* concept[=].concept[=].concept[=].display = "Pelvis: Inguinal area/nodes (bilateral)"
+* concept[=].concept[+].code = #11.10
+* concept[=].concept[=].display = "Pelvis: Femoral area/nodes"
+* concept[=].concept[=].concept[0].code = #11.10.R
+* concept[=].concept[=].concept[=].display = "Pelvis: Femoral area/nodes (right)"
+* concept[=].concept[=].concept[+].code = #11.10.L
+* concept[=].concept[=].concept[=].display = "Pelvis: Femoral area/nodes (left)"
+* concept[=].concept[=].concept[+].code = #11.10.B
+* concept[=].concept[=].concept[=].display = "Pelvis: Femoral area/nodes (bilateral)"
+* concept[=].concept[+].code = #11.11
+* concept[=].concept[=].display = "Pelvis: Testicle"
+* concept[=].concept[=].concept[0].code = #11.11.R
+* concept[=].concept[=].concept[=].display = "Pelvis: Testicle (right)"
+* concept[=].concept[=].concept[+].code = #11.11.L
+* concept[=].concept[=].concept[=].display = "Pelvis: Testicle (left)"
+* concept[=].concept[=].concept[+].code = #11.11.B
+* concept[=].concept[=].concept[=].display = "Pelvis: Testicle (bilateral)"
+* concept[=].concept[+].code = #11.98
+* concept[=].concept[=].display = "Pelvis: Other specified"
+* concept[=].concept[+].code = #11.99
+* concept[=].concept[=].display = "Pelvis: Unspecified"
+* concept[+].code = #13
+* concept[=].display = "Upper limb"
+* concept[=].concept[0].code = #13.1
+* concept[=].concept[=].display = "Upper limb: Whole upper limb"
+* concept[=].concept[=].concept[0].code = #13.1.R
+* concept[=].concept[=].concept[=].display = "Upper limb: Whole upper limb (right)"
+* concept[=].concept[=].concept[+].code = #13.1.L
+* concept[=].concept[=].concept[=].display = "Upper limb: Whole upper limb (left)"
+* concept[=].concept[=].concept[+].code = #13.1.B
+* concept[=].concept[=].concept[=].display = "Upper limb: Whole upper limb (bilateral)"
+* concept[=].concept[+].code = #13.2
+* concept[=].concept[=].display = "Upper limb: Shoulder"
+* concept[=].concept[=].concept[0].code = #13.2.R
+* concept[=].concept[=].concept[=].display = "Upper limb: Shoulder (right)"
+* concept[=].concept[=].concept[+].code = #13.2.L
+* concept[=].concept[=].concept[=].display = "Upper limb: Shoulder (left)"
+* concept[=].concept[=].concept[+].code = #13.2.B
+* concept[=].concept[=].concept[=].display = "Upper limb: Shoulder (bilateral)"
+* concept[=].concept[+].code = #13.3
+* concept[=].concept[=].display = "Upper limb: Arm above elbow"
+* concept[=].concept[=].concept[0].code = #13.3.R
+* concept[=].concept[=].concept[=].display = "Upper limb: Arm above elbow (right)"
+* concept[=].concept[=].concept[+].code = #13.3.L
+* concept[=].concept[=].concept[=].display = "Upper limb: Arm above elbow (left)"
+* concept[=].concept[=].concept[+].code = #13.3.B
+* concept[=].concept[=].concept[=].display = "Upper limb: Arm above elbow (bilateral)"
+* concept[=].concept[+].code = #13.4
+* concept[=].concept[=].display = "Upper limb: Elbow"
+* concept[=].concept[=].concept[0].code = #13.4.R
+* concept[=].concept[=].concept[=].display = "Upper limb: Elbow (right)"
+* concept[=].concept[=].concept[+].code = #13.4.L
+* concept[=].concept[=].concept[=].display = "Upper limb: Elbow (left)"
+* concept[=].concept[=].concept[+].code = #13.4.B
+* concept[=].concept[=].concept[=].display = "Upper limb: Elbow (bilateral)"
+* concept[=].concept[+].code = #13.5
+* concept[=].concept[=].display = "Upper limb: Forearm"
+* concept[=].concept[=].concept[0].code = #13.5.R
+* concept[=].concept[=].concept[=].display = "Upper limb: Forearm (right)"
+* concept[=].concept[=].concept[+].code = #13.5.L
+* concept[=].concept[=].concept[=].display = "Upper limb: Forearm (left)"
+* concept[=].concept[=].concept[+].code = #13.5.B
+* concept[=].concept[=].concept[=].display = "Upper limb: Forearm (bilateral)"
+* concept[=].concept[+].code = #13.6
+* concept[=].concept[=].display = "Upper limb: Wrist"
+* concept[=].concept[=].concept[0].code = #13.6.R
+* concept[=].concept[=].concept[=].display = "Upper limb: Wrist (right)"
+* concept[=].concept[=].concept[+].code = #13.6.L
+* concept[=].concept[=].concept[=].display = "Upper limb: Wrist (left)"
+* concept[=].concept[=].concept[+].code = #13.6.B
+* concept[=].concept[=].concept[=].display = "Upper limb: Wrist (bilateral)"
+* concept[=].concept[+].code = #13.7
+* concept[=].concept[=].display = "Upper limb: Hand"
+* concept[=].concept[=].concept[0].code = #13.7.R
+* concept[=].concept[=].concept[=].display = "Upper limb: Hand (right)"
+* concept[=].concept[=].concept[+].code = #13.7.L
+* concept[=].concept[=].concept[=].display = "Upper limb: Hand (left)"
+* concept[=].concept[=].concept[+].code = #13.7.B
+* concept[=].concept[=].concept[=].display = "Upper limb: Hand (bilateral)"
+* concept[=].concept[+].code = #13.98
+* concept[=].concept[=].display = "Upper limb: Other specified"
+* concept[=].concept[+].code = #13.99
+* concept[=].concept[=].display = "Upper limb: Unspecified"
+* concept[+].code = #14
+* concept[=].display = "Lower limb"
+* concept[=].concept[0].code = #14.1
+* concept[=].concept[=].display = "Lower limb: Whole lower limb"
+* concept[=].concept[=].concept[0].code = #14.1.R
+* concept[=].concept[=].concept[=].display = "Lower limb: Whole lower limb (right)"
+* concept[=].concept[=].concept[+].code = #14.1.L
+* concept[=].concept[=].concept[=].display = "Lower limb: Whole lower limb (left)"
+* concept[=].concept[=].concept[+].code = #14.1.B
+* concept[=].concept[=].concept[=].display = "Lower limb: Whole lower limb (bilateral)"
+* concept[=].concept[+].code = #14.2
+* concept[=].concept[=].display = "Lower limb: Groin"
+* concept[=].concept[=].concept[0].code = #14.2.R
+* concept[=].concept[=].concept[=].display = "Lower limb: Groin (right)"
+* concept[=].concept[=].concept[+].code = #14.2.L
+* concept[=].concept[=].concept[=].display = "Lower limb: Groin (left)"
+* concept[=].concept[=].concept[+].code = #14.2.B
+* concept[=].concept[=].concept[=].display = "Lower limb: Groin (bilateral)"
+* concept[=].concept[+].code = #14.3
+* concept[=].concept[=].display = "Lower limb: Leg above the knee"
+* concept[=].concept[=].concept[0].code = #14.3.R
+* concept[=].concept[=].concept[=].display = "Lower limb: Leg above the knee (right)"
+* concept[=].concept[=].concept[+].code = #14.3.L
+* concept[=].concept[=].concept[=].display = "Lower limb: Leg above the knee (left)"
+* concept[=].concept[=].concept[+].code = #14.3.B
+* concept[=].concept[=].concept[=].display = "Lower limb: Leg above the knee (bilateral)"
+* concept[=].concept[+].code = #14.4
+* concept[=].concept[=].display = "Lower limb: Knee"
+* concept[=].concept[=].concept[0].code = #14.4.R
+* concept[=].concept[=].concept[=].display = "Lower limb: Knee (right)"
+* concept[=].concept[=].concept[+].code = #14.4.L
+* concept[=].concept[=].concept[=].display = "Lower limb: Knee (left)"
+* concept[=].concept[=].concept[+].code = #14.4.B
+* concept[=].concept[=].concept[=].display = "Lower limb: Knee (bilateral)"
+* concept[=].concept[+].code = #14.5
+* concept[=].concept[=].display = "Lower limb: Leg below the knee"
+* concept[=].concept[=].concept[0].code = #14.5.R
+* concept[=].concept[=].concept[=].display = "Lower limb: Leg below the knee (right)"
+* concept[=].concept[=].concept[+].code = #14.5.L
+* concept[=].concept[=].concept[=].display = "Lower limb: Leg below the knee (left)"
+* concept[=].concept[=].concept[+].code = #14.5.B
+* concept[=].concept[=].concept[=].display = "Lower limb: Leg below the knee (bilateral)"
+* concept[=].concept[+].code = #14.6
+* concept[=].concept[=].display = "Lower limb: Ankle"
+* concept[=].concept[=].concept[0].code = #14.6.R
+* concept[=].concept[=].concept[=].display = "Lower limb: Ankle (right)"
+* concept[=].concept[=].concept[+].code = #14.6.L
+* concept[=].concept[=].concept[=].display = "Lower limb: Ankle (left)"
+* concept[=].concept[=].concept[+].code = #14.6.B
+* concept[=].concept[=].concept[=].display = "Lower limb: Ankle (bilateral)"
+* concept[=].concept[+].code = #14.7
+* concept[=].concept[=].display = "Lower limb: Foot"
+* concept[=].concept[=].concept[0].code = #14.7.R
+* concept[=].concept[=].concept[=].display = "Lower limb: Foot (right)"
+* concept[=].concept[=].concept[+].code = #14.7.L
+* concept[=].concept[=].concept[=].display = "Lower limb: Foot (left)"
+* concept[=].concept[=].concept[+].code = #14.7.B
+* concept[=].concept[=].concept[=].display = "Lower limb: Foot (bilateral)"
+* concept[=].concept[+].code = #14.98
+* concept[=].concept[=].display = "Lower limb: Other specified"
+* concept[=].concept[+].code = #14.99
+* concept[=].concept[=].display = "Lower limb: Unspecified"
+* concept[+].code = #50
+* concept[=].display = "Special sites"
+* concept[=].concept[0].code = #50.50
+* concept[=].concept[=].display = "Special sites: Total body irradiation (TBI) entire body, includes all radiation sites"
+* concept[=].concept[+].code = #50.51
+* concept[=].concept[=].display = "Special sites: Upper hemi-body includes all radiation sites above the top of the iliac crests/umbilicus"
+* concept[=].concept[+].code = #50.52
+* concept[=].concept[=].display = "Special sites: Lower hemi-body includes all radiation sites below the top of the iliac crests/umbilicus"
+* concept[=].concept[+].code = #50.53
+* concept[=].concept[=].display = "Special sites: Total lymphoid irradiation (TLI) includes mantle and inverted Y + splenic fields"
+* concept[=].concept[+].code = #50.54
+* concept[=].concept[=].display = "Special sites: Subtotal lymphoid irradiation (STLI) mantle + paraaortic+ splenic fields"
+* concept[=].concept[+].code = #50.55
+* concept[=].concept[=].display = "Special sites: Extended mantle includes mantle and paraaortic fields"
+* concept[=].concept[+].code = #50.56
+* concept[=].concept[=].display = "Special sites: Mantle includes bilateral cervical (neck), supraclavicular, mediastinal, hilar and axillary fields"
+* concept[=].concept[+].code = #50.57
+* concept[=].concept[=].display = "Special sites: Mini-mantle includes bilateral cervical (neck) supraclavicular and axillary fields (excludes mediastinal and lung)"
+* concept[=].concept[+].code = #50.58
+* concept[=].concept[=].display = "Special sites: Inverted Y includes bilateral paraaortic nodes+ iliac nodes +/- splenic fields"
+* concept[=].concept[+].code = #50.59
+* concept[=].concept[=].display = "Special sites: Whole Central Nervous System /Cranio-Spinal Irradiation, includes the whole brain and the whole spine"

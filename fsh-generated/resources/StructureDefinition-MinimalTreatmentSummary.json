@@ -453,7 +453,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp",
+          "strength": "required"
+        }
       },
       {
         "id": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose",
@@ -679,7 +683,7 @@
       {
         "id": "MinimalTreatmentSummary.majorSurgery.shuntApplied",
         "path": "MinimalTreatmentSummary.majorSurgery.shuntApplied",
-        "short": "Shunt application ",
+        "short": "Shunt application",
         "definition": "Please report if a cerebrovascular shunt was inserted \n\n1 => Yes \n2 => No\n -9911 => NA\n -9922 => NK",
         "min": 1,
         "max": "1",

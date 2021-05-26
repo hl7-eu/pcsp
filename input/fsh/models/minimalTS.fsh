@@ -342,8 +342,8 @@ required if given"
 * differential.element[32].min = 0
 * differential.element[32].max = "1"
 * differential.element[32].type.code = #CodeableConcept
-
-
+* differential.element[32].binding.valueSet = "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp"
+* differential.element[32].binding.strength = #required
 * differential.element[33].id = "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose"
 * differential.element[33].path = "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose"
 * differential.element[33].short = "Comulative dose"
@@ -514,7 +514,7 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 
 * differential.element[50].id = "MinimalTreatmentSummary.majorSurgery.shuntApplied"
 * differential.element[50].path = "MinimalTreatmentSummary.majorSurgery.shuntApplied"
-* differential.element[50].short = "Shunt application "
+* differential.element[50].short = "Shunt application"
 * differential.element[50].definition = "Please report if a cerebrovascular shunt was inserted 
 
 1 => Yes 
