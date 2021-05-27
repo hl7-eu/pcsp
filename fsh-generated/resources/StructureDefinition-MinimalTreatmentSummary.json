@@ -76,7 +76,7 @@
         "short": "Diagnosis",
         "definition": "Diagnosis",
         "min": 1,
-        "max": "*",
+        "max": "5",
         "type": [
           {
             "code": "BackboneElement"
@@ -100,8 +100,8 @@
         "id": "MinimalTreatmentSummary.diagnosis.predispositionOrCondition",
         "path": "MinimalTreatmentSummary.diagnosis.predispositionOrCondition",
         "short": "Hereditary Cancer Predisposition Syndromeor medical condition cancer associated",
-        "definition": "Report here if the survivor has some Hereditary Cancer Predisposition Syndrome or a medical conditions, cancer associated.",
-        "min": 1,
+        "definition": "Report here if the survivor has some Hereditary Cancer Predisposition Syndrome or a medical conditions, cancer associated. (Yes/No)",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -110,157 +110,36 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.frontLineTreatment",
-        "path": "MinimalTreatmentSummary.frontLineTreatment",
-        "short": "Front line treatment",
-        "definition": "Front line treatment",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.frontLineTreatment.stemCellTransplantation",
-        "path": "MinimalTreatmentSummary.frontLineTreatment.stemCellTransplantation",
-        "short": "Stem Cell transplantation",
-        "definition": "Specify if the survivor received any hematopoietic stem cell transplant. Details will be given in the appropriate section.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.chemotherapy",
-        "path": "MinimalTreatmentSummary.chemotherapy",
+        "id": "MinimalTreatmentSummary.diagnosis.chemotherapy",
+        "path": "MinimalTreatmentSummary.diagnosis.chemotherapy",
         "short": "Chemotherapy",
         "definition": "Chemotherapy",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.chemotherapy.productAdministration",
-        "path": "MinimalTreatmentSummary.chemotherapy.productAdministration",
-        "short": "Product(s) administartion data",
-        "definition": "Information about the product(s) administered",
-        "min": 1,
-        "max": "20",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.chemotherapy.productAdministration.agent",
-        "path": "MinimalTreatmentSummary.chemotherapy.productAdministration.agent",
-        "short": "Antineoplastic and immunostimulating agents",
-        "definition": "In this section, any of the 'antineoplastic and immunostimulating agents' received by the survivor should be reported,  Drugs names are reported based on the ATC code listed under L01 to L04 in Appendix.  Synonyms are included. When you start typing the name of the drug, the possible options will automatically suggested by the system. \nUp to 20 drugs are allowed into the system.  The variable acronym changes based on the ordinal cmulative number of drugs received (e.g. FN_1, FN_2, FN_3, ?)",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugs-atc-pcsp",
-          "strength": "extensible"
-        }
-      },
-      {
-        "id": "MinimalTreatmentSummary.chemotherapy.productAdministration.cumulativeDose",
-        "path": "MinimalTreatmentSummary.chemotherapy.productAdministration.cumulativeDose",
-        "short": "Cumulative Dose",
-        "definition": "Report the total cumulative dose received of each drug. ",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.chemotherapy.productAdministration.cumulativeDose.notAvailable",
-        "path": "MinimalTreatmentSummary.chemotherapy.productAdministration.cumulativeDose.notAvailable",
-        "short": "Not calculated or not known dose",
-        "definition": "Flag indicating if the dose was not calculated or it was not known",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy"
           }
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.chemotherapy.productAdministration.cumulativeDose.value",
-        "path": "MinimalTreatmentSummary.chemotherapy.productAdministration.cumulativeDose.value",
-        "short": "Total cumulative dose",
-        "definition": "Report the total cumulative dose received of each drug.",
+        "id": "MinimalTreatmentSummary.diagnosis.radiotherapy",
+        "path": "MinimalTreatmentSummary.diagnosis.radiotherapy",
+        "short": "Radiotherapy",
+        "definition": "Radiotherapy",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "decimal"
+            "code": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy"
           }
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.chemotherapy.productAdministration.cumulativeDose.unit",
-        "path": "MinimalTreatmentSummary.chemotherapy.productAdministration.cumulativeDose.unit",
-        "short": "Measure unit",
-        "definition": "If the dose was calculated, please report the measure unit of the calculation\n1 => mg/m2\n2 => gr/m2\n3 => UI/m2\n4 => NK\n5 => NC (not calculated)",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.chemotherapy.corticosteroids",
-        "path": "MinimalTreatmentSummary.chemotherapy.corticosteroids",
-        "short": "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously",
-        "definition": "Report 'yes' if the survivor was treated with steroids for at least 4 weeks continuously\n1 => Yes\n2 => No\n-9922 => NK",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.chemotherapy.intrathecalInjections",
-        "path": "MinimalTreatmentSummary.chemotherapy.intrathecalInjections",
-        "short": "Intrathecal injections",
-        "definition": "Please state if the survivor received any therapeutic intrathecal injections\n1 => Yes\n2 => No\n-9922 => NK",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.sct",
-        "path": "MinimalTreatmentSummary.sct",
-        "short": "SCT",
-        "definition": "SCT",
+        "id": "MinimalTreatmentSummary.diagnosis.stemCellTransplantation",
+        "path": "MinimalTreatmentSummary.diagnosis.stemCellTransplantation",
+        "short": "Stem Cell transplantation",
+        "definition": "Stem Cell transplantation",
         "min": 0,
         "max": "*",
         "type": [
@@ -270,11 +149,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.sct.type",
-        "path": "MinimalTreatmentSummary.sct.type",
+        "id": "MinimalTreatmentSummary.diagnosis.stemCellTransplantation.type",
+        "path": "MinimalTreatmentSummary.diagnosis.stemCellTransplantation.type",
         "short": "Type of transplant",
         "definition": "Indicate if the transplant was autologous or allogeneic.\n1 = Autologous\n2 = Allogeneic\n-9922 = NK",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -283,8 +162,8 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.sct.gvhdChronic",
-        "path": "MinimalTreatmentSummary.sct.gvhdChronic",
+        "id": "MinimalTreatmentSummary.diagnosis.stemCellTransplantation.gvhdChronic",
+        "path": "MinimalTreatmentSummary.diagnosis.stemCellTransplantation.gvhdChronic",
         "short": "GVHD Chronic",
         "definition": "Please State if chronic GVHD occurred\nRequired if DONOR1 = 2 (Type of transplant = Allogenic)",
         "min": 0,
@@ -296,237 +175,8 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.radiotherapy",
-        "path": "MinimalTreatmentSummary.radiotherapy",
-        "short": "Radiotherapy",
-        "definition": "Radiotherapy",
-        "min": 1,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.type",
-        "path": "MinimalTreatmentSummary.radiotherapy.type",
-        "short": "Type of radiotherapy",
-        "definition": "External Beam Radiation: The radiation is produced by a large machine, and the type of the machine needs to be recorded in the subsequent field.\nBrachytherapy: a material that is radioactive (often a fine wire or a tiny ?seed?) is placed on or in the body to give a very localized high dose of radiation. Details will be asked in the next field\nMetabolic or radionuclide treatment/therapy: a liquid substance is injected into the blood stream and carries radiation throughout the body with the aim of reaching tumour tissue.  Also in this case, details will be asked in the subsequent field.\n1 => External beam\n2 => Brachytherapy\n3 => Metabolic/radionuclide therapy",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.startDate",
-        "path": "MinimalTreatmentSummary.radiotherapy.startDate",
-        "short": "Start date",
-        "definition": "Enter the date on which the first treatment (fraction) of radiotherapy was given, in a DD/MM/YYYY format. If the date is unkown or partially missed insert the year at the best of your knowledge.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target",
-        "path": "MinimalTreatmentSummary.radiotherapy.target",
-        "short": "Target Body Site",
-        "definition": "Site' refers to the radiation therapy treatment field, i.e. the part of the body that received the radiation dose in order to treat the tumour. \nRequired if Type of radiotherapy = 1 or 2 (External Beam, Brachytherapy)�\nIf more than one body site was treated with radiotherapy, you can add anther site and describe; upto 5 sites are allowed by the system ",
-        "min": 0,
-        "max": "5",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.site",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.site",
-        "short": "Body Site",
-        "definition": "RT sites are coded with a 3 tier level (see list). The first is ?Tier 1?.  The first digit/s of the code, describes the large topographical body areas e.g. brain, chest, abdomen, limb. Since radiation fields often involve more than one topographical area we have added ?cervico-thoracic?, ?thoraco abdominal? and ?abdomino pelvic? areas to Tier 1. \nThe second (Tier 2) includes subcategories of Tier 1 sites e.g. brain stem, heart, liver, upper limb. \nWhere the information is available a third (Tier 3) of further subdivisions includes more detailed areas. \nWhen using the SurPass platform, as you start typing the name of the site, a drop down list with related terms will appear (special sites like Inverted Y are included). If the RT site listed in the medical record cannot reasonably be matched to one of the sites listed in the computer, choose ??Other' (.98 in tier 2) and then add in free text the name of this RT site. ",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp",
-          "strength": "required"
-        }
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.comulativeDose",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.comulativeDose",
-        "short": "Comulative dose",
-        "definition": "Specify the cumulative / total dose given to the primary radiation therapy site.\nIf the dose is not known, write NK.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.comulativeDose.notKnown",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.comulativeDose.notKnown",
-        "short": "Not nown dose",
-        "definition": "Not nown dose",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.comulativeDose.dose",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.comulativeDose.dose",
-        "short": "Dose",
-        "definition": "Specify the cumulative / total dose given to the primary radiation therapy site.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "decimal"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.comulativeDose.unit",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.comulativeDose.unit",
-        "short": "Measure unit",
-        "definition": "External Beam Radiation Therapy (EBRT) and Brachytherapy doses are in Gy. If doses are reported in cGY, roughly two zeroes need to be deleted (e.g. 100 cGy = 1 Gy).",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.boost",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.boost",
-        "short": "Boost",
-        "definition": "A boost is an extra dose of radiotherapy directed to a smaller area inside the primary radiation field.\n",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.boost.given",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.boost.given",
-        "short": "Boost given",
-        "definition": "Flag indicating if a boost was given, not given or unknown\n",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.boost.site",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.boost.site",
-        "short": "Boost site",
-        "definition": "Site' refers to the radiation therapy treatment field. As you start typing the name of the site, a drop down list with related terms will appear (special sites like Inverted Y are included). If the RT site listed in the medical record cannot reasonably be matched to one of the sites listed in the computer, choose: ??Other' and then add in free text the name of this RT site. \nrequired if given",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "binding": {
-          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp",
-          "strength": "required"
-        }
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose",
-        "short": "Comulative dose",
-        "definition": "Specify the cumulative / total dose given to the boost site.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "BackboneElement"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose.notKnown",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose.notKnown",
-        "short": "Not nown dose",
-        "definition": "Not nown dose",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose.dose",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose.dose",
-        "short": "Dose",
-        "definition": "Specify the cumulative / total dose given to the boost site.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "decimal"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose.unit",
-        "path": "MinimalTreatmentSummary.radiotherapy.target.boost.comulativeDose.unit",
-        "short": "Unit (of external beam boost)",
-        "definition": "Specify the unit of the boost in case of external beam radiotherapy.\n1 = Gy",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.radiotherapy.radionuclides",
-        "path": "MinimalTreatmentSummary.radiotherapy.radionuclides",
-        "short": "Radionuclides",
-        "definition": "A detailed description of the radionuclides can be found in the user's manual.\nIf you have the name of a radionuclide but cannot find it in this list, please select Other and add the name in free text. \nIf you know the treatment was with external beam but not which machine or energy, select 'Unknown'.\n\nRequired if Metabolic/radionuclide therapy\n\n1 => Iodine-131\n2 => MIBG\n3 =>Yttrium 90\n4 => Other\n-9922 => Unknown",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "MinimalTreatmentSummary.majorSurgery",
-        "path": "MinimalTreatmentSummary.majorSurgery",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery",
         "short": "Major Surgery",
         "definition": "Major Surgery",
         "min": 0,
@@ -538,11 +188,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isOesophagus",
-        "path": "MinimalTreatmentSummary.majorSurgery.isOesophagus",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isOesophagus",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isOesophagus",
         "short": "Oesophagus involved?",
         "definition": "Was the oesophagus involved in the surgery?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -551,11 +201,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isAbdomen",
-        "path": "MinimalTreatmentSummary.majorSurgery.isAbdomen",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isAbdomen",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isAbdomen",
         "short": "Abdomen involved?",
         "definition": "Was the abdomen involved in the surgery?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -564,11 +214,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isBrain",
-        "path": "MinimalTreatmentSummary.majorSurgery.isBrain",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isBrain",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isBrain",
         "short": "Brain involved?",
         "definition": "Was the brain involved in the surgery?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -577,11 +227,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isFace",
-        "path": "MinimalTreatmentSummary.majorSurgery.isFace",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isFace",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isFace",
         "short": "Face involved?",
         "definition": "Was the face involved in the surgery?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -590,11 +240,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isLiver",
-        "path": "MinimalTreatmentSummary.majorSurgery.isLiver",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isLiver",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isLiver",
         "short": "Liver involved?",
         "definition": "Was the liver involved in the surgery?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -603,11 +253,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isSpine",
-        "path": "MinimalTreatmentSummary.majorSurgery.isSpine",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isSpine",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isSpine",
         "short": "Spine involved?",
         "definition": "Was the spine involved in the surgery?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -616,11 +266,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isSpinalCord",
-        "path": "MinimalTreatmentSummary.majorSurgery.isSpinalCord",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isSpinalCord",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isSpinalCord",
         "short": "Spinal Cord involved?",
         "definition": "Was the spinal cord involved in the surgery ?\n",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -629,11 +279,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isSympatheticNerves",
-        "path": "MinimalTreatmentSummary.majorSurgery.isSympatheticNerves",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isSympatheticNerves",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isSympatheticNerves",
         "short": "Sympathetic nerves involved?",
         "definition": "Were the sympathetic nerves involved in the surgery ?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -642,11 +292,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isChestThorax",
-        "path": "MinimalTreatmentSummary.majorSurgery.isChestThorax",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isChestThorax",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isChestThorax",
         "short": "Chest/thorax involved?",
         "definition": "Was the chest or thorax involved in the surgery?\nThis does not include a central venous catheter (CVC)",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -655,11 +305,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.isPelvis",
-        "path": "MinimalTreatmentSummary.majorSurgery.isPelvis",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.isPelvis",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.isPelvis",
         "short": "Pelvis involved?",
         "definition": "Was the pelvis involved in the surgery ?",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -668,11 +318,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.sacrifiedOrgans",
-        "path": "MinimalTreatmentSummary.majorSurgery.sacrifiedOrgans",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.sacrifiedOrgans",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.sacrifiedOrgans",
         "short": "Sacrified Organs",
         "definition": "During surgery it is possible that some organs are 'sacrified' either to allow a radical excision of the tumor or on purpose (spleen) for staging procedures.\nIn case of partial resection of an organ (e.g. thyroid, kidney), the organ is not 'sacrified', this type of surgery should be then reported only in the 'tumor description' \nFor other organs (e.g. hypothalamus) the only surgical procedure on it may determine some 'sacrifcice' of function, thus in this case, the organ should be coded as 'sacrified'.",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "type": [
           {
@@ -681,11 +331,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.majorSurgery.shuntApplied",
-        "path": "MinimalTreatmentSummary.majorSurgery.shuntApplied",
+        "id": "MinimalTreatmentSummary.diagnosis.majorSurgery.shuntApplied",
+        "path": "MinimalTreatmentSummary.diagnosis.majorSurgery.shuntApplied",
         "short": "Shunt application",
         "definition": "Please report if a cerebrovascular shunt was inserted \n\n1 => Yes \n2 => No\n -9911 => NA\n -9922 => NK",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -694,8 +344,8 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.otherInfo",
-        "path": "MinimalTreatmentSummary.otherInfo",
+        "id": "MinimalTreatmentSummary.diagnosis.otherInfo",
+        "path": "MinimalTreatmentSummary.diagnosis.otherInfo",
         "short": "Other info and relevant events",
         "definition": "Other info and relevant events",
         "min": 1,
@@ -707,11 +357,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.otherInfo.hypogonadal",
-        "path": "MinimalTreatmentSummary.otherInfo.hypogonadal",
+        "id": "MinimalTreatmentSummary.diagnosis.otherInfo.hypogonadal",
+        "path": "MinimalTreatmentSummary.diagnosis.otherInfo.hypogonadal",
         "short": "Hypogonadal ?",
         "definition": "Please specify if hypogonadal occured during therapy\n1 => Yes\n2 => No\n-9922 => NK",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -720,11 +370,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.otherInfo.growthHormoneDeficiency",
-        "path": "MinimalTreatmentSummary.otherInfo.growthHormoneDeficiency",
+        "id": "MinimalTreatmentSummary.diagnosis.otherInfo.growthHormoneDeficiency",
+        "path": "MinimalTreatmentSummary.diagnosis.otherInfo.growthHormoneDeficiency",
         "short": "Growth hormone deficiency ?",
         "definition": "Please specify if growth hormon deficiency occured during therapy",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -733,11 +383,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.otherInfohydrocephalus",
-        "path": "MinimalTreatmentSummary.otherInfohydrocephalus",
+        "id": "MinimalTreatmentSummary.diagnosis.otherInfo.hydrocephalus",
+        "path": "MinimalTreatmentSummary.diagnosis.otherInfo.hydrocephalus",
         "short": "Hydrocephalus ?",
         "definition": "Please specify if hydrocephalus occured during therapy",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -746,11 +396,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.otherInfo.chronicViralHepatitis",
-        "path": "MinimalTreatmentSummary.otherInfo.chronicViralHepatitis",
+        "id": "MinimalTreatmentSummary.diagnosis.otherInfo.chronicViralHepatitis",
+        "path": "MinimalTreatmentSummary.diagnosis.otherInfo.chronicViralHepatitis",
         "short": "Chronic viral hepatitis ?",
         "definition": "Please specify if chronic viral hepatitis occured during therapy",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -759,11 +409,11 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.otherInfo.sinusoidalObstructionSyndrome",
-        "path": "MinimalTreatmentSummary.otherInfo.sinusoidalObstructionSyndrome",
+        "id": "MinimalTreatmentSummary.diagnosis.otherInfo.sinusoidalObstructionSyndrome",
+        "path": "MinimalTreatmentSummary.diagnosis.otherInfo.sinusoidalObstructionSyndrome",
         "short": "Sinusoidal obstruction syndrome ?",
         "definition": "Please specify if sinusoidal obstruction syndrome occuredduring therapy",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -772,8 +422,8 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.otherInfo.moreOf10Transfusions",
-        "path": "MinimalTreatmentSummary.otherInfo.moreOf10Transfusions",
+        "id": "MinimalTreatmentSummary.diagnosis.otherInfo.moreOf10Transfusions",
+        "path": "MinimalTreatmentSummary.diagnosis.otherInfo.moreOf10Transfusions",
         "short": ">= 10 Transfusions ?",
         "definition": "Please specify if patient recieved 10 or more than 10 trasfusions during therapy",
         "min": 0,
@@ -785,8 +435,8 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.progressionRelapseAfterEOT",
-        "path": "MinimalTreatmentSummary.progressionRelapseAfterEOT",
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT",
         "short": "Progression-relapse after the End of Treatment",
         "definition": "Progression-relapse after the End of Treatment",
         "min": 0,
@@ -798,11 +448,323 @@
         ]
       },
       {
-        "id": "MinimalTreatmentSummary.progressionRelapseAfterEOT.stemCelltransplantation",
-        "path": "MinimalTreatmentSummary.progressionRelapseAfterEOT.stemCelltransplantation",
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.chemotherapy",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.chemotherapy",
+        "short": "Chemotherapy",
+        "definition": "Chemotherapy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.stemCellTransplantation",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.stemCellTransplantation",
         "short": "Stem Cell transplantation",
-        "definition": "Please specify if the survivor received any hematopoietic stem cell transplant. Details will be given in the appropriate section \n1 => Yes\n2 => No\n-9922 => NK",
+        "definition": "Stem Cell transplantation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.stemCellTransplantation.type",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.stemCellTransplantation.type",
+        "short": "Type of transplant",
+        "definition": "Indicate if the transplant was autologous or allogeneic.\n1 = Autologous\n2 = Allogeneic\n-9922 = NK",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.stemCellTransplantation.gvhdChronic",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.stemCellTransplantation.gvhdChronic",
+        "short": "GVHD Chronic",
+        "definition": "Please State if chronic GVHD occurred\nRequired if DONOR1 = 2 (Type of transplant = Allogenic)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.radiotherapy",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.radiotherapy",
+        "short": "Radiotherapy",
+        "definition": "Radiotherapy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery",
+        "short": "Major Surgery",
+        "definition": "Major Surgery",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isOesophagus",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isOesophagus",
+        "short": "Oesophagus involved?",
+        "definition": "Was the oesophagus involved in the surgery?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isAbdomen",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isAbdomen",
+        "short": "Abdomen involved?",
+        "definition": "Was the abdomen involved in the surgery?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isBrain",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isBrain",
+        "short": "Brain involved?",
+        "definition": "Was the brain involved in the surgery?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isFace",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isFace",
+        "short": "Face involved?",
+        "definition": "Was the face involved in the surgery?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isLiver",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isLiver",
+        "short": "Liver involved?",
+        "definition": "Was the liver involved in the surgery?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isSpine",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isSpine",
+        "short": "Spine involved?",
+        "definition": "Was the spine involved in the surgery?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isSpinalCord",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isSpinalCord",
+        "short": "Spinal Cord involved?",
+        "definition": "Was the spinal cord involved in the surgery ?\n",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isSympatheticNerves",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isSympatheticNerves",
+        "short": "Sympathetic nerves involved?",
+        "definition": "Were the sympathetic nerves involved in the surgery ?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isChestThorax",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isChestThorax",
+        "short": "Chest/thorax involved?",
+        "definition": "Was the chest or thorax involved in the surgery?\nThis does not include a central venous catheter (CVC)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isPelvis",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.isPelvis",
+        "short": "Pelvis involved?",
+        "definition": "Was the pelvis involved in the surgery ?",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.sacrifiedOrgans",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.sacrifiedOrgans",
+        "short": "Sacrified Organs",
+        "definition": "During surgery it is possible that some organs are 'sacrified' either to allow a radical excision of the tumor or on purpose (spleen) for staging procedures.\nIn case of partial resection of an organ (e.g. thyroid, kidney), the organ is not 'sacrified', this type of surgery should be then reported only in the 'tumor description' \nFor other organs (e.g. hypothalamus) the only surgical procedure on it may determine some 'sacrifcice' of function, thus in this case, the organ should be coded as 'sacrified'.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.shuntApplied",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.majorSurgery.shuntApplied",
+        "short": "Shunt application",
+        "definition": "Please report if a cerebrovascular shunt was inserted \n\n1 => Yes \n2 => No\n -9911 => NA\n -9922 => NK",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo",
+        "short": "Other info and relevant events",
+        "definition": "Other info and relevant events",
         "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.hypogonadal",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.hypogonadal",
+        "short": "Hypogonadal ?",
+        "definition": "Please specify if hypogonadal occured during therapy\n1 => Yes\n2 => No\n-9922 => NK",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.growthHormoneDeficiency",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.growthHormoneDeficiency",
+        "short": "Growth hormone deficiency ?",
+        "definition": "Please specify if growth hormon deficiency occured during therapy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.hydrocephalus",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.hydrocephalus",
+        "short": "Hydrocephalus ?",
+        "definition": "Please specify if hydrocephalus occured during therapy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.chronicViralHepatitis",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.chronicViralHepatitis",
+        "short": "Chronic viral hepatitis ?",
+        "definition": "Please specify if chronic viral hepatitis occured during therapy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.sinusoidalObstructionSyndrome",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.sinusoidalObstructionSyndrome",
+        "short": "Sinusoidal obstruction syndrome ?",
+        "definition": "Please specify if sinusoidal obstruction syndrome occuredduring therapy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.moreOf10Transfusions",
+        "path": "MinimalTreatmentSummary.diagnosis.progressionRelapseAfterEOT.otherInfo.moreOf10Transfusions",
+        "short": ">= 10 Transfusions ?",
+        "definition": "Please specify if patient recieved 10 or more than 10 trasfusions during therapy",
+        "min": 0,
         "max": "1",
         "type": [
           {

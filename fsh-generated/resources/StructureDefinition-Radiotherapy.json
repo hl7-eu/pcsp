@@ -1,0 +1,252 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Radiotherapy",
+  "publisher": "PanCareSurPass project",
+  "status": "draft",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy",
+  "name": "Radiotherapy",
+  "title": "Radiotherapy",
+  "experimental": true,
+  "description": "Radiotherapy",
+  "version": "0.0.1",
+  "mapping": [
+    {
+      "identity": "fhir",
+      "uri": "hl7.org/fhir/r4",
+      "name": "FHIR"
+    }
+  ],
+  "kind": "logical",
+  "abstract": true,
+  "type": "Radiotherapy",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Radiotherapy",
+        "path": "Radiotherapy",
+        "short": "Radiotherapy",
+        "definition": "Radiotherapy",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Radiotherapy.type",
+        "path": "Radiotherapy.type",
+        "short": "Type of radiotherapy",
+        "definition": "External Beam Radiation: The radiation is produced by a large machine, and the type of the machine needs to be recorded in the subsequent field.\nBrachytherapy: a material that is radioactive (often a fine wire or a tiny ?seed?) is placed on or in the body to give a very localized high dose of radiation. Details will be asked in the next field\nMetabolic or radionuclide treatment/therapy: a liquid substance is injected into the blood stream and carries radiation throughout the body with the aim of reaching tumour tissue.  Also in this case, details will be asked in the subsequent field.\n1 => External beam\n2 => Brachytherapy\n3 => Metabolic/radionuclide therapy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.startDate",
+        "path": "Radiotherapy.startDate",
+        "short": "Start date",
+        "definition": "Enter the date on which the first treatment (fraction) of radiotherapy was given, in a DD/MM/YYYY format. If the date is unkown or partially missed insert the year at the best of your knowledge.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target",
+        "path": "Radiotherapy.target",
+        "short": "Target Body Site",
+        "definition": "Site' refers to the radiation therapy treatment field, i.e. the part of the body that received the radiation dose in order to treat the tumour. \nRequired if Type of radiotherapy = 1 or 2 (External Beam, Brachytherapy)�\nIf more than one body site was treated with radiotherapy, you can add anther site and describe; upto 5 sites are allowed by the system ",
+        "min": 0,
+        "max": "5",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.site",
+        "path": "Radiotherapy.target.site",
+        "short": "Body Site",
+        "definition": "RT sites are coded with a 3 tier level (see list). The first is ?Tier 1?.  The first digit/s of the code, describes the large topographical body areas e.g. brain, chest, abdomen, limb. Since radiation fields often involve more than one topographical area we have added ?cervico-thoracic?, ?thoraco abdominal? and ?abdomino pelvic? areas to Tier 1. \nThe second (Tier 2) includes subcategories of Tier 1 sites e.g. brain stem, heart, liver, upper limb. \nWhere the information is available a third (Tier 3) of further subdivisions includes more detailed areas. \nWhen using the SurPass platform, as you start typing the name of the site, a drop down list with related terms will appear (special sites like Inverted Y are included). If the RT site listed in the medical record cannot reasonably be matched to one of the sites listed in the computer, choose ??Other' (.98 in tier 2) and then add in free text the name of this RT site. ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp",
+          "strength": "required"
+        }
+      },
+      {
+        "id": "Radiotherapy.target.comulativeDose",
+        "path": "Radiotherapy.target.comulativeDose",
+        "short": "Comulative dose",
+        "definition": "Specify the cumulative / total dose given to the primary radiation therapy site.\nIf the dose is not known, write NK.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.comulativeDose.notKnown",
+        "path": "Radiotherapy.target.comulativeDose.notKnown",
+        "short": "Not nown dose",
+        "definition": "Not nown dose",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.comulativeDose.dose",
+        "path": "Radiotherapy.target.comulativeDose.dose",
+        "short": "Dose",
+        "definition": "Specify the cumulative / total dose given to the primary radiation therapy site.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.comulativeDose.unit",
+        "path": "Radiotherapy.target.comulativeDose.unit",
+        "short": "Measure unit",
+        "definition": "External Beam Radiation Therapy (EBRT) and Brachytherapy doses are in Gy. If doses are reported in cGY, roughly two zeroes need to be deleted (e.g. 100 cGy = 1 Gy).",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.boost",
+        "path": "Radiotherapy.target.boost",
+        "short": "Boost",
+        "definition": "A boost is an extra dose of radiotherapy directed to a smaller area inside the primary radiation field.\n",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.boost.given",
+        "path": "Radiotherapy.target.boost.given",
+        "short": "Boost given",
+        "definition": "Flag indicating if a boost was given, not given or unknown\n",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.boost.site",
+        "path": "Radiotherapy.target.boost.site",
+        "short": "Boost site",
+        "definition": "Site' refers to the radiation therapy treatment field. As you start typing the name of the site, a drop down list with related terms will appear (special sites like Inverted Y are included). If the RT site listed in the medical record cannot reasonably be matched to one of the sites listed in the computer, choose: ??Other' and then add in free text the name of this RT site. \nrequired if given",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp",
+          "strength": "required"
+        }
+      },
+      {
+        "id": "Radiotherapy.target.boost.comulativeDose",
+        "path": "Radiotherapy.target.boost.comulativeDose",
+        "short": "Comulative dose",
+        "definition": "Specify the cumulative / total dose given to the boost site.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.boost.comulativeDose.notKnown",
+        "path": "Radiotherapy.target.boost.comulativeDose.notKnown",
+        "short": "Not nown dose",
+        "definition": "Not nown dose",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.boost.comulativeDose.dose",
+        "path": "Radiotherapy.target.boost.comulativeDose.dose",
+        "short": "Dose",
+        "definition": "Specify the cumulative / total dose given to the boost site.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.target.boost.comulativeDose.unit",
+        "path": "Radiotherapy.target.boost.comulativeDose.unit",
+        "short": "Unit (of external beam boost)",
+        "definition": "Specify the unit of the boost in case of external beam radiotherapy.\n1 = Gy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Radiotherapy.radionuclides",
+        "path": "Radiotherapy.radionuclides",
+        "short": "Radionuclides",
+        "definition": "A detailed description of the radionuclides can be found in the user's manual.\nIf you have the name of a radionuclide but cannot find it in this list, please select Other and add the name in free text. \nIf you know the treatment was with external beam but not which machine or energy, select 'Unknown'.\n\nRequired if Metabolic/radionuclide therapy\n\n1 => Iodine-131\n2 => MIBG\n3 =>Yttrium 90\n4 => Other\n-9922 => Unknown",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

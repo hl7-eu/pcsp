@@ -1,0 +1,144 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Chemotherapy",
+  "publisher": "PanCareSurPass project",
+  "status": "draft",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy",
+  "name": "Chemotherapy",
+  "title": "Chemotherapy",
+  "experimental": true,
+  "description": "Chemotherapy",
+  "version": "0.0.1",
+  "mapping": [
+    {
+      "identity": "fhir",
+      "uri": "hl7.org/fhir/r4",
+      "name": "FHIR"
+    }
+  ],
+  "kind": "logical",
+  "abstract": true,
+  "type": "Chemotherapy",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "Chemotherapy",
+        "path": "Chemotherapy",
+        "short": "Chemotherapy",
+        "definition": "Chemotherapy",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Chemotherapy.productAdministration",
+        "path": "Chemotherapy.productAdministration",
+        "short": "Product(s) administartion data",
+        "definition": "Information about the product(s) administered",
+        "min": 1,
+        "max": "20",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.productAdministration.agent",
+        "path": "Chemotherapy.productAdministration.agent",
+        "short": "Antineoplastic and immunostimulating agents",
+        "definition": "In this section, any of the 'antineoplastic and immunostimulating agents' received by the survivor should be reported,  Drugs names are reported based on the ATC code listed under L01 to L04 in Appendix.  Synonyms are included. When you start typing the name of the drug, the possible options will automatically suggested by the system. \nUp to 20 drugs are allowed into the system.  The variable acronym changes based on the ordinal cmulative number of drugs received (e.g. FN_1, FN_2, FN_3, ?)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugs-atc-pcsp",
+          "strength": "extensible"
+        }
+      },
+      {
+        "id": "Chemotherapy.productAdministration.cumulativeDose",
+        "path": "Chemotherapy.productAdministration.cumulativeDose",
+        "short": "Cumulative Dose",
+        "definition": "Report the total cumulative dose received of each drug. ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.productAdministration.cumulativeDose.notAvailable",
+        "path": "Chemotherapy.productAdministration.cumulativeDose.notAvailable",
+        "short": "Not calculated or not known dose",
+        "definition": "Flag indicating if the dose was not calculated or it was not known",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.productAdministration.cumulativeDose.value",
+        "path": "Chemotherapy.productAdministration.cumulativeDose.value",
+        "short": "Total cumulative dose",
+        "definition": "Report the total cumulative dose received of each drug.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.productAdministration.cumulativeDose.unit",
+        "path": "Chemotherapy.productAdministration.cumulativeDose.unit",
+        "short": "Measure unit",
+        "definition": "If the dose was calculated, please report the measure unit of the calculation\n1 => mg/m2\n2 => gr/m2\n3 => UI/m2\n4 => NK\n5 => NC (not calculated)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.corticosteroids",
+        "path": "Chemotherapy.corticosteroids",
+        "short": "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously",
+        "definition": "Report 'yes' if the survivor was treated with steroids for at least 4 weeks continuously\n1 => Yes\n2 => No\n-9922 => NK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.intrathecalInjections",
+        "path": "Chemotherapy.intrathecalInjections",
+        "short": "Intrathecal injections",
+        "definition": "Please state if the survivor received any therapeutic intrathecal injections\n1 => Yes\n2 => No\n-9922 => NK",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}
