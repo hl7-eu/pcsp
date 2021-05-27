@@ -4,7 +4,7 @@
   "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp",
   "version": "0.0.1",
   "name": "PatientPcsp",
-  "title": "Patient (PanCareSurPass)",
+  "title": "Patient",
   "status": "active",
   "description": "This profile defines how to represent Patient in FHIR for the purpose of the PanCareSurPass project.",
   "fhirVersion": "4.0.1",

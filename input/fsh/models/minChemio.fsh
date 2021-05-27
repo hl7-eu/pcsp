@@ -43,7 +43,7 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[2].min = 1
 * differential.element[2].max = "1"
 * differential.element[2].type.code = #CodeableConcept
-* differential.element[2].binding.valueSet = "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugs-atc-pcsp"
+* differential.element[2].binding.valueSet = "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp"
 * differential.element[2].binding.strength = #extensible
 * differential.element[3].id = "Chemotherapy.productAdministration.cumulativeDose"
 * differential.element[3].path = "Chemotherapy.productAdministration.cumulativeDose"

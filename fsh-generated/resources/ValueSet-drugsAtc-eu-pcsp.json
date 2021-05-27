@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VsPcspAtcCodes",
-  "id": "drugs-atc-pcsp",
+  "id": "drugsAtc-eu-pcsp",
   "title": "Antineoplastic and immunostimulating agents",
   "description": "List of WHO ATC codes for antineoplastic and immunostimulating agents.",
   "version": "0.0.1",
-  "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugs-atc-pcsp",
+  "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp",
   "compose": {
     "include": [
       {

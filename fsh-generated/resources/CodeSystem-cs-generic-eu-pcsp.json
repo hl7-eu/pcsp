@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CsGenericPcsp",
+  "id": "cs-generic-eu-pcsp",
+  "title": "PCSP Code System",
+  "description": "Coded concepts specified by the PancareSurPass Project",
+  "version": "0.0.1",
+  "url": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+  "concept": [
+    {
+      "code": "4w-corticosteroids-anti-cancer",
+      "display": "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously",
+      "definition": "Report 'yes' if the survivor was treated with steroids for at least 4 weeks continuously"
+    },
+    {
+      "code": "intrathecal-injections",
+      "display": "Intrathecal injections",
+      "definition": "Please state if the survivor received any therapeutic intrathecal injections0"
+    }
+  ],
+  "count": 2
+}

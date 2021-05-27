@@ -57,7 +57,7 @@
           }
         ],
         "binding": {
-          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugs-atc-pcsp",
+          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp",
           "strength": "extensible"
         }
       },
