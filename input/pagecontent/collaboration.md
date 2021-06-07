@@ -8,13 +8,15 @@ The collaboration described are:
 
 1.  Case 1: Austria
 
-2.  Case 2: Italy and Spain
+2.  Case 2: Italy
 
 3.  Case 3: Germany
 
 4.  Case 4: Belgium
 
 5.  Case 5: Lithuania
+
+6.  Case 6: Spain
 
 ### Case 1: Austria
 
@@ -36,7 +38,7 @@ Lithuania</strong>
 
 <br clear="all">
 
-### Case 2: Italy and Spain
+### Case 2: Italy
 
 <div>
 
@@ -47,7 +49,7 @@ style="width:80%" />
 
 <br clear="all">
 
-<strong>Figure 2 Collaboration diagram: Italy and Spain</strong>
+<strong>Figure 2 Collaboration diagram: Italy</strong>
 
 <br clear="all">
 
@@ -55,14 +57,14 @@ style="width:80%" />
 
 <br clear="all">
 
-### Case 3: Germany and Lithuania
+### Case 3: Germany
 
 <div>
 
 <br clear="all">
 
-<img src="collaboration-3.png" alt="Collaboration diagram: Germany and
-Lithuania" style=" width:80%" />
+<img src="collaboration-3.png" alt="Collaboration diagram: Germany"
+style=" width:80%" />
 
 <br clear="all">
 
@@ -105,6 +107,25 @@ style="width:80%" />
 <br clear="all">
 
 <strong>Figure 5 Collaboration diagram: Lithuania</strong>
+
+<br clear="all">
+
+</div>
+
+<br clear="all">
+
+### Case 6: Spain
+
+<div>
+
+<br clear="all">
+
+<img src="collaboration-6.png" alt=" Collaboration diagram: Spain"
+style="width:80%" />
+
+<br clear="all">
+
+<strong>Figure 5 Collaboration diagram: Spain</strong>
 
 <br clear="all">
 
