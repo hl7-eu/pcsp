@@ -6,7 +6,7 @@ Usage: #definition
 * publisher = "PanCareSurPass project"
 * status = #draft
 * url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject"
-* name = ""
+* name = "Subject"
 * title = "Subject of care"
 * status = #draft
 * experimental = true

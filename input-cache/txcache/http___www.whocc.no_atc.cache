@@ -4636,10 +4636,11 @@ v: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:4850a1f8-dc53-4219-99c7-86eaab95e06e",
-    "timestamp" : "2021-05-25T19:24:55.248Z",
+    "identifier" : "urn:uuid:10e2f4e3-8f65-46f9-948f-4de70c262ba7",
+    "timestamp" : "2021-07-07T11:20:36.167Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -4661,7 +4662,7 @@ e: {
     {
       "system" : "http://www.whocc.no/atc",
       "code" : "L02BG03",
-      "display" : "Anastrozolo"
+      "display" : "anastrozole"
     }]
   }
 },

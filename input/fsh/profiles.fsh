@@ -7,6 +7,26 @@ Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/pati
 //====== Profiles =====================================
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  CarePlanPcsp
+Parent:   CarePlan
+Id:       CarePlan-eu-pcsp
+Title:    "CarePlan"
+Description: "This profile defines how to represent Care Plan in FHIR for the purpose of the PanCareSurPass project."
+//-------------------------------------------------------------------------------------------
+* identifier MS
+* status MS
+* intent MS
+* title 1.. MS
+* subject MS
+* subject only Reference(Patient)
+* period MS
+* created MS
+* author MS
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  PatientPcsp
 Parent:   $ipsPatient
 Id:       Patient-eu-pcsp
@@ -34,6 +54,28 @@ Description: "This profile defines how to represent a minimal set of Patient dat
 //-------------------------------------------------------------------------------------------
 * gender 1.. MS
 * birthDate 1.. MS 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ProcedureRadiotherapyMinPcsp
+Parent:   Procedure 
+Id:       Procedure-radiotheraphy-min-eu-pcsp
+Title:    "Procedure Radiotherapy (Minimal Set)"
+Description: "This profile defines how to represent Procedures in FHIR for describing a Minimal set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan."
+//-------------------------------------------------------------------------------------------
+
+* status MS
+* category MS // add Radiotherapy
+* code 1..1 MS // TYPE - add 1 => External beam; 2 => Brachytherapy; 3 => Metabolic/radionuclide therapy
+// add slice on coding to allow more precise data
+* subject only Reference(PatientMinPcsp)	
+* subject MS
+* performedPeriod 1.. MS
+* bodySite 1.. MS // add vocab
+
+
+
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  MedicationStatementMinPcsp

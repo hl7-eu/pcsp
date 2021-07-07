@@ -5,7 +5,7 @@ Mapping: patient-to-lm
 Id: patient-to-lm
 Title: "Subject of Care Model"
 Source: PatientPcsp
-Target: "http://hl7.org/fhir/ig/pcsp/StructureDefinition/Subject"
+Target: "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject"
 
 * extension[patient-birthPlace] ->  "Subject.placeOfBirth"
 * extension[patient-mothersMaidenName] -> "Subject.lastnameAtDiagnosis"

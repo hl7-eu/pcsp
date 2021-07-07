@@ -37,7 +37,7 @@
     {
       "identity": "patient-to-lm",
       "name": "Subject of Care Model",
-      "uri": "http://hl7.org/fhir/ig/pcsp/StructureDefinition/Subject"
+      "uri": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject"
     }
   ],
   "kind": "resource",

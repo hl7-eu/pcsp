@@ -6,7 +6,7 @@ Usage: #definition
 * publisher = "PanCareSurPass project"
 * status = #draft
 * url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurvivorshipPassport"
-* name = ""
+* name = "SurvivorshipPassport"
 * title = "Survivorship Passport data model"
 * status = #draft
 * experimental = true

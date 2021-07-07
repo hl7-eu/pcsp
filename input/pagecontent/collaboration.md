@@ -29,8 +29,7 @@ style=" width:80%" />
 
 <br clear="all">
 
-<strong>Figure 1 Collaboration diagram: Austria and
-Lithuania</strong>
+<strong>Figure 1 Collaboration diagram: Austria</strong>
 
 <br clear="all">
 
