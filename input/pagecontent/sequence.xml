@@ -2,6 +2,7 @@
    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 	<h3 id="overview">Overview</h3>
+	<a> </a>
 	<p>The following diagrams provide a high level description of the interactions between external local systems (here described as local system A and B, in most cases cohincident) and the PCSP platform.</p>
 	<p>The first describes the case of generation of a PCSP Passport</p>
 	<p>{% include sequence-1.svg %}</p>
@@ -10,7 +11,9 @@
 	<p>The third creation/update of a Patient record in the platform</p>
 	<p>{% include sequence-3.svg %}</p>
 	<h3 id="actors">Actors</h3>
+	<a> </a>
 	<h4 id="local-system-a">Local System A</h4>
+	<a> </a>
 	<p>Any system or system of systems providing to the <a href="#pcsp-platform">
 			<strong>PCSP Platform</strong>
 		</a>
@@ -27,6 +30,7 @@
 		</li>
 	</ol>
 	<h4 id="pcsp-platform">PCSP Platform</h4>
+	<a> </a>
 	<p>The Pancare SurPass platform:</p>
 	<ol type="1">
 		<li>
@@ -70,6 +74,7 @@
 		</li>
 	</ol>
 	<h4 id="local-system-b">Local System B</h4>
+	<a> </a>
 	<p>Any system or system of systems receiving from the <strong>PCSP Platform</strong>
 	</p>
 	<ol>
@@ -87,19 +92,25 @@
 		</a>
 	</p>
 	<h3 id="objects">Objects</h3>
+	<a> </a>
 	<h4 id="treatment-summary">Treatment Summary</h4>
+	<a> </a>
 	<p>Logical model of the <strong>
-			<!-- <a href="StructureDefinition-TreatmentSummary.html">Treatment Summary</a> -->
-			Treatment Summary
+			<a href="StructureDefinition-TreatmentSummary.html">Treatment Summary</a>
+			<!-- Treatment Summary -->
 		</strong>
 	</p>
 	<h4 id="treatment-summary">Patient Data</h4>
+	<a> </a>
 	<p>Logical model of the <strong>Patient Data</strong>
 	</p>
 	<h4 id="treatment-summary">SCP care Plan</h4>
+	<a> </a>
 	<p>Logical model of the <strong>SCP Care Plan</strong>
 	</p>
 	<h4 id="surpass-with-the-scp-draft-or-final">SurPass with the SCP (draft or final)</h4>
-	<p>Logical model of the <a href="StructureDefinition-SurvivorshipPassport.html">SurPass with the SCP (draft or final)</a>
+	<a> </a>
+	<!-- <p>Logical model of the <a href="StructureDefinition-SurvivorshipPassport.html">SurPass with the SCP (draft or final)</a> -->
+	<p>Logical model of the <strong>SurPass with the SCP (draft or final)</strong>
 	</p>
 </div>
