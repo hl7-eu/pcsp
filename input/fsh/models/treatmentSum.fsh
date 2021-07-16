@@ -1,13 +1,13 @@
 Instance: TreatmentSummary
 InstanceOf: StructureDefinition
 Description: "Treatment Summary data model"
-Title: "Treatment Summary data model"
+Title: "Treatment Summary"
 Usage: #definition
 * publisher = "PanCareSurPass project"
 * status = #draft
 * url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/TreatmentSummary"
 * name = "TreatmentSummary"
-* title = "Treatment Summary data model"
+* title = "Treatment Summary"
 * status = #draft
 * experimental = true
 * description = "Treatment Summary data model"
@@ -156,7 +156,7 @@ If personalized, please specify.  "
 * differential.element[18].definition = "Chemotherapy"
 * differential.element[18].min = 0
 * differential.element[18].max = "*"
-* differential.element[18].type.code = #BackboneElement
+* differential.element[18].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy
 * differential.element[19].id = "TreatmentSummary.diagnosis.stemCellTransplantation"
 * differential.element[19].path = "TreatmentSummary.diagnosis.stemCellTransplantation"
 * differential.element[19].short = "Stem Cell transplantation"

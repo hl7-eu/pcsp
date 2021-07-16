@@ -1,22 +1,22 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "Observation-min-med-eu-pcsp",
+  "id": "Condition-secondaryCancer-eu-pcsp",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
+      "valueString": "Clinical.Summary"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-min-med-eu-pcsp",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp",
   "version": "0.0.1",
-  "name": "ObservationMinMedPcsp",
-  "title": "Observation Medication related (Minimal Set)",
+  "name": "ConditionSecondaryCancerPcsp",
+  "title": "Secondary Cancer Condition",
   "status": "active",
-  "description": "This profile defines how to represent Medication related Observations in FHIR for describing a Minimal set of Chemotherapy data required by the PanCareSurPass algorithm to generate the care plan.",
+  "description": "This abstract profile defines how to represent Secondary Cancer Condition in FHIR for the purpose of the PanCareSurPass project.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -52,55 +52,53 @@
   ],
   "kind": "resource",
   "abstract": false,
-  "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "type": "Condition",
+  "baseDefinition": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-cancer-eu-pcsp",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-observationMed-eu-pcsp"
-        }
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Condition.extension",
+        "path": "Condition.extension",
         "slicing": {
           "discriminator": [
             {
-              "type": "type",
-              "path": "$this"
+              "type": "value",
+              "path": "url"
             }
           ],
           "ordered": false,
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
-        "id": "Observation.valueCodeableConcept",
-        "path": "Observation.valueCodeableConcept",
+        "id": "Condition.extension:primaryCancer-condition",
+        "path": "Condition.extension",
+        "sliceName": "primaryCancer-condition",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/condition-related"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.extension:primaryCancer-condition.valueReference",
+        "path": "Condition.extension.valueReference",
         "min": 1,
         "max": "1",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp"
+            ]
           }
-        ],
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://loinc.org/vs/LL365-8"
-        }
+        ]
       }
     ]
   }

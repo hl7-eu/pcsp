@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "ObservationMedVs",
-  "id": "vs-observationMed-eu-pcsp",
-  "title": "Observation related to Medication activities.",
-  "description": "Observation related to Medication activities.",
+  "name": "ObservationYesNoVs",
+  "id": "vs-observationYesNo-eu-pcsp",
+  "title": "Observation codes for which a Yes/No answer is captured.",
+  "description": "Observation codes for which a Yes/No answer is captured.",
   "version": "0.0.1",
-  "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-observationMed-eu-pcsp",
+  "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-observationYesNo-eu-pcsp",
   "compose": {
     "include": [
       {

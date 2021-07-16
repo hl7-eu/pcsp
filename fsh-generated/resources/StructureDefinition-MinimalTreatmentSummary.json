@@ -118,7 +118,7 @@
         "max": "1",
         "type": [
           {
-            "code": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy"
+            "code": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy-min"
           }
         ]
       },

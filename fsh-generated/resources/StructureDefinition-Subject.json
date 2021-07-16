@@ -78,8 +78,8 @@
       {
         "id": "Subject.name.lastname",
         "path": "Subject.name.lastname",
-        "short": "Lastname �",
-        "definition": "Lastname �",
+        "short": "Lastname",
+        "definition": "Lastname",
         "min": 1,
         "max": "*",
         "type": [
@@ -97,8 +97,8 @@
       {
         "id": "Subject.name.middleName",
         "path": "Subject.name.middleName",
-        "short": "Middlename �",
-        "definition": "Middlename �",
+        "short": "Middlename",
+        "definition": "Middlename",
         "min": 0,
         "max": "*",
         "type": [
@@ -116,8 +116,8 @@
       {
         "id": "Subject.name.firstName",
         "path": "Subject.name.firstName",
-        "short": "Firstname �",
-        "definition": "Firstname �",
+        "short": "Firstname",
+        "definition": "Firstname",
         "min": 1,
         "max": "*",
         "type": [
@@ -135,8 +135,8 @@
       {
         "id": "Subject.lastnameAtDiagnosis",
         "path": "Subject.lastnameAtDiagnosis",
-        "short": "Lastname at diagnosis (if different from the actual one) �",
-        "definition": "Lastname at diagnosis (if different from the actual one) �",
+        "short": "Lastname at diagnosis (if different from the actual one)",
+        "definition": "Lastname at diagnosis (if different from the actual one)",
         "min": 0,
         "max": "*",
         "type": [
@@ -173,8 +173,8 @@
       {
         "id": "Subject.dateOfBirth",
         "path": "Subject.dateOfBirth",
-        "short": "Date of birth �",
-        "definition": "Date of birth �",
+        "short": "Date of birth",
+        "definition": "Date of birth",
         "min": 0,
         "max": "*",
         "type": [
@@ -192,8 +192,8 @@
       {
         "id": "Subject.placeOfBirth",
         "path": "Subject.placeOfBirth",
-        "short": "Place of birth �",
-        "definition": "Place of birth �",
+        "short": "Place of birth",
+        "definition": "Place of birth",
         "min": 0,
         "max": "*",
         "type": [
@@ -230,8 +230,8 @@
       {
         "id": "Subject.contact.email",
         "path": "Subject.contact.email",
-        "short": "E-mail �",
-        "definition": "E-mail �",
+        "short": "E-mail",
+        "definition": "E-mail",
         "min": 0,
         "max": "*",
         "type": [
@@ -249,8 +249,8 @@
       {
         "id": "Subject.contact.mobile",
         "path": "Subject.contact.mobile",
-        "short": "Mobile phone �",
-        "definition": "Mobile phone �",
+        "short": "Mobile phone",
+        "definition": "Mobile phone",
         "min": 0,
         "max": "*",
         "type": [
@@ -306,8 +306,8 @@
       {
         "id": "Subject.guardian.contact.email",
         "path": "Subject.guardian.contact.email",
-        "short": "E-mail �",
-        "definition": "E-mail �",
+        "short": "E-mail",
+        "definition": "E-mail",
         "min": 0,
         "max": "*",
         "type": [
@@ -325,8 +325,8 @@
       {
         "id": "Subject.guardian.contact.mobile",
         "path": "Subject.guardian.contact.mobile",
-        "short": "Mobile phone �",
-        "definition": "Mobile phone �",
+        "short": "Mobile phone",
+        "definition": "Mobile phone",
         "min": 0,
         "max": "*",
         "type": [

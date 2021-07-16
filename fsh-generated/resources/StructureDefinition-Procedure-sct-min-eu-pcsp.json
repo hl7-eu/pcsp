@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "Procedure-radiotheraphy-min-eu-pcsp",
+  "id": "Procedure-sct-min-eu-pcsp",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-min-eu-pcsp",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-min-eu-pcsp",
   "version": "0.0.1",
-  "name": "ProcedureRadiotherapyMinPcsp",
-  "title": "Procedure Radiotherapy (Minimal Set)",
+  "name": "ProcedureSCTMinPcsp",
+  "title": "Procedure Stem Cell Transplantation (Minimal Set)",
   "status": "active",
-  "description": "This profile defines how to represent Procedures in FHIR for describing a Minimal set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan.",
+  "description": "This profile defines how to represent Procedures in FHIR for describing a Minimal set of Stem Cell transplantation data required by the PanCareSurPass algorithm to generate the care plan.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -48,49 +48,6 @@
   "differential": {
     "element": [
       {
-        "id": "Procedure.extension",
-        "path": "Procedure.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Procedure.extension:relatedCumulativeDose",
-        "path": "Procedure.extension",
-        "sliceName": "relatedCumulativeDose",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Procedure.extension:relatedCumulativeDose.valueReference",
-        "path": "Procedure.extension.valueReference",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Procedure.status",
         "path": "Procedure.status",
         "mustSupport": true
@@ -101,9 +58,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "108290001",
+              "code": "77465005",
               "system": "http://snomed.info/sct",
-              "display": "Radiotherapy"
+              "display": "Transplantation"
             }
           ]
         },

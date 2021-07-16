@@ -103,8 +103,8 @@
       {
         "id": "Radiotherapy.target.comulativeDose.notKnown",
         "path": "Radiotherapy.target.comulativeDose.notKnown",
-        "short": "Not nown dose",
-        "definition": "Not nown dose",
+        "short": "Not known dose",
+        "definition": "Not known dose",
         "min": 0,
         "max": "1",
         "type": [
@@ -198,8 +198,8 @@
       {
         "id": "Radiotherapy.target.boost.comulativeDose.notKnown",
         "path": "Radiotherapy.target.boost.comulativeDose.notKnown",
-        "short": "Not nown dose",
-        "definition": "Not nown dose",
+        "short": "Not known dose",
+        "definition": "Not known dose",
         "min": 0,
         "max": "1",
         "type": [

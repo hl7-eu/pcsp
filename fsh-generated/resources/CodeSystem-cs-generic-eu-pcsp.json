@@ -17,8 +17,12 @@
     {
       "code": "intrathecal-injections",
       "display": "Intrathecal injections",
-      "definition": "Please state if the survivor received any therapeutic intrathecal injections0"
+      "definition": "Please state if the survivor received any therapeutic intrathecal injections"
+    },
+    {
+      "code": "cumulativeDose",
+      "display": "Cumulative dose received by a patient for a specific drug."
     }
   ],
-  "count": 2
+  "count": 3
 }

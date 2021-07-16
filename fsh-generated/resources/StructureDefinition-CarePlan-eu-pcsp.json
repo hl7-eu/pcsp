@@ -75,7 +75,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp"
             ]
           }
         ],

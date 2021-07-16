@@ -1,33 +1,33 @@
-Instance: Chemotherapy
+Instance: Chemotherapy-min
 InstanceOf: StructureDefinition
-Description: "Chemotherapy"
-Title: "Chemotherapy"
+Description: "Chemotherapy Minimal Data Set"
+Title: "Chemotherapy (Minimal)"
 Usage: #definition
 * publisher = "PanCareSurPass project"
 * status = #draft
-* url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy"
-* name = "Chemotherapy"
-* title = "Chemotherapy"
+* url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy-min"
+* name = "ChemotherapyMin"
+* title = "Chemotherapy (Minimal)"
 * status = #draft
 * experimental = true
-* description = "Chemotherapy"
+* description = "Chemotherapy Minimal Data Set"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
 * mapping[0].name = "FHIR"
 * kind = #logical
 * abstract = true
-* type = "Chemotherapy"
+* type = "Chemotherapy-min"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
-* differential.element[0].id = "Chemotherapy"
-* differential.element[0].path = "Chemotherapy"
+* differential.element[0].id = "Chemotherapy-min"
+* differential.element[0].path = "Chemotherapy-min"
 * differential.element[0].short = "Chemotherapy"
 * differential.element[0].definition = "Chemotherapy"
 * differential.element[0].min = 1
 * differential.element[0].max = "1"
-* differential.element[1].id = "Chemotherapy.productAdministration"
-* differential.element[1].path = "Chemotherapy.productAdministration"
+* differential.element[1].id = "Chemotherapy-min.productAdministration"
+* differential.element[1].path = "Chemotherapy-min.productAdministration"
 * differential.element[1].short = "Product(s) administartion data"
 * differential.element[1].definition = "Information about the product(s) administered"
 * differential.element[1].min = 1
@@ -35,8 +35,8 @@ Usage: #definition
 * differential.element[1].type.code = #BackboneElement
 
 
-* differential.element[2].id = "Chemotherapy.productAdministration.agent"
-* differential.element[2].path = "Chemotherapy.productAdministration.agent"
+* differential.element[2].id = "Chemotherapy-min.productAdministration.agent"
+* differential.element[2].path = "Chemotherapy-min.productAdministration.agent"
 * differential.element[2].short = "Antineoplastic and immunostimulating agents"
 * differential.element[2].definition = "In this section, any of the 'antineoplastic and immunostimulating agents' received by the survivor should be reported,  Drugs names are reported based on the ATC code listed under L01 to L04 in Appendix.  Synonyms are included. When you start typing the name of the drug, the possible options will automatically suggested by the system. 
 Up to 20 drugs are allowed into the system.  The variable acronym changes based on the ordinal cmulative number of drugs received (e.g. FN_1, FN_2, FN_3, ?)"
@@ -45,8 +45,8 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[2].type.code = #CodeableConcept
 * differential.element[2].binding.valueSet = "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp"
 * differential.element[2].binding.strength = #extensible
-* differential.element[3].id = "Chemotherapy.productAdministration.cumulativeDose"
-* differential.element[3].path = "Chemotherapy.productAdministration.cumulativeDose"
+* differential.element[3].id = "Chemotherapy-min.productAdministration.cumulativeDose"
+* differential.element[3].path = "Chemotherapy-min.productAdministration.cumulativeDose"
 * differential.element[3].short = "Cumulative Dose"
 * differential.element[3].definition = "Report the total cumulative dose received of each drug. "
 * differential.element[3].min = 1
@@ -54,8 +54,8 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[3].type.code = #BackboneElement
 
 
-* differential.element[4].id = "Chemotherapy.productAdministration.cumulativeDose.notAvailable"
-* differential.element[4].path = "Chemotherapy.productAdministration.cumulativeDose.notAvailable"
+* differential.element[4].id = "Chemotherapy-min.productAdministration.cumulativeDose.notAvailable"
+* differential.element[4].path = "Chemotherapy-min.productAdministration.cumulativeDose.notAvailable"
 * differential.element[4].short = "Not calculated or not known dose"
 * differential.element[4].definition = "Flag indicating if the dose was not calculated or it was not known"
 * differential.element[4].min = 0
@@ -63,8 +63,8 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[4].type.code = #CodeableConcept
 
 
-* differential.element[5].id = "Chemotherapy.productAdministration.cumulativeDose.value"
-* differential.element[5].path = "Chemotherapy.productAdministration.cumulativeDose.value"
+* differential.element[5].id = "Chemotherapy-min.productAdministration.cumulativeDose.value"
+* differential.element[5].path = "Chemotherapy-min.productAdministration.cumulativeDose.value"
 * differential.element[5].short = "Total cumulative dose"
 * differential.element[5].definition = "Report the total cumulative dose received of each drug."
 * differential.element[5].min = 0
@@ -72,8 +72,8 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[5].type.code = #decimal
 
 
-* differential.element[6].id = "Chemotherapy.productAdministration.cumulativeDose.unit"
-* differential.element[6].path = "Chemotherapy.productAdministration.cumulativeDose.unit"
+* differential.element[6].id = "Chemotherapy-min.productAdministration.cumulativeDose.unit"
+* differential.element[6].path = "Chemotherapy-min.productAdministration.cumulativeDose.unit"
 * differential.element[6].short = "Measure unit"
 * differential.element[6].definition = "If the dose was calculated, please report the measure unit of the calculation
 1 => mg/m2
@@ -86,8 +86,8 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[6].type.code = #CodeableConcept
 
 
-* differential.element[7].id = "Chemotherapy.corticosteroids"
-* differential.element[7].path = "Chemotherapy.corticosteroids"
+* differential.element[7].id = "Chemotherapy-min.corticosteroids"
+* differential.element[7].path = "Chemotherapy-min.corticosteroids"
 * differential.element[7].short = "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously"
 * differential.element[7].definition = "Report 'yes' if the survivor was treated with steroids for at least 4 weeks continuously
 1 => Yes
@@ -98,8 +98,8 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[7].type.code = #CodeableConcept
 
 
-* differential.element[8].id = "Chemotherapy.intrathecalInjections"
-* differential.element[8].path = "Chemotherapy.intrathecalInjections"
+* differential.element[8].id = "Chemotherapy-min.intrathecalInjections"
+* differential.element[8].path = "Chemotherapy-min.intrathecalInjections"
 * differential.element[8].short = "Intrathecal injections"
 * differential.element[8].definition = "Please state if the survivor received any therapeutic intrathecal injections
 1 => Yes

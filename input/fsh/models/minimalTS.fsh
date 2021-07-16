@@ -86,7 +86,7 @@ Usage: #definition
 * differential.element[7].definition = "Chemotherapy"
 * differential.element[7].min = 0
 * differential.element[7].max = "1"
-* differential.element[7].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy
+* differential.element[7].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy-min
 
 
 * differential.element[8].id = "MinimalTreatmentSummary.diagnosis.radiotherapy"

@@ -32,6 +32,110 @@
         "max": "1"
       },
       {
+        "id": "Chemotherapy.startDate",
+        "path": "Chemotherapy.startDate",
+        "short": "Start date",
+        "definition": "Please report the date of the first chemotherapy given. If the date is unkown or partially missed insert the year at the best of your knowledge.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.endDate",
+        "path": "Chemotherapy.endDate",
+        "short": "End date",
+        "definition": "Please report the date of the last chemotherapy given. If the date is unkown or partially missed insert the year at the best of your knowledge.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.istitutionOfTreatment",
+        "path": "Chemotherapy.istitutionOfTreatment",
+        "short": "Institution of treatment",
+        "definition": "Please indicate the institution in which all or most of the chemotherapeutic treatment was given",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.istitutionOfTreatment.description",
+        "path": "Chemotherapy.istitutionOfTreatment.description",
+        "short": "Institution description",
+        "definition": "Please provide name, city and countryof the institution",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.istitutionOfTreatment.name",
+        "path": "Chemotherapy.istitutionOfTreatment.name",
+        "short": "Institution name",
+        "definition": "Institution name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.istitutionOfTreatment.address",
+        "path": "Chemotherapy.istitutionOfTreatment.address",
+        "short": "Institution address",
+        "definition": "Institution address",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.istitutionOfTreatment.address.name",
+        "path": "Chemotherapy.istitutionOfTreatment.address.name",
+        "short": "Institution city",
+        "definition": "Institution city",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.istitutionOfTreatment.address.country",
+        "path": "Chemotherapy.istitutionOfTreatment.address.country",
+        "short": "Institution country",
+        "definition": "Institution country",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
         "id": "Chemotherapy.productAdministration",
         "path": "Chemotherapy.productAdministration",
         "short": "Product(s) administartion data",
@@ -55,11 +159,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "valueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp",
-          "strength": "extensible"
-        }
+        ]
       },
       {
         "id": "Chemotherapy.productAdministration.cumulativeDose",
@@ -79,6 +179,45 @@
         "path": "Chemotherapy.productAdministration.cumulativeDose.notAvailable",
         "short": "Not calculated or not known dose",
         "definition": "Flag indicating if the dose was not calculated or it was not known",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.productAdministration.cumulativeDose.measureType",
+        "path": "Chemotherapy.productAdministration.cumulativeDose.measureType",
+        "short": "How the dose was determined (estimation or calculation)",
+        "definition": "Specify if the cumulative dose reported has been all calculated on real data or  estimated based on the expected dose prescribed by the protocol.  If some part of the calculation was based on estimated values, the whole field should be 'estimated'",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.productAdministration.cumulativeDose.measureStatus",
+        "path": "Chemotherapy.productAdministration.cumulativeDose.measureStatus",
+        "short": "The reported doses are incomplete (either under- or over-estimated)",
+        "definition": "Check in case of incomplete doses",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.productAdministration.cumulativeDose.statusReason",
+        "path": "Chemotherapy.productAdministration.cumulativeDose.statusReason",
+        "short": "Specify reasons why",
+        "definition": "Specify reasons of incomplete estimated doses",
         "min": 0,
         "max": "1",
         "type": [
@@ -130,12 +269,77 @@
         "id": "Chemotherapy.intrathecalInjections",
         "path": "Chemotherapy.intrathecalInjections",
         "short": "Intrathecal injections",
-        "definition": "Please state if the survivor received any therapeutic intrathecal injections\n1 => Yes\n2 => No\n-9922 => NK",
+        "definition": "Intrathecal injections",
         "min": 1,
         "max": "1",
         "type": [
           {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.intrathecalInjections.status",
+        "path": "Chemotherapy.intrathecalInjections.status",
+        "short": "did the survivor therapeutic intrathecal injections ?",
+        "definition": "Please state if the survivor received any therapeutic intrathecal injections\n1 => Yes\n2 => No\n-9922 => NK",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
             "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.intrathecalInjections.number",
+        "path": "Chemotherapy.intrathecalInjections.number",
+        "short": "Total number",
+        "definition": "Report the total number of injections",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.intrathecalInjections.productName",
+        "path": "Chemotherapy.intrathecalInjections.productName",
+        "short": "If Yes, drug(s) administered",
+        "definition": "Please report the names of drugs injected intrathecal",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.otherTreatments",
+        "path": "Chemotherapy.otherTreatments",
+        "short": "Other chemothrapeutic treatments",
+        "definition": "Report any other chemothrapeutic treatments that are not included in the ATC code",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Chemotherapy.otherTreatments.ProductName",
+        "path": "Chemotherapy.otherTreatments.ProductName",
+        "short": "Drugs name",
+        "definition": "If yes, describe treatments",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
           }
         ]
       }

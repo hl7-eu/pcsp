@@ -84,8 +84,8 @@ If the dose is not known, write NK."
 
 * differential.element[6].id = "Radiotherapy.target.comulativeDose.notKnown"
 * differential.element[6].path = "Radiotherapy.target.comulativeDose.notKnown"
-* differential.element[6].short = "Not nown dose"
-* differential.element[6].definition = "Not nown dose"
+* differential.element[6].short = "Not known dose"
+* differential.element[6].definition = "Not known dose"
 * differential.element[6].min = 0
 * differential.element[6].max = "1"
 * differential.element[6].type.code = #CodeableConcept
@@ -150,8 +150,8 @@ required if given"
 
 * differential.element[13].id = "Radiotherapy.target.boost.comulativeDose.notKnown"
 * differential.element[13].path = "Radiotherapy.target.boost.comulativeDose.notKnown"
-* differential.element[13].short = "Not nown dose"
-* differential.element[13].definition = "Not nown dose"
+* differential.element[13].short = "Not known dose"
+* differential.element[13].definition = "Not known dose"
 * differential.element[13].min = 0
 * differential.element[13].max = "1"
 * differential.element[13].type.code = #CodeableConcept

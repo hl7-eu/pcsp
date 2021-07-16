@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RadiotherapyTypeVs",
+  "id": "vs-RadiotherapyType-eu-pcsp",
+  "title": "Radiotherapy Type",
+  "description": "Types of radiotherapy this procedure is referring to",
+  "version": "0.0.1",
+  "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-RadiotherapyType-eu-pcsp",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "33195004",
+            "display": "External beam radiotherapy"
+          },
+          {
+            "code": "152198000",
+            "display": "Brachytherapy"
+          },
+          {
+            "code": "399315003",
+            "display": "Radionuclide therapy"
+          }
+        ]
+      }
+    ]
+  }
+}
