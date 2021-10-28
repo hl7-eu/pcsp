@@ -201,10 +201,6 @@
             "display": "Pyrimidine analogues"
           },
           {
-            "code": "L01BC",
-            "display": "Trifluridina + tipiracil"
-          },
-          {
             "code": "L01BC01",
             "display": "Cytarabina"
           },
@@ -1043,22 +1039,6 @@
           {
             "code": "L03AX",
             "display": "Other immunostimulants"
-          },
-          {
-            "code": "L03AX",
-            "display": "Timomudulina"
-          },
-          {
-            "code": "L03AX",
-            "display": "Timalfasina"
-          },
-          {
-            "code": "L03AX",
-            "display": "Timostimulina"
-          },
-          {
-            "code": "L03AX",
-            "display": "Timosina alfa-1"
           },
           {
             "code": "L03AX01",

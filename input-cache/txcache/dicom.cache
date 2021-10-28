@@ -1,0 +1,53 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://dicom.nema.org/resources/ontology/DCM",
+  "code" : "113725"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Dose (RP) Total",
+  "code" : "113725",
+  "system" : "http://dicom.nema.org/resources/ontology/DCM"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://dicom.nema.org/resources/ontology/DCM",
+      "concept" : [{
+        "code" : "113725",
+        "display" : "Dose (RP) Total"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:ca161c0d-b763-48ee-b2f5-7871acec8c02",
+    "timestamp" : "2021-10-27T12:51:25.653Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://dicom.nema.org/resources/ontology/DCM|01"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Total Dose related to Reference Point (RP). (in the scope of the including report)"
+      }],
+      "system" : "http://dicom.nema.org/resources/ontology/DCM",
+      "code" : "113725",
+      "display" : "Dose (RP) Total"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

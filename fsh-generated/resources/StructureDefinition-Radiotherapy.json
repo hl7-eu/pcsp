@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Radiotherapy",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy",
   "publisher": "PanCareSurPass project",
   "status": "draft",
-  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy",
   "name": "Radiotherapy",
   "title": "Radiotherapy",
   "experimental": true,

@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "TreatmentSummary",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/TreatmentSummary",
   "publisher": "PanCareSurPass project",
   "status": "draft",
-  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/TreatmentSummary",
   "name": "TreatmentSummary",
   "title": "Treatment Summary",
   "experimental": true,

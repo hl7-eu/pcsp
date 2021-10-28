@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Chemotherapy",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy",
   "publisher": "PanCareSurPass project",
   "status": "draft",
-  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy",
   "name": "Chemotherapy",
   "title": "Chemotherapy",
   "experimental": true,

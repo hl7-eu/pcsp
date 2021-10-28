@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "MinimalTreatmentSummary",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MinimalTreatmentSummary",
   "publisher": "PanCareSurPass project",
   "status": "draft",
-  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MinimalTreatmentSummary",
   "name": "MinimalTreatmentSummary",
   "title": "Minimal Treatment Summary",
   "experimental": true,

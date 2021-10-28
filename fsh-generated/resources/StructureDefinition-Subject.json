@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Subject",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject",
   "publisher": "PanCareSurPass project",
   "status": "draft",
-  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject",
   "name": "Subject",
   "title": "Subject of care",
   "experimental": true,

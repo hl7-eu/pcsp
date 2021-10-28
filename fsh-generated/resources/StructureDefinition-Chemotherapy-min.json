@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Chemotherapy-min",
+  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy-min",
   "publisher": "PanCareSurPass project",
   "status": "draft",
-  "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy-min",
   "name": "ChemotherapyMin",
   "title": "Chemotherapy (Minimal)",
   "experimental": true,
