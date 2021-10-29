@@ -199,8 +199,8 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[23].min = 0
 * differential.element[23].max = "1"
 * differential.element[23].type.code = #BackboneElement
-* differential.element[24].id = "Chemotherapy.otherTreatments.ProductName"
-* differential.element[24].path = "Chemotherapy.otherTreatments.ProductName"
+* differential.element[24].id = "Chemotherapy.otherTreatments.productName"
+* differential.element[24].path = "Chemotherapy.otherTreatments.productName"
 * differential.element[24].short = "Drugs name"
 * differential.element[24].definition = "If yes, describe treatments"
 * differential.element[24].min = 1

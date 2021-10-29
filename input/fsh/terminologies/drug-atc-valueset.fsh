@@ -54,7 +54,7 @@ Description: "List of WHO ATC codes for antineoplastic and immunostimulating age
 * $atc#L01BB06	"Clofarabina"
 * $atc#L01BB07	"Nelarabina"
 * $atc#L01BC	"Pyrimidine analogues"
-* $atc#L01BC	"Trifluridina + tipiracil"
+// * $atc#L01BC	"Trifluridina + tipiracil"
 * $atc#L01BC01	"Cytarabina"
 * $atc#L01BC02	"Fluorouracile"
 * $atc#L01BC03	"Tegafur"
@@ -265,10 +265,12 @@ Description: "List of WHO ATC codes for antineoplastic and immunostimulating age
 * $atc#L03AC01	"Aldesleuchina"
 * $atc#L03AC02	"Oprelvekin"
 * $atc#L03AX	"Other immunostimulants"
+/* ---- removed duplications
 * $atc#L03AX	"Timomudulina"
 * $atc#L03AX	"Timalfasina"
 * $atc#L03AX	"Timostimulina"
 * $atc#L03AX	"Timosina alfa-1"
+---- */
 * $atc#L03AX01	"Lentinan"
 * $atc#L03AX02	"Roquinimex"
 * $atc#L03AX03	"BCG vaccine"

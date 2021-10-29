@@ -7,7 +7,23 @@ Title:  "Resource related information"
 Description: "This extension provides a means to link the source resource to any target related information. This extension shall not be used when other more specific elements or standard extensions apply. E.g. Observation.hasMember "
 // publisher, contact, and other metadata here using caret (^) syntax (omitted)
 * value[x] only Reference (Resource)
+
+
+RuleSet: CancerConditionCommonRules
+* extension contains
+    $condition-assertedDate named assertedDate 0..1 MS and
+    HistologyMorphologyBehavior named histologyMorphologyBehavior 0..1 MS
+* bodySite.extension contains
+     BodyLocationQualifier named locationQualifier 0..*   and
+     LateralityQualifier named lateralityQualifier 0..1
+
+* bodySite from ICDO3TopographyVs
+* extension and bodySite and bodySite.extension[locationQualifier] and bodySite.extension[lateralityQualifier] MS
+
+
 //====== Profiles =====================================
+
+/* ======
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ConditionCancerPcsp
@@ -16,7 +32,11 @@ Id:       Condition-cancer-eu-pcsp
 Title:    "Cancer Condition"
 Description: "This abstract profile defines how to represent Cancer Condition in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
+
+
 * ^abstract = true
+
+	 
 * code 1.. MS // add value set; add slices for
 * code.coding 0.. MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -31,19 +51,44 @@ Description: "This abstract profile defines how to represent Cancer Condition in
 * code.coding[icdo3-morphology] from ICDO3MorphologyVs
 * bodySite MS // check if a bodyStructure is needed  
 * bodySite from ICDO3TopographyVs 
+* extension and bodySite and bodySite.extension[locationQualifier] and bodySite.extension[lateralityQualifier] MS
+
+==== */
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ConditionPrimaryCancerPcsp
-Parent:   ConditionCancerPcsp
+Parent:   Condition
 Id:       Condition-primaryCancer-eu-pcsp
 Title:    "Primary Cancer Condition"
-Description: "This abstract profile defines how to represent Primary Cancer Condition in FHIR for the purpose of the PanCareSurPass project."
+Description: "This abstract profile defines how to represent Primary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. It is inspired from the mCode guide. A primary cancer condition, the original or first tumor in the body (Definition from: [NCI Dictionary of Cancer Terms]( https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)).  Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary."
 //-------------------------------------------------------------------------------------------
 * ^abstract = false
 
+* insert CancerConditionCommonRules
+* code 1.. MS // add value set; add slices for
+* code.coding 0.. MS
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.rules = #open
+* code.coding ^slicing.description = "Slice based on the coding.code pattern"
+* code.coding contains 
+	iccc3-classification 0..1 MS
+* code.coding[iccc3-classification] from ICCC3Vs
+
+* stage.assessment only Reference(CancerStageGroup)
+* stage and stage.assessment MS
+* stage.summary ^short = "Most recent Stage Group"
+* stage.summary ^definition = "In mCODE, staging information MUST be captured in an Observation that conforms to the CancerStageGroup profile. For convenience, the stage group MAY appear in this element, copied from the CancerStageGroup, but mCODE Data Senders and Receivers MAY ignore it."
+* stage.type ^short = "Staging system used."
+* stage.type ^definition = "In mCODE, staging information MUST be captured in an Observation that conforms to the CancerStageGroup profile. For convenience, the staging system MAY appear in this element, but mCODE Data Senders and Receivers MAY ignore it."
+// * stage.type from ObservationCodesStageGroupVS (required)
+
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ConditionSecondaryCancerPcsp
-Parent:   ConditionCancerPcsp
+Parent:   Condition
 Id:       Condition-secondaryCancer-eu-pcsp
 Title:    "Secondary Cancer Condition"
 Description: "This abstract profile defines how to represent Secondary Cancer Condition in FHIR for the purpose of the PanCareSurPass project."
@@ -174,7 +219,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * subject MS
 * performedPeriod 1.. MS
 * reasonReference 1.. MS // add reference to the diagnosis
-* reasonReference only Reference(ConditionCancerPcsp)
+* reasonReference only Reference(ConditionPrimaryCancerPcsp)
 * bodySite 1.. MS 
 * bodySite from VsRadiotherapy
 
@@ -198,7 +243,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * subject MS
 * performedPeriod 1.. MS
 * reasonReference 1.. MS // add reference to the diagnosis
-* reasonReference only Reference(ConditionCancerPcsp)
+* reasonReference only Reference(ConditionPrimaryCancerPcsp)
 * bodySite 1.. MS 
 * bodySite from VsRadiotherapy
 
@@ -216,7 +261,7 @@ Description: "This profile defines how to represent MedicationAdministration in 
 * medicationCodeableConcept from VsPcspAtcCodes
 * medicationCodeableConcept 1..1 MS
 * reasonReference 1..1 MS // add reference to the diagnosis
-* reasonReference only Reference(ConditionCancerPcsp)
+* reasonReference only Reference(ConditionPrimaryCancerPcsp)
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -14,3 +14,7 @@ Alias: $icd03 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $iccc3 = http://terminology.hl7.org/CodeSystem/iccc-3 // FAKE URL NOT YET ASSIGNED !!
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $ajcc = http://cancerstaging.org
+
+
+Alias: $condition-assertedDate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate

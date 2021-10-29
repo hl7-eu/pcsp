@@ -11,6 +11,7 @@ CODPAT	PASSPORT	LASTNAME	FIRSTNAME	GENDER	D_GENDER	DOBDT	ADDRESS	CONTACT	D_CONTA
 Instance:  PatientCineca
 InstanceOf: PatientPcsp
 Title:   "Patient: Sample from Cineca"
+Description: "Sample of Patient created based on information available in the PCSP platform"
 Usage:  #example
 //----------------------------------------------------------
 
