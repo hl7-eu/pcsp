@@ -7,6 +7,7 @@ Extension: ConditionRelated
 Id: mcode-condition-related
 Title:  "Condition related to resource"
 Description: "The resource has an unspecified relationship with a Condition."
+
 * value[x] only Reference(Condition)
 * value[x] 1..1
 
@@ -14,6 +15,7 @@ Extension: HistologyMorphologyBehavior
 Id: mcode-histology-morphology-behavior
 Title: "Histology-Morphology-Behavior"
 Description: "An extension describing the morphologic and behavioral characteristics of the cancer."
+* mcode-histology-morphology-behavior
 * insert ExtensionContext(Condition)
 * value[x] only CodeableConcept
 * value[x] from ICDO3MorphologyVs (required)
@@ -23,6 +25,8 @@ Extension: BodyLocationQualifier
 Id: mcode-body-location-qualifier
 Title: "Body Location Qualifier"
 Description: "Qualifier to refine an body location. These include qualifiers for relative location, directionality, number, and plane, and exclude qualifiers for laterality."
+
+* mcode-body-location-qualifier
 // FHIR-xxxx
 // * insert ExtensionContext(Specimen.collection.bodySite)
 // * insert ExtensionContext(Procedure.bodySite)
@@ -36,6 +40,9 @@ Extension: LateralityQualifier
 Id: mcode-laterality-qualifier
 Title: "Laterality Qualifier"
 Description: "Qualifier to specify  laterality."
+
+* mcode-laterality-qualifier
+
 // * insert ExtensionContext(Specimen.collection.bodySite)
 // * insert ExtensionContext(Procedure.bodySite)
 // * insert ExtensionContext(Condition.bodySite)

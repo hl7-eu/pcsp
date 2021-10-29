@@ -11,14 +11,15 @@ Description: "This extension provides a means to link the source resource to any
 
 RuleSet: CancerConditionCommonRules
 * extension contains
-    $condition-assertedDate named assertedDate 0..1 MS and
+    $condition-assertedDate named assertedDate 0..1 and
     HistologyMorphologyBehavior named histologyMorphologyBehavior 0..1 MS
 * bodySite.extension contains
      BodyLocationQualifier named locationQualifier 0..*   and
      LateralityQualifier named lateralityQualifier 0..1
 
 * bodySite from ICDO3TopographyVs
-* extension and bodySite and bodySite.extension[locationQualifier] and bodySite.extension[lateralityQualifier] MS
+* extension and bodySite and bodySite.extension[lateralityQualifier] MS
+* bodySite.extension[locationQualifier] 
 
 
 //====== Profiles =====================================
@@ -61,7 +62,9 @@ Profile:  ConditionPrimaryCancerPcsp
 Parent:   Condition
 Id:       Condition-primaryCancer-eu-pcsp
 Title:    "Primary Cancer Condition"
-Description: "This abstract profile defines how to represent Primary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. It is inspired from the mCode guide. A primary cancer condition, the original or first tumor in the body (Definition from: [NCI Dictionary of Cancer Terms]( https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)).  Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary."
+Description: "This abstract profile defines how to represent Primary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. 
+This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
+A primary cancer condition, the original or first tumor in the body (Definition from: [NCI Dictionary of Cancer Terms]( https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)).  Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary."
 //-------------------------------------------------------------------------------------------
 * ^abstract = false
 
@@ -77,13 +80,13 @@ Description: "This abstract profile defines how to represent Primary Cancer Cond
 * code.coding[iccc3-classification] from ICCC3Vs
 
 * stage.assessment only Reference(CancerStageGroup)
-* stage and stage.assessment MS
+* stage MS
+// and stage.assessment MS
 * stage.summary ^short = "Most recent Stage Group"
-* stage.summary ^definition = "In mCODE, staging information MUST be captured in an Observation that conforms to the CancerStageGroup profile. For convenience, the stage group MAY appear in this element, copied from the CancerStageGroup, but mCODE Data Senders and Receivers MAY ignore it."
+* stage.summary ^definition = "As for mCODE, in PCSP staging information MUST be captured in an Observation that conforms to the CancerStageGroup profile. For convenience, the stage group MAY appear in this element, copied from the CancerStageGroup, but Data Senders and Receivers MAY ignore it."
 * stage.type ^short = "Staging system used."
-* stage.type ^definition = "In mCODE, staging information MUST be captured in an Observation that conforms to the CancerStageGroup profile. For convenience, the staging system MAY appear in this element, but mCODE Data Senders and Receivers MAY ignore it."
+* stage.type ^definition = "As for mCODE, in PCSP staging information MUST be captured in an Observation that conforms to the CancerStageGroup profile. For convenience, the staging system MAY appear in this element, but Data Senders and Receivers MAY ignore it."
 // * stage.type from ObservationCodesStageGroupVS (required)
-
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -91,12 +94,19 @@ Profile:  ConditionSecondaryCancerPcsp
 Parent:   Condition
 Id:       Condition-secondaryCancer-eu-pcsp
 Title:    "Secondary Cancer Condition"
-Description: "This abstract profile defines how to represent Secondary Cancer Condition in FHIR for the purpose of the PanCareSurPass project."
+Description: "This abstract profile defines how to represent Secondary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. 
+This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
+Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms)."
 //-------------------------------------------------------------------------------------------
 * ^abstract = false
-* extension contains $condition-related named primaryCancer-condition 0..1
-* extension[primaryCancer-condition].valueReference only Reference(ConditionPrimaryCancerPcsp)
-
+* insert CancerConditionCommonRules
+* extension contains $condition-related named relatedPrimaryCancerCondition 0..1 MS
+* extension[relatedPrimaryCancerCondition].valueReference only Reference(ConditionPrimaryCancerPcsp)
+* extension[relatedPrimaryCancerCondition] ^short = "Related Primary Cancer Condition"
+* extension[relatedPrimaryCancerCondition] ^definition = "A reference to the primary cancer condition that provides context for this resource."
+* code MS
+// * code from SecondaryCancerDisorderVS (extensible)
+* insert NotUsed(stage)
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  CumulativeDoseObsPcsp
