@@ -1,28 +1,6 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "LA4489-6",
-  "display" : "Unknown"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Unknown",
-  "code" : "LA4489-6",
-  "system" : "http://loinc.org"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "5792-7"
-}, "valueSet" :{
-  "resourceType" : "ValueSet"
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#5792-7) is not valid in the value set 'LOINC Answer List LL365-8' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
   "code" : "21907-1"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -141,6 +119,28 @@ v: {
   "system" : "http://loinc.org"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA4489-6",
+  "display" : "Unknown"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Unknown",
+  "code" : "LA4489-6",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "5792-7"
+}, "valueSet" :{
+  "resourceType" : "ValueSet"
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#5792-7) is not valid in the value set 'LOINC Answer List LL365-8' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -167,15 +167,15 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:93e87c22-0a34-4d58-ae96-f67623d93114",
-    "timestamp" : "2021-10-29T12:53:33.294Z",
+    "identifier" : "urn:uuid:a8e14bbf-a24f-4a46-a299-b75ee143e5a1",
+    "timestamp" : "2021-12-01T16:44:53.242Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org|2.71"
+      "valueUri" : "http://loinc.org|2.71"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -223,15 +223,15 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:8b8f4efe-d04a-4eb5-8c99-f8b514ec23d4",
-    "timestamp" : "2021-10-29T12:53:33.497Z",
+    "identifier" : "urn:uuid:1e49c85c-9c4d-48cc-badd-2efbc1ea724a",
+    "timestamp" : "2021-12-01T16:44:53.523Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org|2.71"
+      "valueUri" : "http://loinc.org|2.71"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -279,15 +279,15 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:1b9e0650-3f18-4578-8f23-9349c8fbc5dc",
-    "timestamp" : "2021-10-29T12:53:33.747Z",
+    "identifier" : "urn:uuid:64d9e27e-a187-48b4-b666-6fe30d42232f",
+    "timestamp" : "2021-12-01T16:44:53.804Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org|2.71"
+      "valueUri" : "http://loinc.org|2.71"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -335,15 +335,15 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:b87cf17b-4e97-47b1-b4d5-59e51a7c7abc",
-    "timestamp" : "2021-10-29T12:53:33.997Z",
+    "identifier" : "urn:uuid:b2c4c979-a3a5-4a45-b63e-94e094e2309a",
+    "timestamp" : "2021-12-01T16:44:54.117Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org|2.71"
+      "valueUri" : "http://loinc.org|2.71"
     }],
     "contains" : [{
       "system" : "http://loinc.org",

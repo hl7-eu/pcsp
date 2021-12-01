@@ -15,6 +15,9 @@ Usage: #definition
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
 * mapping[0].name = "FHIR"
+* mapping[1].identity = "cda"
+* mapping[1].uri = "http://hl7.org/v3/cda"
+* mapping[1].name = "CDA (R2)"
 * kind = #logical
 * abstract = true
 * type = "Subject"
@@ -91,8 +94,8 @@ Usage: #definition
 * differential.element[9].type.code = #Address
 * differential.element[10].id = "Subject.contact"
 * differential.element[10].path = "Subject.contact"
-* differential.element[10].short = "Contact"
-* differential.element[10].definition = "Contact"
+* differential.element[10].short = "Contact - receiver of the passport"
+* differential.element[10].definition = "Contact - receiver of the passport"
 * differential.element[10].min = 0
 * differential.element[10].max = "*"
 * differential.element[10].type.code = #BackboneElement
@@ -110,34 +113,13 @@ Usage: #definition
 * differential.element[12].min = 0
 * differential.element[12].max = "*"
 * differential.element[12].type.code = #uri
-* differential.element[13].id = "Subject.guardian"
-* differential.element[13].path = "Subject.guardian"
-* differential.element[13].short = "Guardian"
-* differential.element[13].definition = "Guardian"
+* differential.element[13].id = "Subject.contact.relationship"
+* differential.element[13].path = "Subject.contact.relationship"
+* differential.element[13].short = "Relationship with the subject"
+* differential.element[13].definition = "Relationship with the subject"
 * differential.element[13].min = 0
-* differential.element[13].max = "*"
-* differential.element[13].type.code = #BackboneElement
-* differential.element[14].id = "Subject.guardian.contact"
-* differential.element[14].path = "Subject.guardian.contact"
-* differential.element[14].short = "Contact"
-* differential.element[14].definition = "Contact"
-* differential.element[14].min = 0
-* differential.element[14].max = "*"
-* differential.element[14].type.code = #BackboneElement
-* differential.element[15].id = "Subject.guardian.contact.email"
-* differential.element[15].path = "Subject.guardian.contact.email"
-* differential.element[15].short = "E-mail"
-* differential.element[15].definition = "E-mail"
-* differential.element[15].min = 0
-* differential.element[15].max = "*"
-* differential.element[15].type.code = #uri
-* differential.element[16].id = "Subject.guardian.contact.mobile"
-* differential.element[16].path = "Subject.guardian.contact.mobile"
-* differential.element[16].short = "Mobile phone"
-* differential.element[16].definition = "Mobile phone"
-* differential.element[16].min = 0
-* differential.element[16].max = "*"
-* differential.element[16].type.code = #uri
+* differential.element[13].max = "1"
+* differential.element[13].type.code = #CodeableConcept
 //  
 // === MAPPING === 
 // 
@@ -153,14 +135,14 @@ Usage: #definition
 * differential.element[3].mapping[0].identity = "fhir"
 * differential.element[3].mapping[0].map = "Patient.name.given"
 
-
-
+* differential.element[4].mapping[0].identity = "fhir"
+* differential.element[4].mapping[0].map = "Patient.name.given"
 
 * differential.element[5].mapping[0].identity = "fhir"
 * differential.element[5].mapping[0].map = "Patient.name.family"
 
 * differential.element[6].mapping[0].identity = "fhir"
-* differential.element[6].mapping[0].map = "Patient.extension('http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName')"
+* differential.element[6].mapping[0].map = "Patient.name.family"
 
 * differential.element[7].mapping[0].identity = "fhir"
 * differential.element[7].mapping[0].map = "Patient.gender"
@@ -180,17 +162,13 @@ Usage: #definition
 * differential.element[12].mapping[0].identity = "fhir"
 * differential.element[12].mapping[0].map = "Patient.contact.telecom"
 
+* differential.element[13].mapping[0].identity = "fhir"
+* differential.element[13].mapping[0].map = "Patient.contact.relationship"
 
 
 
-* differential.element[14].mapping[0].identity = "fhir"
-* differential.element[14].mapping[0].map = "Patient.contact"
 
-* differential.element[15].mapping[0].identity = "fhir"
-* differential.element[15].mapping[0].map = "Patient.contact.telecom"
 
-* differential.element[16].mapping[0].identity = "fhir"
-* differential.element[16].mapping[0].map = "Patient.contact.telecom"
 
 
 
@@ -246,56 +224,60 @@ Usage: #definition
 
 
 
-* differential.element[0].mapping[0].identity = "cda"
-* differential.element[0].mapping[0].map = "ClinicalDocument.recordTarget.patientRole"
 
-* differential.element[1].mapping[0].identity = "cda"
-* differential.element[1].mapping[0].map = ".id"
 
-* differential.element[2].mapping[0].identity = "cda"
-* differential.element[2].mapping[0].map = ".patient.name"
 
-* differential.element[3].mapping[0].identity = "cda"
-* differential.element[3].mapping[0].map = ".patient.name.family"
 
-* differential.element[4].mapping[0].identity = "cda"
-* differential.element[4].mapping[0].map = ".patient.name.family"
+* differential.element[0].mapping[1].identity = "cda"
+* differential.element[0].mapping[1].map = "ClinicalDocument.recordTarget.patientRole"
 
-* differential.element[5].mapping[0].identity = "cda"
-* differential.element[5].mapping[0].map = ".patient.name.given"
+* differential.element[1].mapping[1].identity = "cda"
+* differential.element[1].mapping[1].map = ".id"
 
+* differential.element[2].mapping[1].identity = "cda"
+* differential.element[2].mapping[1].map = ".patient.name"
 
+* differential.element[3].mapping[1].identity = "cda"
+* differential.element[3].mapping[1].map = ".patient.name.family"
 
+* differential.element[4].mapping[1].identity = "cda"
+* differential.element[4].mapping[1].map = ".patient.name.family"
 
-* differential.element[7].mapping[0].identity = "cda"
-* differential.element[7].mapping[0].map = ".patient.administrativeGenderCode"
+* differential.element[5].mapping[1].identity = "cda"
+* differential.element[5].mapping[1].map = ".patient.name.given"
 
-* differential.element[8].mapping[0].identity = "cda"
-* differential.element[8].mapping[0].map = ".patient.birthTime"
+* differential.element[6].mapping[1].identity = "cda"
+* differential.element[6].mapping[1].map = ".patient.name.family"
 
-* differential.element[9].mapping[0].identity = "cda"
-* differential.element[9].mapping[0].map = ".patient.birthplace"
+* differential.element[7].mapping[1].identity = "cda"
+* differential.element[7].mapping[1].map = ".patient.administrativeGenderCode"
 
-* differential.element[10].mapping[0].identity = "cda"
-* differential.element[10].mapping[0].map = "ClinicalDocument.recordTarget.participant"
+* differential.element[8].mapping[1].identity = "cda"
+* differential.element[8].mapping[1].map = ".patient.birthTime"
 
-* differential.element[11].mapping[0].identity = "cda"
-* differential.element[11].mapping[0].map = "ClinicalDocument.recordTarget.participant.associatedEntity.telecom"
+* differential.element[9].mapping[1].identity = "cda"
+* differential.element[9].mapping[1].map = ".patient.birthplace"
 
-* differential.element[12].mapping[0].identity = "cda"
-* differential.element[12].mapping[0].map = "ClinicalDocument.recordTarget.participant.associatedEntity.telecom"
+* differential.element[10].mapping[1].identity = "cda"
+* differential.element[10].mapping[1].map = "ClinicalDocument.participant"
 
-* differential.element[13].mapping[0].identity = "cda"
-* differential.element[13].mapping[0].map = ".patient.guardian"
+* differential.element[11].mapping[1].identity = "cda"
+* differential.element[11].mapping[1].map = "ClinicalDocument.participant.associatedEntity.telecom"
 
+* differential.element[12].mapping[1].identity = "cda"
+* differential.element[12].mapping[1].map = "ClinicalDocument.participant.associatedEntity.telecom"
 
 
 
-* differential.element[15].mapping[0].identity = "cda"
-* differential.element[15].mapping[0].map = ".patient.guardian.telecom"
 
-* differential.element[16].mapping[0].identity = "cda"
-* differential.element[16].mapping[0].map = ".patient.guardian.telecom"
+
+
+
+
+
+
+
+
 
 
 

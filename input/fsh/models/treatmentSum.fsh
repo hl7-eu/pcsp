@@ -215,7 +215,7 @@ If personalized, please specify.  "
 * differential.element[26].type.code = #BackboneElement
 * differential.element[27].id = "TreatmentSummary.diagnosis.otherConditions"
 * differential.element[27].path = "TreatmentSummary.diagnosis.otherConditions"
-* differential.element[27].short = "Other medical conditions, not cancer associated ÿ"
+* differential.element[27].short = "Other medical conditions, not cancer associated"
 * differential.element[27].definition = "Please list here if the patient has or had other medical conditions not reported to be cancer-associated (e.g. diabetes, congenital cardiopathy, amputations, kidney transplant)"
 * differential.element[27].min = 0
 * differential.element[27].max = "*"

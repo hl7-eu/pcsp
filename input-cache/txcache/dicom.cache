@@ -27,15 +27,15 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:ca161c0d-b763-48ee-b2f5-7871acec8c02",
-    "timestamp" : "2021-10-27T12:51:25.653Z",
+    "identifier" : "urn:uuid:54e957e5-d102-45c7-b9b5-acfac4806d65",
+    "timestamp" : "2021-12-01T16:44:57.523Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://dicom.nema.org/resources/ontology/DCM|01"
+      "valueUri" : "http://dicom.nema.org/resources/ontology/DCM|01"
     }],
     "contains" : [{
       "extension" : [{

@@ -4571,15 +4571,15 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:bf322d69-01e8-4787-b868-8f41aa259335",
-    "timestamp" : "2021-10-27T12:51:23.527Z",
+    "identifier" : "urn:uuid:e879f028-fa57-43f4-b57b-4292e0947d78",
+    "timestamp" : "2021-12-01T16:44:49.991Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueString" : "http://www.whocc.no/atc|2020-05"
+      "valueUri" : "http://www.whocc.no/atc|2020-05"
     }],
     "contains" : [{
       "system" : "http://www.whocc.no/atc",

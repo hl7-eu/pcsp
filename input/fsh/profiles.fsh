@@ -69,6 +69,7 @@ A primary cancer condition, the original or first tumor in the body (Definition 
 * ^abstract = false
 
 * insert CancerConditionCommonRules
+* clinicalStatus and verificationStatus MS
 * code 1.. MS // add value set; add slices for
 * code.coding 0.. MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -78,7 +79,7 @@ A primary cancer condition, the original or first tumor in the body (Definition 
 * code.coding contains 
 	iccc3-classification 0..1 MS
 * code.coding[iccc3-classification] from ICCC3Vs
-
+* onset[x] MS
 * stage.assessment only Reference(CancerStageGroup)
 * stage MS
 // and stage.assessment MS
@@ -87,6 +88,11 @@ A primary cancer condition, the original or first tumor in the body (Definition 
 * stage.type ^short = "Staging system used."
 * stage.type ^definition = "As for mCODE, in PCSP staging information MUST be captured in an Observation that conforms to the CancerStageGroup profile. For convenience, the staging system MAY appear in this element, but Data Senders and Receivers MAY ignore it."
 // * stage.type from ObservationCodesStageGroupVS (required)
+* evidence
+  * code MS
+  * detail only Reference (Observation or DocumentReference or DiagnosticReport)
+* note MS
+
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -100,6 +106,7 @@ Records the history of secondary neoplasms, including location(s) and the date o
 //-------------------------------------------------------------------------------------------
 * ^abstract = false
 * insert CancerConditionCommonRules
+* clinicalStatus and verificationStatus MS
 * extension contains $condition-related named relatedPrimaryCancerCondition 0..1 MS
 * extension[relatedPrimaryCancerCondition].valueReference only Reference(ConditionPrimaryCancerPcsp)
 * extension[relatedPrimaryCancerCondition] ^short = "Related Primary Cancer Condition"
@@ -193,7 +200,7 @@ Description: "This profile defines how to represent Patient in FHIR for the purp
 * . ^definition = "Information about an individual receiving health care services"
 * extension contains 
 $patient-birthPlace named patient-birthPlace 0..1
-and $patient-mothersMaidenName named patient-mothersMaidenName 0..1
+// and $patient-mothersMaidenName named patient-mothersMaidenName 0..1
 * identifier 1.. MS
 * name.family 1.. MS
 * name.given 1.. MS
@@ -201,6 +208,7 @@ and $patient-mothersMaidenName named patient-mothersMaidenName 0..1
 * birthDate 1.. MS
 * contact.telecom 1.. MS
 
+/* -----------
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  PatientMinPcsp
 Parent:   Patient
@@ -210,7 +218,7 @@ Description: "This profile defines how to represent a minimal set of Patient dat
 //-------------------------------------------------------------------------------------------
 * gender 1.. MS
 * birthDate 1.. MS 
-
+---- */
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureSCTMinPcsp
@@ -225,7 +233,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * code 1..1 MS // TYPE - add 1 Autologous ( Autogenous transplantation (procedure) ) 2 = Allogeneic (50223000 | Allogeneic transplantation) // Not enough specific ?
 * code from RadiotherapyTypeVs
 // add slice on coding to allow more precise data
-* subject only Reference(PatientMinPcsp)	
+* subject only Reference(PatientPcsp)	
 * subject MS
 * performedPeriod 1.. MS
 * reasonReference 1.. MS // add reference to the diagnosis
@@ -249,7 +257,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * code 1..1 MS // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
 * code from RadiotherapyTypeVs
 // add slice on coding to allow more precise data
-* subject only Reference(PatientMinPcsp)	
+* subject only Reference(PatientPcsp)	
 * subject MS
 * performedPeriod 1.. MS
 * reasonReference 1.. MS // add reference to the diagnosis
