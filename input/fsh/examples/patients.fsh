@@ -16,7 +16,7 @@ Usage:  #example
 //----------------------------------------------------------
 
 * extension[patient-birthPlace].valueAddress.city = "ROSIGNANO MARITTIMO"
-* identifier.system = "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-cineca" // Temporary assigned 
+* identifier.system = $pat-id-cineca // Temporary assigned 
 * identifier.value = "223"
 * name.given = "MARIO"
 * name.family = "ROSSI"
@@ -49,7 +49,7 @@ Usage:  #example
 * extension[patient-birthPlace].valueAddress.country = "Portugal"
 * extension[patient-birthPlace].valueAddress.postalCode = "46181"
 
-* identifier.system = "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-hulafe" // Temporary assigned 
+* identifier.system = $pat-id-hulafe // Temporary assigned 
 * identifier.value = "04969377"
 * name.given = "Urbano"
 * name.family = "BASOA MANCEBO"
@@ -71,7 +71,7 @@ Description: "Sample of Patient created based on information provided by Vulsk"
 Usage:  #example
 //----------------------------------------------------------
 
-* identifier.system = "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-vulsk" // Temporary assigned 
+* identifier.system = $pat-id-vulsk // Temporary assigned 
 * identifier.value = "11725549"
 * name[0].given[0] = "Marija"
 * name[0].given[+] = "Asta"
@@ -81,3 +81,20 @@ Usage:  #example
 * name[=].family = "Petraitytė"
 * birthDate = 2016-12-12
 * gender = #female
+
+
+//----------------------------------------------------------
+Instance:  PatientMainz
+InstanceOf: PatientPcsp
+Title:   "Patient: Sample created on Mainz data"
+Description: "Sample of Patient created based on information provided by Mainz"
+Usage:  #example
+//----------------------------------------------------------
+
+* extension[patient-birthPlace].valueAddress.city = "HAMBURG"
+* identifier.system = $pat-id-mainz // Temporary assigned 
+* identifier.value = "L0002"
+* name[0].given = "Christian"
+* name[0].family = "Fischer"
+* birthDate = 1993-07-07
+* gender = #male

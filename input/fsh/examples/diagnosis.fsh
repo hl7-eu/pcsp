@@ -19,7 +19,7 @@ Usage:  #example
 
 //----------------------------------------------------------
 Instance:  EncounterPrimCancerMainz
-InstanceOf: Encounter
+InstanceOf: EncounterPcsp
 Title:   "Encounter: Sample from Mainz"
 Description: "Sample of Encounter associated to the Primary Cancer Condition Mainz sample"
 Usage:  #example
@@ -31,6 +31,6 @@ Usage:  #example
   * system = $org-id-mainz
   * value = "12"
 * serviceProvider.display = "UKK Essen"
-* diagnosis.condition = Reference ( ConditionPrimCancerMainz )
+// * diagnosis.condition = Reference (ConditionPrimCancerMainz)
 
 
