@@ -24,37 +24,19 @@ RuleSet: CancerConditionCommonRules
 
 //====== Profiles =====================================
 
-/* ======
-
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  ConditionCancerPcsp
-Parent:   Condition
-Id:       Condition-cancer-eu-pcsp
-Title:    "Cancer Condition"
-Description: "This abstract profile defines how to represent Cancer Condition in FHIR for the purpose of the PanCareSurPass project."
+Profile:  EncounterPcsp
+Parent:   Encounter
+Id:       Encounter-eu-pcsp
+Title:    "Encounter"
+Description: "This abstract profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
-
-
-* ^abstract = true
-
-	 
-* code 1.. MS // add value set; add slices for
-* code.coding 0.. MS
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "code"
-* code.coding ^slicing.rules = #open
-* code.coding ^slicing.description = "Slice based on the coding.code pattern"
-* code.coding contains 
-	iccc3-classification 0..1 MS and 
-	icdo3-morphology 0..1 MS  // other codes to add ?
-	// icdo3-topography 0..1 MS  // check if this slice is correct here or it should be in the bodySite
-* code.coding[iccc3-classification] from ICCC3Vs
-* code.coding[icdo3-morphology] from ICDO3MorphologyVs
-* bodySite MS // check if a bodyStructure is needed  
-* bodySite from ICDO3TopographyVs 
-* extension and bodySite and bodySite.extension[locationQualifier] and bodySite.extension[lateralityQualifier] MS
-
-==== */
+* status MS 
+* class MS
+* period.start MS 
+* serviceProvider.identifier MS  
+* serviceProvider.display MS
+* diagnosis.condition = Reference ( ConditionPrimaryCancerPcsp )
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -80,6 +62,7 @@ A primary cancer condition, the original or first tumor in the body (Definition 
 	iccc3-classification 0..1 MS
 * code.coding[iccc3-classification] from ICCC3Vs
 * onset[x] MS
+* encounter only Reference (Encounter or EncounterPcsp)
 * stage.assessment only Reference(CancerStageGroup)
 * stage MS
 // and stage.assessment MS
