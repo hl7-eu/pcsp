@@ -3,6 +3,15 @@ RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
 
+
+Extension: ResourceRelatedInfo
+Id:   ResourceRelatedInfo-eu-pcsp
+Title:  "Resource related information"
+Description: "This extension provides a means to link the source resource to any target related information. This extension shall not be used when other more specific elements or standard extensions apply. E.g. Observation.hasMember "
+// publisher, contact, and other metadata here using caret (^) syntax (omitted)
+* value[x] only Reference (Resource)
+
+
 Extension: ConditionRelated
 Id: mcode-condition-related
 Title:  "Condition related to resource"
@@ -11,6 +20,7 @@ Description: "The resource has an unspecified relationship with a Condition."
 * value[x] only Reference(Condition)
 * value[x] 1..1
 
+/* == COMMENTED 
 Extension: HistologyMorphologyBehavior
 Id: mcode-histology-morphology-behavior
 Title: "Histology-Morphology-Behavior"
@@ -20,6 +30,7 @@ Description: "An extension describing the morphologic and behavioral characteris
 * value[x] only CodeableConcept
 * value[x] from ICDO3MorphologyVs (required)
 * value[x] 1..1
+===== END */
 
 Extension: BodyLocationQualifier
 Id: mcode-body-location-qualifier

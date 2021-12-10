@@ -13,12 +13,23 @@ ValueSet: LateralityQualifierVS
 Id: mcode-laterality-qualifier-vs
 Title: "Laterality Qualifier Value Set"
 Description: "Qualifiers to specify laterality."
+
+/* ---------------------------------
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-* $sct#51440002	"Right and left (qualifier value)"
-* $sct#399488007	"Midline (qualifier value)"
-* $sct#24028007	"Right (qualifier value)"
-* $sct#7771000	"Left (qualifier value)"
+* $sct#51440002	 "Right and left (qualifier value)"
+* $sct#399488007 "Midline (qualifier value)"
+* $sct#24028007	 "Right (qualifier value)"
+* $sct#7771000	 "Left (qualifier value)"
 // * $sct#66459002	"Unilateral (qualifier value)"  -- this is used as 'left OR right'.   Given the uncertainty of the use case, it is dropped.
+-------------------*/
+
+* $loinc#LA4585-1  "Left"		
+* $loinc#LA4306-2  "Right"		
+* $loinc#LA25377-5 "Bilateral"
+* $loinc#LA25378-3 "Unilateral"
+* $v3-NullFlavor#NA "Not Applicable"
+* $v3-NullFlavor#UNK "Unknown"
+
 
 /* =======
 

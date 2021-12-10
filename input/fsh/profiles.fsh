@@ -1,21 +1,21 @@
-//=========================
 
-//====== Extensions =====================================
-Extension: ResourceRelatedInfo
-Id:   ResourceRelatedInfo-eu-pcsp
-Title:  "Resource related information"
-Description: "This extension provides a means to link the source resource to any target related information. This extension shall not be used when other more specific elements or standard extensions apply. E.g. Observation.hasMember "
-// publisher, contact, and other metadata here using caret (^) syntax (omitted)
-* value[x] only Reference (Resource)
-
+//====== RuleSet =====================================
 
 RuleSet: CancerConditionCommonRules
 * extension contains
     $condition-assertedDate named assertedDate 0..1 and
-    HistologyMorphologyBehavior named histologyMorphologyBehavior 0..1 MS
+    $mcode-histology-morphology-behavior named histologyMorphologyBehavior 0..1 MS
+// HistologyMorphologyBehavior named histologyMorphologyBehavior 0..1 MS
+
+* extension[histologyMorphologyBehavior].value[x] from ICDO3MorphologyVs (required)
+
 * bodySite.extension contains
-     BodyLocationQualifier named locationQualifier 0..*   and
-     LateralityQualifier named lateralityQualifier 0..1
+     $mcode-body-location-qualifier named locationQualifier 0..* 
+     and LateralityQualifier named lateralityQualifier 0..1
+	
+	// $mcode-laterality-qualifier named lateralityQualifier 0..1
+    // BodyLocationQualifier named locationQualifier 0..*   and
+    
 
 * bodySite from ICDO3TopographyVs
 * extension and bodySite and bodySite.extension[lateralityQualifier] MS
@@ -28,7 +28,7 @@ RuleSet: CancerConditionCommonRules
 Profile:  EncounterPcsp
 Parent:   Encounter
 Id:       Encounter-eu-pcsp
-Title:    "Encounter"
+Title:    "Encounter Treatment Center"
 Description: "This abstract profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * status MS 
@@ -36,7 +36,7 @@ Description: "This abstract profile defines how to represent data of arrival to 
 * period.start MS 
 * serviceProvider.identifier MS  
 * serviceProvider.display MS
-* diagnosis.condition = Reference ( ConditionPrimaryCancerPcsp )
+// * diagnosis.condition = Reference ( ConditionPrimaryCancerPcsp )
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -55,12 +55,15 @@ A primary cancer condition, the original or first tumor in the body (Definition 
 * code 1.. MS // add value set; add slices for
 * code.coding 0.. MS
 * code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "code"
+* code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding ^slicing.description = "Slice based on the coding.code pattern"
 * code.coding contains 
-	iccc3-classification 0..1 MS
+	iccc3-classification 0..1 MS 
+	and exceptions 0..1
 * code.coding[iccc3-classification] from ICCC3Vs
+* code.coding[exceptions] from $v3-ClassNullFlavor
+
 * onset[x] MS
 * encounter only Reference (Encounter or EncounterPcsp)
 * stage.assessment only Reference(CancerStageGroup)
@@ -174,7 +177,7 @@ Description: "This profile defines how to represent Care Plan in FHIR for the pu
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  PatientPcsp
-Parent:   $ipsPatient
+Parent:   $Patient-uv-ips
 Id:       Patient-eu-pcsp
 Title:    "Patient"
 Description: "This profile defines how to represent Patient in FHIR for the purpose of the PanCareSurPass project."
@@ -190,18 +193,27 @@ $patient-birthPlace named patient-birthPlace 0..1
 * gender 1.. MS
 * birthDate 1.. MS
 * contact.telecom 1.. MS
+* generalPractitioner
+* generalPractitioner ^slicing.discriminator.type = #type
+* generalPractitioner ^slicing.discriminator.path = "resolve()"
+* generalPractitioner ^slicing.rules = #open
+* generalPractitioner ^slicing.description = "Slice based on the reference type"
+* generalPractitioner contains 
+	primaryTreatmentCenter	0..1 MS
+* generalPractitioner[primaryTreatmentCenter] only Reference (OrganizationPrimaryTreatmentCenterPcsp or Organization)
+  * ^short = "Primary treatment center"
+  * ^definition = "Report here the institution in which most of the treatment was given"
 
-/* -----------
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  PatientMinPcsp
-Parent:   Patient
-Id:       Patient-min-eu-pcsp
-Title:    "Patient (Minimal Set)"
-Description: "This profile defines how to represent a minimal set of Patient data in FHIR for representing the Treatment Summary inforation required by the PanCareSurPass algorithm to generate the care plan."
+Profile:  OrganizationPrimaryTreatmentCenterPcsp
+Parent:   $Organization-uv-ips
+Id:       Organization-primaryCenter-eu-pcsp
+Title:    "Organization: Primary Treatment Center"
+Description: "This profile defines how to represent the Primary Treatment Center in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
-* gender 1.. MS
-* birthDate 1.. MS 
----- */
+* name ^short = "Name of the Primary Treatment Center"
+* address.city ^short = "Primary treatment center city"
+* address.country ^short = "Primary treatment center country"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureSCTMinPcsp

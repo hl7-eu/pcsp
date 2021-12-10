@@ -53,7 +53,7 @@ Description: "Types of Stem Cell Transplantation this procedure is referring to"
 ValueSet: RadiotherapyDoseTypeVs
 Id: vs-RadiotherapyDoseType-eu-pcsp
 Title: "Radiotherapy Dose Type"
-Description: "Types of radiotherapy cunulative dose this procedure is referring to"
+Description: "Types of radiotherapy cumulative dose this procedure is referring to"
 // not yet in the GPS ....
 //-------------------------------------------------------------------------------------------
 * $dicomOntology#113725 "Dose (RP) Total"
