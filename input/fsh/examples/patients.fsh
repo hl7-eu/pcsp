@@ -84,9 +84,9 @@ Usage:  #example
 
 
 //----------------------------------------------------------
-Instance:  PatientMainz
+Instance:  PatientMainzFischer
 InstanceOf: PatientPcsp
-Title:   "Patient: Sample created on Mainz data"
+Title:   "Patient: Sample created on Mainz data (Fischer)"
 Description: "Sample of Patient created based on information provided by Mainz"
 Usage:  #example
 //----------------------------------------------------------
@@ -98,3 +98,23 @@ Usage:  #example
 * name[0].family = "Fischer"
 * birthDate = 1993-07-07
 * gender = #male
+
+//----------------------------------------------------------
+Instance:  PatientMainzZeisig
+InstanceOf: PatientPcsp
+Title:   "Patient: Sample created on Mainz data (Zeisig)"
+Description: "Sample of Patient created based on information provided by Mainz"
+Usage:  #example
+//----------------------------------------------------------
+
+* extension[patient-birthPlace].valueAddress.city = "Kiel"
+* identifier.system = $pat-id-mainz // Temporary assigned 
+* identifier.value = "L0010"
+* name[0].given = "Sarah"
+* name[0].family = "Zeisig"
+* birthDate = 1996-12-12
+* gender = #female
+* telecom[0].system = #email
+* telecom[=].value = "sa.zei@online.de"
+* telecom[+].system = #phone
+* telecom[=].value = "0123 4567890"

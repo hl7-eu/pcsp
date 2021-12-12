@@ -8,6 +8,7 @@ Alias: $edqm = https://standardterms.edqm.eu
 Alias: $iccc3 = http://terminology.hl7.org/CodeSystem/iccc-3 // FAKE URL NOT YET ASSIGNED !!
 Alias: $icd03 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $loinc =  http://loinc.org
+Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum =  http://unitsofmeasure.org

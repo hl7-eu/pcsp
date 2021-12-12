@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "C41.9"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Bone and articular cartilage, unspecified",
+  "code" : "C41.9",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------

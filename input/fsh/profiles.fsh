@@ -37,12 +37,12 @@ Description: "This abstract profile defines how to represent diagnosis details (
 * code = $loinc#29308-4 "Diagnosis"
 * valueCodeableConcept 1..1
 * performer ^slicing.discriminator.type = #type
-* performer ^slicing.discriminator.path = "resolve()"
+* performer ^slicing.discriminator.path = "$this.resolve()"
 * performer ^slicing.rules = #open
 * performer ^slicing.description = "Slice based on the reference type"
 * performer contains 
 	primaryCenter	0..1 MS
-* performer[primaryCenter] only Reference (OrganizationCenterPcsp or Organization)
+* performer[primaryCenter] only Reference (OrganizationCenterPcsp)
   * ^short = "Center of diagnosis"
   * ^definition = "Institution in which the diagnosis was made."
   * identifier ^short = "Business identifier of the Center of diagnosis"
@@ -116,9 +116,10 @@ A primary cancer condition, the original or first tumor in the body (Definition 
 	diagnosisDetails 0..* MS 
 	and geneticMarker 0..*
 	and immunology 0..*
-	and cancerPredisposition 0..*
+	and predisposition 0..*
 	
 * evidence[diagnosisDetails]
+  * code from ICCC3Vs
   * detail only Reference (ObservationDiagnosisPcsp)
 * evidence[geneticMarker] 
   * code = $sct#106221001 "Genetic finding"
@@ -126,9 +127,9 @@ A primary cancer condition, the original or first tumor in the body (Definition 
 * evidence[immunology] 
   * code = $sct#365861007 "Finding of immune status"
   * detail only Reference (Observation or DocumentReference or DiagnosticReport)
-* evidence[cancerPredisposition] 
-  * code = $sct#699346009 "Hereditary cancer-predisposing syndrome"
-  * detail only Reference (Observation or DocumentReference or DiagnosticReport)
+* evidence[predisposition] 
+  * code = $sct#32895009 "Hereditary disease" // check if it needs to be changed with a Value Set
+  * detail only Reference (Condition or Observation or FamilyMemberHistory or DocumentReference)
 * note MS
 
 
