@@ -25,17 +25,47 @@ RuleSet: CancerConditionCommonRules
 //====== Profiles =====================================
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ObservationDiagnosisPcsp
+Parent:   Observation
+Id:       Observation-diagnosis-eu-pcsp
+Title:    "Observation Diagnosis details PCSP"
+Description: "This abstract profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project."
+//-------------------------------------------------------------------------------------------
+* subject only Reference(PatientPcsp)
+* effectiveDateTime 1.. MS
+* code 1..1 
+* code = $loinc#29308-4 "Diagnosis"
+* valueCodeableConcept 1..1
+* performer ^slicing.discriminator.type = #type
+* performer ^slicing.discriminator.path = "resolve()"
+* performer ^slicing.rules = #open
+* performer ^slicing.description = "Slice based on the reference type"
+* performer contains 
+	primaryCenter	0..1 MS
+* performer[primaryCenter] only Reference (OrganizationCenterPcsp or Organization)
+  * ^short = "Center of diagnosis"
+  * ^definition = "Institution in which the diagnosis was made."
+  * identifier ^short = "Business identifier of the Center of diagnosis"
+  * display ^short = "Short textual description of the Center of diagnosis"
+* component 0..0 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  EncounterPcsp
 Parent:   Encounter
 Id:       Encounter-eu-pcsp
-Title:    "Encounter Treatment Center"
+Title:    "Encounter Treatment Center PCSP"
 Description: "This abstract profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * status MS 
 * class MS
 * period.start MS 
-* serviceProvider.identifier MS  
-* serviceProvider.display MS
+
+* serviceProvider only Reference (OrganizationCenterPcsp)
+  * ^short = "Primary treatment center"
+  * ^definition = "Report here the institution in which most of the treatment was given"
+  * identifier ^short = "Business identifier of the Primary treatment center"
+  * display ^short = "Short textual description of the Primary treatment center"
+  
 // * diagnosis.condition = Reference ( ConditionPrimaryCancerPcsp )
 
 
@@ -43,7 +73,7 @@ Description: "This abstract profile defines how to represent data of arrival to 
 Profile:  ConditionPrimaryCancerPcsp
 Parent:   Condition
 Id:       Condition-primaryCancer-eu-pcsp
-Title:    "Primary Cancer Condition"
+Title:    "Primary Cancer Condition PCSP"
 Description: "This abstract profile defines how to represent Primary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
 A primary cancer condition, the original or first tumor in the body (Definition from: [NCI Dictionary of Cancer Terms]( https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)).  Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary."
@@ -74,8 +104,30 @@ A primary cancer condition, the original or first tumor in the body (Definition 
 * stage.type ^short = "Staging system used."
 * stage.type ^definition = "As for mCODE, in PCSP staging information MUST be captured in an Observation that conforms to the CancerStageGroup profile. For convenience, the staging system MAY appear in this element, but Data Senders and Receivers MAY ignore it."
 // * stage.type from ObservationCodesStageGroupVS (required)
-* evidence
-  * code MS
+
+
+* evidence ^slicing.discriminator.type = #pattern
+* evidence ^slicing.discriminator.path = "$this.resolve()"
+* evidence ^slicing.discriminator.type = #pattern
+* evidence ^slicing.discriminator.path = "code"
+* evidence ^slicing.rules = #open
+* evidence ^slicing.description = "Slice based on the coding.code pattern"
+* evidence contains 
+	diagnosisDetails 0..* MS 
+	and geneticMarker 0..*
+	and immunology 0..*
+	and cancerPredisposition 0..*
+	
+* evidence[diagnosisDetails]
+  * detail only Reference (ObservationDiagnosisPcsp)
+* evidence[geneticMarker] 
+  * code = $sct#106221001 "Genetic finding"
+  * detail only Reference (Observation or DocumentReference or DiagnosticReport)
+* evidence[immunology] 
+  * code = $sct#365861007 "Finding of immune status"
+  * detail only Reference (Observation or DocumentReference or DiagnosticReport)
+* evidence[cancerPredisposition] 
+  * code = $sct#699346009 "Hereditary cancer-predisposing syndrome"
   * detail only Reference (Observation or DocumentReference or DiagnosticReport)
 * note MS
 
@@ -105,7 +157,7 @@ Records the history of secondary neoplasms, including location(s) and the date o
 Profile:  CumulativeDoseObsPcsp
 Parent:   Observation
 Id:       Observation-cumulativeDose-eu-pcsp
-Title:    "Observation Cumulative Dose "
+Title:    "Observation Cumulative Dose PCSP"
 Description: "This abstract profile defines how to represent Cumulative Dose in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 // * identifier MS
@@ -131,7 +183,7 @@ Description: "This abstract profile defines how to represent Cumulative Dose in 
 Profile:  CumulativeDoseRadObsPcsp
 Parent:   CumulativeDoseObsPcsp
 Id:       Observation-cumulativeDoseRad-eu-pcsp
-Title:    "Observation Radiotherapy Cumulative Dose "
+Title:    "Observation Radiotherapy Cumulative Dose PCSP"
 Description: "This profile defines how to represent Radiotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -161,7 +213,7 @@ Description: "This profile defines how to represent Chemotherapy Cumulative Dose
 Profile:  CarePlanPcsp
 Parent:   CarePlan
 Id:       CarePlan-eu-pcsp
-Title:    "CarePlan"
+Title:    "CarePlan PCSP"
 Description: "This profile defines how to represent Care Plan in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * identifier MS
@@ -179,7 +231,7 @@ Description: "This profile defines how to represent Care Plan in FHIR for the pu
 Profile:  PatientPcsp
 Parent:   $Patient-uv-ips
 Id:       Patient-eu-pcsp
-Title:    "Patient"
+Title:    "Patient PCSP"
 Description: "This profile defines how to represent Patient in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * . ^short = "Information about an individual receiving health care services"
@@ -200,20 +252,23 @@ $patient-birthPlace named patient-birthPlace 0..1
 * generalPractitioner ^slicing.description = "Slice based on the reference type"
 * generalPractitioner contains 
 	primaryTreatmentCenter	0..1 MS
-* generalPractitioner[primaryTreatmentCenter] only Reference (OrganizationPrimaryTreatmentCenterPcsp or Organization)
+* generalPractitioner[primaryTreatmentCenter] only Reference (OrganizationCenterPcsp or Organization)
   * ^short = "Primary treatment center"
   * ^definition = "Report here the institution in which most of the treatment was given"
+  * identifier ^short = "Business identifier of the Primary treatment center"
+  * display ^short = "Short textual description of the Primary treatment center"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  OrganizationPrimaryTreatmentCenterPcsp
+Profile:  OrganizationCenterPcsp
 Parent:   $Organization-uv-ips
-Id:       Organization-primaryCenter-eu-pcsp
-Title:    "Organization: Primary Treatment Center"
-Description: "This profile defines how to represent the Primary Treatment Center in FHIR for the purpose of the PanCareSurPass project."
+Id:       Organization-center-eu-pcsp
+Title:    "Organization: Primary Treatment Center / Center of diagnosis"
+Description: "This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
-* name ^short = "Name of the Primary Treatment Center"
-* address.city ^short = "Primary treatment center city"
-* address.country ^short = "Primary treatment center country"
+* identifier ^short = "Identifier of the center"
+* name ^short = "Name of the Center"
+* address.city ^short = "Center address: city"
+* address.country ^short = "Center address: country"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureSCTMinPcsp
