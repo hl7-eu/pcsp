@@ -27,20 +27,20 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:54e957e5-d102-45c7-b9b5-acfac4806d65",
-    "timestamp" : "2021-12-01T16:44:57.523Z",
+    "identifier" : "urn:uuid:d0bbfb57-5db4-4990-b97f-c618cf05b90a",
+    "timestamp" : "2021-12-14T12:20:07.279Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueUri" : "http://dicom.nema.org/resources/ontology/DCM|01"
+      "valueUri" : "http://dicom.nema.org/resources/ontology/DCM|2021.4.20210910"
     }],
     "contains" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
-        "valueString" : "Total Dose related to Reference Point (RP). (in the scope of the including report)"
+        "valueString" : "Total Dose related to Reference Point (RP). (in the scope of the including report)."
       }],
       "system" : "http://dicom.nema.org/resources/ontology/DCM",
       "code" : "113725",

@@ -154,16 +154,24 @@ Usage: #definition
 * differential.element[9].mapping[0].map = "Patient.extension(http://hl7.org/fhir/StructureDefinition/patient-birthPlace')"
 
 * differential.element[10].mapping[0].identity = "fhir"
-* differential.element[10].mapping[0].map = "Patient.contact"
+* differential.element[10].mapping[0].map = "Patient.contact (if not the patient)
+Patient.telecom (if the patient)
+DocumentManifest.recipient (if intended recipient)"
 
 * differential.element[11].mapping[0].identity = "fhir"
-* differential.element[11].mapping[0].map = "Patient.contact.telecom"
+* differential.element[11].mapping[0].map = "Patient.contact.telecom (if not the patient)
+Patient.telecom (if the patient)
+DocumentManifest.recipient.resolve().telecom (if intended recipient)"
 
 * differential.element[12].mapping[0].identity = "fhir"
-* differential.element[12].mapping[0].map = "Patient.contact.telecom"
+* differential.element[12].mapping[0].map = "Patient.contact.telecom (if not the patient)
+Patient.telecom (if the patient)
+DocumentManifest.recipient.resolve().telecom (if intended recipient)"
 
 * differential.element[13].mapping[0].identity = "fhir"
-* differential.element[13].mapping[0].map = "Patient.contact.relationship"
+* differential.element[13].mapping[0].map = "Patient.contact.relationship (if not the patient)
+N/A (if the patient)
+DocumentManifest.recipient.resolve().relationship (if intended recipient - not patient)"
 
 
 
@@ -262,10 +270,10 @@ Usage: #definition
 * differential.element[10].mapping[1].map = "ClinicalDocument.participant"
 
 * differential.element[11].mapping[1].identity = "cda"
-* differential.element[11].mapping[1].map = "ClinicalDocument.participant.associatedEntity.telecom"
+* differential.element[11].mapping[1].map = ".associatedEntity.telecom"
 
 * differential.element[12].mapping[1].identity = "cda"
-* differential.element[12].mapping[1].map = "ClinicalDocument.participant.associatedEntity.telecom"
+* differential.element[12].mapping[1].map = ".associatedEntity.telecom"
 
 
 
