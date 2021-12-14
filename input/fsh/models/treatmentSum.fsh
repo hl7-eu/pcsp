@@ -177,7 +177,7 @@ If personalized, please specify.  "
 * differential.element[21].definition = "Radiotherapy"
 * differential.element[21].min = 0
 * differential.element[21].max = "*"
-* differential.element[21].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy-min
+* differential.element[21].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy
 * differential.element[22].id = "TreatmentSummary.diagnosis.majorSurgery"
 * differential.element[22].path = "TreatmentSummary.diagnosis.majorSurgery"
 * differential.element[22].short = "Major Surgery"
