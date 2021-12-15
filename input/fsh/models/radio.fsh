@@ -46,7 +46,7 @@ Usage: #definition
 
 * differential.element[3].id = "Radiotherapy.identifier"
 * differential.element[3].path = "Radiotherapy.identifier"
-* differential.element[3].short = "Identifier of the radotherapy episode. "
+* differential.element[3].short = "Identifier of the radotherapy episode"
 * differential.element[3].definition = "Progressive number of radotherapy episode.  An EPISODE might be a single or several courses of pre-planned treatment within a consecutive time period to different sites. For example, if a patient had radiotherapy to a limb and also to the lungs for a Ewing?s sarcoma these should be entered  in one episode of treatment but as separate radiotherapy courses with their respective site, total dose, and number of fractions. They will both be within one episode"
 * differential.element[3].min = 0
 * differential.element[3].max = "*"
@@ -118,7 +118,7 @@ Usage: #definition
 
 * differential.element[11].id = "Radiotherapy.enddate"
 * differential.element[11].path = "Radiotherapy.enddate"
-* differential.element[11].short = "End date ÿ"
+* differential.element[11].short = "End date"
 * differential.element[11].definition = "Enter the full date on which the last treatment (fraction) of radiotherapy was given in a DD/MM/YYYY format.   
 When only a single radiation treatment/fraction was given, the start and end dates will be the same. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[11].min = 0
@@ -145,7 +145,7 @@ Metabolic or radionuclide treatment/therapy: a liquid substance is injected into
 * differential.element[13].short = "type of machine (If external beam)"
 * differential.element[13].definition = "A detailed description of the type of machine can be found in the user's manual.
 If you have the name of a machine but cannot find it in this list, please select Other and add the name in free text. 
-If you know the treatment was with external beam but not which machine or energy, select "Unknown".
+If you know the treatment was with external beam but not which machine or energy, select 'Unknown'.
 1 =>Orthovoltage / kilovoltage usually 200 - 300kv X rays/photons
 2 =>Linac (Linear Accelerator) megavoltage MV X Rays/photons
 3 =>Linac (Linear Accelerator) electrons
@@ -192,7 +192,7 @@ If you know the treatment was with external beam but not which machine or energy
 * differential.element[16].id = "Radiotherapy.radionuclides"
 * differential.element[16].path = "Radiotherapy.radionuclides"
 * differential.element[16].short = "radionuclides (required If metabolic/radionuclide)"
-* differential.element[16].definition = "A detailed description of the radionuclides can be found in the user's manual (<a href="../SP_user_guide01.pdf" target="_blank">click here to see the manual</a>).
+* differential.element[16].definition = "A detailed description of the radionuclides can be found in the user's manual.
 If you have the name of a radionuclide but cannot find it in this list, please select Other and add the name in free text. 
 If you know the treatment was with external beam but not which machine or energy, select 'Unknown'.
 1 => Iodine-131
@@ -239,8 +239,7 @@ When using the SurPass platform, as you start typing the name of the site, a dro
 * differential.element[19].binding.strength = #required
 * differential.element[20].id = "Radiotherapy.target.laterality"
 * differential.element[20].path = "Radiotherapy.target.laterality"
-* differential.element[20].short = "Laterality
-"
+* differential.element[20].short = "Laterality"
 * differential.element[20].definition = "Report laterality of the radiation.
  R = right,
  L = left,
@@ -289,8 +288,8 @@ When using the SurPass platform, as you start typing the name of the site, a dro
 * differential.element[24].type.code = #CodeableConcept
 
 
-* differential.element[25].id = "Radiotherapy.target.comulativeDose"
-* differential.element[25].path = "Radiotherapy.target.comulativeDose"
+* differential.element[25].id = "Radiotherapy.target.cumulativeDose"
+* differential.element[25].path = "Radiotherapy.target.cumulativeDose"
 * differential.element[25].short = "Comulative dose"
 * differential.element[25].definition = "Specify the cumulative / total dose given to the primary radiation therapy site.
 If the dose is not known, write NK."
@@ -317,8 +316,8 @@ If the dose is not known, write NK."
 * differential.element[27].type.code = #CodeableConcept
 
 
-* differential.element[28].id = "Radiotherapy.target.comulativeDose.notKnown"
-* differential.element[28].path = "Radiotherapy.target.comulativeDose.notKnown"
+* differential.element[28].id = "Radiotherapy.target.cumulativeDose.notKnown"
+* differential.element[28].path = "Radiotherapy.target.cumulativeDose.notKnown"
 * differential.element[28].short = "Not known dose"
 * differential.element[28].definition = "Not known dose"
 * differential.element[28].min = 0
@@ -326,8 +325,8 @@ If the dose is not known, write NK."
 * differential.element[28].type.code = #string
 
 
-* differential.element[29].id = "Radiotherapy.target.comulativeDose.dose"
-* differential.element[29].path = "Radiotherapy.target.comulativeDose.dose"
+* differential.element[29].id = "Radiotherapy.target.cumulativeDose.dose"
+* differential.element[29].path = "Radiotherapy.target.cumulativeDose.dose"
 * differential.element[29].short = "Dose"
 * differential.element[29].definition = "Specify the cumulative / total dose given to the primary radiation therapy site."
 * differential.element[29].min = 0
@@ -335,8 +334,261 @@ If the dose is not known, write NK."
 * differential.element[29].type.code = #decimal
 
 
-* differential.element[30].id = "Radiotherapy.target.comulativeDose.unit"
-* differential.element[30].path = "Radiotherapy.target.comulativeDose.unit"
+* differential.element[30].id = "Radiotherapy.target.cumulativeDose.unit"
+* differential.element[30].path = "Radiotherapy.target.cumulativeDose.unit"
 * differential.element[30].short = "Measure unit"
 * differential.element[30].definition = "External Beam Radiation Therapy (EBRT) and Brachytherapy doses are in Gy. If doses are reported in cGY, roughly two zeroes need to be deleted (e.g. 100 cGy = 1 Gy).
 specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
+* differential.element[30].min = 0
+* differential.element[30].max = "1"
+* differential.element[30].type.code = #CodeableConcept
+
+
+* differential.element[31].id = "Radiotherapy.target.cumulativeDose.fractions"
+* differential.element[31].path = "Radiotherapy.target.cumulativeDose.fractions"
+* differential.element[31].short = "Number of fractions (if  external beam)"
+* differential.element[31].definition = "A FRACTION of radiation treatment is a single attendance for treatment; if 'not known' insert NK"
+* differential.element[31].min = 0
+* differential.element[31].max = "1"
+* differential.element[31].type.code = #integer
+
+
+* differential.element[32].id = "Radiotherapy.target.boost"
+* differential.element[32].path = "Radiotherapy.target.boost"
+* differential.element[32].short = "Boost"
+* differential.element[32].definition = "A boost is an extra dose of radiotherapy directed to a smaller area inside the primary radiation field. (only if type is External Beam)"
+* differential.element[32].min = 0
+* differential.element[32].max = "5"
+* differential.element[32].type.code = #BackboneElement
+
+
+* differential.element[33].id = "Radiotherapy.target.boost.type"
+* differential.element[33].path = "Radiotherapy.target.boost.type"
+* differential.element[33].short = "Type of Boost"
+* differential.element[33].definition = "Specify radiation type of the boost.
+1 => External Beam
+2 => Brachytherapy
+-9922 => NK ÿ"
+* differential.element[33].min = 1
+* differential.element[33].max = "1"
+* differential.element[33].type.code = #CodeableConcept
+
+
+* differential.element[34].id = "Radiotherapy.target.boost.given"
+* differential.element[34].path = "Radiotherapy.target.boost.given"
+* differential.element[34].short = "Boost given"
+* differential.element[34].definition = "Flag indicating if a boost was given, not given or unknown
+"
+* differential.element[34].min = 0
+* differential.element[34].max = "1"
+* differential.element[34].type.code = #CodeableConcept
+
+
+* differential.element[35].id = "Radiotherapy.target.boost.site"
+* differential.element[35].path = "Radiotherapy.target.boost.site"
+* differential.element[35].short = "Boost site"
+* differential.element[35].definition = "Site' refers to the radiation therapy treatment field. As you start typing the name of the site, a drop down list with related terms will appear (special sites like Inverted Y are included). If the RT site listed in the medical record cannot reasonably be matched to one of the sites listed in the computer, choose: ??Other' and then add in free text the name of this RT site. 
+required if given"
+* differential.element[35].min = 0
+* differential.element[35].max = "1"
+* differential.element[35].type.code = #CodeableConcept
+* differential.element[35].binding.valueSet = "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapy-pcsp"
+* differential.element[35].binding.strength = #required
+* differential.element[36].id = "Radiotherapy.target.boost.laterality"
+* differential.element[36].path = "Radiotherapy.target.boost.laterality"
+* differential.element[36].short = "Laterality
+"
+* differential.element[36].definition = "Report laterality of the radiation.
+ R = right,
+ L = left,
+ B = bilateral"
+* differential.element[36].min = 0
+* differential.element[36].max = "1"
+* differential.element[36].type.code = #CodeableConcept
+
+
+* differential.element[37].id = "Radiotherapy.target.boost.details"
+* differential.element[37].path = "Radiotherapy.target.boost.details"
+* differential.element[37].short = "Details"
+* differential.element[37].definition = "If needed it is possible to add details"
+* differential.element[37].min = 0
+* differential.element[37].max = "1"
+* differential.element[37].type.code = #string
+
+
+* differential.element[38].id = "Radiotherapy.target.boost.from"
+* differential.element[38].path = "Radiotherapy.target.boost.from"
+* differential.element[38].short = "Start point"
+* differential.element[38].definition = "When the radiation involves more than one site, eventually covering different body areas (e.g. torax and abdomen), select the starting point using the vertebrae to identify the upper limit (e.g.: Thoraco-Abdominal (area): Paraspinal - Thoracic / dorsal vertebra 10)"
+* differential.element[38].min = 0
+* differential.element[38].max = "1"
+* differential.element[38].type.code = #string
+
+
+* differential.element[39].id = "Radiotherapy.target.boost.to"
+* differential.element[39].path = "Radiotherapy.target.boost.to"
+* differential.element[39].short = "End point"
+* differential.element[39].definition = "When the radiation involves more than one site, eventually covering different body areas (e.g. torax and abdomen), select the ending point using the vertebrae to identify the lower limit (e.g.: Thoraco-Abdominal (area): Paraspinal - Lumbar vertebra 3)"
+* differential.element[39].min = 0
+* differential.element[39].max = "1"
+* differential.element[39].type.code = #string
+
+
+* differential.element[40].id = "Radiotherapy.target.boost.position"
+* differential.element[40].path = "Radiotherapy.target.boost.position"
+* differential.element[40].short = "Position"
+* differential.element[40].definition = "Specify whether the radiation was anterior or posterior. 
+1 => Anterior
+2 => Posterior
+-9922 = NK"
+* differential.element[40].min = 0
+* differential.element[40].max = "1"
+* differential.element[40].type.code = #CodeableConcept
+
+
+* differential.element[41].id = "Radiotherapy.target.boost.cumulativeDose"
+* differential.element[41].path = "Radiotherapy.target.boost.cumulativeDose"
+* differential.element[41].short = "Comulative dose"
+* differential.element[41].definition = "Specify the cumulative / total dose given to the boost site."
+* differential.element[41].min = 1
+* differential.element[41].max = "1"
+* differential.element[41].type.code = #BackboneElement
+
+
+* differential.element[42].id = "Radiotherapy.target.boost.cumulativeDose.completionStatus"
+* differential.element[42].path = "Radiotherapy.target.boost.cumulativeDose.completionStatus"
+* differential.element[42].short = "The reported doses are incomplete (either under- or over-estimated)"
+* differential.element[42].definition = "Check in case of incomplete doses"
+* differential.element[42].min = 0
+* differential.element[42].max = "1"
+* differential.element[42].type.code = #CodeableConcept
+
+
+* differential.element[43].id = "Radiotherapy.target.boost.cumulativeDose.statusReason"
+* differential.element[43].path = "Radiotherapy.target.boost.cumulativeDose.statusReason"
+* differential.element[43].short = "Specify reasons why"
+* differential.element[43].definition = "Specify reasons of incomplete estimated doses"
+* differential.element[43].min = 0
+* differential.element[43].max = "1"
+* differential.element[43].type.code = #CodeableConcept
+
+
+* differential.element[44].id = "Radiotherapy.target.boost.cumulativeDose.notKnown"
+* differential.element[44].path = "Radiotherapy.target.boost.cumulativeDose.notKnown"
+* differential.element[44].short = "Not known dose"
+* differential.element[44].definition = "Not known dose"
+* differential.element[44].min = 0
+* differential.element[44].max = "1"
+* differential.element[44].type.code = #CodeableConcept
+
+
+* differential.element[45].id = "Radiotherapy.target.boost.cumulativeDose.dose"
+* differential.element[45].path = "Radiotherapy.target.boost.cumulativeDose.dose"
+* differential.element[45].short = "Dose"
+* differential.element[45].definition = "Specify the cumulative / total dose given to the boost site."
+* differential.element[45].min = 0
+* differential.element[45].max = "1"
+* differential.element[45].type.code = #decimal
+
+
+* differential.element[46].id = "Radiotherapy.target.boost.cumulativeDose.unit"
+* differential.element[46].path = "Radiotherapy.target.boost.cumulativeDose.unit"
+* differential.element[46].short = "Unit"
+* differential.element[46].definition = "Specify the unit of the boost in case of external beam radiotherapy as  Gy. 
+specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
+* differential.element[46].min = 0
+* differential.element[46].max = "1"
+* differential.element[46].type.code = #CodeableConcept
+
+
+* differential.element[47].id = "Radiotherapy.target.boost.cumulativeDose.fractions"
+* differential.element[47].path = "Radiotherapy.target.boost.cumulativeDose.fractions"
+* differential.element[47].short = "Number of fractions (if  external beam)"
+* differential.element[47].definition = "A fraction of radiation treatment is a single attendance for treatment. Please specify the number of fractions given as included in the boost. If not known, insert NK."
+* differential.element[47].min = 0
+* differential.element[47].max = "1"
+* differential.element[47].type.code = #integer
+
+
+* differential.element[48].id = "Radiotherapy.target.site.shielding"
+* differential.element[48].path = "Radiotherapy.target.site.shielding"
+* differential.element[48].short = "Shielding"
+* differential.element[48].definition = "Shielding, in some records this is called ?blocking? or ?blocks?. "
+* differential.element[48].min = 0
+* differential.element[48].max = "1"
+* differential.element[48].type.code = #BackboneElement
+
+
+* differential.element[49].id = "Radiotherapy.target.site.shielding.status"
+* differential.element[49].path = "Radiotherapy.target.site.shielding.status"
+* differential.element[49].short = "Shielding status"
+* differential.element[49].definition = "Specify if shielding was used or not. 
+Yes;  No;  NK ÿ"
+* differential.element[49].min = 0
+* differential.element[49].max = "1"
+* differential.element[49].type.code = #CodeableConcept
+
+
+* differential.element[50].id = "Radiotherapy.target.site.shielding.position"
+* differential.element[50].path = "Radiotherapy.target.site.shielding.position"
+* differential.element[50].short = "Position of shielding"
+* differential.element[50].definition = "Describe the positioning of shielding"
+* differential.element[50].min = 0
+* differential.element[50].max = "1"
+* differential.element[50].type.code = #string
+
+
+* differential.element[51].id = "Radiotherapy.target.site.notes"
+* differential.element[51].path = "Radiotherapy.target.site.notes"
+* differential.element[51].short = "Additional description"
+* differential.element[51].definition = "Record any available details on the shielded tissue/organ (or size of shielded area)."
+* differential.element[51].min = 0
+* differential.element[51].max = "1"
+* differential.element[51].type.code = #string
+
+
+* differential.element[52].id = "Radiotherapy.organAtRisk"
+* differential.element[52].path = "Radiotherapy.organAtRisk"
+* differential.element[52].short = "Organ at Risk"
+* differential.element[52].definition = "Organs at Risk"
+* differential.element[52].min = 0
+* differential.element[52].max = "1"
+* differential.element[52].type.code = #BackboneElement
+
+
+* differential.element[53].id = "Radiotherapy.dosimetry"
+* differential.element[53].path = "Radiotherapy.dosimetry"
+* differential.element[53].short = "Dosimetry on Organ at Risk"
+* differential.element[53].definition = "Specify if there is available information on Dosimetry of Organs at Risk [Yes/No]"
+* differential.element[53].min = 0
+* differential.element[53].max = "1"
+* differential.element[53].type.code = #CodeableConcept
+
+
+* differential.element[54].id = "Radiotherapy.dosimetryDocument"
+* differential.element[54].path = "Radiotherapy.dosimetryDocument"
+* differential.element[54].short = "Electronic / scanned version(s) of relevant document(s)"
+* differential.element[54].definition = "If Dosimetry on Organ at Risk is available, upload here the electronic / scanned version(s) of any relevant document(s)"
+* differential.element[54].min = 0
+* differential.element[54].max = "2"
+* differential.element[54].type.code = #Binary
+
+
+* differential.element[55].id = "Radiotherapy.files"
+* differential.element[55].path = "Radiotherapy.files"
+* differential.element[55].short = "Upload radiotherapy file (1) ÿ"
+* differential.element[55].definition = "Radiotherapy file(s) can be uploaded here"
+* differential.element[55].min = 0
+* differential.element[55].max = "2"
+* differential.element[55].type.code = #Binary
+
+
+* differential.element[56].id = "Radiotherapy.notes"
+* differential.element[56].path = "Radiotherapy.notes"
+* differential.element[56].short = "Notes ÿ"
+* differential.element[56].definition = "Notes"
+* differential.element[56].min = 0
+* differential.element[56].max = "1"
+* differential.element[56].type.code = #string
+
+
