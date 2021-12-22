@@ -396,8 +396,7 @@ required if given"
 * differential.element[35].binding.strength = #required
 * differential.element[36].id = "Radiotherapy.target.boost.laterality"
 * differential.element[36].path = "Radiotherapy.target.boost.laterality"
-* differential.element[36].short = "Laterality
-"
+* differential.element[36].short = "Laterality"
 * differential.element[36].definition = "Report laterality of the radiation.
  R = right,
  L = left,

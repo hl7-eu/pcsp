@@ -42,8 +42,7 @@ Usage: #definition
 * differential.element[2].type.code = #BackboneElement
 * differential.element[3].id = "Diagnosis.centerOfDiagnosis"
 * differential.element[3].path = "Diagnosis.centerOfDiagnosis"
-* differential.element[3].short = "Center of diagnosis
-"
+* differential.element[3].short = "Center of diagnosis"
 * differential.element[3].definition = "Institution in which the diagnosis was made."
 * differential.element[3].min = 0
 * differential.element[3].max = "*"

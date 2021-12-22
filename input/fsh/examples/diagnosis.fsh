@@ -15,7 +15,7 @@ Usage:  #example
 * subject = Reference (PatientMainzZeisig)
 * bodySite = $icd03#C401
 * bodySite.extension[mcode-laterality-qualifier].valueCodeableConcept = $loinc#LA4585-1 "Left"
-* encounter = Reference (EncounterPrimCancerMainzZeisig)
+* encounter = Reference (EncounterPrimCancerMainzZeisig )
 * stage.summary.text = "textual description of stage" 
 // metastasis C412
 * evidence[0]
@@ -31,6 +31,21 @@ Usage:  #example
   * code = $sct#32895009 "Hereditary disease" 
   * code.text = "Textual description of hereditary predisposition"
 
+//----------------------------------------------------------
+Instance:  ConditionSecCancerMainzZeisig
+InstanceOf: ConditionSecondaryCancerPcsp
+Title:   "Condition: complete Secondary Cancer Condition example (TBC)"
+Description: "Sample of Secondary Cancer Condition  based on information available by Mainz"
+Usage:  #example
+//----------------------------------------------------------
+
+//reference to Condition Primary Cancer Mainz
+* extension[$condition-related].valueReference = Reference(ConditionPrimCancerMainzZeisig)
+
+// Reference to Patient: "Patient: Sample created on Mainz data (Zeisig)"
+* subject = Reference (PatientMainzZeisig)
+
+* bodySite = $icd03#C41.2 "Bones, joints and articular cartilage of other and unspecified sites"
 
 //----------------------------------------------------------
 Instance:  ObservationPrimCancerMainzZeisig
@@ -65,7 +80,6 @@ Usage:  #example
   * value = "52"
 * serviceProvider.display = "UKE Hamburg"
 // * diagnosis.condition = Reference (ConditionPrimCancerMainz)
-
 
 
 Instance:  ConditionPrimCancerMainzFischer
