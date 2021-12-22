@@ -10,7 +10,7 @@ Description: "This profile defines how to embed a PDF PCSP Survivor Passport  	 
 * status and docStatus MS
 * type 1.. MS
 * type = $loinc#74156-1	// "Oncology Plan of care and summary note"
-* type.display ^short = "Oncology Plan of care and summary note"
+* type.coding.display ^short = "Oncology Plan of care and summary note"
 * subject 1.. MS
 * subject only Reference(PatientPcsp)
 * date MS

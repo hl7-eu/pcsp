@@ -591,3 +591,13 @@ v: {
   "system" : "http://loinc.org"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "74156-1"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Oncology Plan of care and summary note",
+  "code" : "74156-1",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------

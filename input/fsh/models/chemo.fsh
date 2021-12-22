@@ -213,3 +213,212 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[25].min = 1
 * differential.element[25].max = "*"
 * differential.element[25].type.code = #string
+//  
+// === MAPPING === 
+// 
+* differential.element[0].mapping[0].identity = "fhir"
+* differential.element[0].mapping[0].map = "MedicationAdministration.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp')"
+
+* differential.element[1].mapping[0].identity = "fhir"
+* differential.element[1].mapping[0].map = " .reasonReference"
+
+* differential.element[2].mapping[0].identity = "fhir"
+* differential.element[2].mapping[0].map = ".effectivePeriod.start"
+
+* differential.element[3].mapping[0].identity = "fhir"
+* differential.element[3].mapping[0].map = ".effectivePeriod.end"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* differential.element[10].mapping[0].identity = "fhir"
+* differential.element[10].mapping[0].map = ".medication[x]"
+
+* differential.element[11].mapping[0].identity = "fhir"
+* differential.element[11].mapping[0].map = ".medicationCodeableConcept"
+
+* differential.element[12].mapping[0].identity = "fhir"
+* differential.element[12].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).ofType(Observation)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* differential.element[19].mapping[0].identity = "fhir"
+* differential.element[19].mapping[0].map = "MedicationStatement.where(category = 'XYZ' and dosage.timing.repeat.boundsDuration.where( value='4' and unit = 'w' and comparator ='>' )"
+
+* differential.element[20].mapping[0].identity = "fhir"
+* differential.element[20].mapping[0].map = "MedicationStatement.where(category = 'ZYX')"
+
+* differential.element[21].mapping[0].identity = "fhir"
+* differential.element[21].mapping[0].map = ".exists()"
+
+* differential.element[22].mapping[0].identity = "fhir"
+* differential.element[22].mapping[0].map = ".dosage.timing.repeat.count
+.count()"
+
+* differential.element[23].mapping[0].identity = "fhir"
+* differential.element[23].mapping[0].map = ".medicationCodeableConcept.text"
+
+* differential.element[24].mapping[0].identity = "fhir"
+* differential.element[24].mapping[0].map = "MedicationStatement"
+
+* differential.element[25].mapping[0].identity = "fhir"
+* differential.element[25].mapping[0].map = ".medicationCodeableConcept.text"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
