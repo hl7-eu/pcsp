@@ -197,18 +197,6 @@ Description: "This profile defines how to represent Radiotherapy Cumulative Dose
 * bodySite 1.. MS 
 * bodySite from VsRadiotherapy
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  CumulativeDoseChemoObsPcsp
-Parent:   CumulativeDoseObsPcsp
-Id:       Observation-cumulativeDoseChemo-eu-pcsp
-Title:    "Observation Chemotherapy Cumulative Dose"
-Description: "This profile defines how to represent Chemotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project."
-//-------------------------------------------------------------------------------------------
-* ^abstract = false
-* category MS
-* category = $observation-category#procedure  // to be checked
-* code MS
-* code = CsGenericPcsp#cumulativeDose //  local code
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  CarePlanPcsp
@@ -285,38 +273,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * bodySite 1.. MS 
 * bodySite from VsRadiotherapy
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  MedicationAdministrationMinPcsp
-Parent:   MedicationAdministration 
-Id:       MedicationAdministration-min-eu-pcsp
-Title:    "MedicationAdministration (PCSP Minimal Set)"
-Description: "This profile defines how to represent MedicationAdministration in FHIR for describing a Minimal set of Chemotherapy data required by the PanCareSurPass algorithm to generate the care plan."
-//-------------------------------------------------------------------------------------------
 
-* extension contains ResourceRelatedInfo named relatedCumulativeDose 0..1
-* extension[relatedCumulativeDose].valueReference only Reference(CumulativeDoseChemoObsPcsp)
-* status MS
-* medicationCodeableConcept from VsPcspAtcCodes
-* medicationCodeableConcept 1..1 MS
-* reasonReference 1..1 MS // add reference to the diagnosis
-* reasonReference only Reference(ConditionPrimaryCancerPcsp)
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  MedicationAdministrationPcsp
-Parent:   MedicationAdministration 
-Id:       MedicationAdministration-eu-pcsp
-Title:    "MedicationAdministration PCSP"
-Description: "This profile defines how to represent MedicationAdministration in FHIR for describing Chemotherapy data for the purpose of the PanCareSurPass project."
-//-------------------------------------------------------------------------------------------
-
-* extension contains ResourceRelatedInfo named relatedCumulativeDose 0..1
-* extension[relatedCumulativeDose].valueReference only Reference(CumulativeDoseChemoObsPcsp)
-* status MS
-* effectivePeriod MS
-* medicationCodeableConcept from VsPcspAtcCodes
-* medicationCodeableConcept 1..1 MS
-* reasonReference 1..1 MS // add reference to the diagnosis
-* reasonReference only Reference(ConditionPrimaryCancerPcsp)
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ObservationYesNoPcsp

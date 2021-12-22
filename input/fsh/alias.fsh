@@ -16,6 +16,7 @@ Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
+Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 
 
 // --- Value Sets
@@ -29,6 +30,7 @@ Alias: $mcode-body-location-qualifier = http://hl7.org/fhir/us/mcode/StructureDe
 Alias: $mcode-laterality-qualifier =  http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
+Alias: $event-statusReason = http://hl7.org/fhir/StructureDefinition/event-statusReason
 
 // ---- Identifiers
 Alias : $pat-id-cineca = http://hl7.eu/fhir/ig/pcsp/sid/pat-id-cineca // Temporary assigned

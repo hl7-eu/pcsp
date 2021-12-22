@@ -1,4 +1,32 @@
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: NotPerformedUnknownVs
+Id: vs-npunk-eu-pcsp
+Title: "Not Performed|Unknown"
+Description: "Not Performed/Unknown Value Set"
+//-------------------------------------------------------------------------------------------
+* $data-absent-reason#unknown "Unknown"
+* $data-absent-reason#not-performed "Not Performed"
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: CalculatedEstimatedVs
+Id: vs-calcest-eu-pcsp
+Title: "Calculated|Estimated"
+Description: "Calculated|Estimated Value Set"
+//-------------------------------------------------------------------------------------------
+* $sct#703858009 "Numeric estimation technique" 
+* $sct#702873001 	"Calculation technique"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ChemoUnitsVs
+Title: "Chemotherapy cumulative dose units"
+Description: "Chemotherapy cumulative dose units"
+//-------------------------------------------------------------------------------------------
+* $ucum#mg/m2
+* $ucum#gr/m2
+* $ucum#UI/m2
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: ICCC3Vs
