@@ -1,3 +1,7 @@
+
+Alias: $radiotherapy-energy-units = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/radiotherapy-energy-units
+Alias: $codex-radiotherapy-isotopes = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/codex-radiotherapy-isotopes
+
 //============== ALIAS ===============
 
 // --- Code Systems
@@ -31,6 +35,7 @@ Alias: $mcode-laterality-qualifier =  http://hl7.org/fhir/us/mcode/StructureDefi
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
 Alias: $event-statusReason = http://hl7.org/fhir/StructureDefinition/event-statusReason
+Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
 
 // ---- Identifiers
 Alias : $pat-id-cineca = http://hl7.eu/fhir/ig/pcsp/sid/pat-id-cineca // Temporary assigned

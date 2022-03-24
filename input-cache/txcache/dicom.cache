@@ -12,6 +12,7 @@ v: {
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://dicom.nema.org/resources/ontology/DCM",
       "concept" : [{
@@ -27,15 +28,15 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:d0bbfb57-5db4-4990-b97f-c618cf05b90a",
-    "timestamp" : "2021-12-14T12:20:07.279Z",
+    "identifier" : "urn:uuid:ce280a99-19ec-4a0f-bb5a-42b20af62a9d",
+    "timestamp" : "2022-03-24T11:24:26.081Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
       "name" : "version",
-      "valueUri" : "http://dicom.nema.org/resources/ontology/DCM|2021.4.20210910"
+      "valueUri" : "http://dicom.nema.org/resources/ontology/DCM|2022.1.20220124"
     }],
     "contains" : [{
       "extension" : [{

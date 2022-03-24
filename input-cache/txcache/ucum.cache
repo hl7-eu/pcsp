@@ -30,6 +30,7 @@ v: {
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://unitsofmeasure.org",
       "concept" : [{
@@ -50,8 +51,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:fc01180a-dea8-4fbe-a262-19c7e151c0ed",
-    "timestamp" : "2021-12-22T17:43:59.312Z",
+    "identifier" : "urn:uuid:f86d1a29-f627-4bc8-90e1-151a78d60821",
+    "timestamp" : "2022-03-24T11:24:20.690Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -64,6 +65,93 @@ e: {
       "system" : "http://unitsofmeasure.org",
       "code" : "mg/m2",
       "display" : "mg/m2"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "MeV"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "MeV",
+  "code" : "MeV",
+  "system" : "http://unitsofmeasure.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "MV"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "MV",
+  "code" : "MV",
+  "system" : "http://unitsofmeasure.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "kV"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "kV",
+  "code" : "kV",
+  "system" : "http://unitsofmeasure.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "MeV",
+        "display" : "megaelectronvolt"
+      },
+      {
+        "code" : "MV",
+        "display" : "megavolt"
+      },
+      {
+        "code" : "kV",
+        "display" : "kilovolt"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:c5565e5c-6095-4937-af29-1645a8097ebb",
+    "timestamp" : "2022-03-24T18:30:39.630Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://unitsofmeasure.org|2.0.1"
+    }],
+    "contains" : [{
+      "system" : "http://unitsofmeasure.org",
+      "code" : "MeV",
+      "display" : "megaelectronvolt"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "MV",
+      "display" : "megavolt"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kV",
+      "display" : "kilovolt"
     }]
   }
 },

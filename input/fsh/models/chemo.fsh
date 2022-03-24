@@ -228,23 +228,23 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[3].mapping[0].identity = "fhir"
 * differential.element[3].mapping[0].map = ".effectivePeriod.end"
 
+* differential.element[4].mapping[0].identity = "fhir"
+* differential.element[4].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ActLocation-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp)"
+
+* differential.element[5].mapping[0].identity = "fhir"
+* differential.element[5].mapping[0].map = "Location.description"
+
+* differential.element[6].mapping[0].identity = "fhir"
+* differential.element[6].mapping[0].map = "Location.name"
+
+* differential.element[7].mapping[0].identity = "fhir"
+* differential.element[7].mapping[0].map = "Location.address.city"
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+* differential.element[9].mapping[0].identity = "fhir"
+* differential.element[9].mapping[0].map = "Location.address.country"
 
 * differential.element[10].mapping[0].identity = "fhir"
 * differential.element[10].mapping[0].map = ".medication[x]"
@@ -253,7 +253,7 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[11].mapping[0].map = ".medicationCodeableConcept"
 
 * differential.element[12].mapping[0].identity = "fhir"
-* differential.element[12].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).ofType(Observation)"
+* differential.element[12].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp)"
 
 
 
@@ -274,10 +274,10 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "MedicationStatement.where(category = 'XYZ' and dosage.timing.repeat.boundsDuration.where( value='4' and unit = 'w' and comparator ='>' )"
+* differential.element[19].mapping[0].map = "MedicationStatement.where(medicationCodeableConcept = 'http://www.whocc.no/atc|H02' and dosage.timing.repeat.boundsDuration.where( value='4' and unit = 'w' and comparator ='>' )"
 
 * differential.element[20].mapping[0].identity = "fhir"
-* differential.element[20].mapping[0].map = "MedicationStatement.where(category = 'ZYX')"
+* differential.element[20].mapping[0].map = "MedicationStatement.where(dosage.route = https://standardterms.edqm.eu|20042000)"
 
 * differential.element[21].mapping[0].identity = "fhir"
 * differential.element[21].mapping[0].map = ".exists()"

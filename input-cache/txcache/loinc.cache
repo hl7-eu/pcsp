@@ -172,6 +172,15 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
+  "code" : "X-PCSP-1"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"X-PCSP-1\" is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-PCSP-1) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
   "code" : "29308-4",
   "display" : "Diagnosis"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
@@ -195,75 +204,7 @@ v: {
 {"code" : {
   "system" : "http://loinc.org",
   "code" : "LA4585-1"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA4585-1",
-        "display" : "Left"
-      },
-      {
-        "code" : "LA4306-2",
-        "display" : "Right"
-      },
-      {
-        "code" : "LA25377-5",
-        "display" : "Bilateral"
-      },
-      {
-        "code" : "LA25378-3",
-        "display" : "Unilateral"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Left",
-  "code" : "LA4585-1",
-  "system" : "http://loinc.org"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA4585-1",
-  "display" : "Left"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA4585-1",
-        "display" : "Left"
-      },
-      {
-        "code" : "LA4306-2",
-        "display" : "Right"
-      },
-      {
-        "code" : "LA25377-5",
-        "display" : "Bilateral"
-      },
-      {
-        "code" : "LA25378-3",
-        "display" : "Unilateral"
-      }]
-    },
-    {
-      "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "concept" : [{
-        "code" : "NA",
-        "display" : "Not Applicable"
-      },
-      {
-        "code" : "UNK",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-laterality-qualifier-vs--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "Left",
   "code" : "LA4585-1",
@@ -294,6 +235,7 @@ v: {
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
@@ -321,8 +263,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:35ea1989-27e7-4876-a607-968eb266b6a9",
-    "timestamp" : "2021-12-14T12:20:05.498Z",
+    "identifier" : "urn:uuid:67a5fb5d-a65f-481a-b9f9-24f74fb76638",
+    "timestamp" : "2022-03-24T11:24:24.003Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -359,6 +301,7 @@ e: {
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
@@ -382,8 +325,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:067ae7b4-b5ac-4a7d-b005-72d74344d45a",
-    "timestamp" : "2021-12-14T12:20:05.857Z",
+    "identifier" : "urn:uuid:2da4f196-4465-4d5e-b324-e263f7b4cac8",
+    "timestamp" : "2022-03-24T11:24:24.534Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -415,6 +358,7 @@ e: {
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
@@ -438,8 +382,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:c8be6b8a-5362-4e4b-bb2b-4f217762cab6",
-    "timestamp" : "2021-12-14T12:20:06.138Z",
+    "identifier" : "urn:uuid:9e8d2b43-4d10-4d20-9fa1-ef6d234e32fc",
+    "timestamp" : "2022-03-24T11:24:24.893Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -471,6 +415,7 @@ e: {
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
@@ -494,8 +439,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:d0856397-5ce5-462c-8308-bbacedab2271",
-    "timestamp" : "2021-12-14T12:20:06.420Z",
+    "identifier" : "urn:uuid:7ce511be-66a5-4013-a2d6-8d69678606d4",
+    "timestamp" : "2022-03-24T11:24:25.268Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -527,6 +472,7 @@ e: {
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://loinc.org",
       "concept" : [{
@@ -550,8 +496,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:3ec30594-b2b9-4be8-97ae-b6f26b6a72a3",
-    "timestamp" : "2021-12-14T12:20:06.732Z",
+    "identifier" : "urn:uuid:44f892ab-4f4c-4aee-b1c1-907b0bd343e9",
+    "timestamp" : "2022-03-24T11:24:25.643Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -578,35 +524,5 @@ e: {
   }
 },
   "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "74156-1",
-  "display" : "Oncology Plan of care and summary note"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Oncology Plan of care and summary note",
-  "code" : "74156-1",
-  "system" : "http://loinc.org"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "74156-1"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Oncology Plan of care and summary note",
-  "code" : "74156-1",
-  "system" : "http://loinc.org"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "X-PCSP-1"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"X-PCSP-1\" is not valid in the system http://loinc.org; The code provided (http://loinc.org#X-PCSP-1) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------

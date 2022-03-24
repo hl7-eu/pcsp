@@ -199,7 +199,7 @@ If you know the treatment was with external beam but not which machine or energy
 2 => MIBG
 3 =>Yttrium 90
 4 => Other
--9922 => Unknown ÿ"
+-9922 => Unknown"
 * differential.element[16].min = 0
 * differential.element[16].max = "1"
 * differential.element[16].type.code = #CodeableConcept
@@ -368,7 +368,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[33].definition = "Specify radiation type of the boost.
 1 => External Beam
 2 => Brachytherapy
--9922 => NK ÿ"
+-9922 => NK"
 * differential.element[33].min = 1
 * differential.element[33].max = "1"
 * differential.element[33].type.code = #CodeableConcept
@@ -522,7 +522,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[49].path = "Radiotherapy.target.site.shielding.status"
 * differential.element[49].short = "Shielding status"
 * differential.element[49].definition = "Specify if shielding was used or not. 
-Yes;  No;  NK ÿ"
+Yes;  No;  NK"
 * differential.element[49].min = 0
 * differential.element[49].max = "1"
 * differential.element[49].type.code = #CodeableConcept
@@ -575,7 +575,7 @@ Yes;  No;  NK ÿ"
 
 * differential.element[55].id = "Radiotherapy.files"
 * differential.element[55].path = "Radiotherapy.files"
-* differential.element[55].short = "Upload radiotherapy file (1) ÿ"
+* differential.element[55].short = "Upload radiotherapy file (1)"
 * differential.element[55].definition = "Radiotherapy file(s) can be uploaded here"
 * differential.element[55].min = 0
 * differential.element[55].max = "2"
@@ -584,10 +584,195 @@ Yes;  No;  NK ÿ"
 
 * differential.element[56].id = "Radiotherapy.notes"
 * differential.element[56].path = "Radiotherapy.notes"
-* differential.element[56].short = "Notes ÿ"
+* differential.element[56].short = "Notes"
 * differential.element[56].definition = "Notes"
 * differential.element[56].min = 0
 * differential.element[56].max = "1"
 * differential.element[56].type.code = #string
 
 
+//  
+// === MAPPING === 
+// 
+* differential.element[0].mapping[0].identity = "fhir"
+* differential.element[0].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp')"
+
+* differential.element[1].mapping[0].identity = "fhir"
+* differential.element[1].mapping[0].map = ".reasonReference"
+* differential.element[1].mapping[0].comment = "note"
+* differential.element[2].mapping[0].identity = "fhir"
+* differential.element[2].mapping[0].map = ".reasonReference"
+
+* differential.element[3].mapping[0].identity = "fhir"
+* differential.element[3].mapping[0].map = ".identifier"
+
+* differential.element[4].mapping[0].identity = "fhir"
+* differential.element[4].mapping[0].map = ".location.resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp)"
+
+* differential.element[5].mapping[0].identity = "fhir"
+* differential.element[5].mapping[0].map = "Location.description"
+
+* differential.element[6].mapping[0].identity = "fhir"
+* differential.element[6].mapping[0].map = "Location.name"
+
+* differential.element[7].mapping[0].identity = "fhir"
+* differential.element[7].mapping[0].map = "Location.address.city"
+
+
+
+
+* differential.element[9].mapping[0].identity = "fhir"
+* differential.element[9].mapping[0].map = "Location.address.country"
+
+* differential.element[10].mapping[0].identity = "fhir"
+* differential.element[10].mapping[0].map = ".performedPeriod.start"
+
+* differential.element[11].mapping[0].identity = "fhir"
+* differential.element[11].mapping[0].map = ".performedPeriod.end"
+
+* differential.element[12].mapping[0].identity = "fhir"
+* differential.element[12].mapping[0].map = ".code"
+
+* differential.element[13].mapping[0].identity = "fhir"
+* differential.element[13].mapping[0].map = ".usedCode"
+
+* differential.element[14].mapping[0].identity = "fhir"
+* differential.element[14].mapping[0].map = ".extension(http://hl7.org/fhir/StructureDefinition/procedure-method).valueCodeableConcept"
+
+* differential.element[15].mapping[0].identity = "fhir"
+* differential.element[15].mapping[0].map = ".location.resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope).valueCodeableConcept"
+
+* differential.element[16].mapping[0].identity = "fhir"
+* differential.element[16].mapping[0].map = ".location.resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope).valueCodeableConcept"
+
+
+
+
+* differential.element[18].mapping[0].identity = "fhir"
+* differential.element[18].mapping[0].map = ".bodySite"
+
+* differential.element[18].mapping[1].identity = "fhir"
+* differential.element[18].mapping[1].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp).bodySite"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* differential.element[25].mapping[0].identity = "fhir"
+* differential.element[25].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* differential.element[32].mapping[0].identity = "fhir"
+* differential.element[32].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyBoost-eu-pcsp')"
+
+* differential.element[33].mapping[0].identity = "fhir"
+* differential.element[33].mapping[0].map = ".code"
+
+* differential.element[34].mapping[0].identity = "fhir"
+* differential.element[34].mapping[0].map = ".status"
+
+* differential.element[35].mapping[0].identity = "fhir"
+* differential.element[35].mapping[0].map = ".bodySite"
+
+* differential.element[35].mapping[1].identity = "fhir"
+* differential.element[35].mapping[1].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp).bodySite"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* differential.element[41].mapping[0].identity = "fhir"
+* differential.element[41].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 

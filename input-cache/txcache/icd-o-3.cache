@@ -2,11 +2,22 @@
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3"
     }]
   }
 }}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp", "version": "0.1.0"}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp", "version": "0.1.0"}####
 e: {
   "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3"
 }

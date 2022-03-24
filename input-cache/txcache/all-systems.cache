@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "code" : "150",
+  "display" : "Europe"
+}, "url": "http://hl7.org/fhir/ValueSet/jurisdiction", "version": "4.0.1", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "Europe",
+  "code" : "150",
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA4585-1",
+  "display" : "Left"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-laterality-qualifier-vs", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "Left",
+  "code" : "LA4585-1",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-isotopes-eu-pcsp", "version": "0.1.0"}####
+e: {
+  "error" : "Error from server: Found content (\"\"\") after end of expression at character 10"
+}
+-------------------------------------------------------------------------------------

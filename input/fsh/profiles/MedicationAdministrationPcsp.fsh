@@ -13,14 +13,15 @@ RuleSet: MedicationAdministrationPcspRules
 * reasonReference 1..1 MS // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  CumulativeDoseChemoObsPcsp
-Parent:   CumulativeDoseObsPcsp
+Parent:   Observation
 Id:       Observation-cumulativeDoseChemo-eu-pcsp
 Title:    "Observation Chemotherapy Cumulative Dose"
 Description: "This profile defines how to represent Chemotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
-* ^abstract = false
+* insert CumulativeDoseObsRules
 * extension contains $event-statusReason named statusReason 0..1
 * extension[statusReason]
 * category MS
@@ -53,14 +54,6 @@ Description: "This profile defines how to represent FHIR Location for the purpos
 * address.city ^short = "Institution city"
 * address.country ^short = "Institution country"
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  MedicationAdministrationMinPcsp
-Parent:   MedicationAdministration 
-Id:       MedicationAdministration-min-eu-pcsp
-Title:    "MedicationAdministration (PCSP Minimal Set)"
-Description: "This profile defines how to represent MedicationAdministration in FHIR for describing a Minimal set of Chemotherapy data required by the PanCareSurPass algorithm to generate the care plan."
-//-------------------------------------------------------------------------------------------
-* insert MedicationAdministrationPcspRules
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -73,3 +66,33 @@ Description: "This profile defines how to represent MedicationAdministration in 
 
 * insert MedicationAdministrationPcspRules
 * effectivePeriod MS
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  MedicationStatementPcsp
+Parent:   MedicationStatement 
+Id:       MedicationStatement-eu-pcsp
+Title:    "MedicationStatement PCSP"
+Description: "This profile defines how to represent MedicationStatement in FHIR for describing minimal information about provided medicartions for the purpose of the PanCareSurPass project."
+//-------------------------------------------------------------------------------------------
+* status ^short = "active | completed | entered-in-error | intended | stopped | on-hold | unknown |not-taken"
+* status ^example.valueCode = #completed
+* medicationCodeableConcept	^example.valueCodeableConcept = $atc#H02 "CORTICOSTEROIDS FOR SYSTEMIC USE"
+
+// add a slice for category H02 CORTICOSTEROIDS FOR SYSTEMIC USE
+
+* dosage.route ^example.valueCodeableConcept = $edqm#20042000 "Intrathecal use"
+// 20042000 edqm Intrathecal use
+* dosage.timing.repeat.count ^short = "Number of administration"
+* dosage.timing.repeat.boundsDuration ^short = "Length/Range of lengths, or (Start and/or end) limits."
+
+/*==== BEGIN 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  MedicationAdministrationMinPcsp
+Parent:   MedicationAdministration 
+Id:       MedicationAdministration-min-eu-pcsp
+Title:    "MedicationAdministration (PCSP Minimal Set)"
+Description: "This profile defines how to represent MedicationAdministration in FHIR for describing a Minimal set of Chemotherapy data required by the PanCareSurPass algorithm to generate the care plan."
+//-------------------------------------------------------------------------------------------
+* insert MedicationAdministrationPcspRules
+
+==== END */

@@ -22,6 +22,24 @@ RuleSet: CancerConditionCommonRules
 * bodySite.extension[locationQualifier] 
 
 
+RuleSet: CumulativeDoseObsRules
+* status MS
+* category 0.. MS
+* code MS
+* subject 1.. MS
+* subject only Reference(PatientPcsp)
+* specimen 0..
+* value[x] 1.. MS
+* value[x] only Quantity or CodeableConcept
+* valueQuantity MS
+* valueQuantity.value 1.. MS
+* valueQuantity.system 1.. MS
+* valueQuantity.system = $ucum
+* valueQuantity.code 1.. MS 
+* valueQuantity.unit MS // add VS binding ?
+* valueCodeableConcept = $loinc#LA4489-6 "Unknown" 
+* component 0..
+
 //====== Profiles =====================================
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -154,48 +172,9 @@ Records the history of secondary neoplasms, including location(s) and the date o
 // * code from SecondaryCancerDisorderVS (extensible)
 * insert NotUsed(stage)
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  CumulativeDoseObsPcsp
-Parent:   Observation
-Id:       Observation-cumulativeDose-eu-pcsp
-Title:    "Observation Cumulative Dose PCSP"
-Description: "This abstract profile defines how to represent Cumulative Dose in FHIR for the purpose of the PanCareSurPass project."
-//-------------------------------------------------------------------------------------------
-// * identifier MS
-* ^abstract = true
-* status MS
-* category 0.. MS
-* code MS
-* subject 1.. MS
-* subject only Reference(PatientPcsp)
-* specimen 0..
-* value[x] 1.. MS
-* value[x] only Quantity or CodeableConcept
-* valueQuantity MS
-* valueQuantity.value 1.. MS
-* valueQuantity.system 1.. MS
-* valueQuantity.system = $ucum
-* valueQuantity.code 1.. MS 
-* valueQuantity.unit MS // add VS binding ?
-* valueCodeableConcept = $loinc#LA4489-6 "Unknown" 
-* component 0..
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  CumulativeDoseRadObsPcsp
-Parent:   CumulativeDoseObsPcsp
-Id:       Observation-cumulativeDoseRad-eu-pcsp
-Title:    "Observation Radiotherapy Cumulative Dose PCSP"
-Description: "This profile defines how to represent Radiotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project."
-//-------------------------------------------------------------------------------------------
 
-* ^abstract = false
-* category MS
-* category = $observation-category#procedure 
-// * code = $dicomOntology#113725 "Dose (RP) Total" // evaluate 445565002 | Total boost radiation dose delivered (observable entity) AND 445461008 | Total radiation dose delivered (observable entity)
-* code MS
-* code from RadiotherapyDoseTypeVs
-* bodySite 1.. MS 
-* bodySite from VsRadiotherapy
+
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -251,31 +230,6 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  ProcedureRadiotherapyMinPcsp
-Parent:   Procedure 
-Id:       Procedure-radiotheraphy-min-eu-pcsp
-Title:    "Procedure Radiotherapy (Minimal Set)"
-Description: "This profile defines how to represent Procedures in FHIR for describing a Minimal set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan."
-//-------------------------------------------------------------------------------------------
-* extension contains ResourceRelatedInfo named relatedCumulativeDose 0..1
-* extension[relatedCumulativeDose].valueReference only Reference(CumulativeDoseRadObsPcsp)
-* status MS
-* category MS // add Radiotherapy
-* category = $sct#108290001 "Radiotherapy" // part of GPS
-* code 1..1 MS // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
-* code from RadiotherapyTypeVs
-// add slice on coding to allow more precise data
-* subject only Reference(PatientPcsp)	
-* subject MS
-* performedPeriod 1.. MS
-* reasonReference 1.. MS // add reference to the diagnosis
-* reasonReference only Reference(ConditionPrimaryCancerPcsp)
-* bodySite 1.. MS 
-* bodySite from VsRadiotherapy
-
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ObservationYesNoPcsp
 Parent:   Observation 
 Id:       Observation-yesNo-eu-pcsp
@@ -290,5 +244,3 @@ Description: "This profile defines how to represent Yes/No answered information 
 * code MS
 * valueCodeableConcept from http://loinc.org/vs/LL365-8 // Yes/No
 * valueCodeableConcept 1.. MS
-
-

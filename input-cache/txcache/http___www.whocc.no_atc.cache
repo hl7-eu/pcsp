@@ -3241,9 +3241,21 @@ v: {
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "H02",
+  "display" : "CORTICOSTEROIDS FOR SYSTEMIC USE"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "CORTICOSTEROIDS FOR SYSTEMIC USE",
+  "code" : "H02",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
+    "inactive" : true,
     "include" : [{
       "system" : "http://www.whocc.no/atc",
       "concept" : [{
@@ -4571,8 +4583,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:69aa971e-fbf8-4a70-ba41-93d529fb3678",
-    "timestamp" : "2021-12-14T12:20:08.560Z",
+    "identifier" : "urn:uuid:4138e933-5b48-4e04-a6fe-61966c3a0f23",
+    "timestamp" : "2022-03-24T11:24:29.206Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true

@@ -18,7 +18,23 @@ Description: "This extension provides a means to indicate where an act was, is o
 // publisher, contact, and other metadata here using caret (^) syntax (omitted)
 * value[x] only Reference (Location)
 
-
+Extension: RadiotherapyEnergyOrIsotope
+Id: radiotherapy-energy-or-isotope
+Title: "Radiotherapy Energy or Isotope"
+Description: """The radiation energy used for radiotherapy. The energy spectrum is characterized
+by the maximum energy, the maximum accelaration voltage, or the used isotope. This extension is based on the CodeX™ Radiation Therapy RadiotherapyEnergyOrIsotope extension"""
+* . ^short = "Radiotherapy Energy or Isotope"
+* . ^definition = "The radiation energy used for radiotherapy. The energy spectrum is characterized\nby the maximum energy, the maximum accelaration voltage, or the used isotope."
+* value[x] 1..
+* value[x] only CodeableConcept or SimpleQuantity
+* valueQuantity 0..1
+* valueQuantity only SimpleQuantity
+* valueQuantity from RadioUnitsVs (required)
+* valueQuantity ^short = "The spectrum of radiation energy characterized by a maximum value.\nFor electrons, the maximum energy is given in MeV. For photons, the maximum acceleration voltage is given in MV or kV, although those are not units of energy."
+* valueCodeableConcept 0..1
+* valueCodeableConcept only CodeableConcept
+* valueCodeableConcept from RadiotherapyIsotopes (extensible)
+* valueCodeableConcept ^short = "The isotope used for radiotherapy."
 
 
 Extension: ConditionRelated
