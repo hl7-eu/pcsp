@@ -16,7 +16,9 @@ version: 0.1.0
 name: PCSPImplementationGuide
 title: PanCareSurPass FHIR Implementation Guide
 status: draft
-publisher: PanCareSurPass Project
+publisher:
+  - name: PanCareSurPass Project
+    url: https://www.pancaresurpass.eu/
 contact:
   - name: PanCareSurPass Project
     telecom:
