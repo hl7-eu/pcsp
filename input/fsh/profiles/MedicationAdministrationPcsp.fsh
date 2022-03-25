@@ -40,21 +40,6 @@ Description: "This profile defines how to represent Chemotherapy Cumulative Dose
 
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  LocationPcsp
-Parent:   Location
-Id:       Location-eu-pcsp
-Title:    "Location PCSP"
-Description: "This profile defines how to represent FHIR Location for the purpose of the PanCareSurPass project."
-//-------------------------------------------------------------------------------------------
-
-* name 1.. MS
-* name ^short = "Name of the Institution"
-* description ^short = "Institution description"
-* address.city ^short = "Institution city"
-* address.country ^short = "Institution country"
-
-
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  MedicationAdministrationPcsp

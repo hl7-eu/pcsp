@@ -36,8 +36,8 @@ RuleSet: CumulativeDoseObsRules
 * valueQuantity.system 1.. MS
 * valueQuantity.system = $ucum
 * valueQuantity.code 1.. MS 
-* valueQuantity.unit MS // add VS binding ?
-* valueCodeableConcept = $loinc#LA4489-6 "Unknown" 
+* valueQuantity.unit MS 
+* valueCodeableConcept = $data-absent-reason#unknown "Unknown" 
 * component 0..
 
 //====== Profiles =====================================
@@ -227,6 +227,24 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 * bodySite 1.. MS 
 * bodySite from VsRadiotherapy
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  LocationPcsp
+Parent:   Location
+Id:       Location-eu-pcsp
+Title:    "Location PCSP"
+Description: "This profile defines how to represent FHIR Location for the purpose of the PanCareSurPass project."
+//-------------------------------------------------------------------------------------------
+
+* name 1.. MS
+* name ^short = "Name of the Institution"
+* description ^short = "Institution description"
+* address.city ^short = "Institution city"
+* address.country ^short = "Institution country"
+
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

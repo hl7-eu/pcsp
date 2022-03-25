@@ -6003,3 +6003,187 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01AA01"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Ciclofosfamide",
+  "code" : "L01AA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01AA01",
+  "display" : "Ciclofosfamide"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "cyclophosphamide",
+  "code" : "L01AA01",
+  "system" : "http://www.whocc.no/atc",
+  "severity" : "warning",
+  "error" : "The display \"Ciclofosfamide\" is not a valid display for the code {http://www.whocc.no/atc}L01AA01 - should be one of ['cyclophosphamide'] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01AA01"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "cyclophosphamide",
+  "code" : "L01AA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01AA01",
+  "display" : "Ciclofosfamide"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "cyclophosphamide",
+  "code" : "L01AA01",
+  "system" : "http://www.whocc.no/atc",
+  "severity" : "warning",
+  "error" : "The display \"Ciclofosfamide\" is not a valid display for the code {http://www.whocc.no/atc}L01AA01 - should be one of ['cyclophosphamide'] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC01"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Cytarabina",
+  "code" : "L01BC01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC01",
+  "display" : "Citarabina"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "cytarabine",
+  "code" : "L01BC01",
+  "system" : "http://www.whocc.no/atc",
+  "severity" : "warning",
+  "error" : "The display \"Citarabina\" is not a valid display for the code {http://www.whocc.no/atc}L01BC01 - should be one of ['cytarabine'] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC01"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "cytarabine",
+  "code" : "L01BC01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC01",
+  "display" : "Citarabina"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "cytarabine",
+  "code" : "L01BC01",
+  "system" : "http://www.whocc.no/atc",
+  "severity" : "warning",
+  "error" : "The display \"Citarabina\" is not a valid display for the code {http://www.whocc.no/atc}L01BC01 - should be one of ['cytarabine'] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BA01"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Metotrexato sale sodico",
+  "code" : "L01BA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BA01",
+  "display" : "Metotrexato"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "methotrexate",
+  "code" : "L01BA01",
+  "system" : "http://www.whocc.no/atc",
+  "severity" : "warning",
+  "error" : "The display \"Metotrexato\" is not a valid display for the code {http://www.whocc.no/atc}L01BA01 - should be one of ['methotrexate'] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BA01"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "methotrexate",
+  "code" : "L01BA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BA01",
+  "display" : "Metotrexato"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "methotrexate",
+  "code" : "L01BA01",
+  "system" : "http://www.whocc.no/atc",
+  "severity" : "warning",
+  "error" : "The display \"Metotrexato\" is not a valid display for the code {http://www.whocc.no/atc}L01BA01 - should be one of ['methotrexate'] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01CA02"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Vincristina",
+  "code" : "L01CA02",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01CA02",
+  "display" : "Vincristina"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "vincristine",
+  "code" : "L01CA02",
+  "system" : "http://www.whocc.no/atc",
+  "severity" : "warning",
+  "error" : "The display \"Vincristina\" is not a valid display for the code {http://www.whocc.no/atc}L01CA02 - should be one of ['vincristine'] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01CA02"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "vincristine",
+  "code" : "L01CA02",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01CA02",
+  "display" : "Vincristina"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "vincristine",
+  "code" : "L01CA02",
+  "system" : "http://www.whocc.no/atc",
+  "severity" : "warning",
+  "error" : "The display \"Vincristina\" is not a valid display for the code {http://www.whocc.no/atc}L01CA02 - should be one of ['vincristine'] (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------

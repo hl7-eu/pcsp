@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:ietf:bcp:47",
+  "code" : "es-ES"
+}, "url": "http://hl7.org/fhir/ValueSet/all-languages--0", "version": "4.0.1", "lang":"ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "Error from server: Access violation at address 0000000000C5822A in module 'FHIRServer.exe'. Read of address 0000000000000070",
+  "class" : "SERVER_ERROR"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:ietf:bcp:47",
+  "code" : "es-ES",
+  "display" : "Español"
+}, "valueSet" :null, "lang":"ES", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "Error from server: Access violation at address 0000000000C5822A in module 'FHIRServer.exe'. Read of address 0000000000000070",
+  "class" : "SERVER_ERROR"
+}
+-------------------------------------------------------------------------------------
