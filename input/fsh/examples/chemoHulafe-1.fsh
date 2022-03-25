@@ -39,7 +39,7 @@ Description: "Sample of Chemotherapy based on information provided by Hulafe (Ci
 Usage:  #example
 * insert ChemoHulafe-1-common
 * extension[relatedCumulativeDose].valueReference = Reference(ChemoHulafe-1-Ciclofosfamide-dose)
-* medicationCodeableConcept = $atc#L01AA01 "Ciclofosfamide"
+* medicationCodeableConcept = $atc#L01AA01 "cyclophosphamide"
 
 Instance:  ChemoHulafe-1-Ciclofosfamide-dose
 InstanceOf: CumulativeDoseChemoObsPcsp
@@ -58,7 +58,7 @@ Description: "Sample of Chemotherapy based on information provided by Hulafe (Me
 Usage:  #example
 * insert ChemoHulafe-1-common
 * extension[relatedCumulativeDose].valueReference = Reference(ChemoHulafe-1-Metotrexato-dose)
-* medicationCodeableConcept = $atc#L01BA01 "Metotrexato"
+* medicationCodeableConcept = $atc#L01BA01 "methotrexate"
 
 Instance:  ChemoHulafe-1-Metotrexato-dose
 InstanceOf: CumulativeDoseChemoObsPcsp
@@ -77,7 +77,7 @@ Description: "Sample of Chemotherapy based on information provided by Hulafe (Vi
 Usage:  #example
 * insert ChemoHulafe-1-common
 * extension[relatedCumulativeDose].valueReference = Reference(ChemoHulafe-1-Vincristina-dose)
-* medicationCodeableConcept = $atc#L01CA02 "Vincristina"
+* medicationCodeableConcept = $atc#L01CA02 "vincristine"
 
 Instance:  ChemoHulafe-1-Vincristina-dose
 InstanceOf: CumulativeDoseChemoObsPcsp
@@ -96,7 +96,7 @@ Description: "Sample of Chemotherapy based on information provided by Hulafe (Ci
 Usage:  #example
 * insert ChemoHulafe-1-common
 * extension[relatedCumulativeDose].valueReference = Reference(ChemoHulafe-1-Citarabina-dose)
-* medicationCodeableConcept = $atc#L01BC01 "Citarabina"
+* medicationCodeableConcept = $atc#L01BC01 "cytarabine"
 
 Instance:  ChemoHulafe-1-Citarabina-dose
 InstanceOf: CumulativeDoseChemoObsPcsp

@@ -11,12 +11,12 @@ InstanceOf: ConditionPrimaryCancerPcsp
 Title:   "Condition: Primary Diagnosis Hulafe"
 Description: "Sample of Primary Diagnosis based on information provided by Hulafe (Condition)"
 Usage: #example
-* language = #ES
+* language = #es-ES
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"
 * extension[=].valueDateTime = "2021"
-* extension[+].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-histology-morphology-behavior"
+* extension[+].url = $mcode-histology-morphology-behavior
 * extension[=].valueCodeableConcept = $icd03#8260/3 "8260/3 - Carcinoma papilar de tiroides"
-* code = $v3-NullFlavor#UNC "UNC - un-encoded"
+* code = $v3-NullFlavor#UNC "un-encoded"
 * code.text = "Carcinoma tiroides"
 * bodySite.extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier"
 * bodySite.extension.valueCodeableConcept = $v3-NullFlavor#NA "Not Applicable"
@@ -39,10 +39,6 @@ Description: "Sample of Primary Diagnosis based on information provided by Hulaf
 Usage: #example
 
 * language = #ES
-* extension[0].url = "http://hl7.org/fhir/ValueSet/address-type"
-* extension[=].valueCode = #both
-* extension[+].url = "http://hl7.org/fhir/ValueSet/address-use"
-* extension[=].valueCode = #work
 * active = true
 * name = "Hospital Universitari i Politècnic La Fe"
 * alias = "La Fe"
@@ -50,6 +46,8 @@ Usage: #example
 * telecom[=].value = "+34 961 244 000"
 * telecom[+].system = #email
 * telecom[=].value = "prensa_lafe@gva.es"
+* address.type = #both
+* address.use = #work
 * address.line = "Avinguda de Fernando Abril Martorell, nº 106"
 * address.city = "Valencia"
 * address.state = "Comunidad Valenciana"

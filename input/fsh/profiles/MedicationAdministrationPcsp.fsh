@@ -60,12 +60,20 @@ Title:    "MedicationStatement PCSP"
 Description: "This profile defines how to represent MedicationStatement in FHIR for describing minimal information about provided medicartions for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * status ^short = "active | completed | entered-in-error | intended | stopped | on-hold | unknown |not-taken"
-* status ^example.valueCode = #completed
-* medicationCodeableConcept	^example.valueCodeableConcept = $atc#H02 "CORTICOSTEROIDS FOR SYSTEMIC USE"
+
+* status 
+  * ^example.valueCode = #completed
+  * ^example.label = "general"
+  
+* medicationCodeableConcept
+  * ^example.valueCodeableConcept = $atc#H02 "CORTICOSTEROIDS FOR SYSTEMIC USE"
+  * ^example.label = "general"
 
 // add a slice for category H02 CORTICOSTEROIDS FOR SYSTEMIC USE
 
-* dosage.route ^example.valueCodeableConcept = $edqm#20042000 "Intrathecal use"
+* dosage.route
+  * ^example.valueCodeableConcept = $edqm#20042000 "Intrathecal use"
+  * ^example.label = "general"
 // 20042000 edqm Intrathecal use
 * dosage.timing.repeat.count ^short = "Number of administration"
 * dosage.timing.repeat.boundsDuration ^short = "Length/Range of lengths, or (Start and/or end) limits."

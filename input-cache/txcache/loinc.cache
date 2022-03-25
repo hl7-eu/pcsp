@@ -161,17 +161,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "LA4489-6",
-  "display" : "Unknown"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Unknown",
-  "code" : "LA4489-6",
-  "system" : "http://loinc.org"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
   "code" : "X-PCSP-1"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -263,8 +252,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:67a5fb5d-a65f-481a-b9f9-24f74fb76638",
-    "timestamp" : "2022-03-24T11:24:24.003Z",
+    "identifier" : "urn:uuid:3794324c-6be4-41c3-81ca-de62c26ac986",
+    "timestamp" : "2022-03-25T13:31:13.346Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -325,8 +314,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:2da4f196-4465-4d5e-b324-e263f7b4cac8",
-    "timestamp" : "2022-03-24T11:24:24.534Z",
+    "identifier" : "urn:uuid:edf2b34e-580f-4a0c-a2a5-825eefb9a752",
+    "timestamp" : "2022-03-25T13:31:13.830Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -382,8 +371,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:9e8d2b43-4d10-4d20-9fa1-ef6d234e32fc",
-    "timestamp" : "2022-03-24T11:24:24.893Z",
+    "identifier" : "urn:uuid:c4dfe0e3-cca6-423e-812c-ee3c3c63d45b",
+    "timestamp" : "2022-03-25T13:31:14.221Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -439,8 +428,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:7ce511be-66a5-4013-a2d6-8d69678606d4",
-    "timestamp" : "2022-03-24T11:24:25.268Z",
+    "identifier" : "urn:uuid:f2656711-cb42-4939-a368-07121da6fda8",
+    "timestamp" : "2022-03-25T13:31:14.517Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -496,8 +485,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:44f892ab-4f4c-4aee-b1c1-907b0bd343e9",
-    "timestamp" : "2022-03-24T11:24:25.643Z",
+    "identifier" : "urn:uuid:8ca654c3-3f94-45db-b7b8-971337c1498d",
+    "timestamp" : "2022-03-25T13:31:14.830Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true

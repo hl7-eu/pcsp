@@ -6,7 +6,7 @@ InstanceOf: PatientPcsp
 Title:   "Patient: Hulafe"
 Description: "Sample of Patient demographics data based on information provided by Hulafe"
 Usage: #example
-* language = #ES
+* language = #es-ES
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
 * extension[=].valueString = "APELLIDO2"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"

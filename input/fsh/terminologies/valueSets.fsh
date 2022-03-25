@@ -54,7 +54,7 @@ Description: "ICD-O-3 Topography"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadiotherapyTypeVs
-Id: vs-RadiotherapyType-eu-pcsp
+Id: vs-radiotherapyType-eu-pcsp
 Title: "Radiotherapy Type"
 Description: "Types of radiotherapy this procedure is referring to"
 
@@ -67,7 +67,7 @@ Description: "Types of radiotherapy this procedure is referring to"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: SctTypeVs
-Id: vs-SctType-eu-pcsp
+Id: vs-sctType-eu-pcsp
 Title: "(Stem Cell) Transplantation  Type"
 Description: "Types of Stem Cell Transplantation this procedure is referring to"
 // not yet in the GPS ....
@@ -79,7 +79,7 @@ Description: "Types of Stem Cell Transplantation this procedure is referring to"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadiotherapyDoseTypeVs
-Id: vs-RadiotherapyDoseType-eu-pcsp
+Id: vs-radiotherapyDoseType-eu-pcsp
 Title: "Radiotherapy Dose Type"
 Description: "Types of radiotherapy cumulative dose this procedure is referring to"
 //-------------------------------------------------------------------------------------------
@@ -89,7 +89,7 @@ Description: "Types of radiotherapy cumulative dose this procedure is referring 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadiotherapyDeviceType
-Id: vs-RadiotherapyDeviceType-eu-pcsp
+Id: vs-radiotherapyDeviceType-eu-pcsp
 Title: "Radiotherapy Device Type"
 Description: "Radiotherapy device type this procedure is referring to"
 //-------------------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ Description: "Radiotherapy device type this procedure is referring to"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: BrachytherapyType
-Id: vs-BrachytherapyType-eu-pcsp
+Id: vs-brachytherapyType-eu-pcsp
 Title: "Brachytherapy Type"
 Description: "Types of Brachytherapy this procedure is referring to"
 //-------------------------------------------------------------------------------------------
@@ -120,28 +120,29 @@ Description: "Radiotherapy Isotopes"
 // check if they are in the GPS otherwise update the value set....
 //-------------------------------------------------------------------------------------------
 
-* $sct#13237009	"Cesium-131"
-* $sct#55117002	"Cesium-137"
-* $sct#5405008	"Cobalt-60"
-* $sct#24301009	"Gold-198"
-* $sct#68630002	"Iodine-125"
-* $sct#1368003	"Iodine-131"
-* $sct#48341001	"Iridium-192"
-* $sct#447553000"Lutetium-177"
-* $sct#9351000	"Palladium-103"
-* $sct#32505007	"Phosphorus-32"
-* $sct#24853006	"Radium-223"
-* $sct#423578007"Rhenium-188"
-* $sct#8227001	"Ruthenium-106"
-* $sct#14071002	"Strontium-90"
-* $sct#80751004	"Xenon-133"
-* $sct#14691008	"Yttrium-90"
+* $sct#13237009	 "Cesium-131"
+* $sct#55117002	 "Cesium-137"
+* $sct#5405008	 "Cobalt-60"
+* $sct#24301009	 "Gold-198"
+* $sct#68630002	 "Iodine-125"
+* $sct#1368003	 "Iodine-131"
+* $sct#48341001	 "Iridium-192"
+* $sct#447553000 "Lutetium-177"
+* $sct#9351000	 "Palladium-103"
+* $sct#32505007	 "Phosphorus-32"
+* $sct#24853006	 "Radium-223"
+* $sct#423578007 "Rhenium-188"
+* $sct#8227001	 "Ruthenium-106"
+* $sct#14071002	 "Strontium-90"
+* $sct#80751004	 "Xenon-133"
+* $sct#14691008	 "Yttrium-90"
 * $sct#395786000 "MIBG - metaiodobenzylguanidine"
 * $data-absent-reason#unknown "Unknown"
 * $v3-NullFlavor#OTH "Other"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadioUnitsVs
+Id: vs-radiotherapyDoseUnit-eu-pcsp
 Title: "Radiotherapy dose units"
 Description: "Radiotherapy dose units"
 //-------------------------------------------------------------------------------------------
