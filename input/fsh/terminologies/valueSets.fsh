@@ -24,8 +24,10 @@ Title: "Chemotherapy cumulative dose units"
 Description: "Chemotherapy cumulative dose units"
 //-------------------------------------------------------------------------------------------
 * $ucum#mg/m2
-* $ucum#gr/m2
-* $ucum#UI/m2
+// * $ucum#gr/m2
+* $ucum#g/m2
+// * $ucum#UI/m2
+* $ucum#[iU]/m2
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: ICCC3Vs
@@ -150,15 +152,6 @@ Description: "Radiotherapy dose units"
 * $ucum#MV	"megavolt"
 * $ucum#kV	"kilovolt"
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: ObservationYesNoVs
-Id: vs-observationYesNo-eu-pcsp
-Title: "Observation codes for which a Yes/No answer is captured."
-Description: "Observation codes for which a Yes/No answer is captured."
-//-------------------------------------------------------------------------------------------
-* CsGenericPcsp#4w-corticosteroids-anti-cancer
-* CsGenericPcsp#intrathecal-injections
-
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RouteOfAdminVs
@@ -168,4 +161,16 @@ Description: "Route of administration"
 //-------------------------------------------------------------------------------------------
 * $edqm#20042000 "Intrathecal use"
 
+
+/* =======
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ObservationYesNoVs
+Id: vs-observationYesNo-eu-pcsp
+Title: "Observation codes for which a Yes/No answer is captured."
+Description: "Observation codes for which a Yes/No answer is captured."
+//-------------------------------------------------------------------------------------------
+* CsGenericPcsp#4w-corticosteroids-anti-cancer
+* CsGenericPcsp#intrathecal-injections
+
+==== */
 

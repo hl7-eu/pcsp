@@ -74,6 +74,7 @@ Description: "This profile defines how to represent MedicationStatement in FHIR 
 * dosage.route
   * ^example.valueCodeableConcept = $edqm#20042000 "Intrathecal use"
   * ^example.label = "general"
+  
 // 20042000 edqm Intrathecal use
 * dosage.timing.repeat.count ^short = "Number of administration"
 * dosage.timing.repeat.boundsDuration ^short = "Length/Range of lengths, or (Start and/or end) limits."

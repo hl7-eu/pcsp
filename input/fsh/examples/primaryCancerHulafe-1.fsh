@@ -26,7 +26,7 @@ Usage: #example
 
 * encounter = Reference(EncHulafe-1)
 * encounter.type = "Encounter"
-* stage.summary = $v3-NullFlavor#UNC "UNC - un-encoded"
+* stage.summary = $v3-NullFlavor#UNC "un-encoded"
 * stage.summary.text = "pT1a"
 * note.text = "Alergia al epitelio de gato"
 
@@ -38,7 +38,7 @@ Title:   "Organization: Primary Diagnosis Hulafe (Organization)"
 Description: "Sample of Primary Diagnosis based on information provided by Hulafe (Organization)"
 Usage: #example
 
-* language = #ES
+* language = #es-ES
 * active = true
 * name = "Hospital Universitari i Politècnic La Fe"
 * alias = "La Fe"
@@ -61,7 +61,7 @@ InstanceOf: Encounter
 Title:   "Encounter: Primary Diagnosis Hulafe (Encounter)"
 Description: "Sample of Primary Diagnosis based on information provided by Hulafe (Encounter)"
 Usage: #example
-* language = #ES
+* language = #es-ES
 * status = #finished
 * class = $v3-ActCode#AMB "ambulatory"
 * insert Hulafe-1-subject

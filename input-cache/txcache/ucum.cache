@@ -168,3 +168,77 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "g/m2"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "g/m2",
+  "code" : "g/m2",
+  "system" : "http://unitsofmeasure.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "[iU]/m2"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "[iU]/m2",
+  "code" : "[iU]/m2",
+  "system" : "http://unitsofmeasure.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "mg/m2"
+      },
+      {
+        "code" : "g/m2"
+      },
+      {
+        "code" : "[iU]/m2"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:3cb077fa-9411-4e46-86fd-28da46adfc35",
+    "timestamp" : "2022-03-26T11:31:02.129Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://unitsofmeasure.org|2.0.1"
+    }],
+    "contains" : [{
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg/m2",
+      "display" : "mg/m2"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "g/m2",
+      "display" : "g/m2"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "[iU]/m2",
+      "display" : "[iU]/m2"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

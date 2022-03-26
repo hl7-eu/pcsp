@@ -220,7 +220,7 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[0].mapping[0].map = "MedicationAdministration.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp')"
 
 * differential.element[1].mapping[0].identity = "fhir"
-* differential.element[1].mapping[0].map = " .reasonReference"
+* differential.element[1].mapping[0].map = ".reasonReference"
 
 * differential.element[2].mapping[0].identity = "fhir"
 * differential.element[2].mapping[0].map = ".effectivePeriod.start"
@@ -274,7 +274,7 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "MedicationStatement.where(medicationCodeableConcept = 'http://www.whocc.no/atc|H02' and dosage.timing.repeat.boundsDuration.where( value='4' and unit = 'w' and comparator ='>' )"
+* differential.element[19].mapping[0].map = "MedicationStatement.where(medicationCodeableConcept = 'http://www.whocc.no/atc|H02' and dosage.timing.repeat.boundsDuration.where( value='4' and code = 'w' and comparator ='>' )"
 
 * differential.element[20].mapping[0].identity = "fhir"
 * differential.element[20].mapping[0].map = "MedicationStatement.where(dosage.route = https://standardterms.edqm.eu|20042000)"

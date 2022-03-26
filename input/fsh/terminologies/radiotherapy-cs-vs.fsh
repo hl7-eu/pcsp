@@ -19,6 +19,8 @@ Usage: #definition
 * status = #active
 * description = "PancareSurPass radiotherapy sites Code System"
 * content = #complete
+* caseSensitive = false
+* hierarchyMeaning = #part-of
 * count = 536
 * concept[0].code = #1
 * concept[=].display = "Brain"

@@ -246,7 +246,7 @@ Description: "This profile defines how to represent FHIR Location for the purpos
 * address.country ^short = "Institution country"
 
 
-
+/* ===== ATTIC BEGIN
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ObservationYesNoPcsp
 Parent:   Observation 
@@ -262,3 +262,6 @@ Description: "This profile defines how to represent Yes/No answered information 
 * code MS
 * valueCodeableConcept from http://loinc.org/vs/LL365-8 // Yes/No
 * valueCodeableConcept 1.. MS
+
+
+==== ATTIC END */

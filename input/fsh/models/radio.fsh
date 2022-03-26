@@ -199,7 +199,7 @@ If you know the treatment was with external beam but not which machine or energy
 2 => MIBG
 3 =>Yttrium 90
 4 => Other
--9922 => Unknown"
+-9922 => Unknown ÿ"
 * differential.element[16].min = 0
 * differential.element[16].max = "1"
 * differential.element[16].type.code = #CodeableConcept
@@ -368,7 +368,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[33].definition = "Specify radiation type of the boost.
 1 => External Beam
 2 => Brachytherapy
--9922 => NK"
+-9922 => NK ÿ"
 * differential.element[33].min = 1
 * differential.element[33].max = "1"
 * differential.element[33].type.code = #CodeableConcept
@@ -522,7 +522,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[49].path = "Radiotherapy.target.site.shielding.status"
 * differential.element[49].short = "Shielding status"
 * differential.element[49].definition = "Specify if shielding was used or not. 
-Yes;  No;  NK"
+Yes;  No;  NK ÿ"
 * differential.element[49].min = 0
 * differential.element[49].max = "1"
 * differential.element[49].type.code = #CodeableConcept
