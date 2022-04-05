@@ -199,7 +199,7 @@ If you know the treatment was with external beam but not which machine or energy
 2 => MIBG
 3 =>Yttrium 90
 4 => Other
--9922 => Unknown ÿ"
+-9922 => Unknown"
 * differential.element[16].min = 0
 * differential.element[16].max = "1"
 * differential.element[16].type.code = #CodeableConcept
@@ -377,8 +377,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[34].id = "Radiotherapy.target.boost.given"
 * differential.element[34].path = "Radiotherapy.target.boost.given"
 * differential.element[34].short = "Boost given"
-* differential.element[34].definition = "Flag indicating if a boost was given, not given or unknown
-"
+* differential.element[34].definition = "Flag indicating if a boost was given, not given or unknown"
 * differential.element[34].min = 0
 * differential.element[34].max = "1"
 * differential.element[34].type.code = #CodeableConcept
@@ -555,8 +554,8 @@ Yes;  No;  NK ÿ"
 * differential.element[52].type.code = #BackboneElement
 
 
-* differential.element[53].id = "Radiotherapy.dosimetry"
-* differential.element[53].path = "Radiotherapy.dosimetry"
+* differential.element[53].id = "Radiotherapy.organAtRisk.dosimetry"
+* differential.element[53].path = "Radiotherapy.organAtRisk.dosimetry"
 * differential.element[53].short = "Dosimetry on Organ at Risk"
 * differential.element[53].definition = "Specify if there is available information on Dosimetry of Organs at Risk [Yes/No]"
 * differential.element[53].min = 0
@@ -564,8 +563,8 @@ Yes;  No;  NK ÿ"
 * differential.element[53].type.code = #CodeableConcept
 
 
-* differential.element[54].id = "Radiotherapy.dosimetryDocument"
-* differential.element[54].path = "Radiotherapy.dosimetryDocument"
+* differential.element[54].id = "Radiotherapy.organAtRisk.dosimetryDocument"
+* differential.element[54].path = "Radiotherapy.organAtRisk.dosimetryDocument"
 * differential.element[54].short = "Electronic / scanned version(s) of relevant document(s)"
 * differential.element[54].definition = "If Dosimetry on Organ at Risk is available, upload here the electronic / scanned version(s) of any relevant document(s)"
 * differential.element[54].min = 0
@@ -645,8 +644,8 @@ Yes;  No;  NK ÿ"
 * differential.element[16].mapping[0].identity = "fhir"
 * differential.element[16].mapping[0].map = ".location.resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope).valueCodeableConcept"
 
-
-
+* differential.element[17].mapping[0].identity = "fhir"
+* differential.element[17].mapping[0].map = "TBD"
 
 * differential.element[18].mapping[0].identity = "fhir"
 * differential.element[18].mapping[0].map = ".bodySite"
@@ -654,44 +653,44 @@ Yes;  No;  NK ÿ"
 * differential.element[18].mapping[1].identity = "fhir"
 * differential.element[18].mapping[1].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp).bodySite"
 
+* differential.element[19].mapping[0].identity = "fhir"
+* differential.element[19].mapping[0].map = "."
 
+* differential.element[20].mapping[0].identity = "fhir"
+* differential.element[20].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier).valueCodeableConcept"
 
+* differential.element[21].mapping[0].identity = "fhir"
+* differential.element[21].mapping[0].map = ".text"
 
+* differential.element[22].mapping[0].identity = "fhir"
+* differential.element[22].mapping[0].map = "TBD"
 
+* differential.element[23].mapping[0].identity = "fhir"
+* differential.element[23].mapping[0].map = "TBD"
 
-
-
-
-
-
-
-
-
-
-
-
-
+* differential.element[24].mapping[0].identity = "fhir"
+* differential.element[24].mapping[0].map = "TBD"
 
 * differential.element[25].mapping[0].identity = "fhir"
-* differential.element[25].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
+* differential.element[25].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
 
+* differential.element[26].mapping[0].identity = "fhir"
+* differential.element[26].mapping[0].map = ".status = #preliminary"
 
+* differential.element[27].mapping[0].identity = "fhir"
+* differential.element[27].mapping[0].map = ".extension('http://hl7.org/fhir/StructureDefinition/event-statusReason')"
 
+* differential.element[28].mapping[0].identity = "fhir"
+* differential.element[28].mapping[0].map = ".valueCodeableConcept = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown"
 
+* differential.element[29].mapping[0].identity = "fhir"
+* differential.element[29].mapping[0].map = ".valueQuantity.value"
 
+* differential.element[30].mapping[0].identity = "fhir"
+* differential.element[30].mapping[0].map = ".valueQuantity.code"
 
-
-
-
-
-
-
-
-
-
-
-
-
+* differential.element[31].mapping[0].identity = "fhir"
+* differential.element[31].mapping[0].map = "TBD"
 
 * differential.element[32].mapping[0].identity = "fhir"
 * differential.element[32].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyBoost-eu-pcsp')"
@@ -708,65 +707,65 @@ Yes;  No;  NK ÿ"
 * differential.element[35].mapping[1].identity = "fhir"
 * differential.element[35].mapping[1].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp).bodySite"
 
+* differential.element[36].mapping[0].identity = "fhir"
+* differential.element[36].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier).valueCodeableConcept"
 
+* differential.element[37].mapping[0].identity = "fhir"
+* differential.element[37].mapping[0].map = ".text"
 
+* differential.element[38].mapping[0].identity = "fhir"
+* differential.element[38].mapping[0].map = "TBD"
 
+* differential.element[39].mapping[0].identity = "fhir"
+* differential.element[39].mapping[0].map = "TBD"
 
-
-
-
-
-
-
-
-
-
-
+* differential.element[40].mapping[0].identity = "fhir"
+* differential.element[40].mapping[0].map = "TBD"
 
 * differential.element[41].mapping[0].identity = "fhir"
-* differential.element[41].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
+* differential.element[41].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
+
+* differential.element[42].mapping[0].identity = "fhir"
+* differential.element[42].mapping[0].map = ".status = #preliminary"
+
+* differential.element[43].mapping[0].identity = "fhir"
+* differential.element[43].mapping[0].map = ".extension('http://hl7.org/fhir/StructureDefinition/event-statusReason')"
+
+* differential.element[44].mapping[0].identity = "fhir"
+* differential.element[44].mapping[0].map = ".valueCodeableConcept = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown"
+
+* differential.element[45].mapping[0].identity = "fhir"
+* differential.element[45].mapping[0].map = ".valueQuantity.value"
+
+* differential.element[46].mapping[0].identity = "fhir"
+* differential.element[46].mapping[0].map = ".valueQuantity.code"
+
+* differential.element[47].mapping[0].identity = "fhir"
+* differential.element[47].mapping[0].map = "TBD"
+
+* differential.element[48].mapping[0].identity = "fhir"
+* differential.element[48].mapping[0].map = "TBD"
+
+* differential.element[49].mapping[0].identity = "fhir"
+* differential.element[49].mapping[0].map = "TBD"
+
+* differential.element[50].mapping[0].identity = "fhir"
+* differential.element[50].mapping[0].map = "TBD"
 
 
 
 
+* differential.element[52].mapping[0].identity = "fhir"
+* differential.element[52].mapping[0].map = ".extension(http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo).ofType(DocumentReference)"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* differential.element[53].mapping[0].identity = "fhir"
+* differential.element[53].mapping[0].map = ".exists()"
+* differential.element[54].mapping[0].identity = "fhir"
+* differential.element[54].mapping[0].map = "."
+* differential.element[55].mapping[0].identity = "fhir"
+* differential.element[55].mapping[0].map = ".extension(http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo).ofType(DocumentReference)"
+* differential.element[56].mapping[0].identity = "fhir"
+* differential.element[56].mapping[0].map = ".note"
 
 
 

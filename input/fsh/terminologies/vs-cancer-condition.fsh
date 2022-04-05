@@ -1,3 +1,29 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ICCC3Vs
+Id: vs-iccc3-eu-pcsp
+Title: "ICCC-3"
+Description: "International Classification of Childhood Cancer, third edition"
+// not yet in the GPS ....
+//-------------------------------------------------------------------------------------------
+* codes from system $iccc3 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ICDO3MorphologyVs
+Id: vs-icdo3-morphology-eu-pcsp
+Title: "ICD-O-3 Morphology"
+Description: "ICD-O-3 Morphology"
+//-------------------------------------------------------------------------------------------
+* codes from system $icd03 // to be specialized....
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ICDO3TopographyVs
+Id: vs-icdo3-topography-eu-pcsp
+Title: "ICD-O-3 Topography"
+Description: "ICD-O-3 Topography"
+//-------------------------------------------------------------------------------------------
+* codes from system $icd03 // to be specialized....
+
+
 ValueSet:   CancerStagingSystemVS
 Id: mcode-cancer-staging-system-vs
 Title: "Cancer Staging System Value Set"

@@ -104,115 +104,122 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[11].min = 1
 * differential.element[11].max = "1"
 * differential.element[11].type.code = #CodeableConcept
-* differential.element[12].id = "Chemotherapy.productAdministration.cumulativeDose"
-* differential.element[12].path = "Chemotherapy.productAdministration.cumulativeDose"
-* differential.element[12].short = "Cumulative Dose"
-* differential.element[12].definition = "Report the total cumulative dose received of each drug. "
-* differential.element[12].min = 1
+* differential.element[12].id = "Chemotherapy.productAdministration.dose"
+* differential.element[12].path = "Chemotherapy.productAdministration.dose"
+* differential.element[12].short = "Dose (NOT in PCSP DB)"
+* differential.element[12].definition = "Dose received of each drug for this administration"
+* differential.element[12].min = 0
 * differential.element[12].max = "1"
-* differential.element[12].type.code = #BackboneElement
-* differential.element[13].id = "Chemotherapy.productAdministration.cumulativeDose.notAvailable"
-* differential.element[13].path = "Chemotherapy.productAdministration.cumulativeDose.notAvailable"
-* differential.element[13].short = "Not calculated or not known dose"
-* differential.element[13].definition = "Flag indicating if the dose was not calculated or it was not known"
+* differential.element[12].type.code = #Quantity
+* differential.element[13].id = "Chemotherapy.productAdministration.cumulativeDose"
+* differential.element[13].path = "Chemotherapy.productAdministration.cumulativeDose"
+* differential.element[13].short = "Cumulative Dose"
+* differential.element[13].definition = "Report the total cumulative dose received of each drug. "
 * differential.element[13].min = 0
 * differential.element[13].max = "1"
-* differential.element[13].type.code = #CodeableConcept
-* differential.element[14].id = "Chemotherapy.productAdministration.cumulativeDose.measureType"
-* differential.element[14].path = "Chemotherapy.productAdministration.cumulativeDose.measureType"
-* differential.element[14].short = "How the dose was determined (estimation or calculation)"
-* differential.element[14].definition = "Specify if the cumulative dose reported has been all calculated on real data or  estimated based on the expected dose prescribed by the protocol.  If some part of the calculation was based on estimated values, the whole field should be 'estimated'"
+* differential.element[13].type.code = #BackboneElement
+* differential.element[14].id = "Chemotherapy.productAdministration.cumulativeDose.notAvailable"
+* differential.element[14].path = "Chemotherapy.productAdministration.cumulativeDose.notAvailable"
+* differential.element[14].short = "Not calculated or not known dose"
+* differential.element[14].definition = "Flag indicating if the dose was not calculated or it was not known"
 * differential.element[14].min = 0
 * differential.element[14].max = "1"
 * differential.element[14].type.code = #CodeableConcept
-* differential.element[15].id = "Chemotherapy.productAdministration.cumulativeDose.completionStatus"
-* differential.element[15].path = "Chemotherapy.productAdministration.cumulativeDose.completionStatus"
-* differential.element[15].short = "The reported doses are incomplete (either under- or over-estimated)"
-* differential.element[15].definition = "Check in case of incomplete doses"
+* differential.element[15].id = "Chemotherapy.productAdministration.cumulativeDose.measureType"
+* differential.element[15].path = "Chemotherapy.productAdministration.cumulativeDose.measureType"
+* differential.element[15].short = "How the dose was determined (estimation or calculation)"
+* differential.element[15].definition = "Specify if the cumulative dose reported has been all calculated on real data or  estimated based on the expected dose prescribed by the protocol.  If some part of the calculation was based on estimated values, the whole field should be 'estimated'"
 * differential.element[15].min = 0
 * differential.element[15].max = "1"
 * differential.element[15].type.code = #CodeableConcept
-* differential.element[16].id = "Chemotherapy.productAdministration.cumulativeDose.statusReason"
-* differential.element[16].path = "Chemotherapy.productAdministration.cumulativeDose.statusReason"
-* differential.element[16].short = "Specify reasons why"
-* differential.element[16].definition = "Specify reasons of incomplete estimated doses"
+* differential.element[16].id = "Chemotherapy.productAdministration.cumulativeDose.completionStatus"
+* differential.element[16].path = "Chemotherapy.productAdministration.cumulativeDose.completionStatus"
+* differential.element[16].short = "The reported doses are incomplete (either under- or over-estimated)"
+* differential.element[16].definition = "Check in case of incomplete doses"
 * differential.element[16].min = 0
 * differential.element[16].max = "1"
-* differential.element[16].type.code = #string
-* differential.element[17].id = "Chemotherapy.productAdministration.cumulativeDose.value"
-* differential.element[17].path = "Chemotherapy.productAdministration.cumulativeDose.value"
-* differential.element[17].short = "Total cumulative dose"
-* differential.element[17].definition = "Report the total cumulative dose received of each drug."
+* differential.element[16].type.code = #CodeableConcept
+* differential.element[17].id = "Chemotherapy.productAdministration.cumulativeDose.statusReason"
+* differential.element[17].path = "Chemotherapy.productAdministration.cumulativeDose.statusReason"
+* differential.element[17].short = "Specify reasons why"
+* differential.element[17].definition = "Specify reasons of incomplete estimated doses"
 * differential.element[17].min = 0
 * differential.element[17].max = "1"
-* differential.element[17].type.code = #decimal
-* differential.element[18].id = "Chemotherapy.productAdministration.cumulativeDose.unit"
-* differential.element[18].path = "Chemotherapy.productAdministration.cumulativeDose.unit"
-* differential.element[18].short = "Measure unit"
-* differential.element[18].definition = "If the dose was calculated, please report the measure unit of the calculation
+* differential.element[17].type.code = #string
+* differential.element[18].id = "Chemotherapy.productAdministration.cumulativeDose.value"
+* differential.element[18].path = "Chemotherapy.productAdministration.cumulativeDose.value"
+* differential.element[18].short = "Total cumulative dose"
+* differential.element[18].definition = "Report the total cumulative dose received of each drug."
+* differential.element[18].min = 0
+* differential.element[18].max = "1"
+* differential.element[18].type.code = #decimal
+* differential.element[19].id = "Chemotherapy.productAdministration.cumulativeDose.unit"
+* differential.element[19].path = "Chemotherapy.productAdministration.cumulativeDose.unit"
+* differential.element[19].short = "Measure unit"
+* differential.element[19].definition = "If the dose was calculated, please report the measure unit of the calculation
 1 => mg/m2
 2 => gr/m2
 3 => UI/m2
 4 => NK
 5 => NC (not calculated)"
-* differential.element[18].min = 0
-* differential.element[18].max = "1"
-* differential.element[18].type.code = #CodeableConcept
-* differential.element[19].id = "Chemotherapy.corticosteroids"
-* differential.element[19].path = "Chemotherapy.corticosteroids"
-* differential.element[19].short = "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously"
-* differential.element[19].definition = "Report 'yes' if the survivor was treated with steroids for at least 4 weeks continuously
-1 => Yes
-2 => No
--9922 => NK"
 * differential.element[19].min = 0
 * differential.element[19].max = "1"
 * differential.element[19].type.code = #CodeableConcept
-* differential.element[20].id = "Chemotherapy.intrathecalInjections"
-* differential.element[20].path = "Chemotherapy.intrathecalInjections"
-* differential.element[20].short = "Intrathecal injections"
-* differential.element[20].definition = "Intrathecal injections"
-* differential.element[20].min = 0
-* differential.element[20].max = "1"
-* differential.element[20].type.code = #BackboneElement
-* differential.element[21].id = "Chemotherapy.intrathecalInjections.status"
-* differential.element[21].path = "Chemotherapy.intrathecalInjections.status"
-* differential.element[21].short = "Did the survivor receive therapeutic intrathecal injections ?"
-* differential.element[21].definition = "Please state if the survivor received any therapeutic intrathecal injections
+* differential.element[20].id = "Chemotherapy.corticosteroids"
+* differential.element[20].path = "Chemotherapy.corticosteroids"
+* differential.element[20].short = "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously"
+* differential.element[20].definition = "Report 'yes' if the survivor was treated with steroids for at least 4 weeks continuously
 1 => Yes
 2 => No
 -9922 => NK"
+* differential.element[20].min = 0
+* differential.element[20].max = "1"
+* differential.element[20].type.code = #CodeableConcept
+* differential.element[21].id = "Chemotherapy.intrathecalInjections"
+* differential.element[21].path = "Chemotherapy.intrathecalInjections"
+* differential.element[21].short = "Intrathecal injections"
+* differential.element[21].definition = "Intrathecal injections"
 * differential.element[21].min = 0
 * differential.element[21].max = "1"
-* differential.element[21].type.code = #CodeableConcept
-* differential.element[22].id = "Chemotherapy.intrathecalInjections.number"
-* differential.element[22].path = "Chemotherapy.intrathecalInjections.number"
-* differential.element[22].short = "Total number"
-* differential.element[22].definition = "Report the total number of injections"
+* differential.element[21].type.code = #BackboneElement
+* differential.element[22].id = "Chemotherapy.intrathecalInjections.status"
+* differential.element[22].path = "Chemotherapy.intrathecalInjections.status"
+* differential.element[22].short = "Did the survivor receive therapeutic intrathecal injections ?"
+* differential.element[22].definition = "Please state if the survivor received any therapeutic intrathecal injections
+1 => Yes
+2 => No
+-9922 => NK"
 * differential.element[22].min = 0
 * differential.element[22].max = "1"
-* differential.element[22].type.code = #integer
-* differential.element[23].id = "Chemotherapy.intrathecalInjections.productName"
-* differential.element[23].path = "Chemotherapy.intrathecalInjections.productName"
-* differential.element[23].short = "Drug(s) administered"
-* differential.element[23].definition = "Please report the names of drugs injected intrathecal"
+* differential.element[22].type.code = #CodeableConcept
+* differential.element[23].id = "Chemotherapy.intrathecalInjections.number"
+* differential.element[23].path = "Chemotherapy.intrathecalInjections.number"
+* differential.element[23].short = "Total number"
+* differential.element[23].definition = "Report the total number of injections"
 * differential.element[23].min = 0
-* differential.element[23].max = "*"
-* differential.element[23].type.code = #string
-* differential.element[24].id = "Chemotherapy.otherTreatments"
-* differential.element[24].path = "Chemotherapy.otherTreatments"
-* differential.element[24].short = "Other chemothrapeutic treatments"
-* differential.element[24].definition = "Report any other chemothrapeutic treatments that are not included in the ATC code"
+* differential.element[23].max = "1"
+* differential.element[23].type.code = #integer
+* differential.element[24].id = "Chemotherapy.intrathecalInjections.productName"
+* differential.element[24].path = "Chemotherapy.intrathecalInjections.productName"
+* differential.element[24].short = "Drug(s) administered"
+* differential.element[24].definition = "Please report the names of drugs injected intrathecal"
 * differential.element[24].min = 0
-* differential.element[24].max = "1"
-* differential.element[24].type.code = #BackboneElement
-* differential.element[25].id = "Chemotherapy.otherTreatments.productName"
-* differential.element[25].path = "Chemotherapy.otherTreatments.productName"
-* differential.element[25].short = "Drugs name"
-* differential.element[25].definition = "If yes, describe treatments"
-* differential.element[25].min = 1
-* differential.element[25].max = "*"
-* differential.element[25].type.code = #string
+* differential.element[24].max = "*"
+* differential.element[24].type.code = #string
+* differential.element[25].id = "Chemotherapy.otherTreatments"
+* differential.element[25].path = "Chemotherapy.otherTreatments"
+* differential.element[25].short = "Other chemothrapeutic treatments"
+* differential.element[25].definition = "Report any other chemothrapeutic treatments that are not included in the ATC code"
+* differential.element[25].min = 0
+* differential.element[25].max = "1"
+* differential.element[25].type.code = #BackboneElement
+* differential.element[26].id = "Chemotherapy.otherTreatments.productName"
+* differential.element[26].path = "Chemotherapy.otherTreatments.productName"
+* differential.element[26].short = "Drugs name"
+* differential.element[26].definition = "If yes, describe treatments"
+* differential.element[26].min = 1
+* differential.element[26].max = "*"
+* differential.element[26].type.code = #string
 //  
 // === MAPPING === 
 // 
@@ -253,59 +260,57 @@ Up to 20 drugs are allowed into the system.  The variable acronym changes based 
 * differential.element[11].mapping[0].map = ".medicationCodeableConcept"
 
 * differential.element[12].mapping[0].identity = "fhir"
-* differential.element[12].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp)"
+* differential.element[12].mapping[0].map = ".dosage.dose"
 
+* differential.element[13].mapping[0].identity = "fhir"
+* differential.element[13].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp)"
 
+* differential.element[14].mapping[0].identity = "fhir"
+* differential.element[14].mapping[0].map = ".valueCodeableConcept = http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown"
+* differential.element[14].mapping[0].identity = "fhir"
+* differential.element[14].mapping[0].map = ".dataAbsentReason"
 
+* differential.element[15].mapping[0].identity = "fhir"
+* differential.element[15].mapping[0].map = ".method"
 
+* differential.element[16].mapping[0].identity = "fhir"
+* differential.element[16].mapping[0].map = ".status = #preliminary"
 
+* differential.element[17].mapping[0].identity = "fhir"
+* differential.element[17].mapping[0].map = ".extension('http://hl7.org/fhir/StructureDefinition/event-statusReason')"
 
-
-
-
-
-
-
-
-
-
-
-
-
+* differential.element[18].mapping[0].identity = "fhir"
+* differential.element[18].mapping[0].map = ".valueQuantity.value"
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "MedicationStatement.where(medicationCodeableConcept = 'http://www.whocc.no/atc|H02' and dosage.timing.repeat.boundsDuration.where( value='4' and code = 'w' and comparator ='>' )"
+* differential.element[19].mapping[0].map = ".valueQuantity.unit (human readeable)"
+
+* differential.element[19].mapping[1].identity = "fhir"
+* differential.element[19].mapping[1].map = ".valueQuantity.code (code)"
 
 * differential.element[20].mapping[0].identity = "fhir"
-* differential.element[20].mapping[0].map = "MedicationStatement.where(dosage.route = https://standardterms.edqm.eu|20042000)"
+* differential.element[20].mapping[0].map = "MedicationStatement.where(medicationCodeableConcept = 'http://www.whocc.no/atc|H02' and dosage.timing.repeat.boundsDuration.where( value='4' and code = 'w' and comparator ='>' )"
 
 * differential.element[21].mapping[0].identity = "fhir"
-* differential.element[21].mapping[0].map = ".exists()"
+* differential.element[21].mapping[0].map = "MedicationStatement.where(dosage.route = https://standardterms.edqm.eu|20042000)"
 
 * differential.element[22].mapping[0].identity = "fhir"
-* differential.element[22].mapping[0].map = ".dosage.timing.repeat.count
-.count()"
+* differential.element[22].mapping[0].map = ".exists()"
 
 * differential.element[23].mapping[0].identity = "fhir"
-* differential.element[23].mapping[0].map = ".medicationCodeableConcept.text"
+* differential.element[23].mapping[0].map = ".dosage.timing.repeat.count"
+
+* differential.element[23].mapping[1].identity = "fhir"
+* differential.element[23].mapping[1].map = ".count()"
 
 * differential.element[24].mapping[0].identity = "fhir"
-* differential.element[24].mapping[0].map = "MedicationStatement"
+* differential.element[24].mapping[0].map = ".medicationCodeableConcept.text"
 
 * differential.element[25].mapping[0].identity = "fhir"
-* differential.element[25].mapping[0].map = ".medicationCodeableConcept.text"
+* differential.element[25].mapping[0].map = "MedicationStatement"
 
-
-
-
-
-
-
-
-
-
-
-
+* differential.element[26].mapping[0].identity = "fhir"
+* differential.element[26].mapping[0].map = ".medicationCodeableConcept.text"
 
 
 

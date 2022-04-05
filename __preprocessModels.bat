@@ -5,6 +5,8 @@ CALL :buildFshFiles input\fsh\models\subject
 CALL :buildFshFiles input\fsh\models\radio
 CALL :buildFshFiles input\fsh\models\chemo
 CALL :buildFshFiles input\fsh\models\diag
+CALL :buildFshFiles input\fsh\models\surg
+
 
 REM CALL :buildFshFiles input\fsh\models\minChemio
 REM CALL :addItems

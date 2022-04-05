@@ -36,6 +36,7 @@ Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-bir
 Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
 Alias: $event-statusReason = http://hl7.org/fhir/StructureDefinition/event-statusReason
 Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
+Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 
 // ---- Identifiers
 Alias : $pat-id-cineca = http://hl7.eu/fhir/ig/pcsp/sid/pat-id-cineca // Temporary assigned

@@ -14,8 +14,21 @@ RuleSet: ProcedureRadiotherapyPcspRules
 * performedPeriod 1.. MS
 * reasonReference 1.. MS // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
-* bodySite 1..1 MS 
+* insert ProcedureRadiotherapyBodySite
+
+
+RuleSet: ProcedureRadiotherapyBodySite
+
+* bodySite 1..1 MS
+* bodySite.extension contains
+     $mcode-body-location-qualifier named locationQualifier 0..* 
+     and LateralityQualifier named lateralityQualifier 0..1
+
+	// $mcode-laterality-qualifier named lateralityQualifier 0..1
+    // BodyLocationQualifier named locationQualifier 0..*   and   
 * bodySite from VsRadiotherapy
+* extension and bodySite and bodySite.extension[lateralityQualifier] MS
+* bodySite.extension[locationQualifier] 
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -64,8 +77,7 @@ Description: "This profile defines how to represent Radiotherapy Cumulative Dose
 // * code = $dicomOntology#113725 "Dose (RP) Total" // evaluate 445565002 | Total boost radiation dose delivered (observable entity) AND 445461008 | Total radiation dose delivered (observable entity)
 * code MS
 * code from RadiotherapyDoseTypeVs
-* bodySite 1.. MS 
-* bodySite from VsRadiotherapy
+* insert ProcedureRadiotherapyBodySite
 
 
 

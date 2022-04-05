@@ -184,7 +184,7 @@ If personalized, please specify.  "
 * differential.element[22].definition = "Major Surgery"
 * differential.element[22].min = 0
 * differential.element[22].max = "*"
-* differential.element[22].type.code = #BackboneElement
+* differential.element[22].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MajorSurgery
 * differential.element[23].id = "TreatmentSummary.diagnosis.progressionRelapseDuringFLT"
 * differential.element[23].path = "TreatmentSummary.diagnosis.progressionRelapseDuringFLT"
 * differential.element[23].short = "Progression-Relapse during FLT"

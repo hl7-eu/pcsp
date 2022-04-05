@@ -39,8 +39,6 @@ Description: "This profile defines how to represent Chemotherapy Cumulative Dose
 
 
 
-
-
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  MedicationAdministrationPcsp
 Parent:   MedicationAdministration 
@@ -50,7 +48,11 @@ Description: "This profile defines how to represent MedicationAdministration in 
 //-------------------------------------------------------------------------------------------
 
 * insert MedicationAdministrationPcspRules
+* extension contains $workflow-supportingInfo named supportingInfo 0..*
+* extension[supportingInfo] 0..*
+* extension[supportingInfo].valueReference only Reference(DocumentReference)
 * effectivePeriod MS
+* dosage.dose ^short = "Amount per dose"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  MedicationStatementPcsp

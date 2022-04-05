@@ -29,30 +29,7 @@ Description: "Chemotherapy cumulative dose units"
 // * $ucum#UI/m2
 * $ucum#[iU]/m2
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: ICCC3Vs
-Id: vs-iccc3-eu-pcsp
-Title: "ICCC-3"
-Description: "International Classification of Childhood Cancer, third edition"
-// not yet in the GPS ....
-//-------------------------------------------------------------------------------------------
-* codes from system $iccc3 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: ICDO3MorphologyVs
-Id: vs-icdo3-morphology-eu-pcsp
-Title: "ICD-O-3 Morphology"
-Description: "ICD-O-3 Morphology"
-//-------------------------------------------------------------------------------------------
-* codes from system $icd03 // to be specialized....
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: ICDO3TopographyVs
-Id: vs-icdo3-topography-eu-pcsp
-Title: "ICD-O-3 Topography"
-Description: "ICD-O-3 Topography"
-//-------------------------------------------------------------------------------------------
-* codes from system $icd03 // to be specialized....
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadiotherapyTypeVs
@@ -161,6 +138,64 @@ Description: "Route of administration"
 //-------------------------------------------------------------------------------------------
 * $edqm#20042000 "Intrathecal use"
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: AffectedOrganVs
+Id: vs-affectedOrgan-eu-pcsp
+Title: "Affected Organs (surgery)"
+Description: "Affected Organs (surgery)"
+//-------------------------------------------------------------------------------------------
+
+// Oesophagus; Abdomen; Brain; Face; Liver; Spine; Spinal Cord; Sympathetic nerves; Chest/thorax; Pelvis
+
+
+* $sct#32849002 "Oesophagus"
+* $sct#818983003 "Abdomen"
+* $sct#12738006  "Brain"
+* $sct#89545001 "Face"
+* $sct#10200004 "Liver"
+* $sct#421060004 "Spine"
+* $sct#2748008  "Spinal Cord"
+* $sct#90456006 " Sympathetic nerve"
+* $sct#51185008 "Thoracic structure"
+* $sct#12921003 "Pelvis"
+* $data-absent-reason#unknown "Unknown"
+* $v3-NullFlavor#OTH "Other"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SacrifiedOrganVs
+Id: vs-sacrifiedOrgan-eu-pcsp
+Title: "Sacrified Organs (surgery)"
+Description: "Sacrified Organs (surgery). Organs are 'sacrified' either to allow a radical excision of the tumor or on purpose (spleen) for staging procedures"
+//-------------------------------------------------------------------------------------------
+
+// Spleen, Kidney, Eye, Lung, Ovary, Hypothalamus/hypophysis, Thyroid, Bladder, uterus Other
+
+* $sct#78961009 "Spleen"
+* $sct#64033007 "Kidney"
+* $sct#81745001 "Eye"
+* $sct#39607008  "Lung"
+* $sct#15497006 "Ovary"
+* $sct#67923007 "Hypothalamic structure" 
+* $sct#69748006  "Thyroid"
+* $sct#89837001 "Bladder"
+* $sct#35039007 "Uterus"
+
+* $data-absent-reason#unknown "Unknown"
+* $v3-NullFlavor#OTH "Other"
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SurgicalActionVs
+Id: vs-action-eu-pcsp
+Title: "Surgical Actions"
+Description: "Surgical Actions"
+//-------------------------------------------------------------------------------------------
+
+* $sct#129303008 "Removal - action"
+* $sct#129325002 "Introduction - action"
+* $sct#129336009 "Implantation - action"
+* $sct#424208002 "Shunt - action"
 
 /* =======
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
