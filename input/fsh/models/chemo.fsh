@@ -1,6 +1,7 @@
 Instance: Chemotherapy
 InstanceOf: StructureDefinition
-Description: "Chemotherapy"
+Description: "Chemotherapy 
+Maturity Level: 2 - Ready for Review"
 Title: "Chemotherapy"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -10,7 +11,8 @@ Usage: #definition
 * title = "Chemotherapy"
 * status = #draft
 * experimental = true
-* description = "Chemotherapy"
+* description = "Chemotherapy 
+Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"

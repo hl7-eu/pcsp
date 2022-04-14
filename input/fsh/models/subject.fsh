@@ -1,6 +1,7 @@
 Instance: Subject
 InstanceOf: StructureDefinition
-Description: "Subject of care"
+Description: "Subject of care
+Maturity Level: 2 - Ready for Review"
 Title: "Subject of care"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -10,7 +11,8 @@ Usage: #definition
 * title = "Subject of care"
 * status = #draft
 * experimental = true
-* description = "Subject of care"
+* description = "Subject of care
+Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"

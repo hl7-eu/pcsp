@@ -1,6 +1,7 @@
 Instance: MajorSurgery
 InstanceOf: StructureDefinition
-Description: "Major Surgery"
+Description: "Major Surgery.
+Maturity Level: 1 - Profiles in progress"
 Title: "Major Surgery"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -10,7 +11,8 @@ Usage: #definition
 * title = "Major Surgery"
 * status = #draft
 * experimental = true
-* description = "Major Surgery"
+* description = "Major Surgery.
+Maturity Level: 1 - Profiles in progress"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -59,7 +61,7 @@ In this field must be reported the ordinal number of the surgeries given. "
 * differential.element[5].id = "MajorSurgery.istitutionOfTreatment.description"
 * differential.element[5].path = "MajorSurgery.istitutionOfTreatment.description"
 * differential.element[5].short = "Institution description"
-* differential.element[5].definition = "Please provide name, city and countryof the institution"
+* differential.element[5].definition = "Institution description"
 * differential.element[5].min = 0
 * differential.element[5].max = "1"
 * differential.element[5].type.code = #string

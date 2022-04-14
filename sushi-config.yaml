@@ -42,7 +42,9 @@ FSHOnly: false
 
 pages:
   index.md:
-    title: PanCareSurPass FHIR IG - Home Page                
+    title: PanCareSurPass FHIR IG - Home Page   
+  maturity.md:
+    title: PCSP Maturity Model
   logicalModel.md:
     title: Logical Models 
   sequence.html:
@@ -62,6 +64,7 @@ menu:
     Collaboration diagrams: collaboration.html
     Sequence diagrams: sequence.html
     Logical models: logicalModel.html
+  Maturity Model: maturity.html
   Artifact Index: artifacts.html			
   Support:
     FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html

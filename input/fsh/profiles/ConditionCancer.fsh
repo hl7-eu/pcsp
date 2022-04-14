@@ -4,10 +4,12 @@
 RuleSet: CancerConditionCommonRules
 * extension contains
     $condition-assertedDate named assertedDate 0..1 and
-    $mcode-histology-morphology-behavior named histologyMorphologyBehavior 0..1 MS
+    $mcode-histology-morphology-behavior named histologyMorphologyBehavior 0..1 MS 
+	
 // HistologyMorphologyBehavior named histologyMorphologyBehavior 0..1 MS
 
 * extension[histologyMorphologyBehavior].value[x] from ICDO3MorphologyVs (required)
+
 
 * bodySite.extension contains
      $mcode-body-location-qualifier named locationQualifier 0..* 
@@ -29,7 +31,8 @@ Profile:  ObservationDiagnosisPcsp
 Parent:   Observation
 Id:       Observation-diagnosis-eu-pcsp
 Title:    "Observation Diagnosis details PCSP"
-Description: "This abstract profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project."
+Description: "This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project.
+\r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
 * subject only Reference(PatientPcsp)
 * effectiveDateTime 1.. MS
@@ -54,7 +57,8 @@ Profile:  EncounterPcsp
 Parent:   Encounter
 Id:       Encounter-eu-pcsp
 Title:    "Encounter Treatment Center PCSP"
-Description: "This abstract profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project."
+Description: "This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project.
+\r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
 * status MS 
 * class MS
@@ -74,14 +78,22 @@ Profile:  ConditionPrimaryCancerPcsp
 Parent:   Condition
 Id:       Condition-primaryCancer-eu-pcsp
 Title:    "Primary Cancer Condition PCSP"
-Description: "This abstract profile defines how to represent Primary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. 
+Description: "This profile defines how to represent Primary Cancer Condition in HL7 FHIR for the purpose of the PanCareSurPass project. 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
-A primary cancer condition, the original or first tumor in the body (Definition from: [NCI Dictionary of Cancer Terms]( https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)).  Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary."
+A primary cancer condition, the original or first tumor in the body (Definition from: [NCI Dictionary of Cancer Terms]( https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)).  Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.
+This profile should be also used for documenting primary cancer relapses.
+ \r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
-* ^abstract = false
+
+* extension contains $condition-occurredFollowing named condition-occurredFollowing 0..*
+* extension[condition-occurredFollowing].valueReference ^short = "For relapses, reference to the first occurance of this tumor."
+* extension[condition-occurredFollowing].valueReference only Reference (ConditionPrimaryCancerPcsp)
 
 * insert CancerConditionCommonRules
 * clinicalStatus and verificationStatus MS
+* clinicalStatus ^example.valueCodeableConcept = $condition-clinical#relapse
+* clinicalStatus ^example.label = "Relapse"
+  
 * code 1.. MS // add value set; add slices for
 * code.coding 0.. MS
 * code.coding ^slicing.discriminator.type = #pattern
@@ -139,9 +151,10 @@ Profile:  ConditionSecondaryCancerPcsp
 Parent:   Condition
 Id:       Condition-secondaryCancer-eu-pcsp
 Title:    "Secondary Cancer Condition"
-Description: "This abstract profile defines how to represent Secondary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. 
+Description: "This profile defines how to represent Secondary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
-Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms)."
+Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).
+\r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
 * ^abstract = false
 * insert CancerConditionCommonRules
@@ -160,7 +173,8 @@ Profile:  OrganizationCenterPcsp
 Parent:   $Organization-uv-ips
 Id:       Organization-center-eu-pcsp
 Title:    "Organization: Primary Treatment Center / Center of diagnosis"
-Description: "This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project."
+Description: "This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project.
+\r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
 * identifier ^short = "Identifier of the center"
 * name ^short = "Name of the Center"

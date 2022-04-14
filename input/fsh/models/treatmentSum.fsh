@@ -1,6 +1,7 @@
 Instance: TreatmentSummary
 InstanceOf: StructureDefinition
-Description: "Treatment Summary data model"
+Description: "Treatment Summary data model
+Maturity Level: 0 - Draft"
 Title: "Treatment Summary"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -10,7 +11,8 @@ Usage: #definition
 * title = "Treatment Summary"
 * status = #draft
 * experimental = true
-* description = "Treatment Summary data model"
+* description = "Treatment Summary data model
+Maturity Level: 0 - Draft"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -170,7 +172,7 @@ If personalized, please specify.  "
 * differential.element[20].definition = "Stem Cell transplantation"
 * differential.element[20].min = 0
 * differential.element[20].max = "*"
-* differential.element[20].type.code = #BackboneElement
+* differential.element[20].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/StemCellTransplantation
 * differential.element[21].id = "TreatmentSummary.diagnosis.radiotherapy"
 * differential.element[21].path = "TreatmentSummary.diagnosis.radiotherapy"
 * differential.element[21].short = "Radiotherapy"

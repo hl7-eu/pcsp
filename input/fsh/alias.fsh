@@ -21,6 +21,7 @@ Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
+Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 
 
 // --- Value Sets
@@ -37,6 +38,7 @@ Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/pati
 Alias: $event-statusReason = http://hl7.org/fhir/StructureDefinition/event-statusReason
 Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
+Alias: $condition-occurredFollowing = http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing
 
 // ---- Identifiers
 Alias : $pat-id-cineca = http://hl7.eu/fhir/ig/pcsp/sid/pat-id-cineca // Temporary assigned

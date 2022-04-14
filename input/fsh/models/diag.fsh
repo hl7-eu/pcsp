@@ -1,6 +1,7 @@
 Instance: Diagnosis
 InstanceOf: StructureDefinition
-Description: "Diagnosis"
+Description: "Diagnosis
+Maturity Level: 2 - Ready for Review"
 Title: "Diagnosis"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -10,7 +11,8 @@ Usage: #definition
 * title = "Diagnosis"
 * status = #draft
 * experimental = true
-* description = "Diagnosis"
+* description = "Diagnosis
+Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"

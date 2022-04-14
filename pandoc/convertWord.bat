@@ -1,9 +1,11 @@
 
-
-
 call :generateMd index
 call :generateMd logicalModel
 call :generateMd collaboration
+call :generateMd maturity
+call :designTable maturity
+
+GOTO :EOF
 
 REM pandoc %in_dir%\home.docx -t commonmark -f docx  -o %pub_dir%\index.md
 REM pandoc %in_dir%\logicalModel.docx -t commonmark -f docx -o %pub_dir%\logicalModel.md
@@ -28,5 +30,15 @@ echo off
 	fart %pub_dir%%~1".md" "\>" ">"
 
 
-GOTO :EOF
+    GOTO :EOF
 
+:designTable
+
+	set pub_dir=..\input\pagecontent\
+
+	fart %pub_dir%%~1".md" "<table>" "<table style=\"border-color: #000000; width:80%; border: 1px solid gray;\">"
+	fart %pub_dir%%~1".md" "<tr class=\"header\">" "<tr style=\"border: 1px solid gray; background-color: #E5E4E2;\">"
+	fart %pub_dir%%~1".md" "<tr class=\"odd\">" "<tr style=\"border: 1px solid gray; \">"
+	fart %pub_dir%%~1".md" "<tr class=\"even\">" "<tr style=\"border: 1px solid gray; \">"
+
+    GOTO :EOF
