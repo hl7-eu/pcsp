@@ -7,10 +7,11 @@ RuleSet: MedicationAdministrationPcspRules
 * extension[relatedCumulativeDose].valueReference only Reference(CumulativeDoseChemoObsPcsp)
 * extension[location].valueReference only Reference(LocationPcsp)
 * status MS
+* subject 1..
 * subject only Reference(PatientPcsp)
-* medicationCodeableConcept from VsPcspAtcCodes
+* medicationCodeableConcept from VsPcspAtcCodes (extensible)
 * medicationCodeableConcept 1..1 MS
-* reasonReference 1..1 MS // add reference to the diagnosis
+* reasonReference 1..1 // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 
 
@@ -32,7 +33,7 @@ Description: "This profile defines how to represent Chemotherapy Cumulative Dose
 * value[x] 1..1 MS
 * valueQuantity 0.. 
   * ^short = "Chemotherapy Cumulative Dose"
-  * unit from ChemoUnitsVs
+  * code from ChemoUnitsVs
 * dataAbsentReason ^short = "Not calculated or not known dose"
 * dataAbsentReason from NotPerformedUnknownVs
 * method from CalculatedEstimatedVs
@@ -52,14 +53,20 @@ Description: "This profile defines how to represent MedicationAdministration in 
 * extension[supportingInfo] 0..*
 * extension[supportingInfo].valueReference only Reference(DocumentReference)
 * effectivePeriod MS
-* dosage.dose ^short = "Amount per dose"
+* dosage.dose 
+  * ^short = "Amount per dose"
+  * value 1.. MS
+  * system 1.. MS
+  * system = $ucum
+  * code 1.. MS 
+  * unit MS 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  MedicationStatementPcsp
 Parent:   MedicationStatement 
 Id:       MedicationStatement-eu-pcsp
 Title:    "MedicationStatement PCSP"
-Description: "This profile defines how to represent MedicationStatement in FHIR for describing minimal information about provided medicartions for the purpose of the PanCareSurPass project."
+Description: "This profile defines how to represent MedicationStatement in FHIR for describing minimal information about provided medications for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * status ^short = "active | completed | entered-in-error | intended | stopped | on-hold | unknown |not-taken"
 
@@ -70,6 +77,10 @@ Description: "This profile defines how to represent MedicationStatement in FHIR 
 * medicationCodeableConcept
   * ^example.valueCodeableConcept = $atc#H02 "CORTICOSTEROIDS FOR SYSTEMIC USE"
   * ^example.label = "general"
+
+* reasonReference MS
+* reasonReference ^short = "Required if related to chemotherapy treatments"
+* reasonReference only Reference(ConditionPrimaryCancerPcsp)
 
 // add a slice for category H02 CORTICOSTEROIDS FOR SYSTEMIC USE
 

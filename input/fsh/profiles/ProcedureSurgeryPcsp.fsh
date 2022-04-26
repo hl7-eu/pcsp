@@ -30,8 +30,40 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * bodySite 0..1 MS 
 * bodySite from AffectedOrganVs
 * location only Reference(LocationPcsp)
+// * focalDevice ^short = "Implanted or removed device"
+//  * action from SurgicalActionVs
+//  * manipulated ^short = "Device manipulated"
+// * usedCode ^short = "Coded items used during the procedure"
+// * usedCode from SurgeryDeviceType // update the value set
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ProcedureOtherSurgeryPcsp
+Parent:   Procedure 
+Id:       Procedure-otherSurgery-eu-pcsp
+Title:    "Procedure Surgery (other)"
+Description: "This profile defines how to represent 'other' surgery procedures (minimal data) as used  by the PanCareSurPass project (e.g. shunt, "
+//-------------------------------------------------------------------------------------------
+
+* text ^short = "Textual description of the surgical procedure"
+* identifier ^short = "External Identifiers for this Surgery"
+* status MS
+* category 1..
+* category = $sct#387713003 "Surgical procedure" // check GPS
+* code ^short = "Identification of the procedure (amputation, shunt,..)"
+* code from OtherSurgicalProcedureTypeVs 
+// add slice on coding to allow more precise data
+* subject only Reference(PatientPcsp)	
+* subject MS
+// * performed[x] 1..
+// * performedDateTime ^short = "Date of the surgical procedure"
+* reasonReference 1.. MS // add reference to the diagnosis
+* reasonReference only Reference(ConditionPrimaryCancerPcsp)
+// * bodySite 0..1 MS 
+// * bodySite from AffectedOrganVs
+// * location only Reference(LocationPcsp)
 * focalDevice ^short = "Implanted or removed device"
   * action from SurgicalActionVs
   * manipulated ^short = "Device manipulated"
-// * usedCode ^short = "Coded items used during the procedure"
-// * usedCode from SurgeryDeviceType // update the value set
+* usedCode ^short = "Coded items used during the procedure"
+* usedCode from ProsthesisTypeVs (extensible) // update the value set

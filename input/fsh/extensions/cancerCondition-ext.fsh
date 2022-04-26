@@ -12,6 +12,14 @@ Description: "This extension provides a means to indicate where an act was, is o
 // publisher, contact, and other metadata here using caret (^) syntax (omitted)
 * value[x] only Reference (Location)
 
+Extension: PreviousStatus
+Id:   condition-previousStatus
+Title:  "Previous Status"
+Description: "This extension provides a mean to indicate the previous clinicalStatus of a condition. It might be used for example to indicate if a relapse is now in remission."
+// publisher, contact, and other metadata here using caret (^) syntax (omitted)
+* value[x] 1..1
+* value[x] only CodeableConcept
+* valueCodeableConcept from $vs-condition-clinical
 
 Extension: ConditionRelated
 Id: mcode-condition-related

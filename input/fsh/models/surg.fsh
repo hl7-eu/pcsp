@@ -39,7 +39,7 @@ In this field must be reported the ordinal number of the tumor diagnosis for whi
 * differential.element[2].id = "MajorSurgery.relatedRelapse"
 * differential.element[2].path = "MajorSurgery.relatedRelapse"
 * differential.element[2].short = "Progressive number of relapse/progression (after FLT)"
-* differential.element[2].definition = ""
+* differential.element[2].definition = "Progressive number of relapse/progression (after FLT)"
 * differential.element[2].min = 0
 * differential.element[2].max = "1"
 * differential.element[2].type.code = #Identifier
@@ -135,8 +135,7 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 * differential.element[14].type.code = #BackboneElement
 * differential.element[15].id = "MajorSurgery.shuntApplication.type"
 * differential.element[15].path = "MajorSurgery.shuntApplication.type"
-* differential.element[15].short = "Type of shunt
-"
+* differential.element[15].short = "Type of shunt"
 * differential.element[15].definition = "This is a free text section in which it is possible to specify the type (e.g. ventriculo-peritoneal) of shunt used 
 1 => Ventriculo-peritoneal
 2 => Ventriculo atrial
@@ -149,9 +148,7 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 * differential.element[15].type.code = #CodeableConcept
 * differential.element[16].id = "MajorSurgery.shuntApplication.laterality"
 * differential.element[16].path = "MajorSurgery.shuntApplication.laterality"
-* differential.element[16].short = "Laterality of shunt
-
-"
+* differential.element[16].short = "Laterality of shunt"
 * differential.element[16].definition = "Please specify the laterality of the shunt
 1 = right
 2= left
@@ -186,35 +183,62 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 * differential.element[19].id = "MajorSurgery.prothesis"
 * differential.element[19].path = "MajorSurgery.prothesis"
 * differential.element[19].short = "Prothesis"
-* differential.element[19].definition = "Please state if the survivor has a prosthesis either internal (e.g. hip replacement) or external (e.g. artificial arm)
-Please define if prosthesis is internal (e.g. titanium bone) or external (e.g. artificial limb). Also in this case, details should be reported in the surgery description.
-1 => Internal
-2 => External
--9922 => NK"
+* differential.element[19].definition = "Prothesis"
 * differential.element[19].min = 0
 * differential.element[19].max = "1"
-* differential.element[19].type.code = #CodeableConcept
-* differential.element[20].id = "MajorSurgery.colostomy"
-* differential.element[20].path = "MajorSurgery.colostomy"
-* differential.element[20].short = "Colostomy"
-* differential.element[20].definition = "State if a colostomy was created. Details should be reported in the surgery section.
-1 => Still in place
-2 => Removed
--9922 =>NK"
+* differential.element[19].type.code = #BackboneElement
+* differential.element[20].id = "MajorSurgery.prothesis.status"
+* differential.element[20].path = "MajorSurgery.prothesis.status"
+* differential.element[20].short = "status"
+* differential.element[20].definition = "Please state if the survivor has a prosthesis either internal (e.g. hip replacement) or external (e.g. artificial arm)"
 * differential.element[20].min = 0
 * differential.element[20].max = "1"
 * differential.element[20].type.code = #CodeableConcept
-* differential.element[21].id = "MajorSurgery.gastrostomy"
-* differential.element[21].path = "MajorSurgery.gastrostomy"
-* differential.element[21].short = "Gastrostomy"
-* differential.element[21].definition = "State if a gastrostomy was created. Details should be reported in the surgery section.
+* differential.element[21].id = "MajorSurgery.prothesis.deviceType"
+* differential.element[21].path = "MajorSurgery.prothesis.deviceType"
+* differential.element[21].short = "device type"
+* differential.element[21].definition = "Please define if prosthesis is internal (e.g. titanium bone) or external (e.g. artificial limb). Also in this case, details should be reported in the surgery description.
+1 => Internal
+2 => External
+-9922 => NK"
+* differential.element[21].min = 0
+* differential.element[21].max = "1"
+* differential.element[21].type.code = #CodeableConcept
+* differential.element[22].id = "MajorSurgery.colostomy"
+* differential.element[22].path = "MajorSurgery.colostomy"
+* differential.element[22].short = "Colostomy"
+* differential.element[22].definition = "Colostomy"
+* differential.element[22].min = 0
+* differential.element[22].max = "1"
+* differential.element[22].type.code = #BackboneElement
+* differential.element[23].id = "MajorSurgery.colostomy.status"
+* differential.element[23].path = "MajorSurgery.colostomy.status"
+* differential.element[23].short = "status"
+* differential.element[23].definition = "State if a colostomy was created. Details should be reported in the surgery section."
+* differential.element[23].min = 0
+* differential.element[23].max = "1"
+* differential.element[23].type.code = #CodeableConcept
+* differential.element[24].id = "MajorSurgery.colostomy.isRemoved"
+* differential.element[24].path = "MajorSurgery.colostomy.isRemoved"
+* differential.element[24].short = "In place or removed ?"
+* differential.element[24].definition = "State if a colostomy was created. Details should be reported in the surgery section.
+1 => Still in place
+2 => Removed
+-9922 =>NK"
+* differential.element[24].min = 0
+* differential.element[24].max = "1"
+* differential.element[24].type.code = #CodeableConcept
+* differential.element[25].id = "MajorSurgery.gastrostomy"
+* differential.element[25].path = "MajorSurgery.gastrostomy"
+* differential.element[25].short = "Gastrostomy"
+* differential.element[25].definition = "State if a gastrostomy was created. Details should be reported in the surgery section.
 1 => Yes
 2 => No
 -9911 => Not applicable
 -9922 =>NK"
-* differential.element[21].min = 0
-* differential.element[21].max = "1"
-* differential.element[21].type.code = #CodeableConcept
+* differential.element[25].min = 0
+* differential.element[25].max = "1"
+* differential.element[25].type.code = #CodeableConcept
 //  
 // === MAPPING === 
 // 
@@ -225,7 +249,7 @@ Please define if prosthesis is internal (e.g. titanium bone) or external (e.g. a
 * differential.element[1].mapping[0].map = ".reasonReference"
 
 * differential.element[2].mapping[0].identity = "fhir"
-* differential.element[2].mapping[0].map = "TBD"
+* differential.element[2].mapping[0].map = ".reasonReference"
 
 * differential.element[3].mapping[0].identity = "fhir"
 * differential.element[3].mapping[0].map = ".identifier"
@@ -263,42 +287,44 @@ Please define if prosthesis is internal (e.g. titanium bone) or external (e.g. a
 * differential.element[13].mapping[0].identity = "fhir"
 * differential.element[13].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan').valueCodeableConcept"
 
+* differential.element[13].mapping[1].identity = "fhir"
+* differential.element[13].mapping[1].map = ".code"
 
 * differential.element[14].mapping[0].identity = "fhir"
-* differential.element[14].mapping[0].map = "TBD"
+* differential.element[14].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-otherSurgery-eu-pcsp').where(code from OtherSurgicalProcedureTypeVs)"
 
 * differential.element[15].mapping[0].identity = "fhir"
-* differential.element[15].mapping[0].map = "TBD"
+* differential.element[15].mapping[0].map = ".code"
 
 * differential.element[16].mapping[0].identity = "fhir"
 * differential.element[16].mapping[0].map = "TBD"
 
 * differential.element[17].mapping[0].identity = "fhir"
-* differential.element[17].mapping[0].map = "TBD"
+* differential.element[17].mapping[0].map = ".focalDevice.action"
 
 * differential.element[18].mapping[0].identity = "fhir"
-* differential.element[18].mapping[0].map = "TBD"
+* differential.element[18].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-otherSurgery-eu-pcsp').where(code from AmputationProcedureTypeVs).exists()"
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "TBD"
+* differential.element[19].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-otherSurgery-eu-pcsp').where(code from ProstheticProcedureTypeVs)"
 
 * differential.element[20].mapping[0].identity = "fhir"
-* differential.element[20].mapping[0].map = "TBD"
+* differential.element[20].mapping[0].map = ".exists()"
 
 * differential.element[21].mapping[0].identity = "fhir"
-* differential.element[21].mapping[0].map = "TBD"
+* differential.element[21].mapping[0].map = "usedCode"
 
+* differential.element[22].mapping[0].identity = "fhir"
+* differential.element[22].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-otherSurgery-eu-pcsp').where(code from ColostomyProcedureTypeVs)"
 
+* differential.element[23].mapping[0].identity = "fhir"
+* differential.element[23].mapping[0].map = ".exists()"
 
+* differential.element[24].mapping[0].identity = "fhir"
+* differential.element[24].mapping[0].map = ".focalDevice.action"
 
-
-
-
-
-
-
-
-
+* differential.element[25].mapping[0].identity = "fhir"
+* differential.element[25].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-otherSurgery-eu-pcsp').where(code from GastrostomyProcedureTypeVs).exists()"
 
 
 

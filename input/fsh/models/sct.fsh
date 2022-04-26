@@ -152,7 +152,7 @@ No calculations are made on these data."
 * differential.element[14].type.code = #string
 * differential.element[15].id = "StemCellTransplantation.gvdh"
 * differential.element[15].path = "StemCellTransplantation.gvdh"
-* differential.element[15].short = "Graft Versus Host Disease "
+* differential.element[15].short = "Graft Versus Host Disease"
 * differential.element[15].definition = "Graft Versus Host Disease"
 * differential.element[15].min = 0
 * differential.element[15].max = "1"

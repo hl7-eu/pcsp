@@ -3,13 +3,14 @@
 
 RuleSet: CancerConditionCommonRules
 * extension contains
-    $condition-assertedDate named assertedDate 0..1 and
-    $mcode-histology-morphology-behavior named histologyMorphologyBehavior 0..1 MS 
+    $condition-assertedDate named assertedDate 0..1 
+    and $mcode-histology-morphology-behavior named histologyMorphologyBehavior 0..1
+	and PreviousStatus named previousStatus 0..1
 	
 // HistologyMorphologyBehavior named histologyMorphologyBehavior 0..1 MS
 
 * extension[histologyMorphologyBehavior].value[x] from ICDO3MorphologyVs (required)
-
+* extension[previousStatus]
 
 * bodySite.extension contains
      $mcode-body-location-qualifier named locationQualifier 0..* 
@@ -19,8 +20,8 @@ RuleSet: CancerConditionCommonRules
     // BodyLocationQualifier named locationQualifier 0..*   and
     
 
-* bodySite from ICDO3TopographyVs
-* extension and bodySite and bodySite.extension[lateralityQualifier] MS
+* bodySite from ICDO3TopographyVs (extensible)
+// * extension and bodySite and bodySite.extension[lateralityQualifier] MS
 * bodySite.extension[locationQualifier] 
 
 
@@ -90,7 +91,7 @@ This profile should be also used for documenting primary cancer relapses.
 * extension[condition-occurredFollowing].valueReference only Reference (ConditionPrimaryCancerPcsp)
 
 * insert CancerConditionCommonRules
-* clinicalStatus and verificationStatus MS
+// * clinicalStatus and verificationStatus MS
 * clinicalStatus ^example.valueCodeableConcept = $condition-clinical#relapse
 * clinicalStatus ^example.label = "Relapse"
   
@@ -125,10 +126,10 @@ This profile should be also used for documenting primary cancer relapses.
 * evidence ^slicing.rules = #open
 * evidence ^slicing.description = "Slice based on the coding.code pattern"
 * evidence contains 
-	diagnosisDetails 0..* MS 
-	and geneticMarker 0..*
-	and immunology 0..*
-	and predisposition 0..*
+	diagnosisDetails 0..1 
+	and geneticMarker 0..1
+	and immunology 0..1
+	and predisposition 0..1
 	
 * evidence[diagnosisDetails]
   * code from ICCC3Vs
@@ -136,13 +137,16 @@ This profile should be also used for documenting primary cancer relapses.
 * evidence[geneticMarker] 
   * code = $sct#106221001 "Genetic finding"
   * detail only Reference (Observation or DocumentReference or DiagnosticReport)
+  * detail.display ^short = "Text alternative for the resource (Genetic finding)"
 * evidence[immunology] 
   * code = $sct#365861007 "Finding of immune status"
   * detail only Reference (Observation or DocumentReference or DiagnosticReport)
+  * detail.display ^short = "Text alternative for the resource (immunology)"
 * evidence[predisposition] 
   * code = $sct#32895009 "Hereditary disease" // check if it needs to be changed with a Value Set
   * detail only Reference (Condition or Observation or FamilyMemberHistory or DocumentReference)
-* note MS
+  * detail.display ^short = "Text alternative for the resource (predisposition)"
+* note ^short = "Additional information about the Cancer Condition"
 
 
 
@@ -159,7 +163,7 @@ Records the history of secondary neoplasms, including location(s) and the date o
 * ^abstract = false
 * insert CancerConditionCommonRules
 * clinicalStatus and verificationStatus MS
-* extension contains $condition-related named relatedPrimaryCancerCondition 0..1 MS
+* extension contains $condition-related named relatedPrimaryCancerCondition 1..1
 * extension[relatedPrimaryCancerCondition].valueReference only Reference(ConditionPrimaryCancerPcsp)
 * extension[relatedPrimaryCancerCondition] ^short = "Related Primary Cancer Condition"
 * extension[relatedPrimaryCancerCondition] ^definition = "A reference to the primary cancer condition that provides context for this resource."

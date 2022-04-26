@@ -30,6 +30,78 @@ Description: "Chemotherapy cumulative dose units"
 * $ucum#[iU]/m2
 
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: OtherSurgicalProcedureTypeVs
+Id: vs-otherProcedureType-eu-pcsp
+Title: "Other Surgical Procedure Type"
+Description: "Types of surgical procedure this resource is referring to"
+
+//-------------------------------------------------------------------------------------------
+
+* codes from valueset ShuntProcedureTypeVs
+* codes from valueset AmputationProcedureTypeVs
+* codes from valueset ColostomyProcedureTypeVs
+* codes from valueset GastrostomyProcedureTypeVs
+* codes from valueset ProstheticProcedureTypeVs
+* $data-absent-reason#unknown "Unknown"
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ShuntProcedureTypeVs
+Id: vs-shuntProcedureType-eu-pcsp
+Title: "Shunt Procedure Type"
+Description: "Types of shunt surgical procedure this resource is referring to"
+
+//-------------------------------------------------------------------------------------------
+// --- 
+* CsGenericPcsp#sht-47020004 "Ventriculoperitoneal shunt"  // SCT 47020004 | Ventriculoperitoneal shunt (procedure)
+* CsGenericPcsp#sht-4579008 "Ventriculo-atrial shunt"  //  4579008 | Creation of cerebral ventriculo-atrial shunt (procedure) |
+* CsGenericPcsp#sht-280384000 "Subdural-peritoneal shunt" // 280384000 | Subdural-peritoneal shunt operation (procedure) |
+* CsGenericPcsp#sht-265218003 "Cisternostomy (III ventricule)"  // 265218003 | Creation of ventriculocisternostomy (procedure) ????
+* CsGenericPcsp#sht-other "Other shunt procedure" // 88834003 | Construction of shunt (procedure) | ???
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: AmputationProcedureTypeVs
+Id: vs-amputationProcedureType-eu-pcsp
+Title: "Amputation Surgical Procedure Type"
+Description: "Types of amputation procedure this resource is referring to"
+//-------------------------------------------------------------------------------------------
+* $sct#81723002 "Amputation" // check if in GPS
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ColostomyProcedureTypeVs
+Id: vs-colostomyProcedureType-eu-pcsp
+Title: "Colostomy Surgical Procedure Type"
+Description: "Types of colostomy procedure this resource is referring to"
+//-------------------------------------------------------------------------------------------
+* $sct#398740003 "Colostomy" // check if in GPS
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: GastrostomyProcedureTypeVs
+Id: vs-gastrostomyProcedureType-eu-pcsp
+Title: "Gastrostomy Surgical Procedure Type"
+Description: "Types of Gastrostomy procedure this resource is referring to"
+//-------------------------------------------------------------------------------------------
+* $sct#54956002 "Gastrostomy"  // check if in GPS
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ProstheticProcedureTypeVs
+Id: vs-ProstheticProcedureType-eu-pcsp
+Title: "Prosthetic Surgical Procedure Type"
+Description: "Types of Prosthetic procedure this resource is referring to"
+//-------------------------------------------------------------------------------------------
+* $sct#88937006 "Prosthetic procedure"  // check if in GPS 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: ProsthesisTypeVs
+Id: vs-ProsthesisType-eu-pcsp
+Title: "Prosthesis Type"
+Description: "Types of Prosthesis this procedure is referring to"
+//-------------------------------------------------------------------------------------------
+* CsGenericPcsp#int-prosthesis "Internal Prosthesis" 
+* CsGenericPcsp#ext-prosthesis "External Prosthesis" 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadiotherapyTypeVs
@@ -77,8 +149,7 @@ Description: "Radiotherapy device type this procedure is referring to"
 * CsGenericPcsp#linac-el "Linac electrons" 
 * CsGenericPcsp#cobalt "Cobalt MV" 
 * CsGenericPcsp#proton-beam "Proton Beam"
-* $data-absent-reason#unknown "Unknown"
-* $v3-NullFlavor#OTH "Other"
+* codes from valueset UnknownOtherVs
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: BrachytherapyType
@@ -116,8 +187,7 @@ Description: "Radiotherapy Isotopes"
 * $sct#80751004	 "Xenon-133"
 * $sct#14691008	 "Yttrium-90"
 * $sct#395786000 "MIBG - metaiodobenzylguanidine"
-* $data-absent-reason#unknown "Unknown"
-* $v3-NullFlavor#OTH "Other"
+* codes from valueset UnknownOtherVs
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadioUnitsVs
@@ -140,6 +210,15 @@ Description: "Route of administration"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: UnknownOtherVs
+Id: vs-unknownOther-eu-pcsp
+Title: "Unknown|Other"
+Description: "Unknown or Other"
+//-------------------------------------------------------------------------------------------
+* $data-absent-reason#unknown "Unknown"
+* $v3-NullFlavor#OTH "Other"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: AffectedOrganVs
 Id: vs-affectedOrgan-eu-pcsp
 Title: "Affected Organs (surgery)"
@@ -148,7 +227,6 @@ Description: "Affected Organs (surgery)"
 
 // Oesophagus; Abdomen; Brain; Face; Liver; Spine; Spinal Cord; Sympathetic nerves; Chest/thorax; Pelvis
 
-
 * $sct#32849002 "Oesophagus"
 * $sct#818983003 "Abdomen"
 * $sct#12738006  "Brain"
@@ -156,11 +234,11 @@ Description: "Affected Organs (surgery)"
 * $sct#10200004 "Liver"
 * $sct#421060004 "Spine"
 * $sct#2748008  "Spinal Cord"
-* $sct#90456006 " Sympathetic nerve"
+* $sct#90456006 "Sympathetic nerve"
 * $sct#51185008 "Thoracic structure"
 * $sct#12921003 "Pelvis"
-* $data-absent-reason#unknown "Unknown"
-* $v3-NullFlavor#OTH "Other"
+* codes from valueset UnknownOtherVs
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: SacrifiedOrganVs
@@ -180,9 +258,7 @@ Description: "Sacrified Organs (surgery). Organs are 'sacrified' either to allow
 * $sct#69748006  "Thyroid"
 * $sct#89837001 "Bladder"
 * $sct#35039007 "Uterus"
-
-* $data-absent-reason#unknown "Unknown"
-* $v3-NullFlavor#OTH "Other"
+* codes from valueset UnknownOtherVs
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
