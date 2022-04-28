@@ -7141,3 +7141,177 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "53088000"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Autogenous transplantation",
+  "code" : "53088000",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "50223000"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Allogeneic transplantation",
+  "code" : "50223000",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "77465005"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Transplantation",
+  "code" : "77465005",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "53088000",
+        "display" : "Autogenous transplantation"
+      },
+      {
+        "code" : "50223000",
+        "display" : "Allogeneic transplantation"
+      },
+      {
+        "code" : "77465005",
+        "display" : "Transplantation"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:fb37d42a-2b8b-4024-a770-d90659f6aa30",
+    "timestamp" : "2022-04-28T06:57:31.039Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "53088000",
+      "display" : "Autogenous transplantation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "50223000",
+      "display" : "Allogeneic transplantation"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "77465005",
+      "display" : "Transplantation"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "234646005"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Graft versus host disease",
+  "code" : "234646005",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "402355000"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Acute graft-versus-host disease (disorder)",
+  "code" : "402355000",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "402356004"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Chronic graft-versus-host disease (disorder)",
+  "code" : "402356004",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "234646005",
+        "display" : "Graft-versus-host disease"
+      },
+      {
+        "code" : "402355000",
+        "display" : "Acute graft-versus-host disease"
+      },
+      {
+        "code" : "402356004",
+        "display" : "Chronic graft-versus-host disease"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:a189f5c7-8fdb-45e4-b6eb-92b9877f6d04",
+    "timestamp" : "2022-04-28T14:29:03.294Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "234646005",
+      "display" : "Graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402355000",
+      "display" : "Acute graft-versus-host disease"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "402356004",
+      "display" : "Chronic graft-versus-host disease"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

@@ -1,5 +1,94 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctTimingEvent
+Id: vs-sct-timing-eu-pcsp 
+Title: "Before/after procedure"
+Description: "SCT Timing events: Before/after procedure"
+//-------------------------------------------------------------------------------------------
+
+* CsGenericPcsp#before-procedure "Before procedure"
+* CsGenericPcsp#after-procedure "After procedure"   
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctAcuteGvdhGrade
+Id: vs-gvdh-acute-grade-eu-pcsp 
+Title: "Acute GvDH Grade"
+Description: "Acute GvDH Grade"
+//-------------------------------------------------------------------------------------------
+
+//-- GvDH Grade (acute)
+* CsGenericPcsp#gvdh-acute-1 "Grade 1" 
+* CsGenericPcsp#gvdh-acute-2 "Grade 2" 
+* CsGenericPcsp#gvdh-acute-3 "Grade 3" 
+* CsGenericPcsp#gvdh-acute-4 "Grade 4"
+* $data-absent-reason#unknown "Unknown"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctChronicGvdhGrade
+Id: vs-gvdh-chronic-grade-eu-pcsp
+Title: "Chronic GvDH condition"
+Description: "Acute GvDH Grade"
+//-------------------------------------------------------------------------------------------
+
+//-- GvDH Grade (chronic)
+* CsGenericPcsp#gvdh-chr-1 "Limited" 	
+* CsGenericPcsp#gvdh-chr-2 "Extensive" 
+* $data-absent-reason#unknown "Unknown"
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctGvdhType
+Id: vs-gvdh-type-eu-pcsp
+Title: "GvDH condition"
+Description: "GvDH condition"
+//-------------------------------------------------------------------------------------------
+/// ===> CHECK IF IN GPS
+* $sct#234646005 "Graft-versus-host disease" 
+* $sct#402355000 "Acute graft-versus-host disease"
+* $sct#402356004 "Chronic graft-versus-host disease"
+* CsGenericPcsp#gvdh-unk "GvDH Unknown" 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctDonorTypeVs
+Id: vs-sct-donorType-eu-pcsp
+Title: "Stem Cell Donor type"
+Description: "Stem Cell Donor type"
+//-------------------------------------------------------------------------------------------
+* CsGenericPcsp#sct-matched-related "matched related" 	
+* CsGenericPcsp#sct-matched-unrelated "matched unrelated" 
+* CsGenericPcsp#sct-mismatch-related "mismatch related" 	 
+* CsGenericPcsp#sct-mismatch-unrelated "mismatch unrelated"
+* CsGenericPcsp#sct-haplo-identical    "haplo-identical"    
+  
+* CsGenericPcsp#sct-matched-related–sibling	"matched related – sibling"	
+* CsGenericPcsp#sct-matched-related–parent	"matched related – parent"  
+* CsGenericPcsp#sct-matched-related–other	"matched related – other"   
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctSourceTypeVs
+Id: vs-sct-sourceType-eu-pcsp
+Title: "Stem Cell Source type"
+Description: "Stem Cell Source type"
+//-------------------------------------------------------------------------------------------
+* CsGenericPcsp#sct-pbsc 		"PBSC"			
+* CsGenericPcsp#sct-bone-marrow	"Bone marrow" 
+* CsGenericPcsp#sct-cord        "Cord"      
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctTypeVs
+Id: vs-sct-type-eu-pcsp
+Title: "Stem Cell Transplantation type"
+Description: "Stem Cell Transplantation type"
+//-------------------------------------------------------------------------------------------
+* $sct#53088000 "Autogenous transplantation" // check GPS
+* $sct#50223000 "Allogeneic transplantation"   // check GPS
+* $sct#77465005 "Transplantation"   // check GPS 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: NotPerformedUnknownVs
 Id: vs-npunk-eu-pcsp
 Title: "Not Performed|Unknown"
@@ -7,6 +96,63 @@ Description: "Not Performed/Unknown Value Set"
 //-------------------------------------------------------------------------------------------
 * $data-absent-reason#unknown "Unknown"
 * $data-absent-reason#not-performed "Not Performed"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: NotApplicableUnknownVs
+Id: vs-naunk-eu-pcsp
+Title: "Not Applicable|Unknown"
+Description: "Not Applicable/Unknown Value Set"
+//-------------------------------------------------------------------------------------------
+* $data-absent-reason#unknown "Unknown"
+* $data-absent-reason#not-applicable "Not Applicable"
+
+// --------------------------------------------------------
+ValueSet: BodyLocationQualifierVS
+Id: mcode-body-location-qualifier-vs
+Title: "Body Location Qualifier Value Set"
+Description: "Qualifiers to refine a body structure or location including qualifiers for relative location, directionality, number, and plane, and excluding qualifiers for laterality."
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+// Changed to intensional definition
+* include codes from system $sct where concept is-a #106233006 "Topographic Modifier (qualifer)"
+* include codes from system $sct where concept is-a #272424004 "Relative Sites (qualifier)"
+* $sct#255503000 "Entire (qualifier value)"
+* exclude codes from valueset LateralityQualifierVS // laterality is separated into a separate value set
+
+// --------------------------------------------------------
+ValueSet: LeftRightBiUnilateralVS
+Id: laterality-qualifier-lrub-vs
+Title: "Laterality Qualifier Value Set"
+Description: "Qualifiers to specify laterality."
+/* ---------------------------------
+* $loinc#LA4585-1  "Left"		
+* $loinc#LA4306-2  "Right"		
+* $loinc#LA25377-5 "Bilateral"
+* $loinc#LA25378-3 "Unilateral"
+// * codes from valueset NotApplicableUnknownVs
+* $data-absent-reason#unknown "Unknown"
+* $data-absent-reason#not-applicable "Not Applicable"
+
+// --------------------------------------------------------
+ValueSet: LateralityQualifierVS
+Id: mcode-laterality-qualifier-vs
+Title: "Laterality Qualifier Value Set"
+Description: "Qualifiers to specify laterality."
+/* ---------------------------------
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* $sct#51440002	 "Right and left (qualifier value)"
+* $sct#399488007 "Midline (qualifier value)"
+* $sct#24028007	 "Right (qualifier value)"
+* $sct#7771000	 "Left (qualifier value)"
+// * $sct#66459002	"Unilateral (qualifier value)"  -- this is used as 'left OR right'.   Given the uncertainty of the use case, it is dropped.
+-------------------*/
+// * codes from valueset LeftRightBiUnilateralVS
+* $loinc#LA4585-1  "Left"		
+* $loinc#LA4306-2  "Right"		
+* $loinc#LA25377-5 "Bilateral"
+* $loinc#LA25378-3 "Unilateral"
+* $loinc#LA27460-7 "Midline"
+* $data-absent-reason#unknown "Unknown"
+* $data-absent-reason#not-applicable "Not Applicable"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -115,18 +261,6 @@ Description: "Types of radiotherapy this procedure is referring to"
 * $sct#399315003 "Radionuclide therapy"
 * $sct#445232009 "Boost radiation therapy" // to be checked for GPS ....
 
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: SctTypeVs
-Id: vs-sctType-eu-pcsp
-Title: "(Stem Cell) Transplantation  Type"
-Description: "Types of Stem Cell Transplantation this procedure is referring to"
-// not yet in the GPS ....
-// too generic codes ...
-//-------------------------------------------------------------------------------------------
-* $sct#33195004 "External beam radiotherapy"
-* $sct#152198000 "Brachytherapy"
-* $sct#399315003 "Radionuclide therapy"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadiotherapyDoseTypeVs

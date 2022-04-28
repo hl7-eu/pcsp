@@ -1,0 +1,45 @@
+{	
+
+	"dateOfDiagnosis": "10/7/2021",
+	"centerOfDiagnosis": { 
+		"name":"Hospital La Fe",
+		"city": "Valencia",
+		"country": "España
+		},
+	"primaryTreatmentCenter": { 
+		"name":"Hospital La Fe",
+		"city": "Valencia",
+		"country": "España
+		},
+	"diagnosticGroup":"Carcinoma tiroides",
+	"morphologyCode":{
+		"code":"8260/3",
+		"system": "ICDO3",
+		"text":"Carcinoma papilar de tiroides"
+		},
+	"tumorBehaviour": "Maligno",
+	"stage":"pT1a",
+	"site":{
+		"code":"C73.9",
+		"system": "ICDO3",
+		"text": "Tiroides"
+	},
+	"laterality": "No aplica",
+	"metastasis":[{ 
+		"count": 1,
+		"code": "C71.5",
+		"description":"Cuarto ventrículo"
+		}],
+	"inmunology":
+	   {"coding": [
+		{
+		"code": "CD117",
+		"display": "Negative"
+		}, 
+		{
+		"code": "PLAP Positive",
+		"display": "PLAP Positivo"
+		}]
+	   },
+	"notes": "Alergia al epitelio de gato"
+}

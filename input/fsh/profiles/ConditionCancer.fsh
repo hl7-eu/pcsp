@@ -1,4 +1,4 @@
-
+      
 //====== RuleSet =====================================
 
 RuleSet: CancerConditionCommonRules
@@ -11,7 +11,7 @@ RuleSet: CancerConditionCommonRules
 
 * extension[histologyMorphologyBehavior].value[x] from ICDO3MorphologyVs (required)
 * extension[previousStatus]
-
+* subject only Reference (PatientPcsp)
 * bodySite.extension contains
      $mcode-body-location-qualifier named locationQualifier 0..* 
      and LateralityQualifier named lateralityQualifier 0..1

@@ -1,7 +1,7 @@
 Instance: StemCellTransplantation
 InstanceOf: StructureDefinition
 Description: "Stem Cell Transplantation.
-Maturity Level: 0 - Draft"
+Maturity Level: 1 - Profiles in progress"
 Title: "Stem Cell Transplantation"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -12,7 +12,7 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * description = "Stem Cell Transplantation.
-Maturity Level: 0 - Draft"
+Maturity Level: 1 - Profiles in progress"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -337,7 +337,7 @@ No calculations are made on these data."
 * differential.element[2].mapping[0].map = ".reasonReference"
 
 * differential.element[3].mapping[0].identity = "fhir"
-* differential.element[3].mapping[0].map = "TBD"
+* differential.element[3].mapping[0].map = ".reasonReference"
 
 * differential.element[4].mapping[0].identity = "fhir"
 * differential.element[4].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ActLocation-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp)"
@@ -358,10 +358,10 @@ No calculations are made on these data."
 * differential.element[9].mapping[0].map = "Location.address.country"
 
 * differential.element[10].mapping[0].identity = "fhir"
-* differential.element[10].mapping[0].map = "Procedure.performedDateTime	"
+* differential.element[10].mapping[0].map = ".performedDateTime	"
 
 * differential.element[11].mapping[0].identity = "fhir"
-* differential.element[11].mapping[0].map = "TBD"
+* differential.element[11].mapping[0].map = ".code"
 
 * differential.element[12].mapping[0].identity = "fhir"
 * differential.element[12].mapping[0].map = "TBD"
@@ -373,64 +373,64 @@ No calculations are made on these data."
 * differential.element[14].mapping[0].map = "TBD"
 
 * differential.element[15].mapping[0].identity = "fhir"
-* differential.element[15].mapping[0].map = "TBD"
+* differential.element[15].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-gvdh-eu-pcsp')"
 
 * differential.element[16].mapping[0].identity = "fhir"
 * differential.element[16].mapping[0].map = "TBD"
 
 * differential.element[17].mapping[0].identity = "fhir"
-* differential.element[17].mapping[0].map = "TBD"
+* differential.element[17].mapping[0].map = ".where(code = http://snomed.info/sct#402355000 'Acute graft-versus-host disease')"
 
 * differential.element[18].mapping[0].identity = "fhir"
-* differential.element[18].mapping[0].map = "TBD"
+* differential.element[18].mapping[0].map = ".where(code = http://snomed.info/sct#402355000 'Acute graft-versus-host disease').exists()"
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "TBD"
+* differential.element[19].mapping[0].map = ".stage.summary"
 
 * differential.element[20].mapping[0].identity = "fhir"
-* differential.element[20].mapping[0].map = "TBD"
+* differential.element[20].mapping[0].map = ".effectivePeriod.start"
 
 * differential.element[21].mapping[0].identity = "fhir"
-* differential.element[21].mapping[0].map = "TBD"
+* differential.element[21].mapping[0].map = ".effectivePeriod.end"
 
 * differential.element[22].mapping[0].identity = "fhir"
-* differential.element[22].mapping[0].map = "TBD"
+* differential.element[22].mapping[0].map = ".where(code = http://snomed.info/sct#402356004 'Chronic graft-versus-host disease')"
 
 * differential.element[23].mapping[0].identity = "fhir"
-* differential.element[23].mapping[0].map = "TBD"
+* differential.element[23].mapping[0].map = ".where(code = http://snomed.info/sct#402356004 'Chronic graft-versus-host disease').exists()"
 
 * differential.element[24].mapping[0].identity = "fhir"
-* differential.element[24].mapping[0].map = "TBD"
+* differential.element[24].mapping[0].map = ".stage.summary"
 
 * differential.element[25].mapping[0].identity = "fhir"
-* differential.element[25].mapping[0].map = "TBD"
+* differential.element[25].mapping[0].map = ".effectivePeriod.start"
 
 * differential.element[26].mapping[0].identity = "fhir"
-* differential.element[26].mapping[0].map = "TBD"
+* differential.element[26].mapping[0].map = ".effectivePeriod.end"
 
 * differential.element[27].mapping[0].identity = "fhir"
-* differential.element[27].mapping[0].map = "TBD"
+* differential.element[27].mapping[0].map = ".bodySite"
 
 * differential.element[28].mapping[0].identity = "fhir"
-* differential.element[28].mapping[0].map = "TBD"
+* differential.element[28].mapping[0].map = "Observation.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-bld-abo-rh-eu-pcsp').where(effectiveTiming.code = #before-procedure)"
 
 * differential.element[29].mapping[0].identity = "fhir"
-* differential.element[29].mapping[0].map = "TBD"
+* differential.element[29].mapping[0].map = "component.where(code = $loinc#883-9	'ABO group [Type] in Blood').value"
 
 * differential.element[30].mapping[0].identity = "fhir"
-* differential.element[30].mapping[0].map = "TBD"
+* differential.element[30].mapping[0].map = "component.where(code = $loinc#10331-7 'Rh [Type] in Blood').value"
 
 * differential.element[31].mapping[0].identity = "fhir"
-* differential.element[31].mapping[0].map = "TBD"
+* differential.element[31].mapping[0].map = "Observation.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-bld-abo-rh-eu-pcsp').where(effectiveTiming.code = #after-procedure)"
 
 * differential.element[32].mapping[0].identity = "fhir"
-* differential.element[32].mapping[0].map = "TBD"
+* differential.element[32].mapping[0].map = "component.where(code = $loinc#883-9	'ABO group [Type] in Blood').value"
 
 * differential.element[33].mapping[0].identity = "fhir"
-* differential.element[33].mapping[0].map = "TBD"
+* differential.element[33].mapping[0].map = "component.where(code = $loinc#10331-7 'Rh [Type] in Blood').value"
 
 * differential.element[34].mapping[0].identity = "fhir"
-* differential.element[34].mapping[0].map = "TBD"
+* differential.element[34].mapping[0].map = "MedicationStatement.effectivePeriod.end"
 
 
 

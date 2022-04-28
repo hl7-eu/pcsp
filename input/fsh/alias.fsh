@@ -22,11 +22,13 @@ Alias: $v3-NullFlavor = http://terminology.hl7.org/CodeSystem/v3-NullFlavor
 Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
-
+Alias: $product-category = http://hl7.org/fhir/CodeSystem/product-category
 
 // --- Value Sets
 Alias: $v3-ClassNullFlavor = http://terminology.hl7.org/ValueSet/v3-ClassNullFlavor
 Alias: $vs-condition-clinical = http://hl7.org/fhir/ValueSet/condition-clinical
+Alias: $vs-LL2419-1 = http://loinc.org/vs/LL2419-1 
+
 
 // ---- Extensions
 Alias: $condition-related = http://hl7.org/fhir/StructureDefinition/condition-related

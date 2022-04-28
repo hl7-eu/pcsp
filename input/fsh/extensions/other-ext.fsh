@@ -3,7 +3,7 @@ RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
 
-
+// ------------------------------------
 Extension: RadiotherapyEnergyOrIsotope
 Id: radiotherapy-energy-or-isotope
 Title: "Radiotherapy Energy or Isotope"
@@ -22,7 +22,7 @@ by the maximum energy, the maximum accelaration voltage, or the used isotope. Th
 * valueCodeableConcept from RadiotherapyIsotopes (extensible)
 * valueCodeableConcept ^short = "The isotope used for radiotherapy."
 
-
+// ------------------------------------
 Extension: SacrifiedOrgan
 Id:   surgery-sacrifiedOrgan
 Title:  "Sacrified organ"
@@ -31,18 +31,7 @@ Description: "Organs are 'sacrified' either to allow a radical excision of the t
 * value[x] only CodeableConcept 
 * valueCodeableConcept from SacrifiedOrganVs (extensible)
 
-
-/* == COMMENTED 
-Extension: HistologyMorphologyBehavior
-Id: mcode-histology-morphology-behavior
-Title: "Histology-Morphology-Behavior"
-Description: "An extension describing the morphologic and behavioral characteristics of the cancer."
-* mcode-histology-morphology-behavior
-* insert ExtensionContext(Condition)
-* value[x] only CodeableConcept
-* value[x] from ICDO3MorphologyVs (required)
-* value[x] 1..1
-===== END */
+// ------------------------------------
 
 Extension: BodyLocationQualifier
 Id: mcode-body-location-qualifier
@@ -59,10 +48,11 @@ Description: "Qualifier to refine an body location. These include qualifiers for
 * value[x] from BodyLocationQualifierVS (required)
 * value[x] 1..1
 
+// ------------------------------------
 Extension: LateralityQualifier
 Id: mcode-laterality-qualifier
 Title: "Laterality Qualifier"
-Description: "Qualifier to specify  laterality."
+Description: "Qualifier to specify laterality."
 
 * mcode-laterality-qualifier
 
@@ -71,8 +61,49 @@ Description: "Qualifier to specify  laterality."
 // * insert ExtensionContext(Condition.bodySite)
 // * insert ExtensionContext(Observation.bodySite)
 * value[x] only CodeableConcept
-* value[x] from LateralityQualifierVS (required)
+* value[x] from LateralityQualifierVS (preferred)
 * value[x] 1..1
+
+// ------------------------------------
+Extension: SctDonorType
+Id: sct-donor-type
+Title: "Stem Cell Donor Type"
+Description: "Specify the type of donor for the cell used in a transplantation"
+
+* value[x] only CodeableConcept
+* value[x] 1..1
+
+// ------------------------------------
+Extension: SctSourceType
+Id: sct-source-type
+Title: "Stem Cell Source Type"
+Description: "Specify the type of source for the cell used in a transplantation"
+
+* value[x] only CodeableConcept
+* value[x] 1..1
+
+// ------------------------------------
+Extension: ProcedureUsedReference
+Id: procedure-usedReference
+Title: "Procedure Used Reference "
+Description: "Extend the usedReference element to BiologicallyDerivedProduct"
+
+* value[x] only Reference
+* value[x] 1..1
+
+
+/* == COMMENTED 
+Extension: HistologyMorphologyBehavior
+Id: mcode-histology-morphology-behavior
+Title: "Histology-Morphology-Behavior"
+Description: "An extension describing the morphologic and behavioral characteristics of the cancer."
+* mcode-histology-morphology-behavior
+* insert ExtensionContext(Condition)
+* value[x] only CodeableConcept
+* value[x] from ICDO3MorphologyVs (required)
+* value[x] 1..1
+===== END */
+
 
 /*  ----
 Extension: ComorbidConditionCode

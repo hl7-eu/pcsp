@@ -1,0 +1,358 @@
+{
+  "resourceType": "MinimalTreatmentSummary",
+  "id": "MTSLuebeckTest01",
+  "subject": {
+    "gender": {
+      "system": "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "code": "male",
+      "display": "male"
+    },
+    "dateOfBirth": "1995-10-13"
+  },
+  "diagnosis": {
+    "site": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+          "code": "C49.5",
+          "display": "Connective, subcutaneous and other soft tissues of pelvis"
+        }
+      ]
+    },
+    "predispositionOrCondition": {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "LA32-8"
+          }
+        ]
+      }
+    }
+  },
+  "FrontLineTreatment": {
+    "StemCellTransplantation": {
+      "coding": [
+        {
+          "code": "1",
+          "display": "Yes"
+        }
+      ]
+    }
+  },
+  "chemotherapy": {
+    "chemotherapy-min": {
+      "productAdministration": {
+        "agent": {
+          "coding": [
+            {
+              "system": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp",
+              "code": "L01AA01",
+              "display": "Ciclofosfamide"
+            }
+          ]
+        },
+        "cumulativeDose": {
+          "value": "20",
+          "unit": {
+            "coding": [
+              {
+                "code": "1",
+                "display": "mg/m2"
+              }
+            ]
+          }
+        }
+      },
+      "corticosteroids": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+              "code": "4w-corticosteroids-anti-cancer",
+              "display": "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA32-8",
+              "display": "No"
+            }
+          ]
+        }
+      },
+      "intrathecalInjections": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+              "code": "intrathecal-injections",
+              "display": "Intrathecal injections"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA32-8",
+              "display": "No"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "sct": {
+    "typeOfTransplant": {
+      "coding": [
+        {
+          "code": "1",
+          "display": "autologous"
+        }
+      ]
+    },
+    "gvhdChronic": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    }
+  },
+  "radiotherapy": {
+    "radiotherapy-min": {
+      "type": {
+        "coding": [
+          {
+            "code": "1",
+            "display": "external beam"
+          }
+        ]
+      },
+      "startDate": "1999-07-15",
+      "target": {
+        "site": {
+          "coding": [
+            {
+              "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-radiotherapy-pcsp",
+              "code": "11.9.R",
+              "display": "Pelvis: Inguinal area/nodes (right)"
+            }
+          ]
+        },
+        "cumulativeDose": {
+          "dose": "12",
+          "unit": {
+            "coding": [
+              {
+                "code": "1",
+                "display": "mg/m2"
+              }
+            ]
+          }
+        },
+        "boost": {
+          "type": {
+            "coding": [
+              {
+                "code": "1",
+                "display": "external beam"
+              }
+            ]
+          },
+          "site": {
+            "coding": [
+              {
+                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-radiotherapy-pcsp",
+                "code": "11.9.R",
+                "display": "Pelvis: Inguinal area/nodes (right)"
+              }
+            ]
+          },
+          "cumulativeDose": {
+            "dose": "5",
+            "unit": {
+              "coding": [
+                {
+                  "code": "1",
+                  "display": "mg/m2"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "majorSurgery": {
+    "OesophagusInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "AbdomenInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "BrainInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "oesophagusInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "faceInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "liverInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "spineInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "spinalCordInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "sympatheticNervesInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "chestThoraxInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "pelvisInvolved": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "sacrifiedOrgans": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "shuntApplication": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    }
+  },
+  "otherInfo": {
+    "hypogonadal": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "growthHormoneDeficiency": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "hydrocephalus": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "chronicViralHepatitis": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "sinusoidalObstructionSyndorme": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    },
+    "graterThanOrEqual10Transfusions": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    }
+  },
+  "progression-relapseAfterEndOfTreatment": {
+    "stemCellTransplantation": {
+      "coding": [
+        {
+          "code": "2",
+          "display": "No"
+        }
+      ]
+    }
+  }
+}

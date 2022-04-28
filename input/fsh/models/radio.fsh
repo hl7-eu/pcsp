@@ -1,6 +1,7 @@
 Instance: Radiotherapy
 InstanceOf: StructureDefinition
-Description: "Radiotherapy"
+Description: "Radiotherapy
+Maturity Level: 2 - Ready for Review"
 Title: "Radiotherapy"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -10,7 +11,8 @@ Usage: #definition
 * title = "Radiotherapy"
 * status = #draft
 * experimental = true
-* description = "Radiotherapy"
+* description = "Radiotherapy
+Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"

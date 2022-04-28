@@ -1,0 +1,163 @@
+{
+  "resourceType": "Patient",
+  "id": "01",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "language": "ES",
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+    "valueString": "APELLIDO2"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress": {
+      "line": [ "CALLEFALSA123" ],
+      "city": "Valencia",
+      "state": "Valencia",
+      "country": "España"
+    }
+  } ],
+  "identifier": [ {
+    "use": "official",
+    "system": "urn:oid:2.16.724.4.10.50.200",
+    "value": "999988887"
+  } ],
+  "name": [ {
+    "use": "anonymous",
+    "text": "NOMBRE APELLIDO1 APELLIDO2",
+    "family": "APELLIDO1",
+    "given": [ "NOMBRE" ]
+  } ],
+  "gender": "female",
+  "birthDate": "2005-07-01",
+  "communication": [ {
+    "language": {
+      "coding": [ {
+        "system": "urn:ietf:bcp:47",
+        "code": "es-ES",
+        "display": "Español"
+      } ]
+    }
+  } ]
+}
+{
+  "resourceType": "Organization",
+  "id": "02",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Organization-center-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Organization" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "language": "ES",
+  "extension": [ {
+    "url": "http://hl7.org/fhir/ValueSet/address-type",
+    "valueCode": "both"
+  }, {
+    "url": "http://hl7.org/fhir/ValueSet/address-use",
+    "valueCode": "work"
+  } ],
+  "active": true,
+  "name": "Hospital Universitari i Politècnic La Fe",
+  "alias": [ "La Fe" ],
+  "telecom": [ {
+    "system": "phone",
+    "value": "+34 961 244 000"
+  }, {
+    "system": "email",
+    "value": "prensa_lafe@gva.es"
+  } ],
+  "address": [ {
+    "line": [ "Avinguda de Fernando Abril Martorell, nº 106" ],
+    "city": "Valencia",
+    "state": "Comunidad Valenciana",
+    "postalCode": "46026",
+    "country": "ES"
+  } ]
+}
+{
+  "resourceType": "Encounter",
+  "id": "03",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Encounter-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Encounter" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "language": "ES",
+  "status": "finished",
+  "class": {
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code": "AMB",
+    "display": "ambulatory"
+  },
+  "subject": {
+    "reference": "01",
+    "type": "Patient"
+  },
+  "period": {
+    "start": "2014-11-28"
+  },
+  "serviceProvider": {
+    "reference": "02",
+    "type": "Organization"
+  }
+}
+{
+  "resourceType": "Condition",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Condition" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "language": "ES",
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+    "valueDateTime": "2014"
+  }, {
+    "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-histology-morphology-behavior",
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/sid/icd-o-3",
+        "code": "9064/3 ",
+        "display": "9064/3  - Germinoma"
+      } ]
+    }
+  } ],
+  "code": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "code": "NI",
+      "display": "NI - NoInformation"
+    } ]
+  },
+  "subject": {
+    "reference": "01",
+    "type": "Patient"
+  },
+  "encounter": {
+    "reference": "03",
+    "type": "Encounter"
+  },
+  "evidence": [ {
+    "code": [ {
+      "coding": [ {
+        "system": "http://hl7.org/fhir/ValueSet/observation-methods",
+        "code": "708097004",
+        "display": "708097004 - Immunohistochemistry"
+      } ],
+      "text": "CD117 y PLAP positivo"
+    } ]
+  } ],
+  "note": [ {
+    "text": "Panhipopituitarismo\n- Trastorno de la conducta alimentaria\n- Quiste renal"
+  } ]
+}

@@ -1,0 +1,60 @@
+{	
+
+	"dateOfDiagnosis": "8/4/2012",
+	"centerOfDiagnosis": { 
+		"name":"Hospital La Fe",
+		"city": "Valencia",
+		"country": "España
+		},
+	"primaryTreatmentCenter": { 
+		"name":"Hospital La Fe",
+		"city": "Valencia",
+		"country": "España
+		},
+	"dateOfArrivalAtCenter": "7/26/2011",
+	"diagnosticGroup":"Linfoma de Hodgkin",
+	"morphologyCode":{
+		"code":"9663/3",
+		"system": "ICDO3",
+		"text":"Linfoma de Hodgkin clásico, esclerosis nodular, NE"
+		},
+	"tumorBehaviour": "Maligno",
+	"stage":"Estadio IV",
+	"laterality": "No aplica",
+	"metastasis":[{ 
+		"count": 1,
+		"code": "C71.5",
+		"description":"Cuarto ventrículo"
+		}],
+	"inmunology":
+	   {"coding": [
+		{
+		"code": "CD30",
+		}, 
+		{
+		"code": "CD15",
+		}
+		{
+		"code": "EMA",
+		},
+		{
+		"code": "P53",
+		},{
+		"code": "Ki67",
+		},
+		{
+		"code": "CD20",
+		},
+		{
+		"code": "CD79a",
+		"display": "positivos"
+ 		},
+		{
+		"code": " TdT",
+		"display": "negativo"
+		},
+		]
+	   },
+	 "hereditaryPredisposition": "no",
+	"notes": "Alergia al epitelio de gato"
+}

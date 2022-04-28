@@ -1,0 +1,39 @@
+{	
+	"referenceAnonmId": "6551514",
+	"dateOfDiagnosis": "12/5/2014",
+	"centerOfDiagnosis": { 
+		"name":"Hospital La Fe",
+		"city": "Valencia",
+		"country": "España
+		},
+	"primaryTreatmentCenter": { 
+		"name":"Hospital La Fe",
+		"city": "Valencia",
+		"country": "España
+		},
+	"dateOfArrivalAtCenter": "11/28/2014",
+	"morphologyCode":{
+		"code":"9064/3",
+		"system": "ICDO3",
+		"text":" Germinoma"
+		},
+	"tumorBehaviour": "Maligno",
+	"laterality": "No aplica",
+	"metastasis":[{ 
+		"count": 1,
+		"code": "C71.5",
+		"description":"Cuarto ventrículo"
+		}],
+	"inmunology":
+	   {"coding": [
+		{
+		"code": "CD117",
+		"display": "Negative"
+		}, 
+		{
+		"code": "PLAP",
+		"display": "PLAP Positivo"
+		}]
+	   },
+	"notes": "Panhipopituitarismo \n- Trastorno de la conducta alimentaria \n- Daño cerebral adquirido en tratamiento rehabilitador \n- Quiste renal"
+}

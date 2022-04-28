@@ -37,4 +37,43 @@
 //==== placeholder for internal vs external Prosthesis
 * #int-prosthesis "Internal Prosthesis" "Internal Prosthesis"
 * #ext-prosthesis "External Prosthesis" "Internal Prosthesis"
-                                                                                                                                                                                                                                                                                                                              
+
+//==== placeholder for Stem cell tranplantation data
+
+//-- Type of donor for allogenic transplant
+* #sct-matched-related "matched related" "matched related, unknown or unspecified"
+* #sct-matched-unrelated "matched unrelated" "matched unrelated"
+* #sct-mismatch-related "mismatch related" 	 "mismatch related" 
+* #sct-mismatch-unrelated "mismatch unrelated" "mismatch unrelated"
+* #sct-haplo-identical    "haplo-identical"    "haplo-identical"
+
+* #sct-matched-related–sibling		"matched related – sibling"	  "matched related – sibling"
+* #sct-matched-related–parent		"matched related – parent"    "matched related – parent"
+* #sct-matched-related–other		"matched related – other"     "matched related – other (e.g. cousin)"
+
+
+//--- Source of cell
+
+* #sct-pbsc 			"PBSC"			"PBSC"
+* #sct-bone-marrow     	"Bone marrow"   "Bone marrow"
+* #sct-cord            	"Cord"          "Cord"
+
+//--- GvDH
+
+* #gvdh-unk "GvDH Unknown" "It is not known if this patient suffers GvDH"
+
+//-- GvDH Grade (acute)
+* #gvdh-acute-1 "Grade 1" "Acute GvDH: grade 1" 
+* #gvdh-acute-2 "Grade 2" "Acute GvDH: grade 2" 
+* #gvdh-acute-3 "Grade 3" "Acute GvDH: grade 3" 
+* #gvdh-acute-4 "Grade 4" "Acute GvDH: grade 4" 
+
+//-- GvDH Grade (chronic)
+* #gvdh-chr-1 "Limited" 	"Chronic GvDH: grade 1 limited" 
+* #gvdh-chr-2 "Extensive" 	"Chronic GvDH: grade 2 extensive"  
+
+// --- Timing events
+
+* #before-procedure "Before procedure" "Before procedure" // change with 307153007 | Before procedure ?
+* #after-procedure "After procedure"   "After procedure" // change with 303110006 | Postprocedural period ? 
+                                                                                                                                                                                                          

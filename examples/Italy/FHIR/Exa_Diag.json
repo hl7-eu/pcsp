@@ -1,0 +1,30 @@
+{ 
+  "identifier": "",
+  "resourceType": "Diagnosis",
+  "dateOfDiagnosis": "2014-11-13",
+  "centerOfDiagnosis": "",
+  "primaryTreatmentCenter": "",
+  "diagnosticGroup": "",
+  "morphologyCode": "",
+  "tumorBehaviour": "",
+  "description": "LNH, tipo Burkitt",
+  "site": [
+    {
+      "code": "C71.0",
+      "description": "Encefalo"
+    }
+  ],
+  "laterality": "Sx",
+  "metastasis": [
+    {
+      "identifier": "M0",
+      "site": [
+        {
+          "code": "C69.2",
+          "description": "Metastasi a distanza assenti"
+        }
+      ]
+    }
+  ],
+  "stage": "Stadio II"
+}

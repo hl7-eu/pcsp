@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Mon, Apr 25, 2022 20:40+0000 for FHIR v4.6.0 
+  Generated on Wed, Apr 27, 2022 22:45+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -32115,7 +32115,7 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Patient information, if the device is affixed to, or associated to a patient for their specific use, irrespective of the procedure, use, observation, or other activity that the device is involved in. The use of Patient is also appropriate for the use of devices outside a healthcare setting, such as a fitness tracker.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="operationalStatus" type="Device.OperationalStatus" minOccurs="0" maxOccurs="1">
+          <xs:element name="operationalState" type="Device.OperationalState" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of the device itself - whether it is switched on, or activated, etc.</xs:documentation>
            </xs:annotation>
@@ -32326,21 +32326,41 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="Device.OperationalStatus">
+  <xs:complexType name="Device.OperationalState">
     <xs:annotation>
       <xs:documentation xml:lang="en">A type of a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. The device may be a medical or non-medical device.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="value" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">on |off | standby.</xs:documentation>
+              <xs:documentation xml:lang="en">The state or condition of the device's operation.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="reason" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+          <xs:element name="statusReason" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">The reasons given for the current operational status - i.e. why is the device switched on etc.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="operator" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The individual performing the action enabled by the device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="mode" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The designated condition for performing a task with the device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="cycle" minOccurs="0" maxOccurs="1" type="Count">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The series of occurrences that repeats during the operation of the device.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="duration" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A measurement of time during the device's operation (e.g., days, hours, mins, etc).</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>

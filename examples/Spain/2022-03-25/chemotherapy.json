@@ -1,0 +1,65 @@
+{
+  "relatedDiagnosis": "primaryCancerCondition/3321",
+  "startDate": "08-08-2012",
+  "endDate": "11-10-2012",
+  "institutionOfTreatment": {
+    "name": "Hospital la Fe",
+    "address": {
+      "name": "Valencia",
+      "country": "Spain"
+    }
+  },
+  "productAdministration": [
+    {
+      "agent": {
+        "name": "Ciclofosfamide",
+        "code": "L01AA01"
+      },
+      "cumulativeDose": {
+        "measureType": "Calculation",
+        "value": 3000,
+        "unit": "mg/m2"
+      }
+    },
+    {
+      "agent": {
+        "name": "Metotrexato",
+        "code": "L01BA01"
+      },
+      "cumulativeDose": {
+        "measureType": "Calculation",
+        "value": 12000,
+        "unit": "mg/m2"
+      }
+    },
+    {
+      "agent": {
+        "name": "Vincristina",
+        "code": "L01CA02"
+      },
+      "cumulativeDose": {
+        "measureType": "Calculation",
+        "value": 5.4,
+        "unit": "mg/m2"
+      }
+    },
+    {
+      "agent": {
+        "name": "Citarabina",
+        "code": "L01BC01"
+      },
+      "cumulativeDose": {
+        "measureType": "Calculation",
+        "value": 920,
+        "unit": "mg/m2"
+      }
+    }
+  ],
+  "corticosteroids": {
+    "code": 2,
+    "display": "No"
+  },
+  "intrathecalInjections": {
+    "number": 5
+  }
+}

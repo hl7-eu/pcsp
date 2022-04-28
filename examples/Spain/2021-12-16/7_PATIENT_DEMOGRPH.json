@@ -1,0 +1,343 @@
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+    "valueString": "APELLIDO2"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress": {
+      "line": [ "CALLEFALSA123" ],
+      "city": "Valencia",
+      "state": "Valencia",
+      "country": "España"
+    }
+  } ],
+  "identifier": [ {
+    "use": "official",
+    "system": "urn:oid:2.16.724.4.10.50.200",
+    "value": "4239782"
+  } ],
+  "name": [ {
+    "use": "anonymous",
+    "text": "NOMBRE APELLIDO1 APELLIDO2",
+    "family": "APELLIDO1",
+    "given": [ "NOMBRE" ]
+  } ],
+  "telecom": [ {
+    "system": "email",
+    "value": "sami14042000@gmail.com"
+  } ],
+  "gender": "female",
+  "birthDate": "2000-07-01",
+  "communication": [ {
+    "language": {
+      "coding": [ {
+        "system": "urn:ietf:bcp:47",
+        "code": "es-ES",
+        "display": "Español"
+      } ]
+    }
+  } ]
+}
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+    "valueString": "APELLIDO2"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress": {
+      "line": [ "CALLEFALSA123" ],
+      "city": "Valencia",
+      "state": "Valencia",
+      "country": "España"
+    }
+  } ],
+  "identifier": [ {
+    "use": "official",
+    "system": "urn:oid:2.16.724.4.10.50.200",
+    "value": "6340928"
+  } ],
+  "name": [ {
+    "use": "anonymous",
+    "text": "NOMBRE APELLIDO1 APELLIDO2",
+    "family": "APELLIDO1",
+    "given": [ "NOMBRE" ]
+  } ],
+  "gender": "male",
+  "birthDate": "2004-07-01",
+  "communication": [ {
+    "language": {
+      "coding": [ {
+        "system": "urn:ietf:bcp:47",
+        "code": "es-ES",
+        "display": "Español"
+      } ]
+    }
+  } ]
+}
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+    "valueString": "APELLIDO2"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress": {
+      "line": [ "CALLEFALSA123" ],
+      "city": "Valencia",
+      "state": "Valencia",
+      "country": "España"
+    }
+  } ],
+  "identifier": [ {
+    "use": "official",
+    "system": "urn:oid:2.16.724.4.10.50.200",
+    "value": "6381702"
+  } ],
+  "name": [ {
+    "use": "anonymous",
+    "text": "NOMBRE APELLIDO1 APELLIDO2",
+    "family": "APELLIDO1",
+    "given": [ "NOMBRE" ]
+  } ],
+  "telecom": [ {
+    "system": "email",
+    "value": "nnobajo@gmail.com"
+  } ],
+  "gender": "male",
+  "birthDate": "2001-07-01",
+  "contact": [ {
+    "telecom": [ {
+      "system": "phone",
+      "value": "639617903"
+    } ]
+  } ],
+  "communication": [ {
+    "language": {
+      "coding": [ {
+        "system": "urn:ietf:bcp:47",
+        "code": "es-ES",
+        "display": "Español"
+      } ]
+    }
+  } ]
+}
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+    "valueString": "APELLIDO2"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress": {
+      "line": [ "CALLEFALSA123" ],
+      "city": "Valencia",
+      "state": "Valencia",
+      "country": "España"
+    }
+  } ],
+  "identifier": [ {
+    "use": "official",
+    "system": "urn:oid:2.16.724.4.10.50.200",
+    "value": "6392107"
+  } ],
+  "name": [ {
+    "use": "anonymous",
+    "text": "NOMBRE APELLIDO1 APELLIDO2",
+    "family": "APELLIDO1",
+    "given": [ "NOMBRE" ]
+  } ],
+  "gender": "male",
+  "birthDate": "2004-07-01",
+  "contact": [ {
+    "relationship": [ {
+      "coding": [ {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "code": "PRN",
+        "display": "parent"
+      } ]
+    } ],
+    "name": {
+      "text": "Rosario",
+      "given": [ "Rosario" ]
+    },
+    "telecom": [ {
+      "system": "email",
+      "value": "rosariocerda@telefonica.net"
+    } ]
+  } ],
+  "communication": [ {
+    "language": {
+      "coding": [ {
+        "system": "urn:ietf:bcp:47",
+        "code": "es-ES",
+        "display": "Español"
+      } ]
+    }
+  } ]
+}
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+    "valueString": "APELLIDO2"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress": {
+      "line": [ "CALLEFALSA123" ],
+      "city": "Valencia",
+      "state": "Valencia",
+      "country": "España"
+    }
+  } ],
+  "identifier": [ {
+    "use": "official",
+    "system": "urn:oid:2.16.724.4.10.50.200",
+    "value": "6397790"
+  } ],
+  "name": [ {
+    "use": "anonymous",
+    "text": "NOMBRE APELLIDO1 APELLIDO2",
+    "family": "APELLIDO1",
+    "given": [ "NOMBRE" ]
+  } ],
+  "telecom": [ {
+    "system": "email",
+    "value": "nicolasblasco16@gmail.com"
+  } ],
+  "gender": "male",
+  "birthDate": "2001-07-01",
+  "communication": [ {
+    "language": {
+      "coding": [ {
+        "system": "urn:ietf:bcp:47",
+        "code": "es-ES",
+        "display": "Español"
+      } ]
+    }
+  } ]
+}
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+    "valueString": "APELLIDO2"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress": {
+      "line": [ "CALLEFALSA123" ],
+      "city": "Valencia",
+      "state": "Valencia",
+      "country": "España"
+    }
+  } ],
+  "identifier": [ {
+    "use": "official",
+    "system": "urn:oid:2.16.724.4.10.50.200",
+    "value": "6515962"
+  } ],
+  "name": [ {
+    "use": "anonymous",
+    "text": "NOMBRE APELLIDO1 APELLIDO2",
+    "family": "APELLIDO1",
+    "given": [ "NOMBRE" ]
+  } ],
+  "gender": "female",
+  "birthDate": "2002-07-01",
+  "communication": [ {
+    "language": {
+      "coding": [ {
+        "system": "urn:ietf:bcp:47",
+        "code": "es-ES",
+        "display": "Español"
+      } ]
+    }
+  } ]
+}
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp", "http://hl7.org/fhir/StructureDefinition/Patient" ],
+    "security": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code": "SYSDEV"
+    } ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+    "valueString": "APELLIDO2"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress": {
+      "line": [ "CALLEFALSA123" ],
+      "city": "Valencia",
+      "state": "Valencia",
+      "country": "España"
+    }
+  } ],
+  "identifier": [ {
+    "use": "official",
+    "system": "urn:oid:2.16.724.4.10.50.200",
+    "value": "6551514"
+  } ],
+  "name": [ {
+    "use": "anonymous",
+    "text": "NOMBRE APELLIDO1 APELLIDO2",
+    "family": "APELLIDO1",
+    "given": [ "NOMBRE" ]
+  } ],
+  "gender": "female",
+  "birthDate": "2005-07-01",
+  "communication": [ {
+    "language": {
+      "coding": [ {
+        "system": "urn:ietf:bcp:47",
+        "code": "es-ES",
+        "display": "Español"
+      } ]
+    }
+  } ]
+}

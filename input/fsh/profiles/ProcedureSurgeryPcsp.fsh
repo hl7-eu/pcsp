@@ -45,6 +45,9 @@ Title:    "Procedure Surgery (other)"
 Description: "This profile defines how to represent 'other' surgery procedures (minimal data) as used  by the PanCareSurPass project (e.g. shunt, "
 //-------------------------------------------------------------------------------------------
 
+* extension contains LateralityQualifier named laterality 0..1
+* extension[laterality].valueCodeableConcept from LateralityQualifierVS
+
 * text ^short = "Textual description of the surgical procedure"
 * identifier ^short = "External Identifiers for this Surgery"
 * status MS
