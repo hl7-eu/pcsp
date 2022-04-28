@@ -2,10 +2,10 @@
 ValueSet: ICCC3Vs
 Id: vs-iccc3-eu-pcsp
 Title: "ICCC-3"
-Description: "International Classification of Childhood Cancer, third edition"
-// not yet in the GPS ....
+Description: "International Classification of Childhood Cancer, third edition + exceptional values"
 //-------------------------------------------------------------------------------------------
-* codes from system $iccc3 
+* codes from system $iccc3
+* codes from valueset OtherUnknownTextVs
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: ICDO3MorphologyVs

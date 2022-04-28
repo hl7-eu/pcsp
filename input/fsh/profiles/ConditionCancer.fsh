@@ -132,17 +132,21 @@ This profile should be also used for documenting primary cancer relapses.
 	and predisposition 0..1
 	
 * evidence[diagnosisDetails]
+  * ^short = "Diagnosis details"
   * code from ICCC3Vs
   * detail only Reference (ObservationDiagnosisPcsp)
-* evidence[geneticMarker] 
+* evidence[geneticMarker]
+  * ^short = "Genetic Marker"
   * code = $sct#106221001 "Genetic finding"
   * detail only Reference (Observation or DocumentReference or DiagnosticReport)
   * detail.display ^short = "Text alternative for the resource (Genetic finding)"
-* evidence[immunology] 
+* evidence[immunology]
+  * ^short = "Immunology" 
   * code = $sct#365861007 "Finding of immune status"
   * detail only Reference (Observation or DocumentReference or DiagnosticReport)
   * detail.display ^short = "Text alternative for the resource (immunology)"
-* evidence[predisposition] 
+* evidence[predisposition]
+  * ^short = "Predisposition" 
   * code = $sct#32895009 "Hereditary disease" // check if it needs to be changed with a Value Set
   * detail only Reference (Condition or Observation or FamilyMemberHistory or DocumentReference)
   * detail.display ^short = "Text alternative for the resource (predisposition)"

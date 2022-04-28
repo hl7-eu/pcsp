@@ -118,16 +118,3 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * reasonReference 1.. MS // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 
-
-/* =======
-
-* bodySite 0..1 MS 
-* bodySite from AffectedOrganVs
-* location only Reference(LocationPcsp)
-* focalDevice ^short = "Implanted or removed device"
-  * action from SurgicalActionVs
-  * manipulated ^short = "Device manipulated"
-// * usedCode ^short = "Coded items used during the procedure"
-// * usedCode from SurgeryDeviceType // update the value set
-
-==== */

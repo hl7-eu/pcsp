@@ -40,6 +40,25 @@ Description: "This profile defines how to represent Care Plan in FHIR for the pu
 * author MS
 
 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  LocationPcsp
+Parent:   Location
+Id:       Location-eu-pcsp
+Title:    "Location PCSP"
+Description: "This profile defines how to represent FHIR Location for the purpose of the PanCareSurPass project."
+//-------------------------------------------------------------------------------------------
+
+* name 1.. MS
+* name ^short = "Name of the Institution"
+* description ^short = "Institution description"
+* address.city ^short = "Institution city"
+* address.country ^short = "Institution country"
+
+
+/* ===== ATTIC BEGIN
+
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureSCTMinPcsp
 Parent:   Procedure 
@@ -62,24 +81,6 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * bodySite from VsRadiotherapy
 
 
-
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  LocationPcsp
-Parent:   Location
-Id:       Location-eu-pcsp
-Title:    "Location PCSP"
-Description: "This profile defines how to represent FHIR Location for the purpose of the PanCareSurPass project."
-//-------------------------------------------------------------------------------------------
-
-* name 1.. MS
-* name ^short = "Name of the Institution"
-* description ^short = "Institution description"
-* address.city ^short = "Institution city"
-* address.country ^short = "Institution country"
-
-
-/* ===== ATTIC BEGIN
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ObservationYesNoPcsp
 Parent:   Observation 

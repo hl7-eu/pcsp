@@ -106,6 +106,16 @@ Description: "Not Applicable/Unknown Value Set"
 * $data-absent-reason#unknown "Unknown"
 * $data-absent-reason#not-applicable "Not Applicable"
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: OtherUnknownTextVs
+Id: vs-othUnkTxt-eu-pcsp
+Title: "Other/Unknown/Text"
+Description: "Other/Unknown/Text Value Set"
+//-------------------------------------------------------------------------------------------
+* $data-absent-reason#unknown "Unknown"
+* $v3-NullFlavor#OTH "Other"
+* $data-absent-reason#as-text "As Text"
+
 // --------------------------------------------------------
 ValueSet: BodyLocationQualifierVS
 Id: mcode-body-location-qualifier-vs
