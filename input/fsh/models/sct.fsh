@@ -1,7 +1,7 @@
 Instance: StemCellTransplantation
 InstanceOf: StructureDefinition
 Description: "Stem Cell Transplantation.
-Maturity Level: 1 - Profiles in progress"
+Maturity Level: 2 - Ready for Review"
 Title: "Stem Cell Transplantation"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -12,7 +12,7 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * description = "Stem Cell Transplantation.
-Maturity Level: 1 - Profiles in progress"
+Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -364,19 +364,19 @@ No calculations are made on these data."
 * differential.element[11].mapping[0].map = ".code"
 
 * differential.element[12].mapping[0].identity = "fhir"
-* differential.element[12].mapping[0].map = "TBD"
+* differential.element[12].mapping[0].map = "BiologicallyDerivedProduct .conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/BiologicallyDerivedProduct-sct-eu-pcsp').extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/sct-donor-type').valueCodeableConcept"
 
 * differential.element[13].mapping[0].identity = "fhir"
-* differential.element[13].mapping[0].map = "TBD"
+* differential.element[13].mapping[0].map = "BiologicallyDerivedProduct .conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/BiologicallyDerivedProduct-sct-eu-pcsp').extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/sct-source-type').valueCodeableConcept"
 
 * differential.element[14].mapping[0].identity = "fhir"
-* differential.element[14].mapping[0].map = "TBD"
+* differential.element[14].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp').where(reasonReference.resolve().conformTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp') ).text"
 
 * differential.element[15].mapping[0].identity = "fhir"
 * differential.element[15].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-gvdh-eu-pcsp')"
 
 * differential.element[16].mapping[0].identity = "fhir"
-* differential.element[16].mapping[0].map = "TBD"
+* differential.element[16].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp').where(code = $sct#868254008 'GVHD (graft versus host disease) prophylaxis').exists()"
 
 * differential.element[17].mapping[0].identity = "fhir"
 * differential.element[17].mapping[0].map = ".where(code = http://snomed.info/sct#402355000 'Acute graft-versus-host disease')"
@@ -430,7 +430,7 @@ No calculations are made on these data."
 * differential.element[33].mapping[0].map = "component.where(code = $loinc#10331-7 'Rh [Type] in Blood').value"
 
 * differential.element[34].mapping[0].identity = "fhir"
-* differential.element[34].mapping[0].map = "MedicationStatement.effectivePeriod.end"
+* differential.element[34].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp').where(category = $sct#416608005 'Drug therapy' ).performedPeriod.end"
 
 
 

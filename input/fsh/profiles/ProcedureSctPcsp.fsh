@@ -88,9 +88,30 @@ Description: "This profile defines how to represent Stem Cell in FHIR for descri
   and SctSourceType named sctSourceType 0..1
 * extension[sctDonorType].valueCodeableConcept from SctDonorTypeVs
 * extension[sctSourceType].valueCodeableConcept from SctSourceTypeVs
-
 * productCategory = $product-category#cell
 * collection.source ^short = "The patient providing the cells"
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ProcedureSctProphylaxisPcsp
+Parent:   Procedure 
+Id:       Procedure-sct-prophylaxis-eu-pcsp
+Title:    "Procedure SCT Prophylaxis"
+Description: "This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan.
+ \r\n Maturity Model: 0 - Draft"
+//-------------------------------------------------------------------------------------------
+
+* identifier ^short = "External Identifiers for this SCT-related procedure"
+* status MS
+* category 1..
+* category from SctProphylaxisCathegory // check GPS
+* subject only Reference(PatientPcsp)	
+* subject MS
+* code from SctProphylaxisType (extensible)
+* performedPeriod MS
+* reasonReference 2.. MS // add reference to the diagnosis
+* reasonReference only Reference(ConditionPrimaryCancerPcsp or ProcedureSctPcsp)
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureSctPcsp
@@ -114,7 +135,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * subject only Reference(PatientPcsp)	
 * subject MS
 * performed[x] 1..
-* performedDateTime ^short = "Date of the surgical procedure"
+* performedDateTime ^short = "Date of the Stem Cell Transplantation"
 * reasonReference 1.. MS // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 

@@ -1,5 +1,27 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctProphylaxisCathegory
+Id: vs-sct-prophylaxis-cathegory-eu-pcsp 
+Title: "SCT Prophylaxis Cathegory"
+Description: "SCT Prophylaxis Cathegory"
+//-------------------------------------------------------------------------------------------
+
+/// ===> CHECK IF IN GPS
+* $sct#416608005 "Drug therapy"
+* $sct#419815003 "Radiotherapy"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: SctProphylaxisType
+Id: vs-sct-prophylaxis-type-eu-pcsp 
+Title: "SCT Prophylaxis Type"
+Description: "SCT Prophylaxis Type"
+//-------------------------------------------------------------------------------------------
+
+/// ===> CHECK IF IN GPS
+* $sct#868254008 "GVHD (graft versus host disease) prophylaxis"
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: SctTimingEvent
 Id: vs-sct-timing-eu-pcsp 
 Title: "Before/after procedure"
