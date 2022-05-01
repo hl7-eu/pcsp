@@ -76,4 +76,10 @@
 
 * #before-procedure "Before procedure" "Before procedure" // change with 307153007 | Before procedure ?
 * #after-procedure "After procedure"   "After procedure" // change with 303110006 | Postprocedural period ? 
-                                                                                                                                                                                                          
+                                                                                                                                                                                                   
+																																																	
+																																																	// --------------  FLT Plan Types
+
+* #personalized-plan "Personalized" "Personalized Plan"
+* #guidelines-plan "Guidelines"		"Plan based on guidelines"
+																																								

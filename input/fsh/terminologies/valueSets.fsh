@@ -1,4 +1,19 @@
 
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: FltPlanType
+Id: vs-flt-plan-type-eu-pcsp 
+Title: "FLT Plan Type"
+Description: "FLT Plan Type"
+//-------------------------------------------------------------------------------------------
+
+* $plan-definition-type#clinical-protocol "Clinical Protocol" 
+* CsGenericPcsp#personalized-plan "Personalized"
+* CsGenericPcsp#guidelines-plan "Guidelines"
+* $data-absent-reason#unknown "Unknown"
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: SctProphylaxisCathegory
 Id: vs-sct-prophylaxis-cathegory-eu-pcsp 
