@@ -91,13 +91,13 @@ Maturity Level: 0 - Draft"
 * differential.element[9].min = 0
 * differential.element[9].max = "*"
 * differential.element[9].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseDuringFLT
-* differential.element[10].id = "TreatmentSummary.diagnosis.otherInfo"
-* differential.element[10].path = "TreatmentSummary.diagnosis.otherInfo"
+* differential.element[10].id = "TreatmentSummary.diagnosis.otherInfos"
+* differential.element[10].path = "TreatmentSummary.diagnosis.otherInfos"
 * differential.element[10].short = "Other info and relevant events"
 * differential.element[10].definition = "Other info and relevant events"
 * differential.element[10].min = 0
 * differential.element[10].max = "*"
-* differential.element[10].type.code = #BackboneElement
+* differential.element[10].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/OtherInfos
 * differential.element[11].id = "TreatmentSummary.diagnosis.medicalSuggestion"
 * differential.element[11].path = "TreatmentSummary.diagnosis.medicalSuggestion"
 * differential.element[11].short = "Medical suggestion"

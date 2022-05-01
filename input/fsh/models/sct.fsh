@@ -44,14 +44,14 @@ Maturity Level: 2 - Ready for Review"
 * differential.element[2].definition = "Progressive number of diagnosis"
 * differential.element[2].min = 1
 * differential.element[2].max = "*"
-* differential.element[2].type.code = #BackboneElement
+* differential.element[2].type.code = #Identifier
 * differential.element[3].id = "StemCellTransplantation.relatedRelapse"
 * differential.element[3].path = "StemCellTransplantation.relatedRelapse"
 * differential.element[3].short = "Progressive number of relapse/progression (after FLT)"
 * differential.element[3].definition = "Progressive number of relapse/progression (after FLT)"
 * differential.element[3].min = 1
 * differential.element[3].max = "*"
-* differential.element[3].type.code = #string
+* differential.element[3].type.code = #Identifier
 * differential.element[4].id = "StemCellTransplantation.istitutionOfTreatment"
 * differential.element[4].path = "StemCellTransplantation.istitutionOfTreatment"
 * differential.element[4].short = "Institution of treatment"
