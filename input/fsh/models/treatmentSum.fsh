@@ -54,7 +54,7 @@ Maturity Level: 0 - Draft"
 * differential.element[4].short = "Front line treatment"
 * differential.element[4].definition = "Front line treatment"
 * differential.element[4].min = 0
-* differential.element[4].max = "*"
+* differential.element[4].max = "1"
 * differential.element[4].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/FrontLineTreatment
 * differential.element[5].id = "TreatmentSummary.diagnosis.chemotherapy"
 * differential.element[5].path = "TreatmentSummary.diagnosis.chemotherapy"
@@ -90,7 +90,7 @@ Maturity Level: 0 - Draft"
 * differential.element[9].definition = "Progression-Relapse during Front line treatment"
 * differential.element[9].min = 0
 * differential.element[9].max = "*"
-* differential.element[9].type.code = #BackboneElement
+* differential.element[9].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseDuringFLT
 * differential.element[10].id = "TreatmentSummary.diagnosis.otherInfo"
 * differential.element[10].path = "TreatmentSummary.diagnosis.otherInfo"
 * differential.element[10].short = "Other info and relevant events"

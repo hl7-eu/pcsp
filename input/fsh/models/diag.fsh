@@ -244,17 +244,16 @@ In case of leukemia the 'risk' (e.g. high, standard) could be reported. If the s
 // === MAPPING === 
 // 
 * differential.element[0].mapping[0].identity = "fhir"
-* differential.element[0].mapping[0].map = "Condition"
+* differential.element[0].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp')"
 
 * differential.element[1].mapping[0].identity = "fhir"
-* differential.element[1].mapping[0].map = "Condition.identifier"
+* differential.element[1].mapping[0].map = ".identifier"
 
 * differential.element[2].mapping[0].identity = "fhir"
-* differential.element[2].mapping[0].map = "Condition.extension('condition-assertedDate').valueDateTime
-Observation.effectiveDateTime"
+* differential.element[2].mapping[0].map = ".extension('condition-assertedDate').valueDateTime"
 
 * differential.element[3].mapping[0].identity = "fhir"
-* differential.element[3].mapping[0].map = "Observation.performer"
+* differential.element[3].mapping[0].map = "Observation.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-diagnosis-eu-pcsp').performer"
 
 * differential.element[4].mapping[0].identity = "fhir"
 * differential.element[4].mapping[0].map = "Observation.performer.resolve().identifier
@@ -317,31 +316,31 @@ Condition.code.text"
 * differential.element[20].mapping[0].map = "Condition.bodySite.extension('mcode-laterality-qualifier').valueCodeableConcept"
 
 * differential.element[21].mapping[0].identity = "fhir"
-* differential.element[21].mapping[0].map = "Condition.conformsTo('ConditionSecondaryCancerPcsp')"
+* differential.element[21].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp')"
 
 * differential.element[22].mapping[0].identity = "fhir"
-* differential.element[22].mapping[0].map = "Condition.conformsTo('ConditionSecondaryCancerPcsp').identifier"
+* differential.element[22].mapping[0].map = ".identifier"
 
 * differential.element[23].mapping[0].identity = "fhir"
-* differential.element[23].mapping[0].map = "Condition.conformsTo('ConditionSecondaryCancerPcsp')bodySite"
+* differential.element[23].mapping[0].map = ".bodySite"
 
 * differential.element[24].mapping[0].identity = "fhir"
-* differential.element[24].mapping[0].map = "Condition.conformsTo('ConditionSecondaryCancerPcsp').bodySite.coding"
+* differential.element[24].mapping[0].map = ".bodySite.coding"
 
 * differential.element[25].mapping[0].identity = "fhir"
-* differential.element[25].mapping[0].map = "Condition.conformsTo('ConditionSecondaryCancerPcsp').bodySite.text"
+* differential.element[25].mapping[0].map = ".bodySite.text"
 
 * differential.element[26].mapping[0].identity = "fhir"
-* differential.element[26].mapping[0].map = "Condition.evidence:geneticMarker"
+* differential.element[26].mapping[0].map = "Condition.evidence.where(code = http://snomed.info/sct#106221001 'Genetic finding')"
 
 * differential.element[27].mapping[0].identity = "fhir"
 * differential.element[27].mapping[0].map = "Condition.stage"
 
 * differential.element[28].mapping[0].identity = "fhir"
-* differential.element[28].mapping[0].map = "Condition.evidence:immunology"
+* differential.element[28].mapping[0].map = "Condition.evidence.where(code = http://snomed.info/sct#365861007 'Finding of immune status')"
 
 * differential.element[29].mapping[0].identity = "fhir"
-* differential.element[29].mapping[0].map = "Condition.evidence:predisposition"
+* differential.element[29].mapping[0].map = "Condition.evidence.where(code = http://snomed.info/sct#32895009 'Hereditary disease')"
 
 * differential.element[30].mapping[0].identity = "fhir"
 * differential.element[30].mapping[0].map = "Condition.note"

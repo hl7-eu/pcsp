@@ -8,6 +8,7 @@ CALL :buildFshFiles input\fsh\models\diag
 CALL :buildFshFiles input\fsh\models\surg
 CALL :buildFshFiles input\fsh\models\sct
 CALL :buildFshFiles input\fsh\models\flt
+CALL :buildFshFiles input\fsh\models\relapseFlt
 
 
 REM CALL :buildFshFiles input\fsh\models\minChemio
