@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sun, May 1, 2022 17:17+0000 for FHIR v4.6.0 
+  Generated on Mon, May 2, 2022 14:41+0000 for FHIR v4.6.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.6.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -11708,11 +11708,6 @@
           <xs:documentation xml:lang="en">PrimitiveType</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="ProdCharacteristic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProdCharacteristic</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
       <xs:enumeration value="ProductShelfLife">
         <xs:annotation>
           <xs:documentation xml:lang="en">ProductShelfLife</xs:documentation>
@@ -13422,11 +13417,6 @@
       <xs:enumeration value="PrimitiveType">
         <xs:annotation>
           <xs:documentation xml:lang="en">PrimitiveType</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="ProdCharacteristic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">ProdCharacteristic</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="ProductShelfLife">
@@ -18735,73 +18725,6 @@ Normal practice is to use the 'mo' code as a calendar month when calculating the
           <xs:element name="period" type="Period" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">Period that this contact was valid for usage.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="ProdCharacteristic">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The marketing status describes the date when a medicinal product is actually put on the market or the date as of which it is no longer available.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have a value for at least one of the defined elements, an @id referenced from the Narrative, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneType">
-        <xs:sequence>
-          <xs:element name="height" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the height can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="width" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the width can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="depth" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the depth can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="weight" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the weight can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="nominalVolume" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the nominal volume can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="externalDiameter" type="Quantity" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the external diameter can be specified using a numerical value and its unit of measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="shape" type="string" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the shape can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="color" type="string" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the color can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="imprint" type="string" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the imprint can be specified as text.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="image" type="Attachment" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the image can be provided The format of the image attachment shall be specified by regional implementations.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="scoring" type="CodeableConcept" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Where applicable, the scoring can be specified An appropriate controlled vocabulary shall be used The term and the term identifier shall be used.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -48090,7 +48013,7 @@ The MedicationUsage resource was previously called MedicationStatement.</xs:docu
               <xs:documentation xml:lang="en">Sequence that was observed. It is the result marked by referenceSeq along with variant records on referenceSeq. This shall start from referenceSeq.windowStart and end by referenceSeq.windowEnd.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="formatted" minOccurs="0" maxOccurs="unbounded" type="Attachment">
+          <xs:element name="formatted" minOccurs="0" maxOccurs="1" type="Attachment">
             <xs:annotation>
               <xs:documentation xml:lang="en">Sequence that was observed as file content. Can be an actual file contents, or referenced by a URL to an external system.</xs:documentation>
            </xs:annotation>
