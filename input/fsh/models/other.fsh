@@ -236,4 +236,4 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[29].definition = "Discharge letter"
 * differential.element[29].min = 0
 * differential.element[29].max = "*"
-* differential.element[29].type.code = #Attacchment
+* differential.element[29].type.code = #Attachment

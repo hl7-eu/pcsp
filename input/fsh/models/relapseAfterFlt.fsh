@@ -1,17 +1,17 @@
 Instance: RelapseAfterFLT
 InstanceOf: StructureDefinition
-Description: "Progression-Relapse during FLT
+Description: "Progression-Relapse After FLT
 Marturity Level: 1"
-Title: "Progression-Relapse during FLT"
+Title: "Progression-Relapse After FLT"
 Usage: #definition
 * publisher = "PanCareSurPass project"
 * status = #draft
 * url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseAfterFLT"
 * name = "RelapseAfterFLT"
-* title = "Progression-Relapse during FLT"
+* title = "Progression-Relapse After FLT"
 * status = #draft
 * experimental = true
-* description = "Progression-Relapse during FLT
+* description = "Progression-Relapse After FLT
 Marturity Level: 1"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
@@ -109,7 +109,7 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 * differential.element[8].definition = "The system automatic display the trial/protocol executed during front line treatment"
 * differential.element[8].min = 0
 * differential.element[8].max = "1"
-* differential.element[8].type.code = #identifier
+* differential.element[8].type.code = #Identifier
 
 
 * differential.element[9].id = "RelapseAfterFLT.followedProtocol.protocolDescription"
