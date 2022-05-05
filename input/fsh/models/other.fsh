@@ -1,7 +1,7 @@
 Instance: OtherInfos
 InstanceOf: StructureDefinition
 Description: "Other info and relevant events
-Maturity Level 0"
+Maturity Level: 0 - Draft"
 Title: "Other info and relevant events"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -12,7 +12,7 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * description = "Other info and relevant events
-Maturity Level 0"
+Maturity Level: 0 - Draft"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -57,7 +57,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[4].short = "Important toxicity during treatment"
 * differential.element[4].definition = "Important toxicity during treatment ÿ"
 * differential.element[4].min = 0
-* differential.element[4].max = "1"
+* differential.element[4].max = "10"
 * differential.element[4].type.code = #BackboneElement
 * differential.element[5].id = "OtherInfos.severeToxicity.flag"
 * differential.element[5].path = "OtherInfos.severeToxicity.flag"
@@ -76,22 +76,22 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[6].min = 0
 * differential.element[6].max = "1"
 * differential.element[6].type.code = #integer
-* differential.element[7].id = "OtherInfos.date"
-* differential.element[7].path = "OtherInfos.date"
+* differential.element[7].id = "OtherInfos.severeToxicity.date"
+* differential.element[7].path = "OtherInfos.severeToxicity.date"
 * differential.element[7].short = "Date of event"
 * differential.element[7].definition = "Date (dd/mm/yyyy) of the event. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[7].min = 1
 * differential.element[7].max = "1"
 * differential.element[7].type.code = #dateTime
-* differential.element[8].id = "OtherInfos.description"
-* differential.element[8].path = "OtherInfos.description"
+* differential.element[8].id = "OtherInfos.severeToxicity.description"
+* differential.element[8].path = "OtherInfos.severeToxicity.description"
 * differential.element[8].short = "Description "
 * differential.element[8].definition = "Please describe any significant event (e.g. admission to the intensive care for a metabolic problem, seizures, severe toxic complication) occurring during therapy that might have fully recovered or be still remaining or with sequelae"
 * differential.element[8].min = 1
 * differential.element[8].max = "1"
 * differential.element[8].type.code = #BackboneElement
-* differential.element[9].id = "OtherInfos.isResolved"
-* differential.element[9].path = "OtherInfos.isResolved"
+* differential.element[9].id = "OtherInfos.severeToxicity.isResolved"
+* differential.element[9].path = "OtherInfos.severeToxicity.isResolved"
 * differential.element[9].short = "Resolved ?"
 * differential.element[9].definition = "Please specify if the event is resolved or not"
 * differential.element[9].min = 0
@@ -132,43 +132,43 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[14].min = 0
 * differential.element[14].max = "1"
 * differential.element[14].type.code = #CodeableConcept
-* differential.element[15].id = "OtherInfos.cvcPositioned"
-* differential.element[15].path = "OtherInfos.cvcPositioned"
+* differential.element[15].id = "OtherInfos.catheter"
+* differential.element[15].path = "OtherInfos.catheter"
 * differential.element[15].short = "CVC positioning"
 * differential.element[15].definition = "Please report if at least one central venous line (catheter) was positioned"
 * differential.element[15].min = 0
 * differential.element[15].max = "1"
 * differential.element[15].type.code = #BackboneElement
-* differential.element[16].id = "OtherInfos.cvcPositioned.isInPlace"
-* differential.element[16].path = "OtherInfos.cvcPositioned.isInPlace"
+* differential.element[16].id = "OtherInfos.catheter.isInPlace"
+* differential.element[16].path = "OtherInfos.catheter.isInPlace"
 * differential.element[16].short = "If yes"
 * differential.element[16].definition = "Report if the CVC is still in place or was removed"
 * differential.element[16].min = 0
 * differential.element[16].max = "1"
 * differential.element[16].type.code = #CodeableConcept
-* differential.element[17].id = "OtherInfos.cvcPositioned.site"
-* differential.element[17].path = "OtherInfos.cvcPositioned.site"
+* differential.element[17].id = "OtherInfos.catheter.site"
+* differential.element[17].path = "OtherInfos.catheter.site"
 * differential.element[17].short = "Specify the site"
 * differential.element[17].definition = "Report where (in which vein) the CVC was positioned"
 * differential.element[17].min = 0
 * differential.element[17].max = "1"
 * differential.element[17].type.code = #string
-* differential.element[18].id = "OtherInfos.catheterRelatedThrombosis"
-* differential.element[18].path = "OtherInfos.catheterRelatedThrombosis"
+* differential.element[18].id = "OtherInfos.catheter.relatedThrombosis"
+* differential.element[18].path = "OtherInfos.catheter.relatedThrombosis"
 * differential.element[18].short = "Catheter-related thrombosis"
 * differential.element[18].definition = "Catheter-related thrombosis"
 * differential.element[18].min = 0
 * differential.element[18].max = "1"
 * differential.element[18].type.code = #BackboneElement
-* differential.element[19].id = "OtherInfos.catheterRelatedThrombosis.occurred"
-* differential.element[19].path = "OtherInfos.catheterRelatedThrombosis.occurred"
+* differential.element[19].id = "OtherInfos.catheter.relatedThrombosis.occurred"
+* differential.element[19].path = "OtherInfos.catheter.relatedThrombosis.occurred"
 * differential.element[19].short = "Yes/No"
 * differential.element[19].definition = "Report if there was a catheter-related thrombosis due to a central venous catheter."
 * differential.element[19].min = 0
 * differential.element[19].max = "1"
 * differential.element[19].type.code = #CodeableConcept
-* differential.element[20].id = "OtherInfos.catheterRelatedThrombosis.specification"
-* differential.element[20].path = "OtherInfos.catheterRelatedThrombosis.specification"
+* differential.element[20].id = "OtherInfos.catheter.relatedThrombosis.specification"
+* differential.element[20].path = "OtherInfos.catheter.relatedThrombosis.specification"
 * differential.element[20].short = "Catheter-related thrombosis specification"
 * differential.element[20].definition = "Specify the details of the catheter-related thrombosis, including the location (vessel and laterality), treatment and status at the end of cancer treatment."
 * differential.element[20].min = 0
@@ -237,3 +237,109 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[29].min = 0
 * differential.element[29].max = "*"
 * differential.element[29].type.code = #Attachment
+//  
+// === MAPPING === 
+// 
+* differential.element[0].mapping[0].identity = "fhir"
+* differential.element[0].mapping[0].map = "TBD"
+
+* differential.element[1].mapping[0].identity = "fhir"
+* differential.element[1].mapping[0].map = "TBD"
+
+* differential.element[2].mapping[0].identity = "fhir"
+* differential.element[2].mapping[0].map = "TBD"
+
+* differential.element[3].mapping[0].identity = "fhir"
+* differential.element[3].mapping[0].map = "TBD"
+
+* differential.element[4].mapping[0].identity = "fhir"
+* differential.element[4].mapping[0].map = "TBD"
+
+* differential.element[5].mapping[0].identity = "fhir"
+* differential.element[5].mapping[0].map = "TBD"
+
+* differential.element[6].mapping[0].identity = "fhir"
+* differential.element[6].mapping[0].map = "TBD"
+
+* differential.element[7].mapping[0].identity = "fhir"
+* differential.element[7].mapping[0].map = "TBD"
+
+* differential.element[8].mapping[0].identity = "fhir"
+* differential.element[8].mapping[0].map = "TBD"
+
+* differential.element[9].mapping[0].identity = "fhir"
+* differential.element[9].mapping[0].map = "TBD"
+
+* differential.element[10].mapping[0].identity = "fhir"
+* differential.element[10].mapping[0].map = "TBD"
+
+* differential.element[11].mapping[0].identity = "fhir"
+* differential.element[11].mapping[0].map = "TBD"
+
+* differential.element[12].mapping[0].identity = "fhir"
+* differential.element[12].mapping[0].map = "TBD"
+
+* differential.element[13].mapping[0].identity = "fhir"
+* differential.element[13].mapping[0].map = "TBD"
+
+* differential.element[14].mapping[0].identity = "fhir"
+* differential.element[14].mapping[0].map = "TBD"
+
+* differential.element[15].mapping[0].identity = "fhir"
+* differential.element[15].mapping[0].map = "TBD"
+
+* differential.element[16].mapping[0].identity = "fhir"
+* differential.element[16].mapping[0].map = "TBD"
+
+* differential.element[17].mapping[0].identity = "fhir"
+* differential.element[17].mapping[0].map = "TBD"
+
+* differential.element[18].mapping[0].identity = "fhir"
+* differential.element[18].mapping[0].map = "TBD"
+
+* differential.element[19].mapping[0].identity = "fhir"
+* differential.element[19].mapping[0].map = "TBD"
+
+* differential.element[20].mapping[0].identity = "fhir"
+* differential.element[20].mapping[0].map = "TBD"
+
+* differential.element[21].mapping[0].identity = "fhir"
+* differential.element[21].mapping[0].map = "TBD"
+
+* differential.element[22].mapping[0].identity = "fhir"
+* differential.element[22].mapping[0].map = "TBD"
+
+* differential.element[23].mapping[0].identity = "fhir"
+* differential.element[23].mapping[0].map = "TBD"
+
+* differential.element[24].mapping[0].identity = "fhir"
+* differential.element[24].mapping[0].map = "TBD"
+
+* differential.element[25].mapping[0].identity = "fhir"
+* differential.element[25].mapping[0].map = "TBD"
+
+* differential.element[26].mapping[0].identity = "fhir"
+* differential.element[26].mapping[0].map = "TBD"
+
+* differential.element[27].mapping[0].identity = "fhir"
+* differential.element[27].mapping[0].map = "TBD"
+
+* differential.element[28].mapping[0].identity = "fhir"
+* differential.element[28].mapping[0].map = "TBD"
+
+* differential.element[29].mapping[0].identity = "fhir"
+* differential.element[29].mapping[0].map = "TBD"
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 

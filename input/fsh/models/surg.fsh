@@ -291,7 +291,7 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 * differential.element[13].mapping[1].map = ".code"
 
 * differential.element[14].mapping[0].identity = "fhir"
-* differential.element[14].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').where(code.memberOf(OtherSurgicalProcedureTypeVs))"
+* differential.element[14].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').where(code.memberOf(ShuntProcedureTypeVs))"
 
 * differential.element[15].mapping[0].identity = "fhir"
 * differential.element[15].mapping[0].map = ".code"
@@ -306,7 +306,7 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 * differential.element[18].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').where(code.memberOf(AmputationProcedureTypeVs)).exists()"
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').where(code from ProstheticProcedureTypeVs)"
+* differential.element[19].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').where(code.memberOf(ProstheticProcedureTypeVs))"
 
 * differential.element[20].mapping[0].identity = "fhir"
 * differential.element[20].mapping[0].map = ".exists()"

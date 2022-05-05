@@ -1,7 +1,7 @@
 Instance: RelapseAfterFLT
 InstanceOf: StructureDefinition
 Description: "Progression-Relapse after FLT
-Marturity Level: 1"
+Marturity Level: 1 - Profiles in progress"
 Title: "Progression-Relapse after FLT"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -12,7 +12,7 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * description = "Progression-Relapse after FLT
-Marturity Level: 1"
+Marturity Level: 1 - Profiles in progress"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -80,118 +80,197 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 * differential.element[5].type.code = #string
 
 
-* differential.element[6].id = "RelapseAfterFLT.followedProtocol"
-* differential.element[6].path = "RelapseAfterFLT.followedProtocol"
-* differential.element[6].short = "Salvage treatment"
-* differential.element[6].definition = "The salvage treatment has been executed following"
-* differential.element[6].min = 0
-* differential.element[6].max = "*"
-* differential.element[6].type.code = #BackboneElement
-
-
-* differential.element[7].id = "RelapseAfterFLT.followedProtocol.type"
-* differential.element[7].path = "RelapseAfterFLT.followedProtocol.type"
-* differential.element[7].short = "type"
-* differential.element[7].definition = "Specify here (using the available codes) if because of the relapse/progression the patient was treated according to a protocol/trial or other treatment plans
-
-1 => A trial/protocol
-2 => Personalized
-3 => Guidelines
--9922 => NK "
-* differential.element[7].min = 0
-* differential.element[7].max = "1"
-* differential.element[7].type.code = #CodeableConcept
-
-
-* differential.element[8].id = "RelapseAfterFLT.followedProtocol.flt"
-* differential.element[8].path = "RelapseAfterFLT.followedProtocol.flt"
-* differential.element[8].short = "First line treatment trial/protocol"
-* differential.element[8].definition = "The system automatic display the trial/protocol executed during front line treatment"
-* differential.element[8].min = 0
-* differential.element[8].max = "1"
-* differential.element[8].type.code = #Identifier
-
-
-* differential.element[9].id = "RelapseAfterFLT.followedProtocol.protocolDescription"
-* differential.element[9].path = "RelapseAfterFLT.followedProtocol.protocolDescription"
-* differential.element[9].short = "If trial/protocol, specify which one"
-* differential.element[9].definition = "Specify the salvage trial/protocol (s) that was (were) used.  Free text"
-* differential.element[9].min = 0
-* differential.element[9].max = "1"
-* differential.element[9].type.code = #string
-
-
-* differential.element[10].id = "RelapseAfterFLT.followedProtocol.arm"
-* differential.element[10].path = "RelapseAfterFLT.followedProtocol.arm"
-* differential.element[10].short = "Group/Arm/Randomization"
-* differential.element[10].definition = "If the trial was randomized, please define randomization arm"
-* differential.element[10].min = 0
-* differential.element[10].max = "1"
-* differential.element[10].type.code = #string
-
-
-* differential.element[11].id = "RelapseAfterFLT.followedProtocol.personalizedDescription"
-* differential.element[11].path = "RelapseAfterFLT.followedProtocol.personalizedDescription"
-* differential.element[11].short = "If personalized, please specify
-"
-* differential.element[11].definition = "If a personalized treatment was used, please specify."
-* differential.element[11].min = 0
-* differential.element[11].max = "1"
-* differential.element[11].type.code = #string
-
-
-* differential.element[12].id = "RelapseAfterFLT.isChemotherapy"
-* differential.element[12].path = "RelapseAfterFLT.isChemotherapy"
-* differential.element[12].short = "Chemotherapy"
-* differential.element[12].definition = "Please specify if the survivor received any type of chemotherapy before the first elective end of therapies.
-Classic anticancer drugs, monoclonal antibodies , protein kinase inhibitors, and immunostimulants/suppressant are all included in the 'chemotherapy' category.  Details will be given in the appropriate section
-
-1 => Yes
-2 => No
--9922 => NK"
-* differential.element[12].min = 0
-* differential.element[12].max = "1"
-* differential.element[12].type.code = #CodeableConcept
-
-
-* differential.element[13].id = "RelapseAfterFLT.isStemCellTransplantation"
-* differential.element[13].path = "RelapseAfterFLT.isStemCellTransplantation"
-* differential.element[13].short = "Stem Cell transplantation"
-* differential.element[13].definition = "Please specify if the survivor received any hematopoietic stem cell transplant. Details will be given in the appropriate section 
-1 => Yes
-2 => No
--9922 => NK"
-* differential.element[13].min = 0
-* differential.element[13].max = "1"
-* differential.element[13].type.code = #CodeableConcept
-
-
-* differential.element[14].id = "RelapseAfterFLT.isRadiotherapy"
-* differential.element[14].path = "RelapseAfterFLT.isRadiotherapy"
-* differential.element[14].short = "Radiotherapy"
-* differential.element[14].definition = "Please specify if the survivor received any radiotherapeutic treatment. Details will be given in the appropriate section "
-* differential.element[14].min = 0
-* differential.element[14].max = "1"
-* differential.element[14].type.code = #CodeableConcept
-
-
-* differential.element[15].id = "RelapseAfterFLT.isMajorSurgery"
-* differential.element[15].path = "RelapseAfterFLT.isMajorSurgery"
-* differential.element[15].short = "Major Surgery"
-* differential.element[15].definition = "Please specify if the survivor received any treatment related surgery.  Please consider only major surgeries either performed for diagnosis or treatment.  As for diagnostic surgeries please report only biopsies after craniotomy or abdominal laparoscopic biopsies. Details will be given in the appropriate section.
-Surgeries given for other conditions not treatment related should be reported in the 'Diagnosis' form under 'Other medical conditions, NOT cancer associated'"
-* differential.element[15].min = 0
-* differential.element[15].max = "1"
-* differential.element[15].type.code = #CodeableConcept
-
-
-* differential.element[16].id = "RelapseAfterFLT.dateEOT"
-* differential.element[16].path = "RelapseAfterFLT.dateEOT"
-* differential.element[16].short = "Date of end of treatment"
-* differential.element[16].definition = "This is the date of the second (or further) end of treatment after the first one. If the date is unkown or partially missed insert the year at the best of your knowledge."
-* differential.element[16].min = 0
-* differential.element[16].max = "1"
-* differential.element[16].type.code = #dateTime
 
 
 
+
+
+
+
+
+
+//  
+// === MAPPING === 
+// 
+* differential.element[0].mapping[0].identity = "fhir"
+* differential.element[0].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp').where( (extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCode = #replaspe or #recurrence) and  ( onsetDateTime >= Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp').performedPeriod.end) )"
+
+* differential.element[1].mapping[0].identity = "fhir"
+* differential.element[1].mapping[0].map = ".identifier"
+
+* differential.element[2].mapping[0].identity = "fhir"
+* differential.element[2].mapping[0].map = ".extension('http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing')"
+
+* differential.element[3].mapping[0].identity = "fhir"
+* differential.element[3].mapping[0].map = ".extension('http://hl7.org/fhir/StructureDefinition/condition-assertedDate')"
+
+* differential.element[4].mapping[0].identity = "fhir"
+* differential.element[4].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').where(Condition.clinicalStatus = #inactive or #relapse or #recurrence).valueCodeableConcept OR Condition.where( clinicalStatus = #relapse or clinicalStatus = #recurrence).clinicalStatus"
+
+* differential.element[5].mapping[0].identity = "fhir"
+* differential.element[5].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp').bodySite"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 

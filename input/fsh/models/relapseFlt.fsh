@@ -88,7 +88,7 @@ Marturity Level: 1"
 // === MAPPING === 
 // 
 * differential.element[0].mapping[0].identity = "fhir"
-* differential.element[0].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp')"
+* differential.element[0].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp').where( (extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCode = #replaspe or #recurrence) and  ( onsetDateTime < Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp').performedPeriod.end) )"
 
 * differential.element[1].mapping[0].identity = "fhir"
 * differential.element[1].mapping[0].map = ".identifier"
@@ -103,10 +103,10 @@ Marturity Level: 1"
 * differential.element[3].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').where(Condition.clinicalStatus << #inactive).valueCodeableConcept OR Condition.where( clinicalStatus = #relapse OR clinicalStatus = #recurrence).clinicalStatus"
 
 * differential.element[5].mapping[0].identity = "fhir"
-* differential.element[5].mapping[0].map = "TBD"
+* differential.element[5].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').where(Condition.clinicalStatus = #inactive or #relapse or #recurrence).valueCodeableConcept OR Condition.where( clinicalStatus = #relapse OR clinicalStatus = #recurrence).clinicalStatus"
 
 * differential.element[6].mapping[0].identity = "fhir"
-* differential.element[6].mapping[0].map = "bodySite"
+* differential.element[6].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp').bodySite"
 
 
 
