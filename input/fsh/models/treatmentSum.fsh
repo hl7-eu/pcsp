@@ -104,14 +104,14 @@ Maturity Level: 0 - Draft"
 * differential.element[11].definition = "Medical suggestion"
 * differential.element[11].min = 0
 * differential.element[11].max = "*"
-* differential.element[11].type.code = #BackboneElement
+* differential.element[11].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicalSuggestion
 * differential.element[12].id = "TreatmentSummary.diagnosis.progressionRelapseAfterEOT"
 * differential.element[12].path = "TreatmentSummary.diagnosis.progressionRelapseAfterEOT"
 * differential.element[12].short = "Progression-relapse after the End of Treatment"
 * differential.element[12].definition = "Progression-relapse after the End of Treatment"
 * differential.element[12].min = 0
 * differential.element[12].max = "*"
-* differential.element[12].type.code = #BackboneElement
+* differential.element[12].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseAfterFLT
 * differential.element[13].id = "TreatmentSummary.diagnosis.otherConditions"
 * differential.element[13].path = "TreatmentSummary.diagnosis.otherConditions"
 * differential.element[13].short = "Other medical conditions, not cancer associated"

@@ -51,7 +51,7 @@ Maturity Level 0"
 * differential.element[3].type.code = #Identifier
 * differential.element[4].id = "MedicalSuggestion.prescribedMedication"
 * differential.element[4].path = "MedicalSuggestion.prescribedMedication"
-* differential.element[4].short = "Medications prescribed ÿ"
+* differential.element[4].short = "Medications prescribed"
 * differential.element[4].definition = "Report here if at the moment of the end of treatment or of passport delivery the survivor has already some medical prescriptions (e.g. for persistent hypertension, hypothyroidism, diabetes).  If possible, for each drug report name, dose and schedule. "
 * differential.element[4].min = 0
 * differential.element[4].max = "*"
@@ -79,14 +79,14 @@ Maturity Level 0"
 * differential.element[7].type.code = #Dosage
 * differential.element[8].id = "MedicalSuggestion.prescribedMedication.date"
 * differential.element[8].path = "MedicalSuggestion.prescribedMedication.date"
-* differential.element[8].short = "Date of prescription ÿ"
+* differential.element[8].short = "Date of prescription"
 * differential.element[8].definition = "Date (DD/MM/YYYY) in which the specific prescription was first given. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[8].min = 0
 * differential.element[8].max = "1"
 * differential.element[8].type.code = #dateTime
 * differential.element[9].id = "MedicalSuggestion.notes"
 * differential.element[9].path = "MedicalSuggestion.notes"
-* differential.element[9].short = "Comments and suggestions ÿ"
+* differential.element[9].short = "Comments and suggestions"
 * differential.element[9].definition = "This is a free text section for any further comment or recommendation"
 * differential.element[9].min = 0
 * differential.element[9].max = "1"

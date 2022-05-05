@@ -1,17 +1,17 @@
 Instance: RelapseAfterFLT
 InstanceOf: StructureDefinition
-Description: "Progression-Relapse After FLT
+Description: "Progression-Relapse after FLT
 Marturity Level: 1"
-Title: "Progression-Relapse After FLT"
+Title: "Progression-Relapse after FLT"
 Usage: #definition
 * publisher = "PanCareSurPass project"
 * status = #draft
 * url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseAfterFLT"
 * name = "RelapseAfterFLT"
-* title = "Progression-Relapse After FLT"
+* title = "Progression-Relapse after FLT"
 * status = #draft
 * experimental = true
-* description = "Progression-Relapse After FLT
+* description = "Progression-Relapse after FLT
 Marturity Level: 1"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
@@ -83,7 +83,7 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 * differential.element[6].id = "RelapseAfterFLT.followedProtocol"
 * differential.element[6].path = "RelapseAfterFLT.followedProtocol"
 * differential.element[6].short = "Salvage treatment"
-* differential.element[6].definition = "The salvage treatment has been executed following ÿ"
+* differential.element[6].definition = "The salvage treatment has been executed following"
 * differential.element[6].min = 0
 * differential.element[6].max = "*"
 * differential.element[6].type.code = #BackboneElement
@@ -114,7 +114,7 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 
 * differential.element[9].id = "RelapseAfterFLT.followedProtocol.protocolDescription"
 * differential.element[9].path = "RelapseAfterFLT.followedProtocol.protocolDescription"
-* differential.element[9].short = "If trial/protocol, specify which one ÿ"
+* differential.element[9].short = "If trial/protocol, specify which one"
 * differential.element[9].definition = "Specify the salvage trial/protocol (s) that was (were) used.  Free text"
 * differential.element[9].min = 0
 * differential.element[9].max = "1"
@@ -123,7 +123,7 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 
 * differential.element[10].id = "RelapseAfterFLT.followedProtocol.arm"
 * differential.element[10].path = "RelapseAfterFLT.followedProtocol.arm"
-* differential.element[10].short = "Group/Arm/Randomization ÿ"
+* differential.element[10].short = "Group/Arm/Randomization"
 * differential.element[10].definition = "If the trial was randomized, please define randomization arm"
 * differential.element[10].min = 0
 * differential.element[10].max = "1"
@@ -142,13 +142,13 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 
 * differential.element[12].id = "RelapseAfterFLT.isChemotherapy"
 * differential.element[12].path = "RelapseAfterFLT.isChemotherapy"
-* differential.element[12].short = "Chemotherapy ÿ"
+* differential.element[12].short = "Chemotherapy"
 * differential.element[12].definition = "Please specify if the survivor received any type of chemotherapy before the first elective end of therapies.
 Classic anticancer drugs, monoclonal antibodies , protein kinase inhibitors, and immunostimulants/suppressant are all included in the 'chemotherapy' category.  Details will be given in the appropriate section
 
 1 => Yes
 2 => No
--9922 => NK ÿ"
+-9922 => NK"
 * differential.element[12].min = 0
 * differential.element[12].max = "1"
 * differential.element[12].type.code = #CodeableConcept
@@ -156,11 +156,11 @@ Classic anticancer drugs, monoclonal antibodies , protein kinase inhibitors, and
 
 * differential.element[13].id = "RelapseAfterFLT.isStemCellTransplantation"
 * differential.element[13].path = "RelapseAfterFLT.isStemCellTransplantation"
-* differential.element[13].short = "Stem Cell transplantation ÿ"
+* differential.element[13].short = "Stem Cell transplantation"
 * differential.element[13].definition = "Please specify if the survivor received any hematopoietic stem cell transplant. Details will be given in the appropriate section 
 1 => Yes
 2 => No
--9922 => NK ÿ"
+-9922 => NK"
 * differential.element[13].min = 0
 * differential.element[13].max = "1"
 * differential.element[13].type.code = #CodeableConcept
@@ -168,7 +168,7 @@ Classic anticancer drugs, monoclonal antibodies , protein kinase inhibitors, and
 
 * differential.element[14].id = "RelapseAfterFLT.isRadiotherapy"
 * differential.element[14].path = "RelapseAfterFLT.isRadiotherapy"
-* differential.element[14].short = "Radiotherapy ÿ"
+* differential.element[14].short = "Radiotherapy"
 * differential.element[14].definition = "Please specify if the survivor received any radiotherapeutic treatment. Details will be given in the appropriate section "
 * differential.element[14].min = 0
 * differential.element[14].max = "1"
@@ -177,7 +177,7 @@ Classic anticancer drugs, monoclonal antibodies , protein kinase inhibitors, and
 
 * differential.element[15].id = "RelapseAfterFLT.isMajorSurgery"
 * differential.element[15].path = "RelapseAfterFLT.isMajorSurgery"
-* differential.element[15].short = "Major Surgery ÿ"
+* differential.element[15].short = "Major Surgery"
 * differential.element[15].definition = "Please specify if the survivor received any treatment related surgery.  Please consider only major surgeries either performed for diagnosis or treatment.  As for diagnostic surgeries please report only biopsies after craniotomy or abdominal laparoscopic biopsies. Details will be given in the appropriate section.
 Surgeries given for other conditions not treatment related should be reported in the 'Diagnosis' form under 'Other medical conditions, NOT cancer associated'"
 * differential.element[15].min = 0
@@ -187,7 +187,7 @@ Surgeries given for other conditions not treatment related should be reported in
 
 * differential.element[16].id = "RelapseAfterFLT.dateEOT"
 * differential.element[16].path = "RelapseAfterFLT.dateEOT"
-* differential.element[16].short = "Date of end of treatment ÿ"
+* differential.element[16].short = "Date of end of treatment"
 * differential.element[16].definition = "This is the date of the second (or further) end of treatment after the first one. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[16].min = 0
 * differential.element[16].max = "1"

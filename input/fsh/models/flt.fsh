@@ -1,22 +1,22 @@
 Instance: FrontLineTreatment
 InstanceOf: StructureDefinition
-Description: "FrontLineTreatment
+Description: "Front Line Treatment. The first treatment given for a disease. It is often part of a standard set of treatments, such as surgery followed by chemotherapy and radiation. When used by itself, first-line therapy is the one accepted as the best treatment. If it doesn?t cure the disease or it causes severe side effects, other treatment may be added or used instead. Also called induction therapy, primary therapy, and primary treatment.
 Maturity Level  1"
-Title: "FrontLineTreatment"
+Title: "Front Line Treatment"
 Usage: #definition
 * publisher = "PanCareSurPass project"
 * status = #draft
 * url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/FrontLineTreatment"
 * name = "FrontLineTreatment"
-* title = "FrontLineTreatment"
+* title = "Front Line Treatment"
 * status = #draft
 * experimental = true
-* description = "FrontLineTreatment
+* description = "Front Line Treatment. The first treatment given for a disease. It is often part of a standard set of treatments, such as surgery followed by chemotherapy and radiation. When used by itself, first-line therapy is the one accepted as the best treatment. If it doesn?t cure the disease or it causes severe side effects, other treatment may be added or used instead. Also called induction therapy, primary therapy, and primary treatment.
 Maturity Level  1"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
-* mapping[0].name = "FHIR"
+* mapping[0].name = "HL7 FHIR"
 * kind = #logical
 * abstract = true
 * type = "FrontLineTreatment"
@@ -102,7 +102,7 @@ If personalized, please specify.  "
 * differential.element[10].definition = "Chemotherapy ?"
 * differential.element[10].min = 0
 * differential.element[10].max = "1"
-* differential.element[10].type.code = #string
+* differential.element[10].type.code = #CodeableConcept
 * differential.element[11].id = "FrontLineTreatment.isStemCellTransplantation"
 * differential.element[11].path = "FrontLineTreatment.isStemCellTransplantation"
 * differential.element[11].short = "Stem Cell transplantation ?"
