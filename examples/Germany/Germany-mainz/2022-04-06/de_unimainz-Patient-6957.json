@@ -1,0 +1,45 @@
+"resource": {
+      "resourceType": "Patient",
+      "id": "6957",
+      "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-04-06T18:37:28.301+02:00",
+          "source": "#nxa6fVoEU0T9Xvzj"
+      },
+      "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Elsa <b>FROZEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0006</td></tr><tr><td>Date of birth</td><td><span>01 December 1990</span></td></tr></tbody></table></div>"
+      },
+      "extension": [
+          {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                  "city": "KÖLN"
+              }
+          }
+      ],
+      "identifier": [
+          {
+              "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+              "value": "L0006"
+          }
+      ],
+      "name": [
+          {
+              "use": "official",
+              "family": "Frozen",
+              "given": [
+                  "Elsa"
+              ]
+          },
+          {
+              "use": "maiden",
+              "family": "Eiskönig"
+          },
+          {
+              "text": "Elsa Frozen"
+          }
+      ],
+      "gender": "female",
+      "birthDate": "1990-12-01"
+  }

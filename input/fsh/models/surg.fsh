@@ -255,7 +255,7 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 * differential.element[3].mapping[0].map = ".identifier"
 
 * differential.element[4].mapping[0].identity = "fhir"
-* differential.element[4].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ActLocation-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp)"
+* differential.element[4].mapping[0].map = "location.resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp)"
 
 * differential.element[5].mapping[0].identity = "fhir"
 * differential.element[5].mapping[0].map = "Location.description"

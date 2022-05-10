@@ -1,0 +1,763 @@
+{
+    "resourceType": "Bundle",
+    "id": "68f4e1ec-edcb-45e2-9e52-d25e8dc6113c",
+    "meta": {
+        "lastUpdated": "2022-04-28T13:13:45.783+02:00"
+    },
+    "type": "searchset",
+    "total": 15,
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/$everything"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/2953",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "2953",
+                "meta": {
+                    "versionId": "4",
+                    "lastUpdated": "2022-03-30T14:00:11.647+02:00",
+                    "source": "#321jHWVNggL2DqnL"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Lisa <b>SIMPSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0005</td></tr><tr><td>Date of birth</td><td><span>10 February 1998</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "BERLIN"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0005"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Simpson",
+                        "given": [
+                            "Lisa"
+                        ]
+                    },
+                    {
+                        "text": "Lisa Simpson"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "email",
+                        "value": "Chunkylover53@aol.com "
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1998-02-10"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/6952",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6952",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-06T18:29:58.424+02:00",
+                    "source": "#124ffcY8iuGrJUSe"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Mickey <b>MAUS </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0001</td></tr><tr><td>Date of birth</td><td><span>20 December 1997</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "MÜNCHEN"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0001"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Maus",
+                        "given": [
+                            "Mickey"
+                        ]
+                    },
+                    {
+                        "text": "Mickey Maus"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1997-12-20"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/6955",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6955",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-06T18:37:26.795+02:00",
+                    "source": "#CNjvhKGZzNNaH36Q"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Christian <b>HIRO </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0002</td></tr><tr><td>Date of birth</td><td><span>07 July 1993</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "HAMBURG"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0002"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Hiro",
+                        "given": [
+                            "Christian"
+                        ]
+                    },
+                    {
+                        "use": "maiden",
+                        "family": "Fischer"
+                    },
+                    {
+                        "text": "Christian Hiro"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1993-07-07"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/6956",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6956",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-06T18:37:27.597+02:00",
+                    "source": "#AprcbAIALARTwLoR"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Daisy <b>DUCK </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0004</td></tr><tr><td>Date of birth</td><td><span>27 August 1990</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "FRANKFURT"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0004"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Duck",
+                        "given": [
+                            "Daisy"
+                        ]
+                    },
+                    {
+                        "text": "Daisy Duck"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1990-08-27"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/6957",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6957",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-06T18:37:28.301+02:00",
+                    "source": "#nxa6fVoEU0T9Xvzj"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Elsa <b>FROZEN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0006</td></tr><tr><td>Date of birth</td><td><span>01 December 1990</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "KÖLN"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0006"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Frozen",
+                        "given": [
+                            "Elsa"
+                        ]
+                    },
+                    {
+                        "use": "maiden",
+                        "family": "Eiskönig"
+                    },
+                    {
+                        "text": "Elsa Frozen"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1990-12-01"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/6958",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6958",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-06T18:37:28.759+02:00",
+                    "source": "#lyWvr7wTlFMYvjIc"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Gustav <b>GANS </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0007</td></tr><tr><td>Date of birth</td><td><span>14 May 1991</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "ESSEN"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0007"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Gans",
+                        "given": [
+                            "Gustav"
+                        ]
+                    },
+                    {
+                        "text": "Gustav Gans"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1991-05-14"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/6959",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6959",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-06T18:37:29.189+02:00",
+                    "source": "#v28XXnImBehpZDVw"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">James Patrick <b>SULLIVAN </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0008</td></tr><tr><td>Date of birth</td><td><span>05 January 1996</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "MÜNSTER"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0008"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Sullivan",
+                        "given": [
+                            "James",
+                            "Patrick"
+                        ]
+                    },
+                    {
+                        "text": "James P. Sullivan"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1996-01-05"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/6960",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6960",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-06T18:37:29.602+02:00",
+                    "source": "#RuKUpGxspztJ7C8C"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Jiminy <b>GRILLE </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0009</td></tr><tr><td>Date of birth</td><td><span>12 March 1995</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "BREMEN"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0009"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Grille",
+                        "given": [
+                            "Jiminy"
+                        ]
+                    },
+                    {
+                        "text": "Jiminy Grille"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1995-03-12"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Patient/6961",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "6961",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-06T18:37:30.015+02:00",
+                    "source": "#FGQPxzPIhQAHecii"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Sarah <b>SANDERSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0010</td></tr><tr><td>Date of birth</td><td><span>12 December 1996</span></td></tr></tbody></table></div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "city": "Kiel"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+                        "value": "L0010"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "Sanderson",
+                        "given": [
+                            "Sarah"
+                        ]
+                    },
+                    {
+                        "use": "maiden",
+                        "family": "Zeisig"
+                    },
+                    {
+                        "text": "Sarah Sanderson"
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "0123 4567890",
+                        "use": "home"
+                    },
+                    {
+                        "system": "email",
+                        "value": "sa.sanderson@online.de"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1996-12-12"
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Observation/6965",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6965",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-07T12:05:57.907+02:00",
+                    "source": "#GFJWdg7lsiSOuwrL",
+                    "profile": [
+                        "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-diagnosis-eu-pcsp"
+                    ]
+                },
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "29308-4",
+                            "display": "Diagnosis"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/2953"
+                },
+                "effectiveDateTime": "2008-08-07",
+                "performer": [
+                    {
+                        "reference": "Organization/6962"
+                    }
+                ],
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/iccc-3",
+                            "code": "081"
+                        },
+                        {
+                            "system": "http://hl7.org/fhir/sid/icd-10",
+                            "code": "C41.9"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Condition/6966",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "6966",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-07T12:08:43.176+02:00",
+                    "source": "#xfcvgPdmzTA05WpZ",
+                    "profile": [
+                        "https://build.fhir.org/ig/hl7-eu/pcsp/StructureDefinition-Condition-primaryCancer-eu-pcsp.html"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+                        "valueDateTime": "2008-08-07"
+                    },
+                    {
+                        "url": "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-histology-morphology-behavior",
+                        "valueCoding": {
+                            "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+                            "code": "91813"
+                        }
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "081",
+                            "display": "http://terminology.hl7.org/CodeSystem/iccc-3"
+                        }
+                    ]
+                },
+                "bodySite": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier",
+                                "valueCoding": {
+                                    "system": "http://loinc.org",
+                                    "code": "LA4585-1",
+                                    "display": "Left"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+                                "code": "C401"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/2953"
+                },
+                "encounter": {
+                    "reference": "Encounter/6964"
+                },
+                "stage": [
+                    {
+                        "summary": {
+                            "text": "Textual description of stage"
+                        }
+                    }
+                ],
+                "evidence": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/iccc-3",
+                                        "code": "081"
+                                    }
+                                ]
+                            }
+                        ],
+                        "detail": [
+                            {
+                                "reference": "Observation/6965"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Encounter/6964",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "6964",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-07T12:00:20.666+02:00",
+                    "source": "#bGos6DaGrAAaAtca",
+                    "profile": [
+                        "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Encounter-eu-pcsp"
+                    ]
+                },
+                "status": "finished",
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "AMB",
+                    "display": "ambulatory"
+                },
+                "subject": {
+                    "reference": "Patient/2953"
+                },
+                "period": {
+                    "start": "2008-08-07T12:00:19+02:00"
+                },
+                "serviceProvider": {
+                    "reference": "Organization/6962",
+                    "display": "UKSH Luebeck"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Observation/6967",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6967",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-07T12:10:52.941+02:00",
+                    "source": "#ImMi4LFrGZtTUbwx",
+                    "profile": [
+                        "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp"
+                    ]
+                },
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                            "code": "cumulativeDose"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/2953"
+                },
+                "valueQuantity": {
+                    "value": 5,
+                    "unit": "mg/m2",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg/m2"
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/MedicationAdministration/6968",
+            "resource": {
+                "resourceType": "MedicationAdministration",
+                "id": "6968",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-07T12:10:54.039+02:00",
+                    "source": "#I2AcIPAZ5bNYs0No",
+                    "profile": [
+                        "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp",
+                        "valueReference": {
+                            "reference": "Location/6963"
+                        }
+                    },
+                    {
+                        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/resource-relatedInfo",
+                        "valueReference": {
+                            "reference": "Observation/6967"
+                        }
+                    }
+                ],
+                "status": "completed",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://www.whocc.no/atc",
+                            "code": "L01BB05",
+                            "display": "Fludarabina"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/2953"
+                },
+                "reasonReference": [
+                    {
+                        "reference": "Condition/6966"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir/Organization/6962",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "6962",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2022-04-07T11:54:33.886+02:00",
+                    "source": "#4ekjcwaVzWcoG50n",
+                    "profile": [
+                        "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Organization-center-eu-pcsp"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/sid/org-id-mainz",
+                        "value": "2"
+                    }
+                ],
+                "name": "Universitaetsklinikum Schleswig-Holstein Campus Luebeck",
+                "address": [
+                    {
+                        "city": "Luebeck",
+                        "country": "Germany"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

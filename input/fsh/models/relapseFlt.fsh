@@ -1,7 +1,7 @@
 Instance: RelapseDuringFLT
 InstanceOf: StructureDefinition
 Description: "Progression-Relapse during FLT
-Marturity Level: 1"
+Maturity Level: 2 - Ready for Review"
 Title: "Progression-Relapse during FLT"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -12,7 +12,7 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * description = "Progression-Relapse during FLT
-Marturity Level: 1"
+Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -48,7 +48,7 @@ Marturity Level: 1"
 
 * differential.element[4].id = "RelapseDuringFLT.date"
 * differential.element[4].path = "RelapseDuringFLT.date"
-* differential.element[4].short = "Date ÿ"
+* differential.element[4].short = "Date"
 * differential.element[4].definition = "Report the date of the event in DD/MM/YYYY format. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[4].min = 0
 * differential.element[4].max = "1"
@@ -79,7 +79,7 @@ Marturity Level: 1"
 * differential.element[6].id = "RelapseDuringFLT.site"
 * differential.element[6].path = "RelapseDuringFLT.site"
 * differential.element[6].short = "If distant, site of metastases"
-* differential.element[6].definition = "If distant, specify site  (text)"
+* differential.element[6].definition = "If distant or comobined, specify site  (text)"
 * differential.element[6].min = 0
 * differential.element[6].max = "1"
 * differential.element[6].type.code = #string

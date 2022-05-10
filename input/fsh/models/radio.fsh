@@ -638,13 +638,13 @@ Yes;  No;  NK ÿ"
 * differential.element[13].mapping[0].map = ".usedCode"
 
 * differential.element[14].mapping[0].identity = "fhir"
-* differential.element[14].mapping[0].map = ".extension(http://hl7.org/fhir/StructureDefinition/procedure-method).valueCodeableConcept"
+* differential.element[14].mapping[0].map = ".extension('http://hl7.org/fhir/StructureDefinition/procedure-method').valueCodeableConcept"
 
 * differential.element[15].mapping[0].identity = "fhir"
-* differential.element[15].mapping[0].map = ".location.resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope).valueCodeableConcept"
+* differential.element[15].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope').valueCodeableConcept"
 
 * differential.element[16].mapping[0].identity = "fhir"
-* differential.element[16].mapping[0].map = ".location.resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope).valueCodeableConcept"
+* differential.element[16].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope').valueCodeableConcept"
 
 * differential.element[17].mapping[0].identity = "fhir"
 * differential.element[17].mapping[0].map = "TBD"

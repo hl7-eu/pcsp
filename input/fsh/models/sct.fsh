@@ -16,7 +16,7 @@ Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
-* mapping[0].name = "FHIR"
+* mapping[0].name = "HL7 FHIR"
 * mapping[1].identity = "cda"
 * mapping[1].uri = "http://hl7.org/v3/cda"
 * mapping[1].name = "CDA (R2)"
@@ -100,7 +100,7 @@ Maturity Level: 2 - Ready for Review"
 * differential.element[10].definition = "Date of the reinfusion of hematopoietic stem cells. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[10].min = 0
 * differential.element[10].max = "*"
-* differential.element[10].type.code = #BackboneElement
+* differential.element[10].type.code = #dateTime
 * differential.element[11].id = "StemCellTransplantation.transplantType"
 * differential.element[11].path = "StemCellTransplantation.transplantType"
 * differential.element[11].short = "Type of transplant"
@@ -340,7 +340,7 @@ No calculations are made on these data."
 * differential.element[3].mapping[0].map = ".reasonReference"
 
 * differential.element[4].mapping[0].identity = "fhir"
-* differential.element[4].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ActLocation-eu-pcsp).conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp)"
+* differential.element[4].mapping[0].map = "location.resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp)"
 
 * differential.element[5].mapping[0].identity = "fhir"
 * differential.element[5].mapping[0].map = "Location.description"

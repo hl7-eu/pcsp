@@ -1,0 +1,45 @@
+  "resource": {
+      "resourceType": "Patient",
+      "id": "6955",
+      "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-04-06T18:37:26.795+02:00",
+          "source": "#CNjvhKGZzNNaH36Q"
+      },
+      "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Christian <b>HIRO </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0002</td></tr><tr><td>Date of birth</td><td><span>07 July 1993</span></td></tr></tbody></table></div>"
+      },
+      "extension": [
+          {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                  "city": "HAMBURG"
+              }
+          }
+      ],
+      "identifier": [
+          {
+              "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+              "value": "L0002"
+          }
+      ],
+      "name": [
+          {
+              "use": "official",
+              "family": "Hiro",
+              "given": [
+                  "Christian"
+              ]
+          },
+          {
+              "use": "maiden",
+              "family": "Fischer"
+          },
+          {
+              "text": "Christian Hiro"
+          }
+      ],
+      "gender": "male",
+      "birthDate": "1993-07-07"
+  }

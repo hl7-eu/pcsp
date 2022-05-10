@@ -1,13 +1,21 @@
 //====== RuleSet =====================================
 
 RuleSet: ProcedureRadiotherapyPcspRules
-* extension contains ResourceRelatedInfo named relatedCumulativeDose 0..1
+* extension contains 
+	ResourceRelatedInfo named relatedCumulativeDose 0..1
+	and $procedure-method named procedureMethod 0..1
+	and RadiotherapyEnergyOrIsotope named energyOrIsotope 0..*
+	
 * extension[relatedCumulativeDose].valueReference only Reference(CumulativeDoseRadObsPcsp)
+* extension[energyOrIsotope]
+* extension[procedureMethod].valueCodeableConcept from BrachytherapyType
+
+* identifier ^short = "External Identifiers for this radiotherapy / boost"
 * status MS
 * category MS // add Radiotherapy
 * category = $sct#108290001 "Radiotherapy" // part of GPS
 * code 1..1 MS // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
-* code from RadiotherapyTypeVs 
+* code from RadiotherapyTypeVs (extensible)
 // add slice on coding to allow more precise data
 * subject only Reference(PatientPcsp)	
 * subject MS
@@ -39,14 +47,10 @@ Title:    "Procedure Radiotherapy"
 Description: "This profile defines how to represent Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
-
-* extension contains $procedure-method named procedureMethod 0..1
-* extension[procedureMethod].valueCodeableConcept from BrachytherapyType
 * insert ProcedureRadiotherapyPcspRules
 * location only Reference(LocationPcsp)
-* identifier ^short = "External Identifiers for this radiotherapy"
 * usedCode ^short = "Coded items used during the procedure"
-* usedCode from RadiotherapyDeviceType // update the value set
+* usedCode from RadiotherapyDeviceType (extensible) // update the value set
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureRadiotherapyBoostPcsp
@@ -55,11 +59,9 @@ Id:       Procedure-radiotheraphyBoost-eu-pcsp
 Title:    "Procedure Radiotherapy Boost"
 Description: "This profile defines how to represent Procedures in FHIR for describing a set of data required by PanCareSurPass for Radiotherapy Boosts" //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-* extension contains $procedure-method named procedureMethod 0..1
-* extension[procedureMethod].valueCodeableConcept from BrachytherapyType
+
 * insert ProcedureRadiotherapyPcspRules
-* code.coding = $sct#445232009 "Boost radiation therapy"
-* identifier ^short = "External Identifiers for this radiotherapy boost"
+* code = $sct#445232009 "Boost radiation therapy"
 * partOf 1..
 * partOf only Reference (ProcedureRadiotherapyPcsp)
 

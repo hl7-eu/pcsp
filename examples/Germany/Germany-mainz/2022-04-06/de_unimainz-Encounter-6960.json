@@ -1,0 +1,46 @@
+
+
+
+"resource": {
+      "resourceType": "Patient",
+      "id": "6960",
+      "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-04-06T18:37:29.602+02:00",
+          "source": "#RuKUpGxspztJ7C8C"
+      },
+      "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Jiminy <b>GRILLE </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0009</td></tr><tr><td>Date of birth</td><td><span>12 March 1995</span></td></tr></tbody></table></div>"
+      },
+      "extension": [
+          {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                  "city": "BREMEN"
+              }
+          }
+      ],
+      "identifier": [
+          {
+              "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+              "value": "L0009"
+          }
+      ],
+      "name": [
+          {
+              "use": "official",
+              "family": "Grille",
+              "given": [
+                  "Jiminy"
+              ]
+          },
+          {
+              "text": "Jiminy Grille"
+          }
+      ],
+      "gender": "male",
+      "birthDate": "1995-03-12"
+  }
+
+

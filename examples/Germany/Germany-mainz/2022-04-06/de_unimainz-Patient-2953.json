@@ -1,0 +1,47 @@
+ "resource": {
+     "resourceType": "Patient",
+     "id": "2953",
+     "meta": {
+         "versionId": "4",
+         "lastUpdated": "2022-03-30T14:00:11.647+02:00",
+         "source": "#321jHWVNggL2DqnL"
+     },
+     "text": {
+         "status": "generated",
+         "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">Lisa <b>SIMPSON </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>L0005</td></tr><tr><td>Date of birth</td><td><span>10 February 1998</span></td></tr></tbody></table></div>"
+     },
+     "extension": [
+         {
+             "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+             "valueAddress": {
+                 "city": "BERLIN"
+             }
+         }
+     ],
+     "identifier": [
+         {
+             "system": "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-mainz",
+             "value": "L0005"
+         }
+     ],
+     "name": [
+         {
+             "use": "official",
+             "family": "Simpson",
+             "given": [
+                 "Lisa"
+             ]
+         },
+         {
+             "text": "Lisa Simpson"
+         }
+     ],
+     "telecom": [
+         {
+             "system": "email",
+             "value": "Chunkylover53@aol.com "
+         }
+     ],
+     "gender": "female",
+     "birthDate": "1998-02-10"
+ }
