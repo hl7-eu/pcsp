@@ -49,9 +49,13 @@ Description: "This profile defines how to represent MedicationAdministration in 
 //-------------------------------------------------------------------------------------------
 
 * insert MedicationAdministrationPcspRules
+
+/*=== REMOVED NOT PRESENT IN THE LOGICAL MODEL MAPPING 
 * extension contains $workflow-supportingInfo named supportingInfo 0..*
 * extension[supportingInfo] 0..*
 * extension[supportingInfo].valueReference only Reference(DocumentReference)
+==== */
+* effective[x] ^short = "When the chemotherapy was administered"
 * effectivePeriod MS
 * dosage.dose 
   * ^short = "Amount per dose"

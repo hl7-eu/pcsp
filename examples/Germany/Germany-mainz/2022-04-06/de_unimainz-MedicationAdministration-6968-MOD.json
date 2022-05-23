@@ -12,7 +12,7 @@
      },
      "extension": [
          {
-             "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp",
+             "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/event-location",
              "valueReference": {
                  "reference": "Location/6963"
              }
@@ -30,13 +30,17 @@
              {
                  "system": "http://www.whocc.no/atc",
                  "code": "L01BB05",
-                 "display": "Fludarabina"
+                 "display": "fludarabine"
              }
          ]
      },
      "subject": {
          "reference": "Patient/2953"
      },
+	 "effectivePeriod": {
+         "end": "2022-04-11"
+     }, 
+	 
      "reasonReference": [
          {
              "reference": "Condition/6966"

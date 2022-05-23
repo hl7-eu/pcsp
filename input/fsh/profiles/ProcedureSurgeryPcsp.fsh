@@ -20,6 +20,8 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 
 * text ^short = "Textual description of the surgical procedure"
 * identifier ^short = "External Identifiers for this surgical procedure"
+* partOf only Reference (ProcedureSurgeryPcsp)
+* partOf ^short = "Reference to the parent surgery procedure"
 * status MS
 * category 1..
 * category = $sct#387713003 "Surgical procedure" // check GPS

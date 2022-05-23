@@ -2,11 +2,11 @@
 
 RuleSet: ProcedureRadiotherapyPcspRules
 * extension contains 
-	ResourceRelatedInfo named relatedCumulativeDose 0..1
+	ResourceRelatedInfo named relatedDose 0..1
 	and $procedure-method named procedureMethod 0..1
 	and RadiotherapyEnergyOrIsotope named energyOrIsotope 0..*
 	
-* extension[relatedCumulativeDose].valueReference only Reference(CumulativeDoseRadObsPcsp)
+* extension[relatedDose].valueReference only Reference(TotalDoseRadObsPcsp)
 * extension[energyOrIsotope]
 * extension[procedureMethod].valueCodeableConcept from BrachytherapyType
 
@@ -66,11 +66,11 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * partOf only Reference (ProcedureRadiotherapyPcsp)
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  CumulativeDoseRadObsPcsp
+Profile:  TotalDoseRadObsPcsp
 Parent:   Observation
-Id:       Observation-cumulativeDoseRad-eu-pcsp
-Title:    "Observation Radiotherapy Cumulative Dose PCSP"
-Description: "This profile defines how to represent Radiotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project."
+Id:       Observation-totalDoseRad-eu-pcsp
+Title:    "Observation Radiotherapy Total Dose PCSP"
+Description: "This profile defines how to represent Radiotherapy Total Dose in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
 * insert CumulativeDoseObsRules

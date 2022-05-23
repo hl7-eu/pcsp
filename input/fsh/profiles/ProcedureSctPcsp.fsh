@@ -58,7 +58,7 @@ Description: """This profile defines how to represent Graft versus host disease 
 * onset[x] MS
 * encounter only Reference (Encounter or EncounterPcsp)
 * subject only Reference (PatientPcsp)
-* bodySite 
+* bodySite ^short = "Organs affected by GVHD"
 
 * stage
   * summary.coding 0.. MS
