@@ -1,9 +1,19 @@
-### Overview
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum.
+<!-- 
+extensions
+
+{% for sd_hash in site.data.structuredefinitions -%}
+  {%- assign sd = sd_hash[1] -%}
+  {%- if sd.kind  == "complex-type" and sd.type != "Extension" -%}
+   <li> <a href="{{sd.path}}">{{sd.name}}</a>{{sd.title}}. {{sd.description}} </li>
+  {%- endif -%}
+{%- endfor -%} -->
+
+<ul>
+{% for sd_hash in site.data.structuredefinitions -%}
+  {%- assign sd = sd_hash[1] -%}
+  {%- if sd.kind  == "logical" -%}
+   <li> <a href="{{sd.path}}">{{sd.name}}</a>{{sd.title}}. {{sd.description}} </li>
+  {%- endif -%}
+{%- endfor -%}
+</ul>

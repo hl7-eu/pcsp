@@ -32,11 +32,12 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * subject only Reference(PatientPcsp)	
 * subject MS
 
-* performed[x] 1..
-* performedDateTime ^short = "Date of the surgical procedure"
+// * performed[x] 1..
+* performedDateTime 1..
+  * ^short = "Date of the surgical procedure"
 * reasonReference 1.. MS // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
-* bodySite 0..1 MS 
+// * bodySite 0..1 MS 
 * bodySite from AffectedOrganVs (extensible)
   * extension contains LateralityQualifier named laterality 0..1
   * extension[laterality].valueCodeableConcept from LateralityQualifierVS 
