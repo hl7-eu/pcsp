@@ -22,22 +22,7 @@ RuleSet: CumulativeDoseObsRules
 //====== Profiles =====================================
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  CarePlanPcsp
-Parent:   CarePlan
-Id:       CarePlan-eu-pcsp
-Title:    "CarePlan PCSP"
-Description: "This profile defines how to represent Care Plan in FHIR for the purpose of the PanCareSurPass project."
-//-------------------------------------------------------------------------------------------
-* identifier MS
-* status MS
-* intent MS
-* title 1.. MS
-* subject MS
-* subject only Reference(PatientPcsp)
-* period MS
-* created MS
-* author MS
+
 
 
 
