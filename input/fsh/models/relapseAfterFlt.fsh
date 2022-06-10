@@ -1,7 +1,7 @@
 Instance: RelapseAfterFLT
 InstanceOf: StructureDefinition
 Description: "Progression-Relapse after FLT
-Marturity Level: 1 - Profiles in progress"
+Maturity Level: 1 - Profiles in progress"
 Title: "Progression-Relapse after FLT"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -12,7 +12,7 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * description = "Progression-Relapse after FLT
-Marturity Level: 1 - Profiles in progress"
+Maturity Level: 1 - Profiles in progress"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
