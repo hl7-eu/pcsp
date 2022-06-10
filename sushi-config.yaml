@@ -51,6 +51,8 @@ pages:
     title: Sequence diagrams
   collaboration.md:
     title: Collaboration diagrams
+  profiles.md:
+    title: Profiles
   downloads.html:
     title: Useful Downloads
   changes.html:
@@ -64,6 +66,8 @@ menu:
     Collaboration diagrams: collaboration.html
     Sequence diagrams: sequence.html
     Logical models: logicalModel.html
+  Specifications:
+    Profiles: profiles.html
   Maturity Model: maturity.html
   Artifact Index: artifacts.html			
   Support:
