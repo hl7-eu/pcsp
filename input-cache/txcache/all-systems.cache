@@ -20,26 +20,6 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA4585-1",
-  "display" : "Left"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-laterality-qualifier-vs", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
-v: {
-  "display" : "Left",
-  "code" : "LA4585-1",
-  "system" : "http://loinc.org"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "code" : "ES"
-}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "lang":"ES", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "Error from server: Access violation at address 0000000000C592A8 in module 'FHIRServer.exe'. Read of address 0000000000000050",
-  "class" : "SERVER_ERROR"
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "code" : "es-ES"
 }, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "lang":"es-ES", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {

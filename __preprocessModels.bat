@@ -10,7 +10,7 @@ CALL :buildFshFiles input\fsh\models\sct
 CALL :buildFshFiles input\fsh\models\flt
 CALL :buildFshFiles input\fsh\models\relapseFlt
 CALL :buildFshFiles input\fsh\models\other
-CALL :buildFshFiles input\fsh\models\suggestion
+REM CALL :buildFshFiles input\fsh\models\suggestion
 CALL :buildFshFiles input\fsh\models\relapseAfterFlt
 
 

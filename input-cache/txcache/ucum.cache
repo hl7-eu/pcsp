@@ -11,20 +11,22 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://unitsofmeasure.org",
-  "code" : "gr/m2"
+  "code" : "g/m2"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "severity" : "error",
-  "error" : "Error processing Unit: 'gr/m2': The unit \"gr\" is unknown at character 1; The code \"gr/m2\" is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#gr/m2) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+  "display" : "g/m2",
+  "code" : "g/m2",
+  "system" : "http://unitsofmeasure.org"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://unitsofmeasure.org",
-  "code" : "UI/m2"
+  "code" : "[iU]/m2"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "severity" : "error",
-  "error" : "Error processing Unit: 'UI/m2': The unit \"UI\" is unknown at character 1; The code \"UI/m2\" is not valid in the system http://unitsofmeasure.org; The code provided (http://unitsofmeasure.org#UI/m2) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+  "display" : "[iU]/m2",
+  "code" : "[iU]/m2",
+  "system" : "http://unitsofmeasure.org"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -77,10 +79,10 @@ v: {
         "code" : "mg/m2"
       },
       {
-        "code" : "gr/m2"
+        "code" : "g/m2"
       },
       {
-        "code" : "UI/m2"
+        "code" : "[iU]/m2"
       }]
     }]
   }
@@ -91,8 +93,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:c7199fd4-e1e0-48b2-9070-6098639733fe",
-    "timestamp" : "2022-03-25T13:31:09.689Z",
+    "identifier" : "urn:uuid:e482bf98-2edf-4740-b73c-08c26a1ed673",
+    "timestamp" : "2022-06-10T20:42:39.631Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -105,6 +107,16 @@ e: {
       "system" : "http://unitsofmeasure.org",
       "code" : "mg/m2",
       "display" : "mg/m2"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "g/m2",
+      "display" : "g/m2"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "[iU]/m2",
+      "display" : "[iU]/m2"
     }]
   }
 },
@@ -138,8 +150,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:689583b2-77a0-4840-a64c-3576d61040f7",
-    "timestamp" : "2022-03-25T13:31:15.299Z",
+    "identifier" : "urn:uuid:d27a6834-44b6-4b21-8222-06aadc1b3a07",
+    "timestamp" : "2022-06-10T20:42:45.365Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -162,80 +174,6 @@ e: {
       "system" : "http://unitsofmeasure.org",
       "code" : "kV",
       "display" : "kilovolt"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://unitsofmeasure.org",
-  "code" : "g/m2"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "g/m2",
-  "code" : "g/m2",
-  "system" : "http://unitsofmeasure.org"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://unitsofmeasure.org",
-  "code" : "[iU]/m2"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "[iU]/m2",
-  "code" : "[iU]/m2",
-  "system" : "http://unitsofmeasure.org"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "inactive" : true,
-    "include" : [{
-      "system" : "http://unitsofmeasure.org",
-      "concept" : [{
-        "code" : "mg/m2"
-      },
-      {
-        "code" : "g/m2"
-      },
-      {
-        "code" : "[iU]/m2"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:3cb077fa-9411-4e46-86fd-28da46adfc35",
-    "timestamp" : "2022-03-26T11:31:02.129Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueUri" : "http://unitsofmeasure.org|2.0.1"
-    }],
-    "contains" : [{
-      "system" : "http://unitsofmeasure.org",
-      "code" : "mg/m2",
-      "display" : "mg/m2"
-    },
-    {
-      "system" : "http://unitsofmeasure.org",
-      "code" : "g/m2",
-      "display" : "g/m2"
-    },
-    {
-      "system" : "http://unitsofmeasure.org",
-      "code" : "[iU]/m2",
-      "display" : "[iU]/m2"
     }]
   }
 },
