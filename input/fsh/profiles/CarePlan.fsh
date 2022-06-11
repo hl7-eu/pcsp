@@ -23,7 +23,7 @@ Description: "This profile defines how to represent the Care Plan proposed by th
 * activity 1..
   * detail
     * code from Recommendation // value set to be updated
-    * reasonCode from Recommendation // change the value set
+    * reasonCode from RiskCondition // change the value set
     * reasonReference only Reference(ObservationRiskFactor)
     * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
     * status ^short = "Progress being made"
