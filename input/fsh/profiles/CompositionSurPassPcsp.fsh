@@ -13,18 +13,6 @@ RuleSet: SectionCommon
 
 RuleSet: SubSectionStructure
 
-* section ^slicing.discriminator.type = #pattern
-* section ^slicing.discriminator.path = "code"
-* section ^slicing.rules = #open
-* section ^slicing.description = "Slice based on the coding.code pattern"
-* section contains
-   chemotherapy			  0..1 and		 
-   stemCellTransplantation  0..1 and
-   radiotherapy			  0..1 and
-   majorSurgery			  0..1 and
-   otherInfos				  0..1 and
-   medicalSuggestion 		  0..1
-
 * section[chemotherapy]
   * insert SectionCommon
   * code ^short = "Chemotherapy"
@@ -91,16 +79,52 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
   * entry only Reference(	ConditionPrimaryCancerPcsp or
 							ProcedureFltPcsp
 						)
-  * section 1..*
+						
   * insert SectionCommon
+  
+  // slice the diagnosis-FLT section
+  * section 1..*
+    * ^slicing.discriminator.type = #pattern
+    * ^slicing.discriminator.path = "code"
+    * ^slicing.rules = #open
+    * ^slicing.description = "Slice based on the coding.code pattern"
+  
+  * section contains
+         chemotherapy			  0..1 and		 
+         stemCellTransplantation  0..1 and
+         radiotherapy			  0..1 and
+         majorSurgery			  0..1 and
+         otherInfos				  0..1 and
+         medicalSuggestion 		  0..1
+
+      
+  // add common sub sections
   * insert SubSectionStructure
 
-  * section contains relapseAfterEOT 0..
+  // add the relapse After EOT section
+  * section contains relapseAfterEOT 0..  
+  
+  // slice the relapse After EOT sub-sections
+  * section[relapseAfterEOT].section ^slicing.discriminator.type = #pattern
+  * section[relapseAfterEOT].section ^slicing.discriminator.path = "code"
+  * section[relapseAfterEOT].section ^slicing.rules = #open
+  * section[relapseAfterEOT].section ^slicing.description = "Slice based on the coding.code pattern"
+  
+  * section[relapseAfterEOT].section contains 
+         chemotherapy			  0..1 and		 
+         stemCellTransplantation  0..1 and
+         radiotherapy			  0..1 and
+         majorSurgery			  0..1 and
+         otherInfos				  0..1 and
+         medicalSuggestion 		  0..1
+		
+// --- relapseAfterEOT Sub Sections begin 
   * section[relapseAfterEOT]
-    * code ^short = "Relapse After EOT"
-    * code = CsGenericPcsp#section-relapseAfterEOT
-    * insert SectionCommon
-    // * insert SubSectionStructure
+  // add common sub sections
+    * insert SubSectionStructure
+	
+	
+// --- relapseAfterEOT Sub Sections end
 	
   * section contains otherConditions 0..1
   * section[otherConditions]
