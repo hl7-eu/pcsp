@@ -84,6 +84,16 @@ Usage: #example
 * period.start = "2022-05-17"
 * addresses = Reference(PrimaryCancerHulafe-1) "Carcinoma tiroides"
 * created = "2022-05-12"
+
+* activity[+].detail
+  * code =  CsRecomandationPcsp#passport_n.GUIDELINE_T2.GUIDELINE_T2 "Subsequent breast cancer"
+  * reasonCode =  CsRiskConditionPcsp#passport_n.GUIDELINE_T2.GUIDELINE_T2 "Subsequent breast cancer"
+  * reasonReference = Reference(ObservationRiskFactor-2) "RT >= 10 Gy to a vol exposing the breasts"
+// * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
+  * status = #not-started
+  * description = "A healthy lifestyle helps to maintain physical and mental wellbeing, as well as preventing possible diseases such as cardiovascular complications, tumors, and psychological problems. We therefore recommend you to: (1) Maintain a normal body weight and engage in regular physical activity. (2) Eat plenty of fruits and vegetables, and reduce fat, sugar, and salt intake. (3) Don't smoke and avoid excessive alcohol intake. (4) Maintain proper dental hygiene. (5) Avoid excessive sun exposure and remember to use high-protection sunscreen.(6) Check your blood pressure periodically.	(7) Report to your health care provider any experience of chronic pain, excessive fatigue and/or deterioration of performance in your daily activities (study, work and/or exercise). (8) Adhere to all cancer screening programs that will be offered by the health system."
+
+
 * activity[+].detail
   * code =  CsRecomandationPcsp#passport_n.GUIDELINE_T1.GUIDELINE_T1 "Subsequent thyroid cancer"
   * reasonCode =  CsRiskConditionPcsp#passport_n.GUIDELINE_T1.GUIDELINE_T1 "Subsequent thyroid cancer"
@@ -91,6 +101,7 @@ Usage: #example
 // * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
   * status = #not-started
   * description = "Counselling regarding the increased risk for developing differentiated thyroid to inform their HCP if they detect a thyroid mass (independent of the presence or absence of associated symptoms), every 5 years - Physical examination of the neck as part of a complete physical examination, whenever a survivor is assessed by a HCP - Counselling regarding options for differentiated thyroid carcinoma surveillance, at least every 5 years If the decision to commence surveillance is made, make a shared decision for one of these two surveillance modalities: - Neck palpation, every 1-2 years, starting 5 years after radiotherapy, or - Thyroid ultrasonographyw, every 3-5 years, starting 5 years after radiotherapy"
+
 * activity[+].detail
   * code =  CsRecomandationPcsp#passport_n.GUIDELINE_T2.GUIDELINE_T2 "Subsequent breast cancer"
   * reasonCode =  CsRiskConditionPcsp#passport_n.GUIDELINE_T2.GUIDELINE_T2 "Subsequent breast cancer"

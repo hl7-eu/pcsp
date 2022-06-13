@@ -28,6 +28,32 @@ RuleSet: CancerConditionCommonRules
 //====== Profiles =====================================
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ObservationHereditaryPredispositionPcsp
+Parent:   Observation
+Id:       Observation-predisposition-eu-pcsp
+Title:    "Observation Hereditary Predisposition"
+Description: "This profile defines how to represent Hereditary Predispositions in HL7 FHIR for the purpose of the PanCareSurPass project.
+\r\n Maturity Model: 2 - Ready for review"
+//-------------------------------------------------------------------------------------------
+* subject 1..
+* subject only Reference(PatientPcsp)
+* code 1..1 
+* code = $sct#47708004 "Genetic predisposition" 
+* valueCodeableConcept 1..1
+
+* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding ^slicing.description = "Slice based on the values set binding"
+* valueCodeableConcept.coding contains 
+	orpha 0..1 MS and
+	icd10 0..1 MS
+* valueCodeableConcept.coding[orpha] from OrphaHereditaryPredisposition
+* valueCodeableConcept.coding[icd10] from ICD10HereditaryPredisposition
+* component 0..0 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ObservationDiagnosisPcsp
 Parent:   Observation
 Id:       Observation-diagnosis-eu-pcsp
@@ -35,6 +61,7 @@ Title:    "Observation Diagnosis details PCSP"
 Description: "This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project.
 \r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
+* subject 1..
 * subject only Reference(PatientPcsp)
 * effectiveDateTime 1.. MS
 * code 1..1 
@@ -147,9 +174,20 @@ This profile should be also used for documenting primary cancer relapses.
   * detail.display ^short = "Text alternative for the resource (immunology)"
 * evidence[predisposition]
   * ^short = "Predisposition" 
-  * code = $sct#32895009 "Hereditary disease" // check if it needs to be changed with a Value Set
+  // --- CHANGED 2022 JUNE 13
+  // * code = $sct#32895009 "Hereditary disease" // check if it needs to be changed with a Value Set
+  * code from HereditaryPredispositionDisease
   * detail only Reference (Condition or Observation or FamilyMemberHistory or DocumentReference)
   * detail.display ^short = "Text alternative for the resource (predisposition)"
+  
+  * detail ^slicing.discriminator.type = #type
+  * detail ^slicing.discriminator.path = "$this.resolve()"
+  * detail ^slicing.rules = #open
+  * detail ^slicing.description = "Slice based on the reference type"
+  * detail contains 
+	observation	0..1 MS
+  * detail[observation] only Reference (ObservationHereditaryPredispositionPcsp)
+
 * note ^short = "Additional information about the Cancer Condition"
 
 

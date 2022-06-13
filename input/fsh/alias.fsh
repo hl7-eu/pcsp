@@ -14,6 +14,7 @@ Alias: $icd03 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $loinc =  http://loinc.org
 Alias: $icd10 = http://hl7.org/fhir/sid/icd-10
 Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $orpha =  https://www.orpha.net
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum =  http://unitsofmeasure.org
 Alias: $v2-0131 = http://terminology.hl7.org/CodeSystem/v2-0131

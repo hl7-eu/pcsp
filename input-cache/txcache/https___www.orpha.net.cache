@@ -1,0 +1,231 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "https://www.orpha.net",
+      "concept" : [{
+        "code" : "145",
+        "display" : "Hereditary breast and ovarian cancer syndrome"
+      },
+      {
+        "code" : "524",
+        "display" : "Li-Fraumeni Syndrome"
+      },
+      {
+        "code" : "201",
+        "display" : "Cowden Syndrome"
+      },
+      {
+        "code" : "109",
+        "display" : "Bannayan-Riley-Ruvalcaba syndrome"
+      },
+      {
+        "code" : "100",
+        "display" : "Ataxia telangiectasia"
+      },
+      {
+        "code" : "443909",
+        "display" : "Hereditary nonpolyposis colon cancer"
+      },
+      {
+        "code" : "144",
+        "display" : "Lynch  Syndrome"
+      },
+      {
+        "code" : "733",
+        "display" : "Familial adenomatous polyposis"
+      },
+      {
+        "code" : "220460",
+        "display" : "Attenuated familial adenomatous polyposis"
+      },
+      {
+        "code" : "423776",
+        "display" : "Hereditary gastric cancer"
+      },
+      {
+        "code" : "26106",
+        "display" : "Hereditary diffuse gastric cancer "
+      },
+      {
+        "code" : "2929",
+        "display" : "Juvenile polyposis syndrome"
+      },
+      {
+        "code" : "2869",
+        "display" : "Peutz-Jeghers syndrome"
+      },
+      {
+        "code" : "404560",
+        "display" : "Familial atypical multiple mole melanoma syndrome"
+      },
+      {
+        "code" : "676",
+        "display" : "Hereditary chronic pancreatitis"
+      },
+      {
+        "code" : "99818",
+        "display" : "Turcot Syndrome with polyposis"
+      },
+      {
+        "code" : "99817",
+        "display" : "Non-polyposis Turcot syndrome"
+      },
+      {
+        "code" : "44890",
+        "display" : "Gastrointestinal stromal tumor"
+      },
+      {
+        "code" : "97286",
+        "display" : "Carney-Stratakis Syndrome "
+      },
+      {
+        "code" : "618",
+        "display" : "Familial Melanoma "
+      },
+      {
+        "code" : "377",
+        "display" : "Gorlin syndrome"
+      },
+      {
+        "code" : "363700",
+        "display" : " Neurofibromatosis type 1 due to NF1 mutation or intragenic deletion"
+      },
+      {
+        "code" : "637",
+        "display" : "Neurofibromatosis type 2"
+      },
+      {
+        "code" : "805",
+        "display" : "Tuberous sclerosis complex"
+      },
+      {
+        "code" : "1359",
+        "display" : "Carney Complex"
+      },
+      {
+        "code" : "587",
+        "display" : "Muir Torre syndrome"
+      },
+      {
+        "code" : "910",
+        "display" : "Xeroderma pigmentosum"
+      },
+      {
+        "code" : "2909",
+        "display" : "Rothmund Thomson syndrome"
+      },
+      {
+        "code" : "125",
+        "display" : "Bloom syndrome"
+      },
+      {
+        "code" : "84",
+        "display" : "Fanconi anemia"
+      },
+      {
+        "code" : "811",
+        "display" : "Shwachman-Diamond syndrome"
+      },
+      {
+        "code" : "647",
+        "display" : "Nijmegen breakage syndrome"
+      },
+      {
+        "code" : "3261",
+        "display" : "Autoimmune lymphoproliferative syndrome"
+      },
+      {
+        "code" : "906",
+        "display" : "Wiskott-Aldrich syndrome"
+      },
+      {
+        "code" : "1572",
+        "display" : "Common variable immune deficiency"
+      },
+      {
+        "code" : "2442",
+        "display" : "X-linked lymphoproliferative syndrome"
+      },
+      {
+        "code" : "1331",
+        "display" : "Familial prostate cancer"
+      },
+      {
+        "code" : "373",
+        "display" : "Simpson-Golabi-Behmel syndrome"
+      },
+      {
+        "code" : "892",
+        "display" : "von Hippel-Lindau syndrome"
+      },
+      {
+        "code" : "116",
+        "display" : "Beckwith-Wiedemann syndrome"
+      },
+      {
+        "code" : "654",
+        "display" : "Nephroblastoma"
+      },
+      {
+        "code" : "893",
+        "display" : "WAGR syndrome"
+      },
+      {
+        "code" : "122",
+        "display" : "Birt-Hogg-Dube´ syndrome"
+      },
+      {
+        "code" : "47044",
+        "display" : "Hereditary papillary renal cancer syndrome"
+      },
+      {
+        "code" : "231108",
+        "display" : "Familial rhabdoid tumor"
+      },
+      {
+        "code" : "29072",
+        "display" : "Hereditary pheochromocytoma-paraganglioma"
+      },
+      {
+        "code" : "357027",
+        "display" : "Hereditary retinoblastoma"
+      },
+      {
+        "code" : "321",
+        "display" : "Multiple osteochondromas"
+      },
+      {
+        "code" : "523",
+        "display" : "Hereditary leiomyomatosis and renal cell cancer"
+      },
+      {
+        "code" : "902",
+        "display" : "Werner syndrome"
+      },
+      {
+        "code" : "652",
+        "display" : "Multiple endocrine neoplasia type 1"
+      },
+      {
+        "code" : "653",
+        "display" : "Multiple endocrine neoplasia type 2"
+      },
+      {
+        "code" : "319487",
+        "display" : "Familial follicular or papillary thyroid cancer"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://www.orpha.net"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-orpha-predisposition-eu-pcsp", "version": "0.1.0"}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://www.orpha.net"
+}
+-------------------------------------------------------------------------------------

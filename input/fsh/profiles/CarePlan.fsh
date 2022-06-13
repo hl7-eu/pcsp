@@ -22,8 +22,8 @@ Description: "This profile defines how to represent the Care Plan proposed by th
 * supportingInfo only Reference ( ObservationRiskFactor or Resource)
 * activity 1..
   * detail
-    * code from Recommendation // value set to be updated
-    * reasonCode from RiskCondition // change the value set
+    * code from Recommendation (extensible) // value set to be updated
+    * reasonCode from RiskCondition (extensible) // change the value set
     * reasonReference only Reference(ObservationRiskFactor)
     * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
     * status ^short = "Progress being made"
@@ -56,5 +56,5 @@ Description: "This profile defines how to represent a Risk Factor in HL7 FHIR as
 * device ..0
 * referenceRange ..0
 * valueCodeableConcept 1..1
-* valueCodeableConcept from RiskFactor
+* valueCodeableConcept from RiskFactor (extensible)
 * component 0..
