@@ -5,5 +5,13 @@ opt
    "Clinician" -> "PCSP Platform" : Complete and validate
 end
 "PCSP Platform" -> "PCSP Platform" : draft SCP
+group HL7 FHIR SurPass
 "PCSP Platform" -> "Local System B" : SurPass w (draft) SCP
+end
+group PDF SurPass
+"PCSP Platform" -> "Local System B" : SurPass w (draft) SCP
+end
+group Only SCP
+"PCSP Platform" -> "Local System B" : (draft) SCP
+end
 @enduml
