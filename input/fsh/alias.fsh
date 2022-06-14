@@ -25,6 +25,7 @@ Alias: $data-absent-reason = http://terminology.hl7.org/CodeSystem/data-absent-r
 Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $product-category = http://hl7.org/fhir/CodeSystem/product-category
 Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
+Alias: $bcp47 = urn:ietf:bcp:47
 
 // --- Value Sets
 Alias: $v3-ClassNullFlavor = http://terminology.hl7.org/ValueSet/v3-ClassNullFlavor

@@ -1,0 +1,417 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Bundle" ]
+  },
+  "type": "transaction",
+  "entry": [ {
+    "fullUrl": "urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+    "resource": {
+      "resourceType": "Patient",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp" ],
+        "security": [ {
+          "system": "http://hl7.org/fhir/ValueSet/security-labels",
+          "code": "SYSDEV"
+        } ]
+      },
+      "language": "ES",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+        "valueString": "063b242970b6291cc46b1fcb255d51c3"
+      } ],
+      "identifier": [ {
+        "use": "official",
+        "system": "urn:oid:2.16.724.4.10.50.200",
+        "value": "3016485"
+      } ],
+      "name": [ {
+        "use": "anonymous",
+        "text": "4ec7cc14f52ee45151fe378fdeab07c2 4e62380658483683f722a49e3656ed5b 063b242970b6291cc46b1fcb255d51c3",
+        "family": "4e62380658483683f722a49e3656ed5b",
+        "given": [ "4ec7cc14f52ee45151fe378fdeab07c2" ]
+      } ],
+      "gender": "female",
+      "birthDate": "2005-07-01",
+      "communication": [ {
+        "language": {
+          "coding": [ {
+            "system": "urn:ietf:bcp:47",
+            "code": "es-ES",
+            "display": "Español"
+          } ]
+        }
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Patient"
+    }
+  }, {
+    "fullUrl": "urn:uuid:14ede3ed-01d1-4875-a054-3b62ad69c1a3",
+    "resource": {
+      "resourceType": "Condition",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp" ]
+      },
+      "language": "ES",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+        "valueDateTime": "2014"
+      }, {
+        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-histology-morphology-behavior",
+        "valueCoding": {
+          "system": "http://hl7.org/fhir/sid/icd-o-3",
+          "code": "9064/3",
+          "display": "Tumor de células germinales, NE"
+        }
+      } ],
+      "bodySite": [ {
+        "extension": [ {
+          "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier",
+          "valueCodeableConcept": {
+            "coding": [ {
+              "system": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs",
+              "display": "No aplicable"
+            } ]
+          }
+        } ],
+        "coding": [ {
+          "code": "C71.9",
+          "display": "Supraselar"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+        "type": "Patient"
+      },
+      "evidence": [ {
+        "code": [ {
+          "coding": [ {
+            "system": "http://snomed.info/sct",
+            "code": "365861007",
+            "display": "Evidencia de estado Inmune"
+          } ],
+          "text": "CD117, PLAP positivo"
+        } ]
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Condition"
+    }
+  }, {
+    "fullUrl": "urn:uuid:89b52162-0395-4e64-828c-2b77c8d81646",
+    "resource": {
+      "resourceType": "Condition",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp" ]
+      },
+      "language": "ES",
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+        "valueReference": {
+          "reference": "Condition/urn:uuid:0e8fcaae-74dd-4c25-bc13-dfd0f37a1164",
+          "type": "Condition"
+        }
+      } ],
+      "bodySite": [ {
+        "coding": [ {
+          "code": "C53.0",
+          "display": "Canal cervical"
+        } ]
+      } ],
+      "subject": {
+        "reference": "Patient/urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+        "type": "Patient"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Condition"
+    }
+  }, {
+    "fullUrl": "urn:uuid:b6b39f57-fc45-48f1-8548-30b9e8ad95fb",
+    "resource": {
+      "resourceType": "Organization",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Organization-center-eu-pcsp" ]
+      },
+      "language": "ES",
+      "name": "HOSPITAL UNIVERSITARIO Y POLITECNICO LA FE",
+      "address": [ {
+        "line": [ "AVENIDA FERNANDO ABRIL MARTORELL 106" ],
+        "state": "VALENCIA",
+        "country": "ESPAÑA"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "Organization"
+    }
+  }, {
+    "fullUrl": "urn:uuid:96778b8f-01ca-4367-a2b3-ff5c3fedf1be",
+    "resource": {
+      "resourceType": "Location",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp" ]
+      },
+      "language": "ES",
+      "name": "HOSPITAL UNIVERSITARIO Y POLITECNICO LA FE",
+      "address": {
+        "city": "VALENCIA",
+        "country": "ESPAÑA"
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Location"
+    }
+  }, {
+    "fullUrl": "urn:uuid:9236cf05-11c2-4c7f-be5e-fcb8278d2712",
+    "resource": {
+      "resourceType": "MedicationAdministration",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp" ]
+      },
+      "language": "ES",
+      "extension": [ {
+        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/resource-relatedInfo",
+        "valueReference": {
+          "reference": "Observation/urn:uuid:3da875b2-9c7b-4185-85bd-a9376dce2729",
+          "type": "Observation"
+        }
+      }, {
+        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/event-location",
+        "valueReference": {
+          "reference": "Location/urn:uuid:96778b8f-01ca-4367-a2b3-ff5c3fedf1be",
+          "type": "Location"
+        }
+      } ],
+      "status": "completed",
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.whocc.no/atc",
+          "code": "L01AA06",
+          "display": "Ifosfamida"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+        "type": "Patient"
+      },
+      "effectivePeriod": {
+        "start": "2014-12-05T00:00:00+01:00",
+        "end": "2015-09-03T00:00:00+02:00"
+      },
+      "reasonReference": [ {
+        "reference": "Condition/urn:uuid:14ede3ed-01d1-4875-a054-3b62ad69c1a3",
+        "type": "Condition"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "MedicationAdministration"
+    }
+  }, {
+    "fullUrl": "urn:uuid:d59274f3-18a9-4187-9bf9-a52c8aa9e69e",
+    "resource": {
+      "resourceType": "MedicationAdministration",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp" ]
+      },
+      "language": "ES",
+      "extension": [ {
+        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/resource-relatedInfo",
+        "valueReference": {
+          "reference": "Observation/urn:uuid:30f59dd0-81ba-4cb4-900a-929b3b295413",
+          "type": "Observation"
+        }
+      }, {
+        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/event-location",
+        "valueReference": {
+          "reference": "Location/urn:uuid:96778b8f-01ca-4367-a2b3-ff5c3fedf1be",
+          "type": "Location"
+        }
+      } ],
+      "status": "completed",
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.whocc.no/atc",
+          "code": "L01CB01",
+          "display": "Etoposido"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+        "type": "Patient"
+      },
+      "effectivePeriod": {
+        "start": "2014-12-05T00:00:00+01:00",
+        "end": "2015-09-03T00:00:00+02:00"
+      },
+      "reasonReference": [ {
+        "reference": "Condition/urn:uuid:14ede3ed-01d1-4875-a054-3b62ad69c1a3",
+        "type": "Condition"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "MedicationAdministration"
+    }
+  }, {
+    "fullUrl": "urn:uuid:d8a2806a-2db6-4b11-8c9f-c5254331ae78",
+    "resource": {
+      "resourceType": "MedicationAdministration",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp" ]
+      },
+      "language": "ES",
+      "extension": [ {
+        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/resource-relatedInfo",
+        "valueReference": {
+          "reference": "Observation/urn:uuid:767fc9b4-5321-4a64-8fc9-3d609141d910",
+          "type": "Observation"
+        }
+      }, {
+        "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/event-location",
+        "valueReference": {
+          "reference": "Location/urn:uuid:96778b8f-01ca-4367-a2b3-ff5c3fedf1be",
+          "type": "Location"
+        }
+      } ],
+      "status": "completed",
+      "medicationCodeableConcept": {
+        "coding": [ {
+          "system": "http://www.whocc.no/atc",
+          "code": "L01XA01",
+          "display": "Cisplatino"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+        "type": "Patient"
+      },
+      "effectivePeriod": {
+        "start": "2014-12-05T00:00:00+01:00",
+        "end": "2015-09-03T00:00:00+02:00"
+      },
+      "reasonReference": [ {
+        "reference": "Condition/urn:uuid:14ede3ed-01d1-4875-a054-3b62ad69c1a3",
+        "type": "Condition"
+      } ]
+    },
+    "request": {
+      "method": "POST",
+      "url": "MedicationAdministration"
+    }
+  }, {
+    "fullUrl": "urn:uuid:3da875b2-9c7b-4185-85bd-a9376dce2729",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp" ]
+      },
+      "language": "ES",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+          "code": "cumulativeDose"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+        "type": "Patient"
+      },
+      "valueQuantity": {
+        "value": 27220.58,
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/m2"
+      },
+      "method": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "702873001",
+          "display": "Técnica Calculada"
+        } ]
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "fullUrl": "urn:uuid:30f59dd0-81ba-4cb4-900a-929b3b295413",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp" ]
+      },
+      "language": "ES",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+          "code": "cumulativeDose"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+        "type": "Patient"
+      },
+      "valueQuantity": {
+        "value": 777.73,
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/m2"
+      },
+      "method": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "702873001",
+          "display": "Técnica Calculada"
+        } ]
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  }, {
+    "fullUrl": "urn:uuid:767fc9b4-5321-4a64-8fc9-3d609141d910",
+    "resource": {
+      "resourceType": "Observation",
+      "meta": {
+        "profile": [ "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseChemo-eu-pcsp" ]
+      },
+      "language": "ES",
+      "status": "final",
+      "code": {
+        "coding": [ {
+          "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+          "code": "cumulativeDose"
+        } ]
+      },
+      "subject": {
+        "reference": "Patient/urn:uuid:9559e89b-35dc-4020-b08c-24ccbb6c46c5",
+        "type": "Patient"
+      },
+      "valueQuantity": {
+        "value": 345.12,
+        "system": "http://unitsofmeasure.org",
+        "code": "mg/m2"
+      },
+      "method": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "702873001",
+          "display": "Técnica Calculada"
+        } ]
+      }
+    },
+    "request": {
+      "method": "POST",
+      "url": "Observation"
+    }
+  } ]
+}

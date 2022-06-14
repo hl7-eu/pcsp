@@ -163,11 +163,11 @@ Usage: #example
 Instance: ObservationRiskFactor-4
 InstanceOf: ObservationRiskFactor
 Title:   "Observation: Risk Factor"
-Description: "Sample of Risk Factor: Anthracyclines >= 250 mg/m2"
+Description: "Sample of Risk Factor: Anthracyclines >= 250 mg/m1"
 Usage: #example
 // ------------------------------------------------
 * subject = Reference(PatientHulafe-1) "APELLIDO1"
 * status = #final
 * effectivePeriod.start = "2022-05-12"
 * code = $sct#80943009 "Risk factor"
-* valueCodeableConcept = CsRiskFactorPcsp#passport_n.GUIDELINE_T3_TXT.GUIDELINE_T3_2_TXT "Anthracyclines (doxorubicin isotoxic equivalents)>= 250 mg/m2"
+* valueCodeableConcept = CsRiskFactorPcsp#passport_n.GUIDELINE_T3_TXT.GUIDELINE_T3_2_TXT "Anthracyclines (doxorubicin isotoxic equivalents)>= 250 mg/m1"

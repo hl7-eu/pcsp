@@ -25,4 +25,4 @@ Usage: #example
 * telecom.value = "belensmicorr@gggmail.com"
 * gender = #female
 * birthDate = "2005-07-01"
-* communication.language = urn:ietf:bcp:47#es-ES "Español"
+* communication.language = $bcp47#es-ES "Español"

@@ -123,7 +123,7 @@ Description: "Specify the type of source for the cell used in a transplantation"
 // ------------------------------------
 Extension: ProcedureUsedReference
 Id: procedure-usedReference
-Title: "Procedure Used Reference "
+Title: "Procedure Used Reference"
 Description: "Extend the usedReference element to BiologicallyDerivedProduct"
 
 * value[x] only Reference

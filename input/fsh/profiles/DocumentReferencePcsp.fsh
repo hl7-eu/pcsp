@@ -18,7 +18,10 @@ Description: "This profile defines how to embed a PDF PCSP Survivor Passport in 
 * subject only Reference(PatientPcsp)
 * date ^short = "When this reference was created"
 * relatesTo ^short =  "Relationships to other documents."
-* content.attachment.contentType = #application/pdf
-* content.attachment.language 1.. 
-* content.attachment.data 1.. 
+* content.attachment
+  * contentType = #application/pdf
+  * language 1.. 
+  * data 1.. // to be checked
+  * title ^short = "Document title"
+  * creation 1.. // to be chceked ^short = "Date document was first created"
 
