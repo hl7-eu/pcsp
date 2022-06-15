@@ -1,0 +1,1 @@
+{"resourceType":"Condition","id":"8953","meta":{"versionId":"1","lastUpdated":"2022-05-18T22:01:15.675+02:00","source":"#2OIRKNQO90INpc0W","profile":["http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp"]},"language":"ES","subject":{"reference":"Patient/8952"}}
