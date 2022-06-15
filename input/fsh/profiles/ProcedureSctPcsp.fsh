@@ -4,8 +4,8 @@ Profile:  ObservationBloodAboRh
 Parent:   Observation
 Id:       Observation-bld-abo-rh-eu-pcsp
 Title:    "Observation Blood type/RH"
-Description: """This profile defines how to represent Blood type/RH  before or after the SCT in HL7 FHIR for the purpose of the PanCareSurPass project. 
- \r\n Maturity Model: 0"""
+Description: "This profile defines how to represent Blood type/RH  before or after the SCT in HL7 FHIR for the purpose of the PanCareSurPass project. 
+ \r\n Maturity Model: 1	- Complete draft"
 //-------------------------------------------------------------------------------------------
 
  
@@ -40,8 +40,8 @@ Profile:  ConditionGvdhPcsp
 Parent:   Condition
 Id:       Condition-gvdh-eu-pcsp
 Title:    "GvHD Condition"
-Description: """This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project. 
- \r\n Maturity Model: 0"""
+Description: "This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project. 
+ \r\n Maturity Model: 1	- Complete draft"
 //-------------------------------------------------------------------------------------------
 
 * extension contains $condition-related named relatedPrimaryCancerCondition 1..1
@@ -80,7 +80,7 @@ Parent:   BiologicallyDerivedProduct
 Id:       BiologicallyDerivedProduct-sct-eu-pcsp
 Title:    "BiologicallyDerivedProduct Stem Cell"
 Description: "This profile defines how to represent Stem Cell in FHIR for describing a Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
- \r\n Maturity Model: 0 - Draft"
+ \r\n Maturity Model: 2	- Ready for review"
 //-------------------------------------------------------------------------------------------
 
 * extension contains 
@@ -88,7 +88,7 @@ Description: "This profile defines how to represent Stem Cell in FHIR for descri
   and SctSourceType named sctSourceType 0..1
 * extension[sctDonorType].valueCodeableConcept from SctDonorTypeVs
 * extension[sctSourceType].valueCodeableConcept from SctSourceTypeVs
-* productCategory = $product-category#cell
+* productCategory = $product-category#cells
 * collection.source ^short = "The patient providing the cells"
 
 
@@ -98,7 +98,7 @@ Parent:   Procedure
 Id:       Procedure-sct-prophylaxis-eu-pcsp
 Title:    "Procedure SCT Prophylaxis"
 Description: "This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan.
- \r\n Maturity Model: 0 - Draft"
+ \r\n Maturity Model: 1	- Complete draft"
 //-------------------------------------------------------------------------------------------
 
 * identifier ^short = "External Identifiers for this SCT-related procedure"
@@ -119,7 +119,7 @@ Parent:   Procedure
 Id:       Procedure-sct-eu-pcsp
 Title:    "Procedure Stem Cell Transplantation"
 Description: "This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
- \r\n Maturity Model: 0 - Draft"
+  \r\n Maturity Model: 2	- Ready for review"
 //-------------------------------------------------------------------------------------------
 
 * extension contains ProcedureUsedReference named usedReference 0..1
