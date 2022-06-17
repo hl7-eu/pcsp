@@ -90,7 +90,7 @@ Description: "Qualifier to refine an body location. These include qualifiers for
 // * insert ExtensionContext(Condition.bodySite)
 // * insert ExtensionContext(Observation.bodySite)
 * value[x] only CodeableConcept
-* value[x] from BodyLocationQualifierVS (required)
+* value[x] from BodyLocationQualifierVS (preferred)
 * value[x] 1..1
 
 // ------------------------------------

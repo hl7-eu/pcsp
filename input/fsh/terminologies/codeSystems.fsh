@@ -89,8 +89,11 @@
 * #after-procedure "After procedure"   "After procedure" // change with 303110006 | Postprocedural period ? 
                                                                                                                                                                                                    
 																																																	
-																																																	// --------------  FLT Plan Types
+// --------------  FLT Plan Types
 
 * #personalized-plan "Personalized" "Personalized Plan"
 * #guidelines-plan "Guidelines"		"Plan based on guidelines"
-																																								
+
+// -- From to body structure
+// * #from-structure "From-Structure" // SCT $sct#272488003 "From-structure"
+* #to-structure "To-Structure"

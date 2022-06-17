@@ -22,22 +22,25 @@ RuleSet: ProcedureRadiotherapyPcspRules
 * performedPeriod 1.. 
 * reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
-* insert ProcedureRadiotherapyBodySite
+* bodySite 1..3 
+* insert RadiotherapyBodySiteExt
 * note ^short = "Additional information about the Radiotherapy" 
 
 
-RuleSet: ProcedureRadiotherapyBodySite
+RuleSet: RadiotherapyBodySiteExt
 
-* bodySite 1..1 
+
 * bodySite.extension contains
-     $mcode-body-location-qualifier named locationQualifier 0..* 
+     
+	 BodyLocationQualifier named locationQualifier 0..*
      and LateralityQualifier named lateralityQualifier 0..1
 
+	 // $mcode-body-location-qualifier named locationQualifier 0..* 
 	// $mcode-laterality-qualifier named lateralityQualifier 0..1
-    // BodyLocationQualifier named locationQualifier 0..*   and   
+    
 * bodySite from VsRadiotherapy
 // * extension and bodySite and bodySite.extension[lateralityQualifier] MS
-* bodySite.extension[locationQualifier] 
+* bodySite.extension[locationQualifier].valueCodeableConcept from FromToPosteriorAnteriorVs
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -98,7 +101,8 @@ Description: "This profile defines how to represent Radiotherapy Total Dose in F
 // * code = $dicomOntology#113725 "Dose (RP) Total" // evaluate 445565002 | Total boost radiation dose delivered (observable entity) AND 445461008 | Total radiation dose delivered (observable entity)
 * code 1..
 * code from RadiotherapyDoseTypeVs
-* insert ProcedureRadiotherapyBodySite
+* bodySite 1..1
+* insert RadiotherapyBodySiteExt
 
 
 

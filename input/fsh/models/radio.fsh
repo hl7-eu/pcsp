@@ -648,7 +648,7 @@ Yes;  No;  NK ÿ"
 * differential.element[16].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope').valueCodeableConcept"
 
 * differential.element[17].mapping[0].identity = "fhir"
-* differential.element[17].mapping[0].map = "TBD"
+* differential.element[17].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming).valueTiming.repeat.count"
 
 * differential.element[18].mapping[0].identity = "fhir"
 * differential.element[18].mapping[0].map = ".bodySite"
@@ -672,7 +672,7 @@ Yes;  No;  NK ÿ"
 * differential.element[23].mapping[0].map = "TBD"
 
 * differential.element[24].mapping[0].identity = "fhir"
-* differential.element[24].mapping[0].map = "TBD"
+* differential.element[24].mapping[0].map = ".extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier').valueCodeableConcept"
 
 * differential.element[25].mapping[0].identity = "fhir"
 * differential.element[25].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
@@ -714,16 +714,16 @@ Yes;  No;  NK ÿ"
 * differential.element[36].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier).valueCodeableConcept"
 
 * differential.element[37].mapping[0].identity = "fhir"
-* differential.element[37].mapping[0].map = ".text"
+* differential.element[37].mapping[0].map = ".note"
 
 * differential.element[38].mapping[0].identity = "fhir"
-* differential.element[38].mapping[0].map = "TBD"
+* differential.element[38].mapping[0].map = ".bodySite.where(extension(http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier).valueCodeableConcept = http://snomed.info/sct#272488003 'From-structure')"
 
 * differential.element[39].mapping[0].identity = "fhir"
-* differential.element[39].mapping[0].map = "TBD"
+* differential.element[39].mapping[0].map = ".bodySite.where(extension(http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier).valueCodeableConcept = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp#to-structure 'To-structure')"
 
 * differential.element[40].mapping[0].identity = "fhir"
-* differential.element[40].mapping[0].map = "TBD"
+* differential.element[40].mapping[0].map = ".extension(http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier).valueCodeableConcept"
 
 * differential.element[41].mapping[0].identity = "fhir"
 * differential.element[41].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"

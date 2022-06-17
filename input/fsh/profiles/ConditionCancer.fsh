@@ -13,12 +13,12 @@ RuleSet: CancerConditionCommonRules
 * extension[previousStatus]
 * subject only Reference (PatientPcsp)
 * bodySite.extension contains
-     $mcode-body-location-qualifier named locationQualifier 0..* 
+     BodyLocationQualifier named locationQualifier 0..*
      and LateralityQualifier named lateralityQualifier 0..1
 	
 	// $mcode-laterality-qualifier named lateralityQualifier 0..1
-    // BodyLocationQualifier named locationQualifier 0..*   and
-    
+    //    and
+    // $mcode-body-location-qualifier named locationQualifier 0..* 
 
 * bodySite from ICDO3TopographyVs (extensible)
 // * extension and bodySite and bodySite.extension[lateralityQualifier] MS
