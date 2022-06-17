@@ -51,8 +51,15 @@ GOTO :EOF
 
 :buildFshFiles
  
-
-  type %~1"-model.txt" > %~1".fsh"
+ if exist %~1"-map.txt"  (
+    echo //  >> %~1".fsh"
+		echo // === MODEL === >> %~1".fsh"
+		echo // >> %~1".fsh"
+		type %~1"-model.txt" > %~1".fsh"
+		echo // >> %~1".fsh"
+   ) 
+ 
+  
 
    if exist %~1"-map.txt"  (
    echo //  >> %~1".fsh"

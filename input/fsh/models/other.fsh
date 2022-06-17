@@ -89,7 +89,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[8].definition = "Please describe any significant event (e.g. admission to the intensive care for a metabolic problem, seizures, severe toxic complication) occurring during therapy that might have fully recovered or be still remaining or with sequelae"
 * differential.element[8].min = 1
 * differential.element[8].max = "1"
-* differential.element[8].type.code = #BackboneElement
+* differential.element[8].type.code = #string
 * differential.element[9].id = "OtherInfos.severeToxicity.isResolved"
 * differential.element[9].path = "OtherInfos.severeToxicity.isResolved"
 * differential.element[9].short = "Resolved ?"
@@ -108,14 +108,14 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[11].path = "OtherInfos.growthHormoneDeficiency"
 * differential.element[11].short = "Growth hormone deficiency ?"
 * differential.element[11].definition = "Please specify if growth hormon deficiency occured during therapy"
-* differential.element[11].min = 1
+* differential.element[11].min = 0
 * differential.element[11].max = "1"
 * differential.element[11].type.code = #CodeableConcept
 * differential.element[12].id = "OtherInfos.hydrocephalus"
 * differential.element[12].path = "OtherInfos.hydrocephalus"
 * differential.element[12].short = "Hydrocephalus ?"
 * differential.element[12].definition = "Please specify if hydrocephalus occured during therapy"
-* differential.element[12].min = 1
+* differential.element[12].min = 0
 * differential.element[12].max = "1"
 * differential.element[12].type.code = #CodeableConcept
 * differential.element[13].id = "OtherInfos.chronicViralHepatitis"
@@ -162,7 +162,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[18].type.code = #BackboneElement
 * differential.element[19].id = "OtherInfos.catheter.relatedThrombosis.occurred"
 * differential.element[19].path = "OtherInfos.catheter.relatedThrombosis.occurred"
-* differential.element[19].short = "Yes/No"
+* differential.element[19].short = "Yes/No/UNK"
 * differential.element[19].definition = "Report if there was a catheter-related thrombosis due to a central venous catheter."
 * differential.element[19].min = 0
 * differential.element[19].max = "1"
@@ -183,7 +183,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[21].type.code = #BackboneElement
 * differential.element[22].id = "OtherInfos.transfusion.occured"
 * differential.element[22].path = "OtherInfos.transfusion.occured"
-* differential.element[22].short = "Yes/No"
+* differential.element[22].short = "Yes/No/UNK"
 * differential.element[22].definition = "Please state if at least one blood (any component) transfusion was made"
 * differential.element[22].min = 0
 * differential.element[22].max = "1"
@@ -228,15 +228,16 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[28].short = "Other oncological treatments"
 * differential.element[28].definition = "Report here if any other treatment (not included in the chemotherapy, surgery or radiotherapy sections) was adminstered to the survivor"
 * differential.element[28].min = 0
-* differential.element[28].max = "*"
-* differential.element[28].type.code = #CodeableConcept
+* differential.element[28].max = "1"
+* differential.element[28].type.code = #string
 * differential.element[29].id = "OtherInfos.dischargeLetter"
 * differential.element[29].path = "OtherInfos.dischargeLetter"
 * differential.element[29].short = "Discharge letter"
 * differential.element[29].definition = "Discharge letter"
 * differential.element[29].min = 0
-* differential.element[29].max = "*"
+* differential.element[29].max = "1"
 * differential.element[29].type.code = #Attachment
+// 
 //  
 // === MAPPING === 
 // 
