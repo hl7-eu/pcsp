@@ -1,6 +1,26 @@
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: DocRefDocType
+Id: vs-docref-doctype-eu-pcsp 
+Title: "Document Type"
+Description: "Types of documents exchanged with the PCSP platform"
+//-------------------------------------------------------------------------------------------
 
+* CsGenericPcsp#surpass "Childhood Cancer Survivor Passport"
+* $loinc#18748-4 "Diagnostic Imaging Report"
+* $loinc#34105-7 "Hospital Discharge summary"
+* $loinc#11502-2 "LABORATORY REPORT.TOTAL"
 
+/* ===== COMMENTED
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: DocRefMimeType
+Id: vs-docref-mimetype-eu-pcsp 
+Title: "MIME Type"
+Description: "MIME types of documents exchanged with the PCSP platform"
+//-------------------------------------------------------------------------------------------
+* urn:ietf:bcp:13#application/pdf
+
+====== END */
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: FltPlanType
@@ -48,43 +68,43 @@ Description: "SCT Timing events: Before/after procedure"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: SctAcuteGvdhGrade
-Id: vs-gvdh-acute-grade-eu-pcsp 
-Title: "Acute GvDH Grade"
-Description: "Acute GvDH Grade"
+ValueSet: SctAcuteGvhdGrade
+Id: vs-Gvhd-acute-grade-eu-pcsp 
+Title: "Acute Gvhd Grade"
+Description: "Acute Gvhd Grade"
 //-------------------------------------------------------------------------------------------
 
-//-- GvDH Grade (acute)
-* CsGenericPcsp#gvdh-acute-1 "Grade 1" 
-* CsGenericPcsp#gvdh-acute-2 "Grade 2" 
-* CsGenericPcsp#gvdh-acute-3 "Grade 3" 
-* CsGenericPcsp#gvdh-acute-4 "Grade 4"
+//-- Gvhd Grade (acute)
+* CsGenericPcsp#Gvhd-acute-1 "Grade 1" 
+* CsGenericPcsp#Gvhd-acute-2 "Grade 2" 
+* CsGenericPcsp#Gvhd-acute-3 "Grade 3" 
+* CsGenericPcsp#Gvhd-acute-4 "Grade 4"
 * $data-absent-reason#unknown "Unknown"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: SctChronicGvdhGrade
-Id: vs-gvdh-chronic-grade-eu-pcsp
-Title: "Chronic GvDH condition"
-Description: "Acute GvDH Grade"
+ValueSet: SctChronicGvhdGrade
+Id: vs-Gvhd-chronic-grade-eu-pcsp
+Title: "Chronic Gvhd condition"
+Description: "Acute Gvhd Grade"
 //-------------------------------------------------------------------------------------------
 
-//-- GvDH Grade (chronic)
-* CsGenericPcsp#gvdh-chr-1 "Limited" 	
-* CsGenericPcsp#gvdh-chr-2 "Extensive" 
+//-- Gvhd Grade (chronic)
+* CsGenericPcsp#Gvhd-chr-1 "Limited" 	
+* CsGenericPcsp#Gvhd-chr-2 "Extensive" 
 * $data-absent-reason#unknown "Unknown"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: SctGvdhType
-Id: vs-gvdh-type-eu-pcsp
-Title: "GvDH condition"
-Description: "GvDH condition"
+ValueSet: SctGvhdType
+Id: vs-Gvhd-type-eu-pcsp
+Title: "Gvhd condition"
+Description: "Gvhd condition"
 //-------------------------------------------------------------------------------------------
 /// ===> CHECK IF IN GPS
 * $sct#234646005 "Graft-versus-host disease" 
 * $sct#402355000 "Acute graft-versus-host disease"
 * $sct#402356004 "Chronic graft-versus-host disease"
-* CsGenericPcsp#gvdh-unk "GvDH Unknown" 
+* CsGenericPcsp#Gvhd-unk "Gvhd Unknown" 
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -224,9 +244,9 @@ Description: "Chemotherapy cumulative dose units"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: OtherSurgicalProcedureTypeVs
-Id: vs-otherProcedureType-eu-pcsp
-Title: "Other Surgical Procedure Type"
+ValueSet: SurgicalProcedureTypeVs
+Id: vs-surgicalProcedureType-eu-pcsp
+Title: "Surgical Procedure Type"
 Description: "Types of surgical procedure this resource is referring to"
 
 //-------------------------------------------------------------------------------------------
@@ -306,7 +326,7 @@ Description: "Types of radiotherapy this procedure is referring to"
 * $sct#33195004 "External beam radiotherapy"
 * $sct#152198000 "Brachytherapy"
 * $sct#399315003 "Radionuclide therapy"
-* $sct#445232009 "Boost radiation therapy" // to be checked for GPS ....
+// * $sct#445232009 "Boost radiation therapy" // to be checked for GPS ....
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -452,7 +472,9 @@ Description: "Surgical Actions"
 * $sct#129303008 "Removal - action"
 * $sct#129325002 "Introduction - action"
 * $sct#129336009 "Implantation - action"
-* $sct#424208002 "Shunt - action"
+// * $sct#424208002 "Shunt - action"
+* $sct#129425003 "Application - action"
+* codes from valueset NotApplicableUnknownVs
 
 /* =======
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

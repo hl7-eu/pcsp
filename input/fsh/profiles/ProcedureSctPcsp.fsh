@@ -36,9 +36,9 @@ Description: "This profile defines how to represent Blood type/RH  before or aft
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  ConditionGvdhPcsp
+Profile:  ConditionGvhdPcsp
 Parent:   Condition
-Id:       Condition-gvdh-eu-pcsp
+Id:       Condition-gvhd-eu-pcsp
 Title:    "GvHD Condition"
 Description: "This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project. 
  \r\n Maturity Model: 1	- Complete draft"
@@ -53,9 +53,9 @@ Description: "This profile defines how to represent Graft versus host disease (G
 // * clinicalStatus and verificationStatus MS
   
 * code 1.. MS // add value set; add slices for
-* code from SctGvdhType
+* code from SctGvhdType
 
-* onset[x] MS
+* onset[x] only Period
 * encounter only Reference (Encounter or EncounterPcsp)
 * subject only Reference (PatientPcsp)
 * bodySite ^short = "Organs affected by GVHD"
@@ -69,8 +69,8 @@ Description: "This profile defines how to represent Graft versus host disease (G
   * summary.coding contains 
   	acute 0..1
   	and chronic 0..1
-  * summary.coding[acute] from SctAcuteGvdhGrade
-  * summary.coding[chronic] from SctChronicGvdhGrade
+  * summary.coding[acute] from SctAcuteGvhdGrade
+  * summary.coding[chronic] from SctChronicGvhdGrade
 
 
 
@@ -106,7 +106,7 @@ Description: "This profile defines how to represent GVHD prophylaxis, conditioni
 * category 1..
 * category from SctProphylaxisCathegory // check GPS
 * subject only Reference(PatientPcsp)	
-* subject MS
+* subject 1..
 * code from SctProphylaxisType (extensible)
 * performedPeriod MS
 * reasonReference 2.. MS // add reference to the diagnosis
@@ -133,9 +133,10 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * code ^short = "Identification of the procedure."
 * code from SctTypeVs
 * subject only Reference(PatientPcsp)	
-* subject MS
+* subject 1..
 * performed[x] 1..
-* performedDateTime ^short = "Date of the Stem Cell Transplantation"
-* reasonReference 1.. MS // add reference to the diagnosis
+* performed[x] only dateTime 
+* performed[x] ^short = "Date of the Stem Cell Transplantation"
+* reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 

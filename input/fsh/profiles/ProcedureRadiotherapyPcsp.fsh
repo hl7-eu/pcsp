@@ -11,23 +11,21 @@ RuleSet: ProcedureRadiotherapyPcspRules
 * extension[procedureMethod].valueCodeableConcept from BrachytherapyType
 
 * identifier ^short = "External Identifiers for this radiotherapy / boost"
-* status MS
-* category MS // add Radiotherapy
+* status ^short = "Procedure status"
 * category = $sct#108290001 "Radiotherapy" // part of GPS
-* code 1..1 MS // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
+* code 1..1  // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
 * code from RadiotherapyTypeVs (extensible)
 // add slice on coding to allow more precise data
 * subject only Reference(PatientPcsp)	
-* subject MS
-* performedPeriod 1.. MS
-* reasonReference 1.. MS // add reference to the diagnosis
+* performedPeriod 1.. 
+* reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 * insert ProcedureRadiotherapyBodySite
 
 
 RuleSet: ProcedureRadiotherapyBodySite
 
-* bodySite 1..1 MS
+* bodySite 1..1 
 * bodySite.extension contains
      $mcode-body-location-qualifier named locationQualifier 0..* 
      and LateralityQualifier named lateralityQualifier 0..1
@@ -35,7 +33,7 @@ RuleSet: ProcedureRadiotherapyBodySite
 	// $mcode-laterality-qualifier named lateralityQualifier 0..1
     // BodyLocationQualifier named locationQualifier 0..*   and   
 * bodySite from VsRadiotherapy
-* extension and bodySite and bodySite.extension[lateralityQualifier] MS
+// * extension and bodySite and bodySite.extension[lateralityQualifier] MS
 * bodySite.extension[locationQualifier] 
 
 
@@ -51,6 +49,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * location only Reference(LocationPcsp)
 * usedCode ^short = "Coded items used during the procedure"
 * usedCode from RadiotherapyDeviceType (extensible) // update the value set
+* note ^short = "Additional information about the Radiotherapy" 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureRadiotherapyBoostPcsp
@@ -62,7 +61,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 
 * insert ProcedureRadiotherapyPcspRules
 * code = $sct#445232009 "Boost radiation therapy"
-* partOf 1..
+* partOf 1..1
 * partOf only Reference (ProcedureRadiotherapyPcsp)
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -74,10 +73,10 @@ Description: "This profile defines how to represent Radiotherapy Total Dose in F
 //-------------------------------------------------------------------------------------------
 
 * insert CumulativeDoseObsRules
-* category MS
+* category 1..
 * category = $observation-category#procedure 
 // * code = $dicomOntology#113725 "Dose (RP) Total" // evaluate 445565002 | Total boost radiation dose delivered (observable entity) AND 445461008 | Total radiation dose delivered (observable entity)
-* code MS
+* code 1..
 * code from RadiotherapyDoseTypeVs
 * insert ProcedureRadiotherapyBodySite
 

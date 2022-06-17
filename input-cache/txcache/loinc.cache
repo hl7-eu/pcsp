@@ -762,3 +762,94 @@ v: {
   "system" : "http://loinc.org"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18748-4"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Diagnostic imaging study",
+  "code" : "18748-4",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "34105-7"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Hospital Discharge summary",
+  "code" : "34105-7",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11502-2"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Laboratory report",
+  "code" : "11502-2",
+  "system" : "http://loinc.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "18748-4",
+        "display" : "Diagnostic Imaging Report"
+      },
+      {
+        "code" : "34105-7",
+        "display" : "Hospital Discharge summary"
+      },
+      {
+        "code" : "11502-2",
+        "display" : "LABORATORY REPORT.TOTAL"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:502afef0-613d-40a4-a865-7557f61ec681",
+    "timestamp" : "2022-06-17T06:45:49.068Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.72"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "18748-4",
+      "display" : "Diagnostic Imaging Report"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "34105-7",
+      "display" : "Hospital Discharge summary"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "LABORATORY REPORT.TOTAL"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

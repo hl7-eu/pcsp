@@ -69,19 +69,19 @@
 * #sct-bone-marrow     	"Bone marrow"   "Bone marrow"
 * #sct-cord            	"Cord"          "Cord"
 
-//--- GvDH
+//--- Gvhd
 
-* #gvdh-unk "GvDH Unknown" "It is not known if this patient suffers GvDH"
+* #Gvhd-unk "Gvhd Unknown" "It is not known if this patient suffers Gvhd"
 
-//-- GvDH Grade (acute)
-* #gvdh-acute-1 "Grade 1" "Acute GvDH: grade 1" 
-* #gvdh-acute-2 "Grade 2" "Acute GvDH: grade 2" 
-* #gvdh-acute-3 "Grade 3" "Acute GvDH: grade 3" 
-* #gvdh-acute-4 "Grade 4" "Acute GvDH: grade 4" 
+//-- Gvhd Grade (acute)
+* #Gvhd-acute-1 "Grade 1" "Acute Gvhd: grade 1" 
+* #Gvhd-acute-2 "Grade 2" "Acute Gvhd: grade 2" 
+* #Gvhd-acute-3 "Grade 3" "Acute Gvhd: grade 3" 
+* #Gvhd-acute-4 "Grade 4" "Acute Gvhd: grade 4" 
 
-//-- GvDH Grade (chronic)
-* #gvdh-chr-1 "Limited" 	"Chronic GvDH: grade 1 limited" 
-* #gvdh-chr-2 "Extensive" 	"Chronic GvDH: grade 2 extensive"  
+//-- Gvhd Grade (chronic)
+* #Gvhd-chr-1 "Limited" 	"Chronic Gvhd: grade 1 limited" 
+* #Gvhd-chr-2 "Extensive" 	"Chronic Gvhd: grade 2 extensive"  
 
 // --- Timing events
 
