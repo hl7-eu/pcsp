@@ -693,7 +693,7 @@ Yes;  No;  NK ÿ"
 * differential.element[30].mapping[0].map = ".valueQuantity.code"
 
 * differential.element[31].mapping[0].identity = "fhir"
-* differential.element[31].mapping[0].map = "TBD"
+* differential.element[31].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming).valueTiming.repeat.count"
 
 * differential.element[32].mapping[0].identity = "fhir"
 * differential.element[32].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyBoost-eu-pcsp')"
@@ -744,7 +744,7 @@ Yes;  No;  NK ÿ"
 * differential.element[46].mapping[0].map = ".valueQuantity.code"
 
 * differential.element[47].mapping[0].identity = "fhir"
-* differential.element[47].mapping[0].map = "TBD"
+* differential.element[47].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming).valueTiming.repeat.count"
 
 * differential.element[48].mapping[0].identity = "fhir"
 * differential.element[48].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyShield-eu-pcsp')"

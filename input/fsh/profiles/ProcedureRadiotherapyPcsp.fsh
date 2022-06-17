@@ -5,10 +5,12 @@ RuleSet: ProcedureRadiotherapyPcspRules
 	ResourceRelatedInfo named relatedDose 0..1
 	and $procedure-method named procedureMethod 0..1
 	and RadiotherapyEnergyOrIsotope named energyOrIsotope 0..*
+	and PerformedTiming named performedTiming 0..1
 	
 * extension[relatedDose].valueReference only Reference(TotalDoseRadObsPcsp)
 * extension[energyOrIsotope]
 * extension[procedureMethod].valueCodeableConcept from BrachytherapyType
+* extension[performedTiming]
 
 * identifier ^short = "External Identifiers for this radiotherapy / boost"
 * status ^short = "Procedure status"

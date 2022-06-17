@@ -3,6 +3,13 @@ RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
 
+Extension: PerformedTiming
+Id: procedure-performedTiming
+Title:  "Performed Timing"
+Description: "This extension allow to indicate when the procedure was performed as Timing."
+* insert ExtensionContext(Procedure)
+* value[x] only Timing
+
 
 Extension: ResourceRelatedInfo
 Id:   resource-relatedInfo
