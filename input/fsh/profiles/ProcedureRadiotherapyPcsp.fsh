@@ -21,6 +21,7 @@ RuleSet: ProcedureRadiotherapyPcspRules
 * reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 * insert ProcedureRadiotherapyBodySite
+* note ^short = "Additional information about the Radiotherapy" 
 
 
 RuleSet: ProcedureRadiotherapyBodySite
@@ -49,7 +50,24 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * location only Reference(LocationPcsp)
 * usedCode ^short = "Coded items used during the procedure"
 * usedCode from RadiotherapyDeviceType (extensible) // update the value set
-* note ^short = "Additional information about the Radiotherapy" 
+
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ProcedureRadiotherapyShieldingPcsp
+Parent:   Procedure 
+Id:       Procedure-radiotheraphyShield-eu-pcsp	
+Title:    "Procedure Radiotherapy Shielding"
+Description: "This profile defines how to represent Shielding Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan."
+//-------------------------------------------------------------------------------------------
+
+* insert ProcedureRadiotherapyPcspRules
+* code = $sct#228720004 "Making of shielding block for radiotherapy"
+* partOf 1..1
+* partOf only Reference (ProcedureRadiotherapyPcsp)
+
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureRadiotherapyBoostPcsp
