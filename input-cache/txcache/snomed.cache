@@ -7914,3 +7914,180 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "48130008"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Hypogonadism",
+  "code" : "48130008",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "397827003"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Growth hormone deficiency (disorder)",
+  "code" : "397827003",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "230745008"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Hydrocephalus",
+  "code" : "230745008",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "10295004"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Chronic viral hepatitis",
+  "code" : "10295004",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "65617004"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Veno-occlusive disease of the liver",
+  "code" : "65617004",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "439127006"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Thrombosis (disorder)",
+  "code" : "439127006",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "75478009",
+  "display" : "Toxicity"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Poisoning",
+  "code" : "75478009",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "392230005",
+  "display" : "Catheterization of vein"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Catheterization of vein (procedure)",
+  "code" : "392230005",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "5447007",
+  "display" : "Transfusion"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Transfusion",
+  "code" : "5447007",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "48130008",
+        "display" : "Hypogonadism"
+      },
+      {
+        "code" : "397827003",
+        "display" : "Growth hormone deficiency"
+      },
+      {
+        "code" : "230745008",
+        "display" : "Hydrocephalus"
+      },
+      {
+        "code" : "10295004",
+        "display" : "Chronic viral hepatitis"
+      },
+      {
+        "code" : "65617004",
+        "display" : "Veno-occlusive disease of the liver"
+      },
+      {
+        "code" : "439127006",
+        "display" : "Thrombosis"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:8a34eb44-b078-4245-b662-f37409093cda",
+    "timestamp" : "2022-06-19T15:54:10.775Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "48130008",
+      "display" : "Hypogonadism"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "397827003",
+      "display" : "Growth hormone deficiency"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "230745008",
+      "display" : "Hydrocephalus"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "10295004",
+      "display" : "Chronic viral hepatitis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "65617004",
+      "display" : "Veno-occlusive disease of the liver"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "439127006",
+      "display" : "Thrombosis"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

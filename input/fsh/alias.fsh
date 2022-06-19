@@ -31,6 +31,7 @@ Alias: $bcp47 = urn:ietf:bcp:47
 Alias: $v3-ClassNullFlavor = http://terminology.hl7.org/ValueSet/v3-ClassNullFlavor
 Alias: $vs-condition-clinical = http://hl7.org/fhir/ValueSet/condition-clinical
 Alias: $vs-LL2419-1 = http://loinc.org/vs/LL2419-1 
+Alias: $condition-severity-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips
 
 
 
@@ -46,6 +47,7 @@ Alias: $event-statusReason = http://hl7.org/fhir/StructureDefinition/event-statu
 Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $condition-occurredFollowing = http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing
+Alias: $condition-dueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
 
 
 // ---- Identifiers

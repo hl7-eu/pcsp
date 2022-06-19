@@ -11,6 +11,36 @@ Description: "Qualifiers to refine a body structure or location including qualif
 * $sct#255503000 "Entire (qualifier value)"
 * exclude codes from valueset LateralityQualifierVS // laterality is separated into a separate value set
 
+
+// --------------------------------------------------------
+ValueSet: OtherInfosConditionVS
+Id: otherInfos-condition-vs
+Title: "Other Infors Condition"
+Description:  "Other Infors Condition"
+* $sct#48130008 "Hypogonadism"
+* $sct#397827003 "Growth hormone deficiency"
+* $sct#230745008 "Hydrocephalus"
+* $sct#10295004 "Chronic viral hepatitis"
+* $sct#65617004 "Veno-occlusive disease of the liver" // it should be the same of Hepatic sinusoidal obstruction syndrome (SOS), also called veno-occlusive disease (VOD)
+* $sct#439127006 "Thrombosis"
+
+// --------------------------------------------------------
+ValueSet: ActiveResolvedConditionVS
+Id: activeResolved-condition-vs
+Title: "Active or resolved Condition"
+Description:  "Active or resolved Condition"
+* $condition-clinical#active 
+* $condition-clinical#resolved
+
+// --------------------------------------------------------
+ValueSet: ToxicitySeverityVS
+Id: toxicityseverity-vs
+Title: "Toxicity Severity"
+Description: "Toxicity Severity"
+
+* include codes from valueset $condition-severity-uv-ips
+* $data-absent-reason#unknown "Unknown"
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: FromToPosteriorAnteriorVs
 Id: vs-fromToPosteriorAnterior-eu-pcsp 

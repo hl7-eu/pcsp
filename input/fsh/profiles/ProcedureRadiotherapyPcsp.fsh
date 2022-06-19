@@ -10,7 +10,7 @@ RuleSet: ProcedureRadiotherapyPcspRules
 * extension[relatedDose].valueReference only Reference(TotalDoseRadObsPcsp)
 * extension[energyOrIsotope]
 * extension[procedureMethod].valueCodeableConcept from BrachytherapyType
-* extension[performedTiming]
+* extension[performedTiming].valueTiming.repeat.count ^short = "Number of repetitions"
 
 * identifier ^short = "External Identifiers for this radiotherapy / boost"
 * status ^short = "Procedure status"
@@ -103,8 +103,6 @@ Description: "This profile defines how to represent Radiotherapy Total Dose in F
 * code from RadiotherapyDoseTypeVs
 * bodySite 1..1
 * insert RadiotherapyBodySiteExt
-
-
 
 
 /* ======
