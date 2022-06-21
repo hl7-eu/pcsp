@@ -32,7 +32,7 @@ Description: "This profile defines how to describe a Severe Toxicity event in HL
 Profile:  ConditionOtherInfosPcsp
 Parent:   Condition
 Id:       Condition-otherinfos-eu-pcsp
-Title:    "Condition other infos"
+Title:    "Condition Others"
 Description: "This profile defines how to describe the presence of some other conditions (e.g. Hypogonadism, Growth hormone deficiency, Hydrocephalus in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ Description: "This profile defines how to describe the presence of some other co
 Profile:  ProcedureCVCOtherInfosPcsp
 Parent:   Procedure
 Id:       Procedure-cvc-otherinfos-eu-pcsp
-Title:    "Procedure Catheter other infos"
+Title:    "Procedure: Catheter"
 Description: "This profile defines how to describe the  Catheterization of vein Procedure in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -98,7 +98,7 @@ Description: "This profile defines how to describe the Transfusion Procedure in 
 Profile:  ProcedureCryopreservationOtherInfosPcsp
 Parent:   Procedure
 Id:       Procedure-cryopreservation-otherinfos-eu-pcsp
-Title:    "Procedure Cryopreservation other infos"
+Title:    "Procedure: Cryopreservation"
 Description: "This profile defines how to describe the cryopreservation of sperms or oocyte for cancer patient in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 

@@ -25,6 +25,18 @@ RuleSet: CancerConditionCommonRules
 * bodySite.extension[locationQualifier] 
 
 
+RuleSet: CancerStageCommonRules
+* value[x] only CodeableConcept
+* value[x] ^comment = ""    // suppress QA error on #notes link
+* insert NotUsed(device)
+* insert NotUsed(referenceRange)
+* insert NotUsed(component)
+* focus only Reference(ConditionPrimaryCancerPcsp)
+* subject only Reference(PatientPcsp)
+* method from CancerStagingSystemVS (extensible)
+// MS flags -- for Pathological staging, they might be redundant with US Core Lab Observation (but that's harmless)
+* status and code and subject and effective[x] and value[x] and method and focus MS
+
 //====== Profiles =====================================
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -57,7 +69,7 @@ Description: "This profile defines how to represent Hereditary Predispositions i
 Profile:  ObservationDiagnosisPcsp
 Parent:   Observation
 Id:       Observation-diagnosis-eu-pcsp
-Title:    "Observation Diagnosis details PCSP"
+Title:    "Observation Diagnosis details"
 Description: "This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project.
 \r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
@@ -84,7 +96,7 @@ Description: "This profile defines how to represent diagnosis details (when the 
 Profile:  EncounterPcsp
 Parent:   Encounter
 Id:       Encounter-eu-pcsp
-Title:    "Encounter Treatment Center PCSP"
+Title:    "Encounter Treatment Center"
 Description: "This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project.
 \r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
@@ -105,7 +117,7 @@ Description: "This profile defines how to represent data of arrival to the cente
 Profile:  ConditionPrimaryCancerPcsp
 Parent:   Condition
 Id:       Condition-primaryCancer-eu-pcsp
-Title:    "Primary Cancer Condition PCSP"
+Title:    "Condition: Primary Cancer"
 Description: "This profile defines how to represent Primary Cancer Condition in HL7 FHIR for the purpose of the PanCareSurPass project. 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
 A primary cancer condition, the original or first tumor in the body (Definition from: [NCI Dictionary of Cancer Terms]( https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)).  Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.
@@ -196,8 +208,8 @@ This profile should be also used for documenting primary cancer relapses.
 Profile:  ConditionSecondaryCancerPcsp
 Parent:   Condition
 Id:       Condition-secondaryCancer-eu-pcsp
-Title:    "Secondary Cancer Condition"
-Description: "This profile defines how to represent Secondary Cancer Condition in FHIR for the purpose of the PanCareSurPass project. 
+Title:    "Condition: Secondary Cancer"
+Description: "This profile defines how to represent Condition: Secondary Cancer in FHIR for the purpose of the PanCareSurPass project. 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
 Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).
 \r\n Maturity Model: 2 - Ready for review"
@@ -227,3 +239,64 @@ Description: "This profile defines how to represent the Primary Treatment Center
 * address.city ^short = "Center address: city"
 * address.country ^short = "Center address: country"
 
+
+
+
+Profile: CancerStageGroup
+Id: mcode-cancer-stage-group
+Parent: Observation
+Title: "Observation Cancer Stage Group"
+Description: "The extent of the cancer in the body, according to a given cancer staging classification system, based on evidence such as physical examination, imaging, and/or biopsy or based on pathologic analysis of a specimen."
+* insert CancerStageCommonRules
+* code from ObservationCodesStageGroupVS (required)
+* value[x] from CancerStageGroupVS (preferred)
+* hasMember MS
+* hasMember only Reference(Observation)
+* insert ObservationHasMemberSlicingRules
+* hasMember contains
+    tnmPrimaryTumorCategory 0..1 MS and
+    tnmRegionalNodesCategory 0..1 MS and
+    tnmDistantMetastasesCategory 0..1 MS
+// Set metadata attributes that show up in the IG
+* hasMember[tnmPrimaryTumorCategory] only Reference(TNMPrimaryTumorCategory)
+* hasMember[tnmPrimaryTumorCategory] ^short = "TNM Primary Tumor Category"
+* hasMember[tnmPrimaryTumorCategory] ^definition = "Category of the primary tumor, based on its size and extent, and based on evidence such as physical examination, imaging, and/or biopsy."
+* hasMember[tnmPrimaryTumorCategory] ^comment = "When using this element, the Observation must validate against the specified profile."
+* hasMember[tnmRegionalNodesCategory] only Reference(TNMRegionalNodesCategory)
+* hasMember[tnmRegionalNodesCategory] ^short = "TNM  Regional Nodes Category"
+* hasMember[tnmRegionalNodesCategory] ^definition = "Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy."
+* hasMember[tnmRegionalNodesCategory] ^comment = "When using this element, the Observation must validate against the specified profile."
+* hasMember[tnmDistantMetastasesCategory] only Reference(TNMDistantMetastasesCategory)
+* hasMember[tnmDistantMetastasesCategory] ^short = "TNM  Distant Metastases Category"
+* hasMember[tnmDistantMetastasesCategory] ^definition = "Category describing the presence or absence of metastases in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy."
+* hasMember[tnmDistantMetastasesCategory] ^comment = "When using this element, the Observation must validate against the specified profile."
+
+Profile:  TNMPrimaryTumorCategory
+Id: mcode-tnm-primary-tumor-category
+Parent: Observation
+Title: "Observation: TNM Primary Tumor Category"
+Description: "Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy."
+* insert CancerStageCommonRules
+* insert NotUsed(hasMember)
+* code from ObservationCodesPrimaryTumorVS (required)
+* value[x] from TNMPrimaryTumorCategoryVS (preferred)
+
+Profile:  TNMRegionalNodesCategory
+Id: mcode-tnm-regional-nodes-category
+Parent: Observation
+Title: "Observation: TNM Regional Nodes Category"
+Description: "Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy."
+* insert CancerStageCommonRules
+* insert NotUsed(hasMember)
+* code from ObservationCodesRegionalNodesVS (required)
+* value[x] from TNMRegionalNodesCategoryVS (preferred)
+
+Profile:  TNMDistantMetastasesCategory
+Id: mcode-tnm-distant-metastases-category
+Parent: Observation
+Title: "Observation: Condition: Secondary Cancer"
+Description: "Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy."
+* insert CancerStageCommonRules
+* insert NotUsed(hasMember)
+* code from ObservationCodesDistantMetastasesVS (required)
+* value[x] from TNMDistantMetastasesCategoryVS (preferred)

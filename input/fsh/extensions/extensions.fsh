@@ -3,10 +3,17 @@ RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
 
+Extension: FltArm
+Id: procedure-fltArm
+Title:  "Randomization arm for trial"
+Description: "This extension allows to describeprovide a textual description of the randomization arm for trials (FLT)."
+* insert ExtensionContext(Procedure)
+* value[x] only string
+
 Extension: PerformedTiming
 Id: procedure-performedTiming
 Title:  "Performed Timing"
-Description: "This extension allow to indicate when the procedure was performed as Timing."
+Description: "This extension allows to indicate when the procedure was performed as Timing."
 * insert ExtensionContext(Procedure)
 * value[x] only Timing
 

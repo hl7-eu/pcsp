@@ -145,6 +145,7 @@ If personalized, please specify.  "
 * differential.element[16].min = 0
 * differential.element[16].max = "1"
 * differential.element[16].type.code = #CodeableConcept
+// 
 //  
 // === MAPPING === 
 // 
@@ -167,7 +168,7 @@ If personalized, please specify.  "
 * differential.element[4].mapping[0].map = ".description"
 
 * differential.element[5].mapping[0].identity = "fhir"
-* differential.element[5].mapping[0].map = "TBD"
+* differential.element[5].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm').valueString"
 
 * differential.element[6].mapping[0].identity = "fhir"
 * differential.element[6].mapping[0].map = "Procedure.performedPeriod.end"

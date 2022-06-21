@@ -654,10 +654,10 @@ Yes;  No;  NK ÿ"
 * differential.element[18].mapping[0].map = ".bodySite"
 
 * differential.element[18].mapping[1].identity = "fhir"
-* differential.element[18].mapping[1].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp).bodySite"
+* differential.element[18].mapping[1].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "."
+* differential.element[19].mapping[0].map = ".bodySite"
 
 * differential.element[20].mapping[0].identity = "fhir"
 * differential.element[20].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier).valueCodeableConcept"
@@ -666,10 +666,10 @@ Yes;  No;  NK ÿ"
 * differential.element[21].mapping[0].map = ".text"
 
 * differential.element[22].mapping[0].identity = "fhir"
-* differential.element[22].mapping[0].map = "TBD"
+* differential.element[22].mapping[0].map = ".bodySite.where(extension('mcode-body-location-qualifier').valueCodeableConcept = http://snomed.info/sct#272488003 'From-structure')"
 
 * differential.element[23].mapping[0].identity = "fhir"
-* differential.element[23].mapping[0].map = "TBD"
+* differential.element[23].mapping[0].map = ".bodySite.where(extension('mcode-body-location-qualifier').valueCodeableConcept = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp#to-structure 'To-structure')"
 
 * differential.element[24].mapping[0].identity = "fhir"
 * differential.element[24].mapping[0].map = ".extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier').valueCodeableConcept"

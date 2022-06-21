@@ -8,11 +8,11 @@ Description: "This profile defines how to provide Front Line Treatment data in F
 //-------------------------------------------------------------------------------------------
 
 
-// * extension contains ResourceRelatedInfo named relatedInfo 0..1
-// * extension[relatedInfo].valueReference only Reference(CumulativeDoseRadObsPcsp)
+* extension contains FltArm named fltArm 0..1
+* extension[fltArm] ^short = "Randomization arm description"
 * identifier ^short = "External Identifiers for this FLT"
 * instantiatesCanonical 1..
-// * instantiatesCanonical canonical(PlanDefinitionFltPcsp) // TO BE FIXED
+* instantiatesCanonical only Canonical(PlanDefinitionFltPcsp) 
 * status
   * ^example.label = "Completed"
   * ^example.valueCode = #completed

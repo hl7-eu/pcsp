@@ -39,7 +39,7 @@ Description: "This profile defines how to represent Blood type/RH  before or aft
 Profile:  ConditionGvhdPcsp
 Parent:   Condition
 Id:       Condition-gvhd-eu-pcsp
-Title:    "GvHD Condition"
+Title:    "Condition GvHD"
 Description: "This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project. 
  \r\n Maturity Model: 1	- Complete draft"
 //-------------------------------------------------------------------------------------------
