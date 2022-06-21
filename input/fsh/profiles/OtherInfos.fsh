@@ -20,6 +20,7 @@ Description: "This profile defines how to describe a Severe Toxicity event in HL
 
 * clinicalStatus from ActiveResolvedConditionVS
 * clinicalStatus ^short = "Element omitted if status unknown"
+* verificationStatus ^short = "Verification status"
 * severity from ToxicitySeverityVS
 
 
@@ -67,6 +68,9 @@ Description: "This profile defines how to describe the  Catheterization of vein 
 * reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 * bodySite ^short = "In which vein the CVC was positioned"
+* focalDevice ^short = "Implanted or removed Catheter"
+  * action from SurgicalActionVs (extensible)
+  * manipulated.display ^short = "Catheter"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  ProcedureTransfusionOtherInfosPcsp
@@ -87,6 +91,7 @@ Description: "This profile defines how to describe the Transfusion Procedure in 
 * subject only Reference(PatientPcsp)
 * reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
+
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
