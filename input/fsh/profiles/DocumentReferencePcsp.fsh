@@ -3,7 +3,7 @@
 Profile:  DocumentReferencePcsp
 Parent:   DocumentReference
 Id:       DocumentReference-eu-pcsp
-Title:    "DocumentReference PCSP"
+Title:    "DocumentReference: PCSP"
 Description: "This profile defines how to embed a PDF PCSP Survivor Passport in FHIR for the purpose of the PanCareSurPass project. This profile can be aslo used for send attachments (e.g Raditherapy reports or HDR) to the platform"
 //-------------------------------------------------------------------------------------------
 

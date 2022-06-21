@@ -47,7 +47,7 @@ RuleSet: RadiotherapyBodySiteExt
 Profile:  ProcedureRadiotherapyPcsp
 Parent:   Procedure 
 Id:       Procedure-radiotheraphy-eu-pcsp
-Title:    "Procedure Radiotherapy"
+Title:    "Procedure: Radiotherapy"
 Description: "This profile defines how to represent Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 Profile:  ProcedureRadiotherapyShieldingPcsp
 Parent:   Procedure 
 Id:       Procedure-radiotheraphyShield-eu-pcsp	
-Title:    "Procedure Radiotherapy Shielding"
+Title:    "Procedure: Radiotherapy Shielding"
 Description: "This profile defines how to represent Shielding Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
@@ -78,7 +78,7 @@ Description: "This profile defines how to represent Shielding Procedures in FHIR
 Profile:  ProcedureRadiotherapyBoostPcsp
 Parent:   Procedure 
 Id:       Procedure-radiotheraphyBoost-eu-pcsp
-Title:    "Procedure Radiotherapy Boost"
+Title:    "Procedure: Radiotherapy Boost"
 Description: "This profile defines how to represent Procedures in FHIR for describing a set of data required by PanCareSurPass for Radiotherapy Boosts" //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -91,7 +91,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 Profile:  TotalDoseRadObsPcsp
 Parent:   Observation
 Id:       Observation-totalDoseRad-eu-pcsp
-Title:    "Observation Radiotherapy Total Dose PCSP"
+Title:    "Observation: Radiotherapy Total Dose PCSP"
 Description: "This profile defines how to represent Radiotherapy Total Dose in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -111,7 +111,7 @@ Description: "This profile defines how to represent Radiotherapy Total Dose in F
 Profile:  ProcedureRadiotherapyMinPcsp
 Parent:   Procedure 
 Id:       Procedure-radiotheraphy-min-eu-pcsp
-Title:    "Procedure Radiotherapy (Minimal Set)"
+Title:    "Procedure: Radiotherapy (Minimal Set)"
 Description: "This profile defines how to represent Procedures in FHIR for describing a Minimal set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 * insert ProcedureRadiotherapyPcspRules

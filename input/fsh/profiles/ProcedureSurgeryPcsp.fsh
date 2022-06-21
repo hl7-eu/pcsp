@@ -6,7 +6,7 @@
 Profile:  ProcedureSurgeryPcsp
 Parent:   Procedure 
 Id:       Procedure-surgery-eu-pcsp
-Title:    "Procedure Surgery"
+Title:    "Procedure: Surgery"
 Description: "This profile defines how to represent Procedures in FHIR for describing a set of Surgery data required by the PanCareSurPass algorithm to generate the care plan. It is used also to provide inforamtion about shunt, amputation, and other procedures"
 //-------------------------------------------------------------------------------------------
 

@@ -3,7 +3,7 @@
 Profile:  ObservationBloodAboRh
 Parent:   Observation
 Id:       Observation-bld-abo-rh-eu-pcsp
-Title:    "Observation Blood type/RH"
+Title:    "Observation: Blood type/RH"
 Description: "This profile defines how to represent Blood type/RH  before or after the SCT in HL7 FHIR for the purpose of the PanCareSurPass project. 
  \r\n Maturity Model: 1	- Complete draft"
 //-------------------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ Description: "This profile defines how to represent Stem Cell in FHIR for descri
 Profile:  ProcedureSctProphylaxisPcsp
 Parent:   Procedure 
 Id:       Procedure-sct-prophylaxis-eu-pcsp
-Title:    "Procedure SCT Prophylaxis"
+Title:    "Procedure: SCT Prophylaxis"
 Description: "This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan.
  \r\n Maturity Model: 1	- Complete draft"
 //-------------------------------------------------------------------------------------------
@@ -117,7 +117,7 @@ Description: "This profile defines how to represent GVHD prophylaxis, conditioni
 Profile:  ProcedureSctPcsp
 Parent:   Procedure 
 Id:       Procedure-sct-eu-pcsp
-Title:    "Procedure Stem Cell Transplantation"
+Title:    "Procedure: Stem Cell Transplantation"
 Description: "This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
   \r\n Maturity Model: 2	- Ready for review"
 //-------------------------------------------------------------------------------------------

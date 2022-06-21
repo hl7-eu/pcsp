@@ -43,7 +43,7 @@ RuleSet: CancerStageCommonRules
 Profile:  ObservationHereditaryPredispositionPcsp
 Parent:   Observation
 Id:       Observation-predisposition-eu-pcsp
-Title:    "Observation Hereditary Predisposition"
+Title:    "Observation: Hereditary Predisposition"
 Description: "This profile defines how to represent Hereditary Predispositions in HL7 FHIR for the purpose of the PanCareSurPass project.
 \r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
@@ -69,7 +69,7 @@ Description: "This profile defines how to represent Hereditary Predispositions i
 Profile:  ObservationDiagnosisPcsp
 Parent:   Observation
 Id:       Observation-diagnosis-eu-pcsp
-Title:    "Observation Diagnosis details"
+Title:    "Observation: Diagnosis details"
 Description: "This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project.
 \r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ Description: "This profile defines how to represent diagnosis details (when the 
 Profile:  EncounterPcsp
 Parent:   Encounter
 Id:       Encounter-eu-pcsp
-Title:    "Encounter Treatment Center"
+Title:    "Encounter: Treatment Center"
 Description: "This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project.
 \r\n Maturity Model: 2 - Ready for review"
 //-------------------------------------------------------------------------------------------
