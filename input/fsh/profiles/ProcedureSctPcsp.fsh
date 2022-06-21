@@ -95,12 +95,7 @@ Profile:  ProcedureSctProphylaxisPcsp
 Parent:   Procedure 
 Id:       Procedure-sct-prophylaxis-eu-pcsp
 Title:    "Procedure: SCT Prophylaxis"
-<<<<<<< HEAD
 Description: "This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan."
-=======
-Description: "This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan.
- \r\n Maturity Model: 1	- Complete draft"
->>>>>>> 58f1c42ca54ff00bbfb1ec2bd283c4b4886642a7
 //-------------------------------------------------------------------------------------------
 
 * identifier ^short = "External Identifiers for this SCT-related procedure"
