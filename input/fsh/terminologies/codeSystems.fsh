@@ -96,4 +96,8 @@
 
 // -- From to body structure
 // * #from-structure "From-Structure" // SCT $sct#272488003 "From-structure"
-* #to-structure "To-Structure"
+* #to-structure "To-Structure" "To-Structure"
+
+// -- Other infos 
+
+* #other-treatment "Other oncological treatments" "Any other treatment (not included in the chemotherapy, surgery or radiotherapy sections) was adminstered to the survivor"

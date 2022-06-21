@@ -89,6 +89,39 @@ Description: "This profile defines how to describe the Transfusion Procedure in 
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ProcedureCryopreservationOtherInfosPcsp
+Parent:   Procedure
+Id:       Procedure-cryopreservation-otherinfos-eu-pcsp
+Title:    "Procedure Cryopreservation other infos"
+Description: "This profile defines how to describe the cryopreservation of sperms or oocyte for cancer patient in HL7 FHIR for the purpose of the PanCareSurPass project."
+//-------------------------------------------------------------------------------------------
+
+* code = $sct#88094004 "Cryopreservation" 
+* subject 1..
+* subject only Reference(PatientPcsp)
+* reasonReference 1..  // add reference to the diagnosis
+* reasonReference only Reference(ConditionPrimaryCancerPcsp)
+* location ^short = "Where the Cryopreservation happened"
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Profile:  ProcedureOtherTreatmentPcsp
+Parent:   Procedure
+Id:       Procedure-treatment-otherinfos-eu-pcsp
+Title:    "Procedure Other Treatments"
+Description: "This profile defines how to convey textual information about other oncological treatments in HL7 FHIR for the purpose of the PanCareSurPass project."
+//-------------------------------------------------------------------------------------------
+
+* text 1..
+* text ^short = "Any other treatment (not included in the chemotherapy, surgery or radiotherapy sections)"
+* code = CsGenericPcsp#other-treatment "Other oncological treatments"  
+* subject 1..
+* subject only Reference(PatientPcsp)
+* reasonReference 1..  // add reference to the diagnosis
+* reasonReference only Reference(ConditionPrimaryCancerPcsp)
+
+
 /*
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

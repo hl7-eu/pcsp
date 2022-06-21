@@ -32,4 +32,8 @@ Description: "This profile defines how to embed a PDF PCSP Survivor Passport in 
   * title ^short = "Document title"
   * creation 1.. // to be checked ^short = "Date document was first created"
 
+// required for uploaded documents
+* context
+  * related only Reference(ConditionPrimaryCancerPcsp)
+    * ^short = "required for documents to be uploaded"
  // * contentType = #application/pdf
