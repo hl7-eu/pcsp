@@ -56,7 +56,7 @@ RuleSet: SubSectionStructure
 Profile:  CompositionSurpassPcsp
 Parent:   Composition
 Id:       Composition-surpass-eu-pcsp
-Title:    "Composition Surpass PCSP"
+Title:    "Composition: Survivor Passport"
 Description: "This profile defines how to represent a PCSP Survivor Passport by using a HL7 FHIR Composition for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 

@@ -2,7 +2,7 @@
 Profile:  ConditionToxicityPcsp
 Parent:   Condition
 Id:       Condition-toxicity-eu-pcsp
-Title:    "Condition Severe Toxicity"
+Title:    "Condition: Severe Toxicity"
 Description: "This profile defines how to describe a Severe Toxicity event in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ Description: "This profile defines how to describe a Severe Toxicity event in HL
 Profile:  ConditionOtherInfosPcsp
 Parent:   Condition
 Id:       Condition-otherinfos-eu-pcsp
-Title:    "Condition Others"
+Title:    "Condition: Others"
 Description: "This profile defines how to describe the presence of some other conditions (e.g. Hypogonadism, Growth hormone deficiency, Hydrocephalus in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -76,7 +76,7 @@ Description: "This profile defines how to describe the  Catheterization of vein 
 Profile:  ProcedureTransfusionOtherInfosPcsp
 Parent:   Procedure
 Id:       Procedure-transfusion-otherinfos-eu-pcsp
-Title:    "Procedure Transfusion other infos"
+Title:    "Procedure: Transfusion other infos"
 Description: "This profile defines how to describe the Transfusion Procedure in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -114,7 +114,7 @@ Description: "This profile defines how to describe the cryopreservation of sperm
 Profile:  ProcedureOtherTreatmentPcsp
 Parent:   Procedure
 Id:       Procedure-treatment-otherinfos-eu-pcsp
-Title:    "Procedure Other Treatments"
+Title:    "Procedure: Other Treatments"
 Description: "This profile defines how to convey textual information about other oncological treatments in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -133,7 +133,7 @@ Description: "This profile defines how to convey textual information about other
 Profile:  ObservationToxicityPcsp
 Parent:   Observation
 Id:       Observation-toxicity-eu-pcsp
-Title:    "Observation Severe Toxicity event"
+Title:    "Observation: Severe Toxicity event"
 Description: "This profile defines how to describe a Severe Toxicity event in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * extension contains ResourceRelatedInfo named relatedCondition 0..1

@@ -7,7 +7,7 @@ Expression: "entry.tail().where(resource is Composition).empty()"
 Profile: BundlePcsp
 Parent: Bundle
 Id: Bundle-eu-pcsp
-Title: "Bundle SurPass"
+Title: "Bundle: Survivor Passport"
 Description: "This profile represents the constraints applied to the Bundle resource by the PCSP FHIR Implementation Guide."
 //===================================
 

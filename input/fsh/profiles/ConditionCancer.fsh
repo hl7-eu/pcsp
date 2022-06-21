@@ -43,9 +43,9 @@ RuleSet: CancerStageCommonRules
 Profile:  ObservationHereditaryPredispositionPcsp
 Parent:   Observation
 Id:       Observation-predisposition-eu-pcsp
-Title:    "Observation Hereditary Predisposition"
+Title:    "Observation: Hereditary Predisposition"
 Description: "This profile defines how to represent Hereditary Predispositions in HL7 FHIR for the purpose of the PanCareSurPass project.
-\r\n Maturity Model: 2 - Ready for review"
+"
 //-------------------------------------------------------------------------------------------
 * subject 1..
 * subject only Reference(PatientPcsp)
@@ -69,9 +69,9 @@ Description: "This profile defines how to represent Hereditary Predispositions i
 Profile:  ObservationDiagnosisPcsp
 Parent:   Observation
 Id:       Observation-diagnosis-eu-pcsp
-Title:    "Observation Diagnosis details"
+Title:    "Observation: Diagnosis details"
 Description: "This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project.
-\r\n Maturity Model: 2 - Ready for review"
+"
 //-------------------------------------------------------------------------------------------
 * subject 1..
 * subject only Reference(PatientPcsp)
@@ -96,9 +96,9 @@ Description: "This profile defines how to represent diagnosis details (when the 
 Profile:  EncounterPcsp
 Parent:   Encounter
 Id:       Encounter-eu-pcsp
-Title:    "Encounter Treatment Center"
+Title:    "Encounter: Treatment Center"
 Description: "This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project.
-\r\n Maturity Model: 2 - Ready for review"
+"
 //-------------------------------------------------------------------------------------------
 * status MS 
 * class MS
@@ -122,7 +122,7 @@ Description: "This profile defines how to represent Primary Cancer Condition in 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
 A primary cancer condition, the original or first tumor in the body (Definition from: [NCI Dictionary of Cancer Terms]( https://www.cancer.gov/publications/dictionaries/cancer-terms/def/primary-tumor)).  Cancers that are not clearly secondary (i.e., of uncertain origin or behavior) should be documented as primary.
 This profile should be also used for documenting primary cancer relapses.
- \r\n Maturity Model: 2 - Ready for review"
+ "
 //-------------------------------------------------------------------------------------------
 
 * extension contains $condition-occurredFollowing named condition-occurredFollowing 0..*
@@ -212,7 +212,7 @@ Title:    "Condition: Secondary Cancer"
 Description: "This profile defines how to represent Condition: Secondary Cancer in FHIR for the purpose of the PanCareSurPass project. 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
 Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).
-\r\n Maturity Model: 2 - Ready for review"
+"
 //-------------------------------------------------------------------------------------------
 * ^abstract = false
 * insert CancerConditionCommonRules
@@ -232,7 +232,7 @@ Parent:   $Organization-uv-ips
 Id:       Organization-center-eu-pcsp
 Title:    "Organization: Primary Treatment Center / Center of diagnosis"
 Description: "This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project.
-\r\n Maturity Model: 2 - Ready for review"
+"
 //-------------------------------------------------------------------------------------------
 * identifier ^short = "Identifier of the center"
 * name ^short = "Name of the Center"
@@ -245,7 +245,7 @@ Description: "This profile defines how to represent the Primary Treatment Center
 Profile: CancerStageGroup
 Id: mcode-cancer-stage-group
 Parent: Observation
-Title: "Observation Cancer Stage Group"
+Title: "Observation: Cancer Stage Group"
 Description: "The extent of the cancer in the body, according to a given cancer staging classification system, based on evidence such as physical examination, imaging, and/or biopsy or based on pathologic analysis of a specimen."
 * insert CancerStageCommonRules
 * code from ObservationCodesStageGroupVS (required)

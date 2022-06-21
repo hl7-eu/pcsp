@@ -3,7 +3,7 @@
 Profile:  ProcedureFltPcsp
 Parent:   Procedure 
 Id:       Procedure-flt-eu-pcsp
-Title:    "Procedure Front Line Treatment"
+Title:    "Procedure: Front Line Treatment"
 Description: "This profile defines how to provide Front Line Treatment data in FHIR for the scope of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ Description: "This profile defines how to provide Front Line Treatment data in F
 Profile:  PlanDefinitionFltPcsp
 Parent:   PlanDefinition 
 Id:       PlanDefinition-flt-eu-pcsp
-Title:    "PlanDefinition Front Line Treatment"
+Title:    "PlanDefinition: Front Line Treatment"
 Description: "This profile defines how to provide Front Line Treatment protocol infos in FHIR for the scope of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
