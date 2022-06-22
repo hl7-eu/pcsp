@@ -1,0 +1,772 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Bundle"
+    ]
+  },
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+      "resource": {
+        "resourceType": "Patient",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Patient-eu-pcsp"
+          ],
+          "security": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/security-labels",
+              "code": "SYSDEV"
+            }
+          ]
+        },
+        "language": "ES",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+            "valueString": "59668da5435daae9ab977d7fe54f1e8c"
+          }
+        ],
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:oid:2.16.724.4.10.50.200",
+            "value": "899088"
+          }
+        ],
+        "name": [
+          {
+            "use": "anonymous",
+            "text": "d2424a9c6f393bf6785e723d44606aa6 fca5c44ae8b523a12cd960e7c3793cab 59668da5435daae9ab977d7fe54f1e8c",
+            "family": "fca5c44ae8b523a12cd960e7c3793cab",
+            "given": [
+              "d2424a9c6f393bf6785e723d44606aa6"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "2000-07-01",
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "es-ES",
+                  "display": "Español"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+            "valueDateTime": "2011"
+          },
+          {
+            "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-histology-morphology-behavior",
+            "valueCoding": {
+              "system": "http://hl7.org/fhir/sid/icd-o-3",
+              "code": "9261/3",
+              "display": "Adamantinoma tibial"
+            }
+          }
+        ],
+        "bodySite": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier",
+                      "code": "51440002",
+                      "display": "Bilateral"
+                    }
+                  ]
+                }
+              }
+            ],
+            "coding": [
+              {
+                "code": "C21",
+                "display": "ANO Y CANAL ANAL"
+              }
+            ],
+            "text": "Si hay más sitios"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "evidence": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "365861007",
+                    "display": "Evidencia de estado Inmune"
+                  }
+                ],
+                "text": "Pongo inmunologia"
+              }
+            ]
+          },
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "106221001",
+                    "display": "Evidencia de Marcadores Genéticos"
+                  }
+                ],
+                "text": "H77, y otros genes inventaoOos"
+              }
+            ]
+          },
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "extension": [
+                      {
+                        "url": "http://HereditarySindromePancareCode.surpass",
+                        "valueCoding": {
+                          "system": "https://www.imf.es/farmis-oncofarm",
+                          "code": "587"
+                        }
+                      }
+                    ],
+                    "system": "http://snomed.info/sct",
+                    "code": "32895009",
+                    "display": "Evidencia de Cáncer Hereditario"
+                  }
+                ],
+                "text": "Síndrome Muir Torre"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:84cc0465-6189-4a76-815c-7396df4531ee",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+            "valueReference": {
+              "reference": "Condition/urn:uuid:dc01bd89-8450-48f6-844d-17471379ac14",
+              "type": "Condition"
+            }
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "C18.5",
+                "display": "Angulo esplénico del colon"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f0f250c0-28db-4914-8659-d9def048b462",
+      "resource": {
+        "resourceType": "Condition",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+            "valueReference": {
+              "reference": "Condition/urn:uuid:dc01bd89-8450-48f6-844d-17471379ac14",
+              "type": "Condition"
+            }
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "code": "C49.1",
+                "display": "Antebrazo"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Condition"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3a4de730-5036-4662-b54b-81f3d1a4e882",
+      "resource": {
+        "resourceType": "Organization",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Organization-center-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "name": "HOSPITAL UNIVERSITARIO Y POLITECNICO LA FE",
+        "address": [
+          {
+            "line": [
+              "AVENIDA FERNANDO ABRIL MARTORELL 106"
+            ],
+            "state": "VALENCIA",
+            "country": "ESPAÑA"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0f6b410b-3374-49cf-8787-bdbda6d12c52",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "extension": [
+          {
+            "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/surgery-sacrifiedOrgan",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                  "code": "78961009",
+                  "display": "Bazo"
+                },
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                  "code": "OTH",
+                  "display": "Otro"
+                }
+              ],
+              "text": "unorganocodificado"
+            }
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387713003",
+              "display": "Procedimiento Quirúrgico"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "performedDateTime": "2012-05-09",
+        "location": {
+          "reference": "Location/urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+          "type": "Location"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+            "type": "Condition"
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "12738006",
+                "display": "Cerebro"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "10200004",
+                "display": "Hígado"
+              }
+            ]
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9d572d56-6e29-4136-a5e1-098f3cde3b69",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "387713003",
+              "display": "Procedimiento Quirúrgico"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "performedDateTime": "2022-05-04",
+        "location": {
+          "reference": "Location/urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+          "type": "Location"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+            "type": "Condition"
+          }
+        ],
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "818983003",
+                "display": "Abdomen"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                "code": "51185008",
+                "display": "Tórax"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Es una descripción de la cirugía"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f675ff1f-3c3a-4b63-a54f-d9921ee0f96a",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "extension": [
+          {
+            "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LA4585-1",
+                  "display": "Izquierdo"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+              "code": "sht-280384000",
+              "display": "Derivación Subdural-Peritonea"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "location": {
+          "reference": "Location/urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+          "type": "Location"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+            "type": "Condition"
+          }
+        ],
+        "focalDevice": [
+          {
+            "action": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "129336009",
+                  "display": "Implantado"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:516ea07e-dbe8-40b6-b446-e645a8c1b37c",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "extension": [
+          {
+            "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                  "code": "NA",
+                  "display": "Not Applicable"
+                }
+              ]
+            }
+          }
+        ],
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+              "code": "sht-280384000",
+              "display": "Derivación Subdural-Peritonea"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "location": {
+          "reference": "Location/urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+          "type": "Location"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+            "type": "Condition"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:79ee1d20-a556-476f-a002-fca1946b54c0",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "88937006",
+              "display": "Colocación de Prótesis"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "location": {
+          "reference": "Location/urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+          "type": "Location"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+            "type": "Condition"
+          }
+        ],
+        "note": [
+          {
+            "text": "Blablablass protesis dental"
+          }
+        ],
+        "focalDevice": [
+          {
+            "action": {
+              "coding": [
+                {
+                  "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                  "code": "int-prosthesis",
+                  "display": "Protesis Interna"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2d90fca8-4981-4553-9f48-62c6de087cfc",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "88937006",
+              "display": "Colocación de Prótesis"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "location": {
+          "reference": "Location/urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+          "type": "Location"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+            "type": "Condition"
+          }
+        ],
+        "note": [
+          {
+            "text": "Una definición de la prótesis"
+          }
+        ],
+        "focalDevice": [
+          {
+            "action": {
+              "coding": [
+                {
+                  "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                  "code": "ext-prosthesis",
+                  "display": "Protesis Externa"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:75384769-b391-43a3-ba80-08b40befef37",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "54956002",
+              "display": "Gastrostomía"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "location": {
+          "reference": "Location/urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+          "type": "Location"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+            "type": "Condition"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0facc03e-877b-4b8d-8940-f62e25511255",
+      "resource": {
+        "resourceType": "Procedure",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "398740003",
+              "display": "Colostomía"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/urn:uuid:6e9589b5-4f83-4ba3-8758-d0e0a12ca49f",
+          "type": "Patient"
+        },
+        "location": {
+          "reference": "Location/urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+          "type": "Location"
+        },
+        "reasonReference": [
+          {
+            "reference": "Condition/urn:uuid:d604e67d-6d85-4133-8f32-83a61b27f03c",
+            "type": "Condition"
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Procedure"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:71ba1063-665c-44fe-8749-94edf55d18ec",
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Location-eu-pcsp"
+          ]
+        },
+        "language": "ES",
+        "name": "HOSPITAL UNIVERSITARIO Y POLITECNICO LA FE",
+        "address": {
+          "city": "VALENCIA",
+          "country": "ESPAÑA"
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Location"
+      }
+    }
+  ]
+}
