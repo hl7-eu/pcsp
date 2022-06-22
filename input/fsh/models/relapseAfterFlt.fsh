@@ -1,7 +1,6 @@
 Instance: RelapseAfterFLT
 InstanceOf: StructureDefinition
-Description: "Progression-Relapse after FLT
-Maturity Level: 1 - Profiles in progress"
+Description: "Progression-Relapse after FLT - Maturity Level: 2 - Ready for Review"
 Title: "Progression-Relapse after FLT"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -11,8 +10,7 @@ Usage: #definition
 * title = "Progression-Relapse after FLT"
 * status = #draft
 * experimental = true
-* description = "Progression-Relapse after FLT
-Maturity Level: 1 - Profiles in progress"
+* description = "Progression-Relapse after FLT - Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -48,36 +46,46 @@ In this field must be reported the ordinal number of the tumor diagnosis in whic
 * differential.element[2].type.code = #Identifier
 
 
-* differential.element[3].id = "RelapseAfterFLT.type"
-* differential.element[3].path = "RelapseAfterFLT.type"
-* differential.element[3].short = "relapse | progression"
-* differential.element[3].definition = "Report here if a relapse or progression occurred after the elective end of therapies.
+* differential.element[3].id = "RelapseAfterFLT.Date"
+* differential.element[3].path = "RelapseAfterFLT.Date"
+* differential.element[3].short = "date of relapse"
+* differential.element[3].definition = "Report here the date (dd/mm/yyyy ) of the relapse/progression. If the date is unkown or partially missed insert the year at the best of your knowledge."
+* differential.element[3].min = 0
+* differential.element[3].max = "1"
+* differential.element[3].type.code = #date
+
+
+* differential.element[4].id = "RelapseAfterFLT.type"
+* differential.element[4].path = "RelapseAfterFLT.type"
+* differential.element[4].short = "relapse | progression"
+* differential.element[4].definition = "Report here if a relapse or progression occurred after the elective end of therapies.
 Please note that 'progressions' may occurr since in some cases (e.g. stage 3 unoperable residual neuroblastoma or residual CNS tumor) that were considered as 'non active' may progress
 1 => Relapse
 2 => Progression
 -9922= > NK"
-* differential.element[3].min = 0
-* differential.element[3].max = "1"
-* differential.element[3].type.code = #CodeableConcept
-
-
-* differential.element[4].id = "RelapseAfterFLT.qualifier"
-* differential.element[4].path = "RelapseAfterFLT.qualifier"
-* differential.element[4].short = "local | distant | combined"
-* differential.element[4].definition = "Report here the date (dd/mm/yyyy ) of the relapse/progression. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[4].min = 0
 * differential.element[4].max = "1"
 * differential.element[4].type.code = #CodeableConcept
 
 
-* differential.element[5].id = "RelapseAfterFLT.site"
-* differential.element[5].path = "RelapseAfterFLT.site"
-* differential.element[5].short = "If distant, site of metastases"
+* differential.element[5].id = "RelapseAfterFLT.qualifier"
+* differential.element[5].path = "RelapseAfterFLT.qualifier"
+* differential.element[5].short = "local | distant | combined"
 * differential.element[5].definition = "Please define if the relapse/progression was local, distant or combined.
 "
 * differential.element[5].min = 0
 * differential.element[5].max = "1"
-* differential.element[5].type.code = #string
+* differential.element[5].type.code = #CodeableConcept
+
+
+* differential.element[6].id = "RelapseAfterFLT.site"
+* differential.element[6].path = "RelapseAfterFLT.site"
+* differential.element[6].short = "If distant, site of metastases"
+* differential.element[6].definition = "Please define if the relapse/progression was local, distant or combined.
+"
+* differential.element[6].min = 0
+* differential.element[6].max = "1"
+* differential.element[6].type.code = #string
 
 
 
@@ -88,7 +96,7 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 
 
 
-
+// 
 //  
 // === MAPPING === 
 // 
@@ -108,10 +116,10 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 * differential.element[4].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').where(Condition.clinicalStatus = #inactive or #relapse or #recurrence).valueCodeableConcept OR Condition.where( clinicalStatus = #relapse or clinicalStatus = #recurrence).clinicalStatus"
 
 * differential.element[5].mapping[0].identity = "fhir"
-* differential.element[5].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp').bodySite"
+* differential.element[5].mapping[0].map = ""
 
-
-
+* differential.element[6].mapping[0].identity = "fhir"
+* differential.element[6].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp').bodySite"
 
 
 

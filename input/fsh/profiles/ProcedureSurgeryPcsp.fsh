@@ -25,7 +25,8 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * status MS
 * category 1..
 * category = $sct#387713003 
-  * display ^short = "Surgical procedure" 
+  * ^example.label = "Surgical procedure"
+  * ^example.valueCodeableConcept = $sct#387713003 "Surgical procedure" 
 * code ^short = "Identification of the procedure." // used to indicate if it is an amputation, a shutn,....
 * code from SurgicalProcedureTypeVs (extensible)
 // * code from SurgeryTypeVs 

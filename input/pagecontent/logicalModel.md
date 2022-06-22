@@ -1,27 +1,18 @@
 
-<!-- 
-extensions
+### SurPass Overview 
 
-{% for sd_hash in site.data.structuredefinitions -%}
-  {%- assign sd = sd_hash[1] -%}
-  {%- if sd.kind  == "complex-type" and sd.type != "Extension" -%}
-   <li> <a href="{{sd.path}}">{{sd.name}}</a>{{sd.title}}. {{sd.description}} </li>
-  {%- endif -%}
-{%- endfor -%} -->
+The Survivorship Passport (SurPass) is a digital tool based on international clinical guidelines that provides childhood cancer survivors (CCS) and health care professionals (HCPs) with the information needed for long-term follow-up survivorship care, better health promotion, improved late effects management and secondary cancer prevention. The SurPass provides an overview of all relevant personal health data related to the cancer treatment of CCS (e.g. demographics, cancer diagnosis, therapeutic management etc.) in a Treatment Summary together with a personalized Survivorship Care Plan.
 
-<!-- list
-
-<ul>
-{% for sd_hash in site.data.structuredefinitions -%}
-  {%- assign sd = sd_hash[1] -%}
-  {%- if sd.kind  == "logical" -%}
-   <li> <a href="{{sd.path}}">{{sd.name}}</a> - {{sd.title}}.  {{sd.description}} </li>
-  {%- endif -%}
-{%- endfor -%}
-</ul>
--->
+<div>
+<img src="surpass-overview.png" alt="SurPass Overview" width="50%"/>
+</div>
 
 <!-- table -->
+
+### HL7 FHIR Models
+
+The following table summarizes the logical models used by this guide.
+
 
 <table  style="border-collapse: collapse; width: 100%" border="1" >
 <thead>

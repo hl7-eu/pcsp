@@ -1,6 +1,6 @@
 Instance: TreatmentSummary
 InstanceOf: StructureDefinition
-Description: "Treatment Summary data model - Maturity Level: 1 - Profiles in progress"
+Description: "Treatment Summary data model - Maturity Level: 2 - Ready for Review"
 Title: "Treatment Summary"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -10,7 +10,7 @@ Usage: #definition
 * title = "Treatment Summary"
 * status = #draft
 * experimental = true
-* description = "Treatment Summary data model - Maturity Level: 1 - Profiles in progress"
+* description = "Treatment Summary data model - Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
