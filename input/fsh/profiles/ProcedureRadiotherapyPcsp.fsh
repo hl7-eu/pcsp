@@ -67,10 +67,24 @@ Title:    "Procedure: Radiotherapy Shielding"
 Description: "This profile defines how to represent Shielding Procedures in FHIR for describing a set of Radiotherapy data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
-* insert ProcedureRadiotherapyPcspRules
+
+// * identifier ^short = "External Identifiers for this radiotherapy / boost"
+// * status ^short = "Procedure status"
+* code 1..1  // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
 * code = $sct#228720004 "Making of shielding block for radiotherapy"
 * partOf 1..1
 * partOf only Reference (ProcedureRadiotherapyPcsp)
+// add slice on coding to allow more precise data
+* subject only Reference(PatientPcsp)	
+* reasonReference 1..  // add reference to the diagnosis
+* reasonReference only Reference(ConditionPrimaryCancerPcsp)
+* bodySite 1..*
+* insert RadiotherapyBodySiteExt
+* note ^short = "Additional information about the Radiotherapy" 
+
+
+
+
 
 
 
