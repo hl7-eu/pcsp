@@ -81,5 +81,6 @@ menu:
   Artifact Index: artifacts.html			
   Support:
     FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
+    Report an issue: new-tab https://github.com/hl7-eu/pcsp/issues
     Downloads: downloads.html
 	

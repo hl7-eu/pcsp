@@ -132,8 +132,7 @@ in case of allogenic transplant,
 * differential.element[12].type.code = #CodeableConcept
 * differential.element[13].id = "StemCellTransplantation.cellSource"
 * differential.element[13].path = "StemCellTransplantation.cellSource"
-* differential.element[13].short = "Source of cells
-"
+* differential.element[13].short = "Source of cells"
 * differential.element[13].definition = "Indicate the source of cells
 1 = PBSC 
 2 = Bone marrow
@@ -150,15 +149,15 @@ No calculations are made on these data."
 * differential.element[14].min = 0
 * differential.element[14].max = "1"
 * differential.element[14].type.code = #string
-* differential.element[15].id = "StemCellTransplantation.Gvhd"
-* differential.element[15].path = "StemCellTransplantation.Gvhd"
+* differential.element[15].id = "StemCellTransplantation.gvhd"
+* differential.element[15].path = "StemCellTransplantation.gvhd"
 * differential.element[15].short = "Graft Versus Host Disease"
 * differential.element[15].definition = "Graft Versus Host Disease"
 * differential.element[15].min = 0
 * differential.element[15].max = "1"
 * differential.element[15].type.code = #BackboneElement
-* differential.element[16].id = "StemCellTransplantation.Gvhd.prophylaxis"
-* differential.element[16].path = "StemCellTransplantation.Gvhd.prophylaxis"
+* differential.element[16].id = "StemCellTransplantation.gvhd.prophylaxis"
+* differential.element[16].path = "StemCellTransplantation.gvhd.prophylaxis"
 * differential.element[16].short = "GVHD prophylaxis"
 * differential.element[16].definition = "State if any GVHD prophylaxis was given. Details on the drug names used for GVHD prophylaxis should be listed in the chemotherapy section under 'immunotherapy').
 1 => Yes
@@ -167,15 +166,15 @@ No calculations are made on these data."
 * differential.element[16].min = 0
 * differential.element[16].max = "1"
 * differential.element[16].type.code = #CodeableConcept
-* differential.element[17].id = "StemCellTransplantation.Gvhd.acute"
-* differential.element[17].path = "StemCellTransplantation.Gvhd.acute"
+* differential.element[17].id = "StemCellTransplantation.gvhd.acute"
+* differential.element[17].path = "StemCellTransplantation.gvhd.acute"
 * differential.element[17].short = "GVHD Acute"
 * differential.element[17].definition = "GVHD Acute "
 * differential.element[17].min = 0
 * differential.element[17].max = "1"
 * differential.element[17].type.code = #BackboneElement
-* differential.element[18].id = "StemCellTransplantation.Gvhd.acute.status"
-* differential.element[18].path = "StemCellTransplantation.Gvhd.acute.status"
+* differential.element[18].id = "StemCellTransplantation.gvhd.acute.status"
+* differential.element[18].path = "StemCellTransplantation.gvhd.acute.status"
 * differential.element[18].short = "GVHD Acutestatus"
 * differential.element[18].definition = "Please State if acute GVHD occurred
 1 => Yes
@@ -184,8 +183,8 @@ No calculations are made on these data."
 * differential.element[18].min = 1
 * differential.element[18].max = "1"
 * differential.element[18].type.code = #CodeableConcept
-* differential.element[19].id = "StemCellTransplantation.Gvhd.acute.grade"
-* differential.element[19].path = "StemCellTransplantation.Gvhd.acute.grade"
+* differential.element[19].id = "StemCellTransplantation.gvhd.acute.grade"
+* differential.element[19].path = "StemCellTransplantation.gvhd.acute.grade"
 * differential.element[19].short = "Grade"
 * differential.element[19].definition = "If yes, state the maximum grade of acute GVHD.
 
@@ -197,29 +196,29 @@ No calculations are made on these data."
 * differential.element[19].min = 1
 * differential.element[19].max = "1"
 * differential.element[19].type.code = #CodeableConcept
-* differential.element[20].id = "StemCellTransplantation.Gvhd.acute.startDate"
-* differential.element[20].path = "StemCellTransplantation.Gvhd.acute.startDate"
+* differential.element[20].id = "StemCellTransplantation.gvhd.acute.startDate"
+* differential.element[20].path = "StemCellTransplantation.gvhd.acute.startDate"
 * differential.element[20].short = "Start date"
 * differential.element[20].definition = "Define the starting date of GVHD. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[20].min = 0
 * differential.element[20].max = "1"
 * differential.element[20].type.code = #date
-* differential.element[21].id = "StemCellTransplantation.Gvhd.acute.endDate"
-* differential.element[21].path = "StemCellTransplantation.Gvhd.acute.endDate"
+* differential.element[21].id = "StemCellTransplantation.gvhd.acute.endDate"
+* differential.element[21].path = "StemCellTransplantation.gvhd.acute.endDate"
 * differential.element[21].short = "End date"
 * differential.element[21].definition = "Define the ending date of GVHD. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[21].min = 0
 * differential.element[21].max = "1"
 * differential.element[21].type.code = #date
-* differential.element[22].id = "StemCellTransplantation.Gvhd.chronic"
-* differential.element[22].path = "StemCellTransplantation.Gvhd.chronic"
+* differential.element[22].id = "StemCellTransplantation.gvhd.chronic"
+* differential.element[22].path = "StemCellTransplantation.gvhd.chronic"
 * differential.element[22].short = "GVHD Chronic"
 * differential.element[22].definition = "GVHD Chronic "
 * differential.element[22].min = 0
 * differential.element[22].max = "1"
 * differential.element[22].type.code = #BackboneElement
-* differential.element[23].id = "StemCellTransplantation.Gvhd.chronic.status"
-* differential.element[23].path = "StemCellTransplantation.Gvhd.chronic.status"
+* differential.element[23].id = "StemCellTransplantation.gvhd.chronic.status"
+* differential.element[23].path = "StemCellTransplantation.gvhd.chronic.status"
 * differential.element[23].short = "GVHD Chronicstatus"
 * differential.element[23].definition = "Please State if chronic GVHD occurred
 1 => Yes
@@ -228,8 +227,8 @@ No calculations are made on these data."
 * differential.element[23].min = 1
 * differential.element[23].max = "1"
 * differential.element[23].type.code = #CodeableConcept
-* differential.element[24].id = "StemCellTransplantation.Gvhd.chronic.grade"
-* differential.element[24].path = "StemCellTransplantation.Gvhd.chronic.grade"
+* differential.element[24].id = "StemCellTransplantation.gvhd.chronic.grade"
+* differential.element[24].path = "StemCellTransplantation.gvhd.chronic.grade"
 * differential.element[24].short = "Grade"
 * differential.element[24].definition = " If yes, state the maximum grade of chronic GVHD
 1 => Limited
@@ -238,22 +237,22 @@ No calculations are made on these data."
 * differential.element[24].min = 1
 * differential.element[24].max = "1"
 * differential.element[24].type.code = #CodeableConcept
-* differential.element[25].id = "StemCellTransplantation.Gvhd.chronic.startDate"
-* differential.element[25].path = "StemCellTransplantation.Gvhd.chronic.startDate"
+* differential.element[25].id = "StemCellTransplantation.gvhd.chronic.startDate"
+* differential.element[25].path = "StemCellTransplantation.gvhd.chronic.startDate"
 * differential.element[25].short = "Start date"
 * differential.element[25].definition = "Please Define the starting date of GVHD. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[25].min = 0
 * differential.element[25].max = "1"
 * differential.element[25].type.code = #date
-* differential.element[26].id = "StemCellTransplantation.Gvhd.chronic.endDate"
-* differential.element[26].path = "StemCellTransplantation.Gvhd.chronic.endDate"
+* differential.element[26].id = "StemCellTransplantation.gvhd.chronic.endDate"
+* differential.element[26].path = "StemCellTransplantation.gvhd.chronic.endDate"
 * differential.element[26].short = "End date"
 * differential.element[26].definition = "Please Define the ending date of GVHD. If the date is unkown or partially missed insert the year at the best of your knowledge."
 * differential.element[26].min = 0
 * differential.element[26].max = "1"
 * differential.element[26].type.code = #date
-* differential.element[27].id = "StemCellTransplantation.Gvhd.organAffected"
-* differential.element[27].path = "StemCellTransplantation.Gvhd.organAffected"
+* differential.element[27].id = "StemCellTransplantation.gvhd.organAffected"
+* differential.element[27].path = "StemCellTransplantation.gvhd.organAffected"
 * differential.element[27].short = "Organs affected"
 * differential.element[27].definition = "Please List organs affected by GVHD"
 * differential.element[27].min = 0
@@ -324,6 +323,7 @@ No calculations are made on these data."
 * differential.element[34].min = 0
 * differential.element[34].max = "1"
 * differential.element[34].type.code = #date
+// 
 //  
 // === MAPPING === 
 // 
@@ -358,7 +358,7 @@ No calculations are made on these data."
 * differential.element[9].mapping[0].map = "Location.address.country"
 
 * differential.element[10].mapping[0].identity = "fhir"
-* differential.element[10].mapping[0].map = ".performedDateTime	"
+* differential.element[10].mapping[0].map = ".performedDateTime"
 
 * differential.element[11].mapping[0].identity = "fhir"
 * differential.element[11].mapping[0].map = ".code"
@@ -373,7 +373,7 @@ No calculations are made on these data."
 * differential.element[14].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp').where(reasonReference.resolve().conformTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp') ).text"
 
 * differential.element[15].mapping[0].identity = "fhir"
-* differential.element[15].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-Gvhd-eu-pcsp')"
+* differential.element[15].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-gvdh-eu-pcsp')"
 
 * differential.element[16].mapping[0].identity = "fhir"
 * differential.element[16].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-prophylaxis-eu-pcsp').where(code = $sct#868254008 'GVHD (graft versus host disease) prophylaxis').exists()"

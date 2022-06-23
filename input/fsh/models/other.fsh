@@ -244,8 +244,8 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[0].mapping[0].identity = "fhir"
 * differential.element[0].mapping[0].map = "Procedure"
 
-* differential.element[1].mapping[0].identity = "fhir"
-* differential.element[1].mapping[0].map = "Condition"
+* differential.element[0].mapping[1].identity = "fhir"
+* differential.element[0].mapping[1].map = "Condition"
 
 * differential.element[1].mapping[0].identity = "fhir"
 * differential.element[1].mapping[0].map = ".identifier"
