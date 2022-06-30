@@ -86,8 +86,8 @@ Usage: #example
 * created = "2022-05-12"
 
 * activity[+].detail
-  * code =  CsRecomandationPcsp#passport_n.GUIDELINE_T2.GUIDELINE_T2 "Subsequent breast cancer"
-  * reasonCode =  CsRiskConditionPcsp#passport_n.GUIDELINE_T2.GUIDELINE_T2 "Subsequent breast cancer"
+  * code =  CsRecomandationPcsp#2 "Perform Mammography and Breast magnetic resonance imaging (MRI) should be performed annually from the eighth year after the end of radiotherapy, but not before the age of 25. These examinations should be continued until at least age 60." 
+  * reasonCode =  CsRiskConditionPcsp#2 "Subsequent breast cancer"
   * reasonReference = Reference(ObservationRiskFactor-2) "RT >= 10 Gy to a vol exposing the breasts"
 // * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
   * status = #not-started
@@ -95,23 +95,23 @@ Usage: #example
 
 
 * activity[+].detail
-  * code =  CsRecomandationPcsp#passport_n.GUIDELINE_T1.GUIDELINE_T1 "Subsequent thyroid cancer"
-  * reasonCode =  CsRiskConditionPcsp#passport_n.GUIDELINE_T1.GUIDELINE_T1 "Subsequent thyroid cancer"
+  * code =  CsRecomandationPcsp#1 "Perform appropriate thyroid screening from the fifth year after the end of radiotherapy. Discuss with your doctor whether to schedule: Clinical thyroid examination every 1-2 years; or Thyroid ultrasound every 3-5 years."
+  * reasonCode =  CsRiskConditionPcsp#1 "Subsequent thyroid cancer"
   * reasonReference = Reference(ObservationRiskFactor-1) "RT to a vol exposing the thyroid gland"
 // * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
   * status = #not-started
   * description = "Counselling regarding the increased risk for developing differentiated thyroid to inform their HCP if they detect a thyroid mass (independent of the presence or absence of associated symptoms), every 5 years - Physical examination of the neck as part of a complete physical examination, whenever a survivor is assessed by a HCP - Counselling regarding options for differentiated thyroid carcinoma surveillance, at least every 5 years If the decision to commence surveillance is made, make a shared decision for one of these two surveillance modalities: - Neck palpation, every 1-2 years, starting 5 years after radiotherapy, or - Thyroid ultrasonographyw, every 3-5 years, starting 5 years after radiotherapy"
 
 * activity[+].detail
-  * code =  CsRecomandationPcsp#passport_n.GUIDELINE_T2.GUIDELINE_T2 "Subsequent breast cancer"
-  * reasonCode =  CsRiskConditionPcsp#passport_n.GUIDELINE_T2.GUIDELINE_T2 "Subsequent breast cancer"
+  * code =  CsRecomandationPcsp#2 "Perform Mammography and Breast magnetic resonance imaging (MRI) should be performed annually from the eighth year after the end of radiotherapy, but not before the age of 25. These examinations should be continued until at least age 60."
+  * reasonCode =  CsRiskConditionPcsp#2 "Subsequent breast cancer"
   * reasonReference = Reference(ObservationRiskFactor-2) "RT >= 10 Gy to a vol exposing the breasts"
 // * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
   * status = #not-started
   * description = "Mammography and breast MRI every year if ≥ 25 years of age or ≥ 8 years from radiation, whichever occurs last"
 * activity[+].detail
-  * code =  CsRecomandationPcsp#passport_n.GUIDELINE_T3.GUIDELINE_T3 "Cardiac problems (High risk)"
-  * reasonCode =  CsRiskConditionPcsp#passport_n.GUIDELINE_T3.GUIDELINE_T3 "Cardiac problems (High risk)"
+  * code =  CsRecomandationPcsp#3 "Perform: Cardiological evaluation at the end of treatment and every 2-3 years thereafter; Electrocardiogram (ECG) at the end of treatment, to be repeated at the age of 18 and cardiological evaluation in case of palpitations, dizziness and/or fainting/loss of consciousness. Echocardiogram 2 years after the end of treatment, to be repeated every 2-3 years; If female, echocardiogram in the first trimester of pregnancy."
+  * reasonCode =  CsRiskConditionPcsp#3 "Cardiac problems (High risk)"
   * reasonReference[+] = Reference(ObservationRiskFactor-3) "RT >= 35 Gy to a vol exposing the heart"
   * reasonReference[+] = Reference(ObservationRiskFactor-4) "Anthracyclines (doxorubicin isotoxic equivalents)>= 250 mg/m2"
 // * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
@@ -130,7 +130,7 @@ Usage: #example
 * status = #final
 * effectivePeriod.start = "2022-05-12"
 * code = $sct#80943009 "Risk factor"
-* valueCodeableConcept = CsRiskFactorPcsp#passport_n.GUIDELINE_T1_TXT.GUIDELINE_T1_1_TXT "RT to a vol exposing the thyroid gland"
+* valueCodeableConcept = CsRiskFactorPcsp#1.1 "RT to a vol exposing the thyroid gland"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: ObservationRiskFactor-2
@@ -143,7 +143,7 @@ Usage: #example
 * status = #final
 * effectivePeriod.start = "2022-05-12"
 * code = $sct#80943009 "Risk factor"
-* valueCodeableConcept = CsRiskFactorPcsp#passport_n.GUIDELINE_T2_TXT.GUIDELINE_T2_1_TXT "RT >= 10 Gy to a vol exposing the breasts"
+* valueCodeableConcept = CsRiskFactorPcsp#2.1 "RT >= 10 Gy to a vol exposing the breasts"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Instance: ObservationRiskFactor-3
@@ -156,7 +156,7 @@ Usage: #example
 * status = #final
 * effectivePeriod.start = "2022-05-12"
 * code = $sct#80943009 "Risk factor"
-* valueCodeableConcept = CsRiskFactorPcsp#passport_n.GUIDELINE_T3_TXT.GUIDELINE_T3_1_TXT "RT >= 35 Gy to a vol exposing the heart"
+* valueCodeableConcept = CsRiskFactorPcsp#3.1 "RT >= 35 Gy to a vol exposing the heart"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -170,4 +170,4 @@ Usage: #example
 * status = #final
 * effectivePeriod.start = "2022-05-12"
 * code = $sct#80943009 "Risk factor"
-* valueCodeableConcept = CsRiskFactorPcsp#passport_n.GUIDELINE_T3_TXT.GUIDELINE_T3_2_TXT "Anthracyclines (doxorubicin isotoxic equivalents)>= 250 mg/m1"
+* valueCodeableConcept = CsRiskFactorPcsp#46.2 "Anthracyclines (doxorubicin isotoxic equivalents)>= 250 mg/m1"
