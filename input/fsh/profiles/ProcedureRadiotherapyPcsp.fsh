@@ -22,7 +22,7 @@ RuleSet: ProcedureRadiotherapyPcspRules
 * performedPeriod 1.. 
 * reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
-* bodySite 1..3 
+* bodySite 1.. 
 * insert RadiotherapyBodySiteExt
 * note ^short = "Additional information about the Radiotherapy" 
 
