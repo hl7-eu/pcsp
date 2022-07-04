@@ -42,10 +42,17 @@ Title:    "Condition: GvHD"
 Description: "This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
-* extension contains $condition-related named relatedPrimaryCancerCondition 1..1
+* extension contains 
+    $condition-related named relatedPrimaryCancerCondition 1..1 and
+    $condition-dueTo named conditionDueTo 1..1
 * extension[relatedPrimaryCancerCondition].valueReference only Reference(ConditionPrimaryCancerPcsp)
 * extension[relatedPrimaryCancerCondition] ^short = "Related Primary Cancer Condition"
 * extension[relatedPrimaryCancerCondition] ^definition = "A reference to the primary cancer condition that provides context for this resource."
+
+* extension[conditionDueTo].valueReference only Reference(ProcedureSctPcsp)
+* extension[conditionDueTo] ^short = "SCT procedure causing this GcDH"
+* extension[conditionDueTo] ^definition = "A reference to the procedure that caused this condition"
+
 
 // * insert CancerConditionCommonRules
 // * clinicalStatus and verificationStatus MS
