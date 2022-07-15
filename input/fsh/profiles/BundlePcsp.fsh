@@ -44,8 +44,6 @@ Description: "This profile represents the constraints applied to the Bundle reso
     radiotherapy			  0..* and
     majorSurgery			  0..* and
 	carePlan 0..* 
-	
-
 
 * entry[composition].resource only CompositionSurpassPcsp
 * entry[patient].resource only PatientPcsp

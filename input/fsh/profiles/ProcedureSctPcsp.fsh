@@ -84,8 +84,7 @@ Profile:  BiologicallyDerivedProductSctPcsp
 Parent:   BiologicallyDerivedProduct	 
 Id:       BiologicallyDerivedProduct-sct-eu-pcsp
 Title:    "BiologicallyDerivedProduct: Stem Cell"
-Description: "This profile defines how to represent Stem Cell in FHIR for describing a Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
- \r\n Maturity Model: 2	- Ready for review"
+Description: "This profile defines how to represent Stem Cell in FHIR for describing a Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
 * extension contains 
@@ -122,8 +121,7 @@ Profile:  ProcedureSctPcsp
 Parent:   Procedure 
 Id:       Procedure-sct-eu-pcsp
 Title:    "Procedure: Stem Cell Transplantation"
-Description: "This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
-  \r\n Maturity Model: 2	- Ready for review"
+Description: "This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
 * extension contains ProcedureUsedReference named usedReference 0..1
