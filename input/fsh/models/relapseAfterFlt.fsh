@@ -113,16 +113,16 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 * differential.element[3].mapping[0].map = ".extension('http://hl7.org/fhir/StructureDefinition/condition-assertedDate')"
 
 * differential.element[4].mapping[0].identity = "fhir"
-* differential.element[4].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').where(Condition.clinicalStatus = #inactive or #relapse or #recurrence).valueCodeableConcept OR Condition.where( clinicalStatus = #relapse or clinicalStatus = #recurrence).clinicalStatus"
+* differential.element[4].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCodeableConcept OR Condition.where( clinicalStatus = #relapse or clinicalStatus = #recurrence).clinicalStatus"
 
 * differential.element[5].mapping[0].identity = "fhir"
-* differential.element[5].mapping[0].map = ""
+* differential.element[5].mapping[0].map = ".bodySite..extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-body-location-qualifier').valueCodeableConcept"
 
 * differential.element[6].mapping[0].identity = "fhir"
-* differential.element[6].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp').bodySite"
+* differential.element[6].mapping[0].map = ".notes"
 
-
-
+* differential.element[6].mapping[1].identity = "fhir"
+* differential.element[6].mapping[1].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-secondaryCancer-eu-pcsp').bodySite"
 
 
 

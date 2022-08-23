@@ -9,6 +9,7 @@ Description: "Qualifiers to refine a body structure or location including qualif
 * include codes from system $sct where concept is-a #106233006 "Topographic Modifier (qualifer)"
 * include codes from system $sct where concept is-a #272424004 "Relative Sites (qualifier)"
 * $sct#255503000 "Entire (qualifier value)"
+* $sct#89780004 "Combined (qualifier value)"
 * exclude codes from valueset LateralityQualifierVS // laterality is separated into a separate value set
 
 

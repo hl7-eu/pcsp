@@ -12,6 +12,7 @@ CALL :buildFshFiles input\fsh\models\relapseFlt
 CALL :buildFshFiles input\fsh\models\other
 REM CALL :buildFshFiles input\fsh\models\suggestion
 CALL :buildFshFiles input\fsh\models\relapseAfterFlt
+CALL :buildFshFiles input\fsh\models\meta
 
 
 REM CALL :buildFshFiles input\fsh\models\minChemio
@@ -51,7 +52,7 @@ GOTO :EOF
 
 :buildFshFiles
  
- if exist %~1"-map.txt"  (
+ if exist %~1"-model.txt"  (
     echo //  >> %~1".fsh"
 		echo // === MODEL === >> %~1".fsh"
 		echo // >> %~1".fsh"
