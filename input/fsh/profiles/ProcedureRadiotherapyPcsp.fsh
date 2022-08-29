@@ -2,7 +2,7 @@
 
 RuleSet: ProcedureRadiotherapyPcspRules
 * extension contains 
-	ResourceRelatedInfo named relatedDose 0..1
+	ResourceRelatedInfo named relatedDose 0..*
 	and $procedure-method named procedureMethod 0..1
 	and RadiotherapyEnergyOrIsotope named energyOrIsotope 0..*
 	and PerformedTiming named performedTiming 0..1
@@ -22,7 +22,8 @@ RuleSet: ProcedureRadiotherapyPcspRules
 * performedPeriod 1.. 
 * reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
-* bodySite 1.. 
+* bodySite 0..
+  * ^short = "required for Brachytherapy and External beam"
 * insert RadiotherapyBodySiteExt
 * note ^short = "Additional information about the Radiotherapy" 
 
@@ -115,7 +116,8 @@ Description: "This profile defines how to represent Radiotherapy Total Dose in F
 // * code = $dicomOntology#113725 "Dose (RP) Total" // evaluate 445565002 | Total boost radiation dose delivered (observable entity) AND 445461008 | Total radiation dose delivered (observable entity)
 * code 1..
 * code from RadiotherapyDoseTypeVs
-* bodySite 1..1
+* bodySite 0..
+  * ^short = "required for Brachytherapy and External beam"
 * insert RadiotherapyBodySiteExt
 
 

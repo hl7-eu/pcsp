@@ -272,6 +272,7 @@ Description: "Calculated|Estimated Value Set"
 //-------------------------------------------------------------------------------------------
 * $sct#703858009 "Numeric estimation technique" 
 * $sct#702873001 	"Calculation technique"
+* $data-absent-reason#unknown "Unknown"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: ChemoUnitsVs
@@ -356,7 +357,8 @@ Title: "Prosthesis Type"
 Description: "Types of Prosthesis this procedure is referring to"
 //-------------------------------------------------------------------------------------------
 * CsGenericPcsp#int-prosthesis "Internal Prosthesis" 
-* CsGenericPcsp#ext-prosthesis "External Prosthesis" 
+* CsGenericPcsp#ext-prosthesis "External Prosthesis"
+* $data-absent-reason#unknown "Unknown"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadiotherapyTypeVs
