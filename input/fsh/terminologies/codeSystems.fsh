@@ -47,7 +47,7 @@
 
 //==== placeholder for internal vs external Prosthesis
 * #int-prosthesis "Internal Prosthesis" "Internal Prosthesis"
-* #ext-prosthesis "External Prosthesis" "Internal Prosthesis"
+* #ext-prosthesis "External Prosthesis" "External Prosthesis"
 
 //==== placeholder for Stem cell tranplantation data
 
