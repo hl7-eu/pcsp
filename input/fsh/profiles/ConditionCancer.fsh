@@ -13,8 +13,6 @@ RuleSet: CancerConditionCommonRules
 
 * extension[histologyMorphologyBehavior].value[x] from ICDO3MorphologyVs (required)
 * extension[previousStatus]
-* extension[relapseType].value[x] from RelapseTypeVS (required)
-  * ^short = "Local/Distant/Combined"
 * subject only Reference (PatientPcsp)
 * bodySite.extension contains
      BodyLocationQualifier named locationQualifier 0..*
