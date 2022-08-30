@@ -6,11 +6,15 @@ RuleSet: CancerConditionCommonRules
     $condition-assertedDate named assertedDate 0..1 
     and $mcode-histology-morphology-behavior named histologyMorphologyBehavior 0..1
 	and PreviousStatus named previousStatus 0..1
+  and RelapseType named relapseType 0..1
+  
 	
 // HistologyMorphologyBehavior named histologyMorphologyBehavior 0..1 MS
 
 * extension[histologyMorphologyBehavior].value[x] from ICDO3MorphologyVs (required)
 * extension[previousStatus]
+* extension[relapseType].value[x] from RelapseTypeVS (required)
+  * ^short = "Local/Distant/Combined"
 * subject only Reference (PatientPcsp)
 * bodySite.extension contains
      BodyLocationQualifier named locationQualifier 0..*
