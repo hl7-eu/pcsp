@@ -18,6 +18,14 @@ Description: "This extension allows to indicate when the procedure was performed
 * value[x] only Timing
 
 
+Extension: RelapseType
+Id: condition-relapseType
+Title:  "Relapse Type"
+Description: "This extension is used to indicate if a relapse/progression is local, remote or combined."
+* insert ExtensionContext(Condition)
+* value[x] only CodeableConcept
+
+
 Extension: ResourceRelatedInfo
 Id:   resource-relatedInfo
 Title:  "Resource related information"

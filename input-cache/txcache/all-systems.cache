@@ -139,3 +139,14 @@ v: {
   "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "702873001",
+  "display" : "Calculation technique"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-calcest-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "Calculation technique (qualifier value)",
+  "code" : "702873001",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
