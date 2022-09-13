@@ -24,7 +24,16 @@ RuleSet: CancerConditionCommonRules
 
 * bodySite from ICDO3TopographyVs (extensible)
 // * extension and bodySite and bodySite.extension[lateralityQualifier] MS
-* bodySite.extension[locationQualifier] 
+* bodySite.extension[locationQualifier].valueCodeableConcept from LeftRightBiUnilateralVS  (preferred) // add mcode valueset as alternative VS
+
+* bodySite.extension[locationQualifier].valueCodeableConcept ^binding.extension.extension[0].url = "purpose"
+* bodySite.extension[locationQualifier].valueCodeableConcept ^binding.extension.extension[=].valueCode = #conformance
+* bodySite.extension[locationQualifier].valueCodeableConcept ^binding.extension.extension[+].url = "valueSet"
+* bodySite.extension[locationQualifier].valueCodeableConcept ^binding.extension.extension[=].valueCanonical = $mcode-laterality-qualifier
+* bodySite.extension[locationQualifier].valueCodeableConcept ^binding.extension.extension[+].url = "documentation"
+* bodySite.extension[locationQualifier].valueCodeableConcept ^binding.extension.extension[=].valueMarkdown = "Qualifiers to specify laterality."
+* bodySite.extension[locationQualifier].valueCodeableConcept ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* bodySite.extension[locationQualifier].valueCodeableConcept ^binding.description = "Qualifiers to specify laterality."
 
 
 RuleSet: CancerStageCommonRules
@@ -210,8 +219,8 @@ This profile should be also used for documenting primary cancer relapses.
 Profile:  ConditionSecondaryCancerPcsp
 Parent:   Condition
 Id:       Condition-secondaryCancer-eu-pcsp
-Title:    "Condition: Secondary Cancer"
-Description: "This profile defines how to represent Condition: Secondary Cancer in FHIR for the purpose of the PanCareSurPass project. 
+Title:    "Condition: Metastatic Cancer"
+Description: "This profile defines how to represent metastatic cancer in FHIR for the purpose of the PanCareSurPass project. 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
 Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).
 "

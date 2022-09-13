@@ -8122,3 +8122,186 @@ v: {
   "system" : "http://snomed.info/sct"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "51440002"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Right and left",
+  "code" : "51440002",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "66459002"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Unilateral",
+  "code" : "66459002",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "24028007"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Right",
+  "code" : "24028007",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "7771000"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Left",
+  "code" : "7771000",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "255470001"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Local",
+  "code" : "255470001",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "261007001"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Distant",
+  "code" : "261007001",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "51440002",
+        "display" : "Bilateral"
+      },
+      {
+        "code" : "66459002",
+        "display" : "Unilateral"
+      },
+      {
+        "code" : "24028007",
+        "display" : "Right"
+      },
+      {
+        "code" : "7771000",
+        "display" : "Left"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:436ed97d-7da0-45b1-9685-b615a180ecfb",
+    "timestamp" : "2022-09-09T16:23:59.566Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "51440002",
+      "display" : "Bilateral"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "66459002",
+      "display" : "Unilateral"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "24028007",
+      "display" : "Right"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "7771000",
+      "display" : "Left"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "255470001",
+        "display" : "Local"
+      },
+      {
+        "code" : "261007001",
+        "display" : "Distant"
+      },
+      {
+        "code" : "89780004",
+        "display" : "Combined"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:fe64616b-0b5a-463d-bfa6-f9b6fa9425d9",
+    "timestamp" : "2022-09-09T16:24:11.581Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "255470001",
+      "display" : "Local"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "261007001",
+      "display" : "Distant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "89780004",
+      "display" : "Combined"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

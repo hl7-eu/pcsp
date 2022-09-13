@@ -34,8 +34,8 @@ Usage:  #example
 //----------------------------------------------------------
 Instance:  ConditionSecCancerMainzZeisig
 InstanceOf: ConditionSecondaryCancerPcsp
-Title:   "Condition: complete Secondary Cancer Condition example (TBC)"
-Description: "Sample of Secondary Cancer Condition  based on information available by Mainz"
+Title:   "Condition: complete metastatic site Condition example (TBC)"
+Description: "Sample of metastatic site Condition  based on information available by Mainz"
 Usage:  #example
 //----------------------------------------------------------
 
