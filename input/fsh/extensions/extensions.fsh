@@ -121,7 +121,7 @@ Description: "Qualifier to specify laterality."
 // * insert ExtensionContext(Condition.bodySite)
 // * insert ExtensionContext(Observation.bodySite)
 * value[x] only CodeableConcept
-* value[x] from LateralityQualifierVS (preferred)
+// * value[x] from LateralityQualifierVS (preferred)
 * value[x] 1..1
 
 // ------------------------------------
