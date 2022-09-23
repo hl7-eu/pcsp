@@ -290,18 +290,18 @@ When using the SurPass platform, as you start typing the name of the site, a dro
 * differential.element[24].type.code = #CodeableConcept
 
 
-* differential.element[25].id = "Radiotherapy.target.cumulativeDose"
-* differential.element[25].path = "Radiotherapy.target.cumulativeDose"
-* differential.element[25].short = "Comulative dose"
-* differential.element[25].definition = "Specify the cumulative / total dose given to the primary radiation therapy site.
+* differential.element[25].id = "Radiotherapy.target.totalDose"
+* differential.element[25].path = "Radiotherapy.target.totalDose"
+* differential.element[25].short = "Total dose"
+* differential.element[25].definition = "Specify the total dose given to the primary radiation therapy site.
 If the dose is not known, write NK."
 * differential.element[25].min = 0
 * differential.element[25].max = "1"
 * differential.element[25].type.code = #BackboneElement
 
 
-* differential.element[26].id = "Radiotherapy.target.cumulativeDose.completionStatus"
-* differential.element[26].path = "Radiotherapy.target.cumulativeDose.completionStatus"
+* differential.element[26].id = "Radiotherapy.target.totalDose.completionStatus"
+* differential.element[26].path = "Radiotherapy.target.totalDose.completionStatus"
 * differential.element[26].short = "The reported doses are incomplete (either under- or over-estimated)"
 * differential.element[26].definition = "Check in case of incomplete doses"
 * differential.element[26].min = 0
@@ -309,8 +309,8 @@ If the dose is not known, write NK."
 * differential.element[26].type.code = #CodeableConcept
 
 
-* differential.element[27].id = "Radiotherapy.target.cumulativeDose.statusReason"
-* differential.element[27].path = "Radiotherapy.target.cumulativeDose.statusReason"
+* differential.element[27].id = "Radiotherapy.target.totalDose.statusReason"
+* differential.element[27].path = "Radiotherapy.target.totalDose.statusReason"
 * differential.element[27].short = "Specify reasons why"
 * differential.element[27].definition = "Specify reasons of incomplete estimated doses"
 * differential.element[27].min = 0
@@ -318,8 +318,8 @@ If the dose is not known, write NK."
 * differential.element[27].type.code = #CodeableConcept
 
 
-* differential.element[28].id = "Radiotherapy.target.cumulativeDose.notKnown"
-* differential.element[28].path = "Radiotherapy.target.cumulativeDose.notKnown"
+* differential.element[28].id = "Radiotherapy.target.totalDose.notKnown"
+* differential.element[28].path = "Radiotherapy.target.totalDose.notKnown"
 * differential.element[28].short = "Not known dose"
 * differential.element[28].definition = "Not known dose"
 * differential.element[28].min = 0
@@ -327,17 +327,17 @@ If the dose is not known, write NK."
 * differential.element[28].type.code = #string
 
 
-* differential.element[29].id = "Radiotherapy.target.cumulativeDose.dose"
-* differential.element[29].path = "Radiotherapy.target.cumulativeDose.dose"
+* differential.element[29].id = "Radiotherapy.target.totalDose.dose"
+* differential.element[29].path = "Radiotherapy.target.totalDose.dose"
 * differential.element[29].short = "Dose"
-* differential.element[29].definition = "Specify the cumulative / total dose given to the primary radiation therapy site."
+* differential.element[29].definition = "Specify the total dose given to the primary radiation therapy site."
 * differential.element[29].min = 0
 * differential.element[29].max = "1"
 * differential.element[29].type.code = #decimal
 
 
-* differential.element[30].id = "Radiotherapy.target.cumulativeDose.unit"
-* differential.element[30].path = "Radiotherapy.target.cumulativeDose.unit"
+* differential.element[30].id = "Radiotherapy.target.totalDose.unit"
+* differential.element[30].path = "Radiotherapy.target.totalDose.unit"
 * differential.element[30].short = "Measure unit"
 * differential.element[30].definition = "External Beam Radiation Therapy (EBRT) and Brachytherapy doses are in Gy. If doses are reported in cGY, roughly two zeroes need to be deleted (e.g. 100 cGy = 1 Gy).
 specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
@@ -346,8 +346,8 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[30].type.code = #CodeableConcept
 
 
-* differential.element[31].id = "Radiotherapy.target.cumulativeDose.fractions"
-* differential.element[31].path = "Radiotherapy.target.cumulativeDose.fractions"
+* differential.element[31].id = "Radiotherapy.target.totalDose.fractions"
+* differential.element[31].path = "Radiotherapy.target.totalDose.fractions"
 * differential.element[31].short = "Number of fractions (if  external beam)"
 * differential.element[31].definition = "A FRACTION of radiation treatment is a single attendance for treatment; if 'not known' insert NK"
 * differential.element[31].min = 0
@@ -446,17 +446,17 @@ required if given"
 * differential.element[40].type.code = #CodeableConcept
 
 
-* differential.element[41].id = "Radiotherapy.target.boost.cumulativeDose"
-* differential.element[41].path = "Radiotherapy.target.boost.cumulativeDose"
-* differential.element[41].short = "Comulative dose"
-* differential.element[41].definition = "Specify the cumulative / total dose given to the boost site."
+* differential.element[41].id = "Radiotherapy.target.boost.totalDose"
+* differential.element[41].path = "Radiotherapy.target.boost.totalDose"
+* differential.element[41].short = "Total dose"
+* differential.element[41].definition = "Specify the total dose given to the boost site."
 * differential.element[41].min = 1
 * differential.element[41].max = "1"
 * differential.element[41].type.code = #BackboneElement
 
 
-* differential.element[42].id = "Radiotherapy.target.boost.cumulativeDose.completionStatus"
-* differential.element[42].path = "Radiotherapy.target.boost.cumulativeDose.completionStatus"
+* differential.element[42].id = "Radiotherapy.target.boost.totalDose.completionStatus"
+* differential.element[42].path = "Radiotherapy.target.boost.totalDose.completionStatus"
 * differential.element[42].short = "The reported doses are incomplete (either under- or over-estimated)"
 * differential.element[42].definition = "Check in case of incomplete doses"
 * differential.element[42].min = 0
@@ -464,8 +464,8 @@ required if given"
 * differential.element[42].type.code = #CodeableConcept
 
 
-* differential.element[43].id = "Radiotherapy.target.boost.cumulativeDose.statusReason"
-* differential.element[43].path = "Radiotherapy.target.boost.cumulativeDose.statusReason"
+* differential.element[43].id = "Radiotherapy.target.boost.totalDose.statusReason"
+* differential.element[43].path = "Radiotherapy.target.boost.totalDose.statusReason"
 * differential.element[43].short = "Specify reasons why"
 * differential.element[43].definition = "Specify reasons of incomplete estimated doses"
 * differential.element[43].min = 0
@@ -473,8 +473,8 @@ required if given"
 * differential.element[43].type.code = #CodeableConcept
 
 
-* differential.element[44].id = "Radiotherapy.target.boost.cumulativeDose.notKnown"
-* differential.element[44].path = "Radiotherapy.target.boost.cumulativeDose.notKnown"
+* differential.element[44].id = "Radiotherapy.target.boost.totalDose.notKnown"
+* differential.element[44].path = "Radiotherapy.target.boost.totalDose.notKnown"
 * differential.element[44].short = "Not known dose"
 * differential.element[44].definition = "Not known dose"
 * differential.element[44].min = 0
@@ -482,17 +482,17 @@ required if given"
 * differential.element[44].type.code = #CodeableConcept
 
 
-* differential.element[45].id = "Radiotherapy.target.boost.cumulativeDose.dose"
-* differential.element[45].path = "Radiotherapy.target.boost.cumulativeDose.dose"
+* differential.element[45].id = "Radiotherapy.target.boost.totalDose.dose"
+* differential.element[45].path = "Radiotherapy.target.boost.totalDose.dose"
 * differential.element[45].short = "Dose"
-* differential.element[45].definition = "Specify the cumulative / total dose given to the boost site."
+* differential.element[45].definition = "Specify the total dose given to the boost site."
 * differential.element[45].min = 0
 * differential.element[45].max = "1"
 * differential.element[45].type.code = #decimal
 
 
-* differential.element[46].id = "Radiotherapy.target.boost.cumulativeDose.unit"
-* differential.element[46].path = "Radiotherapy.target.boost.cumulativeDose.unit"
+* differential.element[46].id = "Radiotherapy.target.boost.totalDose.unit"
+* differential.element[46].path = "Radiotherapy.target.boost.totalDose.unit"
 * differential.element[46].short = "Unit"
 * differential.element[46].definition = "Specify the unit of the boost in case of external beam radiotherapy as  Gy. 
 specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
@@ -501,8 +501,8 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[46].type.code = #CodeableConcept
 
 
-* differential.element[47].id = "Radiotherapy.target.boost.cumulativeDose.fractions"
-* differential.element[47].path = "Radiotherapy.target.boost.cumulativeDose.fractions"
+* differential.element[47].id = "Radiotherapy.target.boost.totalDose.fractions"
+* differential.element[47].path = "Radiotherapy.target.boost.totalDose.fractions"
 * differential.element[47].short = "Number of fractions (if  external beam)"
 * differential.element[47].definition = "A fraction of radiation treatment is a single attendance for treatment. Please specify the number of fractions given as included in the boost. If not known, insert NK."
 * differential.element[47].min = 0
@@ -510,8 +510,8 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[47].type.code = #integer
 
 
-* differential.element[48].id = "Radiotherapy.target.site.shielding"
-* differential.element[48].path = "Radiotherapy.target.site.shielding"
+* differential.element[48].id = "Radiotherapy.target.shielding"
+* differential.element[48].path = "Radiotherapy.target.shielding"
 * differential.element[48].short = "Shielding"
 * differential.element[48].definition = "Shielding, in some records this is called ?blocking? or ?blocks?. "
 * differential.element[48].min = 0
@@ -519,8 +519,8 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[48].type.code = #BackboneElement
 
 
-* differential.element[49].id = "Radiotherapy.target.site.shielding.status"
-* differential.element[49].path = "Radiotherapy.target.site.shielding.status"
+* differential.element[49].id = "Radiotherapy.target.shielding.status"
+* differential.element[49].path = "Radiotherapy.target.shielding.status"
 * differential.element[49].short = "Shielding status"
 * differential.element[49].definition = "Specify if shielding was used or not. 
 Yes;  No;  NK ÿ"
@@ -529,8 +529,8 @@ Yes;  No;  NK ÿ"
 * differential.element[49].type.code = #CodeableConcept
 
 
-* differential.element[50].id = "Radiotherapy.target.site.shielding.position"
-* differential.element[50].path = "Radiotherapy.target.site.shielding.position"
+* differential.element[50].id = "Radiotherapy.target.shielding.position"
+* differential.element[50].path = "Radiotherapy.target.shielding.position"
 * differential.element[50].short = "Position of shielding"
 * differential.element[50].definition = "Describe the positioning of shielding"
 * differential.element[50].min = 0
@@ -592,6 +592,7 @@ Yes;  No;  NK ÿ"
 * differential.element[56].type.code = #string
 
 
+// 
 //  
 // === MAPPING === 
 // 
@@ -647,16 +648,16 @@ Yes;  No;  NK ÿ"
 * differential.element[16].mapping[0].map = ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/radiotherapy-energy-or-isotope').valueCodeableConcept"
 
 * differential.element[17].mapping[0].identity = "fhir"
-* differential.element[17].mapping[0].map = "TBD"
+* differential.element[17].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming).valueTiming.repeat.count"
 
 * differential.element[18].mapping[0].identity = "fhir"
 * differential.element[18].mapping[0].map = ".bodySite"
 
 * differential.element[18].mapping[1].identity = "fhir"
-* differential.element[18].mapping[1].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp).bodySite"
+* differential.element[18].mapping[1].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "."
+* differential.element[19].mapping[0].map = ".bodySite"
 
 * differential.element[20].mapping[0].identity = "fhir"
 * differential.element[20].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier).valueCodeableConcept"
@@ -665,13 +666,13 @@ Yes;  No;  NK ÿ"
 * differential.element[21].mapping[0].map = ".text"
 
 * differential.element[22].mapping[0].identity = "fhir"
-* differential.element[22].mapping[0].map = "TBD"
+* differential.element[22].mapping[0].map = ".bodySite.where(extension('mcode-body-location-qualifier').valueCodeableConcept = http://snomed.info/sct#272488003 'From-structure')"
 
 * differential.element[23].mapping[0].identity = "fhir"
-* differential.element[23].mapping[0].map = "TBD"
+* differential.element[23].mapping[0].map = ".bodySite.where(extension('mcode-body-location-qualifier').valueCodeableConcept = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp#to-structure 'To-structure')"
 
 * differential.element[24].mapping[0].identity = "fhir"
-* differential.element[24].mapping[0].map = "TBD"
+* differential.element[24].mapping[0].map = ".extension('http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier').valueCodeableConcept"
 
 * differential.element[25].mapping[0].identity = "fhir"
 * differential.element[25].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
@@ -692,7 +693,7 @@ Yes;  No;  NK ÿ"
 * differential.element[30].mapping[0].map = ".valueQuantity.code"
 
 * differential.element[31].mapping[0].identity = "fhir"
-* differential.element[31].mapping[0].map = "TBD"
+* differential.element[31].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming).valueTiming.repeat.count"
 
 * differential.element[32].mapping[0].identity = "fhir"
 * differential.element[32].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyBoost-eu-pcsp')"
@@ -713,16 +714,16 @@ Yes;  No;  NK ÿ"
 * differential.element[36].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier).valueCodeableConcept"
 
 * differential.element[37].mapping[0].identity = "fhir"
-* differential.element[37].mapping[0].map = ".text"
+* differential.element[37].mapping[0].map = ".note"
 
 * differential.element[38].mapping[0].identity = "fhir"
-* differential.element[38].mapping[0].map = "TBD"
+* differential.element[38].mapping[0].map = ".bodySite.where(extension(http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier).valueCodeableConcept = http://snomed.info/sct#272488003 'From-structure')"
 
 * differential.element[39].mapping[0].identity = "fhir"
-* differential.element[39].mapping[0].map = "TBD"
+* differential.element[39].mapping[0].map = ".bodySite.where(extension(http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier).valueCodeableConcept = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp#to-structure 'To-structure')"
 
 * differential.element[40].mapping[0].identity = "fhir"
-* differential.element[40].mapping[0].map = "TBD"
+* differential.element[40].mapping[0].map = ".extension(http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier).valueCodeableConcept"
 
 * differential.element[41].mapping[0].identity = "fhir"
 * differential.element[41].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/ResourceRelatedInfo-eu-pcsp).resolve().conformsTo(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Observation-cumulativeDoseRad-eu-pcsp)"
@@ -743,19 +744,19 @@ Yes;  No;  NK ÿ"
 * differential.element[46].mapping[0].map = ".valueQuantity.code"
 
 * differential.element[47].mapping[0].identity = "fhir"
-* differential.element[47].mapping[0].map = "TBD"
+* differential.element[47].mapping[0].map = ".extension(http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming).valueTiming.repeat.count"
 
 * differential.element[48].mapping[0].identity = "fhir"
-* differential.element[48].mapping[0].map = "TBD"
+* differential.element[48].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyShield-eu-pcsp')"
 
 * differential.element[49].mapping[0].identity = "fhir"
-* differential.element[49].mapping[0].map = "TBD"
+* differential.element[49].mapping[0].map = ".status"
 
 * differential.element[50].mapping[0].identity = "fhir"
-* differential.element[50].mapping[0].map = "TBD"
+* differential.element[50].mapping[0].map = ".bodySite"
 
-
-
+* differential.element[51].mapping[0].identity = "fhir"
+* differential.element[51].mapping[0].map = ".note"
 
 * differential.element[52].mapping[0].identity = "fhir"
 * differential.element[52].mapping[0].map = ".extension(http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo).ofType(DocumentReference)"

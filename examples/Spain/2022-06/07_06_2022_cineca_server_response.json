@@ -1,0 +1,90 @@
+{
+  "resourceType": "Bundle",
+  "id": "97c01972-7ee6-4d69-b0c1-b06deca457d4",
+  "meta": {
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/Bundle" ]
+  },
+  "type": "transaction-response",
+  "link": [ {
+    "relation": "self",
+    "url": "https://psp-lt-fhir.dev.sanit.cineca.it:443/fhir"
+  } ],
+  "entry": [ {
+    "response": {
+      "status": "201 Created",
+      "location": "Patient/9984/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "Condition/9985/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "Condition/9986/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "Organization/9987/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "Location/9988/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "MedicationAdministration/9989/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "MedicationAdministration/9990/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "MedicationAdministration/9991/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "Observation/9992/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "Observation/9993/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  }, {
+    "response": {
+      "status": "201 Created",
+      "location": "Observation/9994/_history/1",
+      "etag": "1",
+      "lastModified": "2022-06-07T17:47:49.627+02:00"
+    }
+  } ]
+}

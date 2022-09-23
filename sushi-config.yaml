@@ -53,6 +53,12 @@ pages:
     title: Collaboration diagrams
   profiles.md:
     title: Profiles
+  terminology.md:
+    title: Terminology
+  extensions.md:
+    title: Extensions
+  examples.md:
+    title: Examples
   downloads.html:
     title: Useful Downloads
   changes.html:
@@ -68,9 +74,13 @@ menu:
     Logical models: logicalModel.html
   Specifications:
     Profiles: profiles.html
+    Extensions: extensions.html
+    Terminology: terminology.html
+    Examples: examples.html
   Maturity Model: maturity.html
   Artifact Index: artifacts.html			
   Support:
     FHIR Spec: new-tab http://hl7.org/fhir/R4/index.html
+    Report an issue: new-tab https://github.com/hl7-eu/pcsp/issues
     Downloads: downloads.html
 	

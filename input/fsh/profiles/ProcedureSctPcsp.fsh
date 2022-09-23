@@ -3,9 +3,8 @@
 Profile:  ObservationBloodAboRh
 Parent:   Observation
 Id:       Observation-bld-abo-rh-eu-pcsp
-Title:    "Observation Blood type/RH"
-Description: """This profile defines how to represent Blood type/RH  before or after the SCT in HL7 FHIR for the purpose of the PanCareSurPass project. 
- \r\n Maturity Model: 0"""
+Title:    "Observation: Blood type/RH"
+Description: "This profile defines how to represent Blood type/RH  before or after the SCT in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
  
@@ -36,26 +35,32 @@ Description: """This profile defines how to represent Blood type/RH  before or a
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  ConditionGvdhPcsp
+Profile:  ConditionGvhdPcsp
 Parent:   Condition
-Id:       Condition-gvdh-eu-pcsp
-Title:    "GvHD Condition"
-Description: """This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project. 
- \r\n Maturity Model: 0"""
+Id:       Condition-gvhd-eu-pcsp
+Title:    "Condition: GvHD"
+Description: "This profile defines how to represent Graft versus host disease (GvHD) in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
-* extension contains $condition-related named relatedPrimaryCancerCondition 1..1
+* extension contains 
+    $condition-related named relatedPrimaryCancerCondition 1..1 and
+    $condition-dueTo named conditionDueTo 1..1
 * extension[relatedPrimaryCancerCondition].valueReference only Reference(ConditionPrimaryCancerPcsp)
 * extension[relatedPrimaryCancerCondition] ^short = "Related Primary Cancer Condition"
 * extension[relatedPrimaryCancerCondition] ^definition = "A reference to the primary cancer condition that provides context for this resource."
+
+* extension[conditionDueTo].valueReference only Reference(ProcedureSctPcsp)
+* extension[conditionDueTo] ^short = "SCT procedure causing this GcDH"
+* extension[conditionDueTo] ^definition = "A reference to the procedure that caused this condition"
+
 
 // * insert CancerConditionCommonRules
 // * clinicalStatus and verificationStatus MS
   
 * code 1.. MS // add value set; add slices for
-* code from SctGvdhType
+* code from SctGvhdType
 
-* onset[x] MS
+* onset[x] only Period
 * encounter only Reference (Encounter or EncounterPcsp)
 * subject only Reference (PatientPcsp)
 * bodySite ^short = "Organs affected by GVHD"
@@ -69,8 +74,8 @@ Description: """This profile defines how to represent Graft versus host disease 
   * summary.coding contains 
   	acute 0..1
   	and chronic 0..1
-  * summary.coding[acute] from SctAcuteGvdhGrade
-  * summary.coding[chronic] from SctChronicGvdhGrade
+  * summary.coding[acute] from SctAcuteGvhdGrade
+  * summary.coding[chronic] from SctChronicGvhdGrade
 
 
 
@@ -78,9 +83,8 @@ Description: """This profile defines how to represent Graft versus host disease 
 Profile:  BiologicallyDerivedProductSctPcsp
 Parent:   BiologicallyDerivedProduct	 
 Id:       BiologicallyDerivedProduct-sct-eu-pcsp
-Title:    "BiologicallyDerivedProduct Stem Cell"
-Description: "This profile defines how to represent Stem Cell in FHIR for describing a Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
- \r\n Maturity Model: 0 - Draft"
+Title:    "BiologicallyDerivedProduct: Stem Cell"
+Description: "This profile defines how to represent Stem Cell in FHIR for describing a Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
 * extension contains 
@@ -88,7 +92,7 @@ Description: "This profile defines how to represent Stem Cell in FHIR for descri
   and SctSourceType named sctSourceType 0..1
 * extension[sctDonorType].valueCodeableConcept from SctDonorTypeVs
 * extension[sctSourceType].valueCodeableConcept from SctSourceTypeVs
-* productCategory = $product-category#cell
+* productCategory = $product-category#cells
 * collection.source ^short = "The patient providing the cells"
 
 
@@ -96,9 +100,8 @@ Description: "This profile defines how to represent Stem Cell in FHIR for descri
 Profile:  ProcedureSctProphylaxisPcsp
 Parent:   Procedure 
 Id:       Procedure-sct-prophylaxis-eu-pcsp
-Title:    "Procedure SCT Prophylaxis"
-Description: "This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan.
- \r\n Maturity Model: 0 - Draft"
+Title:    "Procedure: SCT Prophylaxis"
+Description: "This profile defines how to represent GVHD prophylaxis, conditioning regimen Procedures in FHIR for supporting Stem Cell Transplantation data, as required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
 * identifier ^short = "External Identifiers for this SCT-related procedure"
@@ -106,7 +109,7 @@ Description: "This profile defines how to represent GVHD prophylaxis, conditioni
 * category 1..
 * category from SctProphylaxisCathegory // check GPS
 * subject only Reference(PatientPcsp)	
-* subject MS
+* subject 1..
 * code from SctProphylaxisType (extensible)
 * performedPeriod MS
 * reasonReference 2.. MS // add reference to the diagnosis
@@ -117,9 +120,8 @@ Description: "This profile defines how to represent GVHD prophylaxis, conditioni
 Profile:  ProcedureSctPcsp
 Parent:   Procedure 
 Id:       Procedure-sct-eu-pcsp
-Title:    "Procedure Stem Cell Transplantation"
-Description: "This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan.
- \r\n Maturity Model: 0 - Draft"
+Title:    "Procedure: Stem Cell Transplantation"
+Description: "This profile defines how to represent Procedures in FHIR for describing a set of Stem Cell Transplantation data required by the PanCareSurPass algorithm to generate the care plan."
 //-------------------------------------------------------------------------------------------
 
 * extension contains ProcedureUsedReference named usedReference 0..1
@@ -133,9 +135,10 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * code ^short = "Identification of the procedure."
 * code from SctTypeVs
 * subject only Reference(PatientPcsp)	
-* subject MS
+* subject 1..
 * performed[x] 1..
-* performedDateTime ^short = "Date of the Stem Cell Transplantation"
-* reasonReference 1.. MS // add reference to the diagnosis
+* performed[x] only dateTime 
+* performed[x] ^short = "Date of the Stem Cell Transplantation"
+* reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
 

@@ -8,8 +8,6 @@
 	<p>{% include sequence-1.svg %}</p>
 	<p>The second of the generation of a PCSP Care Plan</p>
 	<p>{% include sequence-2.svg %}</p>
-	<p>The third creation/update of a Patient record in the platform</p>
-	<p>{% include sequence-3.svg %}</p>
 	<h3 id="actors">Actors</h3>
 	<a> </a>
 	<h4 id="local-system-a">Local System A</h4>
@@ -24,9 +22,6 @@
 				<a href="#treatment-summary">
 					<strong>Treatment Summary</strong></a>
 			</p>
-		</li>
-		<li>
-			<p>Patient Data</p>
 		</li>
 	</ol>
 	<h4 id="pcsp-platform">PCSP Platform</h4>
@@ -44,16 +39,13 @@
 							<strong>Treatment Summary</strong></a>
 					</p>
 				</li>
-				<li>
-					<p>Patient Data</p>
-				</li>
 			</ol>
 		</li>
 		<li>
 			<p>processes the <strong>
 					<a href="#treatment-summary">Treatment Summary</a>
 				</strong>to generate the <strong>
-					<a href="#surpass-with-the-scp-draft-or-final">draft SCP</a>
+					<a href="#surpass-with-the-scp-draft-or-final">draft SCP (Survivor Care Plan)</a>
 				</strong>
 			</p>
 		</li>
@@ -100,11 +92,7 @@
 			<!-- Treatment Summary -->
 		</strong>
 	</p>
-	<h4 id="treatment-summary">Patient Data</h4>
-	<a> </a>
-	<p>Logical model of the <strong>Patient Data</strong>
-	</p>
-	<h4 id="treatment-summary">SCP care Plan</h4>
+	<h4 id="scp">Survivor Care Plan</h4>
 	<a> </a>
 	<p>Logical model of the <strong>SCP Care Plan</strong>
 	</p>

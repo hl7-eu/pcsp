@@ -28,8 +28,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:12d0d8f0-d3e7-42ea-9a76-2b3eb3b929aa",
-    "timestamp" : "2022-03-25T13:31:15.846Z",
+    "identifier" : "urn:uuid:c8575370-2131-4b18-a84f-d46168135a15",
+    "timestamp" : "2022-06-11T09:36:10.146Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true

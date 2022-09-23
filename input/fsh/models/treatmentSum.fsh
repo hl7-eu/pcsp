@@ -1,7 +1,6 @@
 Instance: TreatmentSummary
 InstanceOf: StructureDefinition
-Description: "Treatment Summary data model
-Maturity Level: 0 - Draft"
+Description: "Treatment Summary data model - Maturity Level: 2 - Ready for Review"
 Title: "Treatment Summary"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -11,8 +10,7 @@ Usage: #definition
 * title = "Treatment Summary"
 * status = #draft
 * experimental = true
-* description = "Treatment Summary data model
-Maturity Level: 0 - Draft"
+* description = "Treatment Summary data model - Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -97,7 +95,7 @@ Maturity Level: 0 - Draft"
 * differential.element[10].definition = "Medical suggestion"
 * differential.element[10].min = 0
 * differential.element[10].max = "1"
-* differential.element[10].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicalSuggestion
+* differential.element[10].type.code = #string
 * differential.element[11].id = "TreatmentSummary.diagnosis.relapseDuringFLT"
 * differential.element[11].path = "TreatmentSummary.diagnosis.relapseDuringFLT"
 * differential.element[11].short = "Progression-Relapse during FLT"
@@ -174,7 +172,7 @@ Maturity Level: 0 - Draft"
 * differential.element[21].definition = "Medical suggestion"
 * differential.element[21].min = 0
 * differential.element[21].max = "1"
-* differential.element[21].type.code = #http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicalSuggestion
+* differential.element[21].type.code = #string
 * differential.element[22].id = "TreatmentSummary.diagnosis.otherConditions"
 * differential.element[22].path = "TreatmentSummary.diagnosis.otherConditions"
 * differential.element[22].short = "Other medical conditions, not cancer associated"
@@ -182,3 +180,4 @@ Maturity Level: 0 - Draft"
 * differential.element[22].min = 0
 * differential.element[22].max = "*"
 * differential.element[22].type.code = #string
+// 

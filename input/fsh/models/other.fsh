@@ -1,7 +1,7 @@
 Instance: OtherInfos
 InstanceOf: StructureDefinition
 Description: "Other info and relevant events
-Maturity Level: 0 - Draft"
+Maturity Level: 2 - Ready for Review"
 Title: "Other info and relevant events"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -12,7 +12,7 @@ Usage: #definition
 * status = #draft
 * experimental = true
 * description = "Other info and relevant events
-Maturity Level: 0 - Draft"
+Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
@@ -89,7 +89,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[8].definition = "Please describe any significant event (e.g. admission to the intensive care for a metabolic problem, seizures, severe toxic complication) occurring during therapy that might have fully recovered or be still remaining or with sequelae"
 * differential.element[8].min = 1
 * differential.element[8].max = "1"
-* differential.element[8].type.code = #BackboneElement
+* differential.element[8].type.code = #string
 * differential.element[9].id = "OtherInfos.severeToxicity.isResolved"
 * differential.element[9].path = "OtherInfos.severeToxicity.isResolved"
 * differential.element[9].short = "Resolved ?"
@@ -108,14 +108,14 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[11].path = "OtherInfos.growthHormoneDeficiency"
 * differential.element[11].short = "Growth hormone deficiency ?"
 * differential.element[11].definition = "Please specify if growth hormon deficiency occured during therapy"
-* differential.element[11].min = 1
+* differential.element[11].min = 0
 * differential.element[11].max = "1"
 * differential.element[11].type.code = #CodeableConcept
 * differential.element[12].id = "OtherInfos.hydrocephalus"
 * differential.element[12].path = "OtherInfos.hydrocephalus"
 * differential.element[12].short = "Hydrocephalus ?"
 * differential.element[12].definition = "Please specify if hydrocephalus occured during therapy"
-* differential.element[12].min = 1
+* differential.element[12].min = 0
 * differential.element[12].max = "1"
 * differential.element[12].type.code = #CodeableConcept
 * differential.element[13].id = "OtherInfos.chronicViralHepatitis"
@@ -162,7 +162,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[18].type.code = #BackboneElement
 * differential.element[19].id = "OtherInfos.catheter.relatedThrombosis.occurred"
 * differential.element[19].path = "OtherInfos.catheter.relatedThrombosis.occurred"
-* differential.element[19].short = "Yes/No"
+* differential.element[19].short = "Yes/No/UNK"
 * differential.element[19].definition = "Report if there was a catheter-related thrombosis due to a central venous catheter."
 * differential.element[19].min = 0
 * differential.element[19].max = "1"
@@ -183,7 +183,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[21].type.code = #BackboneElement
 * differential.element[22].id = "OtherInfos.transfusion.occured"
 * differential.element[22].path = "OtherInfos.transfusion.occured"
-* differential.element[22].short = "Yes/No"
+* differential.element[22].short = "Yes/No/UNK"
 * differential.element[22].definition = "Please state if at least one blood (any component) transfusion was made"
 * differential.element[22].min = 0
 * differential.element[22].max = "1"
@@ -209,9 +209,9 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[25].min = 0
 * differential.element[25].max = "1"
 * differential.element[25].type.code = #BackboneElement
-* differential.element[26].id = "OtherInfos.fertilityPreservation.occurred"
-* differential.element[26].path = "OtherInfos.fertilityPreservation.occurred"
-* differential.element[26].short = "If yes, describe"
+* differential.element[26].id = "OtherInfos.fertilityPreservation.description"
+* differential.element[26].path = "OtherInfos.fertilityPreservation.description"
+* differential.element[26].short = "Description "
 * differential.element[26].definition = "If fertility preservation was performed,please  describe it"
 * differential.element[26].min = 0
 * differential.element[26].max = "1"
@@ -228,118 +228,129 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[28].short = "Other oncological treatments"
 * differential.element[28].definition = "Report here if any other treatment (not included in the chemotherapy, surgery or radiotherapy sections) was adminstered to the survivor"
 * differential.element[28].min = 0
-* differential.element[28].max = "*"
-* differential.element[28].type.code = #CodeableConcept
+* differential.element[28].max = "1"
+* differential.element[28].type.code = #string
 * differential.element[29].id = "OtherInfos.dischargeLetter"
 * differential.element[29].path = "OtherInfos.dischargeLetter"
 * differential.element[29].short = "Discharge letter"
 * differential.element[29].definition = "Discharge letter"
 * differential.element[29].min = 0
-* differential.element[29].max = "*"
+* differential.element[29].max = "1"
 * differential.element[29].type.code = #Attachment
+// 
 //  
 // === MAPPING === 
 // 
 * differential.element[0].mapping[0].identity = "fhir"
-* differential.element[0].mapping[0].map = "TBD"
+* differential.element[0].mapping[0].map = "Procedure"
+
+* differential.element[0].mapping[1].identity = "fhir"
+* differential.element[0].mapping[1].map = "Condition"
 
 * differential.element[1].mapping[0].identity = "fhir"
-* differential.element[1].mapping[0].map = "TBD"
+* differential.element[1].mapping[0].map = ".identifier"
 
 * differential.element[2].mapping[0].identity = "fhir"
-* differential.element[2].mapping[0].map = "TBD"
+* differential.element[2].mapping[0].map = "Procedure.reasonReference"
+
+* differential.element[2].mapping[1].identity = "fhir"
+* differential.element[2].mapping[1].map = "extension('http://hl7.org/fhir/StructureDefinition/condition-related').valueReference"
 
 * differential.element[3].mapping[0].identity = "fhir"
-* differential.element[3].mapping[0].map = "TBD"
+* differential.element[3].mapping[0].map = "Procedure.reasonReference"
+
+* differential.element[3].mapping[1].identity = "fhir"
+* differential.element[3].mapping[1].map = "extension('http://hl7.org/fhir/StructureDefinition/condition-related').valueReference"
 
 * differential.element[4].mapping[0].identity = "fhir"
-* differential.element[4].mapping[0].map = "TBD"
+* differential.element[4].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-toxicity-eu-pcsp')"
 
 * differential.element[5].mapping[0].identity = "fhir"
-* differential.element[5].mapping[0].map = "TBD"
+* differential.element[5].mapping[0].map = ".exists()"
+
+* differential.element[5].mapping[1].identity = "fhir"
+* differential.element[5].mapping[1].map = ".verificationStatus"
 
 * differential.element[6].mapping[0].identity = "fhir"
-* differential.element[6].mapping[0].map = "TBD"
+* differential.element[6].mapping[0].map = ".identifier"
 
 * differential.element[7].mapping[0].identity = "fhir"
-* differential.element[7].mapping[0].map = "TBD"
+* differential.element[7].mapping[0].map = ".onsetDateTime"
 
 * differential.element[8].mapping[0].identity = "fhir"
-* differential.element[8].mapping[0].map = "TBD"
+* differential.element[8].mapping[0].map = ".text"
+
+* differential.element[8].mapping[1].identity = "fhir"
+* differential.element[8].mapping[1].map = ".note"
 
 * differential.element[9].mapping[0].identity = "fhir"
-* differential.element[9].mapping[0].map = "TBD"
+* differential.element[9].mapping[0].map = ".clinicalStatus"
 
 * differential.element[10].mapping[0].identity = "fhir"
-* differential.element[10].mapping[0].map = "TBD"
+* differential.element[10].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp').where(code = http://snomed.info/sct#48130008 'Hypogonadism').exists()"
 
 * differential.element[11].mapping[0].identity = "fhir"
-* differential.element[11].mapping[0].map = "TBD"
+* differential.element[11].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp').where(code = http://snomed.info/sct#397827003 'Growth hormone deficiency').exists()"
 
 * differential.element[12].mapping[0].identity = "fhir"
-* differential.element[12].mapping[0].map = "TBD"
+* differential.element[12].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp').where(code = http://snomed.info/sct#230745008 'Hydrocephalus').exists()"
 
 * differential.element[13].mapping[0].identity = "fhir"
-* differential.element[13].mapping[0].map = "TBD"
+* differential.element[13].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp').where(code = http://snomed.info/sct#10295004 'Chronic viral hepatitis').exists()"
 
 * differential.element[14].mapping[0].identity = "fhir"
-* differential.element[14].mapping[0].map = "TBD"
+* differential.element[14].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp').where(code = http://snomed.info/sct#65617004 'Veno-occlusive disease of the liver').exists()"
 
 * differential.element[15].mapping[0].identity = "fhir"
-* differential.element[15].mapping[0].map = "TBD"
+* differential.element[15].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-cvc-otherinfos-eu-pcsp')"
 
 * differential.element[16].mapping[0].identity = "fhir"
-* differential.element[16].mapping[0].map = "TBD"
+* differential.element[16].mapping[0].map = ".focalDevice.action"
 
 * differential.element[17].mapping[0].identity = "fhir"
-* differential.element[17].mapping[0].map = "TBD"
+* differential.element[17].mapping[0].map = ".bodySite"
 
 * differential.element[18].mapping[0].identity = "fhir"
-* differential.element[18].mapping[0].map = "TBD"
+* differential.element[18].mapping[0].map = "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-otherinfos-eu-pcsp').where(code = http://snomed.info/sct#439127006 'Thrombosis')"
 
 * differential.element[19].mapping[0].identity = "fhir"
-* differential.element[19].mapping[0].map = "TBD"
+* differential.element[19].mapping[0].map = ".exists()"
 
 * differential.element[20].mapping[0].identity = "fhir"
-* differential.element[20].mapping[0].map = "TBD"
+* differential.element[20].mapping[0].map = ".text"
 
 * differential.element[21].mapping[0].identity = "fhir"
-* differential.element[21].mapping[0].map = "TBD"
+* differential.element[21].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-transfusion-otherinfos-eu-pcsp')"
 
 * differential.element[22].mapping[0].identity = "fhir"
-* differential.element[22].mapping[0].map = "TBD"
+* differential.element[22].mapping[0].map = ".exists()"
 
 * differential.element[23].mapping[0].identity = "fhir"
-* differential.element[23].mapping[0].map = "TBD"
+* differential.element[23].mapping[0].map = "extension(''http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming').valueTiming.event.value.aggregate(iif($total.empty(), $this, iif($this > $total, $this, $total)))"
+
+* differential.element[23].mapping[1].identity = "fhir"
+* differential.element[23].mapping[1].map = "performedDateTime"
 
 * differential.element[24].mapping[0].identity = "fhir"
-* differential.element[24].mapping[0].map = "TBD"
+* differential.element[24].mapping[0].map = "iif(.extension(''http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming').valueTiming.repeat.count > 9; true)"
+
+* differential.element[24].mapping[1].identity = "fhir"
+* differential.element[24].mapping[1].map = "iif(.extension(''http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming').valueTiming.repeat..boundsRange.low > 9; true)"
 
 * differential.element[25].mapping[0].identity = "fhir"
-* differential.element[25].mapping[0].map = "TBD"
+* differential.element[25].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-cryopreservation-otherinfos-eu-pcsp')"
 
 * differential.element[26].mapping[0].identity = "fhir"
-* differential.element[26].mapping[0].map = "TBD"
+* differential.element[26].mapping[0].map = ".text"
 
 * differential.element[27].mapping[0].identity = "fhir"
-* differential.element[27].mapping[0].map = "TBD"
+* differential.element[27].mapping[0].map = ".location"
 
 * differential.element[28].mapping[0].identity = "fhir"
-* differential.element[28].mapping[0].map = "TBD"
+* differential.element[28].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-treatment-otherinfos-eu-pcsp')"
 
 * differential.element[29].mapping[0].identity = "fhir"
-* differential.element[29].mapping[0].map = "TBD"
-
-
-
-
-
-
-
-
-
-
-
+* differential.element[29].mapping[0].map = "DocumentReference.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/DocumentReference-eu-pcsp')"
 
 
 // 

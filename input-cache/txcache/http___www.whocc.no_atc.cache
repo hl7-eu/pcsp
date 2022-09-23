@@ -1,36 +1,6 @@
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "ANTINEOPLASTIC AGENTS",
-  "code" : "L01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01A"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "ALKYLATING AGENTS",
-  "code" : "L01A",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01AA"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Nitrogen mustard analogues",
-  "code" : "L01AA",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01AA01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -111,16 +81,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01AB"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Alkyl sulfonates",
-  "code" : "L01AB",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01AB01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -151,16 +111,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01AC"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Ethylene imines",
-  "code" : "L01AC",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01AC01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -186,16 +136,6 @@ v: {
 v: {
   "display" : "carboquone",
   "code" : "L01AC03",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01AD"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Nitrosoureas",
-  "code" : "L01AD",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -271,16 +211,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01AG"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Epoxides",
-  "code" : "L01AG",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01AG01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -341,26 +271,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01B"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "ANTIMETABOLITES",
-  "code" : "L01B",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BA"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Folic acid analogues",
-  "code" : "L01BA",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01BA01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -391,11 +301,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01BB"
+  "code" : "L01BA05"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Purine analogues",
-  "code" : "L01BB",
+  "display" : "pralatrexate",
+  "code" : "L01BA05",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -461,16 +371,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01BC"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Pyrimidine analogues",
-  "code" : "L01BC",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01BC01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -496,6 +396,16 @@ v: {
 v: {
   "display" : "tegafur",
   "code" : "L01BC03",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC04"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "carmofur",
+  "code" : "L01BC04",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -541,6 +451,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC52"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "fluorouracil, combinations",
+  "code" : "L01BC52",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01BC53"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -551,21 +471,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01C"
+  "code" : "L01BC59"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "PLANT ALKALOIDS AND OTHER NATURAL PRODUCTS",
-  "code" : "L01C",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01CA"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Vinca alkaloids and analogues",
-  "code" : "L01CA",
+  "display" : "trifluridine, combinations",
+  "code" : "L01BC59",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -621,11 +531,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01CB"
+  "code" : "L01CA06"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Podophyllotoxin derivatives",
-  "code" : "L01CB",
+  "display" : "vintafolide",
+  "code" : "L01CA06",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -651,31 +561,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01CC"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Colchicine derivatives",
-  "code" : "L01CC",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01CC01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "demecolcine",
   "code" : "L01CC01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01CD"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Taxanes",
-  "code" : "L01CD",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -721,16 +611,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01CX"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Other plant alkaloids and natural products",
-  "code" : "L01CX",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01CX01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -741,41 +621,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01D"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "CYTOTOXIC ANTIBIOTICS AND RELATED SUBSTANCES",
-  "code" : "L01D",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01DA"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Actinomycines",
-  "code" : "L01DA",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01DA01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "dactinomycin",
   "code" : "L01DA01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01DB"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Anthracyclines and related substances",
-  "code" : "L01DB",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -891,16 +741,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01DC"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Other cytotoxic antibiotics",
-  "code" : "L01DC",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01DC01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -936,26 +776,6 @@ v: {
 v: {
   "display" : "ixabepilone",
   "code" : "L01DC04",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01X"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "OTHER ANTINEOPLASTIC AGENTS",
-  "code" : "L01X",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XA"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Platinum compounds",
-  "code" : "L01XA",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -1011,31 +831,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01XB"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Methylhydrazines",
-  "code" : "L01XB",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L01XB01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "procarbazine",
   "code" : "L01XB01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XC"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Monoclonal antibodies",
-  "code" : "L01XC",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -1190,6 +990,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01XC16"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "dinutuximab beta",
+  "code" : "L01XC16",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01XC17"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -1230,6 +1040,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01XC22"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "necitumumab",
+  "code" : "L01XC22",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01XC23"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -1250,21 +1070,31 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01XC27"
+  "code" : "L01XC25"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "olaratumab",
-  "code" : "L01XC27",
+  "display" : "mogamulizumab",
+  "code" : "L01XC25",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L01XD"
+  "code" : "L01XC26"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Sensitizers used in photodynamic/radiation therapy",
-  "code" : "L01XD",
+  "display" : "inotuzumab ozogamicin",
+  "code" : "L01XC26",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XC27"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "olaratumab",
+  "code" : "L01XC27",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -1316,15 +1146,6 @@ v: {
   "display" : "efaproxiral",
   "code" : "L01XD06",
   "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1491,11 +1312,29 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01XE19"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XE19\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE19) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01XE21"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "severity" : "error",
   "error" : "The code \"L01XE21\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE21) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XE22"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XE22\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE22) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1572,11 +1411,29 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01XE32"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XE32\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE32) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01XE33"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "severity" : "error",
   "error" : "The code \"L01XE33\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE33) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XE34"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XE34\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE34) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1590,11 +1447,47 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01XE36"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XE36\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE36) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XE37"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XE37\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE37) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01XE38"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "severity" : "error",
   "error" : "The code \"L01XE38\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE38) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XE39"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XE39\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE39) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XE40"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XE40\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE40) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1945,11 +1838,58 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01XX48"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XX48\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XX48) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XX49"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XX49\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XX49) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XX50"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"L01XX50\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XX50) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XX51"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "talimogene laherparepvec",
+  "code" : "L01XX51",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01XX52"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "venetoclax",
   "code" : "L01XX52",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01XX53"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "vosaroxin",
+  "code" : "L01XX53",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -1965,21 +1905,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L02"
+  "code" : "L02AA01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "ENDOCRINE THERAPY",
-  "code" : "L02",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L02A"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "HORMONES AND RELATED AGENTS",
-  "code" : "L02A",
+  "display" : "diethylstilbestrol",
+  "code" : "L02AA01",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -1990,6 +1920,16 @@ v: {
 v: {
   "display" : "polyestradiol phosphate",
   "code" : "L02AA02",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L02AA03"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "ethinylestradiol",
+  "code" : "L02AA03",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2075,11 +2015,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L02B"
+  "code" : "L02AE05"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "HORMONE ANTAGONISTS AND RELATED AGENTS",
-  "code" : "L02B",
+  "display" : "histrelin",
+  "code" : "L02AE05",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2120,6 +2060,16 @@ v: {
 v: {
   "display" : "flutamide",
   "code" : "L02BB01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L02BB02"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "nilutamide",
+  "code" : "L02BB02",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2185,11 +2135,31 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L02BG05"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "vorozole",
+  "code" : "L02BG05",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L02BG06"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "exemestane",
   "code" : "L02BG06",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L02BX01"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "abarelix",
+  "code" : "L02BX01",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2210,36 +2180,6 @@ v: {
 v: {
   "display" : "abiraterone",
   "code" : "L02BX03",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "IMMUNOSTIMULANTS",
-  "code" : "L03",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03A"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "IMMUNOSTIMULANTS",
-  "code" : "L03A",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03AA"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Colony stimulating factors",
-  "code" : "L03AA",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2315,11 +2255,21 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L03AB"
+  "code" : "L03AA15"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Interferons",
-  "code" : "L03AB",
+  "display" : "balugrastim",
+  "code" : "L03AA15",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L03AA16"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "empegfilgrastim",
+  "code" : "L03AA16",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2455,6 +2405,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L03AB14"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "cepeginterferon alfa-2b",
+  "code" : "L03AB14",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L03AB60"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -2484,16 +2444,6 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L03AC"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Interleukins",
-  "code" : "L03AC",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
   "code" : "L03AC01"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -2509,16 +2459,6 @@ v: {
 v: {
   "display" : "oprelvekin",
   "code" : "L03AC02",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03AX"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Other immunostimulants",
-  "code" : "L03AX",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2684,31 +2624,21 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L04"
+  "code" : "L03AX18"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "IMMUNOSUPPRESSANTS",
-  "code" : "L04",
+  "display" : "cridanimod",
+  "code" : "L03AX18",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L04A"
+  "code" : "L03AX19"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "IMMUNOSUPPRESSANTS",
-  "code" : "L04A",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L04AA"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Selective immunosuppressants",
-  "code" : "L04AA",
+  "display" : "dasiprotimut-T",
+  "code" : "L03AX19",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2934,11 +2864,31 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L04AB"
+  "code" : "L04AA35"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Tumor necrosis factor alpha (TNF-alpha) inhibitors",
-  "code" : "L04AB",
+  "display" : "begelomab",
+  "code" : "L04AA35",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L04AA36"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "ocrelizumab",
+  "code" : "L04AA36",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L04AA37"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "baricitinib",
+  "code" : "L04AA37",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -2999,16 +2949,6 @@ v: {
 v: {
   "display" : "golimumab",
   "code" : "L04AB06",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L04AC"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Interleukin inhibitors",
-  "code" : "L04AC",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -3123,6 +3063,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L04AC12"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "brodalumab",
+  "code" : "L04AC12",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L04AC13"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
@@ -3133,11 +3083,11 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
-  "code" : "L04AD"
+  "code" : "L04AC14"
 }, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Calcineurin inhibitors",
-  "code" : "L04AD",
+  "display" : "sarilumab",
+  "code" : "L04AC14",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -3168,16 +3118,6 @@ v: {
 v: {
   "display" : "voclosporin",
   "code" : "L04AD03",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L04AX"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Other immunosuppressants",
-  "code" : "L04AX",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -3257,7 +3197,7 @@ v: {
   "code" : "L01AA01"
 }, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Ciclofosfamide",
+  "display" : "Cyclophosphamide",
   "code" : "L01AA01",
   "system" : "http://www.whocc.no/atc"
 }
@@ -3265,14 +3205,12 @@ v: {
 {"code" : {
   "system" : "http://www.whocc.no/atc",
   "code" : "L01AA01",
-  "display" : "ciclofosfamide"
+  "display" : "cyclophosphamide"
 }, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
 v: {
   "display" : "cyclophosphamide",
   "code" : "L01AA01",
-  "system" : "http://www.whocc.no/atc",
-  "severity" : "warning",
-  "error" : "The display \"ciclofosfamide\" is not a valid display for the code {http://www.whocc.no/atc}L01AA01 - should be one of ['cyclophosphamide'] (from http://tx.fhir.org/r4)"
+  "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3288,14 +3226,12 @@ v: {
 {"code" : {
   "system" : "http://www.whocc.no/atc",
   "code" : "L01AA01",
-  "display" : "ciclofosfamide"
+  "display" : "cyclophosphamide"
 }, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "cyclophosphamide",
   "code" : "L01AA01",
-  "system" : "http://www.whocc.no/atc",
-  "severity" : "warning",
-  "error" : "The display \"ciclofosfamide\" is not a valid display for the code {http://www.whocc.no/atc}L01AA01 - should be one of ['cyclophosphamide'] (from http://tx.fhir.org/r4)"
+  "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -3303,2909 +3239,8 @@ v: {
   "code" : "L01BC01"
 }, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
-  "display" : "Cytarabina",
+  "display" : "Cytarabine",
   "code" : "L01BC01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BC01",
-  "display" : "citarabina"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
-v: {
-  "display" : "cytarabine",
-  "code" : "L01BC01",
-  "system" : "http://www.whocc.no/atc",
-  "severity" : "warning",
-  "error" : "The display \"citarabina\" is not a valid display for the code {http://www.whocc.no/atc}L01BC01 - should be one of ['cytarabine'] (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BC01"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "cytarabine",
-  "code" : "L01BC01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BC01",
-  "display" : "citarabina"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "cytarabine",
-  "code" : "L01BC01",
-  "system" : "http://www.whocc.no/atc",
-  "severity" : "warning",
-  "error" : "The display \"citarabina\" is not a valid display for the code {http://www.whocc.no/atc}L01BC01 - should be one of ['cytarabine'] (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BA01"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Metotrexato sale sodico",
-  "code" : "L01BA01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BA01",
-  "display" : "metotrexato"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
-v: {
-  "display" : "methotrexate",
-  "code" : "L01BA01",
-  "system" : "http://www.whocc.no/atc",
-  "severity" : "warning",
-  "error" : "The display \"metotrexato\" is not a valid display for the code {http://www.whocc.no/atc}L01BA01 - should be one of ['methotrexate'] (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BA01"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "methotrexate",
-  "code" : "L01BA01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BA01",
-  "display" : "metotrexato"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "methotrexate",
-  "code" : "L01BA01",
-  "system" : "http://www.whocc.no/atc",
-  "severity" : "warning",
-  "error" : "The display \"metotrexato\" is not a valid display for the code {http://www.whocc.no/atc}L01BA01 - should be one of ['methotrexate'] (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01CA02"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "Vincristina",
-  "code" : "L01CA02",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01CA02",
-  "display" : "vincristina"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
-v: {
-  "display" : "vincristine",
-  "code" : "L01CA02",
-  "system" : "http://www.whocc.no/atc",
-  "severity" : "warning",
-  "error" : "The display \"vincristina\" is not a valid display for the code {http://www.whocc.no/atc}L01CA02 - should be one of ['vincristine'] (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01CA02"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "vincristine",
-  "code" : "L01CA02",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01CA02",
-  "display" : "vincristina"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "vincristine",
-  "code" : "L01CA02",
-  "system" : "http://www.whocc.no/atc",
-  "severity" : "warning",
-  "error" : "The display \"vincristina\" is not a valid display for the code {http://www.whocc.no/atc}L01CA02 - should be one of ['vincristine'] (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "inactive" : true,
-    "include" : [{
-      "system" : "http://www.whocc.no/atc",
-      "concept" : [{
-        "code" : "L01",
-        "display" : "ANTINEOPLASTIC AGENTS"
-      },
-      {
-        "code" : "L01A",
-        "display" : "ALKYLATING AGENTS"
-      },
-      {
-        "code" : "L01AA",
-        "display" : "Nitrogen Mustard analogues"
-      },
-      {
-        "code" : "L01AA01",
-        "display" : "Ciclofosfamide"
-      },
-      {
-        "code" : "L01AA02",
-        "display" : "Clorambucile"
-      },
-      {
-        "code" : "L01AA03",
-        "display" : "Melphalan"
-      },
-      {
-        "code" : "L01AA05",
-        "display" : "Mecloretamina"
-      },
-      {
-        "code" : "L01AA06",
-        "display" : "Ifosfamide"
-      },
-      {
-        "code" : "L01AA07",
-        "display" : "Trofosfamide"
-      },
-      {
-        "code" : "L01AA08",
-        "display" : "Prednimustine"
-      },
-      {
-        "code" : "L01AA09",
-        "display" : "Bendamustina"
-      },
-      {
-        "code" : "L01AB",
-        "display" : "Alkyl sulfonates"
-      },
-      {
-        "code" : "L01AB01",
-        "display" : "Busulfano"
-      },
-      {
-        "code" : "L01AB02",
-        "display" : "Treosulfano"
-      },
-      {
-        "code" : "L01AB03",
-        "display" : "Mannosulfano"
-      },
-      {
-        "code" : "L01AC",
-        "display" : "Ethylene imines"
-      },
-      {
-        "code" : "L01AC01",
-        "display" : "Thiotepa"
-      },
-      {
-        "code" : "L01AC02",
-        "display" : "Triaziquone"
-      },
-      {
-        "code" : "L01AC03",
-        "display" : "Carboquone"
-      },
-      {
-        "code" : "L01AD",
-        "display" : "Nitrosoureas"
-      },
-      {
-        "code" : "L01AD01",
-        "display" : "Carmustina"
-      },
-      {
-        "code" : "L01AD02",
-        "display" : "Lomustina"
-      },
-      {
-        "code" : "L01AD03",
-        "display" : "Semustina"
-      },
-      {
-        "code" : "L01AD04",
-        "display" : "Streptozocina"
-      },
-      {
-        "code" : "L01AD05",
-        "display" : "Fotemustina"
-      },
-      {
-        "code" : "L01AD06",
-        "display" : "Nimustina"
-      },
-      {
-        "code" : "L01AD07",
-        "display" : "Ranimustina"
-      },
-      {
-        "code" : "L01AG",
-        "display" : "Epoxides"
-      },
-      {
-        "code" : "L01AG01",
-        "display" : "Etoglucide"
-      },
-      {
-        "code" : "L01AX",
-        "display" : "Other alkylating agents"
-      },
-      {
-        "code" : "L01AX01",
-        "display" : "Mitobronitol"
-      },
-      {
-        "code" : "L01AX02",
-        "display" : "Pipobromam"
-      },
-      {
-        "code" : "L01AX03",
-        "display" : "Temozolomide"
-      },
-      {
-        "code" : "L01AX04",
-        "display" : "Dacarbazina"
-      },
-      {
-        "code" : "L01B",
-        "display" : "ANTIMETABOLITES"
-      },
-      {
-        "code" : "L01BA",
-        "display" : "Folic acid analogues"
-      },
-      {
-        "code" : "L01BA01",
-        "display" : "Metotrexato sale sodico"
-      },
-      {
-        "code" : "L01BA03",
-        "display" : "Raltitrexed"
-      },
-      {
-        "code" : "L01BA04",
-        "display" : "Pemetrexed"
-      },
-      {
-        "code" : "L01BB",
-        "display" : "Purine analogues"
-      },
-      {
-        "code" : "L01BB02",
-        "display" : "Mercaptopurina"
-      },
-      {
-        "code" : "L01BB03",
-        "display" : "Tioguanina"
-      },
-      {
-        "code" : "L01BB04",
-        "display" : "Cladribina"
-      },
-      {
-        "code" : "L01BB05",
-        "display" : "Fludarabina"
-      },
-      {
-        "code" : "L01BB06",
-        "display" : "Clofarabina"
-      },
-      {
-        "code" : "L01BB07",
-        "display" : "Nelarabina"
-      },
-      {
-        "code" : "L01BC",
-        "display" : "Pyrimidine analogues"
-      },
-      {
-        "code" : "L01BC01",
-        "display" : "Cytarabina"
-      },
-      {
-        "code" : "L01BC02",
-        "display" : "Fluorouracile"
-      },
-      {
-        "code" : "L01BC03",
-        "display" : "Tegafur"
-      },
-      {
-        "code" : "L01BC05",
-        "display" : "Gemcitabina"
-      },
-      {
-        "code" : "L01BC06",
-        "display" : "Capecitabina"
-      },
-      {
-        "code" : "L01BC07",
-        "display" : "Azacitidina"
-      },
-      {
-        "code" : "L01BC08",
-        "display" : "Decitabina"
-      },
-      {
-        "code" : "L01BC53",
-        "display" : "Tegafur + gimeracil + oteracil"
-      },
-      {
-        "code" : "L01C",
-        "display" : "PLANT ALKALOIDS AND OTHER NATURAL PRODUCTS"
-      },
-      {
-        "code" : "L01CA",
-        "display" : "Vinca alkaloids and analogues"
-      },
-      {
-        "code" : "L01CA01",
-        "display" : "Vinblastina"
-      },
-      {
-        "code" : "L01CA02",
-        "display" : "Vincristina"
-      },
-      {
-        "code" : "L01CA03",
-        "display" : "Vindesina"
-      },
-      {
-        "code" : "L01CA04",
-        "display" : "Vinorelbina"
-      },
-      {
-        "code" : "L01CA05",
-        "display" : "Vinflunina"
-      },
-      {
-        "code" : "L01CB",
-        "display" : "Podophyllotoxin derivatives"
-      },
-      {
-        "code" : "L01CB01",
-        "display" : "Etoposide"
-      },
-      {
-        "code" : "L01CB02",
-        "display" : "Teniposide"
-      },
-      {
-        "code" : "L01CC",
-        "display" : "Colchicine derivatives"
-      },
-      {
-        "code" : "L01CC01",
-        "display" : "Demecolcina"
-      },
-      {
-        "code" : "L01CD",
-        "display" : "Taxanes"
-      },
-      {
-        "code" : "L01CD01",
-        "display" : "Paclitaxel"
-      },
-      {
-        "code" : "L01CD02",
-        "display" : "Docetaxel"
-      },
-      {
-        "code" : "L01CD03",
-        "display" : "Paclitaxel poliglumex"
-      },
-      {
-        "code" : "L01CD04",
-        "display" : "Cabazitaxel"
-      },
-      {
-        "code" : "L01CX",
-        "display" : "Other plant alkaloids and naturai products"
-      },
-      {
-        "code" : "L01CX01",
-        "display" : "Trabectedina"
-      },
-      {
-        "code" : "L01D",
-        "display" : "CYTOTOXIC ANTIBIOTICS AND RELATED SUBSTANCES"
-      },
-      {
-        "code" : "L01DA",
-        "display" : "Actinomycines"
-      },
-      {
-        "code" : "L01DA01",
-        "display" : "Dactinomicina"
-      },
-      {
-        "code" : "L01DB",
-        "display" : "Anthracyclines and related substances"
-      },
-      {
-        "code" : "L01DB01",
-        "display" : "Doxorubicina"
-      },
-      {
-        "code" : "L01DB02",
-        "display" : "Daunorubicina"
-      },
-      {
-        "code" : "L01DB03",
-        "display" : "Epirubicina"
-      },
-      {
-        "code" : "L01DB04",
-        "display" : "Aclarubicina"
-      },
-      {
-        "code" : "L01DB05",
-        "display" : "Zorubicina"
-      },
-      {
-        "code" : "L01DB06",
-        "display" : "Idarubicina"
-      },
-      {
-        "code" : "L01DB07",
-        "display" : "Mitoxantrone"
-      },
-      {
-        "code" : "L01DB08",
-        "display" : "Pirarubicina"
-      },
-      {
-        "code" : "L01DB09",
-        "display" : "Valrubicina"
-      },
-      {
-        "code" : "L01DB10",
-        "display" : "Amrubicina"
-      },
-      {
-        "code" : "L01DB11",
-        "display" : "Pixantrone"
-      },
-      {
-        "code" : "L01DC",
-        "display" : "Other cytotoxic antibiotics"
-      },
-      {
-        "code" : "L01DC01",
-        "display" : "Bleomicina"
-      },
-      {
-        "code" : "L01DC02",
-        "display" : "Plicamicina"
-      },
-      {
-        "code" : "L01DC03",
-        "display" : "Mitomicina"
-      },
-      {
-        "code" : "L01DC04",
-        "display" : "Ixabepilone"
-      },
-      {
-        "code" : "L01X",
-        "display" : "OTHER ANTINEOPLASTIC AGENTS"
-      },
-      {
-        "code" : "L01XA",
-        "display" : "Platinum compounds"
-      },
-      {
-        "code" : "L01XA01",
-        "display" : "Cisplatino"
-      },
-      {
-        "code" : "L01XA02",
-        "display" : "Carboplatino"
-      },
-      {
-        "code" : "L01XA03",
-        "display" : "Oxaliplatino"
-      },
-      {
-        "code" : "L01XA04",
-        "display" : "Satraplatino"
-      },
-      {
-        "code" : "L01XA05",
-        "display" : "Polyplatfllen"
-      },
-      {
-        "code" : "L01XB",
-        "display" : "Methylhydrazines"
-      },
-      {
-        "code" : "L01XB01",
-        "display" : "Procarbazina"
-      },
-      {
-        "code" : "L01XC",
-        "display" : "Monoclonal antibodies"
-      },
-      {
-        "code" : "L01XC01",
-        "display" : "Edrecolomab"
-      },
-      {
-        "code" : "L01XC02",
-        "display" : "Rituximab"
-      },
-      {
-        "code" : "L01XC03",
-        "display" : "Trastuzumab"
-      },
-      {
-        "code" : "L01XC04",
-        "display" : "Alemtuzumab"
-      },
-      {
-        "code" : "L01XC05",
-        "display" : "Gemtuzumab"
-      },
-      {
-        "code" : "L01XC06",
-        "display" : "Cetuximab"
-      },
-      {
-        "code" : "L01XC07",
-        "display" : "Bevacizumab"
-      },
-      {
-        "code" : "L01XC08",
-        "display" : "Panitumumab"
-      },
-      {
-        "code" : "L01XC09",
-        "display" : "Catumaxomab"
-      },
-      {
-        "code" : "L01XC10",
-        "display" : "Ofatumumab"
-      },
-      {
-        "code" : "L01XC11",
-        "display" : "Ipilimumab"
-      },
-      {
-        "code" : "L01XC12",
-        "display" : "Brentuximab vedotin"
-      },
-      {
-        "code" : "L01XC13",
-        "display" : "Pertuzumab"
-      },
-      {
-        "code" : "L01XC14",
-        "display" : "Trastuzumab emtansine"
-      },
-      {
-        "code" : "L01XC15",
-        "display" : "Obinutuzumab"
-      },
-      {
-        "code" : "L01XC17",
-        "display" : "Nivolumab"
-      },
-      {
-        "code" : "L01XC18",
-        "display" : "Pembrolizumab"
-      },
-      {
-        "code" : "L01XC19",
-        "display" : "Blinatumomab"
-      },
-      {
-        "code" : "L01XC21",
-        "display" : "Ramucirumab"
-      },
-      {
-        "code" : "L01XC23",
-        "display" : "Elotuzumab"
-      },
-      {
-        "code" : "L01XC24",
-        "display" : "Daratumumab"
-      },
-      {
-        "code" : "L01XC27",
-        "display" : "Olaratumab"
-      },
-      {
-        "code" : "L01XD",
-        "display" : "Sensitizers used in photodynamic/radiation therapy"
-      },
-      {
-        "code" : "L01XD01",
-        "display" : "Porfimer sodium"
-      },
-      {
-        "code" : "L01XD03",
-        "display" : "Metil 5-aminolevulinato"
-      },
-      {
-        "code" : "L01XD04",
-        "display" : "Acido 5 aminolevulinico"
-      },
-      {
-        "code" : "L01XD05",
-        "display" : "Temoporfina"
-      },
-      {
-        "code" : "L01XD06",
-        "display" : "Efaproxiral"
-      },
-      {
-        "code" : "L01XE",
-        "display" : "Protein kinase inhibitors"
-      },
-      {
-        "code" : "L01XE01",
-        "display" : "Imatinib"
-      },
-      {
-        "code" : "L01XE02",
-        "display" : "Gefitinib"
-      },
-      {
-        "code" : "L01XE03",
-        "display" : "Erlotinib"
-      },
-      {
-        "code" : "L01XE04",
-        "display" : "Sunitinib"
-      },
-      {
-        "code" : "L01XE05",
-        "display" : "Sorafenib"
-      },
-      {
-        "code" : "L01XE06",
-        "display" : "Dasatinib"
-      },
-      {
-        "code" : "L01XE07",
-        "display" : "lapatinib"
-      },
-      {
-        "code" : "L01XE08",
-        "display" : "Nilotinib"
-      },
-      {
-        "code" : "L01XE09",
-        "display" : "Temsirolimus"
-      },
-      {
-        "code" : "L01XE10",
-        "display" : "Everolimus"
-      },
-      {
-        "code" : "L01XE11",
-        "display" : "Pazopanib"
-      },
-      {
-        "code" : "L01XE12",
-        "display" : "Vandetanib"
-      },
-      {
-        "code" : "L01XE13",
-        "display" : "Afatinib"
-      },
-      {
-        "code" : "L01XE14",
-        "display" : "Bosutinib"
-      },
-      {
-        "code" : "L01XE15",
-        "display" : "Vemurafenib"
-      },
-      {
-        "code" : "L01XE16",
-        "display" : "Crizotinib"
-      },
-      {
-        "code" : "L01XE17",
-        "display" : "Axitinib"
-      },
-      {
-        "code" : "L01XE18",
-        "display" : "Ruxolitinib"
-      },
-      {
-        "code" : "L01XE21",
-        "display" : "Regorafenib"
-      },
-      {
-        "code" : "L01XE23",
-        "display" : "Dabrafenib"
-      },
-      {
-        "code" : "L01XE24",
-        "display" : "Ponatinib"
-      },
-      {
-        "code" : "L01XE25",
-        "display" : "Trametinib"
-      },
-      {
-        "code" : "L01XE26",
-        "display" : "Cabozantinib"
-      },
-      {
-        "code" : "L01XE27",
-        "display" : "Ibrutinib"
-      },
-      {
-        "code" : "L01XE28",
-        "display" : "Ceritinib"
-      },
-      {
-        "code" : "L01XE29",
-        "display" : "Lenvatinib"
-      },
-      {
-        "code" : "L01XE31",
-        "display" : "Nintedanib"
-      },
-      {
-        "code" : "L01XE33",
-        "display" : "Palbociclib"
-      },
-      {
-        "code" : "L01XE35",
-        "display" : "Osimertinib"
-      },
-      {
-        "code" : "L01XE38",
-        "display" : "Cobimetinib"
-      },
-      {
-        "code" : "L01XX",
-        "display" : "Other antineoplastic agents"
-      },
-      {
-        "code" : "L01XX01",
-        "display" : "Amsacrina"
-      },
-      {
-        "code" : "L01XX02",
-        "display" : "Asparaginase"
-      },
-      {
-        "code" : "L01XX03",
-        "display" : "Altretamina"
-      },
-      {
-        "code" : "L01XX05",
-        "display" : "Hydroxycarbamide"
-      },
-      {
-        "code" : "L01XX07",
-        "display" : "lonidamina"
-      },
-      {
-        "code" : "L01XX08",
-        "display" : "Pentostatina"
-      },
-      {
-        "code" : "L01XX09",
-        "display" : "Milteforina"
-      },
-      {
-        "code" : "L01XX10",
-        "display" : "Masoprocol"
-      },
-      {
-        "code" : "L01XX11",
-        "display" : "Estramustina"
-      },
-      {
-        "code" : "L01XX14",
-        "display" : "Tretinoin"
-      },
-      {
-        "code" : "L01XX16",
-        "display" : "Mitoguazone"
-      },
-      {
-        "code" : "L01XX17",
-        "display" : "Topotecan"
-      },
-      {
-        "code" : "L01XX18",
-        "display" : "Tiazofurina"
-      },
-      {
-        "code" : "L01XX19",
-        "display" : "Irinotecan"
-      },
-      {
-        "code" : "L01XX22",
-        "display" : "Alitretinoina"
-      },
-      {
-        "code" : "L01XX23",
-        "display" : "Mitotano"
-      },
-      {
-        "code" : "L01XX24",
-        "display" : "Pegaspargase"
-      },
-      {
-        "code" : "L01XX25",
-        "display" : "Bexarotene"
-      },
-      {
-        "code" : "L01XX27",
-        "display" : "Arsenico triossido"
-      },
-      {
-        "code" : "L01XX29",
-        "display" : "Denileukin diftitox"
-      },
-      {
-        "code" : "L01XX32",
-        "display" : "Bortezomib"
-      },
-      {
-        "code" : "L01XX33",
-        "display" : "Celecoxib"
-      },
-      {
-        "code" : "L01XX35",
-        "display" : "Anagrelide"
-      },
-      {
-        "code" : "L01XX36",
-        "display" : "Oblimersen"
-      },
-      {
-        "code" : "L01XX37",
-        "display" : "Sitimagene ceradenovec"
-      },
-      {
-        "code" : "L01XX38",
-        "display" : "Vorinostat"
-      },
-      {
-        "code" : "L01XX39",
-        "display" : "Romidepsin"
-      },
-      {
-        "code" : "L01XX40",
-        "display" : "Omacetaxine mepesuccinate"
-      },
-      {
-        "code" : "L01XX41",
-        "display" : "Eribulina"
-      },
-      {
-        "code" : "L01XX42",
-        "display" : "Panobinostat"
-      },
-      {
-        "code" : "L01XX43",
-        "display" : "Vismodegib"
-      },
-      {
-        "code" : "L01XX44",
-        "display" : "Aflibercept"
-      },
-      {
-        "code" : "L01XX45",
-        "display" : "Carfilzomib"
-      },
-      {
-        "code" : "L01XX46",
-        "display" : "Olaparib"
-      },
-      {
-        "code" : "L01XX47",
-        "display" : "Idelalisib"
-      },
-      {
-        "code" : "L01XX52",
-        "display" : "Venetoclax"
-      },
-      {
-        "code" : "L01XY",
-        "display" : "Combinations of antineoplastic agents"
-      },
-      {
-        "code" : "L02",
-        "display" : "ENDOCRINE THERAPY"
-      },
-      {
-        "code" : "L02A",
-        "display" : "HORMONES AND RELATED AGENTS"
-      },
-      {
-        "code" : "L02AA02",
-        "display" : "Stradurin"
-      },
-      {
-        "code" : "L02AA04",
-        "display" : "Fosfestrolo"
-      },
-      {
-        "code" : "L02AB01",
-        "display" : "Megestrolo"
-      },
-      {
-        "code" : "L02AB02",
-        "display" : "Medrossiprogesterone"
-      },
-      {
-        "code" : "L02AB03",
-        "display" : "Salbutamolo"
-      },
-      {
-        "code" : "L02AE01",
-        "display" : "Buserelina"
-      },
-      {
-        "code" : "L02AE02",
-        "display" : "Leuprorelina"
-      },
-      {
-        "code" : "L02AE03",
-        "display" : "Goserelina"
-      },
-      {
-        "code" : "L02AE04",
-        "display" : "Triptorelina"
-      },
-      {
-        "code" : "L02B",
-        "display" : "HORMONE ANTAGONISTS AND RELATED AGENTS"
-      },
-      {
-        "code" : "L02BA01",
-        "display" : "Tamoxifene"
-      },
-      {
-        "code" : "L02BA02",
-        "display" : "Toremifene"
-      },
-      {
-        "code" : "L02BA03",
-        "display" : "Fulvestrant"
-      },
-      {
-        "code" : "L02BB01",
-        "display" : "Flutamide"
-      },
-      {
-        "code" : "L02BB03",
-        "display" : "Bicalutamide"
-      },
-      {
-        "code" : "L02BB04",
-        "display" : "Enzalutamide"
-      },
-      {
-        "code" : "L02BG01",
-        "display" : "Aminoglutetimide"
-      },
-      {
-        "code" : "L02BG02",
-        "display" : "Formestano"
-      },
-      {
-        "code" : "L02BG03",
-        "display" : "Anastrozolo"
-      },
-      {
-        "code" : "L02BG04",
-        "display" : "Letrozolo"
-      },
-      {
-        "code" : "L02BG06",
-        "display" : "Exemestano"
-      },
-      {
-        "code" : "L02BX02",
-        "display" : "Degarelix"
-      },
-      {
-        "code" : "L02BX03",
-        "display" : "Abiraterone"
-      },
-      {
-        "code" : "L03",
-        "display" : "IMMUNOSTIMULANTS"
-      },
-      {
-        "code" : "L03A",
-        "display" : "IMMUNOSTIMULANTS"
-      },
-      {
-        "code" : "L03AA",
-        "display" : "Colony stimulating factors"
-      },
-      {
-        "code" : "L03AA02",
-        "display" : "Filgrastim"
-      },
-      {
-        "code" : "L03AA03",
-        "display" : "Molgramostin"
-      },
-      {
-        "code" : "L03AA09",
-        "display" : "Sargramostim"
-      },
-      {
-        "code" : "L03AA10",
-        "display" : "Lenograstim"
-      },
-      {
-        "code" : "L03AA12",
-        "display" : "Ancestim"
-      },
-      {
-        "code" : "L03AA13",
-        "display" : "Pegfilgrastim"
-      },
-      {
-        "code" : "L03AA14",
-        "display" : "Lipegfilgrastim"
-      },
-      {
-        "code" : "L03AB",
-        "display" : "Interferons"
-      },
-      {
-        "code" : "L03AB01",
-        "display" : "Interferone alfa natural"
-      },
-      {
-        "code" : "L03AB02",
-        "display" : "Interferone beta natural"
-      },
-      {
-        "code" : "L03AB03",
-        "display" : "Interferone gamma-1b"
-      },
-      {
-        "code" : "L03AB04",
-        "display" : "Interferone alfa-2a"
-      },
-      {
-        "code" : "L03AB05",
-        "display" : "Interferone alfa-2b"
-      },
-      {
-        "code" : "L03AB06",
-        "display" : "Interferone alfa-n1"
-      },
-      {
-        "code" : "L03AB07",
-        "display" : "Interferone beta-1a"
-      },
-      {
-        "code" : "L03AB08",
-        "display" : "Interferone beta-1b"
-      },
-      {
-        "code" : "L03AB09",
-        "display" : "Interferone alfacon-1"
-      },
-      {
-        "code" : "L03AB10",
-        "display" : "Peginterferone alfa-2b"
-      },
-      {
-        "code" : "L03AB11",
-        "display" : "Peginterferone alfa-2a"
-      },
-      {
-        "code" : "L03AB12",
-        "display" : "Albinterferon alfa-2b"
-      },
-      {
-        "code" : "L03AB13",
-        "display" : "Peginterferone beta 1a"
-      },
-      {
-        "code" : "L03AB60",
-        "display" : "Peginterferon alfa-2b, combinations"
-      },
-      {
-        "code" : "L03AB61",
-        "display" : "Peginterferon alfa-2a, combinations"
-      },
-      {
-        "code" : "L03AB90",
-        "display" : "Interferone ricombinante omega di origine felina"
-      },
-      {
-        "code" : "L03AC",
-        "display" : "Interleukins"
-      },
-      {
-        "code" : "L03AC01",
-        "display" : "Aldesleuchina"
-      },
-      {
-        "code" : "L03AC02",
-        "display" : "Oprelvekin"
-      },
-      {
-        "code" : "L03AX",
-        "display" : "Other immunostimulants"
-      },
-      {
-        "code" : "L03AX01",
-        "display" : "Lentinan"
-      },
-      {
-        "code" : "L03AX02",
-        "display" : "Roquinimex"
-      },
-      {
-        "code" : "L03AX03",
-        "display" : "BCG vaccine"
-      },
-      {
-        "code" : "L03AX04",
-        "display" : "Pegademase"
-      },
-      {
-        "code" : "L03AX05",
-        "display" : "Pidotimod"
-      },
-      {
-        "code" : "L03AX07",
-        "display" : "Poly I:C"
-      },
-      {
-        "code" : "L03AX08",
-        "display" : "Poly ICLC"
-      },
-      {
-        "code" : "L03AX09",
-        "display" : "Thimopentin"
-      },
-      {
-        "code" : "L03AX10",
-        "display" : "Immunocianina"
-      },
-      {
-        "code" : "L03AX11",
-        "display" : "Tasonermina"
-      },
-      {
-        "code" : "L03AX12",
-        "display" : "Melanoma vaccino"
-      },
-      {
-        "code" : "L03AX13",
-        "display" : "Glatiramer"
-      },
-      {
-        "code" : "L03AX14",
-        "display" : "Histamine dihydrochloride"
-      },
-      {
-        "code" : "L03AX15",
-        "display" : "Mifamurtide"
-      },
-      {
-        "code" : "L03AX16",
-        "display" : "Plerixafor"
-      },
-      {
-        "code" : "L03AX17",
-        "display" : "Sipuleucel-T"
-      },
-      {
-        "code" : "L04",
-        "display" : "IMMUNOSUPPRESSANT"
-      },
-      {
-        "code" : "L04A",
-        "display" : "IMMUNOSUPPRESSANT"
-      },
-      {
-        "code" : "L04AA",
-        "display" : "Selective immunosuppressants"
-      },
-      {
-        "code" : "L04AA02",
-        "display" : "Muromonab-CD3"
-      },
-      {
-        "code" : "L04AA03",
-        "display" : "Immunoglobulina antilinfocitaria (cavallo)"
-      },
-      {
-        "code" : "L04AA04",
-        "display" : "Immunoglobulina di coniglio antitimocitaria"
-      },
-      {
-        "code" : "L04AA06",
-        "display" : "Acido micofenolico sale di mofetile"
-      },
-      {
-        "code" : "L04AA10",
-        "display" : "Sirolimus"
-      },
-      {
-        "code" : "L04AA13",
-        "display" : "Leflunomide"
-      },
-      {
-        "code" : "L04AA15",
-        "display" : "Alefacept"
-      },
-      {
-        "code" : "L04AA18",
-        "display" : "Everolimus"
-      },
-      {
-        "code" : "L04AA19",
-        "display" : "Gusperimus"
-      },
-      {
-        "code" : "L04AA21",
-        "display" : "Efalizumab"
-      },
-      {
-        "code" : "L04AA22",
-        "display" : "Abetimus"
-      },
-      {
-        "code" : "L04AA23",
-        "display" : "Natalizumab"
-      },
-      {
-        "code" : "L04AA24",
-        "display" : "Abatacept"
-      },
-      {
-        "code" : "L04AA25",
-        "display" : "Eculizumab"
-      },
-      {
-        "code" : "L04AA26",
-        "display" : "Belimumab"
-      },
-      {
-        "code" : "L04AA27",
-        "display" : "Fingolimod"
-      },
-      {
-        "code" : "L04AA28",
-        "display" : "Belatacept"
-      },
-      {
-        "code" : "L04AA29",
-        "display" : "Tofacitinib"
-      },
-      {
-        "code" : "L04AA31",
-        "display" : "Teriflunomide"
-      },
-      {
-        "code" : "L04AA32",
-        "display" : "Apremilast"
-      },
-      {
-        "code" : "L04AA33",
-        "display" : "Vedolizumab"
-      },
-      {
-        "code" : "L04AA34",
-        "display" : "Alemtuzumab"
-      },
-      {
-        "code" : "L04AB",
-        "display" : "Tumor necrosis factor alpha (TNF-a) inhibitors"
-      },
-      {
-        "code" : "L04AB01",
-        "display" : "Etanercept"
-      },
-      {
-        "code" : "L04AB02",
-        "display" : "Infliximab"
-      },
-      {
-        "code" : "L04AB03",
-        "display" : "Afelimomab"
-      },
-      {
-        "code" : "L04AB04",
-        "display" : "Adalimumab"
-      },
-      {
-        "code" : "L04AB05",
-        "display" : "Certolizumab"
-      },
-      {
-        "code" : "L04AB06",
-        "display" : "Golimumab"
-      },
-      {
-        "code" : "L04AC",
-        "display" : "Interleukin inhibitors"
-      },
-      {
-        "code" : "L04AC01",
-        "display" : "Daclizumab"
-      },
-      {
-        "code" : "L04AC02",
-        "display" : "Basiliximab"
-      },
-      {
-        "code" : "L04AC03",
-        "display" : "Anakinra"
-      },
-      {
-        "code" : "L04AC04",
-        "display" : "Rilonacept"
-      },
-      {
-        "code" : "L04AC05",
-        "display" : "Ustekinumab"
-      },
-      {
-        "code" : "L04AC06",
-        "display" : "Mepolizumab"
-      },
-      {
-        "code" : "L04AC07",
-        "display" : "Tocilizumab"
-      },
-      {
-        "code" : "L04AC08",
-        "display" : "Canakinumab"
-      },
-      {
-        "code" : "L04AC09",
-        "display" : "Briakinumab"
-      },
-      {
-        "code" : "L04AC10",
-        "display" : "Secukinumab"
-      },
-      {
-        "code" : "L04AC11",
-        "display" : "Siltuximab"
-      },
-      {
-        "code" : "L04AC13",
-        "display" : "Ixekizumab"
-      },
-      {
-        "code" : "L04AD",
-        "display" : "Calcineurin inhibitors"
-      },
-      {
-        "code" : "L04AD01",
-        "display" : "Ciclosporina"
-      },
-      {
-        "code" : "L04AD02",
-        "display" : "Tacrolimus"
-      },
-      {
-        "code" : "L04AD03",
-        "display" : "Voclosporina"
-      },
-      {
-        "code" : "L04AX",
-        "display" : "Other immunosuppressants"
-      },
-      {
-        "code" : "L04AX01",
-        "display" : "Azatioprina"
-      },
-      {
-        "code" : "L04AX02",
-        "display" : "Talidomide"
-      },
-      {
-        "code" : "L04AX03",
-        "display" : "Metotrexato"
-      },
-      {
-        "code" : "L04AX04",
-        "display" : "Lenalidomide"
-      },
-      {
-        "code" : "L04AX05",
-        "display" : "Pirfenidone"
-      },
-      {
-        "code" : "L04AX06",
-        "display" : "Pomalidomide"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:393fe711-590b-44ad-ae51-f5d386c78e28",
-    "timestamp" : "2022-03-25T13:31:21.236Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueUri" : "http://www.whocc.no/atc|2020-05"
-    }],
-    "contains" : [{
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01",
-      "display" : "ANTINEOPLASTIC AGENTS"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01A",
-      "display" : "ALKYLATING AGENTS"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA",
-      "display" : "Nitrogen Mustard analogues"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA01",
-      "display" : "Ciclofosfamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA02",
-      "display" : "Clorambucile"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA03",
-      "display" : "Melphalan"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA05",
-      "display" : "Mecloretamina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA06",
-      "display" : "Ifosfamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA07",
-      "display" : "Trofosfamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA08",
-      "display" : "Prednimustine"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA09",
-      "display" : "Bendamustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AB",
-      "display" : "Alkyl sulfonates"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AB01",
-      "display" : "Busulfano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AB02",
-      "display" : "Treosulfano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AB03",
-      "display" : "Mannosulfano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AC",
-      "display" : "Ethylene imines"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AC01",
-      "display" : "Thiotepa"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AC02",
-      "display" : "Triaziquone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AC03",
-      "display" : "Carboquone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD",
-      "display" : "Nitrosoureas"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD01",
-      "display" : "Carmustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD02",
-      "display" : "Lomustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD03",
-      "display" : "Semustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD04",
-      "display" : "Streptozocina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD05",
-      "display" : "Fotemustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD06",
-      "display" : "Nimustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD07",
-      "display" : "Ranimustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AG",
-      "display" : "Epoxides"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AG01",
-      "display" : "Etoglucide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX",
-      "display" : "Other alkylating agents"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX01",
-      "display" : "Mitobronitol"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX02",
-      "display" : "Pipobromam"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX03",
-      "display" : "Temozolomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX04",
-      "display" : "Dacarbazina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01B",
-      "display" : "ANTIMETABOLITES"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BA",
-      "display" : "Folic acid analogues"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BA01",
-      "display" : "Metotrexato sale sodico"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BA03",
-      "display" : "Raltitrexed"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BA04",
-      "display" : "Pemetrexed"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB",
-      "display" : "Purine analogues"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB02",
-      "display" : "Mercaptopurina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB03",
-      "display" : "Tioguanina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB04",
-      "display" : "Cladribina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB05",
-      "display" : "Fludarabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB06",
-      "display" : "Clofarabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB07",
-      "display" : "Nelarabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC",
-      "display" : "Pyrimidine analogues"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC01",
-      "display" : "Cytarabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC02",
-      "display" : "Fluorouracile"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC03",
-      "display" : "Tegafur"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC05",
-      "display" : "Gemcitabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC06",
-      "display" : "Capecitabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC07",
-      "display" : "Azacitidina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC08",
-      "display" : "Decitabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC53",
-      "display" : "Tegafur + gimeracil + oteracil"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01C",
-      "display" : "PLANT ALKALOIDS AND OTHER NATURAL PRODUCTS"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA",
-      "display" : "Vinca alkaloids and analogues"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA01",
-      "display" : "Vinblastina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA02",
-      "display" : "Vincristina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA03",
-      "display" : "Vindesina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA04",
-      "display" : "Vinorelbina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA05",
-      "display" : "Vinflunina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CB",
-      "display" : "Podophyllotoxin derivatives"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CB01",
-      "display" : "Etoposide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CB02",
-      "display" : "Teniposide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CC",
-      "display" : "Colchicine derivatives"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CC01",
-      "display" : "Demecolcina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD",
-      "display" : "Taxanes"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD01",
-      "display" : "Paclitaxel"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD02",
-      "display" : "Docetaxel"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD03",
-      "display" : "Paclitaxel poliglumex"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD04",
-      "display" : "Cabazitaxel"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CX",
-      "display" : "Other plant alkaloids and naturai products"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CX01",
-      "display" : "Trabectedina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01D",
-      "display" : "CYTOTOXIC ANTIBIOTICS AND RELATED SUBSTANCES"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DA",
-      "display" : "Actinomycines"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DA01",
-      "display" : "Dactinomicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB",
-      "display" : "Anthracyclines and related substances"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB01",
-      "display" : "Doxorubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB02",
-      "display" : "Daunorubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB03",
-      "display" : "Epirubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB04",
-      "display" : "Aclarubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB05",
-      "display" : "Zorubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB06",
-      "display" : "Idarubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB07",
-      "display" : "Mitoxantrone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB08",
-      "display" : "Pirarubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB09",
-      "display" : "Valrubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB10",
-      "display" : "Amrubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB11",
-      "display" : "Pixantrone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC",
-      "display" : "Other cytotoxic antibiotics"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC01",
-      "display" : "Bleomicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC02",
-      "display" : "Plicamicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC03",
-      "display" : "Mitomicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC04",
-      "display" : "Ixabepilone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01X",
-      "display" : "OTHER ANTINEOPLASTIC AGENTS"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA",
-      "display" : "Platinum compounds"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA01",
-      "display" : "Cisplatino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA02",
-      "display" : "Carboplatino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA03",
-      "display" : "Oxaliplatino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA04",
-      "display" : "Satraplatino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA05",
-      "display" : "Polyplatfllen"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XB",
-      "display" : "Methylhydrazines"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XB01",
-      "display" : "Procarbazina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC",
-      "display" : "Monoclonal antibodies"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC01",
-      "display" : "Edrecolomab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC02",
-      "display" : "Rituximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC03",
-      "display" : "Trastuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC05",
-      "display" : "Gemtuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC06",
-      "display" : "Cetuximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC07",
-      "display" : "Bevacizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC08",
-      "display" : "Panitumumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC09",
-      "display" : "Catumaxomab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC10",
-      "display" : "Ofatumumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC11",
-      "display" : "Ipilimumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC12",
-      "display" : "Brentuximab vedotin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC13",
-      "display" : "Pertuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC14",
-      "display" : "Trastuzumab emtansine"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC15",
-      "display" : "Obinutuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC17",
-      "display" : "Nivolumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC18",
-      "display" : "Pembrolizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC19",
-      "display" : "Blinatumomab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC21",
-      "display" : "Ramucirumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC23",
-      "display" : "Elotuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC24",
-      "display" : "Daratumumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC27",
-      "display" : "Olaratumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD",
-      "display" : "Sensitizers used in photodynamic/radiation therapy"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD01",
-      "display" : "Porfimer sodium"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD03",
-      "display" : "Metil 5-aminolevulinato"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD04",
-      "display" : "Acido 5 aminolevulinico"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD05",
-      "display" : "Temoporfina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD06",
-      "display" : "Efaproxiral"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX",
-      "display" : "Other antineoplastic agents"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX01",
-      "display" : "Amsacrina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX02",
-      "display" : "Asparaginase"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX03",
-      "display" : "Altretamina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX05",
-      "display" : "Hydroxycarbamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX07",
-      "display" : "lonidamina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX08",
-      "display" : "Pentostatina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX10",
-      "display" : "Masoprocol"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX11",
-      "display" : "Estramustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX16",
-      "display" : "Mitoguazone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX18",
-      "display" : "Tiazofurina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX23",
-      "display" : "Mitotano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX24",
-      "display" : "Pegaspargase"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX27",
-      "display" : "Arsenico triossido"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX29",
-      "display" : "Denileukin diftitox"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX33",
-      "display" : "Celecoxib"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX35",
-      "display" : "Anagrelide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX36",
-      "display" : "Oblimersen"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX37",
-      "display" : "Sitimagene ceradenovec"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX40",
-      "display" : "Omacetaxine mepesuccinate"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX41",
-      "display" : "Eribulina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX44",
-      "display" : "Aflibercept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX52",
-      "display" : "Venetoclax"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XY",
-      "display" : "Combinations of antineoplastic agents"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02",
-      "display" : "ENDOCRINE THERAPY"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02A",
-      "display" : "HORMONES AND RELATED AGENTS"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AA02",
-      "display" : "Stradurin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AA04",
-      "display" : "Fosfestrolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AB01",
-      "display" : "Megestrolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AB02",
-      "display" : "Medrossiprogesterone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AB03",
-      "display" : "Salbutamolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AE01",
-      "display" : "Buserelina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AE02",
-      "display" : "Leuprorelina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AE03",
-      "display" : "Goserelina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AE04",
-      "display" : "Triptorelina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02B",
-      "display" : "HORMONE ANTAGONISTS AND RELATED AGENTS"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BA01",
-      "display" : "Tamoxifene"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BA02",
-      "display" : "Toremifene"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BA03",
-      "display" : "Fulvestrant"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BB01",
-      "display" : "Flutamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BB03",
-      "display" : "Bicalutamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BB04",
-      "display" : "Enzalutamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG01",
-      "display" : "Aminoglutetimide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG02",
-      "display" : "Formestano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG03",
-      "display" : "Anastrozolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG04",
-      "display" : "Letrozolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG06",
-      "display" : "Exemestano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BX02",
-      "display" : "Degarelix"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BX03",
-      "display" : "Abiraterone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03",
-      "display" : "IMMUNOSTIMULANTS"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03A",
-      "display" : "IMMUNOSTIMULANTS"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA",
-      "display" : "Colony stimulating factors"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA02",
-      "display" : "Filgrastim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA03",
-      "display" : "Molgramostin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA09",
-      "display" : "Sargramostim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA10",
-      "display" : "Lenograstim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA12",
-      "display" : "Ancestim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA13",
-      "display" : "Pegfilgrastim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA14",
-      "display" : "Lipegfilgrastim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB",
-      "display" : "Interferons"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB01",
-      "display" : "Interferone alfa natural"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB02",
-      "display" : "Interferone beta natural"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB03",
-      "display" : "Interferone gamma-1b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB04",
-      "display" : "Interferone alfa-2a"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB05",
-      "display" : "Interferone alfa-2b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB06",
-      "display" : "Interferone alfa-n1"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB07",
-      "display" : "Interferone beta-1a"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB08",
-      "display" : "Interferone beta-1b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB09",
-      "display" : "Interferone alfacon-1"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB10",
-      "display" : "Peginterferone alfa-2b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB11",
-      "display" : "Peginterferone alfa-2a"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB12",
-      "display" : "Albinterferon alfa-2b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB13",
-      "display" : "Peginterferone beta 1a"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB60",
-      "display" : "Peginterferon alfa-2b, combinations"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB61",
-      "display" : "Peginterferon alfa-2a, combinations"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AC",
-      "display" : "Interleukins"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AC01",
-      "display" : "Aldesleuchina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AC02",
-      "display" : "Oprelvekin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX",
-      "display" : "Other immunostimulants"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX01",
-      "display" : "Lentinan"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX02",
-      "display" : "Roquinimex"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX03",
-      "display" : "BCG vaccine"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX04",
-      "display" : "Pegademase"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX05",
-      "display" : "Pidotimod"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX07",
-      "display" : "Poly I:C"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX08",
-      "display" : "Poly ICLC"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX09",
-      "display" : "Thimopentin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX10",
-      "display" : "Immunocianina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX11",
-      "display" : "Tasonermina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX12",
-      "display" : "Melanoma vaccino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX13",
-      "display" : "Glatiramer"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX14",
-      "display" : "Histamine dihydrochloride"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX15",
-      "display" : "Mifamurtide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX16",
-      "display" : "Plerixafor"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX17",
-      "display" : "Sipuleucel-T"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04",
-      "display" : "IMMUNOSUPPRESSANT"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04A",
-      "display" : "IMMUNOSUPPRESSANT"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA",
-      "display" : "Selective immunosuppressants"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA02",
-      "display" : "Muromonab-CD3"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA03",
-      "display" : "Immunoglobulina antilinfocitaria (cavallo)"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA04",
-      "display" : "Immunoglobulina di coniglio antitimocitaria"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA06",
-      "display" : "Acido micofenolico sale di mofetile"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA10",
-      "display" : "Sirolimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA13",
-      "display" : "Leflunomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA15",
-      "display" : "Alefacept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA18",
-      "display" : "Everolimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA19",
-      "display" : "Gusperimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA21",
-      "display" : "Efalizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA22",
-      "display" : "Abetimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA23",
-      "display" : "Natalizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA24",
-      "display" : "Abatacept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA25",
-      "display" : "Eculizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA26",
-      "display" : "Belimumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA27",
-      "display" : "Fingolimod"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA28",
-      "display" : "Belatacept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA29",
-      "display" : "Tofacitinib"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA31",
-      "display" : "Teriflunomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA32",
-      "display" : "Apremilast"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA33",
-      "display" : "Vedolizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA34",
-      "display" : "Alemtuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB",
-      "display" : "Tumor necrosis factor alpha (TNF-a) inhibitors"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB01",
-      "display" : "Etanercept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB02",
-      "display" : "Infliximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB03",
-      "display" : "Afelimomab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB04",
-      "display" : "Adalimumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB05",
-      "display" : "Certolizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB06",
-      "display" : "Golimumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC",
-      "display" : "Interleukin inhibitors"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC01",
-      "display" : "Daclizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC02",
-      "display" : "Basiliximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC03",
-      "display" : "Anakinra"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC04",
-      "display" : "Rilonacept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC05",
-      "display" : "Ustekinumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC07",
-      "display" : "Tocilizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC08",
-      "display" : "Canakinumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC09",
-      "display" : "Briakinumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC10",
-      "display" : "Secukinumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC11",
-      "display" : "Siltuximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC13",
-      "display" : "Ixekizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AD",
-      "display" : "Calcineurin inhibitors"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AD01",
-      "display" : "Ciclosporina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AD02",
-      "display" : "Tacrolimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AD03",
-      "display" : "Voclosporina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX",
-      "display" : "Other immunosuppressants"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX01",
-      "display" : "Azatioprina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX02",
-      "display" : "Talidomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX03",
-      "display" : "Metotrexato"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX04",
-      "display" : "Lenalidomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX05",
-      "display" : "Pirfenidone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX06",
-      "display" : "Pomalidomide"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01AA01",
-  "display" : "cyclophosphamide"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
-v: {
-  "display" : "cyclophosphamide",
-  "code" : "L01AA01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01AA01",
-  "display" : "cyclophosphamide"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "cyclophosphamide",
-  "code" : "L01AA01",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -6214,6 +3249,16 @@ v: {
   "code" : "L01BC01",
   "display" : "cytarabine"
 }, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "cytarabine",
+  "code" : "L01BC01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC01"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "cytarabine",
   "code" : "L01BC01",
@@ -6233,9 +3278,29 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01BA01"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Methotrexate",
+  "code" : "L01BA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01BA01",
   "display" : "methotrexate"
 }, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "methotrexate",
+  "code" : "L01BA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BA01"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "methotrexate",
   "code" : "L01BA01",
@@ -6255,9 +3320,29 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "L01CA02"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Vincristine",
+  "code" : "L01CA02",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L01CA02",
   "display" : "vincristine"
 }, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "vincristine",
+  "code" : "L01CA02",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01CA02"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
 v: {
   "display" : "vincristine",
   "code" : "L01CA02",
@@ -6272,2717 +3357,6 @@ v: {
 v: {
   "display" : "vincristine",
   "code" : "L01CA02",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "inactive" : true,
-    "include" : [{
-      "system" : "http://www.whocc.no/atc",
-      "concept" : [{
-        "code" : "L01AA01",
-        "display" : "Ciclofosfamide"
-      },
-      {
-        "code" : "L01AA02",
-        "display" : "Clorambucile"
-      },
-      {
-        "code" : "L01AA03",
-        "display" : "Melphalan"
-      },
-      {
-        "code" : "L01AA05",
-        "display" : "Mecloretamina"
-      },
-      {
-        "code" : "L01AA06",
-        "display" : "Ifosfamide"
-      },
-      {
-        "code" : "L01AA07",
-        "display" : "Trofosfamide"
-      },
-      {
-        "code" : "L01AA08",
-        "display" : "Prednimustine"
-      },
-      {
-        "code" : "L01AA09",
-        "display" : "Bendamustina"
-      },
-      {
-        "code" : "L01AB01",
-        "display" : "Busulfano"
-      },
-      {
-        "code" : "L01AB02",
-        "display" : "Treosulfano"
-      },
-      {
-        "code" : "L01AB03",
-        "display" : "Mannosulfano"
-      },
-      {
-        "code" : "L01AC01",
-        "display" : "Thiotepa"
-      },
-      {
-        "code" : "L01AC02",
-        "display" : "Triaziquone"
-      },
-      {
-        "code" : "L01AC03",
-        "display" : "Carboquone"
-      },
-      {
-        "code" : "L01AD01",
-        "display" : "Carmustina"
-      },
-      {
-        "code" : "L01AD02",
-        "display" : "Lomustina"
-      },
-      {
-        "code" : "L01AD03",
-        "display" : "Semustina"
-      },
-      {
-        "code" : "L01AD04",
-        "display" : "Streptozocina"
-      },
-      {
-        "code" : "L01AD05",
-        "display" : "Fotemustina"
-      },
-      {
-        "code" : "L01AD06",
-        "display" : "Nimustina"
-      },
-      {
-        "code" : "L01AD07",
-        "display" : "Ranimustina"
-      },
-      {
-        "code" : "L01AG01",
-        "display" : "Etoglucide"
-      },
-      {
-        "code" : "L01AX01",
-        "display" : "Mitobronitol"
-      },
-      {
-        "code" : "L01AX02",
-        "display" : "Pipobromam"
-      },
-      {
-        "code" : "L01AX03",
-        "display" : "Temozolomide"
-      },
-      {
-        "code" : "L01AX04",
-        "display" : "Dacarbazina"
-      },
-      {
-        "code" : "L01BA01",
-        "display" : "Metotrexato sale sodico"
-      },
-      {
-        "code" : "L01BA03",
-        "display" : "Raltitrexed"
-      },
-      {
-        "code" : "L01BA04",
-        "display" : "Pemetrexed"
-      },
-      {
-        "code" : "L01BB02",
-        "display" : "Mercaptopurina"
-      },
-      {
-        "code" : "L01BB03",
-        "display" : "Tioguanina"
-      },
-      {
-        "code" : "L01BB04",
-        "display" : "Cladribina"
-      },
-      {
-        "code" : "L01BB05",
-        "display" : "Fludarabina"
-      },
-      {
-        "code" : "L01BB06",
-        "display" : "Clofarabina"
-      },
-      {
-        "code" : "L01BB07",
-        "display" : "Nelarabina"
-      },
-      {
-        "code" : "L01BC01",
-        "display" : "Cytarabina"
-      },
-      {
-        "code" : "L01BC02",
-        "display" : "Fluorouracile"
-      },
-      {
-        "code" : "L01BC03",
-        "display" : "Tegafur"
-      },
-      {
-        "code" : "L01BC05",
-        "display" : "Gemcitabina"
-      },
-      {
-        "code" : "L01BC06",
-        "display" : "Capecitabina"
-      },
-      {
-        "code" : "L01BC07",
-        "display" : "Azacitidina"
-      },
-      {
-        "code" : "L01BC08",
-        "display" : "Decitabina"
-      },
-      {
-        "code" : "L01BC53",
-        "display" : "Tegafur + gimeracil + oteracil"
-      },
-      {
-        "code" : "L01CA01",
-        "display" : "Vinblastina"
-      },
-      {
-        "code" : "L01CA02",
-        "display" : "Vincristina"
-      },
-      {
-        "code" : "L01CA03",
-        "display" : "Vindesina"
-      },
-      {
-        "code" : "L01CA04",
-        "display" : "Vinorelbina"
-      },
-      {
-        "code" : "L01CA05",
-        "display" : "Vinflunina"
-      },
-      {
-        "code" : "L01CB01",
-        "display" : "Etoposide"
-      },
-      {
-        "code" : "L01CB02",
-        "display" : "Teniposide"
-      },
-      {
-        "code" : "L01CC01",
-        "display" : "Demecolcina"
-      },
-      {
-        "code" : "L01CD01",
-        "display" : "Paclitaxel"
-      },
-      {
-        "code" : "L01CD02",
-        "display" : "Docetaxel"
-      },
-      {
-        "code" : "L01CD03",
-        "display" : "Paclitaxel poliglumex"
-      },
-      {
-        "code" : "L01CD04",
-        "display" : "Cabazitaxel"
-      },
-      {
-        "code" : "L01CX01",
-        "display" : "Trabectedina"
-      },
-      {
-        "code" : "L01DA01",
-        "display" : "Dactinomicina"
-      },
-      {
-        "code" : "L01DB01",
-        "display" : "Doxorubicina"
-      },
-      {
-        "code" : "L01DB02",
-        "display" : "Daunorubicina"
-      },
-      {
-        "code" : "L01DB03",
-        "display" : "Epirubicina"
-      },
-      {
-        "code" : "L01DB04",
-        "display" : "Aclarubicina"
-      },
-      {
-        "code" : "L01DB05",
-        "display" : "Zorubicina"
-      },
-      {
-        "code" : "L01DB06",
-        "display" : "Idarubicina"
-      },
-      {
-        "code" : "L01DB07",
-        "display" : "Mitoxantrone"
-      },
-      {
-        "code" : "L01DB08",
-        "display" : "Pirarubicina"
-      },
-      {
-        "code" : "L01DB09",
-        "display" : "Valrubicina"
-      },
-      {
-        "code" : "L01DB10",
-        "display" : "Amrubicina"
-      },
-      {
-        "code" : "L01DB11",
-        "display" : "Pixantrone"
-      },
-      {
-        "code" : "L01DC01",
-        "display" : "Bleomicina"
-      },
-      {
-        "code" : "L01DC02",
-        "display" : "Plicamicina"
-      },
-      {
-        "code" : "L01DC03",
-        "display" : "Mitomicina"
-      },
-      {
-        "code" : "L01DC04",
-        "display" : "Ixabepilone"
-      },
-      {
-        "code" : "L01XA01",
-        "display" : "Cisplatino"
-      },
-      {
-        "code" : "L01XA02",
-        "display" : "Carboplatino"
-      },
-      {
-        "code" : "L01XA03",
-        "display" : "Oxaliplatino"
-      },
-      {
-        "code" : "L01XA04",
-        "display" : "Satraplatino"
-      },
-      {
-        "code" : "L01XA05",
-        "display" : "Polyplatfllen"
-      },
-      {
-        "code" : "L01XB01",
-        "display" : "Procarbazina"
-      },
-      {
-        "code" : "L01XC01",
-        "display" : "Edrecolomab"
-      },
-      {
-        "code" : "L01XC02",
-        "display" : "Rituximab"
-      },
-      {
-        "code" : "L01XC03",
-        "display" : "Trastuzumab"
-      },
-      {
-        "code" : "L01XC04",
-        "display" : "Alemtuzumab"
-      },
-      {
-        "code" : "L01XC05",
-        "display" : "Gemtuzumab"
-      },
-      {
-        "code" : "L01XC06",
-        "display" : "Cetuximab"
-      },
-      {
-        "code" : "L01XC07",
-        "display" : "Bevacizumab"
-      },
-      {
-        "code" : "L01XC08",
-        "display" : "Panitumumab"
-      },
-      {
-        "code" : "L01XC09",
-        "display" : "Catumaxomab"
-      },
-      {
-        "code" : "L01XC10",
-        "display" : "Ofatumumab"
-      },
-      {
-        "code" : "L01XC11",
-        "display" : "Ipilimumab"
-      },
-      {
-        "code" : "L01XC12",
-        "display" : "Brentuximab vedotin"
-      },
-      {
-        "code" : "L01XC13",
-        "display" : "Pertuzumab"
-      },
-      {
-        "code" : "L01XC14",
-        "display" : "Trastuzumab emtansine"
-      },
-      {
-        "code" : "L01XC15",
-        "display" : "Obinutuzumab"
-      },
-      {
-        "code" : "L01XC17",
-        "display" : "Nivolumab"
-      },
-      {
-        "code" : "L01XC18",
-        "display" : "Pembrolizumab"
-      },
-      {
-        "code" : "L01XC19",
-        "display" : "Blinatumomab"
-      },
-      {
-        "code" : "L01XC21",
-        "display" : "Ramucirumab"
-      },
-      {
-        "code" : "L01XC23",
-        "display" : "Elotuzumab"
-      },
-      {
-        "code" : "L01XC24",
-        "display" : "Daratumumab"
-      },
-      {
-        "code" : "L01XC27",
-        "display" : "Olaratumab"
-      },
-      {
-        "code" : "L01XD01",
-        "display" : "Porfimer sodium"
-      },
-      {
-        "code" : "L01XD03",
-        "display" : "Metil 5-aminolevulinato"
-      },
-      {
-        "code" : "L01XD04",
-        "display" : "Acido 5 aminolevulinico"
-      },
-      {
-        "code" : "L01XD05",
-        "display" : "Temoporfina"
-      },
-      {
-        "code" : "L01XD06",
-        "display" : "Efaproxiral"
-      },
-      {
-        "code" : "L01XE01",
-        "display" : "Imatinib"
-      },
-      {
-        "code" : "L01XE02",
-        "display" : "Gefitinib"
-      },
-      {
-        "code" : "L01XE03",
-        "display" : "Erlotinib"
-      },
-      {
-        "code" : "L01XE04",
-        "display" : "Sunitinib"
-      },
-      {
-        "code" : "L01XE05",
-        "display" : "Sorafenib"
-      },
-      {
-        "code" : "L01XE06",
-        "display" : "Dasatinib"
-      },
-      {
-        "code" : "L01XE07",
-        "display" : "lapatinib"
-      },
-      {
-        "code" : "L01XE08",
-        "display" : "Nilotinib"
-      },
-      {
-        "code" : "L01XE09",
-        "display" : "Temsirolimus"
-      },
-      {
-        "code" : "L01XE10",
-        "display" : "Everolimus"
-      },
-      {
-        "code" : "L01XE11",
-        "display" : "Pazopanib"
-      },
-      {
-        "code" : "L01XE12",
-        "display" : "Vandetanib"
-      },
-      {
-        "code" : "L01XE13",
-        "display" : "Afatinib"
-      },
-      {
-        "code" : "L01XE14",
-        "display" : "Bosutinib"
-      },
-      {
-        "code" : "L01XE15",
-        "display" : "Vemurafenib"
-      },
-      {
-        "code" : "L01XE16",
-        "display" : "Crizotinib"
-      },
-      {
-        "code" : "L01XE17",
-        "display" : "Axitinib"
-      },
-      {
-        "code" : "L01XE18",
-        "display" : "Ruxolitinib"
-      },
-      {
-        "code" : "L01XE21",
-        "display" : "Regorafenib"
-      },
-      {
-        "code" : "L01XE23",
-        "display" : "Dabrafenib"
-      },
-      {
-        "code" : "L01XE24",
-        "display" : "Ponatinib"
-      },
-      {
-        "code" : "L01XE25",
-        "display" : "Trametinib"
-      },
-      {
-        "code" : "L01XE26",
-        "display" : "Cabozantinib"
-      },
-      {
-        "code" : "L01XE27",
-        "display" : "Ibrutinib"
-      },
-      {
-        "code" : "L01XE28",
-        "display" : "Ceritinib"
-      },
-      {
-        "code" : "L01XE29",
-        "display" : "Lenvatinib"
-      },
-      {
-        "code" : "L01XE31",
-        "display" : "Nintedanib"
-      },
-      {
-        "code" : "L01XE33",
-        "display" : "Palbociclib"
-      },
-      {
-        "code" : "L01XE35",
-        "display" : "Osimertinib"
-      },
-      {
-        "code" : "L01XE38",
-        "display" : "Cobimetinib"
-      },
-      {
-        "code" : "L01XX01",
-        "display" : "Amsacrina"
-      },
-      {
-        "code" : "L01XX02",
-        "display" : "Asparaginase"
-      },
-      {
-        "code" : "L01XX03",
-        "display" : "Altretamina"
-      },
-      {
-        "code" : "L01XX05",
-        "display" : "Hydroxycarbamide"
-      },
-      {
-        "code" : "L01XX07",
-        "display" : "lonidamina"
-      },
-      {
-        "code" : "L01XX08",
-        "display" : "Pentostatina"
-      },
-      {
-        "code" : "L01XX09",
-        "display" : "Milteforina"
-      },
-      {
-        "code" : "L01XX10",
-        "display" : "Masoprocol"
-      },
-      {
-        "code" : "L01XX11",
-        "display" : "Estramustina"
-      },
-      {
-        "code" : "L01XX14",
-        "display" : "Tretinoin"
-      },
-      {
-        "code" : "L01XX16",
-        "display" : "Mitoguazone"
-      },
-      {
-        "code" : "L01XX17",
-        "display" : "Topotecan"
-      },
-      {
-        "code" : "L01XX18",
-        "display" : "Tiazofurina"
-      },
-      {
-        "code" : "L01XX19",
-        "display" : "Irinotecan"
-      },
-      {
-        "code" : "L01XX22",
-        "display" : "Alitretinoina"
-      },
-      {
-        "code" : "L01XX23",
-        "display" : "Mitotano"
-      },
-      {
-        "code" : "L01XX24",
-        "display" : "Pegaspargase"
-      },
-      {
-        "code" : "L01XX25",
-        "display" : "Bexarotene"
-      },
-      {
-        "code" : "L01XX27",
-        "display" : "Arsenico triossido"
-      },
-      {
-        "code" : "L01XX29",
-        "display" : "Denileukin diftitox"
-      },
-      {
-        "code" : "L01XX32",
-        "display" : "Bortezomib"
-      },
-      {
-        "code" : "L01XX33",
-        "display" : "Celecoxib"
-      },
-      {
-        "code" : "L01XX35",
-        "display" : "Anagrelide"
-      },
-      {
-        "code" : "L01XX36",
-        "display" : "Oblimersen"
-      },
-      {
-        "code" : "L01XX37",
-        "display" : "Sitimagene ceradenovec"
-      },
-      {
-        "code" : "L01XX38",
-        "display" : "Vorinostat"
-      },
-      {
-        "code" : "L01XX39",
-        "display" : "Romidepsin"
-      },
-      {
-        "code" : "L01XX40",
-        "display" : "Omacetaxine mepesuccinate"
-      },
-      {
-        "code" : "L01XX41",
-        "display" : "Eribulina"
-      },
-      {
-        "code" : "L01XX42",
-        "display" : "Panobinostat"
-      },
-      {
-        "code" : "L01XX43",
-        "display" : "Vismodegib"
-      },
-      {
-        "code" : "L01XX44",
-        "display" : "Aflibercept"
-      },
-      {
-        "code" : "L01XX45",
-        "display" : "Carfilzomib"
-      },
-      {
-        "code" : "L01XX46",
-        "display" : "Olaparib"
-      },
-      {
-        "code" : "L01XX47",
-        "display" : "Idelalisib"
-      },
-      {
-        "code" : "L01XX52",
-        "display" : "Venetoclax"
-      },
-      {
-        "code" : "L02AA02",
-        "display" : "Stradurin"
-      },
-      {
-        "code" : "L02AA04",
-        "display" : "Fosfestrolo"
-      },
-      {
-        "code" : "L02AB01",
-        "display" : "Megestrolo"
-      },
-      {
-        "code" : "L02AB02",
-        "display" : "Medrossiprogesterone"
-      },
-      {
-        "code" : "L02AB03",
-        "display" : "Salbutamolo"
-      },
-      {
-        "code" : "L02AE01",
-        "display" : "Buserelina"
-      },
-      {
-        "code" : "L02AE02",
-        "display" : "Leuprorelina"
-      },
-      {
-        "code" : "L02AE03",
-        "display" : "Goserelina"
-      },
-      {
-        "code" : "L02AE04",
-        "display" : "Triptorelina"
-      },
-      {
-        "code" : "L02BA01",
-        "display" : "Tamoxifene"
-      },
-      {
-        "code" : "L02BA02",
-        "display" : "Toremifene"
-      },
-      {
-        "code" : "L02BA03",
-        "display" : "Fulvestrant"
-      },
-      {
-        "code" : "L02BB01",
-        "display" : "Flutamide"
-      },
-      {
-        "code" : "L02BB03",
-        "display" : "Bicalutamide"
-      },
-      {
-        "code" : "L02BB04",
-        "display" : "Enzalutamide"
-      },
-      {
-        "code" : "L02BG01",
-        "display" : "Aminoglutetimide"
-      },
-      {
-        "code" : "L02BG02",
-        "display" : "Formestano"
-      },
-      {
-        "code" : "L02BG03",
-        "display" : "Anastrozolo"
-      },
-      {
-        "code" : "L02BG04",
-        "display" : "Letrozolo"
-      },
-      {
-        "code" : "L02BG06",
-        "display" : "Exemestano"
-      },
-      {
-        "code" : "L02BX02",
-        "display" : "Degarelix"
-      },
-      {
-        "code" : "L02BX03",
-        "display" : "Abiraterone"
-      },
-      {
-        "code" : "L03AA02",
-        "display" : "Filgrastim"
-      },
-      {
-        "code" : "L03AA03",
-        "display" : "Molgramostin"
-      },
-      {
-        "code" : "L03AA09",
-        "display" : "Sargramostim"
-      },
-      {
-        "code" : "L03AA10",
-        "display" : "Lenograstim"
-      },
-      {
-        "code" : "L03AA12",
-        "display" : "Ancestim"
-      },
-      {
-        "code" : "L03AA13",
-        "display" : "Pegfilgrastim"
-      },
-      {
-        "code" : "L03AA14",
-        "display" : "Lipegfilgrastim"
-      },
-      {
-        "code" : "L03AB01",
-        "display" : "Interferone alfa natural"
-      },
-      {
-        "code" : "L03AB02",
-        "display" : "Interferone beta natural"
-      },
-      {
-        "code" : "L03AB03",
-        "display" : "Interferone gamma-1b"
-      },
-      {
-        "code" : "L03AB04",
-        "display" : "Interferone alfa-2a"
-      },
-      {
-        "code" : "L03AB05",
-        "display" : "Interferone alfa-2b"
-      },
-      {
-        "code" : "L03AB06",
-        "display" : "Interferone alfa-n1"
-      },
-      {
-        "code" : "L03AB07",
-        "display" : "Interferone beta-1a"
-      },
-      {
-        "code" : "L03AB08",
-        "display" : "Interferone beta-1b"
-      },
-      {
-        "code" : "L03AB09",
-        "display" : "Interferone alfacon-1"
-      },
-      {
-        "code" : "L03AB10",
-        "display" : "Peginterferone alfa-2b"
-      },
-      {
-        "code" : "L03AB11",
-        "display" : "Peginterferone alfa-2a"
-      },
-      {
-        "code" : "L03AB12",
-        "display" : "Albinterferon alfa-2b"
-      },
-      {
-        "code" : "L03AB13",
-        "display" : "Peginterferone beta 1a"
-      },
-      {
-        "code" : "L03AB60",
-        "display" : "Peginterferon alfa-2b, combinations"
-      },
-      {
-        "code" : "L03AB61",
-        "display" : "Peginterferon alfa-2a, combinations"
-      },
-      {
-        "code" : "L03AB90",
-        "display" : "Interferone ricombinante omega di origine felina"
-      },
-      {
-        "code" : "L03AC01",
-        "display" : "Aldesleuchina"
-      },
-      {
-        "code" : "L03AC02",
-        "display" : "Oprelvekin"
-      },
-      {
-        "code" : "L03AX01",
-        "display" : "Lentinan"
-      },
-      {
-        "code" : "L03AX02",
-        "display" : "Roquinimex"
-      },
-      {
-        "code" : "L03AX03",
-        "display" : "BCG vaccine"
-      },
-      {
-        "code" : "L03AX04",
-        "display" : "Pegademase"
-      },
-      {
-        "code" : "L03AX05",
-        "display" : "Pidotimod"
-      },
-      {
-        "code" : "L03AX07",
-        "display" : "Poly I:C"
-      },
-      {
-        "code" : "L03AX08",
-        "display" : "Poly ICLC"
-      },
-      {
-        "code" : "L03AX09",
-        "display" : "Thimopentin"
-      },
-      {
-        "code" : "L03AX10",
-        "display" : "Immunocianina"
-      },
-      {
-        "code" : "L03AX11",
-        "display" : "Tasonermina"
-      },
-      {
-        "code" : "L03AX12",
-        "display" : "Melanoma vaccino"
-      },
-      {
-        "code" : "L03AX13",
-        "display" : "Glatiramer"
-      },
-      {
-        "code" : "L03AX14",
-        "display" : "Histamine dihydrochloride"
-      },
-      {
-        "code" : "L03AX15",
-        "display" : "Mifamurtide"
-      },
-      {
-        "code" : "L03AX16",
-        "display" : "Plerixafor"
-      },
-      {
-        "code" : "L03AX17",
-        "display" : "Sipuleucel-T"
-      },
-      {
-        "code" : "L04AA02",
-        "display" : "Muromonab-CD3"
-      },
-      {
-        "code" : "L04AA03",
-        "display" : "Immunoglobulina antilinfocitaria (cavallo)"
-      },
-      {
-        "code" : "L04AA04",
-        "display" : "Immunoglobulina di coniglio antitimocitaria"
-      },
-      {
-        "code" : "L04AA06",
-        "display" : "Acido micofenolico sale di mofetile"
-      },
-      {
-        "code" : "L04AA10",
-        "display" : "Sirolimus"
-      },
-      {
-        "code" : "L04AA13",
-        "display" : "Leflunomide"
-      },
-      {
-        "code" : "L04AA15",
-        "display" : "Alefacept"
-      },
-      {
-        "code" : "L04AA18",
-        "display" : "Everolimus"
-      },
-      {
-        "code" : "L04AA19",
-        "display" : "Gusperimus"
-      },
-      {
-        "code" : "L04AA21",
-        "display" : "Efalizumab"
-      },
-      {
-        "code" : "L04AA22",
-        "display" : "Abetimus"
-      },
-      {
-        "code" : "L04AA23",
-        "display" : "Natalizumab"
-      },
-      {
-        "code" : "L04AA24",
-        "display" : "Abatacept"
-      },
-      {
-        "code" : "L04AA25",
-        "display" : "Eculizumab"
-      },
-      {
-        "code" : "L04AA26",
-        "display" : "Belimumab"
-      },
-      {
-        "code" : "L04AA27",
-        "display" : "Fingolimod"
-      },
-      {
-        "code" : "L04AA28",
-        "display" : "Belatacept"
-      },
-      {
-        "code" : "L04AA29",
-        "display" : "Tofacitinib"
-      },
-      {
-        "code" : "L04AA31",
-        "display" : "Teriflunomide"
-      },
-      {
-        "code" : "L04AA32",
-        "display" : "Apremilast"
-      },
-      {
-        "code" : "L04AA33",
-        "display" : "Vedolizumab"
-      },
-      {
-        "code" : "L04AA34",
-        "display" : "Alemtuzumab"
-      },
-      {
-        "code" : "L04AB01",
-        "display" : "Etanercept"
-      },
-      {
-        "code" : "L04AB02",
-        "display" : "Infliximab"
-      },
-      {
-        "code" : "L04AB03",
-        "display" : "Afelimomab"
-      },
-      {
-        "code" : "L04AB04",
-        "display" : "Adalimumab"
-      },
-      {
-        "code" : "L04AB05",
-        "display" : "Certolizumab"
-      },
-      {
-        "code" : "L04AB06",
-        "display" : "Golimumab"
-      },
-      {
-        "code" : "L04AC01",
-        "display" : "Daclizumab"
-      },
-      {
-        "code" : "L04AC02",
-        "display" : "Basiliximab"
-      },
-      {
-        "code" : "L04AC03",
-        "display" : "Anakinra"
-      },
-      {
-        "code" : "L04AC04",
-        "display" : "Rilonacept"
-      },
-      {
-        "code" : "L04AC05",
-        "display" : "Ustekinumab"
-      },
-      {
-        "code" : "L04AC06",
-        "display" : "Mepolizumab"
-      },
-      {
-        "code" : "L04AC07",
-        "display" : "Tocilizumab"
-      },
-      {
-        "code" : "L04AC08",
-        "display" : "Canakinumab"
-      },
-      {
-        "code" : "L04AC09",
-        "display" : "Briakinumab"
-      },
-      {
-        "code" : "L04AC10",
-        "display" : "Secukinumab"
-      },
-      {
-        "code" : "L04AC11",
-        "display" : "Siltuximab"
-      },
-      {
-        "code" : "L04AC13",
-        "display" : "Ixekizumab"
-      },
-      {
-        "code" : "L04AD01",
-        "display" : "Ciclosporina"
-      },
-      {
-        "code" : "L04AD02",
-        "display" : "Tacrolimus"
-      },
-      {
-        "code" : "L04AD03",
-        "display" : "Voclosporina"
-      },
-      {
-        "code" : "L04AX01",
-        "display" : "Azatioprina"
-      },
-      {
-        "code" : "L04AX02",
-        "display" : "Talidomide"
-      },
-      {
-        "code" : "L04AX03",
-        "display" : "Metotrexato"
-      },
-      {
-        "code" : "L04AX04",
-        "display" : "Lenalidomide"
-      },
-      {
-        "code" : "L04AX05",
-        "display" : "Pirfenidone"
-      },
-      {
-        "code" : "L04AX06",
-        "display" : "Pomalidomide"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "language" : "en",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:8faea0c7-41e8-4671-906a-7bf97b96363b",
-    "timestamp" : "2022-04-14T10:04:21.534Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueUri" : "http://www.whocc.no/atc|2020-05"
-    }],
-    "contains" : [{
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA01",
-      "display" : "Ciclofosfamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA02",
-      "display" : "Clorambucile"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA03",
-      "display" : "Melphalan"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA05",
-      "display" : "Mecloretamina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA06",
-      "display" : "Ifosfamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA07",
-      "display" : "Trofosfamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA08",
-      "display" : "Prednimustine"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AA09",
-      "display" : "Bendamustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AB01",
-      "display" : "Busulfano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AB02",
-      "display" : "Treosulfano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AB03",
-      "display" : "Mannosulfano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AC01",
-      "display" : "Thiotepa"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AC02",
-      "display" : "Triaziquone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AC03",
-      "display" : "Carboquone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD01",
-      "display" : "Carmustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD02",
-      "display" : "Lomustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD03",
-      "display" : "Semustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD04",
-      "display" : "Streptozocina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD05",
-      "display" : "Fotemustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD06",
-      "display" : "Nimustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AD07",
-      "display" : "Ranimustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AG01",
-      "display" : "Etoglucide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX01",
-      "display" : "Mitobronitol"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX02",
-      "display" : "Pipobromam"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX03",
-      "display" : "Temozolomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01AX04",
-      "display" : "Dacarbazina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BA01",
-      "display" : "Metotrexato sale sodico"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BA03",
-      "display" : "Raltitrexed"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BA04",
-      "display" : "Pemetrexed"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB02",
-      "display" : "Mercaptopurina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB03",
-      "display" : "Tioguanina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB04",
-      "display" : "Cladribina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB05",
-      "display" : "Fludarabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB06",
-      "display" : "Clofarabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BB07",
-      "display" : "Nelarabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC01",
-      "display" : "Cytarabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC02",
-      "display" : "Fluorouracile"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC03",
-      "display" : "Tegafur"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC05",
-      "display" : "Gemcitabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC06",
-      "display" : "Capecitabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC07",
-      "display" : "Azacitidina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC08",
-      "display" : "Decitabina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01BC53",
-      "display" : "Tegafur + gimeracil + oteracil"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA01",
-      "display" : "Vinblastina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA02",
-      "display" : "Vincristina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA03",
-      "display" : "Vindesina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA04",
-      "display" : "Vinorelbina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CA05",
-      "display" : "Vinflunina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CB01",
-      "display" : "Etoposide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CB02",
-      "display" : "Teniposide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CC01",
-      "display" : "Demecolcina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD01",
-      "display" : "Paclitaxel"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD02",
-      "display" : "Docetaxel"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD03",
-      "display" : "Paclitaxel poliglumex"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CD04",
-      "display" : "Cabazitaxel"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01CX01",
-      "display" : "Trabectedina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DA01",
-      "display" : "Dactinomicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB01",
-      "display" : "Doxorubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB02",
-      "display" : "Daunorubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB03",
-      "display" : "Epirubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB04",
-      "display" : "Aclarubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB05",
-      "display" : "Zorubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB06",
-      "display" : "Idarubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB07",
-      "display" : "Mitoxantrone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB08",
-      "display" : "Pirarubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB09",
-      "display" : "Valrubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB10",
-      "display" : "Amrubicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DB11",
-      "display" : "Pixantrone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC01",
-      "display" : "Bleomicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC02",
-      "display" : "Plicamicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC03",
-      "display" : "Mitomicina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01DC04",
-      "display" : "Ixabepilone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA01",
-      "display" : "Cisplatino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA02",
-      "display" : "Carboplatino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA03",
-      "display" : "Oxaliplatino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA04",
-      "display" : "Satraplatino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XA05",
-      "display" : "Polyplatfllen"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XB01",
-      "display" : "Procarbazina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC01",
-      "display" : "Edrecolomab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC02",
-      "display" : "Rituximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC03",
-      "display" : "Trastuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC05",
-      "display" : "Gemtuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC06",
-      "display" : "Cetuximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC07",
-      "display" : "Bevacizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC08",
-      "display" : "Panitumumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC09",
-      "display" : "Catumaxomab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC10",
-      "display" : "Ofatumumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC11",
-      "display" : "Ipilimumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC12",
-      "display" : "Brentuximab vedotin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC13",
-      "display" : "Pertuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC14",
-      "display" : "Trastuzumab emtansine"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC15",
-      "display" : "Obinutuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC17",
-      "display" : "Nivolumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC18",
-      "display" : "Pembrolizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC19",
-      "display" : "Blinatumomab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC21",
-      "display" : "Ramucirumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC23",
-      "display" : "Elotuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC24",
-      "display" : "Daratumumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XC27",
-      "display" : "Olaratumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD01",
-      "display" : "Porfimer sodium"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD03",
-      "display" : "Metil 5-aminolevulinato"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD04",
-      "display" : "Acido 5 aminolevulinico"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD05",
-      "display" : "Temoporfina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XD06",
-      "display" : "Efaproxiral"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX01",
-      "display" : "Amsacrina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX02",
-      "display" : "Asparaginase"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX03",
-      "display" : "Altretamina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX05",
-      "display" : "Hydroxycarbamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX07",
-      "display" : "lonidamina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX08",
-      "display" : "Pentostatina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX10",
-      "display" : "Masoprocol"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX11",
-      "display" : "Estramustina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX16",
-      "display" : "Mitoguazone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX18",
-      "display" : "Tiazofurina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX23",
-      "display" : "Mitotano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX24",
-      "display" : "Pegaspargase"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX27",
-      "display" : "Arsenico triossido"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX29",
-      "display" : "Denileukin diftitox"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX33",
-      "display" : "Celecoxib"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX35",
-      "display" : "Anagrelide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX36",
-      "display" : "Oblimersen"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX37",
-      "display" : "Sitimagene ceradenovec"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX40",
-      "display" : "Omacetaxine mepesuccinate"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX41",
-      "display" : "Eribulina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX44",
-      "display" : "Aflibercept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L01XX52",
-      "display" : "Venetoclax"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AA02",
-      "display" : "Stradurin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AA04",
-      "display" : "Fosfestrolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AB01",
-      "display" : "Megestrolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AB02",
-      "display" : "Medrossiprogesterone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AB03",
-      "display" : "Salbutamolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AE01",
-      "display" : "Buserelina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AE02",
-      "display" : "Leuprorelina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AE03",
-      "display" : "Goserelina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02AE04",
-      "display" : "Triptorelina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BA01",
-      "display" : "Tamoxifene"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BA02",
-      "display" : "Toremifene"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BA03",
-      "display" : "Fulvestrant"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BB01",
-      "display" : "Flutamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BB03",
-      "display" : "Bicalutamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BB04",
-      "display" : "Enzalutamide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG01",
-      "display" : "Aminoglutetimide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG02",
-      "display" : "Formestano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG03",
-      "display" : "Anastrozolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG04",
-      "display" : "Letrozolo"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BG06",
-      "display" : "Exemestano"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BX02",
-      "display" : "Degarelix"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L02BX03",
-      "display" : "Abiraterone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA02",
-      "display" : "Filgrastim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA03",
-      "display" : "Molgramostin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA09",
-      "display" : "Sargramostim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA10",
-      "display" : "Lenograstim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA12",
-      "display" : "Ancestim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA13",
-      "display" : "Pegfilgrastim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AA14",
-      "display" : "Lipegfilgrastim"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB01",
-      "display" : "Interferone alfa natural"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB02",
-      "display" : "Interferone beta natural"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB03",
-      "display" : "Interferone gamma-1b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB04",
-      "display" : "Interferone alfa-2a"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB05",
-      "display" : "Interferone alfa-2b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB06",
-      "display" : "Interferone alfa-n1"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB07",
-      "display" : "Interferone beta-1a"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB08",
-      "display" : "Interferone beta-1b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB09",
-      "display" : "Interferone alfacon-1"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB10",
-      "display" : "Peginterferone alfa-2b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB11",
-      "display" : "Peginterferone alfa-2a"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB12",
-      "display" : "Albinterferon alfa-2b"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB13",
-      "display" : "Peginterferone beta 1a"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB60",
-      "display" : "Peginterferon alfa-2b, combinations"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AB61",
-      "display" : "Peginterferon alfa-2a, combinations"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AC01",
-      "display" : "Aldesleuchina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AC02",
-      "display" : "Oprelvekin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX01",
-      "display" : "Lentinan"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX02",
-      "display" : "Roquinimex"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX03",
-      "display" : "BCG vaccine"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX04",
-      "display" : "Pegademase"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX05",
-      "display" : "Pidotimod"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX07",
-      "display" : "Poly I:C"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX08",
-      "display" : "Poly ICLC"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX09",
-      "display" : "Thimopentin"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX10",
-      "display" : "Immunocianina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX11",
-      "display" : "Tasonermina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX12",
-      "display" : "Melanoma vaccino"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX13",
-      "display" : "Glatiramer"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX14",
-      "display" : "Histamine dihydrochloride"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX15",
-      "display" : "Mifamurtide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX16",
-      "display" : "Plerixafor"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L03AX17",
-      "display" : "Sipuleucel-T"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA02",
-      "display" : "Muromonab-CD3"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA03",
-      "display" : "Immunoglobulina antilinfocitaria (cavallo)"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA04",
-      "display" : "Immunoglobulina di coniglio antitimocitaria"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA06",
-      "display" : "Acido micofenolico sale di mofetile"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA10",
-      "display" : "Sirolimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA13",
-      "display" : "Leflunomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA15",
-      "display" : "Alefacept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA18",
-      "display" : "Everolimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA19",
-      "display" : "Gusperimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA21",
-      "display" : "Efalizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA22",
-      "display" : "Abetimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA23",
-      "display" : "Natalizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA24",
-      "display" : "Abatacept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA25",
-      "display" : "Eculizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA26",
-      "display" : "Belimumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA27",
-      "display" : "Fingolimod"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA28",
-      "display" : "Belatacept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA29",
-      "display" : "Tofacitinib"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA31",
-      "display" : "Teriflunomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA32",
-      "display" : "Apremilast"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA33",
-      "display" : "Vedolizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AA34",
-      "display" : "Alemtuzumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB01",
-      "display" : "Etanercept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB02",
-      "display" : "Infliximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB03",
-      "display" : "Afelimomab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB04",
-      "display" : "Adalimumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB05",
-      "display" : "Certolizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AB06",
-      "display" : "Golimumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC01",
-      "display" : "Daclizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC02",
-      "display" : "Basiliximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC03",
-      "display" : "Anakinra"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC04",
-      "display" : "Rilonacept"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC05",
-      "display" : "Ustekinumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC07",
-      "display" : "Tocilizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC08",
-      "display" : "Canakinumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC09",
-      "display" : "Briakinumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC10",
-      "display" : "Secukinumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC11",
-      "display" : "Siltuximab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AC13",
-      "display" : "Ixekizumab"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AD01",
-      "display" : "Ciclosporina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AD02",
-      "display" : "Tacrolimus"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AD03",
-      "display" : "Voclosporina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX01",
-      "display" : "Azatioprina"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX02",
-      "display" : "Talidomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX03",
-      "display" : "Metotrexato"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX04",
-      "display" : "Lenalidomide"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX05",
-      "display" : "Pirfenidone"
-    },
-    {
-      "system" : "http://www.whocc.no/atc",
-      "code" : "L04AX06",
-      "display" : "Pomalidomide"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BA05"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "pralatrexate",
-  "code" : "L01BA05",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BC04"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "carmofur",
-  "code" : "L01BC04",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BC52"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "fluorouracil, combinations",
-  "code" : "L01BC52",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01BC59"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "trifluridine, combinations",
-  "code" : "L01BC59",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01CA06"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "vintafolide",
-  "code" : "L01CA06",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XC16"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "dinutuximab beta",
-  "code" : "L01XC16",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XC22"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "necitumumab",
-  "code" : "L01XC22",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XC25"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "mogamulizumab",
-  "code" : "L01XC25",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XC26"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "inotuzumab ozogamicin",
-  "code" : "L01XC26",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE19"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE19\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE19) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE22"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE22\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE22) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE32"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE32\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE32) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE34"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE34\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE34) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE36"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE36\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE36) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE37"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE37\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE37) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE39"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE39\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE39) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XE40"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XE40\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XE40) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XX48"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XX48\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XX48) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XX49"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XX49\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XX49) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XX50"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"L01XX50\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#L01XX50) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XX51"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "talimogene laherparepvec",
-  "code" : "L01XX51",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L01XX53"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "vosaroxin",
-  "code" : "L01XX53",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L02AA01"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "diethylstilbestrol",
-  "code" : "L02AA01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L02AA03"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "ethinylestradiol",
-  "code" : "L02AA03",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L02AE05"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "histrelin",
-  "code" : "L02AE05",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L02BB02"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "nilutamide",
-  "code" : "L02BB02",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L02BG05"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "vorozole",
-  "code" : "L02BG05",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L02BX01"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "abarelix",
-  "code" : "L02BX01",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03AA15"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "balugrastim",
-  "code" : "L03AA15",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03AA16"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "empegfilgrastim",
-  "code" : "L03AA16",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03AB14"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "cepeginterferon alfa-2b",
-  "code" : "L03AB14",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03AX18"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "cridanimod",
-  "code" : "L03AX18",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L03AX19"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "dasiprotimut-T",
-  "code" : "L03AX19",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L04AA35"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "begelomab",
-  "code" : "L04AA35",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L04AA36"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "ocrelizumab",
-  "code" : "L04AA36",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L04AA37"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "baricitinib",
-  "code" : "L04AA37",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L04AC12"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "brodalumab",
-  "code" : "L04AC12",
-  "system" : "http://www.whocc.no/atc"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L04AC14"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "display" : "sarilumab",
-  "code" : "L04AC14",
   "system" : "http://www.whocc.no/atc"
 }
 -------------------------------------------------------------------------------------
@@ -10297,8 +4671,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:5c332a82-3faf-4758-9a7a-79844c3f0ec6",
-    "timestamp" : "2022-04-28T15:56:03.942Z",
+    "identifier" : "urn:uuid:bbd90290-6e91-404b-9e90-c7d90f43da89",
+    "timestamp" : "2022-06-11T09:36:18.380Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true

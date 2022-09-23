@@ -9,3 +9,405 @@ v: {
   "system" : "http://hl7.org/fhir/sid/icd-10"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "D61.0"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Constitutional aplastic anaemia",
+  "code" : "D61.0",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "D82.0"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Wiskott-Aldrich syndrome",
+  "code" : "D82.0",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "D82.3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Immunodeficiency following hereditary defective response to Epstein-Barr virus",
+  "code" : "D82.3",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "E34.8"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Other specified endocrine disorders",
+  "code" : "E34.8",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "G11.3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Cerebellar ataxia with defective DNA repair",
+  "code" : "G11.3",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "K86.1"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Other chronic pancreatitis",
+  "code" : "K86.1",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "L72.8"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Other follicular cysts of skin and subcutaneous tissue",
+  "code" : "L72.8",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q78.6"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Multiple congenital exostoses",
+  "code" : "Q78.6",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q82.1"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Xeroderma pigmentosum",
+  "code" : "Q82.1",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q82.2"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Mastocytosis",
+  "code" : "Q82.2",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q82.8"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Other specified congenital malformations of skin",
+  "code" : "Q82.8",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q85.0"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Neurofibromatosis (nonmalignant)",
+  "code" : "Q85.0",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q85.1"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Tuberous sclerosis",
+  "code" : "Q85.1",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q85.8"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Other phakomatoses, not elsewhere classified",
+  "code" : "Q85.8",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q87.3"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Congenital malformation syndromes involving early overgrowth",
+  "code" : "Q87.3",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "Q87.8"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Other specified congenital malformation syndromes, not elsewhere classified",
+  "code" : "Q87.8",
+  "system" : "http://hl7.org/fhir/sid/icd-10"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "concept" : [{
+        "code" : "D61.0",
+        "display" : "Constitutional aplastic anemia"
+      },
+      {
+        "code" : "D82.0",
+        "display" : "Wiskott-Aldrich syndrome"
+      },
+      {
+        "code" : "D82.3",
+        "display" : "Immunodeficiency following hereditary defective response to Epstein-Barr virus"
+      },
+      {
+        "code" : "E34.8",
+        "display" : "Other specified endocrine disorders"
+      },
+      {
+        "code" : "G11.3",
+        "display" : "Cerebellar ataxia with defective DNA repair"
+      },
+      {
+        "code" : "K86.1",
+        "display" : "Other chronic pancreatitis"
+      },
+      {
+        "code" : "L72.8",
+        "display" : "Other follicular cysts of the skin and subcutaneous tissue"
+      },
+      {
+        "code" : "Q78.6",
+        "display" : "Multiple congenital exostoses"
+      },
+      {
+        "code" : "Q82.1",
+        "display" : "Xeroderma pigmentosum"
+      },
+      {
+        "code" : "Q82.2",
+        "display" : "Congenital cutaneous mastocytosis"
+      },
+      {
+        "code" : "Q82.8",
+        "display" : "Other specified congenital malformations of skin"
+      },
+      {
+        "code" : "Q85.0",
+        "display" : "Neurofibromatosis (nonmalignant)"
+      },
+      {
+        "code" : "Q85.1",
+        "display" : "Tuberous sclerosis"
+      },
+      {
+        "code" : "Q85.8",
+        "display" : "Other phakomatoses, not elsewhere classified"
+      },
+      {
+        "code" : "Q87.3",
+        "display" : "Congenital malformation syndromes involving early overgrowth"
+      },
+      {
+        "code" : "Q87.8",
+        "display" : "Other specified congenital malformation syndromes, not elsewhere classified"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:f7c18b63-9e63-4201-8b8b-a4a2c76a5ee5",
+    "timestamp" : "2022-06-13T08:23:06.520Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Constitutional aplastic anaemia"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "D61.0",
+      "display" : "Constitutional aplastic anemia"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Wiskott-Aldrich syndrome"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "D82.0",
+      "display" : "Wiskott-Aldrich syndrome"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Immunodeficiency following hereditary defective response to Epstein-Barr virus"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "D82.3",
+      "display" : "Immunodeficiency following hereditary defective response to Epstein-Barr virus"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Other specified endocrine disorders"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "E34.8",
+      "display" : "Other specified endocrine disorders"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Cerebellar ataxia with defective DNA repair"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "G11.3",
+      "display" : "Cerebellar ataxia with defective DNA repair"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Other chronic pancreatitis"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "K86.1",
+      "display" : "Other chronic pancreatitis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Other follicular cysts of skin and subcutaneous tissue"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "L72.8",
+      "display" : "Other follicular cysts of the skin and subcutaneous tissue"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Multiple congenital exostoses"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q78.6",
+      "display" : "Multiple congenital exostoses"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Xeroderma pigmentosum"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q82.1",
+      "display" : "Xeroderma pigmentosum"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Mastocytosis"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q82.2",
+      "display" : "Congenital cutaneous mastocytosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Other specified congenital malformations of skin"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q82.8",
+      "display" : "Other specified congenital malformations of skin"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Neurofibromatosis (nonmalignant)"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q85.0",
+      "display" : "Neurofibromatosis (nonmalignant)"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Tuberous sclerosis"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q85.1",
+      "display" : "Tuberous sclerosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Other phakomatoses, not elsewhere classified"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q85.8",
+      "display" : "Other phakomatoses, not elsewhere classified"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Congenital malformation syndromes involving early overgrowth"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q87.3",
+      "display" : "Congenital malformation syndromes involving early overgrowth"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Other specified congenital malformation syndromes, not elsewhere classified"
+      }],
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q87.8",
+      "display" : "Other specified congenital malformation syndromes, not elsewhere classified"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

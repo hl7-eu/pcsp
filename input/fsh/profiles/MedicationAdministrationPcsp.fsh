@@ -19,7 +19,7 @@ RuleSet: MedicationAdministrationPcspRules
 Profile:  CumulativeDoseChemoObsPcsp
 Parent:   Observation
 Id:       Observation-cumulativeDoseChemo-eu-pcsp
-Title:    "Observation Chemotherapy Cumulative Dose"
+Title:    "Observation: Chemotherapy Cumulative Dose"
 Description: "This profile defines how to represent Chemotherapy Cumulative Dose in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * insert CumulativeDoseObsRules

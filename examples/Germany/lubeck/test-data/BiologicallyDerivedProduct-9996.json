@@ -1,0 +1,41 @@
+{
+    "resourceType": "BiologicallyDerivedProduct",
+    "id": "9996",
+    "meta": {
+        "versionId": "6",
+        "lastUpdated": "2022-06-13T16:31:09.461+02:00",
+        "source": "#HAueIV58WJl97s14"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/sct-donor-type",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                        "code": "sct-matched-related",
+                        "display": "matched related"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/sct-source-type",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                        "code": "sct-cord",
+                        "display": "PBSC"
+                    }
+                ]
+            }
+        }
+    ],
+    "productCategory": "tissue",
+    "collection": {
+        "source": {
+            "reference": "Patient/1953"
+        }
+    }
+}

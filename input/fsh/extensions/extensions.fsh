@@ -3,6 +3,28 @@ RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
 
+Extension: FltArm
+Id: procedure-fltArm
+Title:  "Randomization arm for trial"
+Description: "This extension allows to describeprovide a textual description of the randomization arm for trials (FLT)."
+* insert ExtensionContext(Procedure)
+* value[x] only string
+
+Extension: PerformedTiming
+Id: procedure-performedTiming
+Title:  "Performed Timing"
+Description: "This extension allows to indicate when the procedure was performed as Timing."
+* insert ExtensionContext(Procedure)
+* value[x] only Timing
+
+
+Extension: RelapseType
+Id: condition-relapseType
+Title:  "Relapse Type"
+Description: "This extension is used to indicate if a relapse/progression is local, remote or combined."
+* insert ExtensionContext(Condition)
+* value[x] only CodeableConcept
+
 
 Extension: ResourceRelatedInfo
 Id:   resource-relatedInfo
@@ -83,7 +105,7 @@ Description: "Qualifier to refine an body location. These include qualifiers for
 // * insert ExtensionContext(Condition.bodySite)
 // * insert ExtensionContext(Observation.bodySite)
 * value[x] only CodeableConcept
-* value[x] from BodyLocationQualifierVS (required)
+* value[x] from BodyLocationQualifierVS (preferred)
 * value[x] 1..1
 
 // ------------------------------------
@@ -99,7 +121,7 @@ Description: "Qualifier to specify laterality."
 // * insert ExtensionContext(Condition.bodySite)
 // * insert ExtensionContext(Observation.bodySite)
 * value[x] only CodeableConcept
-* value[x] from LateralityQualifierVS (preferred)
+// * value[x] from LateralityQualifierVS (preferred)
 * value[x] 1..1
 
 // ------------------------------------
@@ -123,7 +145,7 @@ Description: "Specify the type of source for the cell used in a transplantation"
 // ------------------------------------
 Extension: ProcedureUsedReference
 Id: procedure-usedReference
-Title: "Procedure Used Reference "
+Title: "Procedure Used Reference"
 Description: "Extend the usedReference element to BiologicallyDerivedProduct"
 
 * value[x] only Reference

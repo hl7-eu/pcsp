@@ -10,8 +10,9 @@ CALL :buildFshFiles input\fsh\models\sct
 CALL :buildFshFiles input\fsh\models\flt
 CALL :buildFshFiles input\fsh\models\relapseFlt
 CALL :buildFshFiles input\fsh\models\other
-CALL :buildFshFiles input\fsh\models\suggestion
+REM CALL :buildFshFiles input\fsh\models\suggestion
 CALL :buildFshFiles input\fsh\models\relapseAfterFlt
+CALL :buildFshFiles input\fsh\models\meta
 
 
 REM CALL :buildFshFiles input\fsh\models\minChemio
@@ -35,9 +36,9 @@ for /R input\fsh\models %%f in (*.fsh) do (
 GOTO :EOF
 
 
-::--------------------------------------------------------
-::-- Function section starts below here
-::--------------------------------------------------------
+:--------------------------------------------------------
+:-- Function section starts below here
+:--------------------------------------------------------
 
 :addItems
 
@@ -51,8 +52,15 @@ GOTO :EOF
 
 :buildFshFiles
  
-
-  type %~1"-model.txt" > %~1".fsh"
+ if exist %~1"-model.txt"  (
+    echo //  >> %~1".fsh"
+		echo // === MODEL === >> %~1".fsh"
+		echo // >> %~1".fsh"
+		type %~1"-model.txt" > %~1".fsh"
+		echo // >> %~1".fsh"
+   ) 
+ 
+  
 
    if exist %~1"-map.txt"  (
    echo //  >> %~1".fsh"

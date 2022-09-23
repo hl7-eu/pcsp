@@ -22,3 +22,208 @@ e: {
   "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "code" : "95103",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "severity" : "warning",
+  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C692"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "code" : "C692",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "severity" : "warning",
+  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "code" : "91813",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "severity" : "warning",
+  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C401"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "code" : "C401",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "severity" : "warning",
+  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.0.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"95103\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#95103) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "code" : "95103",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "severity" : "warning",
+  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"95103\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#95103) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C692"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"C692\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C692) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C692"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "code" : "C692",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "severity" : "warning",
+  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.0.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"91813\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#91813) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "code" : "91813",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "severity" : "warning",
+  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"91813\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#91813) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C401"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"C401\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C401) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C401"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "code" : "C401",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "severity" : "warning",
+  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C41.2"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"C41.2\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C41.2) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8260/3"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.0.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8260/3"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.1.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C73.9"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.1.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"C73.9\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C73.9) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"95103\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#95103) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"91813\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#91813) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8260/3"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.1.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------

@@ -1,6 +1,89 @@
 
+// --------------------------------------------------------
+ValueSet: BodyLocationQualifierVS
+Id: mcode-body-location-qualifier-vs
+Title: "Body Location Qualifier Value Set"
+Description: "Qualifiers to refine a body structure or location including qualifiers for relative location, directionality, number, and plane, and excluding qualifiers for laterality."
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+// Changed to intensional definition
+* include codes from system $sct where concept is-a #106233006 "Topographic Modifier (qualifer)"
+* include codes from system $sct where concept is-a #272424004 "Relative Sites (qualifier)"
+* $sct#255503000 "Entire (qualifier value)"
+* exclude codes from valueset LateralityQualifierVS // laterality is separated into a separate value set
 
 
+// --------------------------------------------------------
+ValueSet: RelapseTypeVS
+Id: relapse-type-vs
+Title: "Relapse type (Local/Distant/Combined)"
+
+* $sct#255470001 "Local"
+* $sct#261007001 "Distant"
+* $sct#89780004 "Combined"
+
+
+// --------------------------------------------------------
+ValueSet: OtherInfosConditionVS
+Id: otherInfos-condition-vs
+Title: "Other Infors Condition"
+Description:  "Other Infors Condition"
+* $sct#48130008 "Hypogonadism"
+* $sct#397827003 "Growth hormone deficiency"
+* $sct#230745008 "Hydrocephalus"
+* $sct#10295004 "Chronic viral hepatitis"
+* $sct#65617004 "Veno-occlusive disease of the liver" // it should be the same of Hepatic sinusoidal obstruction syndrome (SOS), also called veno-occlusive disease (VOD)
+* $sct#439127006 "Thrombosis"
+
+// --------------------------------------------------------
+ValueSet: ActiveResolvedConditionVS
+Id: activeResolved-condition-vs
+Title: "Active or resolved Condition"
+Description:  "Active or resolved Condition"
+* $condition-clinical#active 
+* $condition-clinical#resolved
+
+// --------------------------------------------------------
+ValueSet: ToxicitySeverityVS
+Id: toxicityseverity-vs
+Title: "Toxicity Severity"
+Description: "Toxicity Severity"
+
+* include codes from valueset $condition-severity-uv-ips
+* $data-absent-reason#unknown "Unknown"
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: FromToPosteriorAnteriorVs
+Id: vs-fromToPosteriorAnterior-eu-pcsp 
+Title: "Body Location Qualifier Value Set"
+Description: "Types of documents exchanged with the PCSP platform"
+//-------------------------------------------------------------------------------------------
+* CsGenericPcsp#to-structure "To-structure"
+* $sct#272488003 "From-structure"
+* $sct#255549009 "Anterior" 
+* $sct#255551008 "Posterior" 
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: DocRefDocType
+Id: vs-docref-doctype-eu-pcsp 
+Title: "Document Type"
+Description: "Types of documents exchanged with the PCSP platform"
+//-------------------------------------------------------------------------------------------
+
+* CsGenericPcsp#surpass "Childhood Cancer Survivor Passport"
+* $loinc#18748-4 "Diagnostic Imaging Report"
+* $loinc#34105-7 "Hospital Discharge summary"
+* $loinc#11502-2 "LABORATORY REPORT.TOTAL"
+
+/* ===== COMMENTED
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ValueSet: DocRefMimeType
+Id: vs-docref-mimetype-eu-pcsp 
+Title: "MIME Type"
+Description: "MIME types of documents exchanged with the PCSP platform"
+//-------------------------------------------------------------------------------------------
+* urn:ietf:bcp:13#application/pdf
+
+====== END */
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: FltPlanType
@@ -48,43 +131,43 @@ Description: "SCT Timing events: Before/after procedure"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: SctAcuteGvdhGrade
-Id: vs-gvdh-acute-grade-eu-pcsp 
-Title: "Acute GvDH Grade"
-Description: "Acute GvDH Grade"
+ValueSet: SctAcuteGvhdGrade
+Id: vs-Gvhd-acute-grade-eu-pcsp 
+Title: "Acute Gvhd Grade"
+Description: "Acute Gvhd Grade"
 //-------------------------------------------------------------------------------------------
 
-//-- GvDH Grade (acute)
-* CsGenericPcsp#gvdh-acute-1 "Grade 1" 
-* CsGenericPcsp#gvdh-acute-2 "Grade 2" 
-* CsGenericPcsp#gvdh-acute-3 "Grade 3" 
-* CsGenericPcsp#gvdh-acute-4 "Grade 4"
+//-- Gvhd Grade (acute)
+* CsGenericPcsp#Gvhd-acute-1 "Grade 1" 
+* CsGenericPcsp#Gvhd-acute-2 "Grade 2" 
+* CsGenericPcsp#Gvhd-acute-3 "Grade 3" 
+* CsGenericPcsp#Gvhd-acute-4 "Grade 4"
 * $data-absent-reason#unknown "Unknown"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: SctChronicGvdhGrade
-Id: vs-gvdh-chronic-grade-eu-pcsp
-Title: "Chronic GvDH condition"
-Description: "Acute GvDH Grade"
+ValueSet: SctChronicGvhdGrade
+Id: vs-Gvhd-chronic-grade-eu-pcsp
+Title: "Chronic Gvhd condition"
+Description: "Acute Gvhd Grade"
 //-------------------------------------------------------------------------------------------
 
-//-- GvDH Grade (chronic)
-* CsGenericPcsp#gvdh-chr-1 "Limited" 	
-* CsGenericPcsp#gvdh-chr-2 "Extensive" 
+//-- Gvhd Grade (chronic)
+* CsGenericPcsp#Gvhd-chr-1 "Limited" 	
+* CsGenericPcsp#Gvhd-chr-2 "Extensive" 
 * $data-absent-reason#unknown "Unknown"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: SctGvdhType
-Id: vs-gvdh-type-eu-pcsp
-Title: "GvDH condition"
-Description: "GvDH condition"
+ValueSet: SctGvhdType
+Id: vs-Gvhd-type-eu-pcsp
+Title: "Gvhd condition"
+Description: "Gvhd condition"
 //-------------------------------------------------------------------------------------------
 /// ===> CHECK IF IN GPS
 * $sct#234646005 "Graft-versus-host disease" 
 * $sct#402355000 "Acute graft-versus-host disease"
 * $sct#402356004 "Chronic graft-versus-host disease"
-* CsGenericPcsp#gvdh-unk "GvDH Unknown" 
+* CsGenericPcsp#Gvhd-unk "Gvhd Unknown" 
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -154,18 +237,6 @@ Description: "Other/Unknown/Text Value Set"
 * $data-absent-reason#as-text "As Text"
 
 // --------------------------------------------------------
-ValueSet: BodyLocationQualifierVS
-Id: mcode-body-location-qualifier-vs
-Title: "Body Location Qualifier Value Set"
-Description: "Qualifiers to refine a body structure or location including qualifiers for relative location, directionality, number, and plane, and excluding qualifiers for laterality."
-* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-// Changed to intensional definition
-* include codes from system $sct where concept is-a #106233006 "Topographic Modifier (qualifer)"
-* include codes from system $sct where concept is-a #272424004 "Relative Sites (qualifier)"
-* $sct#255503000 "Entire (qualifier value)"
-* exclude codes from valueset LateralityQualifierVS // laterality is separated into a separate value set
-
-// --------------------------------------------------------
 ValueSet: LeftRightBiUnilateralVS
 Id: laterality-qualifier-lrub-vs
 Title: "Laterality Qualifier Value Set"
@@ -175,31 +246,26 @@ Description: "Qualifiers to specify laterality."
 * $loinc#LA4306-2  "Right"		
 * $loinc#LA25377-5 "Bilateral"
 * $loinc#LA25378-3 "Unilateral"
+* $loinc#LA27460-7 "Midline"
 // * codes from valueset NotApplicableUnknownVs
 * $data-absent-reason#unknown "Unknown"
 * $data-absent-reason#not-applicable "Not Applicable"
 
-// --------------------------------------------------------
-ValueSet: LateralityQualifierVS
-Id: mcode-laterality-qualifier-vs
-Title: "Laterality Qualifier Value Set"
-Description: "Qualifiers to specify laterality."
-/* ---------------------------------
+1 => Right Monolateral
+2 => Left Monolateral
+3 => Monolateral unknown side
+4 => Bilateral
+-9911 => Not applicable (NA)
+-9922 => NK
+
+*/
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
-* $sct#51440002	 "Right and left (qualifier value)"
-* $sct#399488007 "Midline (qualifier value)"
-* $sct#24028007	 "Right (qualifier value)"
-* $sct#7771000	 "Left (qualifier value)"
-// * $sct#66459002	"Unilateral (qualifier value)"  -- this is used as 'left OR right'.   Given the uncertainty of the use case, it is dropped.
--------------------*/
-// * codes from valueset LeftRightBiUnilateralVS
-* $loinc#LA4585-1  "Left"		
-* $loinc#LA4306-2  "Right"		
-* $loinc#LA25377-5 "Bilateral"
-* $loinc#LA25378-3 "Unilateral"
-* $loinc#LA27460-7 "Midline"
-* $data-absent-reason#unknown "Unknown"
-* $data-absent-reason#not-applicable "Not Applicable"
+* $sct#51440002	 "Bilateral" // "Right and left (qualifier value)", 4 => Bilateral
+* $sct#66459002 "Unilateral" // 3 => Monolateral unknown side
+* $sct#24028007	 "Right" // 1 => Right Monolateral
+* $sct#7771000	 "Left" //2 => Left Monolateral
+* $data-absent-reason#unknown "Unknown" // -9922 => NK
+* $data-absent-reason#not-applicable "Not Applicable" // -9911 => Not applicable (NA)
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -210,6 +276,7 @@ Description: "Calculated|Estimated Value Set"
 //-------------------------------------------------------------------------------------------
 * $sct#703858009 "Numeric estimation technique" 
 * $sct#702873001 	"Calculation technique"
+* $data-absent-reason#unknown "Unknown"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: ChemoUnitsVs
@@ -224,9 +291,9 @@ Description: "Chemotherapy cumulative dose units"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: OtherSurgicalProcedureTypeVs
-Id: vs-otherProcedureType-eu-pcsp
-Title: "Other Surgical Procedure Type"
+ValueSet: SurgicalProcedureTypeVs
+Id: vs-surgicalProcedureType-eu-pcsp
+Title: "Surgical Procedure Type"
 Description: "Types of surgical procedure this resource is referring to"
 
 //-------------------------------------------------------------------------------------------
@@ -294,7 +361,8 @@ Title: "Prosthesis Type"
 Description: "Types of Prosthesis this procedure is referring to"
 //-------------------------------------------------------------------------------------------
 * CsGenericPcsp#int-prosthesis "Internal Prosthesis" 
-* CsGenericPcsp#ext-prosthesis "External Prosthesis" 
+* CsGenericPcsp#ext-prosthesis "External Prosthesis"
+* $data-absent-reason#unknown "Unknown"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: RadiotherapyTypeVs
@@ -306,7 +374,7 @@ Description: "Types of radiotherapy this procedure is referring to"
 * $sct#33195004 "External beam radiotherapy"
 * $sct#152198000 "Brachytherapy"
 * $sct#399315003 "Radionuclide therapy"
-* $sct#445232009 "Boost radiation therapy" // to be checked for GPS ....
+// * $sct#445232009 "Boost radiation therapy" // to be checked for GPS ....
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -452,7 +520,9 @@ Description: "Surgical Actions"
 * $sct#129303008 "Removal - action"
 * $sct#129325002 "Introduction - action"
 * $sct#129336009 "Implantation - action"
-* $sct#424208002 "Shunt - action"
+// * $sct#424208002 "Shunt - action"
+* $sct#129425003 "Application - action"
+* codes from valueset NotApplicableUnknownVs
 
 /* =======
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

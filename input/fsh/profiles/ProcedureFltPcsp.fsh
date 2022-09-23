@@ -3,16 +3,16 @@
 Profile:  ProcedureFltPcsp
 Parent:   Procedure 
 Id:       Procedure-flt-eu-pcsp
-Title:    "Procedure Front Line Treatment"
+Title:    "Procedure: Front Line Treatment"
 Description: "This profile defines how to provide Front Line Treatment data in FHIR for the scope of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
 
-// * extension contains ResourceRelatedInfo named relatedInfo 0..1
-// * extension[relatedInfo].valueReference only Reference(CumulativeDoseRadObsPcsp)
+* extension contains FltArm named fltArm 0..1
+* extension[fltArm] ^short = "Randomization arm description"
 * identifier ^short = "External Identifiers for this FLT"
 * instantiatesCanonical 1..
-// * instantiatesCanonical canonical(PlanDefinitionFltPcsp) // TO BE FIXED
+* instantiatesCanonical only Canonical(PlanDefinitionFltPcsp) 
 * status
   * ^example.label = "Completed"
   * ^example.valueCode = #completed
@@ -33,7 +33,7 @@ Description: "This profile defines how to provide Front Line Treatment data in F
 Profile:  PlanDefinitionFltPcsp
 Parent:   PlanDefinition 
 Id:       PlanDefinition-flt-eu-pcsp
-Title:    "PlanDefinition Front Line Treatment"
+Title:    "PlanDefinition: Front Line Treatment"
 Description: "This profile defines how to provide Front Line Treatment protocol infos in FHIR for the scope of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
