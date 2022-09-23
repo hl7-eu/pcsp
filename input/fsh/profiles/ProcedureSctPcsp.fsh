@@ -60,7 +60,8 @@ Description: "This profile defines how to represent Graft versus host disease (G
 * code 1.. MS // add value set; add slices for
 * code from SctGvhdType
 
-* onset[x] only Period
+* onset[x] only dateTime
+* abatement[x] only dateTime
 * encounter only Reference (Encounter or EncounterPcsp)
 * subject only Reference (PatientPcsp)
 * bodySite ^short = "Organs affected by GVHD"
