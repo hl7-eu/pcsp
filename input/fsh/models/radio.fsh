@@ -699,7 +699,7 @@ Yes;  No;  NK ÿ"
 * differential.element[32].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphyBoost-eu-pcsp')"
 
 * differential.element[33].mapping[0].identity = "fhir"
-* differential.element[33].mapping[0].map = ".code"
+* differential.element[33].mapping[0].map = ".partOf.resolve().code"
 
 * differential.element[34].mapping[0].identity = "fhir"
 * differential.element[34].mapping[0].map = ".status"

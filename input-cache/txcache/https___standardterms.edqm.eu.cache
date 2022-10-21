@@ -21,3 +21,20 @@ e: {
   "error" : "Error from server: Unable to provide support for code system https://standardterms.edqm.eu"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "https://standardterms.edqm.eu",
+      "concept" : [{
+        "code" : "20042000",
+        "display" : "Intrathecal use"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://standardterms.edqm.eu"
+}
+-------------------------------------------------------------------------------------

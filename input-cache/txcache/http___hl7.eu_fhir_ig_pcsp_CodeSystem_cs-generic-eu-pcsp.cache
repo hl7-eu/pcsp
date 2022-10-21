@@ -1,0 +1,963 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "surface-brachytherapy",
+        "display" : "Surface brachytherapy"
+      },
+      {
+        "code" : "interstitial-brachytherapy",
+        "display" : "Interstitial brachytherapy"
+      },
+      {
+        "code" : "intra-brachytherapy",
+        "display" : "Intracavitary or intraluminal brachytherapy"
+      },
+      {
+        "code" : "unk-brachytherapy",
+        "display" : "Unknown brachytherapy"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:260e388b-ee3f-4371-8884-ad9c4ca017dc",
+    "timestamp" : "2022-10-21T14:51:06.876Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Surface brachytherapy"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "surface-brachytherapy",
+      "display" : "Surface brachytherapy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Interstitial brachytherapy"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "interstitial-brachytherapy",
+      "display" : "Interstitial brachytherapy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Intracavitary or intraluminal brachytherapy"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "intra-brachytherapy",
+      "display" : "Intracavitary or intraluminal brachytherapy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Unknown brachytherapy"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "unk-brachytherapy",
+      "display" : "Unknown brachytherapy"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "surpass",
+        "display" : "Childhood Cancer Survivor Passport"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:9fcf580a-34f3-4a6a-a8b2-cedf895261f5",
+    "timestamp" : "2022-10-21T14:51:07.720Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Childhood Cancer Survivor Passport. Placeholder waiting for a LOINC code"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "surpass",
+      "display" : "Childhood Cancer Survivor Passport"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "personalized-plan",
+        "display" : "Personalized"
+      },
+      {
+        "code" : "guidelines-plan",
+        "display" : "Guidelines"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:66df8c5b-cf55-4572-b09d-0ab8d009beaf",
+    "timestamp" : "2022-10-21T14:51:08.360Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Personalized Plan"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "personalized-plan",
+      "display" : "Personalized"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Plan based on guidelines"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "guidelines-plan",
+      "display" : "Guidelines"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "to-structure",
+        "display" : "To-structure"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:74dee018-2b76-4a38-b470-e02113630edf",
+    "timestamp" : "2022-10-21T14:51:08.657Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "To-Structure"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "to-structure",
+      "display" : "To-structure"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "Gvhd-acute-1",
+        "display" : "Grade 1"
+      },
+      {
+        "code" : "Gvhd-acute-2",
+        "display" : "Grade 2"
+      },
+      {
+        "code" : "Gvhd-acute-3",
+        "display" : "Grade 3"
+      },
+      {
+        "code" : "Gvhd-acute-4",
+        "display" : "Grade 4"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:56da80f5-7ad5-410f-bb95-956ce68e10f2",
+    "timestamp" : "2022-10-21T14:51:09.189Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Acute Gvhd: grade 1"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "Gvhd-acute-1",
+      "display" : "Grade 1"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Acute Gvhd: grade 2"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "Gvhd-acute-2",
+      "display" : "Grade 2"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Acute Gvhd: grade 3"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "Gvhd-acute-3",
+      "display" : "Grade 3"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Acute Gvhd: grade 4"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "Gvhd-acute-4",
+      "display" : "Grade 4"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "Gvhd-chr-1",
+        "display" : "Limited"
+      },
+      {
+        "code" : "Gvhd-chr-2",
+        "display" : "Extensive"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:c4eb66d9-5129-499e-a2d2-b029a536ffb8",
+    "timestamp" : "2022-10-21T14:51:09.470Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Chronic Gvhd: grade 1 limited"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "Gvhd-chr-1",
+      "display" : "Limited"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Chronic Gvhd: grade 2 extensive"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "Gvhd-chr-2",
+      "display" : "Extensive"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "Gvhd-unk",
+        "display" : "Gvhd Unknown"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:4c045a26-99e5-4df5-818d-e0b57f66be5f",
+    "timestamp" : "2022-10-21T14:51:09.985Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "It is not known if this patient suffers Gvhd"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "Gvhd-unk",
+      "display" : "Gvhd Unknown"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "int-prosthesis",
+        "display" : "Internal Prosthesis"
+      },
+      {
+        "code" : "ext-prosthesis",
+        "display" : "External Prosthesis"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:92730c3f-78da-4e88-98e7-a6284c4820d7",
+    "timestamp" : "2022-10-21T14:51:12.610Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Internal Prosthesis"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "int-prosthesis",
+      "display" : "Internal Prosthesis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "External Prosthesis"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "ext-prosthesis",
+      "display" : "External Prosthesis"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "orthovoltage",
+        "display" : "Orthovoltage"
+      },
+      {
+        "code" : "linac-mv",
+        "display" : "Linac MV"
+      },
+      {
+        "code" : "linac-el",
+        "display" : "Linac electrons"
+      },
+      {
+        "code" : "cobalt",
+        "display" : "Cobalt MV"
+      },
+      {
+        "code" : "proton-beam",
+        "display" : "Proton Beam"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:6d566c7b-4e8d-4eb8-aad4-3f5ee0169c55",
+    "timestamp" : "2022-10-21T14:51:13.126Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Orthovoltage / kilovoltage usually 200 - 300kv X rays/photons"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "orthovoltage",
+      "display" : "Orthovoltage"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "(Linear Accelerator) megavoltage MV X Rays/photons"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "linac-mv",
+      "display" : "Linac MV"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Linac (Linear Accelerator) electrons"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "linac-el",
+      "display" : "Linac electrons"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Cobalt - MV gamma rays / photons"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "cobalt",
+      "display" : "Cobalt MV"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Proton Beam"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "proton-beam",
+      "display" : "Proton Beam"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "sct-matched-related",
+        "display" : "matched related"
+      },
+      {
+        "code" : "sct-matched-unrelated",
+        "display" : "matched unrelated"
+      },
+      {
+        "code" : "sct-mismatch-related",
+        "display" : "mismatch related"
+      },
+      {
+        "code" : "sct-mismatch-unrelated",
+        "display" : "mismatch unrelated"
+      },
+      {
+        "code" : "sct-haplo-identical",
+        "display" : "haplo-identical"
+      },
+      {
+        "code" : "sct-matched-related–sibling",
+        "display" : "matched related – sibling"
+      },
+      {
+        "code" : "sct-matched-related–parent",
+        "display" : "matched related – parent"
+      },
+      {
+        "code" : "sct-matched-related–other",
+        "display" : "matched related – other"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:481c7859-4a04-4939-8dbc-177765f6f3bc",
+    "timestamp" : "2022-10-21T14:51:16.564Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "matched related, unknown or unspecified"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-matched-related",
+      "display" : "matched related"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "matched unrelated"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-matched-unrelated",
+      "display" : "matched unrelated"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "mismatch related"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-mismatch-related",
+      "display" : "mismatch related"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "mismatch unrelated"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-mismatch-unrelated",
+      "display" : "mismatch unrelated"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "haplo-identical"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-haplo-identical",
+      "display" : "haplo-identical"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "matched related – sibling"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-matched-related–sibling",
+      "display" : "matched related – sibling"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "matched related – parent"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-matched-related–parent",
+      "display" : "matched related – parent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "matched related – other (e.g. cousin)"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-matched-related–other",
+      "display" : "matched related – other"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "sct-pbsc",
+        "display" : "PBSC"
+      },
+      {
+        "code" : "sct-bone-marrow",
+        "display" : "Bone marrow"
+      },
+      {
+        "code" : "sct-cord",
+        "display" : "Cord"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:26aae510-6197-4122-a63f-04ea06afc955",
+    "timestamp" : "2022-10-21T14:51:17.282Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "PBSC"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-pbsc",
+      "display" : "PBSC"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Bone marrow"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-bone-marrow",
+      "display" : "Bone marrow"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Cord"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sct-cord",
+      "display" : "Cord"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "before-procedure",
+        "display" : "Before procedure"
+      },
+      {
+        "code" : "after-procedure",
+        "display" : "After procedure"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:13449356-8457-49a7-bbf7-ce69bf942de1",
+    "timestamp" : "2022-10-21T14:51:17.564Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Before procedure"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "before-procedure",
+      "display" : "Before procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "After procedure"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "after-procedure",
+      "display" : "After procedure"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
+        "code" : "sht-47020004",
+        "display" : "Ventriculoperitoneal shunt"
+      },
+      {
+        "code" : "sht-4579008",
+        "display" : "Ventriculo-atrial shunt"
+      },
+      {
+        "code" : "sht-280384000",
+        "display" : "Subdural-peritoneal shunt"
+      },
+      {
+        "code" : "sht-265218003",
+        "display" : "Cisternostomy (III ventricule)"
+      },
+      {
+        "code" : "sht-other",
+        "display" : "Other shunt procedure"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:e0da7467-df72-4a9c-9059-e00adf449515",
+    "timestamp" : "2022-10-21T14:51:18.048Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Ventriculoperitoneal shunt procedure"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sht-47020004",
+      "display" : "Ventriculoperitoneal shunt"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Ventriculo-atrial shunt procedure"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sht-4579008",
+      "display" : "Ventriculo-atrial shunt"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Subdural-peritoneal shunt procedure"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sht-280384000",
+      "display" : "Subdural-peritoneal shunt"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Cisternostomy (III ventricule)"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sht-265218003",
+      "display" : "Cisternostomy (III ventricule)"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Other cerebrovascular shunt procedure"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "sht-other",
+      "display" : "Other shunt procedure"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

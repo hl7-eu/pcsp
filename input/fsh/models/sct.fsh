@@ -388,10 +388,10 @@ No calculations are made on these data."
 * differential.element[19].mapping[0].map = ".stage.summary"
 
 * differential.element[20].mapping[0].identity = "fhir"
-* differential.element[20].mapping[0].map = ".effectivePeriod.start"
+* differential.element[20].mapping[0].map = ".onsetDateTime"
 
 * differential.element[21].mapping[0].identity = "fhir"
-* differential.element[21].mapping[0].map = ".effectivePeriod.end"
+* differential.element[21].mapping[0].map = ".abatementDateTime	"
 
 * differential.element[22].mapping[0].identity = "fhir"
 * differential.element[22].mapping[0].map = ".where(code = http://snomed.info/sct#402356004 'Chronic graft-versus-host disease')"
@@ -403,10 +403,10 @@ No calculations are made on these data."
 * differential.element[24].mapping[0].map = ".stage.summary"
 
 * differential.element[25].mapping[0].identity = "fhir"
-* differential.element[25].mapping[0].map = ".effectivePeriod.start"
+* differential.element[25].mapping[0].map = ".onsetDateTime"
 
 * differential.element[26].mapping[0].identity = "fhir"
-* differential.element[26].mapping[0].map = ".effectivePeriod.end"
+* differential.element[26].mapping[0].map = ".abatementDateTime	"
 
 * differential.element[27].mapping[0].identity = "fhir"
 * differential.element[27].mapping[0].map = ".bodySite"

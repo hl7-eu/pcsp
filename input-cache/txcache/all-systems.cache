@@ -150,3 +150,14 @@ v: {
   "system" : "http://snomed.info/sct"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "399315003",
+  "display" : "Radionuclide therapy"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyType-eu-pcsp", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "Radionuclide therapy",
+  "code" : "399315003",
+  "system" : "http://snomed.info/sct"
+}
+-------------------------------------------------------------------------------------

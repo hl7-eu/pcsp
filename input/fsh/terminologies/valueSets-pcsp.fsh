@@ -374,6 +374,7 @@ Description: "Types of radiotherapy this procedure is referring to"
 * $sct#33195004 "External beam radiotherapy"
 * $sct#152198000 "Brachytherapy"
 * $sct#399315003 "Radionuclide therapy"
+* $data-absent-reason#unknown "Unknown"
 // * $sct#445232009 "Boost radiation therapy" // to be checked for GPS ....
 
 

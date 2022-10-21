@@ -6,6 +6,7 @@ Description: "PancareSurPass radiotherapy sites Value Set"
 //-------------------------------------------------------------------------------------------
 
 * codes from system http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-radiotherapy-pcsp
+* $data-absent-reason#as-text "As Text"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
