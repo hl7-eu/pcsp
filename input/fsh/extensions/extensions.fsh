@@ -6,8 +6,8 @@ RuleSet: ExtensionContext(path)
 Extension: FltArm
 Id: procedure-fltArm
 Title:  "Randomization arm for trial"
-Description: "This extension allows to describeprovide a textual description of the randomization arm for trials (FLT)."
-* insert ExtensionContext(Procedure)
+Description: "This extension is used to provide a textual description of the randomization arm for trials (FLT)."
+* insert ExtensionContext(CarePlanDefinition)
 * value[x] only string
 
 Extension: PerformedTiming
