@@ -15,6 +15,7 @@ Description: "This profile defines how to represent Patient in FHIR for the purp
 * name.family 1.. MS
 * name.given 1.. MS
 * gender 1.. MS
+  * extension contains $originalText named originalText 0..1
 * birthDate 1.. MS
 * contact.telecom 1.. MS
 * generalPractitioner

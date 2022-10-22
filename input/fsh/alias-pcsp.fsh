@@ -48,7 +48,7 @@ Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-met
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $condition-occurredFollowing = http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing
 Alias: $condition-dueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
-
+Alias: $originalText = http://hl7.org/fhir/StructureDefinition/originalText
 
 // ---- Identifiers
 Alias : $pat-id-cineca = http://hl7.eu/fhir/ig/pcsp/sid/pat-id-cineca // Temporary assigned
