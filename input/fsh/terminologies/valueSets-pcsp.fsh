@@ -17,6 +17,7 @@ Description: "Qualifiers to refine a body structure or location including qualif
 ValueSet: RelapseTypeVS
 Id: relapse-type-vs
 Title: "Relapse type (Local/Distant/Combined)"
+Description: "Relapse type (Local/Distant/Combined)"
 
 * ^experimental = false
 * $sct#255470001 "Local"
@@ -43,6 +44,7 @@ ValueSet: ActiveResolvedConditionVS
 Id: activeResolved-condition-vs
 Title: "Active or resolved Condition"
 Description:  "Active or resolved Condition"
+* ^experimental = false
 * $condition-clinical#active 
 * $condition-clinical#resolved
 
@@ -411,6 +413,7 @@ Id: vs-radiotherapyDoseType-eu-pcsp
 Title: "Radiotherapy Dose Type"
 Description: "Types of radiotherapy cumulative dose this procedure is referring to"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $dicomOntology#113725 "Dose (RP) Total"
 * $sct#445565002 "Total boost radiation dose delivered"
 * $sct#445461008 "Total radiation dose delivered"

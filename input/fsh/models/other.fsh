@@ -85,7 +85,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[7].type.code = #dateTime
 * differential.element[8].id = "OtherInfos.severeToxicity.description"
 * differential.element[8].path = "OtherInfos.severeToxicity.description"
-* differential.element[8].short = "Description "
+* differential.element[8].short = "Description"
 * differential.element[8].definition = "Please describe any significant event (e.g. admission to the intensive care for a metabolic problem, seizures, severe toxic complication) occurring during therapy that might have fully recovered or be still remaining or with sequelae"
 * differential.element[8].min = 1
 * differential.element[8].max = "1"
@@ -211,7 +211,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[25].type.code = #BackboneElement
 * differential.element[26].id = "OtherInfos.fertilityPreservation.description"
 * differential.element[26].path = "OtherInfos.fertilityPreservation.description"
-* differential.element[26].short = "Description "
+* differential.element[26].short = "Description"
 * differential.element[26].definition = "If fertility preservation was performed,please  describe it"
 * differential.element[26].min = 0
 * differential.element[26].max = "1"

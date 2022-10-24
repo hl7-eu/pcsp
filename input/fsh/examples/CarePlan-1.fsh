@@ -111,7 +111,7 @@ Usage: #example
   * description = "Mammography and breast MRI every year if ≥ 25 years of age or ≥ 8 years from radiation, whichever occurs last"
 * activity[+].detail
   * code =  CsRecomandationPcsp#3 "Perform: Cardiological evaluation at the end of treatment and every 2-3 years thereafter; Electrocardiogram (ECG) at the end of treatment, to be repeated at the age of 18 and cardiological evaluation in case of palpitations, dizziness and/or fainting/loss of consciousness. Echocardiogram 2 years after the end of treatment, to be repeated every 2-3 years; If female, echocardiogram in the first trimester of pregnancy."
-  * reasonCode =  CsRiskConditionPcsp#3 "Cardiac problems (High risk)"
+  * reasonCode =  CsRiskConditionPcsp#3 "Cardiac problems (Cardiomyopathy and/or Valvular disease and/or Cardiac ischemia)"
   * reasonReference[+] = Reference(ObservationRiskFactor-3) "RT >= 35 Gy to a vol exposing the heart"
   * reasonReference[+] = Reference(ObservationRiskFactor-4) "Anthracyclines (doxorubicin isotoxic equivalents)>= 250 mg/m2"
 // * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)

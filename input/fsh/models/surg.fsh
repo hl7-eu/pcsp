@@ -16,7 +16,7 @@ Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
-* mapping[0].name = "FHIR"
+* mapping[0].name = ""
 * kind = #logical
 * abstract = true
 * type = "MajorSurgery"
@@ -239,6 +239,7 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 * differential.element[25].min = 0
 * differential.element[25].max = "1"
 * differential.element[25].type.code = #CodeableConcept
+// 
 //  
 // === MAPPING === 
 // 
