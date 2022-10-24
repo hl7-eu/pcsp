@@ -29,7 +29,7 @@ RuleSet: CancerConditionCommonRules
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[0].url = "purpose"
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[=].valueCode = #conformance
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[+].url = "valueSet"
-* bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[=].valueCanonical = $mcode-laterality-qualifier
+* bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[=].valueCanonical = Canonical(LateralityQualifier)
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[+].url = "documentation"
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[=].valueMarkdown = "Qualifiers to specify laterality."
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
@@ -134,6 +134,7 @@ This profile should be also used for documenting primary cancer relapses during 
 //-------------------------------------------------------------------------------------------
 
 * extension contains $condition-occurredFollowing named condition-occurredFollowing 0..*
+* extension[condition-occurredFollowing].valueCodeableConcept 0..0
 * extension[condition-occurredFollowing].valueReference ^short = "For relapses, reference to the first occurance of this tumor."
 * extension[condition-occurredFollowing].valueReference only Reference (ConditionPrimaryCancerPcsp)
 

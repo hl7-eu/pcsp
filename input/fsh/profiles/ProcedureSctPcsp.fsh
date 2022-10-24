@@ -49,6 +49,7 @@ Description: "This profile defines how to represent Graft versus host disease (G
 * extension[relatedPrimaryCancerCondition] ^short = "Related Primary Cancer Condition"
 * extension[relatedPrimaryCancerCondition] ^definition = "A reference to the primary cancer condition that provides context for this resource."
 
+* extension[conditionDueTo].valueCodeableConcept 0..0
 * extension[conditionDueTo].valueReference only Reference(ProcedureSctPcsp)
 * extension[conditionDueTo] ^short = "SCT procedure causing this GcDH"
 * extension[conditionDueTo] ^definition = "A reference to the procedure that caused this condition"
