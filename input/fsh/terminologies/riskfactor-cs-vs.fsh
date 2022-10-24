@@ -60,7 +60,7 @@
 * #21.1 "History of a central nervous system tumor" "History of a central nervous system tumor"
 * #21.2 "RT to a vol exposing the brain  ANY DOSE" "RT to a vol exposing the brain  ANY DOSE"
 * #21.4 "Brain surgery" "Brain surgery"
-* #21.5 " High dose cytarabine IV (intravenous)" " High dose cytarabine IV (intravenous)"
+* #21.5 "High dose cytarabine IV (intravenous)" "High dose cytarabine IV (intravenous)"
 * #21.6 "High dose MTX IV" "High dose MTX IV"
 * #21.7 "Any Chemotherapy IT (intrathecal)" "Any Chemotherapy IT (intrathecal)"
 * #22.1 "Vinca-Alkaloids" "Vinca-Alkaloids"
