@@ -5,6 +5,7 @@ Title: "Radiotherapy sites"
 Description: "PancareSurPass radiotherapy sites Value Set"
 //-------------------------------------------------------------------------------------------
 
+* ^experimental = false
 * codes from system http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-radiotherapy-pcsp
 * $data-absent-reason#as-text "As Text"
 
@@ -13,6 +14,9 @@ Description: "PancareSurPass radiotherapy sites Value Set"
 Instance: cs-radiotherapy-pcsp
 InstanceOf: CodeSystem
 Usage: #definition
+
+* experimental = false
+* caseSensitive = true
 * url = "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-radiotherapy-pcsp"
 * version = "0.0.1"
 * name = "CsRadiotherapy"

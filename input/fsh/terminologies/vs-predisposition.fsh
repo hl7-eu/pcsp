@@ -5,6 +5,7 @@ Id: vs-hereditary-eu-pcsp
 Title: "Hereditary Predispositions or Disease"
 Description: "Hereditary Predispositions or Disease"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $sct#32895009 "Hereditary disease"
 * $sct#47708004 "Genetic predisposition" 
 
@@ -15,7 +16,7 @@ Id: vs-orpha-predisposition-eu-pcsp
 Title: "Hereditary Predispositions (Orphacode)"
 Description: "Hereditary Predispositions (Orphacode)"
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 * $orpha#145 "Hereditary breast and ovarian cancer syndrome"
 * $orpha#524 "Li-Fraumeni Syndrome"
 * $orpha#201 "Cowden Syndrome"
@@ -76,7 +77,7 @@ Id: vs-icd10-predisposition-eu-pcsp
 Title: "Hereditary Predispositions (ICD10)"
 Description: "Hereditary Predispositions (ICD10)"
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 * $data-absent-reason#not-applicable
 * $icd10#D61.0 "Constitutional aplastic anemia"
 * $icd10#D82.0 "Wiskott-Aldrich syndrome"

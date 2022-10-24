@@ -6,6 +6,7 @@ Title: "Body Location Qualifier Value Set"
 Description: "Qualifiers to refine a body structure or location including qualifiers for relative location, directionality, number, and plane, and excluding qualifiers for laterality."
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 // Changed to intensional definition
+* ^experimental = false
 * include codes from system $sct where concept is-a #106233006 "Topographic Modifier (qualifer)"
 * include codes from system $sct where concept is-a #272424004 "Relative Sites (qualifier)"
 * $sct#255503000 "Entire (qualifier value)"
@@ -17,6 +18,7 @@ ValueSet: RelapseTypeVS
 Id: relapse-type-vs
 Title: "Relapse type (Local/Distant/Combined)"
 
+* ^experimental = false
 * $sct#255470001 "Local"
 * $sct#261007001 "Distant"
 * $sct#89780004 "Combined"
@@ -27,6 +29,8 @@ ValueSet: OtherInfosConditionVS
 Id: otherInfos-condition-vs
 Title: "Other Infors Condition"
 Description:  "Other Infors Condition"
+
+* ^experimental = false
 * $sct#48130008 "Hypogonadism"
 * $sct#397827003 "Growth hormone deficiency"
 * $sct#230745008 "Hydrocephalus"
@@ -48,6 +52,7 @@ Id: toxicityseverity-vs
 Title: "Toxicity Severity"
 Description: "Toxicity Severity"
 
+* ^experimental = false
 * include codes from valueset $condition-severity-uv-ips
 * $data-absent-reason#unknown "Unknown"
 
@@ -57,6 +62,8 @@ Id: vs-fromToPosteriorAnterior-eu-pcsp
 Title: "Body Location Qualifier Value Set"
 Description: "Types of documents exchanged with the PCSP platform"
 //-------------------------------------------------------------------------------------------
+
+* ^experimental = false
 * CsGenericPcsp#to-structure "To-structure"
 * $sct#272488003 "From-structure"
 * $sct#255549009 "Anterior" 
@@ -69,6 +76,7 @@ Title: "Document Type"
 Description: "Types of documents exchanged with the PCSP platform"
 //-------------------------------------------------------------------------------------------
 
+* ^experimental = false
 * CsGenericPcsp#surpass "Childhood Cancer Survivor Passport"
 * $loinc#18748-4 "Diagnostic Imaging Report"
 * $loinc#34105-7 "Hospital Discharge summary"
@@ -91,7 +99,7 @@ Id: vs-flt-plan-type-eu-pcsp
 Title: "FLT Plan Type"
 Description: "FLT Plan Type"
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 * $plan-definition-type#clinical-protocol "Clinical Protocol" 
 * CsGenericPcsp#personalized-plan "Personalized"
 * CsGenericPcsp#guidelines-plan "Guidelines"
@@ -105,6 +113,7 @@ Description: "SCT Prophylaxis Cathegory"
 //-------------------------------------------------------------------------------------------
 
 /// ===> CHECK IF IN GPS
+* ^experimental = false
 * $sct#416608005 "Drug therapy"
 * $sct#419815003 "Radiotherapy"
 
@@ -116,6 +125,7 @@ Description: "SCT Prophylaxis Type"
 //-------------------------------------------------------------------------------------------
 
 /// ===> CHECK IF IN GPS
+* ^experimental = false
 * $sct#868254008 "GVHD (graft versus host disease) prophylaxis"
 
 
@@ -125,7 +135,7 @@ Id: vs-sct-timing-eu-pcsp
 Title: "Before/after procedure"
 Description: "SCT Timing events: Before/after procedure"
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 * CsGenericPcsp#before-procedure "Before procedure"
 * CsGenericPcsp#after-procedure "After procedure"   
 
@@ -136,7 +146,7 @@ Id: vs-Gvhd-acute-grade-eu-pcsp
 Title: "Acute Gvhd Grade"
 Description: "Acute Gvhd Grade"
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 //-- Gvhd Grade (acute)
 * CsGenericPcsp#Gvhd-acute-1 "Grade 1" 
 * CsGenericPcsp#Gvhd-acute-2 "Grade 2" 
@@ -150,7 +160,7 @@ Id: vs-Gvhd-chronic-grade-eu-pcsp
 Title: "Chronic Gvhd condition"
 Description: "Acute Gvhd Grade"
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 //-- Gvhd Grade (chronic)
 * CsGenericPcsp#Gvhd-chr-1 "Limited" 	
 * CsGenericPcsp#Gvhd-chr-2 "Extensive" 
@@ -164,6 +174,7 @@ Title: "Gvhd condition"
 Description: "Gvhd condition"
 //-------------------------------------------------------------------------------------------
 /// ===> CHECK IF IN GPS
+* ^experimental = false
 * $sct#234646005 "Graft-versus-host disease" 
 * $sct#402355000 "Acute graft-versus-host disease"
 * $sct#402356004 "Chronic graft-versus-host disease"
@@ -176,6 +187,7 @@ Id: vs-sct-donorType-eu-pcsp
 Title: "Stem Cell Donor type"
 Description: "Stem Cell Donor type"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * CsGenericPcsp#sct-matched-related "matched related" 	
 * CsGenericPcsp#sct-matched-unrelated "matched unrelated" 
 * CsGenericPcsp#sct-mismatch-related "mismatch related" 	 
@@ -193,6 +205,7 @@ Id: vs-sct-sourceType-eu-pcsp
 Title: "Stem Cell Source type"
 Description: "Stem Cell Source type"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * CsGenericPcsp#sct-pbsc 		"PBSC"			
 * CsGenericPcsp#sct-bone-marrow	"Bone marrow" 
 * CsGenericPcsp#sct-cord        "Cord"      
@@ -204,6 +217,7 @@ Id: vs-sct-type-eu-pcsp
 Title: "Stem Cell Transplantation type"
 Description: "Stem Cell Transplantation type"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $sct#53088000 "Autogenous transplantation" // check GPS
 * $sct#50223000 "Allogeneic transplantation"   // check GPS
 * $sct#77465005 "Transplantation"   // check GPS 
@@ -214,6 +228,7 @@ Id: vs-npunk-eu-pcsp
 Title: "Not Performed|Unknown"
 Description: "Not Performed/Unknown Value Set"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $data-absent-reason#unknown "Unknown"
 * $data-absent-reason#not-performed "Not Performed"
 
@@ -223,6 +238,7 @@ Id: vs-naunk-eu-pcsp
 Title: "Not Applicable|Unknown"
 Description: "Not Applicable/Unknown Value Set"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $data-absent-reason#unknown "Unknown"
 * $data-absent-reason#not-applicable "Not Applicable"
 
@@ -232,6 +248,7 @@ Id: vs-othUnkTxt-eu-pcsp
 Title: "Other/Unknown/Text"
 Description: "Other/Unknown/Text Value Set"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $data-absent-reason#unknown "Unknown"
 * $v3-NullFlavor#OTH "Other"
 * $data-absent-reason#as-text "As Text"
@@ -259,6 +276,7 @@ Description: "Qualifiers to specify laterality."
 -9922 => NK
 
 */
+* ^experimental = false
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 * $sct#51440002	 "Bilateral" // "Right and left (qualifier value)", 4 => Bilateral
 * $sct#66459002 "Unilateral" // 3 => Monolateral unknown side
@@ -274,6 +292,7 @@ Id: vs-calcest-eu-pcsp
 Title: "Calculated|Estimated"
 Description: "Calculated|Estimated Value Set"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $sct#703858009 "Numeric estimation technique" 
 * $sct#702873001 	"Calculation technique"
 * $data-absent-reason#unknown "Unknown"
@@ -283,6 +302,7 @@ ValueSet: ChemoUnitsVs
 Title: "Chemotherapy cumulative dose units"
 Description: "Chemotherapy cumulative dose units"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $ucum#mg/m2
 // * $ucum#gr/m2
 * $ucum#g/m2
@@ -297,7 +317,7 @@ Title: "Surgical Procedure Type"
 Description: "Types of surgical procedure this resource is referring to"
 
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 * codes from valueset ShuntProcedureTypeVs
 * codes from valueset AmputationProcedureTypeVs
 * codes from valueset ColostomyProcedureTypeVs
@@ -313,7 +333,8 @@ Title: "Shunt Procedure Type"
 Description: "Types of shunt surgical procedure this resource is referring to"
 
 //-------------------------------------------------------------------------------------------
-// --- 
+// ---
+* ^experimental = false 
 * CsGenericPcsp#sht-47020004 "Ventriculoperitoneal shunt"  // SCT 47020004 | Ventriculoperitoneal shunt (procedure)
 * CsGenericPcsp#sht-4579008 "Ventriculo-atrial shunt"  //  4579008 | Creation of cerebral ventriculo-atrial shunt (procedure) |
 * CsGenericPcsp#sht-280384000 "Subdural-peritoneal shunt" // 280384000 | Subdural-peritoneal shunt operation (procedure) |
@@ -327,6 +348,7 @@ Id: vs-amputationProcedureType-eu-pcsp
 Title: "Amputation Surgical Procedure Type"
 Description: "Types of amputation procedure this resource is referring to"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $sct#81723002 "Amputation" // check if in GPS
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -335,6 +357,7 @@ Id: vs-colostomyProcedureType-eu-pcsp
 Title: "Colostomy Surgical Procedure Type"
 Description: "Types of colostomy procedure this resource is referring to"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $sct#398740003 "Colostomy" // check if in GPS
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -343,6 +366,7 @@ Id: vs-gastrostomyProcedureType-eu-pcsp
 Title: "Gastrostomy Surgical Procedure Type"
 Description: "Types of Gastrostomy procedure this resource is referring to"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $sct#54956002 "Gastrostomy"  // check if in GPS
 
 
@@ -352,6 +376,7 @@ Id: vs-ProstheticProcedureType-eu-pcsp
 Title: "Prosthetic Surgical Procedure Type"
 Description: "Types of Prosthetic procedure this resource is referring to"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $sct#88937006 "Prosthetic procedure"  // check if in GPS 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -360,6 +385,7 @@ Id: vs-ProsthesisType-eu-pcsp
 Title: "Prosthesis Type"
 Description: "Types of Prosthesis this procedure is referring to"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * CsGenericPcsp#int-prosthesis "Internal Prosthesis" 
 * CsGenericPcsp#ext-prosthesis "External Prosthesis"
 * $data-absent-reason#unknown "Unknown"
@@ -371,6 +397,7 @@ Title: "Radiotherapy Type"
 Description: "Types of radiotherapy this procedure is referring to"
 
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $sct#33195004 "External beam radiotherapy"
 * $sct#152198000 "Brachytherapy"
 * $sct#399315003 "Radionuclide therapy"
@@ -394,6 +421,7 @@ Id: vs-radiotherapyDeviceType-eu-pcsp
 Title: "Radiotherapy Device Type"
 Description: "Radiotherapy device type this procedure is referring to"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * CsGenericPcsp#orthovoltage "Orthovoltage"
 * CsGenericPcsp#linac-mv "Linac MV"
 * CsGenericPcsp#linac-el "Linac electrons" 
@@ -407,6 +435,7 @@ Id: vs-brachytherapyType-eu-pcsp
 Title: "Brachytherapy Type"
 Description: "Types of Brachytherapy this procedure is referring to"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * CsGenericPcsp#surface-brachytherapy "Surface brachytherapy"
 * CsGenericPcsp#interstitial-brachytherapy "Interstitial brachytherapy" 
 * CsGenericPcsp#intra-brachytherapy  "Intracavitary or intraluminal brachytherapy"
@@ -419,6 +448,7 @@ Title: "Radiotherapy Isotopes"
 Description: "Radiotherapy Isotopes"
 // check if they are in the GPS otherwise update the value set....
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 
 * $sct#13237009	 "Cesium-131"
 * $sct#55117002	 "Cesium-137"
@@ -445,6 +475,7 @@ Id: vs-radiotherapyDoseUnit-eu-pcsp
 Title: "Radiotherapy dose units"
 Description: "Radiotherapy dose units"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $ucum#MeV	"megaelectronvolt"
 * $ucum#MV	"megavolt"
 * $ucum#kV	"kilovolt"
@@ -456,6 +487,7 @@ Id: vs-roa-eu-pcsp
 Title: "Route of administration"
 Description: "Route of administration"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $edqm#20042000 "Intrathecal use"
 
 
@@ -465,6 +497,7 @@ Id: vs-unknownOther-eu-pcsp
 Title: "Unknown|Other"
 Description: "Unknown or Other"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * $data-absent-reason#unknown "Unknown"
 * $v3-NullFlavor#OTH "Other"
 
@@ -476,7 +509,7 @@ Description: "Affected Organs (surgery)"
 //-------------------------------------------------------------------------------------------
 
 // Oesophagus; Abdomen; Brain; Face; Liver; Spine; Spinal Cord; Sympathetic nerves; Chest/thorax; Pelvis
-
+* ^experimental = false
 * $sct#32849002 "Oesophagus"
 * $sct#818983003 "Abdomen"
 * $sct#12738006  "Brain"
@@ -498,6 +531,7 @@ Description: "Sacrified Organs (surgery). Organs are 'sacrified' either to allow
 //-------------------------------------------------------------------------------------------
 
 // Spleen, Kidney, Eye, Lung, Ovary, Hypothalamus/hypophysis, Thyroid, Bladder, uterus Other
+* ^experimental = false
 
 * $sct#78961009 "Spleen"
 * $sct#64033007 "Kidney"
@@ -517,7 +551,7 @@ Id: vs-action-eu-pcsp
 Title: "Surgical Actions"
 Description: "Surgical Actions"
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 * $sct#129303008 "Removal - action"
 * $sct#129325002 "Introduction - action"
 * $sct#129336009 "Implantation - action"

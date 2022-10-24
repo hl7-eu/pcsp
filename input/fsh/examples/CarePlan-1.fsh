@@ -170,4 +170,4 @@ Usage: #example
 * status = #final
 * effectivePeriod.start = "2022-05-12"
 * code = $sct#80943009 "Risk factor"
-* valueCodeableConcept = CsRiskFactorPcsp#46.2 "Anthracyclines (doxorubicin isotoxic equivalents)>= 250 mg/m1"
+* valueCodeableConcept = CsRiskFactorPcsp#3.2 "Anthracyclines (doxorubicin isotoxic equivalents)>= 250 mg/m2"

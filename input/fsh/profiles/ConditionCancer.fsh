@@ -55,8 +55,7 @@ Profile:  ObservationHereditaryPredispositionPcsp
 Parent:   Observation
 Id:       Observation-predisposition-eu-pcsp
 Title:    "Observation: Hereditary Predisposition"
-Description: "This profile defines how to represent Hereditary Predispositions in HL7 FHIR for the purpose of the PanCareSurPass project.
-"
+Description: "This profile defines how to represent Hereditary Predispositions in HL7 FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * subject 1..
 * subject only Reference(PatientPcsp)
@@ -81,8 +80,7 @@ Profile:  ObservationDiagnosisPcsp
 Parent:   Observation
 Id:       Observation-diagnosis-eu-pcsp
 Title:    "Observation: Diagnosis details"
-Description: "This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project.
-"
+Description: "This profile defines how to represent diagnosis details (when the diagnosis was made; who made it;...) in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * subject 1..
 * subject only Reference(PatientPcsp)
@@ -108,8 +106,7 @@ Profile:  EncounterPcsp
 Parent:   Encounter
 Id:       Encounter-eu-pcsp
 Title:    "Encounter: Treatment Center"
-Description: "This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project.
-"
+Description: "This profile defines how to represent data of arrival to the center and Center information in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * status MS 
 * class MS
@@ -222,8 +219,7 @@ Id:       Condition-secondaryCancer-eu-pcsp
 Title:    "Condition: Metastatic Cancer"
 Description: "This profile defines how to represent metastatic cancer in FHIR for the purpose of the PanCareSurPass project. 
 This profile is inspired from the [mCode IG](http://build.fhir.org/ig/HL7/fhir-mCODE-ig). 
-Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms).
-"
+Records the history of secondary neoplasms, including location(s) and the date of onset of metastases. A secondary cancer results from the spread (metastasization) of cancer from its original site (Definition from: NCI Dictionary of Cancer Terms)."
 //-------------------------------------------------------------------------------------------
 * ^abstract = false
 * insert CancerConditionCommonRules
@@ -242,8 +238,7 @@ Profile:  OrganizationCenterPcsp
 Parent:   $Organization-uv-ips
 Id:       Organization-center-eu-pcsp
 Title:    "Organization: Primary Treatment Center / Center of diagnosis"
-Description: "This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project.
-"
+Description: "This profile defines how to represent the Primary Treatment Center or the Center of diagnosis in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * identifier ^short = "Identifier of the center"
 * name ^short = "Name of the Center"

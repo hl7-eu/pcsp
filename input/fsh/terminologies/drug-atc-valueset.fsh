@@ -1,4 +1,4 @@
-Alias: $atc = http://www.whocc.no/atc
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ValueSet: VsPcspAtcCodes
@@ -6,6 +6,9 @@ Id: drugsAtc-eu-pcsp
 Title: "Antineoplastic and immunostimulating agents"
 Description: "List of WHO ATC codes for antineoplastic and immunostimulating agents."
 //-------------------------------------------------------------------------------------------
+
+* ^experimental = false
+
 * $atc#L01AA01	"Cyclophosphamide"
 * $atc#L01AA02	"Chlorambucil"
 * $atc#L01AA03	"Melphalan"

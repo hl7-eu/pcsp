@@ -6,6 +6,8 @@
   Title: "Risk Factors"
   Description: "Risk Factors used by the PCSP algorithm"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+* ^experimental = false
+* ^caseSensitive = true
 
 * #1.1 "RT to a vol exposing the thyroid gland" "RT to a vol exposing the thyroid gland"
 * #1.2 "TBI" "TBI"
@@ -127,5 +129,5 @@ ValueSet: RiskFactor
 Id: vs-riskfactor-eu-pcsp  Title: "Risk Factors"
 Description: "Risk Factors used by the PCSP algorithm"
 //-------------------------------------------------------------------------------------------
-
+* ^experimental = false
 * codes from system CsRiskFactorPcsp

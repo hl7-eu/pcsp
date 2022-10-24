@@ -8,6 +8,8 @@
   Description:  "Recommendations proposed by the PCSP algorithm"
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+* ^experimental = false
+* ^caseSensitive = true
 * #1 "Perform appropriate thyroid screening from the fifth year after the end of radiotherapy. Discuss with your doctor whether to schedule: Clinical thyroid examination every 1-2 years; or Thyroid ultrasound every 3-5 years." "Subsequent thyroid cancer"
 * #2 "Perform Mammography and Breast magnetic resonance imaging (MRI) should be performed annually from the eighth year after the end of radiotherapy, but not before the age of 25. These examinations should be continued until at least age 60." "Subsequent breast cancer"
 * #3 "Perform: Cardiological evaluation at the end of treatment and every 2-3 years thereafter; Electrocardiogram (ECG) at the end of treatment, to be repeated at the age of 18 and cardiological evaluation in case of palpitations, dizziness and/or fainting/loss of consciousness. Echocardiogram 2 years after the end of treatment, to be repeated every 2-3 years; If female, echocardiogram in the first trimester of pregnancy." "Cardiac problems (Cardiomyopathy and/or Valvular disease and/or Cardiac ischemia)"
@@ -63,4 +65,5 @@ Id: vs-recommendation-eu-pcsp
 Title: "Recommendations"
 Description: "Recommendations proposed by the PCSP algorithm"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * codes from system CsRecomandationPcsp

@@ -10,7 +10,8 @@
 
 // * ^caseSensitive = true
 
-
+* ^experimental = false
+* ^caseSensitive = true
 * #1 "Subsequent thyroid cancer" "Subsequent thyroid cancer"
 * #2 "Subsequent breast cancer" "Subsequent breast cancer"
 * #3 "Cardiac problems (Cardiomyopathy and/or Valvular disease and/or Cardiac ischemia)" "Cardiac problems (Cardiomyopathy and/or Valvular disease and/or Cardiac ischemia)"
@@ -66,4 +67,5 @@ Id: vs-riskcondition-eu-pcsp
 Title: "Conditions at risk"
 Description: "Condition at risk proposed by the PCSP algorithm"
 //-------------------------------------------------------------------------------------------
+* ^experimental = false
 * codes from system CsRiskConditionPcsp

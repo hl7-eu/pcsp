@@ -6,7 +6,7 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 * ^caseSensitive = true
-
+* ^experimental = false
 
 
 // === placeholder waiting for a LOINC code
