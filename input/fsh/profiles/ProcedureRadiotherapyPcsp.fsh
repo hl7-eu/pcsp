@@ -14,7 +14,8 @@ RuleSet: ProcedureRadiotherapyPcspRules
 
 * identifier ^short = "External Identifiers for this radiotherapy / boost"
 * status ^short = "Procedure status"
-* category = $sct#108290001 "Radiotherapy" // part of GPS
+* category 1..1 
+// * category = $sct#108290001 "Radiotherapy" // part of GPS
 * code 1..1  // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
 * code from RadiotherapyTypeVs (extensible)
 // add slice on coding to allow more precise data
@@ -53,6 +54,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 //-------------------------------------------------------------------------------------------
 
 * insert ProcedureRadiotherapyPcspRules
+* category = $sct#108290001 "Radiotherapy" // part of GPS
 * location only Reference(LocationPcsp)
 * usedCode ^short = "Coded items used during the procedure"
 * usedCode from RadiotherapyDeviceType (extensible) // update the value set
@@ -71,7 +73,8 @@ Description: "This profile defines how to represent Shielding Procedures in FHIR
 
 // * identifier ^short = "External Identifiers for this radiotherapy / boost"
 // * status ^short = "Procedure status"
-* code 1..1  // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
+* category = $sct#108290001 "Radiotherapy" // part of GPS
+// * code 1..1  // TYPE - add 1 => External beam (33195004 | External beam radiotherapy); 2 => Brachytherapy (152198000 | Brachytherapy ); 3 => Metabolic/radionuclide therapy (399315003 | Radionuclide therapy)
 * code = $sct#228720004 "Making of shielding block for radiotherapy"
 * partOf 1..1
 * partOf only Reference (ProcedureRadiotherapyPcsp)
@@ -98,7 +101,17 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 
 
 * insert ProcedureRadiotherapyPcspRules
-* code = $sct#445232009 "Boost radiation therapy"
+* category 1..1 
+* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding ^slicing.description = "Slice based on the values set binding"
+* category.coding contains 
+	radiotheraphy 1..1 and
+	boost 1..1
+* category.coding[radiotheraphy] = $sct#108290001 "Radiotherapy" // part of GPS
+* category.coding[boost] = $sct#445232009 "Boost radiation therapy"
+
 * partOf 1..1
 * partOf only Reference (ProcedureRadiotherapyPcsp)
 
