@@ -3,3 +3,9 @@
 # No schematrons available for Logical Models
 The link 'StructureDefinition-Patient.sch' for "Schematron" cannot be resolved
 
+# Code System URI unknown
+Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
+
+Code System URI 'http://terminology.hl7.org/CodeSystem/iccc-3' is unknown so the code cannot be validated
+
+Code System URI 'https://standardterms.edqm.eu' is unknown so the code cannot be validated

@@ -25,7 +25,7 @@ Usage: #example
 * extension[0].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/sct-donor-type"
 * extension[=].valueCodeableConcept = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp#sct-matched-related "matched related"
 * extension[+].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/sct-source-type"
-* extension[=].valueCodeableConcept = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp#sct-cord "PBSC"
+* extension[=].valueCodeableConcept = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp#sct-pbsc "PBSC"
 * productCategory = #cells
 * collection.source = Reference(PatientMainzZeisig)
 

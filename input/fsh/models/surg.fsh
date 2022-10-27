@@ -274,7 +274,7 @@ For other organs (e.g. hypothalamus) the only surgical procedure on it may deter
 * differential.element[9].mapping[0].map = "Location.address.country"
 
 * differential.element[10].mapping[0].identity = "fhir"
-* differential.element[10].mapping[0].map = "Procedure.performedDateTime	"
+* differential.element[10].mapping[0].map = "Procedure.performedDateTime"
 
 * differential.element[11].mapping[0].identity = "fhir"
 * differential.element[11].mapping[0].map = ".text"
