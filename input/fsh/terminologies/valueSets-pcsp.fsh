@@ -14,6 +14,17 @@ Description: "Qualifiers to refine a body structure or location including qualif
 
 
 // --------------------------------------------------------
+ValueSet: AnnotationTypeVS
+Id: annotation-type-vs
+Title: "Annotation type"
+Description: "Annotation type"
+
+* ^experimental = false
+* CsGenericPcsp#nar-chronicCond "Chronic conditions" 
+* CsGenericPcsp#nar-planNotes "Plan notes" 
+
+
+// --------------------------------------------------------
 ValueSet: RelapseTypeVS
 Id: relapse-type-vs
 Title: "Relapse type (Local/Distant/Combined)"

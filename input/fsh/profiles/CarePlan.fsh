@@ -20,6 +20,10 @@ Description: "This profile defines how to represent the Care Plan proposed by th
 * addresses only Reference(ConditionPrimaryCancerPcsp)
 * supportingInfo ^short = "Supporting infos, including risk factors"
 * supportingInfo only Reference ( ObservationRiskFactor or Resource)
+* note.extension contains
+     AnnotationType named annotationType 0..1
+* note.extension[annotationType].valueCodeableConcept from AnnotationTypeVS (preferred)
+
 * activity 1..
   * detail
     * code from Recommendation (extensible) // value set to be updated
@@ -28,6 +32,7 @@ Description: "This profile defines how to represent the Care Plan proposed by th
     * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
     * status ^short = "Progress being made"
     * description ^short = "Activity to perform"
+    * scheduledString ^short = "Planned for"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

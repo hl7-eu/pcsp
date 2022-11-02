@@ -19,6 +19,13 @@
 * #section-otherConditions "Other Health Conditions"  "Other Health Conditions section. Placeholder waiting for a LOINC code"
 * #section-relapseAfterEOT "Relapse After EOT" "Relapse After End of Treatment section. Placeholder waiting for a LOINC code"
 
+
+// === Plan Notes
+
+* #nar-chronicCond "Chronic conditions" "Chronic conditions"
+* #nar-planNotes "Plan notes" "Plan additional notes"
+
+
 // * #4w-corticosteroids-anti-cancer "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously" "Report 'yes' if the survivor was treated with steroids for at least 4 weeks continuously"
 // * #intrathecal-injections "Intrathecal injections" "Plea// se state if the survivor received any therapeutic intrathecal injections"
 * #cumulativeDose "Cumulative dose received by a patient for a specific drug."

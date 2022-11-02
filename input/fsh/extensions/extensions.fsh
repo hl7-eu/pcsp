@@ -3,6 +3,14 @@ RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
 
+
+Extension: AnnotationType
+Id: annotation-type
+Title:  "Annotation Type"
+Description: "This extension is used to indicate the kind of note captured"
+* insert ExtensionContext(Annotation)
+* value[x] only CodeableConcept
+
 Extension: FltArm
 Id: procedure-fltArm
 Title:  "Randomization arm for trial"
