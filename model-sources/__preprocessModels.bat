@@ -14,6 +14,7 @@ REM CALL :buildFshFiles ..\input\fsh\models\suggestion
 CALL :buildFshFiles ..\input\fsh\models\relapseAfterFlt
 CALL :buildFshFiles ..\input\fsh\models\meta
 CALL :buildFshFiles ..\input\fsh\models\plan
+CALL :buildFshFiles ..\input\fsh\models\surpass
 
 
 REM CALL :buildFshFiles ..\input\fsh\models\minChemio

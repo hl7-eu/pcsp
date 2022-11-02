@@ -17,9 +17,6 @@ Maturity Level: 0 - Draft"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
 * mapping[0].name = "HL7 FHIR"
-* mapping[1].identity = "cda"
-* mapping[1].uri = "http://hl7.org/v3/cda"
-* mapping[1].name = "CDA (R2)"
 * kind = #logical
 * abstract = true
 * type = "PlanOfCare"
@@ -127,8 +124,8 @@ Maturity Level: 0 - Draft"
 * differential.element[4].mapping[0].identity = "fhir"
 * differential.element[4].mapping[0].map = ".created"
 
-* differential.element[8].mapping[0].identity = "fhir"
-* differential.element[8].mapping[0].map = ".note.where(extension(' http://hl7.eu/fhir/ig/pcsp/StructureDefinition/annotation-type').valueCodeableConcept=CsGenericPcsp#nar-planNotes)"
+* differential.element[5].mapping[0].identity = "fhir"
+* differential.element[5].mapping[0].map = ".note.where(extension(' http://hl7.eu/fhir/ig/pcsp/StructureDefinition/annotation-type').valueCodeableConcept=CsGenericPcsp#nar-planNotes)"
 
 * differential.element[6].mapping[0].identity = "fhir"
 * differential.element[6].mapping[0].map = ".note.where(extension(' http://hl7.eu/fhir/ig/pcsp/StructureDefinition/annotation-type').valueCodeableConcept=CsGenericPcsp#nar-chronicCond)"
