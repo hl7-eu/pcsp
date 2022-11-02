@@ -51,6 +51,7 @@ Description: "This profile defines how to represent Graft versus host disease (G
 
 * extension[conditionDueTo].valueCodeableConcept 0..0
 * extension[conditionDueTo].valueReference only Reference(ProcedureSctPcsp)
+* extension[conditionDueTo].valueReference 1..
 * extension[conditionDueTo] ^short = "SCT procedure causing this GcDH"
 * extension[conditionDueTo] ^definition = "A reference to the procedure that caused this condition"
 
