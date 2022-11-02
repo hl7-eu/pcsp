@@ -332,10 +332,10 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[23].mapping[1].map = "performedDateTime"
 
 * differential.element[24].mapping[0].identity = "fhir"
-* differential.element[24].mapping[0].map = "iif(.extension(''http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming').valueTiming.repeat.count > 10; true)"
+* differential.element[24].mapping[0].map = "iif(.extension(''http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming').valueTiming.repeat.count > 9; true)"
 
 * differential.element[24].mapping[1].identity = "fhir"
-* differential.element[24].mapping[1].map = "iif(.extension(''http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming').valueTiming.repeat..boundsRange.low > 10; true)"
+* differential.element[24].mapping[1].map = "iif(.extension(''http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming').valueTiming.repeat..boundsRange.low > 9; true)"
 
 * differential.element[25].mapping[0].identity = "fhir"
 * differential.element[25].mapping[0].map = "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-cryopreservation-otherinfos-eu-pcsp')"
