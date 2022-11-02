@@ -6,6 +6,66 @@
     "include" : [{
       "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
       "concept" : [{
+        "code" : "nar-chronicCond",
+        "display" : "Chronic conditions"
+      },
+      {
+        "code" : "nar-planNotes",
+        "display" : "Plan notes"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "language" : "en",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:e83005e3-a5f3-495f-bfbd-7c62e43058b9",
+    "timestamp" : "2022-11-02T15:18:46.500Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp|0.1.0"
+    }],
+    "contains" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Chronic conditions"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "nar-chronicCond",
+      "display" : "Chronic conditions"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
+        "valueString" : "Plan additional notes"
+      }],
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "code" : "nar-planNotes",
+      "display" : "Plan notes"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+      "concept" : [{
         "code" : "surface-brachytherapy",
         "display" : "Surface brachytherapy"
       },
@@ -30,8 +90,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:1fb94259-da50-4d40-8c5a-babaf778ca1a",
-    "timestamp" : "2022-11-02T13:39:43.105Z",
+    "identifier" : "urn:uuid:867ecb7b-8bc8-4f62-ade9-3b5f4bb0c7cf",
+    "timestamp" : "2022-11-02T15:18:47.391Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -104,8 +164,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:067edd13-b0fb-4bd0-9f6a-7dd1b844e34c",
-    "timestamp" : "2022-11-02T13:39:43.480Z",
+    "identifier" : "urn:uuid:e2772a85-1d1f-46d6-9ca2-7b3e3c7d09d0",
+    "timestamp" : "2022-11-02T15:18:48.094Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -155,8 +215,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:477ae41d-ab74-482a-8feb-f1bd26c9149a",
-    "timestamp" : "2022-11-02T13:39:44.027Z",
+    "identifier" : "urn:uuid:12f7dcd0-312d-4fb3-9cdc-843e92a98e04",
+    "timestamp" : "2022-11-02T15:18:48.453Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -211,8 +271,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:f30ffa53-6223-4a5a-90c4-ab3aee143362",
-    "timestamp" : "2022-11-02T13:39:44.558Z",
+    "identifier" : "urn:uuid:9d1c01db-deef-4660-8d5e-f8fe2f1a7618",
+    "timestamp" : "2022-11-02T15:18:48.813Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -270,8 +330,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:58903450-3051-493d-bba5-ec60d7935497",
-    "timestamp" : "2022-11-02T13:39:45.089Z",
+    "identifier" : "urn:uuid:431f32f7-4eb3-4f3b-ba57-4aed8ebde91d",
+    "timestamp" : "2022-11-02T15:18:49.297Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -348,8 +408,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:1117baae-e942-4366-9f66-85200c35f56a",
-    "timestamp" : "2022-11-02T13:39:45.495Z",
+    "identifier" : "urn:uuid:18a3aaf3-109e-4292-869c-98f74332b029",
+    "timestamp" : "2022-11-02T15:18:49.641Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -404,8 +464,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:e6c4f568-5f6b-4481-b008-898909c2a4c4",
-    "timestamp" : "2022-11-02T13:39:46.011Z",
+    "identifier" : "urn:uuid:d7a07e58-d051-4ddd-b943-137693779677",
+    "timestamp" : "2022-11-02T15:18:50.156Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -455,8 +515,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:36ac9670-6a08-4c9d-a394-aca30a3a8d94",
-    "timestamp" : "2022-11-02T13:39:46.714Z",
+    "identifier" : "urn:uuid:c053a6f0-ab68-4c70-844e-54cc72521258",
+    "timestamp" : "2022-11-02T15:18:51.703Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -527,8 +587,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:7033cdcf-a559-4baa-837e-9e32427d8abd",
-    "timestamp" : "2022-11-02T13:39:47.261Z",
+    "identifier" : "urn:uuid:72a7b1d5-9788-4676-bd5b-8f24d714b3e4",
+    "timestamp" : "2022-11-02T15:18:52.063Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -638,8 +698,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:42a2fc04-afe4-4804-84fd-603c596e4ddf",
-    "timestamp" : "2022-11-02T13:39:47.683Z",
+    "identifier" : "urn:uuid:2e7432e1-4320-4028-86c4-3e86e2d6a907",
+    "timestamp" : "2022-11-02T15:18:53.219Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -756,8 +816,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:b1b8c642-1ebf-432b-bc44-b3c9a08f6aa9",
-    "timestamp" : "2022-11-02T13:39:48.089Z",
+    "identifier" : "urn:uuid:f77f3f36-adb0-4ead-bdab-4e1c9b7535e8",
+    "timestamp" : "2022-11-02T15:18:53.594Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -825,8 +885,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:3164a955-384d-41d0-b035-77fb750c4a6f",
-    "timestamp" : "2022-11-02T13:39:48.620Z",
+    "identifier" : "urn:uuid:cce49016-ac18-4d69-b8e0-c44b20a5de9e",
+    "timestamp" : "2022-11-02T15:18:53.969Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -897,8 +957,8 @@ e: {
   "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:fd0ccd87-6aed-4d08-9931-5c971fa598a1",
-    "timestamp" : "2022-11-02T13:39:49.026Z",
+    "identifier" : "urn:uuid:0bfd7206-df42-4360-b30a-9196d034449b",
+    "timestamp" : "2022-11-02T15:18:54.500Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
