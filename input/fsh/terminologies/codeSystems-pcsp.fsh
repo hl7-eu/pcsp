@@ -17,7 +17,7 @@
 * #section-otherInfos "Other Medical Information"  "Other Medical Information section. Placeholder waiting for a LOINC code"
 * #section-suggestion "Medical Suggestions" "Medical Suggestions section. Placeholder waiting for a LOINC code"
 * #section-otherConditions "Other Health Conditions"  "Other Health Conditions section. Placeholder waiting for a LOINC code"
-* #section-relapseAfterEOT "Relapse After EOT" "Relapse After EOT section. Placeholder waiting for a LOINC code"
+* #section-relapseAfterEOT "Relapse After EOT" "Relapse After End of Treatment section. Placeholder waiting for a LOINC code"
 
 // * #4w-corticosteroids-anti-cancer "Prolonged corticosteroids as anti-cancer treatment at least 4 weeks continuously" "Report 'yes' if the survivor was treated with steroids for at least 4 weeks continuously"
 // * #intrathecal-injections "Intrathecal injections" "Plea// se state if the survivor received any therapeutic intrathecal injections"
@@ -61,7 +61,6 @@
 * #sct-matched-related–sibling		"matched related – sibling"	  "matched related – sibling"
 * #sct-matched-related–parent		"matched related – parent"    "matched related – parent"
 * #sct-matched-related–other		"matched related – other"     "matched related – other (e.g. cousin)"
-
 
 //--- Source of cell
 
