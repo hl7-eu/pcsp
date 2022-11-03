@@ -3,7 +3,7 @@
    	xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 	<h3 id="overview">Overview</h3>
 	<a> </a>
-	<p>The following diagrams provide a high level description of the interactions between external local systems (here described as local system A and B, in most cases cohincident) and the PCSP platform.</p>
+	<p>The following diagrams provide a high level description of the interactions between external local systems (here described as local system A and B, in most cases cohincident) and the SurPass v2.0 Platform.</p>
 	<p>The first describes the case of generation of a PCSP Passport</p>
 	<p>{% include sequence-1.svg %}</p>
 	<p>The second of the generation of a PCSP Care Plan</p>
@@ -13,7 +13,7 @@
 	<h4 id="local-system-a">Local System A</h4>
 	<a> </a>
 	<p>Any system or system of systems providing to the <a href="#pcsp-platform">
-			<strong>PCSP Platform</strong>
+			<strong>SurPass v2.0 Platform</strong>
 		</a>
 	</p>
 	<ol type="1">
@@ -24,7 +24,7 @@
 			</p>
 		</li>
 	</ol>
-	<h4 id="pcsp-platform">PCSP Platform</h4>
+	<h4 id="pcsp-platform">SurPass v2.0 Platform</h4>
 	<a> </a>
 	<p>The Pancare SurPass platform:</p>
 	<ol type="1">
@@ -42,24 +42,39 @@
 			</ol>
 		</li>
 		<li>
-			<p>processes the <strong>
+			<p>offers a web GUI enabling Clinicians to complete and validate the<strong>
 					<a href="#treatment-summary">Treatment Summary</a>
-				</strong>to generate the <strong>
-					<a href="#surpass-with-the-scp-draft-or-final">draft SCP (Survivor Care Plan)</a>
 				</strong>
 			</p>
 		</li>
-		<li>processes the Patient Data to create/udpate a Patient Record</li>
 		<li>
-			<p>provides to <a href="#local-system-b">Local System B</a>
+			<p>processes the <strong>
+					<a href="#treatment-summary">Treatment Summary</a>
+				</strong>to generate the <strong>
+					<a href="#surpass-draft-or-final">draft SCP (Survivor Care Plan)</a>
+				</strong>
+			</p>
+		</li>
+		<li>
+			<p>offers a web GUI enabling Clinicians to complete and validate the<strong>
+					<a href="#surpass-draft-or-final">draft SCP (Survivor Care Plan)</a>
+				</strong>
+			</p>
+		</li>
+		<li>
+			<p>makes available to<a href="#local-system-b">Local System B</a>
 			</p>
 			<ol type="1">
-				<li>the <strong>
-						<a href="#surpass-with-the-scp-draft-or-final">SurPass with the SCP (draft or final)</a>
-					</strong>
+				<li>A <strong>HL7 FHIR
+						<a href="#surpass-draft-or-final">SurPass</a>(draft or final);
+					</strong> and/or
 				</li>
-				<li>the <strong>
-						<a href="#surpass-with-the-scp-draft-or-final">draft SCP</a>
+				<li>A <strong>PDF
+						<a href="#surpass-draft-or-final">SurPass</a>(draft or final)
+					</strong> via HL7 FHIR API; and/or
+				</li>
+				<li>A <strong>HL7 FHIR
+						<a href="#surpass-draft-or-final">draft SCP (Survivor Care Plan).</a>
 					</strong>
 				</li>
 			</ol>
@@ -67,18 +82,22 @@
 	</ol>
 	<h4 id="local-system-b">Local System B</h4>
 	<a> </a>
-	<p>Any system or system of systems receiving from the <strong>PCSP Platform</strong>
+	<p>Any system or system of systems receiving from the <strong>SurPass v2.0 Platform</strong>
 	</p>
-	<ol>
-		<li>the <strong>
-				<a href="#surpass-with-the-scp-draft-or-final">SurPass with the SCP (draft or final)</a>
-			</strong>
-		</li>
-		<li>the <strong>
-				<a href="#surpass-with-the-scp-draft-or-final">draft SCP</a>
-			</strong>
-		</li>
-	</ol>
+			<ol type="1">
+				<li>A <strong>HL7 FHIR
+						<a href="#surpass-draft-or-final">SurPass</a>(draft or final);
+					</strong> and/or
+				</li>
+				<li>A <strong>PDF
+						<a href="#surpass-draft-or-final">SurPass</a>(draft or final)
+					</strong> via HL7 FHIR API; and/or
+				</li>
+				<li>A <strong>HL7 FHIR
+						<a href="#surpass-draft-or-final">draft SCP (Survivor Care Plan).</a>
+					</strong>
+				</li>
+			</ol>
 	<p>It may be the same system realizing the<a href="#local-system-a">
 			<strong>Local System A</strong>
 		</a>
@@ -94,11 +113,11 @@
 	</p>
 	<h4 id="scp">Survivor Care Plan</h4>
 	<a> </a>
-	<p>Logical model of the <strong>SCP Care Plan</strong>
+	<p>Logical model of the <strong><a href="StructureDefinition-PlanOfCare.html">SCP Care Plan</a></strong>
 	</p>
-	<h4 id="surpass-with-the-scp-draft-or-final">SurPass with the SCP (draft or final)</h4>
+	<h4 id="surpass-draft-or-final">SurPass with the SCP (draft or final)</h4>
 	<a> </a>
 	<!-- <p>Logical model of the <a href="StructureDefinition-SurvivorshipPassport.html">SurPass with the SCP (draft or final)</a> -->
-	<p>Logical model of the <strong>SurPass with the SCP (draft or final)</strong>
+	<p>Logical model of the <strong><a href="StructureDefinition-SurPass.html">SurPass V2.0</a></strong>	
 	</p>
 </div>
