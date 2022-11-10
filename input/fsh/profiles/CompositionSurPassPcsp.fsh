@@ -13,44 +13,59 @@ RuleSet: SectionCommon
 
 RuleSet: SubSectionStructure
 
+
+* section contains  chemotherapy	0..1
 * section[chemotherapy]
   * insert SectionCommon
-  * code ^short = "Chemotherapy"
+  * ^short = "Chemotherapy"
   * code = $loinc#11486-8
   * entry 1..
-  * entry only Reference( MedicationAdministrationPcsp )
-						
+  * entry only Reference( MedicationAdministrationPcsp )				
+
+* section contains  stemCellTransplantation	0..1
 * section[stemCellTransplantation]
   * insert SectionCommon
-  * code ^short = "Stem Cell Transplantation"
+  * ^short = "Stem Cell Transplantation"
   * code = CsGenericPcsp#section-sct
   * entry 1..
   * entry only Reference( ProcedureSctPcsp )
-  
+
+* section contains  radiotherapy	0..1  
 * section[radiotherapy]
   * insert SectionCommon
   * code = CsGenericPcsp#section-rt
-  * code ^short = "Radiotherapy"
+  * ^short = "Radiotherapy"
   * entry 1..
   * entry only Reference(	ProcedureRadiotherapyPcsp or ProcedureRadiotherapyBoostPcsp )
-  
+
+* section contains  majorSurgery	0..1    
 * section[majorSurgery]
   * insert SectionCommon
   * code = $loinc#8690-0
-  * code ^short = "History of Surgical procedures"
+  * ^short = "History of Surgical procedures"
   * entry 1..
   * entry only Reference( ProcedureSurgeryPcsp )
-  
+
+* section contains  otherInfos	0..1    
 * section[otherInfos]
   * insert SectionCommon
   * code = CsGenericPcsp#section-otherInfos
-  * code ^short = "Other Medical Information"
-  
+  * ^short = "Other Medical Information"
+
+* section contains  medicalSuggestion	0..1     
 * section[medicalSuggestion]
   * insert SectionCommon
   * code = CsGenericPcsp#section-suggestion
-  * code ^short = "Medical Suggestions"
+  * ^short = "Medical Suggestions"
 
+// -----------------------------------
+
+RuleSet: SectionCodeSlicingRules
+* section 1..*
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "code"
+  * ^slicing.rules = #open
+  * ^slicing.description = "Slice based on the coding.code pattern"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  CompositionSurpassPcsp
@@ -72,62 +87,53 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
   * ^short = "Childhood Cancer Survivor Passport"
 * attester ^short = "Who attested the accuracy of this SurPass"
 * section 1..*
-
-  * code ^short = "Cancer diagnosis Narrative" // Front line treatment ?
+* insert SectionCodeSlicingRules
+* section contains flt 1..*      
+* section[flt] 
+  * ^short = "Cancer diagnosis Narrative" // Front line treatment ?
   * code = $loinc#72135-7 
   * entry 1..
-  * entry only Reference(	ConditionPrimaryCancerPcsp or
-							ProcedureFltPcsp
-						)
+  * entry only Reference(	ConditionPrimaryCancerPcsp or 
+                          ConditionSecondaryCancerPcsp or
+                          ProcedureFltPcsp)
+    // add slice with at leat one primarycancer 
 						
   * insert SectionCommon
   
   // slice the diagnosis-FLT section
-  * section 1..*
-    * ^slicing.discriminator.type = #pattern
-    * ^slicing.discriminator.path = "code"
-    * ^slicing.rules = #open
-    * ^slicing.description = "Slice based on the coding.code pattern"
-  
-  * section contains
-         chemotherapy			  0..1 and		 
-         stemCellTransplantation  0..1 and
-         radiotherapy			  0..1 and
-         majorSurgery			  0..1 and
-         otherInfos				  0..1 and
-         medicalSuggestion 		  0..1
-
+  * insert SectionCodeSlicingRules
       
   // add common sub sections
   * insert SubSectionStructure
 
-  // add the relapse After EOT section
-  * section contains relapseAfterEOT 0..  
-  
-  // slice the relapse After EOT sub-sections
-  * section[relapseAfterEOT].section ^slicing.discriminator.type = #pattern
-  * section[relapseAfterEOT].section ^slicing.discriminator.path = "code"
-  * section[relapseAfterEOT].section ^slicing.rules = #open
-  * section[relapseAfterEOT].section ^slicing.description = "Slice based on the coding.code pattern"
-  
-  * section[relapseAfterEOT].section contains 
-         chemotherapy			  0..1 and		 
-         stemCellTransplantation  0..1 and
-         radiotherapy			  0..1 and
-         majorSurgery			  0..1 and
-         otherInfos				  0..1 and
-         medicalSuggestion 		  0..1
-		
-// --- relapseAfterEOT Sub Sections begin 
+   //  relapse After EOT section
+  * section contains relapseAfterEOT 0..
   * section[relapseAfterEOT]
-  // add common sub sections
-    * insert SubSectionStructure
-	
-	
-// --- relapseAfterEOT Sub Sections end
+
+    * ^short = "Relapse After EOT"
+    * code = CsGenericPcsp#section-relapseAfterEOT 
+    // is this requested ?
+    * entry only Reference (ConditionPrimaryCancerPcsp or ConditionSecondaryCancerPcsp)					
+    * insert SectionCommon
+
+/*     
+// removed for avoiding build failures
+* insert SectionCodeSlicingRules  	
+// --- relapseAfterEOT Sub Sections begin   
+    * insert SubSectionStructure	 
+// --- relapseAfterEOT Sub Sections end */
 	
   * section contains otherConditions 0..1
   * section[otherConditions]
-    * code = CsGenericPcsp#section-otherConditions
-    * code ^short = "Other Health Conditions"
+    * ^short = "Other Health Conditions"
+    * code = CsGenericPcsp#section-otherConditions    
     * insert SectionCommon
+
+
+* section contains  carePlan	0..1
+* section[carePlan] 
+  * ^short = "Plan of Care Section"
+  * insert SectionCommon
+  * code = $loinc#18776-5 
+  * entry 1..
+  * entry only Reference(	CarePlanPcsp )
