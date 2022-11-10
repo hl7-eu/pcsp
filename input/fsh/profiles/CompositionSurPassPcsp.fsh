@@ -115,6 +115,7 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
     // is this requested ?
     * entry only Reference (ConditionPrimaryCancerPcsp or ConditionSecondaryCancerPcsp)					
     * insert SectionCommon
+    * section ^short = "sub sections"
 
 /*     
 // removed for avoiding build failures
