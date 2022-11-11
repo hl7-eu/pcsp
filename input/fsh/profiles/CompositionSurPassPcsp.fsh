@@ -60,8 +60,8 @@ RuleSet: SubSectionStructure
 
 // -----------------------------------
 
-RuleSet: SectionCodeSlicingRules
-* section 1..*
+RuleSet: SectionCodeSlicingRules ( card )
+* section {card}
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "code"
   * ^slicing.rules = #open
@@ -87,7 +87,7 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
   * ^short = "Childhood Cancer Survivor Passport"
 * attester ^short = "Who attested the accuracy of this SurPass"
 * section 1..*
-* insert SectionCodeSlicingRules
+* insert SectionCodeSlicingRules ( 1..* )
 * section contains flt 1..*      
 * section[flt] 
   * ^short = "Cancer diagnosis Narrative" // Front line treatment ?
@@ -101,7 +101,7 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
   * insert SectionCommon
   
   // slice the diagnosis-FLT section
-  * insert SectionCodeSlicingRules
+  * insert SectionCodeSlicingRules ( 1..* )
       
   // add common sub sections
   * insert SubSectionStructure
@@ -115,14 +115,13 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
     // is this requested ?
     * entry only Reference (ConditionPrimaryCancerPcsp or ConditionSecondaryCancerPcsp)					
     * insert SectionCommon
-    * section ^short = "sub sections"
-
-/*     
+    // * section ^short = "sub sections"    
+    
 // removed for avoiding build failures
-* insert SectionCodeSlicingRules  	
+    * insert SectionCodeSlicingRules ( 0..* )  	
 // --- relapseAfterEOT Sub Sections begin   
     * insert SubSectionStructure	 
-// --- relapseAfterEOT Sub Sections end */
+// --- relapseAfterEOT Sub Sections end 
 	
   * section contains otherConditions 0..1
   * section[otherConditions]
