@@ -79,11 +79,11 @@
       },
       {
         "code" : "97286",
-        "display" : "Carney-Stratakis Syndrome "
+        "display" : "Carney-Stratakis Syndrome"
       },
       {
         "code" : "618",
-        "display" : "Familial Melanoma "
+        "display" : "Familial Melanoma"
       },
       {
         "code" : "377",
@@ -540,7 +540,7 @@ v: {
       },
       {
         "code" : "618",
-        "display" : "Familial Melanoma "
+        "display" : "Familial Melanoma"
       },
       {
         "code" : "637",
@@ -700,7 +700,7 @@ v: {
       },
       {
         "code" : "97286",
-        "display" : "Carney-Stratakis Syndrome "
+        "display" : "Carney-Stratakis Syndrome"
       },
       {
         "code" : "99817",
@@ -861,7 +861,7 @@ e: {
       },
       {
         "code" : "618",
-        "display" : "Familial Melanoma "
+        "display" : "Familial Melanoma"
       },
       {
         "code" : "637",
@@ -1021,7 +1021,7 @@ e: {
       },
       {
         "code" : "97286",
-        "display" : "Carney-Stratakis Syndrome "
+        "display" : "Carney-Stratakis Syndrome"
       },
       {
         "code" : "99817",

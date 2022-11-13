@@ -17,7 +17,7 @@ Usage: #definition
 * mapping[0].name = "HL7 FHIR"
 * kind = #logical
 * abstract = true
-* type = "SurPass"
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/SurPass"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "SurPass"

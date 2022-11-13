@@ -1,7 +1,7 @@
 Instance: Chemotherapy
 InstanceOf: StructureDefinition
-Description: "Chemotherapy 
-Maturity Level: 2 - Ready for Review"
+Description: """Chemotherapy 
+Maturity Level: 2 - Ready for Review"""
 Title: "Chemotherapy"
 Usage: #definition
 * publisher = "PanCareSurPass project"
@@ -9,17 +9,16 @@ Usage: #definition
 * url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy"
 * name = "Chemotherapy"
 * title = "Chemotherapy"
-* status = #draft
 * experimental = true
 * description = "Chemotherapy 
 Maturity Level: 2 - Ready for Review"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
-* mapping[0].name = "FHIR"
+* mapping[0].name = "HL7 FHIR"
 * kind = #logical
 * abstract = true
-* type = "Chemotherapy"
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "Chemotherapy"
@@ -28,6 +27,8 @@ Maturity Level: 2 - Ready for Review"
 * differential.element[0].definition = "Chemotherapy"
 * differential.element[0].min = 1
 * differential.element[0].max = "1"
+* differential.element[0].extension[0].url = $elementdefinition-namespace
+* differential.element[0].extension[=].valueUri = $pcspUri
 * differential.element[1].id = "Chemotherapy.relatedDiagnosis"
 * differential.element[1].path = "Chemotherapy.relatedDiagnosis"
 * differential.element[1].short = "Related Diagnosis"

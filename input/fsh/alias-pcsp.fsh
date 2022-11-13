@@ -4,6 +4,8 @@ Alias: $codex-radiotherapy-isotopes = http://hl7.org/fhir/us/codex-radiation-the
 
 //============== ALIAS ===============
 
+Alias: $pcspUri = http://hl7.eu/fhir/ig/pcsp
+
 // --- Code Systems
 Alias: $ajcc = http://cancerstaging.org
 Alias: $atc = http://www.whocc.no/atc
@@ -50,6 +52,7 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 Alias: $condition-occurredFollowing = http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing
 Alias: $condition-dueTo = http://hl7.org/fhir/StructureDefinition/condition-dueTo
 Alias: $originalText = http://hl7.org/fhir/StructureDefinition/originalText
+Alias: $elementdefinition-namespace = http://hl7.org/fhir/StructureDefinition/elementdefinition-namespace
 
 // ---- Identifiers
 Alias : $pat-id-cineca = http://hl7.eu/fhir/ig/pcsp/sid/pat-id-cineca // Temporary assigned

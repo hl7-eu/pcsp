@@ -22,7 +22,9 @@ Maturity Level: 2 - Ready for Review"
 * mapping[1].name = "CDA (R2)"
 * kind = #logical
 * abstract = true
-* type = "Subject"
+* extension[0].url = $elementdefinition-namespace
+* extension[=].valueUri = $pcspUri
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Subject"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "Subject"

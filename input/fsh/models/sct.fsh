@@ -20,9 +20,11 @@ Maturity Level: 2 - Ready for Review"
 * mapping[1].identity = "cda"
 * mapping[1].uri = "http://hl7.org/v3/cda"
 * mapping[1].name = "CDA (R2)"
+* extension[0].url = $elementdefinition-namespace
+* extension[=].valueUri = $pcspUri
 * kind = #logical
 * abstract = true
-* type = "StemCellTransplantation"
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/StemCellTransplantation"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "StemCellTransplantation"

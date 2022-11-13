@@ -117,11 +117,11 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
     * insert SectionCommon
     // * section ^short = "sub sections"    
     
-// removed for avoiding build failures
+/* // removed for avoiding build failures
     * insert SectionCodeSlicingRules ( 0..* )  	
 // --- relapseAfterEOT Sub Sections begin   
     * insert SubSectionStructure	 
-// --- relapseAfterEOT Sub Sections end 
+// --- relapseAfterEOT Sub Sections end  */
 	
   * section contains otherConditions 0..1
   * section[otherConditions]

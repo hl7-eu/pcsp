@@ -19,7 +19,9 @@ Maturity Level: 2 - Ready for Review"
 * mapping[0].name = "HL7 FHIR"
 * kind = #logical
 * abstract = true
-* type = "OtherInfos"
+* extension[0].url = $elementdefinition-namespace
+* extension[=].valueUri = $pcspUri
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/OtherInfos"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "OtherInfos"
@@ -55,7 +57,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[4].id = "OtherInfos.severeToxicity"
 * differential.element[4].path = "OtherInfos.severeToxicity"
 * differential.element[4].short = "Important toxicity during treatment"
-* differential.element[4].definition = "Important toxicity during treatment ÿ"
+* differential.element[4].definition = "Important toxicity during treatment ï¿½"
 * differential.element[4].min = 0
 * differential.element[4].max = "10"
 * differential.element[4].type.code = #BackboneElement
@@ -177,7 +179,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * differential.element[21].id = "OtherInfos.transfusion"
 * differential.element[21].path = "OtherInfos.transfusion"
 * differential.element[21].short = "Transfusion"
-* differential.element[21].definition = "Transfusion ÿ"
+* differential.element[21].definition = "Transfusion ï¿½"
 * differential.element[21].min = 0
 * differential.element[21].max = "1"
 * differential.element[21].type.code = #BackboneElement

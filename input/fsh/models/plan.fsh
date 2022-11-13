@@ -19,7 +19,9 @@ Maturity Level: 0 - Draft"
 * mapping[0].name = "HL7 FHIR"
 * kind = #logical
 * abstract = true
-* type = "PlanOfCare"
+* extension[0].url = $elementdefinition-namespace
+* extension[=].valueUri = $pcspUri
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/PlanOfCare"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "PlanOfCare"

@@ -19,7 +19,9 @@ Maturity Level: 2 - Ready for Review"
 * mapping[0].name = "FHIR"
 * kind = #logical
 * abstract = true
-* type = "Radiotherapy"
+* extension[0].url = $elementdefinition-namespace
+* extension[=].valueUri = $pcspUri
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "Radiotherapy"
@@ -220,7 +222,7 @@ If you know the treatment was with external beam but not which machine or energy
 * differential.element[18].path = "Radiotherapy.target"
 * differential.element[18].short = "Target"
 * differential.element[18].definition = "Site' refers to the radiation therapy treatment field, i.e. the part of the body that received the radiation dose in order to treat the tumour. 
-Required if Type of radiotherapy = 1 or 2 (External Beam, Brachytherapy)ÿ
+Required if Type of radiotherapy = 1 or 2 (External Beam, Brachytherapy)ï¿½
 If more than one body site was treated with radiotherapy, you can add anther site and describe; upto 5 sites are allowed by the system "
 * differential.element[18].min = 0
 * differential.element[18].max = "5"
@@ -370,7 +372,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[33].definition = "Specify radiation type of the boost.
 1 => External Beam
 2 => Brachytherapy
--9922 => NK ÿ"
+-9922 => NK ï¿½"
 * differential.element[33].min = 1
 * differential.element[33].max = "1"
 * differential.element[33].type.code = #CodeableConcept
@@ -523,7 +525,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * differential.element[49].path = "Radiotherapy.target.shielding.status"
 * differential.element[49].short = "Shielding status"
 * differential.element[49].definition = "Specify if shielding was used or not. 
-Yes;  No;  NK ÿ"
+Yes;  No;  NK ï¿½"
 * differential.element[49].min = 0
 * differential.element[49].max = "1"
 * differential.element[49].type.code = #CodeableConcept

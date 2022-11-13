@@ -15,9 +15,11 @@ Usage: #definition
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
 * mapping[0].name = "FHIR"
+* extension[0].url = $elementdefinition-namespace
+* extension[=].valueUri = $pcspUri
 * kind = #logical
 * abstract = true
-* type = "RelapseAfterFLT"
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/RelapseAfterFLT"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "RelapseAfterFLT"

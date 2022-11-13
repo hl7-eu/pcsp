@@ -2,7 +2,7 @@
  "name": "PCSPImplementationGuide",
  "version" : "0.1.0",  
  "canonical" : "http://hl7.eu/fhir/ig/pcsp",
- "url" : "http://hl7.eu/fhir/ig/xeh",
+ "url" : "http://hl7.eu/fhir/ig/pcsp",
  "title" : "PanCareSurPass FHIR Implementation Guide",
  "description": "PanCareSurPass is an EU project aiming to conduct a robust assessment of the Cancer Survivorship Passport (SurPass).",
  "dependencies": {

@@ -19,7 +19,9 @@ Maturity Level: 2 - Ready for Review"
 * mapping[0].name = "HL7 FHIR"
 * kind = #logical
 * abstract = true
-* type = "FrontLineTreatment"
+* extension[0].url = $elementdefinition-namespace
+* extension[=].valueUri = $pcspUri
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/FrontLineTreatment"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "FrontLineTreatment"

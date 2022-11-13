@@ -16,10 +16,12 @@ Maturity Level: 0"
 * version = "0.0.1"
 * mapping[0].identity = "fhir"
 * mapping[0].uri = "hl7.org/fhir/r4"
-* mapping[0].name = ""
+* mapping[0].name = "FHIR"
+* extension[0].url = $elementdefinition-namespace
+* extension[=].valueUri = $pcspUri
 * kind = #logical
 * abstract = true
-* type = "DocMetadataFSE"
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/DocMetadataFSE"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "DocMetadataFSE"
@@ -31,7 +33,7 @@ Maturity Level: 0"
 * differential.element[1].id = "DocMetadataFSE.identifier"
 * differential.element[1].path = "DocMetadataFSE.identifier"
 * differential.element[1].short = "document ID"
-* differential.element[1].definition = "Id documento (dovrebbe essere sull'oid root di regione Liguria) oid root + extension che comincia per nostro standard con le ultime tre cifre del codice azienda (940 per Gaslini) pi— punto pi— id univoco all'interno dell'azienda)"
+* differential.element[1].definition = "Id documento (dovrebbe essere sull'oid root di regione Liguria) oid root + extension che comincia per nostro standard con le ultime tre cifre del codice azienda (940 per Gaslini) piï¿½ punto piï¿½ id univoco all'interno dell'azienda)"
 * differential.element[1].min = 0
 * differential.element[1].max = "1"
 * differential.element[1].type.code = #Identifier
@@ -190,7 +192,7 @@ Maturity Level: 0"
 * differential.element[0].mapping[0].map = "DocumentReference"
 
 * differential.element[1].mapping[0].identity = "fhir"
-* differential.element[1].mapping[0].map = "ÿDocumentReference.masterIdentifier"
+* differential.element[1].mapping[0].map = "ï¿½DocumentReference.masterIdentifier"
 
 * differential.element[2].mapping[0].identity = "fhir"
 * differential.element[2].mapping[0].map = "DocumentReference.content.attachment.contentType"

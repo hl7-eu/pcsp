@@ -19,7 +19,7 @@ Maturity Level: 2 - Ready for Review"
 * mapping[0].name = ""
 * kind = #logical
 * abstract = true
-* type = "MajorSurgery"
+* type = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MajorSurgery"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
 * differential.element[0].id = "MajorSurgery"
