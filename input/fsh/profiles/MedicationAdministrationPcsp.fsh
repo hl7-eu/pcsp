@@ -44,8 +44,8 @@ Description: "This profile defines how to represent Chemotherapy Cumulative Dose
 Profile:  MedicationAdministrationPcsp
 Parent:   MedicationAdministration 
 Id:       MedicationAdministration-eu-pcsp
-Title:    "MedicationAdministration PCSP"
-Description: "This profile defines how to represent MedicationAdministration in FHIR for describing Chemotherapy data for the purpose of the PanCareSurPass project."
+Title:    "MedicationAdministration: Chemotherapy"
+Description: "This profile defines how to represent MedicationAdministration in HL7 FHIR for describing Chemotherapy data for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 
 * insert MedicationAdministrationPcspRules
@@ -69,7 +69,7 @@ Description: "This profile defines how to represent MedicationAdministration in 
 Profile:  MedicationStatementPcsp
 Parent:   MedicationStatement 
 Id:       MedicationStatement-eu-pcsp
-Title:    "MedicationStatement PCSP"
+Title:    "MedicationStatement: Chemotherapy"
 Description: "This profile defines how to represent MedicationStatement in FHIR for describing minimal information about provided medications for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * status ^short = "active | completed | entered-in-error | intended | stopped | on-hold | unknown |not-taken"

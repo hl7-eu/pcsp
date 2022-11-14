@@ -41,7 +41,7 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 // -------------------------------------------------------------------------------
 Mapping: fhir
 Id: fhir
-Title: "Idea4RC Subject model to FHIR R4 Map"
+Title: "PCSP HL7 FHIR R4 Profiles"
 Source: RelapseAfterFLT
 Target: "hl7.org/fhir/r4"
 
