@@ -302,7 +302,7 @@ Description: "Category of the presence or absence of metastases in regional lymp
 Profile:  TNMDistantMetastasesCategory
 Id: mcode-tnm-distant-metastases-category
 Parent: Observation
-Title: "Observation: Condition: Secondary Cancer"
+Title: "Observation: TNM Distant Metastases Category"
 Description: "Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy."
 * insert CancerStageCommonRules
 * insert NotUsed(hasMember)

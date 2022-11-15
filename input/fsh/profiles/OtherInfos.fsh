@@ -126,32 +126,3 @@ Description: "This profile defines how to convey textual information about other
 * subject only Reference(PatientPcsp)
 * reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
-
-
-/*
-
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  ObservationToxicityPcsp
-Parent:   Observation
-Id:       Observation-toxicity-eu-pcsp
-Title:    "Observation: Severe Toxicity event"
-Description: "This profile defines how to describe a Severe Toxicity event in HL7 FHIR for the purpose of the PanCareSurPass project."
-//-------------------------------------------------------------------------------------------
-* extension contains ResourceRelatedInfo named relatedCondition 0..1
-* extension[relatedCondition].valueReference only Reference(ConditionPrimaryCancerPcsp)
-* subject 1..
-* subject only Reference(PatientPcsp)
-* effectivePeriod.start 0..1
-  * ^short "Date of the event onset. Missing if Unknown"
-* category 1..1 
-* category = $loinc#89793-4 "Event description"
-* valueCodeableConcept 1..1
-* note ^short = "Notes"
-* valueCodeableConcept = $sct#75478009 "Toxicity"
-* component[+].code =  $sct#404684003 "Clinical finding"
-* component[=].valueCodeableConcept 
-* component[+].code =  $v3-ActCode#SEV "Severity"
-* component[=].valueCodeableConcept from ToxicitySeverityVS
-// * component[=].valueDate 
-// * component[+].code =  $loinc#67723-7 "Date of health-related event"
-*/
