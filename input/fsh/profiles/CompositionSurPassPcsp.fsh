@@ -97,6 +97,17 @@ RuleSet: SubSectionStructure
   * insert SectionCommon
   * code = CsGenericPcsp#section-otherInfos
   * ^short = "Other Medical Information"
+  * entry 0..
+  * entry only Reference(	 Condition or Procedure or DocumentReference )
+
+  * insert SectionEntrySliceComRules (Other infos, Other infos)
+  * insert SectionEntrySliceDefRules (conditionToxicity, 0.., Condition: Severe Toxicity, Condition: Severe Toxicity, ConditionToxicityPcsp)
+  * insert SectionEntrySliceDefRules (conditionOtherInfos, 0.., Other Conditions,Other Conditions, ConditionOtherInfosPcsp)
+  * insert SectionEntrySliceDefRules (procedureCVC, 0.., Procedure: Catheter,Procedure: Catheter, ProcedureCVCOtherInfosPcsp)
+  * insert SectionEntrySliceDefRules (procedureTransfusion, 0.., Procedure: Transfusion,Procedure: Transfusion, ProcedureTransfusionOtherInfosPcsp)
+  * insert SectionEntrySliceDefRules (procedureCryopreservation, 0.., Procedure: Cryopreservation,Procedure: Cryopreservation, ProcedureCryopreservationOtherInfosPcsp)
+  * insert SectionEntrySliceDefRules (procedureOtherTreatment, 0.., Procedure: Other Treatments,Procedure: Other Treatments, ProcedureOtherTreatmentPcsp)
+
 
 * section contains  medicalSuggestion	0..1     
 * section[medicalSuggestion]
