@@ -3,7 +3,7 @@
 Profile:  PatientPcsp
 Parent:   $Patient-uv-ips
 Id:       Patient-eu-pcsp
-Title:    "Patient PCSP"
+Title:    "Patient: PCSP"
 Description: "This profile defines how to represent Patient in FHIR for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 * . ^short = "Information about an individual receiving health care services"

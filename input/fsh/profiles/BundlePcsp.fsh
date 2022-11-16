@@ -43,34 +43,39 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry.search ..0
 * entry.request ..0
 * entry.response ..0
-* entry contains
- /*    composition 1..1 and */
-    patient 1..1 and
-	cancerCondition 1..* and
-	flt-def 0..* and
-	location 0..* and
-	organization 0..* and
-   /*  chemotherapy 0..* and */
-    /* stemCellTransplantation  0..* and */
-    radiotherapy			  0..* and
-    majorSurgery			  0..* and
-	carePlan 0..* 
 
 // * entry[composition].resource only CompositionSurpassPcsp
 * insert BunldeEntrySlicDefRules (composition, 1..1, PCSP Composition, PCSP Composition, CompositionSurpassPcsp)
-* entry[patient].resource only PatientPcsp
-* entry[cancerCondition].resource only ConditionPrimaryCancerPcsp or ConditionSecondaryCancerPcsp
-* entry[flt-def].resource only PlanDefinitionFltPcsp
-* entry[location].resource only LocationPcsp
+* insert BunldeEntrySlicDefRules (patient, 1..1, Patient: PCSP, Patient: PCSP,  PatientPcsp )
 
-* entry[organization].resource only OrganizationCenterPcsp or Organization
 
-// * entry[stemCellTransplantation].resource  only ProcedureSctPcsp
-* entry[radiotherapy].resource	only ProcedureRadiotherapyPcsp or ProcedureRadiotherapyBoostPcsp or ProcedureRadiotherapyShieldingPcsp
-* entry[majorSurgery].resource	only ProcedureSurgeryPcsp
-* entry[carePlan].resource only CarePlanPcsp
+* insert BunldeEntrySlicDefRules (flt-def, 0.., PlanDefinition: FLT, PlanDefinition: Front Line Treatment, PlanDefinitionFltPcsp)
+* insert BunldeEntrySlicDefRules (flt, 0.., Procedure: FLT, Procedure: FronLine Treatment, ProcedureFltPcsp)
 
-* insert BunldeEntrySlicDefRules (encounter, 0..*, Encounter: Treatment Center, Encounter: Treatment Center, EncounterPcsp)
+// Cancer Diagnosis
+* insert BunldeEntrySlicDefRules (cancerCondition, 1..*, Primary Cancer\, Relapse and Metastasis, Primary Cancer\, Relapse and Metastasis, ConditionPrimaryCancerPcsp or ConditionSecondaryCancerPcsp )
+* insert BunldeEntrySlicDefRules (observationDiagnosis, 0..*, Observation: Diagnosis details, Observation: Diagnosis details,  ObservationDiagnosisPcsp)
+* insert BunldeEntrySlicDefRules (observationHereditaryPredisposition, 0..*, Observation: Hereditary Predisposition, Observation: Hereditary Predisposition,  ObservationHereditaryPredispositionPcsp )
+* insert BunldeEntrySlicDefRules (cancerStageGroup, 0..*, Observation: Cancer Stage Group, Observation: Cancer Stage Group,  CancerStageGroup )
+* insert BunldeEntrySlicDefRules (encounter, 0..*, Encounter: Treatment Center, Encounter: Treatment Center,  EncounterPcsp )
+* insert BunldeEntrySlicDefRules (location, 0..*, Location: PCSP, Location: PCSP,  LocationPcsp )
+* insert BunldeEntrySlicDefRules (organization, 0..*, Organization: Primary Center, Organization: Primary Treatment Center / Center of diagnosis,  OrganizationCenterPcsp or Organization )
+
+
+
+
+// RADIO
+* insert BunldeEntrySlicDefRules (radiotherapy, 0..*, Procedure: Radiotherapy, Procedure: Radiotherapy,  ProcedureRadiotherapyPcsp or ProcedureRadiotherapyBoostPcsp or ProcedureRadiotherapyShieldingPcsp )
+* insert BunldeEntrySlicDefRules (totalDoseRadio, 0..*, Observation: Radiotherapy Total Dose, Observation: Radiotherapy Total Dose,  TotalDoseRadObsPcsp )
+
+// Surgery
+* insert BunldeEntrySlicDefRules (majorSurgery, 0..*, Procedure: Surgery, Procedure: Surgery,  ProcedureSurgeryPcsp )
+
+// Care Plan
+* insert BunldeEntrySlicDefRules (carePlan, 0..*, CarePlan: PCSP-generated plan, CarePlan: PCSP-generated plan,  CarePlanPcsp )
+* insert BunldeEntrySlicDefRules (riskFactor, 0..*, Observation: Risk Factor, Observation: Risk Factor,  ObservationRiskFactor )
+
+
 
 // SCT
 * insert BunldeEntrySlicDefRules (biologicallyDerivedProduct, 0..*, BiologicallyDerivedProduct: Stem Cell, BiologicallyDerivedProduct: Stem Cell, EncounterPcsp)
@@ -82,3 +87,14 @@ Description: "This profile represents the constraints applied to the Bundle reso
 // Chemo
 * insert BunldeEntrySlicDefRules (medAdminChemo, 0..*, MedicationAdministration: Chemotherapy, MedicationAdministration: Chemotherapy, MedicationAdministrationPcsp)
 * insert BunldeEntrySlicDefRules (medStatementChemo, 0..*, MedicationStatement: Chemotherapy, MedicationStatement: Chemotherapy, MedicationStatementPcsp)
+* insert BunldeEntrySlicDefRules (cumulativeDoseChemo, 0..*, Observation: Chemotherapy Cumulative Dose, Observation: Chemotherapy Cumulative Dose, CumulativeDoseChemoObsPcsp)
+
+
+// Other
+* insert BunldeEntrySlicDefRules (conditionToxicity, 0.., Condition: Severe Toxicity, Condition: Severe Toxicity, ConditionToxicityPcsp)
+* insert BunldeEntrySlicDefRules (conditionOtherInfos, 0.., Other Conditions,Other Conditions, ConditionOtherInfosPcsp)
+* insert BunldeEntrySlicDefRules (procedureCVC, 0.., Procedure: Catheter,Procedure: Catheter, ProcedureCVCOtherInfosPcsp)
+* insert BunldeEntrySlicDefRules (procedureTransfusion, 0.., Procedure: Transfusion,Procedure: Transfusion, ProcedureTransfusionOtherInfosPcsp)
+* insert BunldeEntrySlicDefRules (procedureCryopreservation, 0.., Procedure: Cryopreservation,Procedure: Cryopreservation, ProcedureCryopreservationOtherInfosPcsp)
+* insert BunldeEntrySlicDefRules (procedureOtherTreatment, 0.., Procedure: Other Treatments,Procedure: Other Treatments, ProcedureOtherTreatmentPcsp)
+

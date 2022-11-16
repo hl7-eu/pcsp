@@ -27,7 +27,7 @@ RuleSet: CumulativeDoseObsRules
 Profile:  LocationPcsp
 Parent:   Location
 Id:       Location-eu-pcsp
-Title:    "Location PCSP"
+Title:    "Location: PCSP"
 Description: "This profile defines how to represent FHIR Location for the purpose of the PanCareSurPass project."
 //-------------------------------------------------------------------------------------------
 

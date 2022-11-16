@@ -95,15 +95,3 @@ Description: "This profile defines how to represent MedicationStatement in FHIR 
 // 20042000 edqm Intrathecal use
 * dosage.timing.repeat.count ^short = "Number of administration"
 * dosage.timing.repeat.boundsDuration ^short = "Length/Range of lengths, or (Start and/or end) limits."
-
-/*==== BEGIN 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Profile:  MedicationAdministrationMinPcsp
-Parent:   MedicationAdministration 
-Id:       MedicationAdministration-min-eu-pcsp
-Title:    "MedicationAdministration (PCSP Minimal Set)"
-Description: "This profile defines how to represent MedicationAdministration in FHIR for describing a Minimal set of Chemotherapy data required by the PanCareSurPass algorithm to generate the care plan."
-//-------------------------------------------------------------------------------------------
-* insert MedicationAdministrationPcspRules
-
-==== END */

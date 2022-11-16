@@ -152,7 +152,7 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
   * entry 1..
   * entry only Reference(	Condition or Procedure or DocumentReference)
   * insert SectionEntrySliceComRules (Tumor FLT detail, Entrdescribing the primary cancer and optionally FLT anmetastasis.)
-  * insert SectionEntrySliceDefRules (primaryCancer, 1.., Primary Cancer, Primary Cancer or relapse during thtreatment,   ConditionPrimaryCancerPcsp)
+  * insert SectionEntrySliceDefRules (primaryCancer, 1.., Primary Cancer, Primary Cancer or relapse during the treatment,   ConditionPrimaryCancerPcsp)
   * insert SectionEntrySliceDefRules (metastasis, 0.., Metastasis, Metastasis, ConditionSecondaryCancerPcsp)
   * insert SectionEntrySliceDefRules (flt, 0.., FLT, FronLine Treatment, ProcedureFltPcsp)
 
