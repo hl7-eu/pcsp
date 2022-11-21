@@ -182,11 +182,11 @@ Description: "This profile defines how to represent a PCSP Survivor Passport by 
     * insert SectionEntrySliceDefRules (metastasis, 0.., Metastasis, Metastasis, ConditionSecondaryCancerPcsp)
     * section ^short = "Chemo, Radio, SCT and other subsections"
     
-/* // removed for avoiding build failures
+// removed for avoiding build failures
     * insert SectionCodeSlicingRules ( 0..* )  	
 // --- relapseAfterEOT Sub Sections begin   
     * insert SubSectionStructure	 
-// --- relapseAfterEOT Sub Sections end  */
+// --- relapseAfterEOT Sub Sections end 
 	
   * section contains otherConditions 0..1
   * section[otherConditions]
