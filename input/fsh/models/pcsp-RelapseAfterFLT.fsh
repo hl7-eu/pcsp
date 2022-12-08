@@ -1,7 +1,7 @@
 // -------------------------------------------------------------------------------				
-//  Logical Model				pcsp-relAftFlt.fsh
+//  Logical Model				pcsp-RelapseAfterFLT.fsh
 // -------------------------------------------------------------------------------				
-Logical: RelapseAfterFLTPcsp				
+Logical: RelapseAfterFLT				
 Id: RelapseAfterFLT				
 Title: "Progression-Relapse after FLT"				
 Description:  """Progression-Relapse after FLT
@@ -41,7 +41,7 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 // -------------------------------------------------------------------------------				
 Mapping: RelAfterFLT2Fhir				
 Id: fhir				
-Title: "PCSP HL7 FHIR R4 Profiles"				
+Title: "RelapseAfterFLT model to PCSP HL7 FHIR R4 Profiles"				
 Source: RelapseAfterFLT				
 Target: "hl7.org/fhir/r4"				
 				

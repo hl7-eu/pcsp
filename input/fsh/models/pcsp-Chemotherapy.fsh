@@ -1,7 +1,7 @@
 // -------------------------------------------------------------------------------				
-//  Logical Model				pcsp-chemo.fsh
+//  Logical Model				pcsp-Chemotherapy.fsh
 // -------------------------------------------------------------------------------				
-Logical: ChemotherapyPcsp				
+Logical: Chemotherapy				
 Id: Chemotherapy				
 Title: "Chemotherapy"				
 Description:  """Chemotherapy 

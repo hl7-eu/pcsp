@@ -1,10 +1,11 @@
 // -------------------------------------------------------------------------------				
-//  Logical Model				pcsp-diagnosis.fsh
+//  Logical Model				pcsp-Diagnosis.fsh
 // -------------------------------------------------------------------------------				
-Logical: DiagnosisPcsp				
+Logical: Diagnosis				
 Id: Diagnosis				
 Title: "Diagnosis"				
-Description:  """Diagnosis"""				
+Description:  """Diagnosis
+Maturity Level: 2 - Ready for Review"""				
 * identifier 1..* Identifier "ID" """diagnosis identifier"""				
 * dateOfDiagnosis 0..* BackboneElement "Date of diagnosis" """Official date of diagnosis. Please report the date as documented in the clinical record. Differences across institutions may occur in defining this date (either the date of the final test (laboratory, imaging, surgery or pathology report) based on which therapeutic decision was taken. In other cases the date of the pathology report is used to define the date of diagnosis. The system will send an 'error' message if the date of diagnosis is more recent hat the date of start of treatment. If the date is unkown or partially missed insert the year at the best of your knowledge."""				
 * centerOfDiagnosis 0..* BackboneElement "Center of diagnosis" """Institution in which the diagnosis was made."""				
@@ -48,7 +49,7 @@ In case of leukemia the 'risk' (e.g. high, standard) could be reported. If the s
 // -------------------------------------------------------------------------------				
 Mapping: Diagnosis2Fhir				
 Id: fhir				
-Title: "PCSP HL7 FHIR R4 Profiles"				
+Title: "Diagnosis model to PCSP HL7 FHIR R4 Profiles"				
 Source: Diagnosis				
 Target: "hl7.org/fhir/r4"				
 				

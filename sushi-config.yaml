@@ -14,7 +14,7 @@ id: hl7.eu.fhir.pscp
 canonical: http://hl7.eu/fhir/ig/pcsp
 version: 0.1.0
 name: PCSPImplementationGuide
-title: PanCareSurPass FHIR Implementation Guide
+title: PanCareSurPass Project HL7 FHIR Implementation Guide
 status: draft
 publisher:
   - name: PanCareSurPass Project
@@ -36,6 +36,7 @@ parameters:
   show-inherited-invariants: false
 copyrightYear: 2021+
 releaseLabel: CI Build
+# releaseLabel: trial-use
 
 FSHOnly: false
 

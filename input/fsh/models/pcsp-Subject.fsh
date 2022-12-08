@@ -1,7 +1,7 @@
 // -------------------------------------------------------------------------------				
-//  Logical Model				pcsp-subject.fsh
+//  Logical Model				pcsp-Subject.fsh
 // -------------------------------------------------------------------------------				
-Logical: SubjectPcsp				
+Logical: Subject				
 Id: Subject				
 Title: "Subject of care"				
 Description:  """Subject of care
@@ -35,7 +35,7 @@ Maturity Level: 2 - Ready for Review"""
 // -------------------------------------------------------------------------------				
 Mapping: Subject2Fhir				
 Id: fhir				
-Title: "PCSP HL7 FHIR R4 Profiles"				
+Title: "Subject model to PCSP HL7 FHIR R4 Profiles"				
 Source: Subject				
 Target: "hl7.org/fhir/r4"				
 				
