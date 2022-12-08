@@ -17,7 +17,7 @@ Usage: #example
 	<p>They are meant to prevent and/or diagnose at an early stage possible future complications.</p>
 	<p>It is possible that over time these recommendations will be updated according to new clinical situations and/or new data in the scientific literature. We will make all possible efforts in order to update about any new update.</p>
 	<p>We encourage you to report to your doctor any persistent symptom you might have, in order to allow an early identification of its cause.</p>
-	<p>&nbsp;</p>
+	<!-- <p></br></p> -->
 	<p>
 		<strong>General recommendations</strong>
 	</p>
@@ -33,7 +33,7 @@ Usage: #example
 		<li>Report to your health care provider any experience of chronic pain, excessive fatigue and/or deterioration of performance in your daily activities (study, work and/or exercise).</li>
 		<li>Adhere to all cancer screening programs that will be offered by the health system.</li>
 	</ul>
-	<p>&nbsp;</p>
+	<!-- <p></br></p> -->
 	<table border=\"1\">
 		<tbody>
 			<tr>
@@ -60,17 +60,17 @@ Usage: #example
 				<td>Subsequent breast cancer</td>
 				<td>
 					<ul>
-						<li>RT &gt;= 10 Gy to a vol exposing the breasts</li>
+						<li>RT &#62;= 10 Gy to a vol exposing the breasts</li>
 					</ul>
 				</td>
-				<td>Mammography and breast MRI every year if &ge; 25 years of age or &ge; 8 years from radiation, whichever occurs last</td>
+				<td>Mammography and breast MRI every year if &#62; 25 years of age or &#62; 8 years from radiation, whichever occurs last</td>
 			</tr>
 			<tr>
 				<td>Cardiac problems (High risk)</td>
 				<td>
 					<ul>
-						<li>RT &gt;= 35 Gy to a vol exposing the heart</li>
-						<li>Anthracyclines (doxorubicin isotoxic equivalents)&gt;= 250 mg/m2</li>
+						<li>RT &#62;= 35 Gy to a vol exposing the heart</li>
+						<li>Anthracyclines (doxorubicin isotoxic equivalents)&#62;= 250 mg/m2</li>
 					</ul>
 				</td>
 				<td>A physical cardiac examination at every LTFU visit, at least every 5 years. Screening for modifiable cardiovascular risk factors (hypertension, diabetes, dyslipidaemia, obesity, smoking and low levels of physical activity). - ECG once at entry into LTFU. Repeat ECG once after the age of 18 years if entry into LTFU was at a younger age. - Echocardiogram with specific attention to left ventricular systolic function, to valvular structure and function and to the pericardium, starting 2 years after treatment and at least every 2-3 years; Echocardiogram with specific attention to left ventricular function, prior to pregnancy or in the first trimester, if female - Refer to a cardiologist if an abnormal ejection fraction or if other abnormalities are identified - Refer for interventions to help avert the risk of symptomatic cardiomyopathy if modifiable cardiovascular risk factors are identified Refer to a cardiologist if an abnormal ejection fraction or if other abnormalities are identified - Refer for interventions to help avert the risk of symptomatic cardiomyopathy if modifiable cardiovascular risk factors are identified</td>

@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Dec 8, 2022 03:56+0000 for FHIR v5.0.0-cibuild 
+  Generated on Thu, Dec 8, 2022 10:29+0000 for FHIR v5.0.0-cibuild 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="5.0.0-cibuild">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -22473,7 +22473,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="fullUrl" minOccurs="0" maxOccurs="1" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The Absolute URL for the resource.  The fullUrl SHALL NOT disagree with the id in the resource - i.e. if the fullUrl is not a urn:uuid, the URL shall be version-independent URL consistent with the Resource.id. The fullUrl is a version independent reference to the resource. Even when not required, fullUrl MAY be set to a urn:uuid to allow referencing entries in a transaction. The fullUrl can be an arbitrary URI and is not limited to urn:uuid, urn:oid, http, and https. The fullUrl element SHALL have a value except when: 
+              <xs:documentation xml:lang="en">The Absolute URL for the resource. Except for transactions and batches, each entry in a Bundle must have a fullUrl. The fullUrl SHALL NOT disagree with the id in the resource - i.e. if the fullUrl is not a urn:uuid, the URL shall be version-independent URL consistent with the Resource.id. The fullUrl is a version independent reference to the resource. Even when not required, fullUrl MAY be set to a urn:uuid to allow referencing entries in a transaction. The fullUrl can be an arbitrary URI and is not limited to urn:uuid, urn:oid, http, and https. The fullUrl element SHALL have a value except when: 
 * invoking a create
 * invoking or responding to an operation where the body is not a single identified resource
 * invoking or returning the results of a search or history operation.</xs:documentation>
@@ -40708,19 +40708,50 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Explanation of why this graph definition is needed and why it has been designed as it has.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="start" minOccurs="1" maxOccurs="1" type="ResourceType">
+          <xs:element name="start" minOccurs="0" maxOccurs="1" type="id">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The type of FHIR resource at which instances of this graph start.</xs:documentation>
+              <xs:documentation xml:lang="en">The Node at which instances of this graph start. If there is no nominated start, the graph can start at any of the nodes.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="profile" minOccurs="0" maxOccurs="1" type="canonical">
+          <xs:element name="node" type="GraphDefinition.Node" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The profile that describes the use of the base resource.</xs:documentation>
+              <xs:documentation xml:lang="en">Potential target for the link.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="link" type="GraphDefinition.Link" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Links this graph makes rules about.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="GraphDefinition.Node">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A formal computable definition of a graph of resources - that is, a coherent set of resources that form a graph by following references. The Graph Definition resource defines a set and makes rules about the set.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="nodeId" minOccurs="1" maxOccurs="1" type="id">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Internal ID of node - target for link references.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Information about why this node is of interest in this graph definition.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="AllResourceTypes">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Type of resource this link refers to.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="profile" minOccurs="0" maxOccurs="1" type="canonical">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Profile for the target resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -40734,14 +40765,9 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="path" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A FHIRPath expression that identifies one of FHIR References to other resources.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="sliceName" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Which slice (if profiled).</xs:documentation>
+              <xs:documentation xml:lang="en">Information about why this link is of interest in this graph definition.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="min" minOccurs="0" maxOccurs="1" type="integer">
@@ -40754,30 +40780,24 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Maximum occurrences for this link.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="sourceId" minOccurs="1" maxOccurs="1" type="id">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Information about why this link is of interest in this graph definition.</xs:documentation>
+              <xs:documentation xml:lang="en">The source node for this link.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="target" type="GraphDefinition.Target" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="path" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Potential target for the link.</xs:documentation>
+              <xs:documentation xml:lang="en">A FHIRPath expression that identifies one of FHIR References to other resources.</xs:documentation>
            </xs:annotation>
           </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="GraphDefinition.Target">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">A formal computable definition of a graph of resources - that is, a coherent set of resources that form a graph by following references. The Graph Definition resource defines a set and makes rules about the set.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="AllResourceTypes">
+          <xs:element name="sliceName" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Type of resource this link refers to.</xs:documentation>
+              <xs:documentation xml:lang="en">Which slice (if profiled).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="targetId" minOccurs="1" maxOccurs="1" type="id">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The target node for this link.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="params" minOccurs="0" maxOccurs="1" type="string">
@@ -40785,19 +40805,9 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">A set of parameters to look up.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="profile" minOccurs="0" maxOccurs="1" type="canonical">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Profile for the target resource.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="compartment" type="GraphDefinition.Compartment" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Compartment Consistency Rules.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="link" type="GraphDefinition.Link" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Additional links from target resource.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -40816,14 +40826,14 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
               <xs:documentation xml:lang="en">Defines how the compartment rule is used - whether it it is used to test whether resources are subject to the rule, or whether it is a rule that must be followed.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CompartmentType">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Identifies the compartment.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
           <xs:element name="rule" minOccurs="1" maxOccurs="1" type="GraphCompartmentRule">
             <xs:annotation>
               <xs:documentation xml:lang="en">identical | matching | different | no-rule | custom.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CompartmentType">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Identifies the compartment.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="expression" minOccurs="0" maxOccurs="1" type="string">
@@ -40842,14 +40852,14 @@ RegisteredName | UserFriendlyName | PatientReportedName.</xs:documentation>
   </xs:complexType>
   <xs:simpleType name="GraphCompartmentUseEnum">
     <xs:restriction base="code-primitive">
-      <xs:enumeration value="condition">
+      <xs:enumeration value="where">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Condition</xs:documentation>
+          <xs:documentation xml:lang="en">Where</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="requirement">
+      <xs:enumeration value="requires">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Requirement</xs:documentation>
+          <xs:documentation xml:lang="en">requires</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -55842,7 +55852,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="definition" minOccurs="0" maxOccurs="1" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">This element is a URI that refers to an [ElementDefinition](elementdefinition.html) that provides information about this item, including information that might otherwise be included in the instance of the Questionnaire resource. A detailed description of the construction of the URI is shown in [Comments](questionnaire.html#definition), below.</xs:documentation>
+              <xs:documentation xml:lang="en">This element is a URI that refers to an [ElementDefinition](elementdefinition.html) or to an [ObservationDefinition](observationdefinition.html) that provides information about this item, including information that might otherwise be included in the instance of the Questionnaire resource. A detailed description of the construction of the URI is shown in [Comments](questionnaire.html#definition), below.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="code" minOccurs="0" maxOccurs="unbounded" type="Coding">
@@ -59443,7 +59453,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="type" minOccurs="1" maxOccurs="1" type="uri">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The type this structure describes. If the derivation kind is 'specialization' then this is the master definition for a type, and there is always one of these (a data type, an extension, a resource, including abstract ones). Otherwise the structure definition is a constraint on the stated type (and in this case, the type cannot be an abstract type).  References are URLs that are relative to http://hl7.org/fhir/StructureDefinition e.g. &quot;string&quot; is a reference to http://hl7.org/fhir/StructureDefinition/string. Absolute URLs are only allowed in logical models.</xs:documentation>
+              <xs:documentation xml:lang="en">The type this structure describes. If the derivation kind is 'specialization' then this is the master definition for a type, and there is always one of these (a data type, an extension, a resource, including abstract ones). Otherwise the structure definition is a constraint on the stated type (and in this case, the type cannot be an abstract type).  References are URLs that are relative to http://hl7.org/fhir/StructureDefinition e.g. &quot;string&quot; is a reference to http://hl7.org/fhir/StructureDefinition/string. Absolute URLs are only allowed in logical models, where they are required.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="baseDefinition" minOccurs="0" maxOccurs="1" type="canonical">
@@ -64268,6 +64278,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">The type of origin profile the test system supports.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="url" minOccurs="0" maxOccurs="1" type="url">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The explicit url path of the origin server used in this test script.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -64287,6 +64302,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           <xs:element name="profile" minOccurs="1" maxOccurs="1" type="Coding">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of destination profile the test system supports.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="url" minOccurs="0" maxOccurs="1" type="url">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The explicit url path of the destination server used in this test script.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
