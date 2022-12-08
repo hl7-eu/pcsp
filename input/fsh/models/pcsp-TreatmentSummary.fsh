@@ -43,7 +43,7 @@ Title: "TreatmentSummary model to PCSP HL7 FHIR R4 Profiles"
 Source: TreatmentSummary				
 Target: "hl7.org/fhir/r4"				
 				
-* . -> ""				
+// no map				
 * subject -> "Patient"				
 * diagnosis -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp')"				
 * diagnosis.details -> "(add reference)"				

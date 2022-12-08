@@ -23,15 +23,6 @@ Please note that 'progressions' may occurr since in some cases (e.g. stage 3 uno
 //--- END				
 //--- END				
 //--- END				
-//--- END				
-//--- END				
-				
-				
-				
-				
-				
-				
-				
 				
 				
 				
@@ -52,8 +43,6 @@ Target: "hl7.org/fhir/r4"
 * relapseOrProgression -> ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCodeableConcept OR Condition.where( clinicalStatus = #relapse or clinicalStatus = #recurrence).clinicalStatus"				
 * type -> ".extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-relapseType').valueCodeableConcept"				
 * site -> ".bodySite"				
-*  -> ""				
-// --END				
 // --END				
 // --END				
 // --END				
