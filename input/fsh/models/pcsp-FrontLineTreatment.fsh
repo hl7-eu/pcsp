@@ -53,7 +53,7 @@ Target: "hl7.org/fhir/r4"
 * isStemCellTransplantation -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp').exists()"				
 * isRadiotherapy -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp').exists()"				
 * isMajorSurgery -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').exists()"				
-* notForRelapse -> ""				
+// no map				
 * notForRelapse.completeRemission -> "outcome"				
 * notForRelapse.completeRemission.status -> "outcome.coding"				
 * notForRelapse.completeRemission.description -> "outcome.text"				

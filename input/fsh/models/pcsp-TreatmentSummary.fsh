@@ -54,20 +54,20 @@ Target: "hl7.org/fhir/r4"
 * diagnosis.majorSurgery -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp')"				
 * diagnosis.otherInfos -> "Procedure"				
 * diagnosis.otherInfos -> "Condition"				
-* diagnosis.medicalSuggestion -> ""				
+// tbd				
 * diagnosis.relapseDuringFLT -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp').where( (extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCode = #replaspe or #recurrence) and  ( onsetDateTime < Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp').performedPeriod.end) )"				
-* diagnosis.relapseAfterEOT -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp').where( (extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCode = #replaspe or #recurrence) and  ( onsetDateTime >= Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp').performedPeriod.end) )"				
-* diagnosis.relapseAfterEOT.details -> ""				
+// no map				
+* diagnosis.relapseAfterEOT.details -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp').where( (extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCode = #replaspe or #recurrence) and  ( onsetDateTime >= Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp').performedPeriod.end) )"				
 * diagnosis.relapseAfterEOT.frontLineTreatment -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp')"				
-* diagnosis.relapseAfterEOT.frontLineTreatment.notForRelapse -> ""				
+// no map				
 * diagnosis.relapseAfterEOT.chemotherapy -> "MedicationAdministration.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp')"				
 * diagnosis.relapseAfterEOT.stemCellTransplantation -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp')"				
 * diagnosis.relapseAfterEOT.radiotherapy -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp')"				
 * diagnosis.relapseAfterEOT.majorSurgery -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp')"				
 * diagnosis.relapseAfterEOT.otherInfos -> "Procedure"				
 * diagnosis.relapseAfterEOT.otherInfos -> "Condition"				
-* diagnosis.relapseAfterEOT.medicalSuggestion -> ""				
-* diagnosis.otherConditions -> ""				
+// tbd				
+// tbd				
 // --END				
 // --END				
 // --END				

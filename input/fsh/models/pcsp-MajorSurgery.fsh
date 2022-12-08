@@ -90,7 +90,7 @@ Target: "hl7.org/fhir/r4"
 * istitutionOfTreatment.description -> "Location.description"				
 * istitutionOfTreatment.name -> "Location.name"				
 * istitutionOfTreatment.address -> "Location.address.city"				
-* istitutionOfTreatment.address.name -> ""				
+// no map				
 * istitutionOfTreatment.address.country -> "Location.address.country"				
 * date -> "Procedure.performedDateTime"				
 * description -> ".text"				
