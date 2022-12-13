@@ -1,9 +1,9 @@
 {
-  "name": "hl7.eu.fhir.pscp.template",
+  "name": "hl7.eu.fhir.pcsp.template",
   "version": "0.0.1",
   "type": "fhir.template",
   "license": "CC0-1.0",
-  "description": "PSCP FHIR Template",
+  "description": "PCSP FHIR Template",
   "author": "PanCareSurPass",
 	"base": "fhir.base.template",
 	"dependencies": {
