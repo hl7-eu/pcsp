@@ -52,13 +52,20 @@ Target: "hl7.org/fhir/r4"
 * isChemotherapy -> "MedicationAdministration.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp').exists()"				
 * isStemCellTransplantation -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp').exists()"				
 * isRadiotherapy -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp').exists()"				
-* isMajorSurgery -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').exists()"				
+* isMajorSurgery -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').exists().not() [No Case, implicit]"				
+* isMajorSurgery -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp')..where(code = 'no-known-procedures').exists() [No Case, explicit]"				
+* isMajorSurgery -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').where(code != 'no-known-procedures' or code != 'no-procedure-info').exists() [Yes Case]"				
+* isMajorSurgery -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-surgery-eu-pcsp').where(code = 'no-procedure-info').exists() [Unk case]"				
 // no map				
 * notForRelapse.completeRemission -> "outcome"				
 * notForRelapse.completeRemission.status -> "outcome.coding"				
 * notForRelapse.completeRemission.description -> "outcome.text"				
 * notForRelapse.isProgressionRelapseDuringFLT -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp').where( (extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCode = #replaspe or #recurrence) and  ( onsetDateTime < Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp').performedPeriod.end) ).exists()"				
 * notForRelapse.isProgressionRelapseAfterFLT -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp').where( (extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCode = #replaspe or #recurrence) and  ( onsetDateTime >= Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp').performedPeriod.end) ).exists()"				
+// --END				
+// --END				
+// --END				
+// --END				
 // --END				
 // --END				
 // --END				

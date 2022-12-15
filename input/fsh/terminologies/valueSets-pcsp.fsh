@@ -328,7 +328,6 @@ ValueSet: SurgicalProcedureTypeVs
 Id: vs-surgicalProcedureType-eu-pcsp
 Title: "Surgical Procedure Type"
 Description: "Types of surgical procedure this resource is referring to"
-
 //-------------------------------------------------------------------------------------------
 * ^experimental = false
 * codes from valueset ShuntProcedureTypeVs
@@ -336,7 +335,7 @@ Description: "Types of surgical procedure this resource is referring to"
 * codes from valueset ColostomyProcedureTypeVs
 * codes from valueset GastrostomyProcedureTypeVs
 * codes from valueset ProstheticProcedureTypeVs
-* $data-absent-reason#unknown "Unknown"
+* codes from valueset $absent-or-unknown-procedures-uv-ips
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
