@@ -1,0 +1,1 @@
+{"resourceType":"Procedure","id":"9015","meta":{"versionId":"1","lastUpdated":"2022-12-14T11:24:15.063+01:00","source":"#qrsxCp752s0YoMf1"},"subject":{"reference":"Patient/9004"},"reasonReference":[{"reference":"Condition/9005"},{"display":"1. Busulfanas IV 17,6 mg/kg. 2. Ciklofosfamidas IV 120 mg/kg. 3. Melfalanas IV 140 mg/m2"}]}

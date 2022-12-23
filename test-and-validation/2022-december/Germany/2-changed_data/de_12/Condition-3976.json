@@ -1,0 +1,1 @@
+{"resourceType":"Condition","id":"3976","meta":{"versionId":"1","lastUpdated":"2022-12-19T14:38:18.524+01:00","source":"#ylmbAGJy5Lv02tX5"},"code":{"coding":[{"system":"http://snomed.info/sct","code":"234646005"}]},"subject":{"reference":"Patient/3967"}}

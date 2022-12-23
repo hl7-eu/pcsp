@@ -1,0 +1,1 @@
+{"resourceType":"Observation","id":"6125","meta":{"versionId":"1","lastUpdated":"2022-12-20T16:19:41.885+01:00","source":"#hH1fcKMzGXMwyh8F"},"subject":{"reference":"Patient/2993"},"valueQuantity":{"value":2451,"code":"mg/m2"},"method":{"coding":[{"system":"http://snomed.info/sct","code":"702873001"}]}}

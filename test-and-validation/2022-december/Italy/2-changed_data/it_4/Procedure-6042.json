@@ -1,0 +1,1 @@
+{"resourceType":"Procedure","id":"6042","meta":{"versionId":"2","lastUpdated":"2022-12-20T15:56:28.404+01:00","source":"#hbj4huHNliB7f5OQ"},"category":{"coding":[{"system":"http://snomed.info/sct","code":"416608005"}]},"subject":{"reference":"Patient/2973"},"performedPeriod":{"end":"2019-04-03"},"reasonReference":[{"reference":"Condition/2976"},{"reference":"Procedure/6041"}]}

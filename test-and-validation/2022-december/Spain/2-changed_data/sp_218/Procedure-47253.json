@@ -1,0 +1,1 @@
+{"resourceType":"Procedure","id":"47253","meta":{"versionId":"2","lastUpdated":"2022-12-19T18:40:48.992+01:00","source":"#akk0hWFPDmyDF2FV"},"subject":{"reference":"Patient/47047"},"reasonReference":[{"reference":"Condition/47048"},{"reference":"Procedure/47252"}]}
