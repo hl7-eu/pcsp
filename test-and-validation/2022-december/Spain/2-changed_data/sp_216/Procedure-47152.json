@@ -1,0 +1,1 @@
+{"resourceType":"Procedure","id":"47152","meta":{"versionId":"2","lastUpdated":"2022-12-19T17:18:26.483+01:00","source":"#SV6BouaGaykIxaev"},"subject":{"reference":"Patient/47009"},"reasonReference":[{"reference":"Condition/47010"},{"reference":"Procedure/47151"}]}

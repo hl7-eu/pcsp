@@ -1,0 +1,1 @@
+{"resourceType":"Observation","id":"8972","meta":{"versionId":"1","lastUpdated":"2022-12-14T11:23:39.642+01:00","source":"#i9RJ7HEf05rVOkKi"},"subject":{"reference":"Patient/8958"},"valueQuantity":{"value":8000},"method":{"coding":[{"system":"http://snomed.info/sct","code":"702873001","display":"Calculation technique"}]}}

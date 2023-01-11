@@ -1,0 +1,1 @@
+{"resourceType":"MedicationStatement","id":"6127","meta":{"versionId":"1","lastUpdated":"2022-12-20T16:19:43.044+01:00","source":"#xurBJIMZ5Jnr6hZt"},"subject":{"reference":"Patient/2993"},"reasonReference":[{"reference":"Condition/2994"}]}

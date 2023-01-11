@@ -1,0 +1,1221 @@
+{
+    "resourceType": "CarePlan",
+    "id": "26066",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2022-12-20T09:12:23.655+01:00",
+        "source": "#RVEysrYDdTWuVHm3"
+    },
+    "status": "draft",
+    "subject": {
+        "reference": "Patient/26025"
+    },
+    "created": "2022-12-20",
+    "activity": [
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "1"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "2"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "2"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26067"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "3"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "4"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "4"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26068"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "5"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "5"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "6"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "6"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "7"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "7"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "8"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "8"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26069"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "9"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "9"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26070"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "10"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "10"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26071"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "11"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "11"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "12"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "12"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26072"
+                    },
+                    {
+                        "reference": "Observation/26073"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "13"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "13"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "14"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "14"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26074"
+                    },
+                    {
+                        "reference": "Observation/26075"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "15"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "15"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "16"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "16"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "17"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "17"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "18"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "18"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "19"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "19"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "20"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "20"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "21"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "21"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "22"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "22"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26076"
+                    },
+                    {
+                        "reference": "Observation/26077"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "23"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "23"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "24"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "24"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "25"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "25"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "26"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "26"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26078"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "27"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "27"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26079"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "28"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "28"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "29"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "29"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26080"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "30"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "30"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26081"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "31"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "31"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "32"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "32"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "33"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "33"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26082"
+                    },
+                    {
+                        "reference": "Observation/26083"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "34"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "34"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26084"
+                    },
+                    {
+                        "reference": "Observation/26085"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "35"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "35"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26086"
+                    },
+                    {
+                        "reference": "Observation/26087"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "36"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "36"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26088"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "37"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "37"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "38"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "38"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26089"
+                    },
+                    {
+                        "reference": "Observation/26090"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "39"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "39"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26091"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "40"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "40"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "41"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "41"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26092"
+                    },
+                    {
+                        "reference": "Observation/26093"
+                    },
+                    {
+                        "reference": "Observation/26094"
+                    },
+                    {
+                        "reference": "Observation/26095"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "42"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "42"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26096"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "43"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "43"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26097"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "44"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "44"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "45"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "45"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "46"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "46"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26098"
+                    }
+                ],
+                "status": "not-started"
+            }
+        },
+        {
+            "detail": {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp",
+                            "code": "47"
+                        }
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp",
+                                "code": "47"
+                            }
+                        ]
+                    }
+                ],
+                "reasonReference": [
+                    {
+                        "reference": "Observation/26099"
+                    },
+                    {
+                        "reference": "Observation/26100"
+                    }
+                ],
+                "status": "not-started"
+            }
+        }
+    ]
+}

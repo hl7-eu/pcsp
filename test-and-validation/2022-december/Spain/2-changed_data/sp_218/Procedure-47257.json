@@ -1,0 +1,1 @@
+{"resourceType":"Procedure","id":"47257","meta":{"versionId":"1","lastUpdated":"2022-12-19T18:45:27.573+01:00","source":"#EHpWaRTU74ODnr2Q"},"code":{"coding":[{"system":"http://snomed.info/sct","code":"5447007"}]},"subject":{"reference":"Patient/47047"},"performedDateTime":"2012-02-29","reasonReference":[{"reference":"Condition/47048"}]}

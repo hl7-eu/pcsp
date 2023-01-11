@@ -1,0 +1,1 @@
+{"resourceType":"Procedure","id":"47323","meta":{"versionId":"1","lastUpdated":"2022-12-19T19:20:10.502+01:00","source":"#zClJE94G149q9NAu"},"code":{"coding":[{"system":"http://snomed.info/sct","code":"392230005"}]},"subject":{"reference":"Patient/47076"},"reasonReference":[{"reference":"Condition/47077"}]}

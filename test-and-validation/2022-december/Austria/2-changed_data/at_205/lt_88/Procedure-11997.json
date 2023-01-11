@@ -1,0 +1,1 @@
+{"resourceType":"Procedure","id":"11997","meta":{"versionId":"1","lastUpdated":"2022-12-16T15:00:52.332+01:00","source":"#i4HNFRsOndECwmpE"},"subject":{"reference":"Patient/11971"},"reasonReference":[{"reference":"Condition/11972"},{"display":"Carmustine 300 mg/m2, Etopozide 800 mg/m2, Cytarabine 1600 mg/m2, Melfalane 140 mg/m2"}]}
