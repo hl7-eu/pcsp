@@ -29,7 +29,7 @@ RuleSet: CancerConditionCommonRules
 * bodySite.extension[lateralityQualifier].valueCodeableConcept from LeftRightBiUnilateralVS  (preferred) // add mcode valueset as alternative VS
 
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[0].url = "purpose"
-* bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[=].valueCode = #conformance
+* bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[=].valueCode = #candidate
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[+].url = "valueSet"
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[=].valueCanonical = $mcode-laterality-qualifier-vs
 * bodySite.extension[lateralityQualifier].valueCodeableConcept ^binding.extension.extension[+].url = "documentation"

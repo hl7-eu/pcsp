@@ -35,8 +35,8 @@ dependencies:
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2021+
-releaseLabel: CI Build
-# releaseLabel: trial-use
+# releaseLabel: CI Build
+releaseLabel: trial-use
 
 FSHOnly: false
 
@@ -60,7 +60,7 @@ pages:
     title: Extensions
   examples.md:
     title: Examples
-  downloads.html:
+  downloads.md:
     title: Useful Downloads
   changes.html:
     title: IG Change History
