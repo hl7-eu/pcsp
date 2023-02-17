@@ -227,3 +227,115 @@ v: {
   "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"95103\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#95103) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C692"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"C692\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C692) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"91813\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#91813) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C401"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"C401\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C401) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C41.2"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"C41.2\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C41.2) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8260/3"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C73.9"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "severity" : "error",
+  "error" : "The code \"C73.9\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C73.9) is not valid (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp", "version": "0.2.0"}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "id" : "vs-icdo3-topography-eu-pcsp",
+  "language" : "en",
+  "url" : "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp",
+  "version" : "0.2.0",
+  "name" : "ICDO3TopographyVs",
+  "title" : "ICD-O-3 Topography",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-07T18:03:51+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "expansion" : {
+    "identifier" : "urn:uuid:4dc0902e-afbe-4985-87b5-ebfcb81e8740",
+    "timestamp" : "2023-02-07T17:21:55.983Z",
+    "parameter" : [{
+      "name" : "expansion-source",
+      "valueUri" : "ValueSet/vs-icdo3-topography-eu-pcsp"
+    },
+    {
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "fragment",
+      "valueUri" : "http://terminology.hl7.org/CodeSystem/icd-o-3|2000"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://terminology.hl7.org/CodeSystem/icd-o-3|2000"
+    }],
+    "contains" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "code" : "8500/3",
+      "display" : "Infiltrating duct carcinoma, NOS"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

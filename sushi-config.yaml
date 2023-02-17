@@ -12,7 +12,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.eu.fhir.pcsp
 canonical: http://hl7.eu/fhir/ig/pcsp
-version: 0.1.0
+version: 0.2.0
 name: PCSPImplementationGuide
 title: PanCareSurPass Project HL7 FHIR Implementation Guide
 status: draft
@@ -35,8 +35,8 @@ dependencies:
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2021+
-# releaseLabel: CI Build
-releaseLabel: trial-use
+releaseLabel: CI Build
+# releaseLabel: trial-use
 
 FSHOnly: false
 
@@ -85,3 +85,53 @@ menu:
     Report an issue: new-tab https://github.com/hl7-eu/pcsp/issues
     Downloads: downloads.html
 	
+
+  # The resources property corresponds to IG.definition.resource.
+# SUSHI can auto-generate all of the resource entries based on
+# the FSH definitions and/or information in any user-provided
+# JSON or XML resource files. If the generated entries are not
+# sufficient or complete, however, the author can add entries
+# here. If the reference matches a generated entry, it will
+# replace the generated entry. If it doesn't match any generated
+# entries, it will be added to the generated entries. The format
+# follows IG.definition.resource with the following differences:
+#   * use IG.definition.resource.reference.reference as the YAML key.
+#   * if the key is an id or name, SUSHI will replace it with the
+#     correct URL when generating the IG JSON.
+#   * specify "omit" to omit a FSH-generated resource from the
+#     resource list.
+#   * if the exampleCanonical is an id or name, SUSHI will replace
+#     it with the correct canonical when generating the IG JSON.
+#   * groupingId can be used, but top-level groups syntax may be a
+#     better option (see below).
+# The following are simple examples to demonstrate what this might
+# look like:
+#
+#     description: An example Patient
+#     exampleBoolean: true
+#   Patient/bad-example: omit
+#
+#
+# Groups can control certain aspects of the IG generation.  The IG
+# documentation recommends that authors use the default groups that
+# are provided by the templating framework, but if authors want to
+# use their own instead, they can use the mechanism below.  This will
+# create IG.definition.grouping entries and associate the individual
+# resource entries with the corresponding groupIds. If a resource
+# is specified by id or name, SUSHI will replace it with the correct
+# URL when generating the IG JSON.
+#
+groups:
+  SurPassLogicalModel:
+    name: SurPass Logical model
+    description: Logical data models as HL7 FHIR resources
+    resources:
+    - StructureDefinition/SurPass
+
+  SurPassProfile:
+    name: SurPass Bundle profile
+    description: HL7 FHIR profile for the SurPass document bundle
+    resources:
+    - StructureDefinition/Bundle-eu-pcsp
+
+  

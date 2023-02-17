@@ -8676,3 +8676,87 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01AA01"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Cyclophosphamide",
+  "code" : "L01AA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01AA01",
+  "display" : "cyclophosphamide"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "cyclophosphamide",
+  "code" : "L01AA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC01"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Cytarabine",
+  "code" : "L01BC01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BC01",
+  "display" : "cytarabine"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "cytarabine",
+  "code" : "L01BC01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BA01"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Methotrexate",
+  "code" : "L01BA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01BA01",
+  "display" : "methotrexate"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "methotrexate",
+  "code" : "L01BA01",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01CA02"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
+v: {
+  "display" : "Vincristine",
+  "code" : "L01CA02",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L01CA02",
+  "display" : "vincristine"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/drugsAtc-eu-pcsp", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "versionFlexible":"true"}####
+v: {
+  "display" : "vincristine",
+  "code" : "L01CA02",
+  "system" : "http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------

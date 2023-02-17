@@ -27,3 +27,8 @@ v: {
   "class" : "SERVER_ERROR"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-iccc3-eu-pcsp", "version": "0.2.0"}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/iccc-3"
+}
+-------------------------------------------------------------------------------------
