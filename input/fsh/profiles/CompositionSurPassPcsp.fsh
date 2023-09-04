@@ -95,7 +95,8 @@ RuleSet: SubSectionStructure
 * section contains  otherInfos	0..1    
 * section[otherInfos]
   * insert SectionCommon
-  * code = CsGenericPcsp#section-otherInfos
+  // * code = CsGenericPcsp#section-otherInfos
+  * code = $loinc#55752-0 // "Clinical information"
   * ^short = "Other Medical Information"
   * entry 0..
   * entry only Reference(	 Condition or Procedure or DocumentReference )

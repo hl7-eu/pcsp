@@ -7,7 +7,11 @@
 v: {
   "display" : "Europe",
   "code" : "150",
-  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm"
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -16,7 +20,11 @@ v: {
 v: {
   "display" : "mg/m2",
   "code" : "mg/m2",
-  "system" : "http://unitsofmeasure.org"
+  "system" : "http://unitsofmeasure.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -25,7 +33,11 @@ v: {
 v: {
   "display" : "Spanish (Spain)",
   "code" : "es-ES",
-  "system" : "urn:ietf:bcp:47"
+  "system" : "urn:ietf:bcp:47",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -34,7 +46,11 @@ v: {
 v: {
   "display" : "application/pdf",
   "code" : "application/pdf",
-  "system" : "urn:ietf:bcp:13"
+  "system" : "urn:ietf:bcp:13",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -43,7 +59,11 @@ v: {
 v: {
   "display" : "Spanish (Spain)",
   "code" : "es-ES",
-  "system" : "urn:ietf:bcp:47"
+  "system" : "urn:ietf:bcp:47",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -68,7 +88,11 @@ v: {
   "code" : "112144000",
   "system" : "http://snomed.info/sct",
   "severity" : "warning",
-  "error" : "The display \"Group A\" is not a valid display for the code {http://snomed.info/sct}112144000 - should be one of ['Blood group A', 'Group A - blood', 'Blood group A (finding)'] (from http://tx.fhir.org/r4)"
+  "error" : "The display \"Group A\" is not a valid display for the code {http://snomed.info/sct}112144000 - should be one of ['Blood group A', 'Group A - blood', 'Blood group A (finding)'] (from http://tx.fhir.org/r4)",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -91,7 +115,11 @@ v: {
 v: {
   "display" : "Positive",
   "code" : "10828004",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -102,7 +130,11 @@ v: {
 v: {
   "display" : "Total boost radiation dose delivered (observable entity)",
   "code" : "445565002",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -125,7 +157,11 @@ v: {
 v: {
   "display" : "Blood group A",
   "code" : "112144000",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -136,7 +172,11 @@ v: {
 v: {
   "display" : "Europe",
   "code" : "150",
-  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm"
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -147,7 +187,11 @@ v: {
 v: {
   "display" : "Calculation technique (qualifier value)",
   "code" : "702873001",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -158,7 +202,11 @@ v: {
 v: {
   "display" : "Radionuclide therapy",
   "code" : "399315003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp", "version": "0.1.0"}####
@@ -169,7 +217,7 @@ e: {
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p>This value set contains 16 concepts</p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 version 2000</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>http://terminology.hl7.org/CodeSystem/icd-o-3 version 2000</li><li><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html\">DataAbsentReason v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-icd-o-3-8500-3\"> </a>  8500/3</td><td>http://terminology.hl7.org/CodeSystem/icd-o-3</td><td>Infiltrating duct carcinoma, NOS</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-unknown\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-unknown\">unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Unknown</td><td><div><p>The value is expected to exist but is not known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-unknown\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-unknown\">asked-unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Asked But Unknown</td><td><div><p>The source was asked but does not know the value.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-temp-unknown\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-temp-unknown\">temp-unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Temporarily Unknown</td><td><div><p>There is reason to expect (from the workflow) that the value may become known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-asked\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-asked\">not-asked</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Asked</td><td><div><p>The workflow didn't lead to this value being known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-declined\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-declined\">asked-declined</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Asked But Declined</td><td><div><p>The source was asked but declined to answer.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-masked\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-masked\">masked</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Masked</td><td><div><p>The information is not available due to security, privacy or related reasons.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-applicable\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-applicable\">not-applicable</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Applicable</td><td><div><p>There is no proper value for this element (e.g. last menstrual period for a male).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-unsupported\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-unsupported\">unsupported</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Unsupported</td><td><div><p>The source system wasn't capable of supporting this element.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-as-text\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-as-text\">as-text</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>As Text</td><td><div><p>The content of the data is represented in the resource narrative.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-error\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-error\">error</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Error</td><td><div><p>Some system or workflow process error means that the information is not available.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-a-number\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-a-number\">not-a-number</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not a Number (NaN)</td><td><div><p>The numeric value is undefined or unrepresentable due to a floating point processing error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-negative-infinity\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-negative-infinity\">negative-infinity</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Negative Infinity (NINF)</td><td><div><p>The numeric value is excessively low and unrepresentable due to a floating point processing        error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-positive-infinity\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-positive-infinity\">positive-infinity</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Positive Infinity (PINF)</td><td><div><p>The numeric value is excessively high and unrepresentable due to a floating point processing        error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-performed\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-performed\">not-performed</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Performed</td><td><div><p>The value is not available because the observation procedure (test, etc.) was not performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-permitted\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-permitted\">not-permitted</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Permitted</td><td><div><p>The value is not permitted in this context (e.g. due to profiles, or the base data types).</p>\n</div></td></tr></table></div>"
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p>This value set contains 16 concepts</p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 version 2000</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>http://terminology.hl7.org/CodeSystem/icd-o-3 version 2000</li><li><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html\">DataAbsentReason v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-icd-o-3-8500-3\"> </a>\u00a0\u00a08500/3</td><td>http://terminology.hl7.org/CodeSystem/icd-o-3</td><td>Infiltrating duct carcinoma, NOS</td><td><div/></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-unknown\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-unknown\">unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Unknown</td><td><div><p>The value is expected to exist but is not known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-unknown\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-unknown\">asked-unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Asked But Unknown</td><td><div><p>The source was asked but does not know the value.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-temp-unknown\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-temp-unknown\">temp-unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Temporarily Unknown</td><td><div><p>There is reason to expect (from the workflow) that the value may become known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-asked\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-asked\">not-asked</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Asked</td><td><div><p>The workflow didn't lead to this value being known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-declined\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-declined\">asked-declined</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Asked But Declined</td><td><div><p>The source was asked but declined to answer.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-masked\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-masked\">masked</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Masked</td><td><div><p>The information is not available due to security, privacy or related reasons.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-applicable\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-applicable\">not-applicable</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Applicable</td><td><div><p>There is no proper value for this element (e.g. last menstrual period for a male).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-unsupported\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-unsupported\">unsupported</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Unsupported</td><td><div><p>The source system wasn't capable of supporting this element.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-as-text\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-as-text\">as-text</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>As Text</td><td><div><p>The content of the data is represented in the resource narrative.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-error\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-error\">error</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Error</td><td><div><p>Some system or workflow process error means that the information is not available.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-a-number\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-a-number\">not-a-number</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not a Number (NaN)</td><td><div><p>The numeric value is undefined or unrepresentable due to a floating point processing error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-negative-infinity\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-negative-infinity\">negative-infinity</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Negative Infinity (NINF)</td><td><div><p>The numeric value is excessively low and unrepresentable due to a floating point processing        error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-positive-infinity\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-positive-infinity\">positive-infinity</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Positive Infinity (PINF)</td><td><div><p>The numeric value is excessively high and unrepresentable due to a floating point processing        error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-performed\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-performed\">not-performed</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Performed</td><td><div><p>The value is not available because the observation procedure (test, etc.) was not performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-permitted\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-permitted\">not-permitted</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Permitted</td><td><div><p>The value is not permitted in this context (e.g. due to profiles, or the base data types).</p>\n</div></td></tr></table></div>"
   },
   "url" : "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp",
   "version" : "0.1.0",
@@ -364,7 +412,11 @@ e: {
 v: {
   "display" : "mg/m2",
   "code" : "mg/m2",
-  "system" : "http://unitsofmeasure.org"
+  "system" : "http://unitsofmeasure.org",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -375,7 +427,11 @@ v: {
 v: {
   "display" : "Calculation technique (qualifier value)",
   "code" : "702873001",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -386,7 +442,11 @@ v: {
 v: {
   "severity" : "error",
   "error" : "Local Error: Resolved system http://snomed.info/sct, but the definition is not complete. Server Error: Error performing tx5 operation 'validate-code: timeout' (parameters = \"\")",
-  "class" : "SERVER_ERROR"
+  "class" : "SERVER_ERROR",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -397,7 +457,11 @@ v: {
 v: {
   "display" : "Radionuclide therapy",
   "code" : "399315003",
-  "system" : "http://snomed.info/sct"
+  "system" : "http://snomed.info/sct",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------
 {"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp", "version": "0.2.0"}####
@@ -408,7 +472,7 @@ e: {
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\"><p>This value set contains 16 concepts</p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 version 2000</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>http://terminology.hl7.org/CodeSystem/icd-o-3 version 2000</li><li><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html\">DataAbsentReason v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-icd-o-3-8500-3\"> </a>  8500/3</td><td>http://terminology.hl7.org/CodeSystem/icd-o-3</td><td>Infiltrating duct carcinoma, NOS</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-unknown\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-unknown\">unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Unknown</td><td><div><p>The value is expected to exist but is not known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-unknown\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-unknown\">asked-unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Asked But Unknown</td><td><div><p>The source was asked but does not know the value.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-temp-unknown\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-temp-unknown\">temp-unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Temporarily Unknown</td><td><div><p>There is reason to expect (from the workflow) that the value may become known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-asked\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-asked\">not-asked</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Asked</td><td><div><p>The workflow didn't lead to this value being known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-declined\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-declined\">asked-declined</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Asked But Declined</td><td><div><p>The source was asked but declined to answer.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-masked\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-masked\">masked</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Masked</td><td><div><p>The information is not available due to security, privacy or related reasons.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-applicable\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-applicable\">not-applicable</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Applicable</td><td><div><p>There is no proper value for this element (e.g. last menstrual period for a male).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-unsupported\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-unsupported\">unsupported</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Unsupported</td><td><div><p>The source system wasn't capable of supporting this element.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-as-text\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-as-text\">as-text</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>As Text</td><td><div><p>The content of the data is represented in the resource narrative.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-error\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-error\">error</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Error</td><td><div><p>Some system or workflow process error means that the information is not available.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-a-number\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-a-number\">not-a-number</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not a Number (NaN)</td><td><div><p>The numeric value is undefined or unrepresentable due to a floating point processing error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-negative-infinity\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-negative-infinity\">negative-infinity</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Negative Infinity (NINF)</td><td><div><p>The numeric value is excessively low and unrepresentable due to a floating point processing        error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-positive-infinity\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-positive-infinity\">positive-infinity</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Positive Infinity (PINF)</td><td><div><p>The numeric value is excessively high and unrepresentable due to a floating point processing        error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-performed\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-performed\">not-performed</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Performed</td><td><div><p>The value is not available because the observation procedure (test, etc.) was not performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-permitted\"> </a>  <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-permitted\">not-permitted</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Permitted</td><td><div><p>The value is not permitted in this context (e.g. due to profiles, or the base data types).</p>\n</div></td></tr></table></div>"
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p>This value set contains 16 concepts</p><p style=\"border: black 1px dotted; background-color: #ffcccc; padding: 8px; margin-bottom: 8px\">Expansion based on code system fragment http://terminology.hl7.org/CodeSystem/icd-o-3 version 2000</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>http://terminology.hl7.org/CodeSystem/icd-o-3 version 2000</li><li><a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html\">DataAbsentReason v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-icd-o-3-8500-3\"> </a>\u00a0\u00a08500/3</td><td>http://terminology.hl7.org/CodeSystem/icd-o-3</td><td>Infiltrating duct carcinoma, NOS</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-unknown\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-unknown\">unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Unknown</td><td><div><p>The value is expected to exist but is not known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-unknown\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-unknown\">asked-unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Asked But Unknown</td><td><div><p>The source was asked but does not know the value.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-temp-unknown\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-temp-unknown\">temp-unknown</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Temporarily Unknown</td><td><div><p>There is reason to expect (from the workflow) that the value may become known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-asked\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-asked\">not-asked</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Asked</td><td><div><p>The workflow didn't lead to this value being known.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-asked-declined\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-asked-declined\">asked-declined</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Asked But Declined</td><td><div><p>The source was asked but declined to answer.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-masked\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-masked\">masked</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Masked</td><td><div><p>The information is not available due to security, privacy or related reasons.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-applicable\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-applicable\">not-applicable</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Applicable</td><td><div><p>There is no proper value for this element (e.g. last menstrual period for a male).</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-unsupported\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-unsupported\">unsupported</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Unsupported</td><td><div><p>The source system wasn't capable of supporting this element.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-as-text\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-as-text\">as-text</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>As Text</td><td><div><p>The content of the data is represented in the resource narrative.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-error\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-error\">error</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Error</td><td><div><p>Some system or workflow process error means that the information is not available.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-a-number\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-a-number\">not-a-number</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not a Number (NaN)</td><td><div><p>The numeric value is undefined or unrepresentable due to a floating point processing error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-negative-infinity\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-negative-infinity\">negative-infinity</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Negative Infinity (NINF)</td><td><div><p>The numeric value is excessively low and unrepresentable due to a floating point processing        error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-positive-infinity\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-positive-infinity\">positive-infinity</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Positive Infinity (PINF)</td><td><div><p>The numeric value is excessively high and unrepresentable due to a floating point processing        error.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-performed\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-performed\">not-performed</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Performed</td><td><div><p>The value is not available because the observation procedure (test, etc.) was not performed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-data-absent-reason-not-permitted\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-data-absent-reason.html#data-absent-reason-not-permitted\">not-permitted</a></td><td>http://terminology.hl7.org/CodeSystem/data-absent-reason</td><td>Not Permitted</td><td><div><p>The value is not permitted in this context (e.g. due to profiles, or the base data types).</p>\n</div></td></tr></table></div>"
   },
   "url" : "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp",
   "version" : "0.2.0",
@@ -595,5 +659,286 @@ e: {
 {"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-orpha-predisposition-eu-pcsp", "version": "0.2.0"}####
 e: {
   "error" : "Error from server: Unable to provide support for code system https://www.orpha.net"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "[iU]/m2"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "The CodeSystem  is unknown (from Tx-Server)",
+  "class" : "UNKNOWN",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "code" : "150",
+  "display" : "Europe"
+}, "url": "http://hl7.org/fhir/ValueSet/jurisdiction", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Europe",
+  "code" : "150",
+  "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "en"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "English",
+  "code" : "en",
+  "system" : "urn:ietf:bcp:47",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "es-ES"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"es-ES", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "es-ES",
+  "system" : "urn:ietf:bcp:47",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "application/pdf"
+}, "url": "http://hl7.org/fhir/ValueSet/mimetypes", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "application/pdf",
+  "code" : "application/pdf",
+  "system" : "urn:ietf:bcp:13",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "es-ES"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Spanish (Spain)",
+  "code" : "es-ES",
+  "system" : "urn:ietf:bcp:47",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "mg/m2"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/ChemoUnitsVs", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "mg/m2",
+  "code" : "mg/m2",
+  "system" : "http://unitsofmeasure.org",
+  "version" : "2.0.1",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "702873001",
+  "display" : "Calculation technique"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-calcest-eu-pcsp", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Calculation technique (qualifier value)",
+  "code" : "702873001",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "112144000",
+  "display" : "Blood group A"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "LIST",
+        "op" : "=",
+        "value" : "LL2419-1"
+      }]
+    }]
+  }
+}, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Blood group A",
+  "code" : "112144000",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "10828004",
+  "display" : "Positive"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "LIST",
+        "op" : "=",
+        "value" : "LL360-9"
+      }]
+    }]
+  }
+}, "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Positive",
+  "code" : "10828004",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "445565002",
+  "display" : "Total boost radiation dose delivered"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyDoseType-eu-pcsp", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Total boost radiation dose delivered (observable entity)",
+  "code" : "445565002",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "399315003",
+  "display" : "Radionuclide therapy"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyType-eu-pcsp", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Radionuclide therapy",
+  "code" : "399315003",
+  "system" : "http://snomed.info/sct",
+  "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
 }
 -------------------------------------------------------------------------------------

@@ -1,0 +1,427 @@
+{
+    "resourceType": "Composition",
+    "id": "74055",
+    "meta": {
+        "versionId": "3",
+        "lastUpdated": "2023-02-13T13:30:01.727+01:00",
+        "source": "#sYR5ePAPsLKmPmn8"
+    },
+    "type": {
+        "coding": [
+            {
+                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                "code": "surpass"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/72959"
+    },
+    "date": "2023-02-13",
+    "title": "Childhood Cancer Survivor Passport",
+    "section": [
+        {
+            "title": "Care Plan",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "18776-5"
+                    }
+                ]
+            },
+            "entry": [
+                {
+                    "reference": "CarePlan/73996"
+                },
+                {
+                    "reference": "DocumentReference/73997"
+                }
+            ]
+        },
+        {
+            "title": "Diagnosis",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "72135-7"
+                    }
+                ]
+            },
+            "entry": [
+                {
+                    "reference": "Condition/72960"
+                },
+                {
+                    "reference": "Condition/72961"
+                },
+                {
+                    "reference": "Procedure/72962"
+                }
+            ],
+            "section": [
+                {
+                    "title": "Chemotherapy",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "11486-8"
+                            }
+                        ]
+                    },
+                    "entry": [
+                        {
+                            "reference": "MedicationAdministration/72964"
+                        },
+                        {
+                            "reference": "MedicationAdministration/72968"
+                        },
+                        {
+                            "reference": "MedicationAdministration/72969"
+                        },
+                        {
+                            "reference": "MedicationStatement/72966"
+                        },
+                        {
+                            "reference": "MedicationStatement/72965"
+                        }
+                    ]
+                },
+                {
+                    "title": "HSCT",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                                "code": "section-sct"
+                            }
+                        ]
+                    },
+                    "entry": [
+                        {
+                            "reference": "Procedure/72973"
+                        },
+                        {
+                            "reference": "Procedure/72974"
+                        },
+                        {
+                            "reference": "Condition/72978"
+                        },
+                        {
+                            "reference": "Condition/72975"
+                        },
+                        {
+                            "reference": "Condition/72976"
+                        },
+                        {
+                            "reference": "Observation/72977"
+                        },
+                        {
+                            "reference": "Observation/72972"
+                        }
+                    ]
+                },
+                {
+                    "title": "Radiation Therapy Episode",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                                "code": "section-rt"
+                            }
+                        ]
+                    },
+                    "entry": [
+                        {
+                            "reference": "Procedure/72980"
+                        },
+                        {
+                            "reference": "Procedure/72981"
+                        },
+                        {
+                            "reference": "Procedure/72982"
+                        }
+                    ]
+                },
+                {
+                    "title": "Major Surgery",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "8690-0"
+                            }
+                        ]
+                    },
+                    "entry": [
+                        {
+                            "reference": "Procedure/72989"
+                        },
+                        {
+                            "reference": "Procedure/72987"
+                        },
+                        {
+                            "reference": "Procedure/72988"
+                        },
+                        {
+                            "reference": "Procedure/72990"
+                        },
+                        {
+                            "reference": "Procedure/72991"
+                        },
+                        {
+                            "reference": "Procedure/72992"
+                        }
+                    ]
+                },
+                {
+                    "title": "Other relevant clinical information and events",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                                "code": "section-otherInfos"
+                            }
+                        ]
+                    },
+                    "entry": [
+                        {
+                            "reference": "Condition/73001"
+                        },
+                        {
+                            "reference": "Condition/73000"
+                        },
+                        {
+                            "reference": "Condition/72995"
+                        },
+                        {
+                            "reference": "Condition/72996"
+                        },
+                        {
+                            "reference": "Condition/72997"
+                        },
+                        {
+                            "reference": "Condition/72998"
+                        },
+                        {
+                            "reference": "Condition/72999"
+                        },
+                        {
+                            "reference": "Procedure/72993"
+                        },
+                        {
+                            "reference": "Procedure/72994"
+                        },
+                        {
+                            "reference": "Procedure/73952"
+                        }
+                    ]
+                },
+                {
+                    "title": "Relapse/Progression (after FLT)",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                                "code": "section-relapseAfterEOT"
+                            }
+                        ]
+                    },
+                    "entry": [
+                        {
+                            "reference": "Condition/73954"
+                        },
+                        {
+                            "reference": "Procedure/73955"
+                        }
+                    ],
+                    "section": [
+                        {
+                            "title": "Chemotherapy",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "11486-8"
+                                    }
+                                ]
+                            },
+                            "entry": [
+                                {
+                                    "reference": "MedicationAdministration/73957"
+                                },
+                                {
+                                    "reference": "MedicationAdministration/73961"
+                                },
+                                {
+                                    "reference": "MedicationStatement/73959"
+                                },
+                                {
+                                    "reference": "MedicationStatement/73958"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "HSCT",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                                        "code": "section-sct"
+                                    }
+                                ]
+                            },
+                            "entry": [
+                                {
+                                    "reference": "Procedure/73964"
+                                },
+                                {
+                                    "reference": "Procedure/73965"
+                                },
+                                {
+                                    "reference": "Condition/73969"
+                                },
+                                {
+                                    "reference": "Condition/73966"
+                                },
+                                {
+                                    "reference": "Condition/73967"
+                                },
+                                {
+                                    "reference": "Observation/73968"
+                                },
+                                {
+                                    "reference": "Observation/73963"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Radiation Therapy Episode",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                                        "code": "section-rt"
+                                    }
+                                ]
+                            },
+                            "entry": [
+                                {
+                                    "reference": "Procedure/73971"
+                                },
+                                {
+                                    "reference": "Procedure/73972"
+                                },
+                                {
+                                    "reference": "Procedure/73973"
+                                },
+                                {
+                                    "reference": "Procedure/73974"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Major Surgery",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://loinc.org",
+                                        "code": "8690-0"
+                                    }
+                                ]
+                            },
+                            "entry": [
+                                {
+                                    "reference": "Procedure/73981"
+                                },
+                                {
+                                    "reference": "Procedure/73979"
+                                },
+                                {
+                                    "reference": "Procedure/73980"
+                                },
+                                {
+                                    "reference": "Procedure/73982"
+                                },
+                                {
+                                    "reference": "Procedure/73983"
+                                },
+                                {
+                                    "reference": "Procedure/73984"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Other relevant clinical information and events",
+                            "code": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                                        "code": "section-otherInfos"
+                                    }
+                                ]
+                            },
+                            "entry": [
+                                {
+                                    "reference": "Condition/73988"
+                                },
+                                {
+                                    "reference": "Condition/73989"
+                                },
+                                {
+                                    "reference": "Condition/73987"
+                                },
+                                {
+                                    "reference": "Procedure/73985"
+                                },
+                                {
+                                    "reference": "Procedure/73986"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Relapse/Progression (after FLT)",
+                    "code": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp",
+                                "code": "section-relapseAfterEOT"
+                            }
+                        ]
+                    },
+                    "entry": [
+                        {
+                            "reference": "Condition/73991"
+                        },
+                        {
+                            "reference": "Procedure/73992"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Diagnosis",
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://loinc.org",
+                        "code": "72135-7"
+                    }
+                ]
+            },
+            "entry": [
+                {
+                    "reference": "Condition/73994"
+                },
+                {
+                    "reference": "Condition/73995"
+                }
+            ]
+        }
+    ]
+}

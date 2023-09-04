@@ -1,32 +1,19 @@
 ### Scope
 
-> Specify **HL7 FHIR logical models** and **profiles** to be used within
-> the European project **PanCareSurPass**. This project studies the
-> scale-up and implementation of the digital Survivorship Passport to
-> improve people-centred care for childhood cancer survivors.
+Specify **HL7 FHIR logical models** and **profiles** to be used within the European project **PanCareSurPass**. This project studies the scale-up and implementation of the digital Survivorship Passport to improve people-centred care for childhood cancer survivors.
 
 ### The PancareSurPass Project
 
 #### Overview 
 
-**<span class="underline">PanCareSurPass</span>** is a EU funded
-Research and Innovation action aiming to study the scale-up and
-implementation of the digital Survivorship Passport to improve
-people-centred care for childhood cancer survivors.
+**<span class="underline">PanCareSurPass</span>** is a EU funded Research and Innovation action aiming to study the scale-up and implementation of the digital Survivorship Passport to improve people-centred care for childhood cancer survivors.
 
-PanCareSurPass will conduct a robust assessment of the implementation of
-the Survivorship Passport by first conducting a pre-implementation study
-in six countries (Austria, Belgium, Germany, Italy, Lithuania, Spain)
-representing three infrastructural scenarios in Europe. The Survivorship
-Passport is an innovative, digital tool, developed in previous EU-funded
-projects, that can be used to overcome well-known knowledge gaps to
-improve people-centred long-term survivorship care.
+PanCareSurPass will conduct a robust assessment of the implementation of the Survivorship Passport by first conducting a pre-implementation study in six countries (Austria, Belgium, Germany, Italy, Lithuania, Spain)
+representing three infrastructural scenarios in Europe. The Survivorship Passport is an innovative, digital tool, developed in previous EU-funded projects, that can be used to overcome well-known knowledge gaps to improve people-centred long-term survivorship care.
 
 #### Objectives
 
-The overall aim of PanCareSurPass is to **leverage the digital
-transformation of healthcare to improve people-centred survivorship care
-by scaling up and implementing an interoperable SurPass v2.0 across
+The overall aim of PanCareSurPass is to **leverage the digital transformation of healthcare to improve people-centred survivorship care by scaling up and implementing an interoperable SurPass v2.0 across
 Europe.**
 
 ##### Preparation for Implementation
