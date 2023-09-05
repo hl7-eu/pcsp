@@ -10,13 +10,8 @@ Title:    "Procedure: Surgery"
 Description: "This profile defines how to represent Procedures in FHIR for describing a set of Surgery data required by the PanCareSurPass algorithm to generate the care plan. It is used also to provide inforamtion about shunt, amputation, and other procedures"
 //-------------------------------------------------------------------------------------------
 
-* extension contains 
-   SacrifiedOrgan named sacrifiedOrgan 0..1
- 
-   
+* extension contains SacrifiedOrgan named sacrifiedOrgan 0..*  
 * extension[sacrifiedOrgan]
-
-
 
 * text ^short = "Textual description of the surgical procedure"
 * identifier ^short = "External Identifiers for this surgical procedure"

@@ -4,6 +4,15 @@ RuleSet: ExtensionContext(path)
 * ^context[=].expression = "{path}"
 
 
+
+Extension: NotAffectedBodySite
+Id: procedure-notBodySite
+Title:  "Not affected body sites"
+Description: """This extension is used to explicitly indicate the body site that has not been affected by this procedure."""
+* insert ExtensionContext(Procedure)
+* value[x] only CodeableConcept
+
+
 Extension: AnnotationType
 Id: annotation-type
 Title:  "Annotation Type"
