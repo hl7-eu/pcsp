@@ -3,16 +3,6 @@ RuleSet: ExtensionContext(path)
 * ^context[+].type = #element
 * ^context[=].expression = "{path}"
 
-
-
-Extension: NotAffectedBodySite
-Id: procedure-notBodySite
-Title:  "Not affected body sites"
-Description: """This extension is used to explicitly indicate the body site that has not been affected by this procedure."""
-* insert ExtensionContext(Procedure)
-* value[x] only CodeableConcept
-
-
 Extension: AnnotationType
 Id: annotation-type
 Title:  "Annotation Type"
@@ -107,6 +97,15 @@ Description: "Organs are 'sacrified' either to allow a radical excision of the t
 * insert ExtensionContext(Procedure)
 * value[x] only CodeableConcept 
 * valueCodeableConcept from SacrifiedOrganVs (extensible)
+
+
+Extension: NotAffectedOrgan
+Id: procedure-notAffectedOrgan
+Title:  "Not affected Organ"
+Description: """This extension is used to explicitly indicate the Organ (body site) that has not been affected by this procedure."""
+* insert ExtensionContext(Procedure)
+* value[x] only CodeableConcept
+* valueCodeableConcept from AffectedOrganVs (preferred)
 
 // ------------------------------------
 

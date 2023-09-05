@@ -13,6 +13,9 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * extension contains SacrifiedOrgan named sacrifiedOrgan 0..*  
 * extension[sacrifiedOrgan]
 
+* extension contains NotAffectedOrgan named notAffectedOrgan 0..*  
+* extension[notAffectedOrgan]
+
 * text ^short = "Textual description of the surgical procedure"
 * identifier ^short = "External Identifiers for this surgical procedure"
 * partOf only Reference (ProcedureSurgeryPcsp)
