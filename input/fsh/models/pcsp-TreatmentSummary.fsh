@@ -6,6 +6,7 @@ Id: TreatmentSummary
 Title: "Treatment Summary"				
 Description:  """Treatment Summary data model
 Maturity Level: 2 - Ready for Review"""				
+				
 * subject 1..1 Subject "Subject" """Subject"""				
 * diagnosis 0..5 BackboneElement "Diagnosis" """Diagnosis"""				
 * diagnosis.details 0..1 Diagnosis "Details about this diagnosis" """Details about this diagnosis"""				
@@ -20,7 +21,6 @@ Maturity Level: 2 - Ready for Review"""
 * diagnosis.relapseAfterEOT 0..* BackboneElement "Progression-relapse after the End of Treatment" """Progression-relapse after the End of Treatment"""				
 * diagnosis.relapseAfterEOT.details 0..1 RelapseAfterFLT "Details  about this relapse-progression" """Details  about this relapse-progression"""				
 * diagnosis.relapseAfterEOT.frontLineTreatment 0..1 http://hl7.eu/fhir/ig/pcsp/StructureDefinition/FrontLineTreatment "Salvage treatment" """The salvage treatment has been executed following"""				
-* diagnosis.relapseAfterEOT.frontLineTreatment.notForRelapse 0..0 BackboneElement "Details not provided for relapses after EOT" """Details not provided for relapses after EOT"""				
 * diagnosis.relapseAfterEOT.chemotherapy 0..1 http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Chemotherapy "Chemotherapy" """Chemotherapy"""				
 * diagnosis.relapseAfterEOT.stemCellTransplantation 0..* http://hl7.eu/fhir/ig/pcsp/StructureDefinition/StemCellTransplantation "Stem Cell transplantation" """Stem Cell transplantation"""				
 * diagnosis.relapseAfterEOT.radiotherapy 0..* http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Radiotherapy "Radiotherapy" """Radiotherapy"""				
@@ -31,8 +31,9 @@ Maturity Level: 2 - Ready for Review"""
 //--- END				
 //--- END				
 //--- END				
+//--- END				
 				
-				
+* diagnosis.relapseAfterEOT.frontLineTreatment obeys no-frontLineTreatment				
 				
 // -------------------------------------------------------------------------------				
 //  Map to FHIR R4				
@@ -45,8 +46,8 @@ Target: "hl7.org/fhir/r4"
 				
 // no map				
 * subject -> "Patient"				
-* diagnosis -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp')"				
-* diagnosis.details -> "(add reference)"				
+// no map				
+* diagnosis.details -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp')"				
 * diagnosis.frontLineTreatment -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp')"				
 * diagnosis.chemotherapy -> "MedicationAdministration.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp')"				
 * diagnosis.stemCellTransplantation -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp')"				
@@ -59,7 +60,6 @@ Target: "hl7.org/fhir/r4"
 // no map				
 * diagnosis.relapseAfterEOT.details -> "Condition.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Condition-primaryCancer-eu-pcsp').where( (extension('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/condition-previousStatus').valueCode = #replaspe or #recurrence) and  ( onsetDateTime >= Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp').performedPeriod.end) )"				
 * diagnosis.relapseAfterEOT.frontLineTreatment -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-flt-eu-pcsp')"				
-// no map				
 * diagnosis.relapseAfterEOT.chemotherapy -> "MedicationAdministration.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp')"				
 * diagnosis.relapseAfterEOT.stemCellTransplantation -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-sct-eu-pcsp')"				
 * diagnosis.relapseAfterEOT.radiotherapy -> "Procedure.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Procedure-radiotheraphy-eu-pcsp')"				
@@ -68,6 +68,7 @@ Target: "hl7.org/fhir/r4"
 * diagnosis.relapseAfterEOT.otherInfos -> "Condition"				
 // tbd				
 // tbd				
+// --END				
 // --END				
 // --END				
 // --END				

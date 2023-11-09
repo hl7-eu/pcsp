@@ -71,7 +71,7 @@
 * #26.2 "Surgery of the chest (Does not include CVC pose)" "Surgery of the chest (Does not include CVC pose)"
 * #26.3 "RT to a vol exposing the spine" "RT to a vol exposing the spine"
 * #26.4 "Spinal or paraspinal malignancies" "Spinal or paraspinal malignancies"
-* #27.1 "Cyclophosphamide " "Cyclophosphamide "
+* #27.1 "Cyclophosphamide" "Cyclophosphamide"
 * #27.3 "RT to a vol exposing the bladder" "RT to a vol exposing the bladder"
 * #27.5 "Cystectomy" "Cystectomy"
 * #27.6 "Hysterectomy" "Hysterectomy"

@@ -59,6 +59,24 @@ Europe.**
     stakeholders to promote future implementation of SurPass v2.0 to
     improve people-centred survivorship care in Europe.
 
+
+### Dependencies
+
+{% include dependency-table.xhtml %}
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
+
+### IP statements
+
+{% include ip-statements.xhtml %}
+
+
 ### Authors and Contributors
 
 <table>
