@@ -493,7 +493,6 @@ v: {
   "code" : "D61.0",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -514,7 +513,6 @@ v: {
   "code" : "D82.0",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -535,7 +533,6 @@ v: {
   "code" : "D82.3",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -556,7 +553,6 @@ v: {
   "code" : "E34.8",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -577,7 +573,6 @@ v: {
   "code" : "G11.3",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -598,7 +593,6 @@ v: {
   "code" : "K86.1",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -619,7 +613,6 @@ v: {
   "code" : "L72.8",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -640,7 +633,6 @@ v: {
   "code" : "Q78.6",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -661,7 +653,6 @@ v: {
   "code" : "Q82.1",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -682,7 +673,6 @@ v: {
   "code" : "Q82.2",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -703,7 +693,6 @@ v: {
   "code" : "Q82.8",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -724,7 +713,6 @@ v: {
   "code" : "Q85.0",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -745,7 +733,6 @@ v: {
   "code" : "Q85.1",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -766,7 +753,6 @@ v: {
   "code" : "Q85.8",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -787,7 +773,6 @@ v: {
   "code" : "Q87.3",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -808,7 +793,6 @@ v: {
   "code" : "Q87.8",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -830,10 +814,195 @@ v: {
   "code" : "C41.9",
   "system" : "http://hl7.org/fhir/sid/icd-10",
   "version" : "2019-covid-expanded",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
 
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "concept" : [{
+        "code" : "D61.0",
+        "display" : "Constitutional aplastic anemia"
+      },
+      {
+        "code" : "D82.0",
+        "display" : "Wiskott-Aldrich syndrome"
+      },
+      {
+        "code" : "D82.3",
+        "display" : "Immunodeficiency following hereditary defective response to Epstein-Barr virus"
+      },
+      {
+        "code" : "E34.8",
+        "display" : "Other specified endocrine disorders"
+      },
+      {
+        "code" : "G11.3",
+        "display" : "Cerebellar ataxia with defective DNA repair"
+      },
+      {
+        "code" : "K86.1",
+        "display" : "Other chronic pancreatitis"
+      },
+      {
+        "code" : "L72.8",
+        "display" : "Other follicular cysts of the skin and subcutaneous tissue"
+      },
+      {
+        "code" : "Q78.6",
+        "display" : "Multiple congenital exostoses"
+      },
+      {
+        "code" : "Q82.1",
+        "display" : "Xeroderma pigmentosum"
+      },
+      {
+        "code" : "Q82.2",
+        "display" : "Congenital cutaneous mastocytosis"
+      },
+      {
+        "code" : "Q82.8",
+        "display" : "Other specified congenital malformations of skin"
+      },
+      {
+        "code" : "Q85.0",
+        "display" : "Neurofibromatosis (nonmalignant)"
+      },
+      {
+        "code" : "Q85.1",
+        "display" : "Tuberous sclerosis"
+      },
+      {
+        "code" : "Q85.8",
+        "display" : "Other phakomatoses, not elsewhere classified"
+      },
+      {
+        "code" : "Q87.3",
+        "display" : "Congenital malformation syndromes involving early overgrowth"
+      },
+      {
+        "code" : "Q87.8",
+        "display" : "Other specified congenital malformation syndromes, not elsewhere classified"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:2364c690-8f3b-4997-ae76-8592e3f288d8",
+    "timestamp" : "2023-11-09T14:34:16.296Z",
+    "total" : 16,
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "warning-experimental",
+      "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+    }],
+    "contains" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "D61.0",
+      "display" : "Constitutional aplastic anemia"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "D82.0",
+      "display" : "Wiskott-Aldrich syndrome"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "D82.3",
+      "display" : "Immunodeficiency following hereditary defective response to Epstein-Barr virus"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "E34.8",
+      "display" : "Other specified endocrine disorders"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "G11.3",
+      "display" : "Cerebellar ataxia with defective DNA repair"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "K86.1",
+      "display" : "Other chronic pancreatitis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "L72.8",
+      "display" : "Other follicular cysts of the skin and subcutaneous tissue"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q78.6",
+      "display" : "Multiple congenital exostoses"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q82.1",
+      "display" : "Xeroderma pigmentosum"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q82.2",
+      "display" : "Congenital cutaneous mastocytosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q82.8",
+      "display" : "Other specified congenital malformations of skin"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q85.0",
+      "display" : "Neurofibromatosis (nonmalignant)"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q85.1",
+      "display" : "Tuberous sclerosis"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q85.8",
+      "display" : "Other phakomatoses, not elsewhere classified"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q87.3",
+      "display" : "Congenital malformation syndromes involving early overgrowth"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "code" : "Q87.8",
+      "display" : "Other specified congenital malformation syndromes, not elsewhere classified"
+    }]
+  }
+},
+  "error" : ""
 }
 -------------------------------------------------------------------------------------

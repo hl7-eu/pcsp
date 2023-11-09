@@ -674,7 +674,6 @@ v: {
   "severity" : "error",
   "error" : "The CodeSystem  is unknown (from Tx-Server)",
   "class" : "UNKNOWN",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -696,7 +695,6 @@ v: {
   "display" : "Europe",
   "code" : "150",
   "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -716,7 +714,6 @@ v: {
   "display" : "English",
   "code" : "en",
   "system" : "urn:ietf:bcp:47",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -735,7 +732,6 @@ v: {
 v: {
   "code" : "es-ES",
   "system" : "urn:ietf:bcp:47",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -755,7 +751,6 @@ v: {
   "display" : "application/pdf",
   "code" : "application/pdf",
   "system" : "urn:ietf:bcp:13",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -775,7 +770,6 @@ v: {
   "display" : "Spanish (Spain)",
   "code" : "es-ES",
   "system" : "urn:ietf:bcp:47",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -796,7 +790,6 @@ v: {
   "code" : "mg/m2",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -819,7 +812,6 @@ v: {
   "code" : "702873001",
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -854,7 +846,6 @@ v: {
   "code" : "112144000",
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -889,7 +880,6 @@ v: {
   "code" : "10828004",
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -912,7 +902,6 @@ v: {
   "code" : "445565002",
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -935,6 +924,85 @@ v: {
   "code" : "399315003",
   "system" : "http://snomed.info/sct",
   "version" : "http://snomed.info/sct/900000000000207008/version/20230731",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "it"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Italian",
+  "code" : "it",
+  "system" : "urn:ietf:bcp:47",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "lt"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "The provided code 'urn:ietf:bcp:47#lt' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server)",
+  "class" : "UNKNOWN",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "es"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "Spanish",
+  "code" : "es",
+  "system" : "urn:ietf:bcp:47",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "be"
+}, "url": "http://hl7.org/fhir/ValueSet/languages", "version": "4.0.1", "langs":"", "useServer":"true", "useClient":"true", "guessSystem":"true", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "The provided code 'urn:ietf:bcp:47#be' is not in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1' (from Tx-Server)",
+  "class" : "UNKNOWN",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"

@@ -369,7 +369,6 @@ v: {
   "code" : "Gy",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -390,7 +389,6 @@ v: {
   "code" : "MBq",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -411,7 +409,6 @@ v: {
   "code" : "mg/m2",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -432,7 +429,6 @@ v: {
   "code" : "g/m2",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -453,7 +449,6 @@ v: {
   "code" : "[iU]/m2",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -474,7 +469,6 @@ v: {
   "code" : "MeV",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -495,7 +489,6 @@ v: {
   "code" : "MV",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -516,7 +509,6 @@ v: {
   "code" : "kV",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -538,7 +530,6 @@ v: {
   "code" : "Gy",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -560,7 +551,6 @@ v: {
   "code" : "MBq",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -582,10 +572,136 @@ v: {
   "code" : "mg/m2",
   "system" : "http://unitsofmeasure.org",
   "version" : "2.0.1",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
 
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "mg/m2"
+      },
+      {
+        "code" : "g/m2"
+      },
+      {
+        "code" : "[iU]/m2"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:c6534c32-119f-4cf8-8fda-ca142caaebc4",
+    "timestamp" : "2023-11-09T14:34:00.156Z",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://unitsofmeasure.org|2.0.1"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://unitsofmeasure.org|2.0.1"
+    }],
+    "contains" : [{
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg/m2",
+      "display" : "mg/m2"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "g/m2",
+      "display" : "g/m2"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "[iU]/m2",
+      "display" : "[iU]/m2"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "MeV",
+        "display" : "megaelectronvolt"
+      },
+      {
+        "code" : "MV",
+        "display" : "megavolt"
+      },
+      {
+        "code" : "kV",
+        "display" : "kilovolt"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:f9c20722-4ce9-49f0-ba6f-ab8b4111f59e",
+    "timestamp" : "2023-11-09T14:34:18.531Z",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://unitsofmeasure.org|2.0.1"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://unitsofmeasure.org|2.0.1"
+    }],
+    "contains" : [{
+      "system" : "http://unitsofmeasure.org",
+      "code" : "MeV",
+      "display" : "megaelectronvolt"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "MV",
+      "display" : "megavolt"
+    },
+    {
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kV",
+      "display" : "kilovolt"
+    }]
+  }
+},
+  "error" : ""
 }
 -------------------------------------------------------------------------------------

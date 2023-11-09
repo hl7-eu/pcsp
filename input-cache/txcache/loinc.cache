@@ -1354,7 +1354,6 @@ v: {
   "code" : "34530-6",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1375,7 +1374,6 @@ v: {
   "code" : "883-9",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1396,7 +1394,6 @@ v: {
   "code" : "LA19709-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1417,7 +1414,6 @@ v: {
   "code" : "10331-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1438,7 +1434,6 @@ v: {
   "code" : "LA6576-8",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1459,7 +1454,6 @@ v: {
   "code" : "LA28449-9",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1480,7 +1474,6 @@ v: {
   "code" : "34105-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1501,7 +1494,6 @@ v: {
   "code" : "11502-2",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1522,7 +1514,6 @@ v: {
   "code" : "18748-4",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1543,7 +1534,6 @@ v: {
   "code" : "21907-1",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1564,7 +1554,6 @@ v: {
   "code" : "21901-4",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1585,7 +1574,6 @@ v: {
   "code" : "21913-9",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1606,7 +1594,6 @@ v: {
   "code" : "21905-5",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1627,7 +1614,6 @@ v: {
   "code" : "21899-0",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1648,7 +1634,6 @@ v: {
   "code" : "21911-3",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1669,7 +1654,6 @@ v: {
   "code" : "21906-3",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1690,7 +1674,6 @@ v: {
   "code" : "21900-6",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1711,7 +1694,6 @@ v: {
   "code" : "21912-1",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1732,7 +1714,6 @@ v: {
   "code" : "21908-9",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1753,7 +1734,6 @@ v: {
   "code" : "21902-2",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1774,7 +1754,6 @@ v: {
   "code" : "21914-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1796,7 +1775,6 @@ v: {
   "code" : "72135-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1818,7 +1796,6 @@ v: {
   "code" : "11486-8",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1840,7 +1817,6 @@ v: {
   "code" : "8690-0",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1862,7 +1838,6 @@ v: {
   "code" : "55752-0",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1884,7 +1859,6 @@ v: {
   "code" : "18776-5",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1907,7 +1881,6 @@ v: {
   "code" : "34530-6",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1930,7 +1903,6 @@ v: {
   "code" : "883-9",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1953,7 +1925,6 @@ v: {
   "code" : "10331-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1976,7 +1947,6 @@ v: {
   "severity" : "error",
   "error" : "The provided code 'http://loinc.org#5792-7' is not in the value set 'http://loinc.org/vs/LL2419-1|2.74' (from Tx-Server)",
   "class" : "UNKNOWN",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1999,7 +1969,6 @@ v: {
   "code" : "29308-4",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2021,7 +1990,6 @@ v: {
   "code" : "34530-6",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2043,7 +2011,6 @@ v: {
   "code" : "883-9",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2065,7 +2032,6 @@ v: {
   "code" : "LA19709-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2087,7 +2053,6 @@ v: {
   "code" : "10331-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2109,7 +2074,6 @@ v: {
   "code" : "LA6576-8",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2131,7 +2095,6 @@ v: {
   "code" : "LA28449-9",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2153,7 +2116,6 @@ v: {
   "code" : "34105-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2175,7 +2137,6 @@ v: {
   "code" : "34105-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2197,7 +2158,6 @@ v: {
   "code" : "34105-7",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2219,7 +2179,6 @@ v: {
   "code" : "11502-2",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2241,7 +2200,6 @@ v: {
   "code" : "11502-2",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2263,7 +2221,6 @@ v: {
   "code" : "11502-2",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2285,7 +2242,6 @@ v: {
   "code" : "18748-4",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2307,7 +2263,6 @@ v: {
   "code" : "18748-4",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2329,7 +2284,6 @@ v: {
   "code" : "18748-4",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2352,7 +2306,6 @@ v: {
   "code" : "LA4585-1",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2386,7 +2339,6 @@ v: {
   "code" : "LA19710-5",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2421,7 +2373,6 @@ v: {
   "code" : "LA19710-5",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2443,7 +2394,6 @@ v: {
   "code" : "LA19710-5",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2466,7 +2416,6 @@ v: {
   "code" : "LA19710-5",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2500,7 +2449,6 @@ v: {
   "code" : "LA6576-8",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2535,7 +2483,6 @@ v: {
   "code" : "LA6576-8",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2558,7 +2505,6 @@ v: {
   "code" : "LA6576-8",
   "system" : "http://loinc.org",
   "version" : "2.74",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2579,6 +2525,399 @@ v: {
   "code" : "29308-4",
   "system" : "http://loinc.org",
   "version" : "2.74",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "21907-1",
+        "display" : "Distant metastases.clinical [Class] Cancer"
+      },
+      {
+        "code" : "21901-4",
+        "display" : "Distant metastases.pathology [Class] Cancer"
+      },
+      {
+        "code" : "21913-9",
+        "display" : "Distant metastases.other [Class] Cancer"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:d73fb4d3-d79b-4bc1-a31c-947c64f700c7",
+    "timestamp" : "2023-11-09T14:34:11.734Z",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.74"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.74"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "21907-1",
+      "display" : "Distant metastases.clinical [Class] Cancer"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21901-4",
+      "display" : "Distant metastases.pathology [Class] Cancer"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21913-9",
+      "display" : "Distant metastases.other [Class] Cancer"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "21905-5",
+        "display" : "Primary tumor.clinical [Class] Cancer"
+      },
+      {
+        "code" : "21899-0",
+        "display" : "Primary tumor.pathology Cancer"
+      },
+      {
+        "code" : "21911-3",
+        "display" : "Primary tumor.other [Class] Cancer"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:83d88185-a24e-4279-8f42-1d6bb848ec71",
+    "timestamp" : "2023-11-09T14:34:11.921Z",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.74"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.74"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "21905-5",
+      "display" : "Primary tumor.clinical [Class] Cancer"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21899-0",
+      "display" : "Primary tumor.pathology Cancer"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21911-3",
+      "display" : "Primary tumor.other [Class] Cancer"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "21906-3",
+        "display" : "Regional lymph nodes.clinical [Class] Cancer"
+      },
+      {
+        "code" : "21900-6",
+        "display" : "Regional lymph nodes.pathology [Class] Cancer"
+      },
+      {
+        "code" : "21912-1",
+        "display" : "Regional lymph nodes.other [Class] Cancer"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:8ca3ff3e-d1e2-4910-95f1-6e5904d394ed",
+    "timestamp" : "2023-11-09T14:34:12.093Z",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.74"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.74"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "21906-3",
+      "display" : "Regional lymph nodes.clinical [Class] Cancer"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21900-6",
+      "display" : "Regional lymph nodes.pathology [Class] Cancer"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21912-1",
+      "display" : "Regional lymph nodes.other [Class] Cancer"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "21908-9",
+        "display" : "Stage group.clinical Cancer"
+      },
+      {
+        "code" : "21902-2",
+        "display" : "Stage group.pathology Cancer"
+      },
+      {
+        "code" : "21914-7",
+        "display" : "Stage group.other Cancer"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:ef1aa03c-1e6f-4969-89c8-f38e92499c6c",
+    "timestamp" : "2023-11-09T14:34:12.265Z",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.74"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.74"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "21908-9",
+      "display" : "Stage group.clinical Cancer"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21902-2",
+      "display" : "Stage group.pathology Cancer"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "21914-7",
+      "display" : "Stage group.other Cancer"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "18748-4",
+        "display" : "Diagnostic Imaging Report"
+      },
+      {
+        "code" : "34105-7",
+        "display" : "Hospital Discharge summary"
+      },
+      {
+        "code" : "11502-2",
+        "display" : "LABORATORY REPORT.TOTAL"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:38e6f328-afa5-4709-951b-8f49cc561f4a",
+    "timestamp" : "2023-11-09T14:34:15.250Z",
+    "total" : 3,
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "used-codesystem",
+      "valueUri" : "http://loinc.org|2.74"
+    },
+    {
+      "name" : "version",
+      "valueUri" : "http://loinc.org|2.74"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "18748-4",
+      "display" : "Diagnostic Imaging Report"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "34105-7",
+      "display" : "Hospital Discharge summary"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11502-2",
+      "display" : "LABORATORY REPORT.TOTAL"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA19710-5"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "LA19710-5",
+  "system" : "http://loinc.org",
+  "version" : "2.74",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "5792-7"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "url" : "http://loinc.org/vs/LL2419-1"
+}, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "The provided code 'http://loinc.org#5792-7' is not in the value set 'http://loinc.org/vs/LL2419-1|2.74' (from Tx-Server)",
+  "class" : "UNKNOWN",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome"
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "5792-7"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "url" : "http://loinc.org/vs/LL360-9"
+}, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "severity" : "error",
+  "error" : "The provided code 'http://loinc.org#5792-7' is not in the value set 'http://loinc.org/vs/LL360-9|2.74' (from Tx-Server)",
+  "class" : "UNKNOWN",
   "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"

@@ -12,6 +12,16 @@ Description: "Qualifiers to refine a body structure or location including qualif
 * $sct#255503000 "Entire (qualifier value)"
 * exclude codes from valueset LateralityQualifierVS // laterality is separated into a separate value set
 
+// --------------------------------------------------------
+ValueSet: MorphologicAbnormalityVS
+Id: morphologicAbnormality-eu-vs
+Title: "Morphologically abnormal structure"
+Description: " Morphologically abnormal structure."
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* ^experimental = false
+* include codes from system $sct where concept is-a #49755003 "Morphologically abnormal structure (morphologic abnormality)"
+
+
 
 // --------------------------------------------------------
 ValueSet: AnnotationTypeVS

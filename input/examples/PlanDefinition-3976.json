@@ -1,0 +1,25 @@
+{
+    "resourceType": "PlanDefinition",
+    "id": "3976",
+    "meta": {
+        "versionId": "2",
+        "lastUpdated": "2023-07-05T12:46:27.971+02:00",
+        "source": "#6QeK1KP8RItavadz"
+    },
+    "extension": [
+        {
+            "url": "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-fltArm",
+            "valueString": "GROUP"
+        }
+    ],
+    "url": "https://psp-sp-fhir.dev.sanit.cineca.it/fhir/PlanDefinition/3976",
+    "type": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+                "code": "clinical-protocol"
+            }
+        ]
+    },
+    "description": "TRIAL"
+}
