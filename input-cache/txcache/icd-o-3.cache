@@ -1,4 +1,1249 @@
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "95103",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code '95103' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code '95103' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C692"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C692",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code 'C692' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code 'C692' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "91813",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code '91813' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code '91813' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C401"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C401",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code 'C401' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code 'C401' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8000/0"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "8000/0",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code '8000/0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code '8000/0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C00.0"
+}, "valueSet" :null, "langs":"en, en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C00.0",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code 'C00.0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code 'C00.0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "95103",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code '95103' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code '95103' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "3.0.0", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "95103",
+  "severity" : "error",
+  "error" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#95103' was not found in the value set 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0|3.0.0'; Unknown code '95103' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code '95103' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#95103' was not found in the value set 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0|3.0.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "95103"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "95103",
+  "severity" : "error",
+  "error" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#95103' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0|0.2.0'; Unknown code '95103' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code '95103' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#95103' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0|0.2.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C692"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C692",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code 'C692' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code 'C692' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C692"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C692",
+  "severity" : "error",
+  "error" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#C692' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0|0.2.0'; Unknown code 'C692' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code 'C692' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#C692' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0|0.2.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "91813",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code '91813' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code '91813' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "3.0.0", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "91813",
+  "severity" : "error",
+  "error" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#91813' was not found in the value set 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0|3.0.0'; Unknown code '91813' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code '91813' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#91813' was not found in the value set 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0|3.0.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "91813"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "91813",
+  "severity" : "error",
+  "error" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#91813' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0|0.2.0'; Unknown code '91813' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code '91813' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#91813' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0|0.2.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C401"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C401",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code 'C401' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code 'C401' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C401"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C401",
+  "severity" : "error",
+  "error" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#C401' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0|0.2.0'; Unknown code 'C401' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code 'C401' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#C401' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0|0.2.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C41.2",
+  "display" : "Bones, joints and articular cartilage of other and unspecified sites"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C41.2",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code 'C41.2' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code 'C41.2' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C41.2"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C41.2",
+  "severity" : "error",
+  "error" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#C41.2' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0|0.2.0'; Unknown code 'C41.2' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code 'C41.2' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#C41.2' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0|0.2.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8260/3",
+  "display" : "8260/3 - Carcinoma papilar de tiroides"
+}, "valueSet" :null, "langs":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "8260/3",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Código desconocido 8260/3 en http://terminology.hl7.org/CodeSystem/icd-o-3 - note que el sistema de codificación está etiquetado como fragmento, así que el código puede ser válido mas allá del fragmento",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Código desconocido 8260/3 en http://terminology.hl7.org/CodeSystem/icd-o-3 - note que el sistema de codificación está etiquetado como fragmento, así que el código puede ser válido mas allá del fragmento"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8260/3"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "3.0.0", "langs":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "8260/3",
+  "severity" : "error",
+  "error" : "Código desconocido 8260/3 en http://terminology.hl7.org/CodeSystem/icd-o-3 versión 2000; The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3' was not found in the value set 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0|3.0.0'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Código desconocido 8260/3 en http://terminology.hl7.org/CodeSystem/icd-o-3 versión 2000"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3' was not found in the value set 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0|3.0.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8260/3"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "langs":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "8260/3",
+  "severity" : "error",
+  "error" : "Código desconocido 8260/3 en http://terminology.hl7.org/CodeSystem/icd-o-3 versión 2000; The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0|0.2.0'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Código desconocido 8260/3 en http://terminology.hl7.org/CodeSystem/icd-o-3 versión 2000"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0|0.2.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C73.9",
+  "display" : "C73.9 - Tiroides"
+}, "valueSet" :null, "langs":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C73.9",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Código desconocido C73.9 en http://terminology.hl7.org/CodeSystem/icd-o-3 - note que el sistema de codificación está etiquetado como fragmento, así que el código puede ser válido mas allá del fragmento",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Código desconocido C73.9 en http://terminology.hl7.org/CodeSystem/icd-o-3 - note que el sistema de codificación está etiquetado como fragmento, así que el código puede ser válido mas allá del fragmento"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C73.9"
+}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "langs":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C73.9",
+  "severity" : "error",
+  "error" : "Código desconocido C73.9 en http://terminology.hl7.org/CodeSystem/icd-o-3 versión 2000; The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#C73.9' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0|0.2.0'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Código desconocido C73.9 en http://terminology.hl7.org/CodeSystem/icd-o-3 versión 2000"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#C73.9' was not found in the value set 'http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0|0.2.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8000/0"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "8000/0",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code '8000/0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code '8000/0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "8000/0"
+}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "3.0.0", "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "8000/0",
+  "severity" : "error",
+  "error" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#8000/0' was not found in the value set 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0|3.0.0'; Unknown code '8000/0' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'",
+  "class" : "UNKNOWN",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown code '8000/0' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "error",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "not-in-vs"
+      }],
+      "text" : "The provided code 'http://terminology.hl7.org/CodeSystem/icd-o-3#8000/0' was not found in the value set 'http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0|3.0.0'"
+    },
+    "location" : ["Coding.code"],
+    "expression" : ["Coding.code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "code" : "C00.0"
+}, "valueSet" :null, "langs":"", "useServer":"true", "useClient":"false", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "code" : "C00.0",
+  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+  "version" : "2000",
+  "severity" : "warning",
+  "error" : "Unknown Code 'C00.0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "code-invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-code"
+      }],
+      "text" : "Unknown Code 'C00.0' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment"
+    },
+    "location" : ["CodeableConcept.coding[0].code"],
+    "expression" : ["CodeableConcept.coding[0].code"]
+  }]
+}
+
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -9,300 +1254,21 @@
   }
 }}####
 e: {
-  "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp", "version": "0.1.0"}####
-e: {
-  "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp", "version": "0.1.0"}####
-e: {
-  "error" : "Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "95103"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "code" : "95103",
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "severity" : "warning",
-  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C692"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "code" : "C692",
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "severity" : "warning",
-  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "91813"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "code" : "91813",
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "severity" : "warning",
-  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C401"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "code" : "C401",
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "severity" : "warning",
-  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "95103"
-}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.0.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"95103\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#95103) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "95103"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "code" : "95103",
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "severity" : "warning",
-  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "95103"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"95103\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#95103) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C692"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"C692\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C692) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C692"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "code" : "C692",
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "severity" : "warning",
-  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "91813"
-}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.0.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"91813\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#91813) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "91813"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "code" : "91813",
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "severity" : "warning",
-  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "91813"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"91813\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#91813) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C401"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"C401\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C401) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C401"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "code" : "C401",
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "severity" : "warning",
-  "error" : "The system \"\" http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment) (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C41.2"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"C41.2\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C41.2) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "8260/3"
-}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.0.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "8260/3"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.1.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C73.9"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.1.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"C73.9\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C73.9) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "95103"
-}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"95103\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#95103) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "91813"
-}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.1.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"91813\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#91813) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "8260/3"
-}, "url": "http://hl7.org/fhir/us/mcode/ValueSet/mcode-histology-morphology-behavior-vs--0", "version": "2.1.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "95103"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"95103\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#95103) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C692"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"C692\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C692) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "91813"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"91813\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#91813) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C401"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"C401\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C401) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C41.2"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"C41.2\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C41.2) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "8260/3"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp--0", "version": "0.2.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"8260/3\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3) is not valid (from http://tx.fhir.org/r4)"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
-  "code" : "C73.9"
-}, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp--0", "version": "0.2.0", "lang":"es-ES", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS", "versionFlexible":"true"}####
-v: {
-  "severity" : "error",
-  "error" : "The code \"C73.9\" is not valid in the system http://terminology.hl7.org/CodeSystem/icd-o-3; The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C73.9) is not valid (from http://tx.fhir.org/r4)"
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: The code system definition for http://terminology.hl7.org/CodeSystem/icd-o-3 is a fragment, so this expansion is not permitted unless the expansion parameter \"incomplete-ok\" has a value of \"true\""
 }
 -------------------------------------------------------------------------------------
 {"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp", "version": "0.2.0"}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
-  "id" : "vs-icdo3-topography-eu-pcsp",
-  "language" : "en",
   "url" : "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-topography-eu-pcsp",
   "version" : "0.2.0",
   "name" : "ICDO3TopographyVs",
   "title" : "ICD-O-3 Topography",
-  "status" : "active",
+  "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-07T18:03:51+01:00",
+  "date" : "2024-02-14T16:36:59+01:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -311,18 +1277,32 @@ e: {
     }]
   }],
   "expansion" : {
-    "identifier" : "urn:uuid:4dc0902e-afbe-4985-87b5-ebfcb81e8740",
-    "timestamp" : "2023-02-07T17:21:55.983Z",
+    "identifier" : "urn:uuid:efc5c6de-b5ef-41b9-b6f7-c01c0f4488da",
+    "timestamp" : "2024-02-14T15:50:56.402Z",
+    "total" : 1,
+    "offset" : 0,
     "parameter" : [{
-      "name" : "expansion-source",
-      "valueUri" : "ValueSet/vs-icdo3-topography-eu-pcsp"
-    },
-    {
       "name" : "limitedExpansion",
       "valueBoolean" : true
     },
     {
+      "name" : "excludeNested",
+      "valueBoolean" : false
+    },
+    {
+      "name" : "offset",
+      "valueInteger" : 0
+    },
+    {
+      "name" : "count",
+      "valueInteger" : 1000
+    },
+    {
       "name" : "fragment",
+      "valueUri" : "http://terminology.hl7.org/CodeSystem/icd-o-3|2000"
+    },
+    {
+      "name" : "used-codesystem",
       "valueUri" : "http://terminology.hl7.org/CodeSystem/icd-o-3|2000"
     },
     {
