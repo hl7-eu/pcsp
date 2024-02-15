@@ -4,8 +4,8 @@ Usage: #example
 * status = #draft
 * publisher = "NHN"
 * subjectType = #Patient
-* contained[0] = YesNoVS
-* contained[+] = YesNoVS
+/* * contained[0] = Canonical(YesNoVS)
+* contained[+] = Canonical(YesNoVS) */
 * item[0].linkId = "811dfaad-bcaa-40ec-8675-3bd1ab4a5706"
 * item[=].type = #group
 * item[=].text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy"
@@ -19,7 +19,7 @@ Usage: #example
 * item[=].item[=].required = false
 * item[=].item[=].extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
 * item[=].item[=].extension.valueCodeableConcept = $questionnaire-item-control#radio-button
-* item[=].item[=].answerValueSet = "#YesNoVS"
+* item[=].item[=].answerValueSet = Canonical(YesNoVS)
 * item[=].item[+].linkId = "bea70d90-a056-45a8-878c-fd12298d999d"
 * item[=].item[=].type = #text
 * item[=].item[=].required = false
@@ -44,12 +44,12 @@ Usage: #example
 * item[=].item.item.item[=].item[=].type = #open-choice
 * item[=].item.item.item[=].item[=].text = "Condizione*§\n(Organo e Sistema automaticamente assegnati)"
 * item[=].item.item.item[=].item[=].required = false
-* item[=].item.item.item[=].item[=].answerValueSet = "#9523"
+* item[=].item.item.item[=].item[=].answerValueSet = Canonical(YesNoVS)
 * item[=].item.item.item[=].item[+].linkId = "a1593167-53e5-4e19-a7c8-ab8ba4af6e92"
 * item[=].item.item.item[=].item[=].type = #open-choice
 * item[=].item.item.item[=].item[=].text = "Grading all’ultima visita"
 * item[=].item.item.item[=].item[=].required = false
-* item[=].item.item.item[=].item[=].answerValueSet = "#9523"
+* item[=].item.item.item[=].item[=].answerValueSet = Canonical(YesNoVS)
 * item[=].item.item.item[=].required = false
 * item[=].item.item.item[+].linkId = "8df0c5fc-92a7-44a9-8ef2-96fd9928ef19"
 * item[=].item.item.item[=].type = #group
@@ -58,12 +58,12 @@ Usage: #example
 * item[=].item.item.item[=].item[=].type = #open-choice
 * item[=].item.item.item[=].item[=].text = "Evoluzione§*"
 * item[=].item.item.item[=].item[=].required = false
-* item[=].item.item.item[=].item[=].answerValueSet = "#9523"
+* item[=].item.item.item[=].item[=].answerValueSet = Canonical(YesNoVS)
 * item[=].item.item.item[=].item[+].linkId = "6c18e1ed-97bd-4ac6-82ca-de48ed51ee64"
 * item[=].item.item.item[=].item[=].type = #open-choice
 * item[=].item.item.item[=].item[=].text = "Se si, Data*§\n"
 * item[=].item.item.item[=].item[=].required = false
-* item[=].item.item.item[=].item[=].answerValueSet = "#9523"
+* item[=].item.item.item[=].item[=].answerValueSet = Canonical(YesNoVS)
 * item[=].item.item.item[=].item[=].enableWhen.question = "0a504e0a-0656-4ccb-9470-4a4397005ff5"
 * item[=].item.item.item[=].item[=].enableWhen.operator = #=
 * item[=].item.item.item[=].item[=].enableWhen.answerCoding = urn:oid:2.16.578.1.12.4.1.9523#1
@@ -71,7 +71,7 @@ Usage: #example
 * item[=].item.item.item[=].item[=].type = #open-choice
 * item[=].item.item.item[=].item[=].text = "Se MODIFICATO, \nNuovo Grading alla visita\n\n"
 * item[=].item.item.item[=].item[=].required = false
-* item[=].item.item.item[=].item[=].answerValueSet = "#9523"
+* item[=].item.item.item[=].item[=].answerValueSet = Canonical(YesNoVS)
 * item[=].item.item.item[=].item[=].enableWhen.question = "0a504e0a-0656-4ccb-9470-4a4397005ff5"
 * item[=].item.item.item[=].item[=].enableWhen.operator = #=
 * item[=].item.item.item[=].item[=].enableWhen.answerCoding = urn:oid:2.16.578.1.12.4.1.9523#1
