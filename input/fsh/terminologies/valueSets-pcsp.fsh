@@ -1,13 +1,3 @@
-// --------- 
-
-ValueSet: YesNoVS
-Id: yes-no-vs
-Title: "Yes/No Value Set"
-Description: "Yes/No Value Set"
-
-* ^experimental = false
-* $loinc#LA32-8 "NO"
-* $loinc#LA33-6 "YES"
 
 // --------------------------------------------------------
 ValueSet: BodyLocationQualifierVS
@@ -591,16 +581,4 @@ Description: "Surgical Actions"
 // * $sct#424208002 "Shunt - action"
 * $sct#129425003 "Application - action"
 * codes from valueset NotApplicableUnknownVs
-
-/* =======
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ValueSet: ObservationYesNoVs
-Id: vs-observationYesNo-eu-pcsp
-Title: "Observation codes for which a Yes/No answer is captured."
-Description: "Observation codes for which a Yes/No answer is captured."
-//-------------------------------------------------------------------------------------------
-* CsGenericPcsp#4w-corticosteroids-anti-cancer
-* CsGenericPcsp#intrathecal-injections
-
-==== */
 

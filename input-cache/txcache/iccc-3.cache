@@ -19,3 +19,112 @@ e: {
   "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/iccc-3"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/iccc-3",
+      "concept" : [{
+        "code" : "011",
+        "display" : "Lymphoid leukemias"
+      },
+      {
+        "code" : "021",
+        "display" : "Hodgkin lymphomas"
+      },
+      {
+        "code" : "036",
+        "display" : "Unspecified intracranial and intraspinal neoplasms"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/iccc-3"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/iccc-3",
+      "concept" : [{
+        "code" : "011",
+        "display" : "Lymphoid leukemias"
+      },
+      {
+        "code" : "021",
+        "display" : "Hodgkin lymphomas"
+      },
+      {
+        "code" : "036",
+        "display" : "Unspecified intracranial and intraspinal neoplasms"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/iccc-3"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/iccc-3",
+      "concept" : [{
+        "code" : "011",
+        "display" : "Lymphoid leukemias"
+      },
+      {
+        "code" : "021",
+        "display" : "Hodgkin lymphomas"
+      },
+      {
+        "code" : "036",
+        "display" : "Unspecified intracranial and intraspinal neoplasms"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/iccc-3"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/iccc-3",
+      "concept" : [{
+        "code" : "011",
+        "display" : "Lymphoid leukemias"
+      },
+      {
+        "code" : "021",
+        "display" : "Hodgkin lymphomas"
+      },
+      {
+        "code" : "036",
+        "display" : "Unspecified intracranial and intraspinal neoplasms"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/iccc-3"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/cond-test-vs", "version": "0.2.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/iccc-3"
+}
+-------------------------------------------------------------------------------------
