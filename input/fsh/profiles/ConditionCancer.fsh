@@ -235,7 +235,7 @@ Records the history of secondary neoplasms, including location(s) and the date o
 * insert NotUsed(stage)
 
 
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Profile:  OrganizationCenterPcsp
 Parent:   $Organization-uv-ips
 Id:       Organization-center-eu-pcsp
@@ -245,7 +245,7 @@ Description: "This profile defines how to represent the Primary Treatment Center
 * identifier ^short = "Identifier of the center"
 * name ^short = "Name of the Center"
 * address.city ^short = "Center address: city"
-* address.country ^short = "Center address: country"
+* address.country ^short = "Center address: country" */
 
 
 
