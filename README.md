@@ -1,5 +1,6 @@
 # PanCareSurPass project
-EU project PanCareSurPass aiming to conduct a robust assessment of the Cancer Survivorship Passport (SurPass)
+
+EU project PanCareSurPass aiming to conduct a robust assessment of the Cancer Survivorship Passport (SurPass).
 
 Released version: http://hl7.eu/fhir/ig/pcsp/
 
