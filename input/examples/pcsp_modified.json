@@ -8,7 +8,7 @@
     },
     "url": "http://hl7.eu/fhir/ig/pcsp/Questionnaire/Questionnaire",
     "version": "0.2.0",
-    "name": "ROTSurPass",
+    "name": "ROTSurPass-1",
     "status": "draft",
     "subjectType": [ "Patient" ],
     "date": "2024-02-26T13:40:43+00:00",
