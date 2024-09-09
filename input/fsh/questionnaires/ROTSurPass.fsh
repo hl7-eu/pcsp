@@ -3,142 +3,211 @@ RuleSet: enableIfYes ( linkid )
 * enableWhen.question = "{linkid}"
 * enableWhen.answerCoding = $loinc#LA33-6 "YES"
 
+RuleSet: enableIfNo ( linkid )
+* enableWhen.operator = #=
+* enableWhen.question = "{linkid}"
+* enableWhen.answerCoding = $loinc#LA32-8 "NO"
 
-Instance: Questionnaire
+RuleSet: NewCancerTxt ( linkid, block )
+* item[+]
+  * linkId  =  "new-cancer-txt-{block}"
+  * type = #text
+  * required = true
+  * text = "Se si specificare"
+  * insert enableIfYes ( {linkid} )
+
+RuleSet: NewConditionsTxt ( linkid, block )
+* item[+]
+  * linkId  =  "new-condition-txt-{block}"
+  * type = #text
+  * required = true
+  * text = "Se si specificare"
+  * insert enableIfYes ( {linkid} )
+
+
+RuleSet: ROTSurPassBody ( linkid, block )
+* item[+]
+  * linkId  =  "group-condition-{block}"
+  * prefix = "3"
+  * type = #group
+  // * text = "Condizioni patologiche"
+  * required = true
+  * repeats = true
+  * extension[$questionnaire-maxOccurs].valueInteger = 20
+  * insert enableIfYes ( {linkid} )   
+  * item[+]
+    * linkId  =  "group-previous-{block}"
+    * type = #group
+    * text = "Pregresso"
+    * required = true
+    * item[+]
+      * linkId  =  "condition-{block}"
+      * type = #open-choice
+      * text = "Condizione\n(Organo e Sistema automaticamente assegnati)"
+      * required = true
+      * answerValueSet = Canonical(ConditionsVS) // Change the value set
+    * item[+]
+      * linkId  =  "old-grading-{block}"
+      * type = #choice
+      * text = "Grading all’ultima visita"
+      * required = true
+      * answerValueSet = Canonical(GradeVS) // Change the value set
+  * item[+]
+    * linkId  =  "group-current-{block}"
+    * type = #group
+    * text = "Dati attuali"
+    * item[+]
+      * linkId  =  "condition-resolved-{block}"
+      * type = #choice
+      * text = "Evoluzione: risolta ?"
+      * required = true
+      * answerValueSet = Canonical(YesNoVS)
+    * item[+]
+      * linkId  =  "resolution-date-{block}"
+      * type = #date
+      * text = "Se si, Data*§"
+      * required = true
+      * insert enableIfYes ( condition-resolved-{block} )
+    * item[+]
+      * linkId  =  "new-grading-{block}"
+      * type = #choice
+      * text = "Nuovo Grading alla visita"
+      * required = true
+      * answerValueSet = Canonical(GradeVS)          
+    * item[+]
+      * linkId  =  "details-{block}"
+      * type = #string
+      * text = "Dettagli§ (con possibilità di caricare dei documenti significativi)"
+      * item[+]
+        * linkId  =  "details-attachments-{block}"
+        * type = #attachment
+        * text = "Attachments"
+        * extension.url = "http://hl7.org/fhir/StructureDefinition/maxSize"
+        * extension.valueDecimal = 5
+        * required = false
+        * repeats = true
+    * item[+]
+      * linkId  =  "next-control-{block}"
+      * type = #date
+      * text = "Prossimo controllo pianificato per§"
+      * required = false
+
+Instance: ROTSurPass
 InstanceOf: Questionnaire
 Usage: #example
 * status = #draft
 * name = "ROTSurPass"
 * subjectType = #Patient
-* description = """Prima scheda di follow up.
+* description = """Scheda di follow up.
 La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente alla consegna del SurPass o comunque alla prima visita dopo la fine del trattamento (OT)."""
+
 * contained[+] = YesNoVS
-* contained[+] = GradeVS
-* contained[+] = ConditionsVS
+/* * contained[+] = GradeVS
+* contained[+] = ConditionsVS */
 
-
-// * contained[+] = Canonical(YesNoVS)
-* item[0]
-  * linkId  = "811dfaad-bcaa-40ec-8675-3bd1ab4a5706"
+* item[+]
+  * linkId  = "first-visit"
+  * type = #choice
+  * text = "Prima visita ?"
+  * required = true
+  * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
+  * answerValueSet = Canonical(YesNoVS)
+  // ====================
+  // First Visit begin 
+  // ====================
+* item[+]
+  * linkId  = "new-cancer-after-off-therapy"
   * prefix = "1"
-  * type = #group
-  * text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy"
-  * required = true
-  * item[0]
-    * linkId  =  "77355979-b496-4d8c-b374-9657052e2732"
-    * prefix = "1.1"
-    * type = #choice
-    * text = "Sono state rilvate sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy ?"
-    * required = true
-    * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-    * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
-    * answerValueSet = Canonical(YesNoVS)
-  * item[+]
-    * prefix = "1.2"
-    * linkId  =  "bea70d90-a056-45a8-878c-fd12298d999d"
-    * type = #text
-    * required = true
-    * text = "Se si specificare"
-    * insert enableIfYes ( 77355979-b496-4d8c-b374-9657052e2732 )
-/*     * enableWhen.question = "77355979-b496-4d8c-b374-9657052e2732"
-    * enableWhen.operator = #=
-    * enableWhen.answerCoding = $loinc#LA33-6 "YES" */
+  * type = #choice
+  * text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy?"
+  * insert enableIfYes ( first-visit)
+  // This group is activated only if this choice is true
+  * insert NewCancerTxt ( new-cancer-after-off-therapy, 1 )
 
 * item[+]
-  * linkId  =  "50a0a1d8-9242-4696-845f-99fc6d83a096"
+  * linkId  =  "new-condition-after-off-therapy"
   * prefix = "2"
-  * type = #group
-  * text = "Condizioni patologiche"
+  * type = #choice
+  * text = "Dopo il primo off therapy il/la paziente  ha sperimentato una o più condizioni patologica?"
   * required = true
-  * item[+]
-    * linkId  =  "933460bc-08d7-4541-814d-755b3dee7aee"
-    * type = #choice
-    * text = "Dopo il primo off therapy il/la paziente ha sperimentato una o più condizioni patologica? "
-    * required = true    
-    * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
-    * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
-    * answerValueSet = Canonical(YesNoVS)
-    * item[+]
-      * linkId  =  "6ea0cebd-e8f8-4098-8b4f-75f3faabeef3"
-      * type = #group
-      * text = "Se sì, specificare:"      
-      * required = true
-      * insert enableIfYes ( 933460bc-08d7-4541-814d-755b3dee7aee )
-/*       * enableWhen.question = "933460bc-08d7-4541-814d-755b3dee7aee"
-      * enableWhen.operator = #=
-      * enableWhen.answerCoding = $loinc#LA33-6 "YES" */
-      * repeats = true
-      * item[0]
-        * linkId  =  "ab5618d2-169a-40a1-8f8e-5fb679d274b8"
-        * type = #group
-        * text = "Pregresso"
-        * item[0]
-          * linkId  =  "33c81c08-02f4-4472-97d1-2f26ec4ecd21"
-          * type = #open-choice
-          * text = "Condizione*§\n(Organo e Sistema automaticamente assegnati)"
-          * required = false
-          * answerValueSet = Canonical(ConditionsVS) // Change the value set
-        * item[+]
-          * linkId  =  "a1593167-53e5-4e19-a7c8-ab8ba4af6e92"
-          * type = #open-choice
-          * text = "Grading all’ultima visita"
-          * required = false
-          * answerValueSet = Canonical(GradeVS) // Change the value set
-        * required = false
-      * item[+]
-        * linkId  =  "8df0c5fc-92a7-44a9-8ef2-96fd9928ef19"
-        * type = #group
-        * text = "Dati attuali"
-        * item[0]
-          * linkId  =  "0a504e0a-0656-4ccb-9470-4a4397005ff5"
-          * type = #open-choice
-          * text = "Evoluzione: risolta ?"
-          * required = false
-          * answerValueSet = Canonical(YesNoVS)
-        * item[+]
-          * linkId  =  "6c18e1ed-97bd-4ac6-82ca-de48ed51ee64"
-          * type = #date
-          * text = "Se si, Data*§"
-          * required = false
-          * insert enableIfYes ( 0a504e0a-0656-4ccb-9470-4a4397005ff5 )
-        * item[+]
-          * linkId  =  "8ca3759a-1bed-49d6-aed2-0f504fb0e477"
-          * type = #open-choice
-          * text = "Se MODIFICATO, \nNuovo Grading alla visita\n\n"
-          * required = false
-          * answerValueSet = Canonical(GradeVS)
-          * insert enableIfYes ( 0a504e0a-0656-4ccb-9470-4a4397005ff5 )          
-        * item[+]
-          * linkId  =  "30f1dc23-7c64-4a07-c54f-421ef8fea9c6"
-          * type = #string
-          * text = "Dettagli§ (con possibilità di caricare dei documenti significativi)"
-          * item[+]
-            * linkId  =  "8894aec8-e592-45c3-8921-1a64e60c0240"
-            * type = #attachment
-            * text = "Attachments"
-            * extension.url = "http://hl7.org/fhir/StructureDefinition/maxSize"
-            * extension.valueDecimal = 5
-            * required = false
-            * repeats = true
-          * required = false
-        * item[+]
-          * linkId  =  "6cf8594f-2323-4986-d3ef-a337524a27bf"
-          * type = #date
-          * text = "Prossimo controllo pianificato per§"
-          * required = false
-        * required = false
-        * insert enableIfYes ( 933460bc-08d7-4541-814d-755b3dee7aee )
-  * required = false
+  * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
+  * answerValueSet = Canonical(YesNoVS)
+  * insert enableIfYes ( first-visit)
+  * insert NewConditionsTxt ( new-condition-after-off-therapy, 1 )
+  * insert ROTSurPassBody ( new-condition-after-off-therapy, 1)
+
+
+  // ====================
+  // NOT First Visit begin 
+  // ====================
+
 * item[+]
-  * linkId  =  "b665bf51-a1ab-4ccc-89b4-41a731b6b488"
+  * linkId  = "new-cancer-after-last-visit"
+  * prefix = "1"
+  * type = #choice
+  * text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dall’ultima visita?"  
+  * insert enableIfNo ( first-visit )
+  // This group is activated only if this choice is true
+  * insert NewCancerTxt ( new-cancer-after-last-visit, 2 )
+
+* item[+]
+  * linkId  = "resolved-conditions"
+  // * prefix = ""
+  * type = #text
+  * text = "Condizioni cliniche risolte"  
+  * insert enableIfNo ( first-visit )
+  * repeats = true
+
+* item[+]
+  * linkId  =  "condition-changed"
+  * prefix = "2"
+  * type = #choice
+  * text = "Le condizioni patologiche ancora presenti (non risolte) alla visita precedente si sono risolte o modificate di grado?"    
+  * required = true
+  * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
+  * answerValueSet = Canonical(YesNoVS)
+  * insert enableIfNo ( first-visit )
+  * insert NewConditionsTxt ( condition-changed,2 )
+  * insert ROTSurPassBody ( condition-changed, 2 )
+
+// COMMON
+
+* item[+]
+  * linkId  =  "notes"
   * type = #string
   * text = "Note"
+  * required = false
   * item[+]
-    * linkId  =  "5ad820b7-cad6-490a-cbc4-a88429287cc0"
+    * linkId  =  "notes-attachments"
     * type = #attachment
-    * text = "Possibilità di caricare "
+    * text = "Possibilità di caricare"
     * extension.url = "http://hl7.org/fhir/StructureDefinition/maxSize"
     * extension.valueDecimal = 5
     * required = false
     * repeats = true
-  * required = false
+
+
+//==================================================
+// IN LINE VALUE SETS
+//============================================
+
+Instance: YesNoVS
+InstanceOf: ValueSet
+Title: "Yes/No Value Set"
+Description: "Yes/No Value Set"
+Usage: #inline
+
+* experimental = false
+* status = #draft
+
+* compose.include
+  * system = $loinc
+  * concept[+]
+    * code = #LA32-8
+    * display = "NO"
+  * concept[+]
+    * code = #LA33-6
+    * display = "YES"

@@ -1,0 +1,288 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "pcsp-quest-1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2024-05-16T17:28:41.897+00:00",
+      "source": "#a7RU0ZegFj9uVW6i"
+    },
+    "url": "http://hl7.eu/fhir/ig/pcsp/Questionnaire/Questionnaire",
+    "version": "0.2.0",
+    "name": "ROTSurPass",
+    "status": "draft",
+    "subjectType": [ "Patient" ],
+    "date": "2024-02-26T13:40:43+00:00",
+    "publisher": "PanCareSurPass Project",
+    "contact": [ {
+      "name": "PanCareSurPass Project",
+      "telecom": [ {
+        "system": "url",
+        "value": "https://www.pancaresurpass.eu/"
+      } ]
+    }, {
+      "name": "PanCareSurPass Project",
+      "telecom": [ {
+        "system": "url",
+        "value": "https://www.pancaresurpass.eu/"
+      } ]
+    } ],
+    "description": "Prima scheda di follow up.\nLa compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente alla consegna del SurPass o comunque alla prima visita dopo la fine del trattamento (OT).",
+    "jurisdiction": [ {
+      "coding": [ {
+        "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "code": "150",
+        "display": "Europe"
+      } ]
+    } ],
+    "item": [ {
+      "linkId": "811dfaad-bcaa-40ec-8675-3bd1ab4a5706",
+      "prefix": "1",
+      "text": "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy",
+      "type": "group",
+      "required": true,
+      "item": [ {
+      "extension": [ {
+        "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+        "valueCodeableConcept": {
+          "coding": [ {
+            "system": "http://hl7.org/fhir/questionnaire-item-control",
+            "code": "radio-button"
+          } ]
+        }
+      } ],
+        "linkId": "77355979-b496-4d8c-b374-9657052e2732",
+        "prefix": "1.1",
+        "text": "Sono state rilvate sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy ?",
+        "type": "choice",
+        "required": true,
+        "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+        ]
+      }, {
+        "linkId": "bea70d90-a056-45a8-878c-fd12298d999d",
+        "prefix": "1.2",
+        "text": "Se si specificare",
+        "type": "text",
+        "required": false
+      } ]
+    }, {
+      "linkId": "50a0a1d8-9242-4696-845f-99fc6d83a096",
+      "prefix": "2",
+      "text": "Condizioni patologiche",
+      "type": "group",
+      "required": false,
+      "item": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [ {
+              "system": "http://hl7.org/fhir/questionnaire-item-control",
+              "code": "radio-button"
+            } ]
+          }
+        } ],
+        "linkId": "933460bc-08d7-4541-814d-755b3dee7aee",
+        "text": "Dopo il primo off therapy il/la paziente ha sperimentato una o più condizioni patologica? ",
+        "type": "choice",
+        "required": true,
+        "answerOption": [
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "Y",
+                "display": "Yes"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                "code": "N",
+                "display": "No"
+              }
+            }
+        ],
+        "item": [ {
+          "linkId": "6ea0cebd-e8f8-4098-8b4f-75f3faabeef3",
+          "text": "Se sì, specificare:",
+          "type": "group",
+          "required": true,
+          "repeats": true,
+          "item": [ {
+            "linkId": "ab5618d2-169a-40a1-8f8e-5fb679d274b8",
+            "text": "Pregresso",
+            "type": "group",
+            "required": false,
+            "item": [ {
+              "linkId": "33c81c08-02f4-4472-97d1-2f26ec4ecd21",
+              "text": "Condizione*§\n(Organo e Sistema automaticamente assegnati)",
+              "type": "open-choice",
+              "required": false,
+              "answerOption": [
+              {
+              "valueCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/iccc-3",
+                    "code": "011",
+                    "display": "Lymphoid leukemias"
+                  }
+                },
+                {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/iccc-3",
+                "code": "021",
+                "display": "Hodgkin lymphomas"
+              }
+            },
+            {
+              "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/iccc-3",
+                "code": "036",
+                "display": "Unspecified intracranial and intraspinal neoplasms"
+              }
+            }
+             ]
+            }, {
+              "linkId": "a1593167-53e5-4e19-a7c8-ab8ba4af6e92",
+              "text": "Grading all’ultima visita",
+              "type": "open-choice",
+              "required": false,
+              "answerOption": [
+                {
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "54102005",
+                    "display": "G1 grade"
+                    }
+                  },
+                  {
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "313147000",
+                    "display": "Tumor grade G0"
+                }
+              },
+              {
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "1663004",
+                    "display": "G2 grade"
+                }
+            }
+             ]
+              
+            } ]
+          }, {
+            "linkId": "8df0c5fc-92a7-44a9-8ef2-96fd9928ef19",
+            "text": "Dati attuali",
+            "type": "group",
+            "required": false,
+            "item": [ {
+              "linkId": "0a504e0a-0656-4ccb-9470-4a4397005ff5",
+              "text": "Evoluzione: risolta ?",
+              "type": "open-choice",
+              "required": false,
+              "answerOption": [
+                {
+                  "valueCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "Y",
+                    "display": "Yes"
+                  }
+                },
+                {
+                  "valueCoding": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+                    "code": "N",
+                    "display": "No"
+                  }
+                }
+            ]
+            }, {
+              "linkId": "6c18e1ed-97bd-4ac6-82ca-de48ed51ee64",
+              "text": "Se si, Data*§",
+              "type": "date",
+              "required": false
+            }, {
+              "linkId": "8ca3759a-1bed-49d6-aed2-0f504fb0e477",
+              "text": "Se MODIFICATO, \nNuovo Grading alla visita\n\n",
+              "type": "open-choice",
+              "required": false,
+              "answerOption": [
+                {
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "54102005",
+                    "display": "G1 grade"
+                    }
+                  },
+                  {
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "313147000",
+                    "display": "Tumor grade G0"
+                }
+              },
+              {
+                "valueCoding": {
+                    "system": "http://snomed.info/sct",
+                    "code": "1663004",
+                    "display": "G2 grade"
+                }
+            }
+             ]
+            }, {
+              "linkId": "30f1dc23-7c64-4a07-c54f-421ef8fea9c6",
+              "text": "Dettagli§ (con possibilità di caricare dei documenti significativi)",
+              "type": "string",
+              "required": false,
+              "item": [ {
+                "extension": [ {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxSize",
+                  "valueDecimal": 5
+                } ],
+                "linkId": "8894aec8-e592-45c3-8921-1a64e60c0240",
+                "text": "Attachments",
+                "type": "attachment",
+                "required": false,
+                "repeats": true
+              } ]
+            }, {
+              "linkId": "6cf8594f-2323-4986-d3ef-a337524a27bf",
+              "text": "Prossimo controllo pianificato per§",
+              "type": "date",
+              "required": false
+            } ]
+          } ]
+        } ]
+      } ]
+    }, {
+      "linkId": "b665bf51-a1ab-4ccc-89b4-41a731b6b488",
+      "text": "Note",
+      "type": "string",
+      "required": false,
+      "item": [ {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxSize",
+          "valueDecimal": 5
+        } ],
+        "linkId": "5ad820b7-cad6-490a-cbc4-a88429287cc0",
+        "text": "Possibilità di caricare ",
+        "type": "attachment",
+        "required": false,
+        "repeats": true
+      } ]
+    } ]
+  }
+  

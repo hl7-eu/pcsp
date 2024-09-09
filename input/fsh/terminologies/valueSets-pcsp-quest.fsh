@@ -1,13 +1,13 @@
 // --------- 
 
-ValueSet: YesNoVS
+/* ValueSet: YesNoVS
 Id: yes-no-vs
 Title: "Yes/No Value Set"
 Description: "Yes/No Value Set"
 
 * ^experimental = false
 * $loinc#LA32-8 "NO"
-* $loinc#LA33-6 "YES"
+* $loinc#LA33-6 "YES" */
 
 // --------- 
 
