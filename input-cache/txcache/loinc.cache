@@ -1901,7 +1901,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1924,7 +1923,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1947,7 +1945,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1970,7 +1967,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -1993,7 +1989,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2016,7 +2011,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2039,7 +2033,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2062,7 +2055,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2085,7 +2077,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2108,7 +2099,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2131,7 +2121,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2154,7 +2143,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2177,7 +2165,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2200,7 +2187,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2223,7 +2209,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2246,7 +2231,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2269,7 +2253,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2292,7 +2275,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2315,7 +2297,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2338,7 +2319,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2364,7 +2344,6 @@ v: {
   "severity" : "warning",
   "error" : "Wrong Display Name 'ABO and Rh group panel - Blood' for http://loinc.org#34530-6. Valid display is one of 0 choices: 'ABO and Rh group panel - Blood' (en-US), 'ABO and Rh group panel - Blood' (en-US), 'ABO + Rh Pnl Bld' (en-US), 'ABO and Rh group panel, Blood' (en-US), 'Panel de grupo ABO y Rh: Sangre : Punto temporal: -: -:' (es-MX), 'pruebas analíticas de grupo ABO y Rh:tipo:punto en el tiempo:sangre:Nominal:' (es-AR), 'AcO + Rh Pnl Sg' (pt-BR) or 'AB0 & Rh-bloedgroep panel in bloed' (nl-NL) (for the language(s) 'it-IT')",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2407,7 +2386,6 @@ v: {
   "severity" : "warning",
   "error" : "Wrong Display Name 'ABO group [Type] in Blood' for http://loinc.org#883-9. Valid display is one of 0 choices: 'ABO group [Type] in Blood' (en-US), 'ABO group [Type] in Blood' (en-US), 'ABO Group Bld' (en-US), 'ABO group, Blood' (en-US), 'Grupo ABO: Sangre : Punto temporal: Tipo: Nominal:' (es-MX), 'grupo ABO:tipo:punto en el tiempo:sangre:Nominal:' (es-AR), 'ABO group Sg' (pt-BR), 'AB0-Blutgruppensystem [Typ] in Blut' (de-DE), 'AB0-bloedgroep [type] in bloed' (nl-NL), 'Blutgruppe AB0' (de-AT), 'АВО група [Тип] Крові' (uk-UA), 'АВО Група Крв' (uk-UA) or 'АВО група (Крв)' (uk-UA) (for the language(s) 'it-IT')",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2450,7 +2428,6 @@ v: {
   "severity" : "warning",
   "error" : "Wrong Display Name 'Rh [Type] in Blood' for http://loinc.org#10331-7. Valid display is one of 0 choices: 'Rh [Type] in Blood' (en-US), 'Rh [Type] in Blood' (en-US), 'Rh Bld' (en-US), 'Rh, Blood' (en-US), 'Rh: Sangre : Punto temporal: Tipo: Nominal:' (es-MX), 'Rh:tipo:punto en el tiempo:sangre:Nominal:' (es-AR), 'Rh Sg' (pt-BR), 'Rhesusfaktor [Typ] in Blut' (de-DE), 'Rh [type] in bloed' (nl-NL), 'Rhesusfaktor' (de-AT), 'Rh [Тип] Крові' (uk-UA), 'Rh Крв' (uk-UA) or 'Rh категорійно (Крв)' (uk-UA) (for the language(s) 'it-IT')",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2493,7 +2470,6 @@ v: {
   "severity" : "warning",
   "error" : "Wrong Display Name 'Diagnosis' for http://loinc.org#29308-4. Valid display is one of 0 choices: 'Diagnosis' (en-US), 'Diagnosis' (en-US), 'Dx' (en-US), 'Diagnóstico: Paciente:Punto temporal:Interpretación:Nominal:' (es-MX), 'diagnóstico:impresión/interpretación del estudio:punto en el tiempo:^paciente:Nominal:' (es-AR), 'Dx' (pt-BR), 'Diagnose' (de-DE), 'Діагноз' (uk-UA) or 'Діагноз' (uk-UA) (for the language(s) 'it-IT')",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2533,7 +2509,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2556,7 +2531,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2582,7 +2556,6 @@ v: {
   "severity" : "warning",
   "error" : "Wrong Display Name 'YES' for http://loinc.org#LA33-6. Valid display is one of 0 choices: 'Yes' (en-US) (for the language(s) 'it-IT')",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2625,7 +2598,6 @@ v: {
   "severity" : "warning",
   "error" : "Wrong Display Name 'Left' for http://loinc.org#LA4585-1. Valid display is one of 0 choices: 'Left' (en-US) (for the language(s) 'it-IT')",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2668,7 +2640,6 @@ v: {
   "severity" : "warning",
   "error" : "Wrong Display Name 'Group A' for http://loinc.org#LA19710-5. Valid display is one of 0 choices: 'Group A' (en-US) (for the language(s) 'it-IT')",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2720,7 +2691,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2746,7 +2716,6 @@ v: {
   "severity" : "warning",
   "error" : "Wrong Display Name 'Positive' for http://loinc.org#LA6576-8. Valid display is one of 0 choices: 'Positive' (en-US) (for the language(s) 'it-IT')",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome",
   "issue" : [{
@@ -2798,7 +2767,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2818,7 +2786,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2841,7 +2808,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2864,7 +2830,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2887,7 +2852,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -2910,7 +2874,6 @@ v: {
   "system" : "http://loinc.org",
   "version" : "2.78",
   "server" : "http://tx.fhir.org/r4",
-  "unknown-systems" : "",
   "issues" : {
   "resourceType" : "OperationOutcome"
 }
@@ -3037,5 +3000,48 @@ e: {
   }
 },
   "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA32-8",
+  "display" : "NO"
+}, "valueSet" :null, "langs":"it-IT", "useServer":"true", "useClient":"true", "guessSystem":"false", "activeOnly":"false", "membershipOnly":"false", "displayWarningMode":"false", "versionFlexible":"true", "profile": {
+  "resourceType" : "Parameters",
+  "parameter" : [{
+    "name" : "x-system-cache-id",
+    "valueString" : "dc8fd4bc-091a-424a-8a3b-6198ef146891"
+  }]
+}}####
+v: {
+  "display" : "No",
+  "code" : "LA32-8",
+  "system" : "http://loinc.org",
+  "version" : "2.78",
+  "severity" : "warning",
+  "error" : "Wrong Display Name 'NO' for http://loinc.org#LA32-8. Valid display is one of 0 choices: 'No' (en-US) (for the language(s) 'it-IT')",
+  "server" : "http://tx.fhir.org/r4",
+  "unknown-systems" : "",
+  "issues" : {
+  "resourceType" : "OperationOutcome",
+  "issue" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-server",
+      "valueUrl" : "http://tx.fhir.org/r4"
+    }],
+    "severity" : "warning",
+    "code" : "invalid",
+    "details" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type",
+        "code" : "invalid-display"
+      }],
+      "text" : "Wrong Display Name 'NO' for http://loinc.org#LA32-8. Valid display is one of 0 choices: 'No' (en-US) (for the language(s) 'it-IT')"
+    },
+    "location" : ["Coding.display"],
+    "expression" : ["Coding.display"]
+  }]
+}
+
 }
 -------------------------------------------------------------------------------------

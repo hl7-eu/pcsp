@@ -19,7 +19,6 @@ Usage:  #example
 * stage.summary.text = "textual description of stage" 
 // metastasis C412
 * evidence[0]
-  * code = $iccc3#081 // to be checked see https://seer.cancer.gov/iccc/iccc3.html
   * detail = Reference ( ObservationPrimCancerMainzZeisig )
 * evidence[+]
   * code = $sct#106221001 "Genetic finding" 

@@ -3,10 +3,12 @@ Alias: $radiotherapy-energy-units = http://hl7.org/fhir/us/codex-radiation-thera
 Alias: $codex-radiotherapy-isotopes = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/codex-radiotherapy-isotopes
 
 Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+Alias: $questionnaire-maxOccurs = http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs
 
 //============== ALIAS ===============
 
 Alias: $pcspUri = http://hl7.eu/fhir/ig/pcsp
+Alias: $cs-generic-eu-pcsp = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-generic-eu-pcsp
 
 // --- Code Systems
 Alias: $ajcc = http://cancerstaging.org
