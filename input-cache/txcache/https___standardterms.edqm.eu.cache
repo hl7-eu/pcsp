@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : false,
+    "include" : [{
+      "system" : "https://standardterms.edqm.eu",
+      "concept" : [{
+        "code" : "20042000",
+        "display" : "Intrathecal use"
+      }]
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system https://standardterms.edqm.eu"
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -13,49 +31,11 @@
   }
 }}####
 e: {
-  "error" : "Error from server: Unable to provide support for code system https://standardterms.edqm.eu"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-roa-eu-pcsp", "version": "0.1.0"}####
-e: {
-  "error" : "Error from server: Unable to provide support for code system https://standardterms.edqm.eu"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "inactive" : true,
-    "include" : [{
-      "system" : "https://standardterms.edqm.eu",
-      "concept" : [{
-        "code" : "20042000",
-        "display" : "Intrathecal use"
-      }]
-    }]
-  }
-}}####
-e: {
-  "error" : "Error from server: Unable to provide support for code system https://standardterms.edqm.eu"
+  "from-server" : true,
+  "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system https://standardterms.edqm.eu"
 }
 -------------------------------------------------------------------------------------
 {"hierarchical" : true, "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-roa-eu-pcsp", "version": "0.2.0"}####
-e: {
-  "error" : "Error from server: Unable to provide support for code system https://standardterms.edqm.eu"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "inactive" : false,
-    "include" : [{
-      "system" : "https://standardterms.edqm.eu",
-      "concept" : [{
-        "code" : "20042000",
-        "display" : "Intrathecal use"
-      }]
-    }]
-  }
-}}####
 e: {
   "from-server" : true,
   "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system https://standardterms.edqm.eu"

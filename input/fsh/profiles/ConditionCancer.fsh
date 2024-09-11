@@ -168,7 +168,7 @@ This profile should be also used for documenting primary cancer relapses during 
 // * stage.type from ObservationCodesStageGroupVS (required)
 
 
-* evidence ^slicing.discriminator.type = #pattern
+* evidence ^slicing.discriminator.type = #profile
 * evidence ^slicing.discriminator.path = "$this.resolve()"
 * evidence ^slicing.discriminator.type = #pattern
 * evidence ^slicing.discriminator.path = "code"
@@ -182,33 +182,34 @@ This profile should be also used for documenting primary cancer relapses during 
 	
 * evidence[diagnosisDetails]
   * ^short = "Diagnosis details"
-  * code from ICCC3Vs
   * detail only Reference (ObservationDiagnosisPcsp)
 * evidence[geneticMarker]
   * ^short = "Genetic Marker"
-  * code = $sct#106221001 "Genetic finding"
+  * code 0..
+  * code.coding = $sct#106221001 // "Genetic finding"
   * detail only Reference (Observation or DocumentReference or DiagnosticReport)
   * detail.display ^short = "Text alternative for the resource (Genetic finding)"
 * evidence[immunology]
   * ^short = "Immunology" 
-  * code = $sct#365861007 "Finding of immune status"
+  * code 0..
+  * code.coding = $sct#365861007 "Finding of immune status"
   * detail only Reference (Observation or DocumentReference or DiagnosticReport)
-  * detail.display ^short = "Text alternative for the resource (immunology)"
+  /* * detail.display ^short = "Text alternative for the resource (immunology)"  */
 * evidence[predisposition]
   * ^short = "Predisposition" 
   // --- CHANGED 2022 JUNE 13
   // * code = $sct#32895009 "Hereditary disease" // check if it needs to be changed with a Value Set
-  * code from HereditaryPredispositionDisease
-  * detail only Reference (Condition or Observation or FamilyMemberHistory or DocumentReference)
-  * detail.display ^short = "Text alternative for the resource (predisposition)"
-  
+  * code from HereditaryPredispositionDisease (extensible)
+  * code.text ^short = "Text for predisposition"   
+  * detail only Reference (ObservationHereditaryPredispositionPcsp)
+  /* * detail.display ^short = "Text alternative for the resource (predisposition)" */
+/*   
   * detail ^slicing.discriminator.type = #type
   * detail ^slicing.discriminator.path = "$this.resolve()"
   * detail ^slicing.rules = #open
   * detail ^slicing.description = "Slice based on the reference type"
-  * detail contains 
-	observation	0..1 MS
-  * detail[observation] only Reference (ObservationHereditaryPredispositionPcsp)
+  * detail contains observation	0..1 MS
+  * detail[observation] only Reference (ObservationHereditaryPredispositionPcsp) */
 
 * note ^short = "Additional information about the Cancer Condition"
 

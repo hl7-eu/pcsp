@@ -1,0 +1,9 @@
+{
+  "#1101" : null,
+  "http://loinc.org/vs/LL360-9" : null,
+  "#YesNoVS" : null,
+  "#9523" : null,
+  "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" : null,
+  "http://loinc.org/vs/LL2419-1" : null,
+  "http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips" : null
+}

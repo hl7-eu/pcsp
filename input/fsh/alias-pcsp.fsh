@@ -2,6 +2,8 @@
 Alias: $radiotherapy-energy-units = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/radiotherapy-energy-units
 Alias: $codex-radiotherapy-isotopes = http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/codex-radiotherapy-isotopes
 
+Alias: $questionnaire-item-control = http://hl7.org/fhir/questionnaire-item-control
+
 //============== ALIAS ===============
 
 Alias: $pcspUri = http://hl7.eu/fhir/ig/pcsp
