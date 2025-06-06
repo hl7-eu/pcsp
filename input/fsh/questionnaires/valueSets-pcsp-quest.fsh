@@ -27,6 +27,9 @@ Title: "Grade: follow up"
 Description: "Grade: follow up"
 
 * ^experimental = true
-* $sct#54102005 "G1 grade"
 * $sct#313147000 "Tumor grade G0"
+* $sct#54102005 "G1 grade"
 * $sct#1663004 "G2 grade"
+* $sct#1663103 "G3 grade"
+* $sct#1663201 "G4 grade"
+* $sct#371923003 "Fatal outcome"
