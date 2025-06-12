@@ -18,7 +18,7 @@ RuleSet: IfTrueSpecify ( linkid, block )
   * linkId  =  "sepcify-{block}"
   * type = #text
   * required = true
-  * text = "Se si specificare"
+  * text = "Se sì, specificare"
   * insert enableIfYes ( {linkid} )
 
 RuleSet: NewConditionGroup ( linkid, block )
@@ -108,11 +108,11 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
     * answerOption[+].valueString = "No, Invariata"
     * answerOption[+].valueString = "Si, Modificata"
-    * answerOption[+].valueString = "Si, Resolta"
+    * answerOption[+].valueString = "Si, Risolta"
   * item[+]
     * linkId  =  "resolution-date-{block}"
     * type = #date
-    * text = "Data della risoluzione"
+    * text = "Se sì, Data"
     * required = true
     * enableBehavior = #any
     * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
@@ -148,7 +148,7 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  = "first-visit"
   * type = #choice
-  * text = "Prima visita ?"
+  * text = "Prima visita?"
   * required = true
   * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
   * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
@@ -245,7 +245,7 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  =  "notes-attachments"
   * type = #attachment
-  * text = "Documenti relativi ad esami di laboratorio significativi"
+  * text = "Documenti relativi ad esami strumentali di laboratorio significativi"
   * extension.url = "http://hl7.org/fhir/StructureDefinition/maxSize"
   * extension.valueDecimal = 5
   * required = false
