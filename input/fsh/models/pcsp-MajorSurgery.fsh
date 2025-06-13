@@ -4,8 +4,7 @@
 Logical: MajorSurgery				
 Id: MajorSurgery				
 Title: "Major Surgery"				
-Description:  """Major Surgery.
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Major Surgery."""				
 * relatedDiagnosis 0..1 Identifier "Progressive number of diagnosis" """Progressive number of diagnosis (1=first; 2= second; 3 = third; ?).  
 In this field must be reported the ordinal number of the tumor diagnosis for which the surgery was performed"""				
 * relatedRelapse 0..1 Identifier "Progressive number of relapse/progression (after FLT)" """Progressive number of relapse/progression (after FLT)"""				

@@ -4,8 +4,7 @@
 Logical: TreatmentSummary				
 Id: TreatmentSummary				
 Title: "Treatment Summary"				
-Description:  """Treatment Summary data model
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Treatment Summary data model"""				
 				
 * subject 1..1 Subject "Subject" """Subject"""				
 * diagnosis 0..5 BackboneElement "Diagnosis" """Diagnosis"""				

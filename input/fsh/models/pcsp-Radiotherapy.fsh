@@ -4,8 +4,7 @@
 Logical: Radiotherapy				
 Id: Radiotherapy				
 Title: "Radiotherapy"				
-Description:  """Radiotherapy
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Radiotherapy"""				
 * relatedDiagnosis 0..1 Identifier "Related Diagnosis" """Identifier of the diagnosis for which this radiotherapy is performed"""				
 * relatedRelapse 0..1 Identifier "Related relapse/progression (after FLT)" """Identifier of the relapse/progression (after FLT) for which this radiotherapy is performed"""				
 * identifier 0..* Identifier "Identifier of the radotherapy episode" """Progressive number of radotherapy episode.  An EPISODE might be a single or several courses of pre-planned treatment within a consecutive time period to different sites. For example, if a patient had radiotherapy to a limb and also to the lungs for a Ewing?s sarcoma these should be entered  in one episode of treatment but as separate radiotherapy courses with their respective site, total dose, and number of fractions. They will both be within one episode"""				
@@ -59,7 +58,7 @@ If you know the treatment was with external beam but not which machine or energy
 -9922 => Unknown"""				
 * numberOfCourses 0..1 integer "Number of courses  (If metabolic/radionuclide)" """For Metabolic/radionuclide therapy"""				
 * target 0..5 BackboneElement "Target" """Site' refers to the radiation therapy treatment field, i.e. the part of the body that received the radiation dose in order to treat the tumour. 
-Required if Type of radiotherapy = 1 or 2 (External Beam, Brachytherapy)ÿ
+Required if Type of radiotherapy = 1 or 2 (External Beam, Brachytherapy)ï¿½
 If more than one body site was treated with radiotherapy, you can add anther site and describe; upto 5 sites are allowed by the system """				
 * target.site 1..1 CodeableConcept "Body Site Code" """RT sites are coded with a 3 tier level (see list). The first is ?Tier 1?.  The first digit/s of the code, describes the large topographical body areas e.g. brain, chest, abdomen, limb. Since radiation fields often involve more than one topographical area we have added ?cervico-thoracic?, ?thoraco abdominal? and ?abdomino pelvic? areas to Tier 1. 
 The second (Tier 2) includes subcategories of Tier 1 sites e.g. brain stem, heart, liver, upper limb. 
@@ -89,7 +88,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * target.boost.type 1..1 CodeableConcept "Type of Boost" """Specify radiation type of the boost.
 1 => External Beam
 2 => Brachytherapy
--9922 => NK ÿ"""				
+-9922 => NK ï¿½"""				
 * target.boost.given 0..1 CodeableConcept "Boost given" """Flag indicating if a boost was given, not given or unknown"""				
 * target.boost.site 0..1 CodeableConcept "Boost site" """Site' refers to the radiation therapy treatment field. As you start typing the name of the site, a drop down list with related terms will appear (special sites like Inverted Y are included). If the RT site listed in the medical record cannot reasonably be matched to one of the sites listed in the computer, choose: ??Other' and then add in free text the name of this RT site. 
 required if given"""				
@@ -114,7 +113,7 @@ specify if dose is recorded in bequerels (MBq or GBq) or curies (Ci) or Unkwnon"
 * target.boost.totalDose.fractions 0..1 integer "Number of fractions (if  external beam)" """A fraction of radiation treatment is a single attendance for treatment. Please specify the number of fractions given as included in the boost. If not known, insert NK."""				
 * target.shielding 0..1 BackboneElement "Shielding" """Shielding, in some records this is called ?blocking? or ?blocks?. """				
 * target.shielding.status 0..1 CodeableConcept "Shielding status" """Specify if shielding was used or not. 
-Yes;  No;  NK ÿ"""				
+Yes;  No;  NK ï¿½"""				
 * target.shielding.position 0..1 string "Position of shielding" """Describe the positioning of shielding"""				
 * target.site.notes 0..1 string "Additional description" """Record any available details on the shielded tissue/organ (or size of shielded area)."""				
 * organAtRisk 0..1 BackboneElement "Organ at Risk" """Organs at Risk"""				

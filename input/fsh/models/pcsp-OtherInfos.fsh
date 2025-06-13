@@ -4,15 +4,14 @@
 Logical: OtherInfos				
 Id: OtherInfos				
 Title: "Other info and relevant events"				
-Description:  """Other info and relevant events
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Other info and relevant events"""				
 * identifier 0..1 Identifier "Relevant event number" """Progressive number of relevant event  (1=first; 2= second; 3 = third; ?).
 In this field must be reported the ordinal number of relevant event to be described."""				
 * relatedDiagnosis 0..1 Identifier "Progressive number of diagnosis" """Progressive number of diagnosis (1=first; 2= second; 3 = third; ?).  
 In this field must be reported the ordinal number of the tumor diagnosis in which other info or relevant events occurred"""				
 * relatedRelapse 0..1 Identifier "Progressive number of relapse/progression (after FLT)" """Progressive number of relevant event  (1=first; 2= second; 3 = third; ?).
 In this field must be reported the ordinal number of relevant event to be described."""				
-* severeToxicity 0..10 BackboneElement "Important toxicity during treatment" """Important toxicity during treatment ÿ"""				
+* severeToxicity 0..10 BackboneElement "Important toxicity during treatment" """Important toxicity during treatment ï¿½"""				
 * severeToxicity.flag 0..* CodeableConcept "Important toxicity during treatment" """Answwer 'YES' OR 'NO' if non haematologic severe or life threatening (CTCAE grade 3 or 4) toxicity occurred during treatment.  Please note that febrile neutropenia events are not considered as 'severe' unless infection had severly affected important organs (e.g osteomyelitis, pneumonia) 
 1 => Yes
 2 => No
@@ -32,7 +31,7 @@ In this field must be reported the ordinal number of relevant event to be descri
 * catheter.relatedThrombosis 0..1 BackboneElement "Catheter-related thrombosis" """Catheter-related thrombosis"""				
 * catheter.relatedThrombosis.occurred 0..1 CodeableConcept "Yes/No/UNK" """Report if there was a catheter-related thrombosis due to a central venous catheter."""				
 * catheter.relatedThrombosis.specification 0..1 string "Catheter-related thrombosis specification" """Specify the details of the catheter-related thrombosis, including the location (vessel and laterality), treatment and status at the end of cancer treatment."""				
-* transfusion 0..1 BackboneElement "Transfusion" """Transfusion ÿ"""				
+* transfusion 0..1 BackboneElement "Transfusion" """Transfusion ï¿½"""				
 * transfusion.occured 0..1 CodeableConcept "Yes/No/UNK" """Please state if at least one blood (any component) transfusion was made"""				
 * transfusion.last 0..1 string "Last transfusion date" """Please  report the date of the last transfusion given. If the date is unkown or partially missed insert the year at the best of your knowledge."""				
 * transfusion.moreThan10 0..1 CodeableConcept ">= 10 Transfusions ?" """Please specify if patient recieved 10 or more than 10 trasfusions during therapy"""				

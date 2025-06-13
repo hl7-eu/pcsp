@@ -4,8 +4,7 @@
 Logical: StemCellTransplantation				
 Id: StemCellTransplantation				
 Title: "Stem Cell Transplantation"				
-Description:  """Stem Cell Transplantation.
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Stem Cell Transplantation."""				
 * identifier 1..* Identifier "SCT Identifier" """Progressive SCT number"""				
 * relatedDiagnosis 1..* Identifier "Progressive number of diagnosis" """Progressive number of diagnosis"""				
 * relatedRelapse 1..* Identifier "Progressive number of relapse/progression (after FLT)" """Progressive number of relapse/progression (after FLT)"""				

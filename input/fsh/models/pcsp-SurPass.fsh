@@ -4,8 +4,7 @@
 Logical: SurPass				
 Id: SurPass				
 Title: "SurPass V2.0"				
-Description:  """Survivorship Passport V2.0
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Survivorship Passport V2.0"""				
 * treatmentSummary 1..1 http://hl7.eu/fhir/ig/pcsp/StructureDefinition/TreatmentSummary "Treatment Summary" """Treatment Summary"""				
 * carePlan 0..* PlanOfCare "Care plan" """Reccomandation for follow up"""				
 //--- END				

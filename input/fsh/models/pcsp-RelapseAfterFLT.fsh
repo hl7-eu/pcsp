@@ -4,8 +4,7 @@
 Logical: RelapseAfterFLT				
 Id: RelapseAfterFLT				
 Title: "Progression-Relapse after FLT"				
-Description:  """Progression-Relapse after FLT
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Progression-Relapse after FLT"""				
 * identifier 0..1 Identifier "Progression-relapse after FLT number" """Progressive number of progression/relapse (1=first; 2= second; 3 = third; ?) after the end of treatment.
 In this field must be reported the ordinal number of the progression/relapse after the end of treatment."""				
 * relatedDiagnosis 0..1 Identifier "Progressive number of diagnosis" """Progressive number of diagnosis (1=first; 2= second; 3 = third; ?).  
