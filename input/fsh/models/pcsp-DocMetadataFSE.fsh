@@ -4,9 +4,8 @@
 Logical: DocMetadataFSE				
 Id: DocMetadataFSE				
 Title: "Metadata FSE Italy"				
-Description:  """Metadata FSE Italy.
-Maturity Level: 0"""				
-* identifier 0..1 Identifier "document ID" """Id documento (dovrebbe essere sull'oid root di regione Liguria) oid root + extension che comincia per nostro standard con le ultime tre cifre del codice azienda (940 per Gaslini) pi— punto pi— id univoco all'interno dell'azienda)"""				
+Description:  """Metadata FSE Italy."""				
+* identifier 0..1 Identifier "document ID" """Id documento (dovrebbe essere sull'oid root di regione Liguria) oid root + extension che comincia per nostro standard con le ultime tre cifre del codice azienda (940 per Gaslini) piï¿½ punto piï¿½ id univoco all'interno dell'azienda)"""				
 * mimeType 0..1 code "MIME type" """Tipo mime del documento"""				
 * size 0..1 unsignedInt "size" """Size del documento"""				
 * hash 0..1 base64Binary "hash" """Hash del documento"""				
@@ -47,7 +46,7 @@ Source: DocMetadataFSE
 Target: "hl7.org/fhir/r4"				
 				
 * . -> "MedicationAdministration.conformsTo('http://hl7.eu/fhir/ig/pcsp/StructureDefinition/MedicationAdministration-eu-pcsp')"				
-* identifier -> "ÿDocumentReference.masterIdentifier"				
+* identifier -> "ï¿½DocumentReference.masterIdentifier"				
 * mimeType -> "DocumentReference.content.attachment.contentType"				
 * size -> "DocumentReference.content.attachment.size"				
 * hash -> "DocumentReference.content.attachment.hash"				

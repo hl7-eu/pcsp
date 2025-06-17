@@ -4,8 +4,7 @@
 Logical: Chemotherapy				
 Id: Chemotherapy				
 Title: "Chemotherapy"				
-Description:  """Chemotherapy 
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Chemotherapy"""				
 * relatedDiagnosis 1..1 Identifier "Related Diagnosis" """Identifier of the diagnosis for which this chemotherapy is performed"""				
 * startDate 1..1 dateTime "Start date" """Please report the date of the first chemotherapy given. If the date is unkown or partially missed insert the year at the best of your knowledge."""				
 * endDate 1..1 dateTime "End date" """Please report the date of the last chemotherapy given. If the date is unkown or partially missed insert the year at the best of your knowledge."""				

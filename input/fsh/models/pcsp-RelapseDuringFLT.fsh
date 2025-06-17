@@ -4,8 +4,7 @@
 Logical: RelapseDuringFLT				
 Id: RelapseDuringFLT				
 Title: "Progression-Relapse during FLT"				
-Description:  """Progression-Relapse during FLT
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Progression-Relapse during FLT"""				
 * identifier 0..1 Identifier "Progression-Relapse during FLT identifier" """Progression-Relapse during FLT identifier"""				
 * relatedDiagnosis 0..1 Identifier "Related diagnosis identifier" """Related diagnosis identifier"""				
 * date 0..1 dateTime "Date" """Report the date of the event in DD/MM/YYYY format. If the date is unkown or partially missed insert the year at the best of your knowledge."""				

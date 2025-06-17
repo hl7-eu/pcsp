@@ -40,6 +40,7 @@ RuleSet: NewConditionGroup ( linkid, block )
     * linkId  =  "condition-note-{block}"
     * type = #text
     * readOnly = true
+  * insert specifyConditionQuestion ( condition-other-{block}, {block} )
   * item[+]
     * linkId  =  "appearance-date-{block}"
     * type = #date
@@ -88,6 +89,7 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * linkId  =  "condition-note-{block}"
     * type = #text
     * readOnly = true
+  * insert specifyConditionQuestion ( condition-other-{block}, {block} )
   * item[+]
     * linkId  =  "appearance-date-{block}"
     * type = #date
@@ -131,6 +133,195 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * linkId  =  "next-check-{block}"
     * type = #text
     * text = "Prossimo controllo planificato per"
+
+RuleSet: specifyConditionQuestion( linkId, block ) 
+* item[+]
+  * linkId  =  "{linkId}"
+  * type = #text
+  * text = "Se altro, specificare"
+  * required = true
+  * readOnly = false
+  * enableBehavior = #any
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#1001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#2001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#2002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#2003,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#3001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#4001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#4002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#4003,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#5001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#5002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#5003,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#6001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#6002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#6003,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#6004,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#6005,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#6006,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#7001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#7002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#7003,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#8001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#8002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#8003,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#8004,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#8005,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#9001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#9002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#10001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#10002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#11001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#11002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#12001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#13001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#13002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#14001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#15001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#15002,99 
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#15003,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#15004,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#16001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#16002,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#16003,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#16004,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#17001,99
+  * enableWhen[+]
+    * question = "condition-{block}"
+    * operator = #=
+    * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#17002,99
 
 Instance: ROTSurPass
 InstanceOf: Questionnaire
@@ -233,7 +424,7 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
   * insert enableIfNo ( first-visit )
   * answerValueSet = Canonical(YesNoVS)
   // This group is activated only if this choice is true
-  * insert NewConditionGroup ( new-cancer-after-last-visit, 2)
+  * insert NewConditionGroup ( new-cancer-after-last-visit, 3)
 
 // COMMON
 

@@ -4,8 +4,7 @@
 Logical: PlanOfCare				
 Id: PlanOfCare				
 Title: "Care Plan"				
-Description:  """Care Plan
-Maturity Level: 0 - Draft"""				
+Description:  """Care Plan"""				
 * identifier 1..* Identifier "Care plan Identifier" """Care plan business identifier"""				
 * addressedProblem 0..* Identifier "Problems addressed by this plan" """Problems (e.g. primary cancer) addressed by this plan"""				
 * author 0..1 BackboneElement "Author" """Author"""				

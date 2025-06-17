@@ -4,8 +4,7 @@
 Logical: FrontLineTreatment				
 Id: FrontLineTreatment				
 Title: "Front Line Treatment"				
-Description:  """Front Line Treatment. The first treatment given for a disease. It is often part of a standard set of treatments, such as surgery followed by chemotherapy and radiation. When used by itself, first-line therapy is the one accepted as the best treatment. If it does not cure the disease or it causes severe side effects, other treatment may be added or used instead. Also called induction therapy, primary therapy, and primary treatment.
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Front Line Treatment. The first treatment given for a disease. It is often part of a standard set of treatments, such as surgery followed by chemotherapy and radiation. When used by itself, first-line therapy is the one accepted as the best treatment. If it does not cure the disease or it causes severe side effects, other treatment may be added or used instead. Also called induction therapy, primary therapy, and primary treatment."""				
 * followedProtocol 0..* BackboneElement "Followed Protocol" """Followed Protocol"""				
 * followedProtocol.type 0..1 CodeableConcept "Protocole type" """2 => Trial/protocol
 2 => Personalized

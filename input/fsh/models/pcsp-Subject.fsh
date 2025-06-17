@@ -4,8 +4,7 @@
 Logical: Subject				
 Id: Subject				
 Title: "Subject of care"				
-Description:  """Subject of care
-Maturity Level: 2 - Ready for Review"""				
+Description:  """Subject of care"""				
 * identifier 1..* Identifier "ID" """ID"""				
 * name 1..* BackboneElement "Subject Name" """Subject Name"""				
 * name.lastname 1..* string "Lastname" """Lastname"""				
