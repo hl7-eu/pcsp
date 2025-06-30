@@ -33,7 +33,7 @@ Description: "This profile defines how to represent the Care Plan proposed by th
     * instantiatesCanonical only Canonical(PlanDefinition or ActivityDefinition)
     * status ^short = "Progress being made"
     * description ^short = "Activity to perform"
-    * scheduledString ^short = "Planned for"
+    * scheduled[x] ^short = "Planned for"
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
