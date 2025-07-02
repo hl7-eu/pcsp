@@ -325,7 +325,7 @@ RuleSet: specifyConditionQuestion( linkId, block )
 
 Instance: ROTSurPass
 InstanceOf: Questionnaire
-Usage: #example
+Usage: #definition
 * status = #draft
 * name = "ROTSurPass"
 * subjectType = #Patient
