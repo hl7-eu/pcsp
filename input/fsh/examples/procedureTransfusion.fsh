@@ -1,7 +1,7 @@
 Instance: ProcedureTransfusion-1
 InstanceOf: ProcedureTransfusionOtherInfosPcsp
-Title:   "Procedure: Transfusion"
-Description: "Procedure: Transfusion"
+Title:   "Mainz - Procedure: Transfusion (Zeisig)"
+Description: "Sample of transfusion procedure (Zeisig)"
 
 Usage: #example
 * extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-performedTiming"
@@ -10,4 +10,3 @@ Usage: #example
 * code = http://snomed.info/sct#5447007 "Transfusion"
 * subject = Reference(PatientMainzZeisig)
 * reasonReference = Reference(ConditionPrimCancerMainzZeisig)
-

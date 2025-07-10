@@ -1,6 +1,6 @@
 Instance: 74055
-InstanceOf: CompositionSurpassPcsp
-Title:   "Composition: Passport example"
+InstanceOf: Composition
+Title:   "Cineca - Composition: Passport example"
 Description: "Sample of Composition"
 Usage: #example
 * meta.versionId = "3"

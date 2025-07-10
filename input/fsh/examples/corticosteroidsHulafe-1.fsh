@@ -3,7 +3,7 @@
 
 Instance:  ChemoHulafe-1-corticosteroids
 InstanceOf: MedicationStatementPcsp
-Title:   "MedicationStatement: Chemotherapy Hulafe Corticosteroids"
+Title:   "Hulafe - MedicationStatement: Chemotherapy Corticosteroids"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Corticosteroids not used for at least 4 weeks continuously)"
 Usage:  #example
 * insert Hulafe-1-subject
@@ -16,4 +16,3 @@ Usage:  #example
   * comparator = #>
   * code = #w
   * system = $ucum
-

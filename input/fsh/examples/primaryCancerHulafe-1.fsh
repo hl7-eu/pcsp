@@ -8,7 +8,7 @@ RuleSet: Hulafe-1-subject
 
 Instance: PrimaryCancerHulafe-1
 InstanceOf: ConditionPrimaryCancerPcsp
-Title:   "Condition: Primary Diagnosis Hulafe"
+Title:   "Hulafe - Condition: Primary Diagnosis"
 Description: "Sample of Primary Diagnosis based on information provided by Hulafe (Condition)"
 Usage: #example
 * language = #es-ES
@@ -34,7 +34,7 @@ Usage: #example
 // ===================== Organization
 Instance: OrgHulafe-1
 InstanceOf: OrganizationCenterPcsp
-Title:   "Organization: Primary Diagnosis Hulafe (Organization)"
+Title:   "Hulafe - Organization: Primary Diagnosis"
 Description: "Sample of Primary Diagnosis based on information provided by Hulafe (Organization)"
 Usage: #example
 
@@ -58,7 +58,7 @@ Usage: #example
 // ===================== Encounter
 Instance: EncHulafe-1
 InstanceOf: Encounter
-Title:   "Encounter: Primary Diagnosis Hulafe (Encounter)"
+Title:   "Hulafe - Encounter: Primary Diagnosis"
 Description: "Sample of Primary Diagnosis based on information provided by Hulafe (Encounter)"
 Usage: #example
 * language = #es-ES

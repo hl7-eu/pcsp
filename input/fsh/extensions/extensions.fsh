@@ -14,7 +14,7 @@ Extension: FltArm
 Id: procedure-fltArm
 Title:  "Randomization arm for trial"
 Description: "This extension is used to provide a textual description of the randomization arm for trials (FLT)."
-* insert ExtensionContext(CarePlanDefinition)
+* insert ExtensionContext(PlanDefinition)
 * value[x] only string
 
 Extension: PerformedTiming

@@ -10,7 +10,7 @@ CODPAT	PASSPORT	LASTNAME	FIRSTNAME	GENDER	D_GENDER	DOBDT	ADDRESS	CONTACT	D_CONTA
 
 Instance:  PatientCineca
 InstanceOf: PatientPcsp
-Title:   "Patient: Sample from Cineca"
+Title:   "Cineca - Patient: Sample of Patient (Rossi)"
 Description: "Sample of Patient created based on information available in the PCSP platform"
 Usage:  #example
 //----------------------------------------------------------
@@ -40,7 +40,7 @@ CODPAT	PASSPORT	LASTNAME	FIRSTNAME	GENDER	D_GENDER	DOBDT	ADDRESS	CONTACT	D_CONTA
 
 Instance:  PatientHulafe
 InstanceOf: PatientPcsp
-Title:   "Patient: Sample from Hulafe"
+Title:   "Hulafe - Patient: Sample of Patient (Basoa Mancebo)"
 Description: "Sample of Patient created based on information provided by Hulafe"
 Usage:  #example
 //----------------------------------------------------------
@@ -67,7 +67,7 @@ Usage:  #example
 
 Instance: PatientHulafe-1
 InstanceOf: PatientPcsp
-Title:   "Patient: Hulafe"
+Title:   "Hulafe - Patient: Sample of demographics data"
 Description: "Sample of Patient demographics data based on information provided by Hulafe"
 Usage: #example
 * language = #es-ES
@@ -93,7 +93,7 @@ Usage: #example
 
 Instance:  PatientVulsk
 InstanceOf: PatientPcsp
-Title:   "Patient: Sample created on Vulsk data"
+Title:   "Vulsk - Patient: Sample of Patient (Jonaitė)"
 Description: "Sample of Patient created based on information provided by Vulsk"
 Usage:  #example
 //----------------------------------------------------------
@@ -113,8 +113,8 @@ Usage:  #example
 //----------------------------------------------------------
 Instance:  PatientMainzFischer
 InstanceOf: PatientPcsp
-Title:   "Patient: Sample created on Mainz data (Fischer)"
-Description: "Sample of Patient created based on information provided by Mainz"
+Title:   "Mainz - Patient: Sample of Patient (Fischer)"
+Description: "Sample of Patient created based on information provided by Mainz (Fischer)"
 Usage:  #example
 //----------------------------------------------------------
 
@@ -130,8 +130,8 @@ Usage:  #example
 //----------------------------------------------------------
 Instance:  PatientMainzZeisig
 InstanceOf: PatientPcsp
-Title:   "Patient: Sample created on Mainz data (Zeisig)"
-Description: "Sample of Patient created based on information provided by Mainz"
+Title:   "Mainz - Patient: Sample of Patient (Zeisig)"
+Description: "Sample of Patient created based on information provided by Mainz (Zeisig)"
 Usage:  #example
 //----------------------------------------------------------
 

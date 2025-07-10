@@ -2,7 +2,7 @@
 // === Condition
 Instance: DocumentReferenceExample-1
 InstanceOf: DocumentReferencePcsp
-Title:   "DocumentReference: Preliminary SurPass"
+Title:   "Hulafe - DocumentReference: Preliminary SurPass"
 Description: "Sample of DocumentReference used to refer a preliminary SurPass"
 Usage: #example
 // ------------------------------------------------

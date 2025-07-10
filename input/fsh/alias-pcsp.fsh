@@ -33,6 +33,9 @@ Alias: $product-category = http://hl7.org/fhir/CodeSystem/product-category
 Alias: $plan-definition-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 Alias: $bcp47 = urn:ietf:bcp:47
 Alias: $absent-unknown-uv-ips = http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips
+Alias: $cs-radiotherapy-pcsp = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-radiotherapy-pcsp
+Alias: $cs-recommendation-eu-pcsp = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-recommendation-eu-pcsp
+Alias: $cs-riskcondition-eu-pcsp = http://hl7.eu/fhir/ig/pcsp/CodeSystem/cs-riskcondition-eu-pcsp
 
 // --- Value Sets
 Alias: $v3-ClassNullFlavor = http://terminology.hl7.org/ValueSet/v3-ClassNullFlavor
@@ -41,6 +44,8 @@ Alias: $vs-LL2419-1 = http://loinc.org/vs/LL2419-1
 Alias: $condition-severity-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips
 Alias: $mcode-laterality-qualifier-vs = http://hl7.org/fhir/us/mcode/ValueSet/mcode-laterality-qualifier-vs
 Alias: $absent-or-unknown-procedures-uv-ips = http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips
+Alias: $vs-radiotherapyType-eu-pcsp = http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyType-eu-pcsp
+Alias: $vs-radiotherapyDoseType-eu-pcsp = http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-radiotherapyDoseType-eu-pcsp
 
 
 
