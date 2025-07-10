@@ -78,7 +78,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 
 
 // SCT
-* insert BunldeEntrySlicDefRules (biologicallyDerivedProduct, 0..*, BiologicallyDerivedProduct: Stem Cell, BiologicallyDerivedProduct: Stem Cell, EncounterPcsp)
+* insert BunldeEntrySlicDefRules (biologicallyDerivedProduct, 0..*, BiologicallyDerivedProduct: Stem Cell, BiologicallyDerivedProduct: Stem Cell, BiologicallyDerivedProductSctPcsp)
 * insert BunldeEntrySlicDefRules (stemCellTransplantation, 0..*, Procedure: Stem Cell Transplantation, Procedure: Stem Cell Transplantation, ProcedureSctPcsp)
 * insert BunldeEntrySlicDefRules (bloodAboRh, 0..*, Observation: Blood type/RH, Observation: Blood type/RH, ObservationBloodAboRh)
 * insert BunldeEntrySlicDefRules (gvhd, 0..*, Condition: GvHD, Condition: GvHD, ConditionGvhdPcsp)
