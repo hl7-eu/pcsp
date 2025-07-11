@@ -182,6 +182,7 @@ This profile should be also used for documenting primary cancer relapses during 
 	
 * evidence[diagnosisDetails]
   * ^short = "Diagnosis details"
+  * code.coding = $loinc#29308-4 "Diagnosis"
   * detail only Reference (ObservationDiagnosisPcsp)
 * evidence[geneticMarker]
   * ^short = "Genetic Marker"

@@ -1,8 +1,8 @@
 
 Instance:  ConditionPrimCancerMainzZeisig
 InstanceOf: ConditionPrimaryCancerPcsp
-Title:   "Condition: complete Primary Cancer Condition example (TBC)"
-Description: "Sample of Primary Cancer Condition  based on information available by Mainz"
+Title:   "Mainz - Condition: complete Primary Cancer Condition example (TBC) (Zeisig)"
+Description: "Sample of Primary Cancer Condition  based on information available by Mainz (Zeisig)"
 Usage:  #example
 //----------------------------------------------------------
 // DIADT	CENTER	D_CENTER	PLACE_TREAT	PL_TREAT	ARRIVALDT	ICDO3_MORPH	MORPH_SPEC	ICDO3_TOPO	TOPO_SPEC	LATERAL	METASTATIC	METASTATIC1
@@ -33,8 +33,8 @@ Usage:  #example
 //----------------------------------------------------------
 Instance:  ConditionSecCancerMainzZeisig
 InstanceOf: ConditionSecondaryCancerPcsp
-Title:   "Condition: complete metastatic site Condition example (TBC)"
-Description: "Sample of metastatic site Condition  based on information available by Mainz"
+Title:   "Mainz - Condition: complete metastatic site Condition example (TBC) (Zeisig)"
+Description: "Sample of metastatic site Condition based on information available by Mainz (Zeisig)"
 Usage:  #example
 //----------------------------------------------------------
 
@@ -49,8 +49,8 @@ Usage:  #example
 //----------------------------------------------------------
 Instance:  ObservationPrimCancerMainzZeisig
 InstanceOf: ObservationDiagnosisPcsp
-Title:   "Observation: Sample from Mainz (Zeisig)"
-Description: "Sample of Observation associated to the Primary Cancer Condition Mainz sample to provide details about the diagnosis"
+Title:   "Mainz - Observation: Primary Cancer (Zeisig)"
+Description: "Sample of Observation associated to the Primary Cancer Condition Mainz sample to provide details about the diagnosis (Zeisig)"
 Usage:  #example
 //----------------------------------------------------------
 * code = $loinc#29308-4 "Diagnosis"
@@ -67,8 +67,8 @@ Usage:  #example
 //----------------------------------------------------------
 Instance:  EncounterPrimCancerMainzZeisig
 InstanceOf: EncounterPcsp
-Title:   "Encounter: Sample from Mainz (Zeisig)"
-Description: "Sample of Encounter associated to the Primary Cancer Condition Mainz sample"
+Title:   "Mainz - Encounter: Primary Cancer (Zeisig)"
+Description: "Sample of Encounter associated to the Primary Cancer Condition Mainz sample (Zeisig)"
 Usage:  #example
 //----------------------------------------------------------
 * status = #finished
@@ -83,8 +83,8 @@ Usage:  #example
 
 Instance:  ConditionPrimCancerMainzFischer
 InstanceOf: ConditionPrimaryCancerPcsp
-Title:   "Condition: Sample from Mainz"
-Description: "Sample of Primary Cancer Condition  based on information available by Mainz"
+Title:   "Mainz - Condition: Primary Cancer (Fischer)"
+Description: "Sample of Primary Cancer Condition based on information available by Mainz (Fischer)"
 Usage:  #example
 //----------------------------------------------------------
 // DIA_NUM	DIADT	CENTER	D_CENTER	PLACE_TREAT	PL_TREAT	ARRIVALDT	ICDO3_MORPH	MORPH_SPEC	ICDO3_TOPO	TOPO_SPEC	LATERAL	METASTATIC	METASTATIC1	METASTATIC2	METASTATIC3	METASTATIC_DESCR
@@ -102,8 +102,8 @@ Usage:  #example
 //----------------------------------------------------------
 Instance:  EncounterPrimCancerMainzFischer
 InstanceOf: EncounterPcsp
-Title:   "Encounter: Sample from Mainz"
-Description: "Sample of Encounter associated to the Primary Cancer Condition Mainz sample"
+Title:   "Mainz - Encounter: Primary Cancer (Fischer)"
+Description: "Sample of Encounter associated to the Primary Cancer Condition Mainz sample (Fischer)"
 Usage:  #example
 //----------------------------------------------------------
 * status = #finished
@@ -114,5 +114,3 @@ Usage:  #example
   * value = "12"
 * serviceProvider.display = "UKK Essen"
 // * diagnosis.condition = Reference (ConditionPrimCancerMainz)
-
-

@@ -1,7 +1,7 @@
 Instance: ProcedureSTC-1
 InstanceOf: ProcedureSctPcsp
-Title:   "Procedure: Stem Cell Transplantation"
-Description: "Procedure: Stem Cell Transplantation example"
+Title:   "Mainz - Procedure: Stem Cell Transplantation (Zeisig)"
+Description: "Sample of stem cell transplantation procedure from Mainz (Zeisig)"
 
 Usage: #example
 * extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-usedReference"
@@ -18,8 +18,8 @@ Usage: #example
 
 Instance: BiologicallyDerivedProduct-SCT1
 InstanceOf: BiologicallyDerivedProductSctPcsp
-Title:   "BiologicallyDerivedProduct: Stem Cell Transplantation"
-Description: "Biologically Derived Product: Stem Cell Transplantation example"
+Title:   "Mainz - BiologicallyDerivedProduct: Stem Cell Transplantation (Zeisig)"
+Description: "Sample of stem cell transplantation biologically derived product (Zeisig)"
 
 Usage: #example
 * extension[0].url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/sct-donor-type"
@@ -33,8 +33,8 @@ Usage: #example
 
 Instance: ObservationCBloodSCT-1-1
 InstanceOf: ObservationBloodAboRh
-Title:   "Observation: Blood type/RH before the SCT"
-Description: "Observation: Blood type/RH before the SCT example"
+Title:   "Mainz - Observation: Blood type/RH before the SCT (Zeisig)"
+Description: "Sample of blood type/RH observation (Zeisig)"
 Usage: #example
 
 * status = #final
@@ -53,8 +53,8 @@ Usage: #example
 
 Instance: Location-SCT1
 InstanceOf: LocationPcsp
-Title:   "Location: Stem Cell Transplantation"
-Description: "Location: Stem Cell Transplantation example"
+Title:   "Mainz - Location: Stem Cell Transplantation (Zeisig)"
+Description: "Sample of location for stem cell transplantation (Zeisig)"
 Usage: #example
 
 * name = "Universitätsklinikum Schleswig-Holstein - Campus Lübeck"

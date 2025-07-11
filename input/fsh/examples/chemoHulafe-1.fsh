@@ -20,7 +20,7 @@ RuleSet: ChemoHulafe-1-dose
 // ===================================================================
 Instance:  ChemoHulafe-1-Location
 InstanceOf: LocationPcsp
-Title:   "Location: Chemotherapy Hulafe"
+Title:   "Hulafe - Location: Chemotherapy"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Location)"
 Usage:  #example
 
@@ -34,7 +34,7 @@ Usage:  #example
 
 Instance:  ChemoHulafe-1-Ciclofosfamide
 InstanceOf: MedicationAdministrationPcsp
-Title:   "MedicationAdministration: Chemotherapy Hulafe Ciclofosfamide"
+Title:   "Hulafe - MedicationAdministration: Chemotherapy Ciclofosfamide"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Ciclofosfamide)"
 Usage:  #example
 * insert ChemoHulafe-1-common
@@ -43,7 +43,7 @@ Usage:  #example
 
 Instance:  ChemoHulafe-1-Ciclofosfamide-dose
 InstanceOf: CumulativeDoseChemoObsPcsp
-Title:   "Observation: Chemotherapy Hulafe Ciclofosfamide Cumulative Dose"
+Title:   "Hulafe - Observation: Chemotherapy Ciclofosfamide Cumulative Dose"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Ciclofosfamide Cumulative Dose)"
 Usage:  #example
 * insert ChemoHulafe-1-dose
@@ -53,7 +53,7 @@ Usage:  #example
 
 Instance:  ChemoHulafe-1-Metotrexato
 InstanceOf: MedicationAdministrationPcsp
-Title:   "MedicationAdministration: Chemotherapy Hulafe Metotrexato"
+Title:   "Hulafe - MedicationAdministration: Chemotherapy Metotrexato"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Metotrexato)"
 Usage:  #example
 * insert ChemoHulafe-1-common
@@ -62,7 +62,7 @@ Usage:  #example
 
 Instance:  ChemoHulafe-1-Metotrexato-dose
 InstanceOf: CumulativeDoseChemoObsPcsp
-Title:   "Observation: Chemotherapy Hulafe Metotrexato Cumulative Dose"
+Title:   "Hulafe - Observation: Chemotherapy Metotrexato Cumulative Dose"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Metotrexato Cumulative Dose)"
 Usage:  #example
 * insert ChemoHulafe-1-dose
@@ -72,7 +72,7 @@ Usage:  #example
 
 Instance:  ChemoHulafe-1-Vincristina
 InstanceOf: MedicationAdministrationPcsp
-Title:   "MedicationAdministration: Chemotherapy Hulafe Vincristina"
+Title:   "Hulafe - MedicationAdministration: Chemotherapy Vincristina"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Vincristina)"
 Usage:  #example
 * insert ChemoHulafe-1-common
@@ -81,7 +81,7 @@ Usage:  #example
 
 Instance:  ChemoHulafe-1-Vincristina-dose
 InstanceOf: CumulativeDoseChemoObsPcsp
-Title:   "Observation: Chemotherapy Hulafe Vincristina Cumulative Dose"
+Title:   "Hulafe - Observation: Chemotherapy Vincristina Cumulative Dose"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Vincristina Cumulative Dose)"
 Usage:  #example
 * insert ChemoHulafe-1-dose
@@ -91,7 +91,7 @@ Usage:  #example
 
 Instance:  ChemoHulafe-1-Citarabina
 InstanceOf: MedicationAdministrationPcsp
-Title:   "MedicationAdministration: Chemotherapy Hulafe Citarabina"
+Title:   "Hulafe - MedicationAdministration: Chemotherapy Citarabina"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Citarabina)"
 Usage:  #example
 * insert ChemoHulafe-1-common
@@ -100,10 +100,8 @@ Usage:  #example
 
 Instance:  ChemoHulafe-1-Citarabina-dose
 InstanceOf: CumulativeDoseChemoObsPcsp
-Title:   "Observation: Chemotherapy Hulafe Citarabina Cumulative Dose"
+Title:   "Hulafe - Observation: Chemotherapy Citarabina Cumulative Dose"
 Description: "Sample of Chemotherapy based on information provided by Hulafe (Citarabina Cumulative Dose)"
 Usage:  #example
 * insert ChemoHulafe-1-dose
 * valueQuantity.value = 920
-	  
-

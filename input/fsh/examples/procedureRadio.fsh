@@ -1,7 +1,7 @@
 Instance: ProcedureRadio-1
 InstanceOf: ProcedureRadiotherapyPcsp
-Title:   "Procedure: Radiotherapy"
-Description: "Procedure: Radiotherapy example"
+Title:   "Mainz - Procedure: Radiotherapy (Zeisig)"
+Description: "Sample of radiotherapy procedure based on information from Mainz (Zeisig)"
 
 * extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/resource-relatedInfo"
 * extension.valueReference = Reference(ObservationRadTotalDose-1)
@@ -19,8 +19,8 @@ Description: "Procedure: Radiotherapy example"
 
 Instance: ObservationRadTotalDose-1
 InstanceOf: TotalDoseRadObsPcsp
-Title:   "Observation: Radiotherapy Total Dose"
-Description: "Observation: Radiotherapy Total Dose example"
+Title:   "Mainz - Observation: Radiotherapy Total Dose (Zeisig)"
+Description: "Sample of radiotherapy total dose observation from Mainz (Zeisig)"
 Usage: #example
 
 * status = #final
