@@ -124,6 +124,7 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * type = #choice
     * text = "Se Modificata, Nuovo Grading alla visita m-CTCAE"
     * required = true
+    * answerValueSet = Canonical( GradeVS )
     * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
   * item[+]
     * linkId  =  "details-{block}"
