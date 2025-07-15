@@ -118,7 +118,7 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * required = true
     * enableBehavior = #any
     * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
-    * insert enableIf( condition-evolution-{block}, [[Si, Resolta]])
+    * insert enableIf( condition-evolution-{block}, [[Si, Risolta]])
   * item[+]
     * linkId  =  "new-condition-grading-{block}"
     * type = #choice
