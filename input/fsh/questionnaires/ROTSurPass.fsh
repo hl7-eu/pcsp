@@ -118,12 +118,13 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * required = true
     * enableBehavior = #any
     * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
-    * insert enableIf( condition-evolution-{block}, [[Si, Resolta]])
+    * insert enableIf( condition-evolution-{block}, [[Si, Risolta]])
   * item[+]
     * linkId  =  "new-condition-grading-{block}"
     * type = #choice
     * text = "Se Modificata, Nuovo Grading alla visita m-CTCAE"
     * required = true
+    * answerValueSet = Canonical( GradeVS )
     * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
   * item[+]
     * linkId  =  "details-{block}"
