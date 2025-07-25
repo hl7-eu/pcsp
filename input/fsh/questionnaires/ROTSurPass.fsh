@@ -40,6 +40,7 @@ RuleSet: NewConditionGroup ( linkid, block )
     * linkId  =  "condition-note-{block}"
     * type = #text
     * readOnly = true
+    * initial[+].valueString = "This space will contain guidance for the selected condition. Content is not yet available."
   * insert specifyConditionQuestion ( condition-other-{block}, {block} )
   * item[+]
     * linkId  =  "appearance-date-{block}"
@@ -60,6 +61,20 @@ RuleSet: NewConditionGroup ( linkid, block )
     * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
     * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
     * answerValueSet = Canonical(YesNoVS)
+  * item[+]
+    * linkId  =  "resolution-date-{block}"
+    * type = #date
+    * text = "Se sì, Data"
+    * required = true
+    * enableBehavior = #any
+    * insert enableIfYes ( condition-evolution-{block} )  
+  * item[+]
+    * linkId  =  "new-condition-grading-{block}"
+    * type = #choice
+    * text = "Se Modificata, Nuovo Grading"
+    * required = true
+    * answerValueSet = Canonical( GradeVS )
+    * insert enableIfNo ( condition-evolution-{block} )  
   * item[+]
     * linkId  =  "details-{block}"
     * type = #text
@@ -89,6 +104,7 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * linkId  =  "condition-note-{block}"
     * type = #text
     * readOnly = true
+    * initial[+].valueString = "This space will contain guidance for the selected condition. Content is not yet available."
   * insert specifyConditionQuestion ( condition-other-{block}, {block} )
   * item[+]
     * linkId  =  "appearance-date-{block}"
@@ -360,11 +376,23 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
   * insert enableIfYes ( first-visit )
 
 * item[+]
+  * linkId  =  "consent-date"
+  * type = #date
+  * text = "Data del consenso"
+  * insert enableIfYes ( first-visit )
+  * extension[+]
+    * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden"
+    * valueBoolean = true
+  * extension[+]
+    * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression"
+    * valueExpression.language = #text/fhirpath
+    * valueExpression.expression = "%resource.item.where(linkId='source-question').answer.first().value"
+
+* item[+]
   * linkId  =  "visit-date"
   * type = #date
   * text = "Data della visita"
   * required = true
-  * insert enableIfYes ( first-visit )
 
 * item[+]
   * linkId  = "new-cancer-after-off-therapy"
@@ -389,6 +417,7 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
   * text = "Condizioni cliniche potenzialmente associate ad un aumento dell'incidenza del cancro"  
   * required = true
   * insert enableIfYes ( first-visit )
+  * insert IfTrueSpecify ( clinical-condition-incidence, clinical-condition-incidence-txt-1 )
 
 * item[+]
   * linkId  =  "new-condition-after-off-therapy"
