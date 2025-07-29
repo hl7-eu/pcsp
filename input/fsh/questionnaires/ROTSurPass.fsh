@@ -18,14 +18,16 @@ RuleSet: IfTrueSpecify ( linkid, block )
   * linkId  =  "sepcify-{block}"
   * type = #text
   * required = true
-  * text = "Se sì, specificare"
+  //* text = "Se sì, specificare"
+  * text = "If yes, specify"
   * insert enableIfYes ( {linkid} )
 
 RuleSet: NewConditionGroup ( linkid, block )
 * item[+]
   * linkId  =  "group-condition-{block}"
   * type = #group
-  * text = "Condizioni patologiche"
+  //* text = "Condizioni patologiche"
+  * text = "Pathological conditions"
   * required = true
   * repeats = true
   * extension[$questionnaire-maxOccurs].valueInteger = 15
@@ -33,7 +35,8 @@ RuleSet: NewConditionGroup ( linkid, block )
   * item[+]
     * linkId  =  "condition-{block}"
     * type = #choice
-    * text = "Condizione"
+    //* text = "Condizione"
+    * text = "Condition"
     * required = true
     * answerValueSet = Canonical( ConditionsVS )
   * item[+]
@@ -45,18 +48,21 @@ RuleSet: NewConditionGroup ( linkid, block )
   * item[+]
     * linkId  =  "appearance-date-{block}"
     * type = #date
-    * text = "Data comparsa"
+    //* text = "Data comparsa"
+    * text = "Onset date"
     * required = true
   * item[+]
     * linkId  =  "condition-grading-{block}"
     * type = #choice
-    * text = "Grading m-CTCAE alla comparsa/ultima visita"
+    //* text = "Grading m-CTCAE alla comparsa/ultima visita"
+    * text = "Grading m-CTCAE at onset/last visit"
     * required = true
     * answerValueSet = Canonical( GradeVS )
   * item[+]
     * linkId  = "condition-evolution-{block}"
     * type = #choice
-    * text = "Evoluzione"
+    //* text = "Evoluzione"
+    * text = "Evolution"
     * required = true
     * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
     * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
@@ -64,32 +70,37 @@ RuleSet: NewConditionGroup ( linkid, block )
   * item[+]
     * linkId  =  "resolution-date-{block}"
     * type = #date
-    * text = "Se sì, Data"
+    //* text = "Se sì, Data"
+    * text = "If yes, date"
     * required = true
     * enableBehavior = #any
     * insert enableIfYes ( condition-evolution-{block} )  
   * item[+]
     * linkId  =  "new-condition-grading-{block}"
     * type = #choice
-    * text = "Se Modificata, Nuovo Grading"
+    //* text = "Se Modificata, Nuovo Grading"
+    * text = "If changed, new grading"
     * required = true
     * answerValueSet = Canonical( GradeVS )
     * insert enableIfNo ( condition-evolution-{block} )  
   * item[+]
     * linkId  =  "details-{block}"
     * type = #text
-    * text = "Dettagli"
+    //* text = "Dettagli"
+    * text = "Details"
   * item[+]
     * linkId  =  "next-check-{block}"
     * type = #text
-    * text = "Prossimo controllo planificato per"
+    //* text = "Prossimo controllo planificato per"
+    * text = "Next check-up planned on"
 
 
 RuleSet: EvolveConditionGroup ( linkid, block )
 * item[+]
   * linkId  =  "group-condition-{block}"
   * type = #group
-  * text = "Condizioni patologiche"
+  //* text = "Condizioni patologiche"
+  * text = "Pathological conditions"
   * required = true
   * repeats = true
   * extension[$questionnaire-maxOccurs].valueInteger = 15
@@ -97,7 +108,8 @@ RuleSet: EvolveConditionGroup ( linkid, block )
   * item[+]
     * linkId  =  "condition-{block}"
     * type = #choice
-    * text = "Condizione"
+    //* text = "Condizione"
+    * text = "Condition"
     * required = true
     * answerValueSet = Canonical( ConditionsVS )
   * item[+]
@@ -109,28 +121,35 @@ RuleSet: EvolveConditionGroup ( linkid, block )
   * item[+]
     * linkId  =  "appearance-date-{block}"
     * type = #date
-    * text = "Data comparsa"
+    //* text = "Data comparsa"
+    * text = "Onset date"
     * required = true
   * item[+]
     * linkId  =  "condition-grading-{block}"
     * type = #choice
-    * text = "Grading m-CTCAE alla comparsa/ultima visita"
+    //* text = "Grading m-CTCAE alla comparsa/ultima visita"
+    * text = "Grading m-CTCAE at onset/last visit"
     * required = true
     * answerValueSet = Canonical( GradeVS )
   * item[+]
     * linkId  = "condition-evolution-{block}"
     * type = #choice
-    * text = "Evoluzione"
+    //* text = "Evoluzione"
+    * text = "Evolution"
     * required = true
     * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
     * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
-    * answerOption[+].valueString = "No, Invariata"
-    * answerOption[+].valueString = "Si, Modificata"
-    * answerOption[+].valueString = "Si, Risolta"
+    //* answerOption[+].valueString = "No, Invariata"
+    //* answerOption[+].valueString = "Si, Modificata"
+    //* answerOption[+].valueString = "Si, Risolta"
+    * answerOption[+].valueString = "No, unchanged"
+    * answerOption[+].valueString = "Yes, changed"
+    * answerOption[+].valueString = "Yes, solved"
   * item[+]
     * linkId  =  "resolution-date-{block}"
     * type = #date
-    * text = "Se sì, Data"
+    //* text = "Se sì, Data"
+    * text = "If yes, date"
     * required = true
     * enableBehavior = #any
     * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
@@ -138,24 +157,28 @@ RuleSet: EvolveConditionGroup ( linkid, block )
   * item[+]
     * linkId  =  "new-condition-grading-{block}"
     * type = #choice
-    * text = "Se Modificata, Nuovo Grading alla visita m-CTCAE"
+    //* text = "Se Modificata, Nuovo Grading alla visita m-CTCAE"
+    * text = "If changed, new grading"
     * required = true
     * answerValueSet = Canonical( GradeVS )
     * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
   * item[+]
     * linkId  =  "details-{block}"
     * type = #text
-    * text = "Dettagli"
+    //* text = "Dettagli"
+    * text = "Details"
   * item[+]
     * linkId  =  "next-check-{block}"
     * type = #text
-    * text = "Prossimo controllo planificato per"
+    //* text = "Prossimo controllo planificato per"
+    * text = "Next check-up planned on"
 
 RuleSet: specifyConditionQuestion( linkId, block ) 
 * item[+]
   * linkId  =  "{linkId}"
   * type = #text
-  * text = "Se altro, specificare"
+  //* text = "Se altro, specificare"
+  * text = "If other, specify"
   * required = true
   * readOnly = false
   * enableBehavior = #any
@@ -346,9 +369,10 @@ Usage: #definition
 * status = #draft
 * name = "ROTSurPass"
 * subjectType = #Patient
-* description = """Scheda di follow up.
-La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente alla consegna del SurPass o comunque alla prima visita dopo la fine del trattamento (OT)."""
-
+//* description = """Scheda di follow up.
+//La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente alla consegna del SurPass o comunque alla prima visita dopo la fine del trattamento (OT)."""
+* description = """Follow up form.
+The first ROT-Surpass form must be completed at the same time as the SurPass is delivered or in any case at the first visit after the end of the treatment (OT)."""
 * contained[+] = YesNoVS
 /* * contained[+] = GradeVS
 * contained[+] = ConditionsVS */
@@ -356,7 +380,8 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  = "first-visit"
   * type = #choice
-  * text = "Prima visita?"
+  //* text = "Prima visita?"
+  * text = "First visit?"
   * required = true
   * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
   * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
@@ -368,7 +393,8 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  = "consent"
   * type = #choice
-  * text = "Consenso informato a partecipare al ROT-SurPass"
+  //* text = "Consenso informato a partecipare al ROT-SurPass"
+  * text = "Informed consent to participate in the ROT-SurPass"
   * required = true
   * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
   * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
@@ -378,7 +404,8 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  =  "consent-date"
   * type = #date
-  * text = "Data del consenso"
+  //* text = "Data del consenso"
+  * text = "Consent date"
   * insert enableIfYes ( first-visit )
   * extension[+]
     * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden"
@@ -391,13 +418,15 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  =  "visit-date"
   * type = #date
-  * text = "Data della visita"
+  //* text = "Data della visita"
+  * text = "Visit date"
   * required = true
 
 * item[+]
   * linkId  = "new-cancer-after-off-therapy"
   * type = #choice
-  * text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy"
+  //* text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy"
+  * text = "Predisposing genetic syndromes or clinical conditions associated with the tumor diagnosed after the first off-therapy"
   * insert enableIfYes ( first-visit )
   // Enable a text question for details 
   * insert IfTrueSpecify ( new-cancer-after-off-therapy, new-cancer-txt-1 )
@@ -405,7 +434,8 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  = "other-clinical"
   * type = #choice
-  * text = "Altri quadri clinci, non associati al tumore al momento della diognosi"
+  //* text = "Altri quadri clinci, non associati al tumore al momento della diognosi"
+  * text = "Other clinical pictures, not associated with the tumor at the time of diagnosis"
   * insert enableIfYes ( first-visit )
   // Enable a text question for details 
   * insert IfTrueSpecify ( other-clinical, other-clinical-txt-1 )
@@ -414,7 +444,8 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  = "clinical-condition-incidence"
   * type = #text
-  * text = "Condizioni cliniche potenzialmente associate ad un aumento dell'incidenza del cancro"  
+  //* text = "Condizioni cliniche potenzialmente associate ad un aumento dell'incidenza del cancro"  
+  * text = "Clinical conditions potentially associated with an increased incidence of cancer" 
   * required = true
   * insert enableIfYes ( first-visit )
   * insert IfTrueSpecify ( clinical-condition-incidence, clinical-condition-incidence-txt-1 )
@@ -422,7 +453,8 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  =  "new-condition-after-off-therapy"
   * type = #choice
-  * text = "Dopo il primo off therapy il/la paziente  ha sperimentato una o più condizioni patologica"
+  //* text = "Dopo il primo off therapy il/la paziente  ha sperimentato una o più condizioni patologica"
+  * text = "After the first off therapy the patient experienced one or more pathological conditions"
   * required = true
   * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
   * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
@@ -439,7 +471,8 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  =  "condition-changed"
   * type = #choice
-  * text = "Le condizioni patologiche ancora presenti (non risolte) alla visita precedente si sono risolte o modificate di grado?"    
+  //* text = "Le condizioni patologiche ancora presenti (non risolte) alla visita precedente si sono risolte o modificate di grado?"    
+  * text = "Have any pathological conditions that were still present (unresolved) at the previous visit resolved or changed in degree?"    
   * required = true
   * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
   * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
@@ -450,7 +483,8 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  = "new-cancer-after-last-visit"
   * type = #choice
-  * text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dall’ultima visita?"  
+    //* text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dall’ultima visita?"  
+  * text = "Predisposing genetic syndromes or clinical conditions associated with the tumor diagnosed since the last visit?"  
   * insert enableIfNo ( first-visit )
   * answerValueSet = Canonical(YesNoVS)
   // This group is activated only if this choice is true
@@ -461,12 +495,14 @@ La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente a
 * item[+]
   * linkId  =  "notes"
   * type = #string
-  * text = "Note"
+  //* text = "Note"
+  * text = "Notes"
   * required = false
 * item[+]
   * linkId  =  "notes-attachments"
   * type = #attachment
-  * text = "Documenti relativi ad esami strumentali di laboratorio significativi"
+  //* text = "Documenti relativi ad esami strumentali di laboratorio significativi"
+  * text = "Reports relating to significant laboratory instrumental tests"
   * extension.url = "http://hl7.org/fhir/StructureDefinition/maxSize"
   * extension.valueDecimal = 5
   * required = false
