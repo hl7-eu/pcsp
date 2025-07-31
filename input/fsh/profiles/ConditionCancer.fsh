@@ -180,7 +180,7 @@ This profile should be also used for documenting primary cancer relapses during 
 	and predisposition 0..1
   and hereditary 0..1
 
-* evidence obeys mutually-exclusive-predisposition
+* obeys mutually-exclusive-predisposition
 
 * evidence[diagnosisDetails]
   * ^short = "Diagnosis details"
