@@ -43,8 +43,7 @@ Description: "This profile defines how to describe the presence of some other co
 * extension[relatedPrimaryCancerCondition] ^short = "Related Cancer Condition"
 * extension[relatedPrimaryCancerCondition] ^definition = "A reference to the cancer condition that provides context for this resource."
 
-* extension[conditionDueTo].valueReference only Reference(ProcedureCVCOtherInfosPcsp)
-* extension[conditionDueTo].valueCodeableConcept 0..0
+* extension[conditionDueTo].value[x] only Reference(ProcedureCVCOtherInfosPcsp)
 * extension[conditionDueTo] ^short = "CVC procedure causing this Thrombosis, required for Thrombosis"
 * extension[conditionDueTo] ^definition = "A reference to the procedure that caused this condition. Required for Thrombosis"
 // ADD INVARIANT THIS IS MANDATORY IF THE CONDITION IS a Thrombosis 

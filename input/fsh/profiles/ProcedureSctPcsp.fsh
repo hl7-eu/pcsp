@@ -49,9 +49,7 @@ Description: "This profile defines how to represent Graft versus host disease (G
 * extension[relatedPrimaryCancerCondition] ^short = "Related Primary Cancer Condition"
 * extension[relatedPrimaryCancerCondition] ^definition = "A reference to the primary cancer condition that provides context for this resource."
 
-* extension[conditionDueTo].valueCodeableConcept 0..0
-* extension[conditionDueTo].valueReference only Reference(ProcedureSctPcsp)
-* extension[conditionDueTo].valueReference 1..
+* extension[conditionDueTo].value[x] only Reference(ProcedureSctPcsp)
 * extension[conditionDueTo] ^short = "SCT procedure causing this GcDH"
 * extension[conditionDueTo] ^definition = "A reference to the procedure that caused this condition"
 
@@ -144,4 +142,3 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * performed[x] ^short = "Date of the Stem Cell Transplantation"
 * reasonReference 1..  // add reference to the diagnosis
 * reasonReference only Reference(ConditionPrimaryCancerPcsp)
-

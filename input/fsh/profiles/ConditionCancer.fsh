@@ -135,9 +135,8 @@ This profile should be also used for documenting primary cancer relapses during 
 //-------------------------------------------------------------------------------------------
 
 * extension contains $condition-occurredFollowing named condition-occurredFollowing 0..*
-* extension[condition-occurredFollowing].valueCodeableConcept 0..0
-* extension[condition-occurredFollowing].valueReference ^short = "For relapses, reference to the first occurance of this tumor."
-* extension[condition-occurredFollowing].valueReference only Reference (ConditionPrimaryCancerPcsp)
+* extension[condition-occurredFollowing].value[x] ^short = "For relapses, reference to the first occurance of this tumor."
+* extension[condition-occurredFollowing].value[x] only Reference (ConditionPrimaryCancerPcsp)
 
 * insert CancerConditionCommonRules
 // * clinicalStatus and verificationStatus MS
