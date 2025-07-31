@@ -265,7 +265,7 @@ Description: "Example of a transplantation procedure from Cineca for the PanCare
 Usage: #inline
 * status = #completed
 * extension[procedure-usedReference].valueReference = Reference(BiologicallyDerivedProduct/3989)
-* category = $sct#77465005 "Transplantation (procedure)" 
+* category = $sct#77465005 "Transplantation" 
 * code = $sct#50223000
 * subject = Reference(3971)
 * performedDateTime = "2020-11-15"

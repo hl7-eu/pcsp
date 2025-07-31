@@ -132,7 +132,7 @@ Description: "This profile defines how to represent Procedures in FHIR for descr
 * identifier ^short = "External Identifiers for this Stem Cell Transplantation"
 * status MS
 * category 1..
-* category = $sct#77465005 "Transplantation (procedure)"  // check GPS
+* category = $sct#77465005  // "Transplantation (procedure)"     check GPS
 * code ^short = "Identification of the procedure."
 * code from SctTypeVs
 * subject only Reference(PatientPcsp)	

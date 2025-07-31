@@ -73,7 +73,7 @@ Usage: #inline
 * identifier.value = "1"
 * code = $v3-NullFlavor#UNC "un-encoded"
 * bodySite.extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-laterality-qualifier"
-* bodySite.extension.valueCodeableConcept = $data-absent-reason#not-applicable "N/A"
+* bodySite.extension.valueCodeableConcept = $data-absent-reason#not-applicable "Not Applicable"
 * bodySite = $icd03#C41.9 "Knochen o.n.A."
 * subject = Reference(urn:uuid:04394254-c137-4ac6-82a8-c4ad2f973107)
 * encounter = Reference(urn:uuid:5785bf99-8454-4bbe-924b-4433e638d075)
