@@ -1,1 +1,1 @@
-{% include table-questionnaire.xhtml %}
+{% include table-questionnaires.xhtml %}
