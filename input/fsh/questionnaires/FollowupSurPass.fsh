@@ -427,6 +427,7 @@ The first ROT-Surpass form must be completed at the same time as the SurPass is 
   * type = #choice
   //* text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dopo il primo off therapy"
   * text = "Predisposing genetic syndromes or clinical conditions associated with the tumor diagnosed after the first off-therapy"
+  * answerValueSet = Canonical(YesNoVS)
   * insert enableIfYes ( first-visit )
   // Enable a text question for details 
   * insert IfTrueSpecify ( new-cancer-after-off-therapy, new-cancer-txt-1 )
