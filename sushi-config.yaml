@@ -58,6 +58,8 @@ pages:
     title: Extensions
   examples.md:
     title: Examples
+  questionnaire.md:
+    title: Questionnaire
   downloads.md:
     title: Useful Downloads
   changes.html:
@@ -74,6 +76,7 @@ menu:
   Specifications:
     Profiles: profiles.html
     Extensions: extensions.html
+    Questionnaire: questionnaire.html
     Terminology: terminology.html
     Examples: examples.html
   Artifact Index: artifacts.html			

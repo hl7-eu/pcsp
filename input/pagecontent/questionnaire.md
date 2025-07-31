@@ -1,0 +1,1 @@
+{% include table-questionnaire.xhtml %}

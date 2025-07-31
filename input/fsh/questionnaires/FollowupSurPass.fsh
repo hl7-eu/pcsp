@@ -66,7 +66,8 @@ RuleSet: NewConditionGroup ( linkid, block )
     * required = true
     * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
     * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
-    * answerValueSet = Canonical(YesNoVS)
+    * answerOption[+].valueString = "Yes, resolved"
+    * answerOption[+].valueString = "No, not resolved"
   * item[+]
     * linkId  =  "resolution-date-{block}"
     * type = #date
@@ -74,7 +75,7 @@ RuleSet: NewConditionGroup ( linkid, block )
     * text = "If yes, date"
     * required = true
     * enableBehavior = #any
-    * insert enableIfYes ( condition-evolution-{block} )  
+    * insert enableIf( condition-evolution-{block}, [[Yes, resolved]])
   * item[+]
     * linkId  =  "new-condition-grading-{block}"
     * type = #choice
@@ -82,7 +83,7 @@ RuleSet: NewConditionGroup ( linkid, block )
     * text = "If changed, new grading"
     * required = true
     * answerValueSet = Canonical( GradeVS )
-    * insert enableIfNo ( condition-evolution-{block} )  
+    * insert enableIf( condition-evolution-{block}, [[No, not resolved]])
   * item[+]
     * linkId  =  "details-{block}"
     * type = #text
@@ -152,8 +153,7 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * text = "If yes, date"
     * required = true
     * enableBehavior = #any
-    * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
-    * insert enableIf( condition-evolution-{block}, [[Si, Risolta]])
+    * insert enableIf( condition-evolution-{block}, [[Yes, solved]])
   * item[+]
     * linkId  =  "new-condition-grading-{block}"
     * type = #choice
@@ -161,7 +161,7 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * text = "If changed, new grading"
     * required = true
     * answerValueSet = Canonical( GradeVS )
-    * insert enableIf( condition-evolution-{block}, [[Si, Modificata]])
+    * insert enableIf( condition-evolution-{block}, [[Yes, changed]])
   * item[+]
     * linkId  =  "details-{block}"
     * type = #text
@@ -363,11 +363,11 @@ RuleSet: specifyConditionQuestion( linkId, block )
     * operator = #=
     * answerCoding = http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS#17002,99
 
-Instance: ROTSurPass
+Instance: FollowupSurPass
 InstanceOf: Questionnaire
 Usage: #definition
 * status = #draft
-* name = "ROTSurPass"
+* name = "FollowupSurPass"
 * subjectType = #Patient
 //* description = """Scheda di follow up.
 //La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente alla consegna del SurPass o comunque alla prima visita dopo la fine del trattamento (OT)."""
@@ -436,6 +436,7 @@ The first ROT-Surpass form must be completed at the same time as the SurPass is 
   * type = #choice
   //* text = "Altri quadri clinci, non associati al tumore al momento della diognosi"
   * text = "Other clinical pictures, not associated with the tumor at the time of diagnosis"
+  * answerValueSet = Canonical(YesNoVS)
   * insert enableIfYes ( first-visit )
   // Enable a text question for details 
   * insert IfTrueSpecify ( other-clinical, other-clinical-txt-1 )
@@ -443,9 +444,10 @@ The first ROT-Surpass form must be completed at the same time as the SurPass is 
 
 * item[+]
   * linkId  = "clinical-condition-incidence"
-  * type = #text
+  * type = #choice
   //* text = "Condizioni cliniche potenzialmente associate ad un aumento dell'incidenza del cancro"  
   * text = "Clinical conditions potentially associated with an increased incidence of cancer" 
+  * answerValueSet = Canonical(YesNoVS)
   * required = true
   * insert enableIfYes ( first-visit )
   * insert IfTrueSpecify ( clinical-condition-incidence, clinical-condition-incidence-txt-1 )
