@@ -105,7 +105,9 @@ RuleSet: EvolveConditionGroup ( linkid, block )
   * required = true
   * repeats = true
   * extension[$questionnaire-maxOccurs].valueInteger = 15
-  * insert enableIfYes ( {linkid} )   
+  * enableBehavior = #any
+  * insert enableIfYes ( {linkid} )
+  * insert enableIfNo ( {linkid} )   
   * item[+]
     * linkId  =  "condition-{block}"
     * type = #choice
@@ -146,6 +148,7 @@ RuleSet: EvolveConditionGroup ( linkid, block )
     * answerOption[+].valueString = "No, unchanged"
     * answerOption[+].valueString = "Yes, changed"
     * answerOption[+].valueString = "Yes, solved"
+    * insert enableIfYes ( {linkid} )
   * item[+]
     * linkId  =  "resolution-date-{block}"
     * type = #date
@@ -374,6 +377,7 @@ Usage: #definition
 * description = """Follow up form.
 The first Followup-Surpass form must be completed at the same time as the SurPass is delivered or in any case at the first visit after the end of the treatment (OT)."""
 * contained[+] = YesNoVS
+* contained[+] = YesNoNAVS
 /* * contained[+] = GradeVS
 * contained[+] = ConditionsVS */
 
@@ -553,4 +557,4 @@ Usage: #inline
     * display = "YES"
   * concept[+]
     * code = #LA30226-7
-    * display = "YES"
+    * display = "Not applicable (N/A)"
