@@ -338,9 +338,8 @@ Usage: #inline
 * performedPeriod.end = "2020-11-12"
 * reasonReference = Reference(1676)
 * bodySite[0] = $cs-radiotherapy-pcsp#1.1
-* bodySite[+].extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-body-location-qualifier"
+* bodySite[=].extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/mcode-body-location-qualifier"
 * bodySite[=].extension.valueCodeableConcept = $sct#255549009
-* bodySite[+].coding.display = "dettagli"
 * bodySite[+] = $cs-radiotherapy-pcsp#7.12
 
 Instance: 1684
