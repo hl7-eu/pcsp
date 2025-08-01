@@ -411,7 +411,7 @@ The first Followup-Surpass form must be completed at the same time as the SurPas
     * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden"
     * valueBoolean = true
   * extension[+]
-    * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression"
+    * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
     * valueExpression.language = #text/fhirpath
     * valueExpression.expression = "%resource.item.where(linkId='source-question').answer.first().value"
 

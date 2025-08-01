@@ -25,8 +25,8 @@ Description: "Example of a Childhood Cancer Survivor Passport Bundle for the Pan
 * entry[=].resource = diagnosis-hereditary-predisposition-1
 * entry[+].fullUrl = "urn:uuid:a2d6d445-41e3-437d-8422-307a40e35329"
 * entry[=].resource = flt-procecure-1
-* entry[+].fullUrl = "urn:uuid:ec5333d0-e3d9-4e86-a3db-a6426d14f4b4"
-* entry[=].resource = followed-protocol-plan-definition-1
+// * entry[+].fullUrl = "urn:uuid:ec5333d0-e3d9-4e86-a3db-a6426d14f4b4"
+// * entry[=].resource = followed-protocol-plan-definition-1
 * entry[+].fullUrl = "urn:uuid:567cd26b-ab14-490c-8d51-256edb3ff940"
 * entry[=].resource = surgery-procedure-1-0-1
 
@@ -132,14 +132,14 @@ Usage: #inline
 * reasonReference = Reference(urn:uuid:64c55208-f9d4-45d1-a4fa-2ce338630536)
 * outcome = $condition-clinical#inactive "Inactive"
 
-Instance: followed-protocol-plan-definition-1
-InstanceOf: PlanDefinitionFltPcsp
-Usage: #inline
-* extension[fltArm].valueString = "Arm A AND PR < 2/3 after primary surgery-chemotherapy"
-* url = "https://fhir.ehealth-systems.at/PlanDefinition/supa-1f7dc934-fb28-43b7-bbc9-952d4af3d0b6"
-* title = "RMS 96"
-* type = $plan-definition-type#clinical-protocol "Clinical Protocol"
-* status = #active
+// Instance: followed-protocol-plan-definition-1
+// InstanceOf: PlanDefinitionFltPcsp
+// Usage: #inline
+// * extension[fltArm].valueString = "Arm A AND PR < 2/3 after primary surgery-chemotherapy"
+// * url = "https://fhir.ehealth-systems.at/PlanDefinition/supa-1f7dc934-fb28-43b7-bbc9-952d4af3d0b6"
+// * title = "RMS 96"
+// * type = $plan-definition-type#clinical-protocol "Clinical Protocol"
+// * status = #active
 
 Instance: surgery-procedure-1-0-1
 InstanceOf: ProcedureSurgeryPcsp
