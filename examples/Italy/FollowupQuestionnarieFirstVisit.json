@@ -1,0 +1,2063 @@
+{
+    "resourceType": "QuestionnaireResponse",
+    "id": "FollowupSurPass-123",
+    "contained": [
+        {
+            "resourceType": "Questionnaire",
+            "id": "FollowupSurPass",
+            "meta": {
+                "source": "#nYKfBrWClg9bDrmt"
+            },
+            "url": "http://hl7.eu/fhir/ig/pcsp/Questionnaire/FollowupSurPass",
+            "name": "FollowupSurPass",
+            "status": "draft",
+            "subjectType": [
+                "Patient"
+            ],
+            "description": "Follow up form.\nThe first Followup-Surpass-Surpass form must be completed at the same time as the SurPass is delivered or in any case at the first visit after the end of the treatment (OT).",
+            "item": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                        "code": "radio-button"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "linkId": "first-visit",
+                    "text": "First visit?",
+                    "type": "choice",
+                    "required": true,
+                    "answerValueSet": "#YesNoVS"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                        "code": "radio-button"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "linkId": "consent",
+                    "text": "Informed consent to participate in the Followup-Surpass",
+                    "type": "choice",
+                    "enableWhen": [
+                        {
+                            "question": "first-visit",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://loinc.org",
+                                "code": "LA33-6",
+                                "display": "YES"
+                            }
+                        }
+                    ],
+                    "required": true,
+                    "answerValueSet": "#YesNoVS"
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden",
+                            "valueBoolean": true
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-calculatedExpression",
+                            "valueExpression": {
+                                "language": "text/fhirpath",
+                                "expression": "%resource.item.where(linkId='source-question').answer.first().value"
+                            }
+                        }
+                    ],
+                    "linkId": "consent-date",
+                    "text": "Consent date",
+                    "type": "date",
+                    "enableWhen": [
+                        {
+                            "question": "first-visit",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://loinc.org",
+                                "code": "LA33-6",
+                                "display": "YES"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "linkId": "visit-date",
+                    "text": "Visit date",
+                    "type": "date",
+                    "required": true
+                },
+                {
+                    "linkId": "new-cancer-after-off-therapy",
+                    "text": "Predisposing genetic syndromes or clinical conditions associated with the tumor diagnosed after the first off-therapy",
+                    "type": "choice",
+                    "enableWhen": [
+                        {
+                            "question": "first-visit",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://loinc.org",
+                                "code": "LA33-6",
+                                "display": "YES"
+                            }
+                        }
+                    ],
+                    "answerValueSet": "#YesNoVS",
+                    "item": [
+                        {
+                            "linkId": "sepcify-new-cancer-txt-1",
+                            "text": "If yes, specify",
+                            "type": "text",
+                            "enableWhen": [
+                                {
+                                    "question": "new-cancer-after-off-therapy",
+                                    "operator": "=",
+                                    "answerCoding": {
+                                        "system": "http://loinc.org",
+                                        "code": "LA33-6",
+                                        "display": "YES"
+                                    }
+                                }
+                            ],
+                            "required": true
+                        }
+                    ]
+                },
+                {
+                    "linkId": "other-clinical",
+                    "text": "Other clinical pictures, not associated with the tumor at the time of diagnosis",
+                    "type": "choice",
+                    "enableWhen": [
+                        {
+                            "question": "first-visit",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://loinc.org",
+                                "code": "LA33-6",
+                                "display": "YES"
+                            }
+                        }
+                    ],
+                    "answerValueSet": "#YesNoVS",
+                    "item": [
+                        {
+                            "linkId": "sepcify-other-clinical-txt-1",
+                            "text": "If yes, specify",
+                            "type": "text",
+                            "enableWhen": [
+                                {
+                                    "question": "other-clinical",
+                                    "operator": "=",
+                                    "answerCoding": {
+                                        "system": "http://loinc.org",
+                                        "code": "LA33-6",
+                                        "display": "YES"
+                                    }
+                                }
+                            ],
+                            "required": true
+                        }
+                    ]
+                },                
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                        "code": "radio-button"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "linkId": "new-condition-after-off-therapy",
+                    "text": "After the first off therapy the patient experienced one or more pathological conditions",
+                    "type": "choice",
+                    "enableWhen": [
+                        {
+                            "question": "first-visit",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://loinc.org",
+                                "code": "LA33-6",
+                                "display": "YES"
+                            }
+                        }
+                    ],
+                    "required": true,
+                    "answerValueSet": "#YesNoVS",
+                    "item": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                                    "valueInteger": 15
+                                }
+                            ],
+                            "linkId": "group-condition-1",
+                            "text": "Pathological conditions",
+                            "type": "group",
+                            "enableWhen": [
+                                {
+                                    "question": "new-condition-after-off-therapy",
+                                    "operator": "=",
+                                    "answerCoding": {
+                                        "system": "http://loinc.org",
+                                        "code": "LA33-6",
+                                        "display": "YES"
+                                    }
+                                }
+                            ],
+                            "required": true,
+                            "repeats": true,
+                            "item": [
+                                {
+                                    "linkId": "condition-1",
+                                    "text": "Condition",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/cond-test-vs"
+                                },
+                                {
+                                    "linkId": "condition-note-1",
+                                    "type": "text",
+                                    "readOnly": true,
+                                    "initial": [
+                                        {
+                                            "valueString": "This space will contain guidance for the selected condition. Content is not yet available."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "condition-other-1",
+                                    "text": "If other, specify",
+                                    "type": "text",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "1001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "3001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6005,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6006,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8005,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "9001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "9002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "10001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "10002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "11001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "11002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "12001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "13001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "13002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "14001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "17001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-1",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "17002,99"
+                                            }
+                                        }
+                                    ],
+                                    "enableBehavior": "any",
+                                    "required": true,
+                                    "readOnly": false
+                                },
+                                {
+                                    "linkId": "appearance-date-1",
+                                    "text": "Onset date",
+                                    "type": "date",
+                                    "required": true
+                                },
+                                {
+                                    "linkId": "condition-grading-1",
+                                    "text": "Grading m-CTCAE at onset/last visit",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/grade-test-vs"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                                        "code": "radio-button"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "linkId": "condition-evolution-1",
+                                    "text": "Evolution",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerOption": [
+                                        {
+                                            "valueString": "Yes, resolved"
+                                        },
+                                        {
+                                            "valueString": "No, not resolved"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "resolution-date-1",
+                                    "text": "If yes, date",
+                                    "type": "date",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-evolution-1",
+                                            "operator": "=",
+                                            "answerString": "Yes, resolved"
+                                        }
+                                    ],
+                                    "enableBehavior": "any",
+                                    "required": true
+                                },
+                                {
+                                    "linkId": "new-condition-grading-1",
+                                    "text": "If changed, new grading",
+                                    "type": "choice",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-evolution-1",
+                                            "operator": "=",
+                                            "answerString": "No, not resolved"
+                                        }
+                                    ],
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/grade-test-vs"
+                                },
+                                {
+                                    "linkId": "details-1",
+                                    "text": "Details",
+                                    "type": "text"
+                                },
+                                {
+                                    "linkId": "next-check-1",
+                                    "text": "Next check-up planned on",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                        "code": "radio-button"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "linkId": "condition-changed",
+                    "text": "Have any pathological conditions that were still present (unresolved) at the previous visit resolved or changed in degree?",
+                    "type": "choice",
+                    "enableWhen": [
+                        {
+                            "question": "first-visit",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://loinc.org",
+                                "code": "LA32-8",
+                                "display": "NO"
+                            }
+                        }
+                    ],
+                    "required": true,
+                    "answerValueSet": "#YesNoVS",
+                    "item": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                                    "valueInteger": 15
+                                }
+                            ],
+                            "linkId": "group-condition-2",
+                            "text": "Pathological conditions",
+                            "type": "group",
+                            "enableWhen": [
+                                {
+                                    "question": "condition-changed",
+                                    "operator": "=",
+                                    "answerCoding": {
+                                        "system": "http://loinc.org",
+                                        "code": "LA33-6",
+                                        "display": "YES"
+                                    }
+                                }
+                            ],
+                            "required": true,
+                            "repeats": true,
+                            "item": [
+                                {
+                                    "linkId": "condition-2",
+                                    "text": "Condition",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/cond-test-vs"
+                                },
+                                {
+                                    "linkId": "condition-note-2",
+                                    "type": "text",
+                                    "readOnly": true,
+                                    "initial": [
+                                        {
+                                            "valueString": "This space will contain guidance for the selected condition. Content is not yet available."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "condition-other-2",
+                                    "text": "If other, specify",
+                                    "type": "text",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "1001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "3001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6005,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6006,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8005,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "9001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "9002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "10001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "10002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "11001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "11002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "12001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "13001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "13002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "14001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "17001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-2",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "17002,99"
+                                            }
+                                        }
+                                    ],
+                                    "enableBehavior": "any",
+                                    "required": true,
+                                    "readOnly": false
+                                },
+                                {
+                                    "linkId": "appearance-date-2",
+                                    "text": "Onset date",
+                                    "type": "date",
+                                    "required": true
+                                },
+                                {
+                                    "linkId": "condition-grading-2",
+                                    "text": "Grading m-CTCAE at onset/last visit",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/grade-test-vs"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                                        "code": "radio-button"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "linkId": "condition-evolution-2",
+                                    "text": "Evolution",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerOption": [
+                                        {
+                                            "valueString": "No, unchanged"
+                                        },
+                                        {
+                                            "valueString": "Yes, changed"
+                                        },
+                                        {
+                                            "valueString": "Yes, solved"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "resolution-date-2",
+                                    "text": "If yes, date",
+                                    "type": "date",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-evolution-2",
+                                            "operator": "=",
+                                            "answerString": "Yes, solved"
+                                        }
+                                    ],
+                                    "enableBehavior": "any",
+                                    "required": true
+                                },
+                                {
+                                    "linkId": "new-condition-grading-2",
+                                    "text": "If changed, new grading",
+                                    "type": "choice",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-evolution-2",
+                                            "operator": "=",
+                                            "answerString": "Yes, changed"
+                                        }
+                                    ],
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/grade-test-vs"
+                                },
+                                {
+                                    "linkId": "details-2",
+                                    "text": "Details",
+                                    "type": "text"
+                                },
+                                {
+                                    "linkId": "next-check-2",
+                                    "text": "Next check-up planned on",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "new-cancer-after-last-visit",
+                    "text": "After the first off therapy the patient experienced one or more pathological conditions?",
+                    "type": "choice",
+                    "enableWhen": [
+                        {
+                            "question": "first-visit",
+                            "operator": "=",
+                            "answerCoding": {
+                                "system": "http://loinc.org",
+                                "code": "LA32-8",
+                                "display": "NO"
+                            }
+                        }
+                    ],
+                    "answerValueSet": "#YesNoVS",
+                    "item": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs",
+                                    "valueInteger": 15
+                                }
+                            ],
+                            "linkId": "group-condition-3",
+                            "text": "Pathological conditions",
+                            "type": "group",
+                            "enableWhen": [
+                                {
+                                    "question": "new-cancer-after-last-visit",
+                                    "operator": "=",
+                                    "answerCoding": {
+                                        "system": "http://loinc.org",
+                                        "code": "LA33-6",
+                                        "display": "YES"
+                                    }
+                                }
+                            ],
+                            "required": true,
+                            "repeats": true,
+                            "item": [
+                                {
+                                    "linkId": "condition-3",
+                                    "text": "Condition",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/cond-test-vs"
+                                },
+                                {
+                                    "linkId": "condition-note-3",
+                                    "type": "text",
+                                    "readOnly": true,
+                                    "initial": [
+                                        {
+                                            "valueString": "This space will contain guidance for the selected condition. Content is not yet available."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "condition-other-3",
+                                    "text": "If other, specify",
+                                    "type": "text",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "1001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "2003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "3001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "4003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "5003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6005,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "6006,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "7003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "8005,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "9001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "9002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "10001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "10002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "11001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "11002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "12001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "13001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "13002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "14001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "15004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16002,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16003,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "16004,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "17001,99"
+                                            }
+                                        },
+                                        {
+                                            "question": "condition-3",
+                                            "operator": "=",
+                                            "answerCoding": {
+                                                "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                                "code": "17002,99"
+                                            }
+                                        }
+                                    ],
+                                    "enableBehavior": "any",
+                                    "required": true,
+                                    "readOnly": false
+                                },
+                                {
+                                    "linkId": "appearance-date-3",
+                                    "text": "Onset date",
+                                    "type": "date",
+                                    "required": true
+                                },
+                                {
+                                    "linkId": "condition-grading-3",
+                                    "text": "Grading m-CTCAE at onset/last visit",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/grade-test-vs"
+                                },
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                                            "valueCodeableConcept": {
+                                                "coding": [
+                                                    {
+                                                        "system": "http://hl7.org/fhir/questionnaire-item-control",
+                                                        "code": "radio-button"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "linkId": "condition-evolution-3",
+                                    "text": "Evolution",
+                                    "type": "choice",
+                                    "required": true,
+                                    "answerOption": [
+                                        {
+                                            "valueString": "Yes, resolved"
+                                        },
+                                        {
+                                            "valueString": "No, not resolved"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "linkId": "resolution-date-3",
+                                    "text": "If yes, date",
+                                    "type": "date",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-evolution-3",
+                                            "operator": "=",
+                                            "answerString": "Yes, resolved"
+                                        }
+                                    ],
+                                    "enableBehavior": "any",
+                                    "required": true
+                                },
+                                {
+                                    "linkId": "new-condition-grading-3",
+                                    "text": "If changed, new grading",
+                                    "type": "choice",
+                                    "enableWhen": [
+                                        {
+                                            "question": "condition-evolution-3",
+                                            "operator": "=",
+                                            "answerString": "No, not resolved"
+                                        }
+                                    ],
+                                    "required": true,
+                                    "answerValueSet": "http://hl7.eu/fhir/ig/pcsp/ValueSet/grade-test-vs"
+                                },
+                                {
+                                    "linkId": "details-3",
+                                    "text": "Details",
+                                    "type": "text"
+                                },
+                                {
+                                    "linkId": "next-check-3",
+                                    "text": "Next check-up planned on",
+                                    "type": "text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "linkId": "notes",
+                    "text": "Notes",
+                    "type": "string",
+                    "required": false
+                },
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/maxSize",
+                            "valueDecimal": 5
+                        }
+                    ],
+                    "linkId": "notes-attachments",
+                    "text": "Reports relating to significant laboratory instrumental tests",
+                    "type": "attachment",
+                    "required": false,
+                    "repeats": true
+                }
+            ]
+        }
+    ],
+    "questionnaire": "#FollowupSurPass",
+    "status": "in-progress",
+    "subject": {
+        "reference": "Patient/123"
+    },
+    "item": [
+        {
+            "linkId": "first-visit",
+            "text": "First visit?",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA33-6"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "consent",
+            "text": "Informed consent to participate in the Followup-Surpass",
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA33-6"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "consent-date",
+            "text": "Consent date"
+        },
+        {
+            "linkId": "visit-date",
+            "text": "Visit date",
+            "answer": [
+                {
+                    "valueDate": "2025-08-01"
+                }
+            ]
+        },
+        {
+            "linkId": "new-cancer-after-off-therapy",
+            "text": "Predisposing genetic syndromes or clinical conditions associated with the tumor diagnosed after the first off-therapy",
+            "item": [
+                {
+                    "linkId": "sepcify-new-cancer-txt-1",
+                    "text": "If yes, specify"
+                }
+            ],
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA32-8"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "other-clinical",
+            "text": "Other clinical pictures, not associated with the tumor at the time of diagnosis",
+            "item": [
+                {
+                    "linkId": "sepcify-other-clinical-txt-1",
+                    "text": "If yes, specify"
+                }
+            ],
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA32-8"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "new-condition-after-off-therapy",
+            "text": "After the first off therapy the patient experienced one or more pathological conditions",
+            "item": [
+                {
+                    "linkId": "group-condition-1",
+                    "text": "Pathological conditions",
+                    "item": [
+                        {
+                            "linkId": "condition-1",
+                            "text": "Condition",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://hl7.eu/fhir/ig/pcsp/CodeSystem/ConditionsCS",
+                                        "code": "1001,03"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "condition-note-1",
+                            "answer": [
+                                {
+                                    "valueString": "This space will contain guidance for the selected condition. Content is not yet available."
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "condition-other-1",
+                            "text": "If other, specify"
+                        },
+                        {
+                            "linkId": "appearance-date-1",
+                            "text": "Onset date",
+                            "answer": [
+                                {
+                                    "valueDate": "2025-07-01"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "condition-grading-1",
+                            "text": "Grading m-CTCAE at onset/last visit",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "1663004"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "condition-evolution-1",
+                            "text": "Evolution",
+                            "answer": [
+                                {
+                                    "valueString": "No, not resolved"
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "resolution-date-1",
+                            "text": "If yes, date"
+                        },
+                        {
+                            "linkId": "new-condition-grading-1",
+                            "text": "If changed, new grading",
+                            "answer": [
+                                {
+                                    "valueCoding": {
+                                        "system": "http://snomed.info/sct",
+                                        "code": "1663004"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "details-1",
+                            "text": "Details"
+                        },
+                        {
+                            "linkId": "next-check-1",
+                            "text": "Next check-up planned on",
+                            "answer": [
+                                {
+                                    "valueString": "September 2026"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "answer": [
+                {
+                    "valueCoding": {
+                        "system": "http://loinc.org",
+                        "code": "LA33-6"
+                    }
+                }
+            ]
+        },
+        {
+            "linkId": "condition-changed",
+            "text": "Have any pathological conditions that were still present (unresolved) at the previous visit resolved or changed in degree?",
+            "item": [
+                {
+                    "linkId": "group-condition-2",
+                    "text": "Pathological conditions",
+                    "item": [
+                        {
+                            "linkId": "condition-2",
+                            "text": "Condition"
+                        },
+                        {
+                            "linkId": "condition-note-2",
+                            "answer": [
+                                {
+                                    "valueString": "This space will contain guidance for the selected condition. Content is not yet available."
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "condition-other-2",
+                            "text": "If other, specify"
+                        },
+                        {
+                            "linkId": "appearance-date-2",
+                            "text": "Onset date"
+                        },
+                        {
+                            "linkId": "condition-grading-2",
+                            "text": "Grading m-CTCAE at onset/last visit"
+                        },
+                        {
+                            "linkId": "condition-evolution-2",
+                            "text": "Evolution"
+                        },
+                        {
+                            "linkId": "resolution-date-2",
+                            "text": "If yes, date"
+                        },
+                        {
+                            "linkId": "new-condition-grading-2",
+                            "text": "If changed, new grading"
+                        },
+                        {
+                            "linkId": "details-2",
+                            "text": "Details"
+                        },
+                        {
+                            "linkId": "next-check-2",
+                            "text": "Next check-up planned on"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "new-cancer-after-last-visit",
+            "text": "After the first off therapy the patient experienced one or more pathological conditions?",
+            "item": [
+                {
+                    "linkId": "group-condition-3",
+                    "text": "Pathological conditions",
+                    "item": [
+                        {
+                            "linkId": "condition-3",
+                            "text": "Condition"
+                        },
+                        {
+                            "linkId": "condition-note-3",
+                            "answer": [
+                                {
+                                    "valueString": "This space will contain guidance for the selected condition. Content is not yet available."
+                                }
+                            ]
+                        },
+                        {
+                            "linkId": "condition-other-3",
+                            "text": "If other, specify"
+                        },
+                        {
+                            "linkId": "appearance-date-3",
+                            "text": "Onset date"
+                        },
+                        {
+                            "linkId": "condition-grading-3",
+                            "text": "Grading m-CTCAE at onset/last visit"
+                        },
+                        {
+                            "linkId": "condition-evolution-3",
+                            "text": "Evolution"
+                        },
+                        {
+                            "linkId": "resolution-date-3",
+                            "text": "If yes, date"
+                        },
+                        {
+                            "linkId": "new-condition-grading-3",
+                            "text": "If changed, new grading"
+                        },
+                        {
+                            "linkId": "details-3",
+                            "text": "Details"
+                        },
+                        {
+                            "linkId": "next-check-3",
+                            "text": "Next check-up planned on"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "linkId": "notes",
+            "text": "Notes"
+        },
+        {
+            "linkId": "notes-attachments",
+            "text": "Reports relating to significant laboratory instrumental tests"
+        }
+    ]
+}
