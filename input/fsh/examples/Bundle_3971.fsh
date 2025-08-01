@@ -148,7 +148,7 @@ Instance: 3971
 InstanceOf: PatientPcsp
 Title: "Cineca - Patient: Sample of pseudonymised patient"
 Description: "Example of a pseudonymised patient from Cineca for the PanCareSurPass project"
-Usage: #inline
+Usage: #example
 * extension[patient-birthPlace].valueAddress.city = "ndcjwO0BCLXsTIFWratSuQ=="
 * identifier[0].system = "http://hl7.eu/fhir/ig/pcsp/sid/pat-id-cineca"
 * identifier[=].value = "15"
@@ -172,7 +172,7 @@ Instance: 3972
 InstanceOf: ConditionPrimaryCancerPcsp
 Title: "Cineca - Condition: Right Upper Lip Malignant Neoplasm"
 Description: "Example of a primary malignant neoplasm of the right upper lip (C00.0) from Cineca for the PanCareSurPass project"
-Usage: #inline
+Usage: #example
 * extension[previousStatus].valueCodeableConcept = $condition-clinical#inactive
 * extension[assertedDate].valueDateTime = "2020-10-10"
 * extension[histologyMorphologyBehavior].valueCodeableConcept = $icd03#8000/0
@@ -262,7 +262,7 @@ Instance: 3984
 InstanceOf: ProcedureSctPcsp
 Title: "Cineca - Procedure: Transplantation Example"
 Description: "Example of a transplantation procedure from Cineca for the PanCareSurPass project"
-Usage: #inline
+Usage: #example
 * status = #completed
 * extension[procedure-usedReference].valueReference = Reference(BiologicallyDerivedProduct/3989)
 * category = $sct#77465005 "Transplantation" 
@@ -621,7 +621,7 @@ Instance: 3991
 InstanceOf: ProcedureRadiotherapyPcsp
 Title: "Cineca - Procedure: PCSP Radiotherapy first example"
 Description: "First example of a PCSP radiotherapy procedure with related dose observation"
-Usage: #inline
+Usage: #example
 * status = #completed
 * extension[performedTiming].valueTiming.repeat.count = 1
 * extension[relatedDose].valueReference = Reference(3995)
@@ -641,7 +641,7 @@ Instance: 3994
 InstanceOf: TotalDoseRadObsPcsp
 Title: "Cineca - Observation: PCSP Total Dose Radiotherapy first example"
 Description: "First example of a PCSP total dose radiotherapy observation"
-Usage: #inline
+Usage: #example
 * status = #final
 * category = $observation-category#procedure
 * code = $sct#445461008
@@ -652,7 +652,7 @@ Instance: 3990
 InstanceOf: ProcedureRadiotherapyPcsp
 Title: "Cineca - Procedure: PCSP Radiotherapy second example"
 Description: "Second example of a PCSP radiotherapy procedure with related dose observation"
-Usage: #inline
+Usage: #example
 * status = #completed
 * category = $sct#108290001 "Radiotherapy"
 * code = $sct#33195004
@@ -666,7 +666,7 @@ Instance: 3995
 InstanceOf: TotalDoseRadObsPcsp
 Title: "Cineca - Observation: PCSP Total Dose Radiotherapy second example"
 Description: "Second example of a PCSP total dose radiotherapy observation"
-Usage: #inline
+Usage: #example
 * status = #final
 * category = $observation-category#procedure
 * code = $sct#445461008
