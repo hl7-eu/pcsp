@@ -394,7 +394,7 @@ The first Followup-Surpass form must be completed at the same time as the SurPas
   * linkId  = "consent"
   * type = #choice
   //* text = "Consenso informato a partecipare al ROT-SurPass"
-  * text = "Informed consent to participate in the ROT-SurPass"
+  * text = "Informed consent to participate in the Followup-SurPass"
   * required = true
   * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
   * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
@@ -443,15 +443,15 @@ The first Followup-Surpass form must be completed at the same time as the SurPas
   * insert IfTrueSpecify ( other-clinical, other-clinical-txt-1 )
 
 
-* item[+]
-  * linkId  = "clinical-condition-incidence"
-  * type = #choice
-  //* text = "Condizioni cliniche potenzialmente associate ad un aumento dell'incidenza del cancro"  
-  * text = "Clinical conditions potentially associated with an increased incidence of cancer" 
-  * answerValueSet = Canonical(YesNoVS)
-  * required = true
-  * insert enableIfYes ( first-visit )
-  * insert IfTrueSpecify ( clinical-condition-incidence, clinical-condition-incidence-txt-1 )
+// * item[+]
+//   * linkId  = "clinical-condition-incidence"
+//   * type = #choice
+//   //* text = "Condizioni cliniche potenzialmente associate ad un aumento dell'incidenza del cancro"  
+//   * text = "Clinical conditions potentially associated with an increased incidence of cancer" 
+//   * answerValueSet = Canonical(YesNoVS)
+//   * required = true
+//   * insert enableIfYes ( first-visit )
+//   * insert IfTrueSpecify ( clinical-condition-incidence, clinical-condition-incidence-txt-1 )
 
 * item[+]
   * linkId  =  "new-condition-after-off-therapy"
@@ -479,7 +479,7 @@ The first Followup-Surpass form must be completed at the same time as the SurPas
   * required = true
   * extension.url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
   * extension.valueCodeableConcept = $questionnaire-item-control#radio-button
-  * answerValueSet = Canonical(YesNoVS)
+  * answerValueSet = Canonical(YesNoNAVS)
   * insert enableIfNo ( first-visit )
   * insert EvolveConditionGroup ( condition-changed, 2 )
 
@@ -532,4 +532,25 @@ Usage: #inline
     * display = "NO"
   * concept[+]
     * code = #LA33-6
+    * display = "YES"
+
+Instance: YesNoNAVS
+InstanceOf: ValueSet
+Title: "Yes/No/Not Applicable Value Set"
+Description: "Yes/Not Applicable Value Set"
+Usage: #inline
+
+* experimental = false
+* status = #draft
+
+* compose.include
+  * system = $loinc
+  * concept[+]
+    * code = #LA32-8
+    * display = "NO"
+  * concept[+]
+    * code = #LA33-6
+    * display = "YES"
+  * concept[+]
+    * code = #LA30226-7
     * display = "YES"
