@@ -487,7 +487,7 @@ The first ROT-Surpass form must be completed at the same time as the SurPass is 
   * linkId  = "new-cancer-after-last-visit"
   * type = #choice
     //* text = "Sindromi genetiche predisponenti o condizioni cliniche associate al tumore diagnosticate dall’ultima visita?"  
-  * text = "Predisposing genetic syndromes or clinical conditions associated with the tumor diagnosed since the last visit?"  
+  * text = "After the first off therapy the patient experienced one or more pathological conditions?"  
   * insert enableIfNo ( first-visit )
   * answerValueSet = Canonical(YesNoVS)
   // This group is activated only if this choice is true

@@ -7,7 +7,7 @@ Usage: #example
 * extension.url = "http://hl7.eu/fhir/ig/pcsp/StructureDefinition/procedure-usedReference"
 * extension.valueReference = Reference(BiologicallyDerivedProduct-SCT1)
 * status = #completed
-* category = http://snomed.info/sct#77465005 "Transplantation (procedure)"
+* category = http://snomed.info/sct#77465005 "Transplantation"
 * code = http://snomed.info/sct#53088000 "Autogenous transplantation"
 * code.text = "Negative for Chlamydia Trachomatis rRNA"
 * subject = Reference(PatientMainzZeisig)

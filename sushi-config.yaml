@@ -30,8 +30,9 @@ license: CC-BY-SA-4.0
 
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.uv.ips: current
-  hl7.fhir.us.mcode: current
+  hl7.fhir.uv.extensions.r4: 5.2.0
+  hl7.fhir.uv.ips: 1.1.0
+  hl7.fhir.us.mcode: 4.0.0
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2021+

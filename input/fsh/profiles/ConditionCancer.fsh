@@ -135,9 +135,8 @@ This profile should be also used for documenting primary cancer relapses during 
 //-------------------------------------------------------------------------------------------
 
 * extension contains $condition-occurredFollowing named condition-occurredFollowing 0..*
-* extension[condition-occurredFollowing].valueCodeableConcept 0..0
-* extension[condition-occurredFollowing].valueReference ^short = "For relapses, reference to the first occurance of this tumor."
-* extension[condition-occurredFollowing].valueReference only Reference (ConditionPrimaryCancerPcsp)
+* extension[condition-occurredFollowing].value[x] ^short = "For relapses, reference to the first occurance of this tumor."
+* extension[condition-occurredFollowing].value[x] only Reference (ConditionPrimaryCancerPcsp)
 
 * insert CancerConditionCommonRules
 // * clinicalStatus and verificationStatus MS
@@ -168,10 +167,10 @@ This profile should be also used for documenting primary cancer relapses during 
 // * stage.type from ObservationCodesStageGroupVS (required)
 
 
-* evidence ^slicing.discriminator.type = #profile
-* evidence ^slicing.discriminator.path = "$this.resolve()"
+// * evidence ^slicing.discriminator.type = #profile
+// * evidence ^slicing.discriminator.path = "$this.resolve()"
 * evidence ^slicing.discriminator.type = #pattern
-* evidence ^slicing.discriminator.path = "code"
+* evidence ^slicing.discriminator.path = "code.coding"
 * evidence ^slicing.rules = #open
 * evidence ^slicing.description = "Slice based on the coding.code pattern"
 * evidence contains 
@@ -179,7 +178,10 @@ This profile should be also used for documenting primary cancer relapses during 
 	and geneticMarker 0..1
 	and immunology 0..1
 	and predisposition 0..1
-	
+  and hereditary 0..1
+
+* obeys mutually-exclusive-predisposition
+
 * evidence[diagnosisDetails]
   * ^short = "Diagnosis details"
   * code.coding = $loinc#29308-4 "Diagnosis"
@@ -198,10 +200,14 @@ This profile should be also used for documenting primary cancer relapses during 
   /* * detail.display ^short = "Text alternative for the resource (immunology)"  */
 * evidence[predisposition]
   * ^short = "Predisposition" 
-  // --- CHANGED 2022 JUNE 13
-  // * code = $sct#32895009 "Hereditary disease" // check if it needs to be changed with a Value Set
-  * code from HereditaryPredispositionDisease (extensible)
+  * code.coding = $sct#47708004 "Genetic predisposition" 
+  // * code from HereditaryPredispositionDisease (extensible)
   * code.text ^short = "Text for predisposition"   
+  * detail only Reference (ObservationHereditaryPredispositionPcsp)
+* evidence[hereditary]
+  * ^short = "Hereditary disease" 
+  * code.coding = $sct#32895009 "Hereditary disease"
+  * code.text ^short = "Text for hereditary disease"   
   * detail only Reference (ObservationHereditaryPredispositionPcsp)
   /* * detail.display ^short = "Text alternative for the resource (predisposition)" */
 /*   
@@ -214,6 +220,11 @@ This profile should be also used for documenting primary cancer relapses during 
 
 * note ^short = "Additional information about the Cancer Condition"
 
+
+Invariant: mutually-exclusive-predisposition
+Description: "Only one of Predisposition or Hereditary disease may be present"
+Expression: "evidence.code.coding.where(system = 'http://snomed.info/sct' and code = '47708004').exists() implies evidence.code.coding.where(system = 'http://snomed.info/sct' and code = '32895009').empty()"
+Severity: #error
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
