@@ -112,11 +112,11 @@ resources:
 #    description: An example Patient
 #    exampleBoolean: true
 #  Patient/bad-example: omit
-  Composition/74055:
-    name: "Composition: SurPass"
-    description: Example of SurPass Composition
-    profile: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Composition-surpass-eu-pcsp
-    exampleBoolean: true
+  # Composition/74055:
+  #   name: "Composition: SurPass"
+  #   description: Example of SurPass Composition
+  #   profile: http://hl7.eu/fhir/ig/pcsp/StructureDefinition/Composition-surpass-eu-pcsp
+  #   exampleBoolean: true
 #
 #
 # Groups can control certain aspects of the IG generation.  The IG
