@@ -77,7 +77,7 @@ Europe.**
 {% include ip-statements.xhtml %}
 
 
-### Authors and Contributors
+<!-- ### Authors and Contributors
 
 <table>
 <thead>
@@ -114,4 +114,4 @@ Europe.**
 <td></td>
 </tr>
 </tbody>
-</table>
+</table> -->

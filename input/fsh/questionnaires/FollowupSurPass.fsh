@@ -372,7 +372,7 @@ Usage: #definition
 //* description = """Scheda di follow up.
 //La compilazione della prima scheda ROT-Surpass dovrà avvenire contestualmente alla consegna del SurPass o comunque alla prima visita dopo la fine del trattamento (OT)."""
 * description = """Follow up form.
-The first ROT-Surpass form must be completed at the same time as the SurPass is delivered or in any case at the first visit after the end of the treatment (OT)."""
+The first Followup-Surpass form must be completed at the same time as the SurPass is delivered or in any case at the first visit after the end of the treatment (OT)."""
 * contained[+] = YesNoVS
 /* * contained[+] = GradeVS
 * contained[+] = ConditionsVS */
