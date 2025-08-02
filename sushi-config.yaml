@@ -35,6 +35,7 @@ dependencies:
   hl7.fhir.us.mcode: 4.0.0
 parameters:
   show-inherited-invariants: false
+  pin-canonicals: pin-multiples
 copyrightYear: 2021+
 releaseLabel: CI Build
 # releaseLabel: trial-use
