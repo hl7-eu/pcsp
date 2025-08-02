@@ -36,6 +36,8 @@ dependencies:
 parameters:
   show-inherited-invariants: false
   pin-canonicals: pin-multiples
+  special-url:
+  - https://www.orpha.net
 copyrightYear: 2021+
 releaseLabel: CI Build
 # releaseLabel: trial-use
