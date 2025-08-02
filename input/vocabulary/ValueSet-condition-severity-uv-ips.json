@@ -20,7 +20,7 @@
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-                        "valueCanonical": "http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"
+                        "valueCanonical": "http://hl7.org/fhir/uv/ips"
                     }
                 ]
             }
@@ -32,7 +32,7 @@
                 "extension": [
                     {
                         "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
-                        "valueCanonical": "http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"
+                        "valueCanonical": "http://hl7.org/fhir/uv/ips"
                     }
                 ]
             }
