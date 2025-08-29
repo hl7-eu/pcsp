@@ -31,13 +31,15 @@ license: CC-BY-SA-4.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.uv.extensions.r4: 5.2.0
-  hl7.fhir.uv.ips: 1.1.0
+  hl7.fhir.uv.ips: current
   hl7.fhir.us.mcode: 4.0.0
 parameters:
   show-inherited-invariants: false
   pin-canonicals: pin-multiples
   special-url:
   - https://www.orpha.net
+  - http://terminology.hl7.org/CodeSystem/icd-o-3
+  - http://terminology.hl7.org/CodeSystem/iccc-3
 copyrightYear: 2021+
 releaseLabel: CI Build
 # releaseLabel: trial-use
