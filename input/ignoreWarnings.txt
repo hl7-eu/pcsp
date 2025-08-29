@@ -1,21 +1,7 @@
 == Suppressed Messages ==
 
-# No schematrons available for Logical Models
-The link 'StructureDefinition-Patient.sch' for "Schematron" cannot be resolved
-
-# Code System URI unknown
-Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
-
-Code System URI 'http://terminology.hl7.org/CodeSystem/iccc-3' is unknown so the code cannot be validated
-No definition could be found for URL value 'http://terminology.hl7.org/CodeSystem/iccc-3'
-
-Code System URI 'https://standardterms.edqm.eu' is unknown so the code cannot be validated
-
 # Manually validated code that are not found on TS
-
-None of the codings provided are in the value set 'ICD-O-3 Morphology' (http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp|0.2.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/icd-o-3#95103)
-None of the codings provided are in the value set 'ICD-O-3 Morphology' (http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp|0.2.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/icd-o-3#8000/0)
-None of the codings provided are in the value set 'ICD-O-3 Morphology' (http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp|0.2.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/icd-o-3#91813)
+None of the codings provided are in the value set 'ICD-O-3 Morphology' (http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp|0.2.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/icd-o-3#9510/3)
+None of the codings provided are in the value set 'ICD-O-3 Morphology' (http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp|0.2.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/icd-o-3#9181/3)
 None of the codings provided are in the value set 'ICD-O-3 Morphology' (http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp|0.2.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/icd-o-3#8260/3)
-None of the codings provided are in the value set 'ICD-O-3 Morphology' (http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp|0.2.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/icd-o-3#9392/3)
 None of the codings provided are in the value set 'ICD-O-3 Morphology' (http://hl7.eu/fhir/ig/pcsp/ValueSet/vs-icdo3-morphology-eu-pcsp|0.2.0), and a coding from this value set is required) (codes = http://terminology.hl7.org/CodeSystem/icd-o-3#9186/3)
