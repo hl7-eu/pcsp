@@ -10,7 +10,7 @@ Usage:  #example
 
 				
 * extension[condition-assertedDate].valueDateTime =  "2007-04-04"
-* extension[histologyMorphologyBehavior].valueCodeableConcept = $icd03#91813 // how ICD-0-3  are coded ?
+* extension[histologyMorphologyBehavior].valueCodeableConcept = $icd03#9181/3 // how ICD-0-3  are coded ?
 * code = $iccc3#081 // to be checked see https://seer.cancer.gov/iccc/iccc3.html
 * subject = Reference (PatientMainzZeisig)
 * bodySite = $icd03#C401
@@ -92,7 +92,7 @@ Usage:  #example
 
 				
 * extension[condition-assertedDate].valueDateTime =  "1994-04-21"
-* extension[histologyMorphologyBehavior].valueCodeableConcept = $icd03#95103
+* extension[histologyMorphologyBehavior].valueCodeableConcept = $icd03#9510/3
 * code = $v3-NullFlavor#NI // to be discussed
 * subject = Reference (PatientMainzFischer)
 * bodySite = $icd03#C692
