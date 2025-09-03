@@ -8,7 +8,7 @@ Description: "The International Classification of Childhood Cancer, Third Editio
 * ^experimental = true
 * ^caseSensitive = true
 
-* #0810 "Leukemias, myeloproliferative diseases, and myelodysplastic diseases"
+* #081 "Leukemias, myeloproliferative diseases, and myelodysplastic diseases"
 
 
 CodeSystem: ICD_O_3
@@ -16,6 +16,7 @@ Id:         icd-o-3
 Title:     "International Classification of Diseases for Oncology, Third Edition"
 Description: "The International Classification of Diseases for Oncology, Third Edition (ICD-O-3) is a coding system used primarily for classifying and coding neoplasms (tumors) based on their topography (site) and morphology (histology). It is widely used in cancer registries and epidemiological research."
 * ^url =  "http://terminology.hl7.org/CodeSystem/icd-o-3"
+* ^supplements = "http://terminology.hl7.org/CodeSystem/icd-o-3"
 * ^content = #fragment
 * ^experimental = true
 * ^caseSensitive = true
