@@ -37,3 +37,27 @@ e: {
   "error" : "Error from http://tx.fhir.org/r4: Unable to provide support for code system http://cancerstaging.org"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "language": "en", "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-cancer-stage-group-vs", "version": "1.0.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: Unable to provide support for code system http://cancerstaging.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "language": "en", "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-tnm-distant-metastases-category-vs", "version": "1.0.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: Unable to provide support for code system http://cancerstaging.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "language": "en", "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-tnm-primary-tumor-category-vs", "version": "1.0.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: Unable to provide support for code system http://cancerstaging.org"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "language": "en", "url": "http://hl7.eu/fhir/ig/pcsp/ValueSet/mcode-tnm-regional-nodes-category-vs", "version": "1.0.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: Unable to provide support for code system http://cancerstaging.org"
+}
+-------------------------------------------------------------------------------------

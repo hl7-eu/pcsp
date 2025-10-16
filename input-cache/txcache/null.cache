@@ -4,3 +4,15 @@ e: {
   "error" : "Unable to find imported value set http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips (and Error from http://tx.fhir.org/r4: Unable to find value set \"http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips\")"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "url": "http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips"}####
+e: {
+  "from-server" : true,
+  "error" : "Unable to find a server to expand 'http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips'"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "url": "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"}####
+e: {
+  "from-server" : true,
+  "error" : "Unable to find a server to expand 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips'"
+}
+-------------------------------------------------------------------------------------

@@ -1,6 +1,15 @@
 {
+  "http://unstats.un.org/unsd/methods/m49/m49.htm" : null,
+  "urn:ietf:bcp:13" : null,
+  "http://hl7.org/fhir/CodeSystem/medication-admin-status" : null,
   "http://cancerstaging.org|null" : null,
   "https://standardterms.edqm.eu|null" : null,
+  "http://cancerstaging.org" : null,
   "http://terminology.hl7.org/CodeSystem/iccc-3|null" : null,
-  "https://www.orpha.net|null" : null
+  "https://www.orpha.net|null" : null,
+  "https://standardterms.edqm.eu" : null,
+  "http://standardterms.edqm.eu" : {
+    "server" : "http://tx.fhir.org/r4",
+    "filename" : "cs-d4448e1b-3447-4fa9-8eba-c664a9bae7d1.json"
+  }
 }

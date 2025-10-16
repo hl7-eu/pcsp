@@ -12,10 +12,13 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.eu.fhir.pcsp
 canonical: http://hl7.eu/fhir/ig/pcsp
-version: 0.2.0
+version: 1.0.0
 name: PCSPImplementationGuide
 title: PanCareSurPass Project HL7 FHIR Implementation Guide
-status: draft
+status: active # draft | active | retired | unknown
+releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+# releaseLabel: trial-use
+
 publisher:
   - name: PanCareSurPass Project
     url: https://www.pancaresurpass.eu/
@@ -31,7 +34,7 @@ license: CC-BY-SA-4.0
 fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.uv.extensions.r4: 5.2.0
-  hl7.fhir.uv.ips: 1.1.0
+  hl7.fhir.uv.ips: 2.0.0
   hl7.fhir.us.mcode: 4.0.0
 parameters:
   show-inherited-invariants: false
@@ -41,8 +44,7 @@ parameters:
   - http://terminology.hl7.org/CodeSystem/icd-o-3
   - http://terminology.hl7.org/CodeSystem/iccc-3
 copyrightYear: 2021+
-releaseLabel: CI Build
-# releaseLabel: trial-use
+
 
 FSHOnly: false
 

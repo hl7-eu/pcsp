@@ -1,9 +1,16 @@
 {
   "#1101" : null,
-  "http://loinc.org/vs/LL360-9" : null,
+  "https://fhir.ehealth-systems.at/PlanDefinition/supa-1f7dc934-fb28-43b7-bbc9-952d4af3d0b6" : null,
   "#YesNoVS" : null,
+  "http://cancerstaging.org" : null,
+  "#YesNoNAVS" : null,
   "#9523" : null,
+  "http://hl7.org/fhir/StructureDefinition/individual-pronouns|5.3.0-ballot-tc1" : null,
   "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" : null,
+  "http://fhir.ehealth-systems.at/PlanDefinition/supa-1f7dc934-fb28-43b7-bbc9-952d4af3d0b6" : null,
   "http://loinc.org/vs/LL2419-1" : null,
+  "https://standardterms.edqm.eu" : null,
+  "http://hl7.org/fhir/StructureDefinition/individual-genderIdentity|5.3.0-ballot-tc1" : null,
+  "http://loinc.org/vs/LL360-9" : null,
   "http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips" : null
 }
